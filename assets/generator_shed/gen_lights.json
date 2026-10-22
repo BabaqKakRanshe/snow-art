@@ -1,0 +1,161 @@
+{
+ "note": "generator shed lamps. position / forward / up: shed frame (x east, y north, z up, m); *Unity: (-y, z, x). intensityURP at 100 %. group: shed = SHED circuit (Board_MCB_8) and Light_Switch, outd = OUTDOOR LIGHTS (Board_MCB_2); both need the busbar live (the set running with GEN selected, or LINE). lens: the glowing object to light up with the lamp.",
+ "lights": [
+  {
+   "socket": "LIGHT_Bulk_Ceiling",
+   "lens": "Lens_Bulk_Ceiling",
+   "type": "bulkhead",
+   "unityLight": "Spot",
+   "position": [
+    0.83,
+    0.2,
+    2.362
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "positionUnity": [
+    -0.2,
+    2.362,
+    0.83
+   ],
+   "forwardUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "upUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "intensityURP": 1.1,
+   "peakCandela": 60,
+   "kelvin": 2700,
+   "filterLinear": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "range": 8.0,
+   "group": "shed",
+   "shadows": true,
+   "ies": "IES/bulkhead.ies",
+   "desc": "caged bulkhead, 60 W incandescent behind a frosted dome; SHED circuit (Board_MCB_8) and Light_Switch; the cage throws six soft spokes (cookie)",
+   "spotOuter": 160,
+   "spotInner": 140,
+   "cookie": "T_Cookie_bulkhead"
+  },
+  {
+   "socket": "LIGHT_Bulk_Board",
+   "lens": "Lens_Bulk_Board",
+   "type": "bulkhead",
+   "unityLight": "Spot",
+   "position": [
+    -1.45,
+    -1.492,
+    2.22
+   ],
+   "forward": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "positionUnity": [
+    1.492,
+    2.22,
+    -1.45
+   ],
+   "forwardUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "intensityURP": 1.1,
+   "peakCandela": 60,
+   "kelvin": 2700,
+   "filterLinear": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "range": 8.0,
+   "group": "shed",
+   "shadows": true,
+   "ies": "IES/bulkhead.ies",
+   "desc": "caged bulkhead, 60 W incandescent behind a frosted dome; SHED circuit (Board_MCB_8) and Light_Switch; the cage throws six soft spokes (cookie)",
+   "spotOuter": 160,
+   "spotInner": 140,
+   "cookie": "T_Cookie_bulkhead"
+  },
+  {
+   "socket": "LIGHT_Ext_Door",
+   "lens": "Lens_Ext_Door",
+   "type": "barnlight",
+   "unityLight": "Spot",
+   "position": [
+    -2.8,
+    0.0,
+    2.35
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "positionUnity": [
+    0.0,
+    2.35,
+    -2.8
+   ],
+   "forwardUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "upUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "intensityURP": 3.0,
+   "peakCandela": 180,
+   "kelvin": 2700,
+   "filterLinear": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "range": 14.0,
+   "group": "outd",
+   "shadows": true,
+   "ies": "IES/barnlight.ies",
+   "desc": "barn light over the door, 100 W under a deep enamel shade; OUTDOOR LIGHTS circuit (Board_MCB_2)",
+   "spotOuter": 150,
+   "spotInner": 120,
+   "cookie": "T_Cookie_barnlight"
+  }
+ ]
+}

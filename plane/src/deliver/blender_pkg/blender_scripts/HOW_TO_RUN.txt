@@ -1,0 +1,8 @@
+Pipeline (Blender Python module: pip install bpy==5.0.1, or Blender 5.x Python):
+  python3 build.py                      -> out/plane_geo.blend      (geometry, pivots, hierarchy)
+  python3 shade.py 4096 2048 final 32   -> tex/final/*.png          (UV + bake: BaseColor, MR, Normal, AO)
+  python3 finalize.py final 100         -> export/final/...         (Unity channel packing, Body join, FBX, .blend)
+  python3 render.py out/plane_final_final.blend renders/F hero,left 48   (preview renders)
+  python3 fbxcheck.py export/final/Assets/UtilityPlane/Models/UtilityPlane.fbx  (transforms as Unity sees them)
+Create empty folders out/, tex/, renders/ next to the scripts before the first run.
+Procedural source materials are in nodes.py (livery masks, windows, logo decal, rivets, chips, rust, soot).

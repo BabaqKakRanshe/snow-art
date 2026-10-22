@@ -1,0 +1,26 @@
+{
+ "cam": {
+  "pos": [
+   -0.25,
+   2.05,
+   2.55
+  ],
+  "look": [
+   -0.2,
+   1.85,
+   2.99
+  ],
+  "fov": 60
+ },
+ "figures": [],
+ "out": "/home/claude/plane/v12/prev/r/pilot_lean_v11",
+ "W": 1920,
+ "H": 1080,
+ "tex": "/home/claude/plane/export/unity_v11/Assets/UtilityPlane/Textures",
+ "psx": [
+  "M_Airframe",
+  "M_Wing",
+  "M_Details",
+  "M_Survival"
+ ]
+}

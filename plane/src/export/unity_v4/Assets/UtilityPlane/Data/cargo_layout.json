@@ -1,0 +1,80 @@
+{
+ "SM_Cargo_Case1": {
+  "position": [
+   -0.126,
+   1.09,
+   0.5
+  ],
+  "size": [
+   0.644,
+   0.467,
+   0.572
+  ],
+  "note": "position on the concept art, local space of the UtilityPlane root (m); spawn as a free physics body"
+ },
+ "SM_Cargo_Case2": {
+  "position": [
+   -0.146,
+   1.09,
+   -0.12
+  ],
+  "size": [
+   0.684,
+   0.407,
+   0.632
+  ],
+  "note": "position on the concept art, local space of the UtilityPlane root (m); spawn as a free physics body"
+ },
+ "SM_Cargo_Case3": {
+  "position": [
+   -0.126,
+   1.51,
+   0.48
+  ],
+  "size": [
+   0.544,
+   0.387,
+   0.472
+  ],
+  "note": "position on the concept art, local space of the UtilityPlane root (m); spawn as a free physics body"
+ },
+ "SM_Cargo_Case4": {
+  "position": [
+   -0.106,
+   1.45,
+   -0.1
+  ],
+  "size": [
+   0.504,
+   0.347,
+   0.452
+  ],
+  "note": "position on the concept art, local space of the UtilityPlane root (m); spawn as a free physics body"
+ },
+ "SM_Cargo_Case5": {
+  "position": [
+   0.454,
+   1.09,
+   0.2
+  ],
+  "size": [
+   0.424,
+   0.647,
+   0.712
+  ],
+  "note": "position on the concept art, local space of the UtilityPlane root (m); spawn as a free physics body"
+ },
+ "SM_Cargo_Case6": {
+  "position": [
+   -0.086,
+   1.75,
+   0.05
+  ],
+  "size": [
+   0.424,
+   0.287,
+   0.372
+  ],
+  "note": "position on the concept art, local space of the UtilityPlane root (m); spawn as a free physics body"
+ }
+}

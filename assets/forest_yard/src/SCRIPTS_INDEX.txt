@@ -1,0 +1,29 @@
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_lights.py                            Generator shed lighting (the plane v11 / van method): an emission diagram per lamp type gives the IES profile
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+ies_lm63.py                              Minimal IES LM-63-2002 writer (type C photometry, absolute candela, metres).
+make_sheets_yard.py                      Sheets for the station yard: A the fuel tanks (the yard, the bund's front, the pump and its lever, the fill point, the back,
+make_yard_doc.py                         Russian reference for the station yard: out/yard_contract.json + out/yard.json -> docs/YARD_CONTRACT.md.
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_yard.py                             Package the station yard (the fuel tanks and the transformer): the .blend with relative texture paths, the textures, the
+post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+site_patch.py                            cut the map round a prefab out of the Forest scene into a small .blend in that prefab's frame (Blender axes, metres):
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+van_lights.py                            Van v2 lighting, single source of truth (the Utility Plane v11 method):
+yard_build.py                            Station yard build (yard_kit): the fuel tanks and the transformer, one object per part with its pivot as the origin, each
+yard_kit.py                              Station yard, Forest map prologue (Forest_Opening.json S7 power): the Update 3 fuel tanks and the transformer rebuilt in
+yard_paint.py                            Painters for the station yard's atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n] or None).
+yard_render.py                           Preview renders of the station yard (out/yard.blend posed from out/yard_contract.json) in its Update 3 surroundings: the
+yard_tex.py                              Panel atlas of the station yard (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the alpha tiles:
+checks/coplanar.py                       coplanar same-facing overlapping faces in out/hut.blend (or the .blend given last) (z-fighting and black AO patches in the bake)
+checks/inverted.py                       islands with a negative signed volume (faces pointing inwards) in out/hut.blend (or the .blend given last)
+checks/probe_yard.py                     Yard-specific checks on out/yard.blend: the two roots' places vs Update 3 (Forest_Layout.json) and the Trafo's place
+checks/sweep.py                          Sweep every moving part through its range and report new interpenetrations (BVH triangle overlap) vs rest.
+checks/verify_yard_pkg.py                open the packaged yard from a clean unzip: every image resolves inside the package, the contract agrees with the blend
+checks/walk.py                           Walkability round the station yard with the contract colliders: capsule r 0.34, h 1.80, step 0.35 (the Snow player), per level (a 2D flood

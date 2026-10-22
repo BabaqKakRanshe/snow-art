@@ -1,0 +1,104 @@
+{
+ "coplanar_separated": 3,
+ "coplanar_moved_mm": {
+  "Crates": {
+   "n": 2,
+   "max": 0.8
+  },
+  "PowerPole": {
+   "n": 1,
+   "max": 0.76
+  }
+ },
+ "atlases": {
+  "Props": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 105.32,
+   "uv_fill": 0.264,
+   "colours": 64,
+   "seconds": 151.7
+  },
+  "Helipad": {
+   "size": 1024,
+   "ppm": 30.4,
+   "area_m2": 389.08,
+   "uv_fill": 0.343,
+   "colours": 60,
+   "seconds": 107.5
+  },
+  "Mast": {
+   "size": 1024,
+   "ppm": 34.9,
+   "area_m2": 291.27,
+   "uv_fill": 0.338,
+   "colours": 64,
+   "seconds": 121.3
+  },
+  "Poles": {
+   "size": 512,
+   "ppm": 48.7,
+   "area_m2": 14.3,
+   "uv_fill": 0.129,
+   "colours": 62,
+   "seconds": 11.8
+  },
+  "Fence": {
+   "size": 256,
+   "ppm": 51.3,
+   "area_m2": 3.53,
+   "uv_fill": 0.142,
+   "colours": 64,
+   "seconds": 2.8
+  }
+ },
+ "part_boxes": 1,
+ "tris": 26382,
+ "tris_by_object": {
+  "Crates": 1156,
+  "FenceChain": 60,
+  "Forest_Wires": 2936,
+  "Hatch": 996,
+  "Helipad": 3606,
+  "IX_HatchLid_94": 296,
+  "LightPole": 546,
+  "LogPile": 1052,
+  "OldFence": 76,
+  "OldFence_b": 76,
+  "OldFence_c": 88,
+  "PowerPole": 1014,
+  "RadioMast": 14480
+ },
+ "objects": 13,
+ "materials": [
+  "M_Base_Barbed",
+  "M_Base_ChainLink",
+  "M_Base_Fence",
+  "M_Base_Helipad",
+  "M_Base_Mast",
+  "M_Base_Panel",
+  "M_Base_Poles",
+  "M_Base_Props",
+  "M_Base_Rust",
+  "M_Cable",
+  "M_Enamel",
+  "M_Galvanized",
+  "M_Lamp_SodiumOff",
+  "M_Lamp_WarmOff",
+  "M_Light_Red"
+ ],
+ "u3_tris": {
+  "Hatch": 950,
+  "Helipad": 1944,
+  "RadioMast": 10366,
+  "Crates": 460,
+  "LogPile": 252,
+  "LightPole": 252,
+  "PowerPole": 124,
+  "FenceChain": 70,
+  "OldFence": 68,
+  "OldFence_b": 68,
+  "OldFence_c": 68,
+  "Forest_Wires": 960
+ }
+}

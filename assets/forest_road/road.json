@@ -1,0 +1,111 @@
+{
+ "coplanar_separated": 33,
+ "coplanar_moved_mm": {
+  "ZoneGate": {
+   "n": 10,
+   "max": 1.73
+  },
+  "Bridge30": {
+   "n": 11,
+   "max": 1.8
+  },
+  "OverlookDeck": {
+   "n": 12,
+   "max": 0.8
+  }
+ },
+ "atlases": {
+  "Signs": {
+   "size": 512,
+   "ppm": 51.3,
+   "area_m2": 21.11,
+   "uv_fill": 0.212,
+   "colours": 64,
+   "seconds": 11.0
+  },
+  "Gate": {
+   "size": 512,
+   "ppm": 51.3,
+   "area_m2": 26.01,
+   "uv_fill": 0.261,
+   "colours": 64,
+   "seconds": 13.3
+  },
+  "Bridge": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 963.63,
+   "uv_fill": 0.605,
+   "colours": 64,
+   "seconds": 598.2
+  },
+  "Deck": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 100.09,
+   "uv_fill": 0.251,
+   "colours": 64,
+   "seconds": 41.3
+  },
+  "Windfall": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 74.71,
+   "uv_fill": 0.187,
+   "colours": 64,
+   "seconds": 36.8
+  }
+ },
+ "tris": 31013,
+ "tris_by_object": {
+  "Bridge30": 14442,
+  "Dist_03": 436,
+  "Dist_07": 436,
+  "Dist_09": 436,
+  "Dist_11": 436,
+  "Dist_23": 436,
+  "EuroPost": 70,
+  "FallenTree": 5313,
+  "LogCut": 266,
+  "OverlookDeck": 3772,
+  "Sign_Lookout": 436,
+  "Sign_Observatory": 436,
+  "Sign_Pump": 436,
+  "Sign_Radar": 436,
+  "Sign_Relay": 436,
+  "Sign_Viewpoint": 436,
+  "Sign_Weather": 436,
+  "ZoneGate": 1918
+ },
+ "objects": 18,
+ "materials": [
+  "M_Reflector",
+  "M_Road_Barbed",
+  "M_Road_Bridge",
+  "M_Road_ChainLink",
+  "M_Road_Deck",
+  "M_Road_Gate",
+  "M_Road_Panel",
+  "M_Road_Signs",
+  "M_Road_Windfall"
+ ],
+ "u3_tris": {
+  "ZoneGate": 560,
+  "Sign_Observatory": 118,
+  "Sign_Forsthuette": 134,
+  "Sign_Viewpoint": 134,
+  "Dist_11": 118,
+  "Hochsitz": 1500,
+  "Bridge30": 5804,
+  "OverlookDeck": 1488,
+  "Dist_09": 118,
+  "Dist_07": 118,
+  "Dist_23": 118,
+  "Dist_03": 118,
+  "Sign_Weather": 134,
+  "Sign_Lookout": 134,
+  "Sign_Pump": 134,
+  "Sign_Radar": 134,
+  "Sign_Relay": 134
+ }
+}

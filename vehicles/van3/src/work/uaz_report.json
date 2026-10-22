@@ -1,0 +1,414 @@
+{
+ "objects": 12,
+ "meshes": 12,
+ "tris": 59214,
+ "bbox_min": [
+  -1.329,
+  -2.495,
+  -2.572
+ ],
+ "bbox_max": [
+  1.329,
+  2.457,
+  2.541
+ ],
+ "size": [
+  2.658,
+  4.952,
+  5.112
+ ],
+ "mesh_rows": [
+  {
+   "name": "Kuzov",
+   "parent": "",
+   "tris": 19977,
+   "mats": [
+    "kuzov",
+    "rezina",
+    "Steklo",
+    "metalChern",
+    "f1",
+    "stf",
+    "pov",
+    "st"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -1.12,
+    -2.495,
+    -0.053
+   ],
+   "bmax": [
+    1.121,
+    2.457,
+    2.163
+   ]
+  },
+  {
+   "name": "Wheel",
+   "parent": "",
+   "tris": 8046,
+   "mats": [
+    "rezina",
+    "disk"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    0.756,
+    0.979,
+    -0.231
+   ],
+   "bmax": [
+    1.116,
+    1.731,
+    0.504
+   ]
+  },
+  {
+   "name": "Wheel.001",
+   "parent": "",
+   "tris": 8046,
+   "mats": [
+    "rezina",
+    "disk"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    0.756,
+    -1.758,
+    -0.231
+   ],
+   "bmax": [
+    1.116,
+    -1.006,
+    0.504
+   ]
+  },
+  {
+   "name": "Wheel.002",
+   "parent": "",
+   "tris": 8046,
+   "mats": [
+    "rezina",
+    "disk"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -1.119,
+    -1.758,
+    -0.231
+   ],
+   "bmax": [
+    -0.76,
+    -1.006,
+    0.504
+   ]
+  },
+  {
+   "name": "Wheel.003",
+   "parent": "",
+   "tris": 8046,
+   "mats": [
+    "rezina",
+    "disk"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -1.119,
+    0.979,
+    -0.231
+   ],
+   "bmax": [
+    -0.76,
+    1.731,
+    0.504
+   ]
+  },
+  {
+   "name": "doorL",
+   "parent": "Kuzov",
+   "tris": 2401,
+   "mats": [
+    "kuzov",
+    "metalChern",
+    "rezina",
+    "zerkalo",
+    "Steklo"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    0.944,
+    0.377,
+    0.995
+   ],
+   "bmax": [
+    1.329,
+    1.905,
+    2.099
+   ]
+  },
+  {
+   "name": "doorP",
+   "parent": "Kuzov",
+   "tris": 2401,
+   "mats": [
+    "kuzov",
+    "metalChern",
+    "rezina",
+    "zerkalo",
+    "Steklo"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -1.329,
+    0.377,
+    0.995
+   ],
+   "bmax": [
+    -0.944,
+    1.905,
+    2.099
+   ]
+  },
+  {
+   "name": "dooZP",
+   "parent": "Kuzov",
+   "tris": 653,
+   "mats": [
+    "kuzov",
+    "metalChern",
+    "rezina",
+    "Steklo"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -0.809,
+    0.583,
+    -2.522
+   ],
+   "bmax": [
+    -0.0,
+    1.872,
+    -2.28
+   ]
+  },
+  {
+   "name": "bumpZ",
+   "parent": "Kuzov",
+   "tris": 588,
+   "mats": [
+    "metalChern",
+    "metalChern",
+    "metalChern"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -1.097,
+    0.316,
+    -2.572
+   ],
+   "bmax": [
+    1.102,
+    0.557,
+    -2.155
+   ]
+  },
+  {
+   "name": "doorZL",
+   "parent": "Kuzov",
+   "tris": 512,
+   "mats": [
+    "kuzov",
+    "metalChern",
+    "rezina",
+    "Steklo"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    0.001,
+    0.583,
+    -2.488
+   ],
+   "bmax": [
+    0.809,
+    1.872,
+    -2.28
+   ]
+  },
+  {
+   "name": "bumpP",
+   "parent": "Kuzov",
+   "tris": 476,
+   "mats": [
+    "metalChern"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -1.038,
+    0.425,
+    1.998
+   ],
+   "bmax": [
+    1.038,
+    0.557,
+    2.541
+   ]
+  },
+  {
+   "name": "lob",
+   "parent": "Kuzov",
+   "tris": 22,
+   "mats": [
+    "Steklo"
+   ],
+   "uv": [
+    "UVChannel_1"
+   ],
+   "bmin": [
+    -0.899,
+    1.344,
+    1.788
+   ],
+   "bmax": [
+    0.899,
+    1.862,
+    2.238
+   ]
+  }
+ ],
+ "materials": [
+  {
+   "name": "metalChern",
+   "maps": {},
+   "color": [
+    0.022,
+    0.022,
+    0.022
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "kuzov",
+   "maps": {},
+   "color": [
+    0.282,
+    0.282,
+    0.282
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "rezina",
+   "maps": {},
+   "color": [
+    0.039,
+    0.039,
+    0.039
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "zerkalo",
+   "maps": {},
+   "color": [
+    0.992,
+    0.992,
+    0.992
+   ],
+   "alpha": 0.832,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "Steklo",
+   "maps": {},
+   "color": [
+    0.022,
+    0.022,
+    0.022
+   ],
+   "alpha": 0.832,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "f1",
+   "maps": {},
+   "color": [
+    0.129,
+    0.129,
+    0.129
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "stf",
+   "maps": {},
+   "color": [
+    0.129,
+    0.129,
+    0.129
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "pov",
+   "maps": {},
+   "color": [
+    0.412,
+    0.098,
+    0.0
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "st",
+   "maps": {},
+   "color": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  },
+  {
+   "name": "disk",
+   "maps": {},
+   "color": [
+    0.129,
+    0.129,
+    0.129
+   ],
+   "alpha": 1.0,
+   "blend": "DITHERED"
+  }
+ ],
+ "images": []
+}

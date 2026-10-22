@@ -1,0 +1,142 @@
+{
+ "cmp_gate_a": {
+  "prefab": "ZoneGate",
+  "eye": [
+   6.0,
+   -9.5,
+   3.0
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   1.3
+  ],
+  "lens": 30
+ },
+ "cmp_gate_b": {
+  "prefab": "ZoneGate",
+  "eye": [
+   -6.5,
+   9.0,
+   3.2
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   1.3
+  ],
+  "lens": 30
+ },
+ "cmp_obs_a": {
+  "prefab": "Sign_Observatory",
+  "eye": [
+   1.6,
+   -5.2,
+   1.9
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   1.15
+  ],
+  "lens": 30
+ },
+ "cmp_obs_b": {
+  "prefab": "Sign_Observatory",
+  "eye": [
+   -2.4,
+   4.4,
+   2.1
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   1.15
+  ],
+  "lens": 30
+ },
+ "cmp_dist_a": {
+  "prefab": "Dist_11",
+  "eye": [
+   1.2,
+   -4.0,
+   1.6
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   0.95
+  ],
+  "lens": 30
+ },
+ "cmp_view_a": {
+  "prefab": "Sign_Viewpoint",
+  "eye": [
+   1.1,
+   -3.8,
+   1.6
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   0.95
+  ],
+  "lens": 30
+ },
+ "cmp_bridge_a": {
+  "prefab": "Bridge30",
+  "eye": [
+   15.0,
+   -27.0,
+   5.0
+  ],
+  "tgt": [
+   0.0,
+   0.0,
+   -3.8
+  ],
+  "lens": 28
+ },
+ "cmp_bridge_b": {
+  "prefab": "Bridge30",
+  "eye": [
+   -9.0,
+   9.5,
+   1.9
+  ],
+  "tgt": [
+   2.0,
+   0.0,
+   0.4
+  ],
+  "lens": 24
+ },
+ "cmp_deck_a": {
+  "prefab": "OverlookDeck",
+  "eye": [
+   5.5,
+   -6.5,
+   3.0
+  ],
+  "tgt": [
+   0.0,
+   1.6,
+   0.6
+  ],
+  "lens": 28
+ },
+ "cmp_deck_b": {
+  "prefab": "OverlookDeck",
+  "eye": [
+   -5.5,
+   8.5,
+   2.6
+  ],
+  "tgt": [
+   0.0,
+   1.8,
+   0.3
+  ],
+  "lens": 28
+ }
+}

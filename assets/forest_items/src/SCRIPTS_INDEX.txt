@@ -1,0 +1,31 @@
+bld_common.py                            Shared build steps for the station's buildings (lifted from main_build.py so the garage and the next locations use the
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+items_build.py                           Forest items (Update 6) build: items_kit's 84 KBs -> one object per item with its origin at Update 3's origin (the
+items_kit.py                             Forest items (Update 6): the 83 small things of Update 3 (Item_*) rebuilt in the generator shed's look, and the control
+items_paint.py                           Painter for the Forest items' atlas Props (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n]).
+items_tex.py                             Panel atlas of the Forest items (Update 6): the printed and written surfaces of the 84 small things (papers, labels,
+kpp_tex.py                               Panel atlas of the checkpoint (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the chain-link tile:
+main_spec.py                             Main building (BaseMain) — the layout, measured off the Update 3 model on the Forest map (Models/BaseMain.fbx, the
+main_tex.py                              Panel atlas of the main building (1024 x 1024, pixel art, point-filtered): every sign, label, plan, dial and paper of
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
+make_sheets_u6.py                        Sheets of Forest Update 6: the generator container (A outside, B inside, C Update 3 and now, D atlases), the items (A..D
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_u6.py                               Package the three asset batches of Forest Update 6 the way the base / far batches are packed: the .blend with relative
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+road_spec.py                             The Forest map's road prefabs (the prologue road from the SPERRGEBIET gate to the observatory) - Update 3's data and the
+road_tex.py                              Panel atlas of the road prefabs (512 x 512, pixel art, point-filtered): the sign faces at a reading density (160 px/m;
+u6_items_cmp.py                          Update 3 and now for a dozen items: the same camera for both (framed on the union of their boxes); Update 3's FBX come
+u6_radio.py                              Forest Update 6: where the control room's radio set (Item_RadioSet, scare X08) stands - on the writing shelf of the west
+uvpack.py                                Shelf packing of UV islands by their bounding boxes (the main building's walls, strips and boxes are rectangles:
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+yard_tex.py                              Panel atlas of the station yard (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the alpha tiles:
+checks/item_sheet2.py                    contact sheet of the items in a blend: python3 item_sheet.py -- <blend> <out.jpg> [cull] [texture]
+checks/label_check.py                    for every printed face (panel material) of every item: is it visible, or does the body poke through it?
+checks/radio_check.py                    the radio set on the Leitstand console: overlaps with the room, renders. python3 -I radio_check.py -- <main.blend> <items.blend> <x> <y> <z> <out_dir>
+checks/shape_cmp.py                      area-weighted centroid and coarse occupancy of each item: Update 3's FBX vs the new blend

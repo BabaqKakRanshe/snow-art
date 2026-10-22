@@ -1,0 +1,50 @@
+gen_build.py                             Generator shed build: gen_kit / gen_set / gen_room geometry -> one object per part with its pivot as the origin,
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_lights.py                            Generator shed lighting (the plane v11 / van method): an emission diagram per lamp type gives the IES profile
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_render.py                            Preview renders of the generator shed (out/gen.blend posed from out/gen_contract.json): exterior day / night / snow,
+gen_room.py                              Generator shed kit, part 3: the switchboard (cabinet, door with a latch and the circuit card, meters, lamps, kWh
+gen_set.py                               Generator shed kit, part 2: the old diesel generating set on its skid and its control panel.
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+ies_lm63.py                              Minimal IES LM-63-2002 writer (type C photometry, absolute candela, metres).
+make_gen_doc.py                          Russian reference for the generator shed contract: out/gen_contract.json + out/gen_lights.json -> docs/GEN_CONTRACT.md
+make_sheets_gen.py                       Sheets for the generator shed: A outside and inside, B the mechanics up close, C points, colliders, textures, light.
+make_sheets_van2.py                      Sheets for the van v2: A exterior (less of a 'bukhanka'), B dashboard in the plane's style, C folding troop seats,
+make_sheets_van3.py                      Sheets for the van v3 (phase 1 of the mechanics): A what opens, B engine, C electrics and controls, D fuel.
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_gen.py                              Package the generator shed: the .blend with relative texture paths, textures, IES / cookies, the interaction
+post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+van_lights.py                            Van v2 lighting, single source of truth (the Utility Plane v11 method):
+checks/buried.py                         
+checks/detail.py                         Focused checks: door meeting-edge clash (fine sweep), Board_Door vs cabinet, shutter at 180, buried parts (containment).
+checks/docs_check.py                     
+checks/drift.py                          
+checks/hier.py                           
+checks/islands.py                        Floating islands: every connected component (shared vertices) of every mesh; report those that neither intersect nor
+checks/labels.py                         Texture labels vs 3D controls: text boxes from gen_tex (pxfont.BOXES) mapped through the face quads' real UVs into the
+checks/misc.py                           
+checks/probe.py                          
+checks/probe2.py                         
+checks/probe_coplanar.py                 coplanar same-facing overlapping faces in out/gen.blend (z-fighting and black AO patches in the bake)
+checks/probe_gen.py                      sanity probe of out/gen.blend + out/gen_contract.json: pivots, axes, sockets, sweeps of the moving parts, colliders
+checks/probe_inverted.py                 islands with a negative signed volume (faces pointing inwards) in out/gen.blend
+checks/probe_ring.py                     
+checks/probe_snow.py                     
+checks/probe_uv.py                       
+checks/protrude.py                       
+checks/pycdiff.py                        
+checks/rays.py                           Ray probes: back-face hits (inverted / single-sided faces seen from the wrong side -> invisible in Unity with culling)
+checks/run_misc.py                       
+checks/seams.py                          
+checks/snowroof.py                       
+checks/sweep.py                          Sweep every moving part through its range and report new interpenetrations (BVH triangle overlap) vs rest.
+checks/verify_gen_pkg.py                 open the packaged generator shed from a clean unzip: every image resolves inside the package, the contract and lamps
+checks/walk.py                           Walkability with the contract colliders: capsule r 0.30, h 1.80, step 0.30 (boxes entirely below floor+step ignored).
+checks/zfight.py                         Coplanar, same-facing, overlapping triangles (z-fighting candidates) between different primitives / objects.
+checks/zfight2.py                        z-fighting candidates that are actually exposed: sample points inside the overlap of coplanar same-facing triangles

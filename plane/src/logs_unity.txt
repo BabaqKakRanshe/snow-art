@@ -1,0 +1,28 @@
+tex Airframe
+tex Details
+tex Cockpit
+02:55.034  blend            | Read blend: "/home/claude/plane/out/plane_v2_final_final4.blend"
+volumes 43
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/UtilityPlane.fbx'
+export finished in 0.5152 sec.
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/SM_Cargo_Case1.fbx'
+export finished in 0.0063 sec.
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/SM_Cargo_Case2.fbx'
+export finished in 0.0059 sec.
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/SM_Cargo_Case3.fbx'
+export finished in 0.0063 sec.
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/SM_Cargo_Case4.fbx'
+export finished in 0.0065 sec.
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/SM_Cargo_Case5.fbx'
+export finished in 0.0055 sec.
+
+FBX export starting... '/home/claude/plane/export/unity_v4/Assets/UtilityPlane/Models/SM_Cargo_Case6.fbx'
+export finished in 0.0054 sec.
+Info: Saved as "plane_unity_v4.blend"
+UNITY objects 228 render polys 39746 colliders 37

@@ -1,0 +1,13 @@
+Source model / Исходная модель
+"Uaz" by tiunov.se — https://sketchfab.com/3d-models/uaz-3080f4e871df449796f9064d6516701a
+Licensed under Creative Commons Attribution 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/
+
+Changes / Изменения:
+- reassembled (doors, bumpers and windshield were offset in the FBX), scaled to a real UAZ-452 (body 4.36 m),
+  nose along +X, ground at Z = 0;
+- saloon ceiling lining raised to 3.5 cm under the roof skin (1.25 m of headroom over the floor);
+- all surfaces repainted and converted to PS1/PSX textures (6 atlases, 64 colours each, Bayer 4x4, no normal maps);
+- cozy kit added (wood stove with a flue, wood box, table, pendant lamp, curtains, cargo, felt boots, first-aid kit).
+
+Credit line for the game / Строка для титров:
+"UAZ" 3D model by tiunov.se (Sketchfab), CC BY 4.0, modified.

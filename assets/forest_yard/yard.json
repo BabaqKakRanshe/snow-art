@@ -1,0 +1,103 @@
+{
+ "knock_points": 21,
+ "part_boxes": 2,
+ "atlases": {
+  "Tanks": {
+   "size": 1024,
+   "ppm": 50.0,
+   "area_m2": 234.56,
+   "uv_fill": 0.56,
+   "colours": 64
+  },
+  "Trafo": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 76.02,
+   "uv_fill": 0.191,
+   "colours": 64
+  },
+  "YardProps": {
+   "size": 256,
+   "ppm": 64.0,
+   "area_m2": 1.69,
+   "uv_fill": 0.106,
+   "colours": 64
+  }
+ },
+ "ppm_parts": {
+  "tanks (shells, heads, saddles)": 54.9,
+  "bund walls": 54.8,
+  "bund floor": 32.9,
+  "transformer": 51.2,
+  "pole": 50.8,
+  "pad": 51.9
+ },
+ "placement": {
+  "FuelTanks": {
+   "p": [
+    403.0346,
+    16.3273,
+    -342.6034
+   ],
+   "q": [
+    0.0,
+    -0.656059,
+    0.0,
+    0.75471
+   ],
+   "yawUnity": -82.0
+  },
+  "Trafo": {
+   "p": [
+    392.0185,
+    16.2829,
+    -349.1338
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ],
+   "yawUnity": 8.0
+  }
+ },
+ "contract": {
+  "parts": 14,
+  "sockets": 37,
+  "colliders": 37,
+  "kinds": {
+   "hinge": 2,
+   "static": 12
+  }
+ },
+ "tris": 16234,
+ "tris_by_atlas": {
+  "Tanks": 6818,
+  "YardProps": 2550,
+  "panel": 32,
+  "Trafo": 6786,
+  "barbed": 24,
+  "chainlink": 24
+ },
+ "tris_by_root": {
+  "FuelTanks": 8816,
+  "Trafo": 7418
+ },
+ "objects": [
+  "FuelTanks",
+  "FuelTanks_Props",
+  "FuelTanks_Signs",
+  "IX_PumpLever_301",
+  "IX_TrafoGate_91",
+  "IX_TrafoGate_91_Barbed",
+  "IX_TrafoGate_91_Mesh",
+  "IX_TrafoGate_91_Sign",
+  "Pump",
+  "Trafo",
+  "Trafo_Fence_Barbed",
+  "Trafo_Fence_Mesh",
+  "Trafo_Props",
+  "Trafo_Signs"
+ ]
+}

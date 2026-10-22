@@ -1,0 +1,2461 @@
+{
+ "parts": {
+  "IX_HutDoor_1": {
+   "kind": "hinge",
+   "pivot": [
+    -0.812,
+    -1.27,
+    1.26
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    105
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "plank door, opens outward (+); open at the start of the prologue (the hut is empty, the lantern burns); same name, hinge side and range as the Update 3 hut",
+   "object": "IX_HutDoor_1",
+   "box": {
+    "center": [
+     0.4205,
+     0.0265,
+     0.0
+    ],
+    "size": [
+     0.863,
+     0.1571,
+     1.88
+    ]
+   }
+  },
+  "Window_Glass": {
+   "kind": "static",
+   "pivot": [
+    1.28,
+    0.0,
+    1.53
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [],
+   "note": "window pane (glass material, both faces)",
+   "object": "Window_Glass"
+  },
+  "Window_Shutter": {
+   "kind": "hinge",
+   "pivot": [
+    1.185,
+    -0.33,
+    1.546
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "open (on the wall)",
+    "closed"
+   ],
+   "note": "inside board shutter: 0 = folded open on the wall toward the door, 180 = over the window; Window_Latch holds it",
+   "object": "Window_Shutter",
+   "box": {
+    "center": [
+     0.0,
+     -0.3265,
+     0.0
+    ],
+    "size": [
+     0.06,
+     0.6669,
+     0.528
+    ]
+   }
+  },
+  "Window_Latch": {
+   "kind": "hinge",
+   "pivot": [
+    1.185,
+    0.38,
+    1.53
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "free",
+    "holding the shutter"
+   ],
+   "note": "turn-button on the wall behind the window: 90 = across the closed shutter edge",
+   "object": "Window_Latch",
+   "box": {
+    "center": [
+     -0.0105,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.019,
+     0.024,
+     0.16
+    ]
+   }
+  },
+  "Stove_Door": {
+   "kind": "hinge",
+   "pivot": [
+    0.79,
+    0.55,
+    0.665
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "fire door: open (+) to lay wood and light it (Slot_Stove_Fire); fire glow through the slots when lit",
+   "object": "Stove_Door",
+   "box": {
+    "center": [
+     0.15,
+     -0.0305,
+     0.0
+    ],
+    "size": [
+     0.28,
+     0.0769,
+     0.27
+    ]
+   }
+  },
+  "Stove_Damper": {
+   "kind": "hinge",
+   "pivot": [
+    0.94,
+    0.76,
+    1.42
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "open",
+    "shut"
+   ],
+   "note": "flue damper: 0 = open (the flat grip upright, in line with the pipe), 90 = shut (grip across: the fire chokes, smoke comes into the room)",
+   "object": "Stove_Damper",
+   "box": {
+    "center": [
+     -0.112,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.096,
+     0.0104,
+     0.044
+    ]
+   }
+  },
+  "Kettle": {
+   "kind": "item",
+   "pivot": [
+    1.0,
+    0.8,
+    0.988
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "on the stove",
+    "carried"
+   ],
+   "note": "enamel kettle (1.5 l): fill at the rain barrel, boil on the stove",
+   "object": "Kettle",
+   "box": {
+    "center": [
+     -0.0417,
+     0.0,
+     0.1213
+    ],
+    "size": [
+     0.2833,
+     0.2,
+     0.2425
+    ]
+   }
+  },
+  "Hut_Panel": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    1.08,
+    1.9
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [],
+   "note": "area map with the observatory circled (back wall over the bunk) and the October calendar, days crossed out to the 16th (panel atlas)",
+   "object": "Hut_Panel"
+  },
+  "Lantern": {
+   "kind": "static",
+   "pivot": [
+    0.4,
+    -1.46,
+    2.065
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [],
+   "note": "storm lantern (kerosene) on its hook right of the door: burns at the start (seen from the car between the trees, 92 m); goes out for good when Jerrycan_Hut is picked up (X01)",
+   "object": "Lantern"
+  },
+  "Lens_Lantern": {
+   "kind": "static",
+   "pivot": [
+    0.4,
+    -1.46,
+    1.9
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lantern",
+   "states": [],
+   "note": "glass globe of the storm lantern: M_Hut_Lamp_Lantern while it burns, M_Hut_Lamp_Lantern_Off after X01",
+   "object": "Lens_Lantern"
+  },
+  "Glow_Lantern": {
+   "kind": "static",
+   "pivot": [
+    0.4,
+    -1.46,
+    1.9
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lantern",
+   "states": [],
+   "note": "halo cards round the flame (three crossed quads): additive, unlit, no shadows (as M_Glow_Lantern in U3); hidden when the lantern goes out (X01)",
+   "object": "Glow_Lantern"
+  },
+  "Lamp_Oil": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    2.36
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [],
+   "note": "kerosene lamp under the ridge, off at the start (LIGHT_OilLamp, group hut)",
+   "object": "Lamp_Oil"
+  },
+  "Lens_OilLamp": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    2.36
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Oil",
+   "states": [],
+   "note": "glass chimney of the oil lamp (glows with LIGHT_OilLamp)",
+   "object": "Lens_OilLamp"
+  },
+  "Axe": {
+   "kind": "item",
+   "pivot": [
+    -1.06,
+    -2.57,
+    0.45
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [
+    "in the block",
+    "carried"
+   ],
+   "note": "axe stuck in the chopping block: pull it out (hold), split wood with it; no weapon use",
+   "object": "Axe",
+   "box": {
+    "center": [
+     0.0,
+     0.2798,
+     -0.1788
+    ],
+    "size": [
+     0.0411,
+     0.6552,
+     0.4729
+    ]
+   }
+  },
+  "Hut_Props": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TowerHut",
+   "states": [],
+   "note": "small things: tins, jar, box, bottle, rope (shelves), candle, mug (table), jacket and hat (hooks), boots, antlers",
+   "object": "Hut_Props"
+  },
+  "Sign_Forsthuette": {
+   "kind": "static",
+   "pivot": [
+    1.6,
+    -3.2,
+    0.0669
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "FORSTHÜTTE / FORESTER'S HUT sign at the path (separate root: the map's Sign_Forsthuette prefab, same place)",
+   "yaw": 0.0,
+   "object": "Sign_Forsthuette"
+  },
+  "Sign_Forsthuette_Text": {
+   "kind": "static",
+   "pivot": [
+    1.6,
+    -3.219,
+    1.6169
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Sign_Forsthuette",
+   "states": [],
+   "note": "sign face (panel atlas)",
+   "yaw": 0.0,
+   "object": "Sign_Forsthuette_Text"
+  },
+  "Hochsitz": {
+   "kind": "static",
+   "pivot": [
+    11.0401,
+    2.473,
+    0.5053
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "hunting stand 11 m behind the hut (separate root: the map's Hochsitz prefab, same place); platform at 3.8 m, closed cabin with a viewing slot on three sides, the door and the ladder on its -y side",
+   "yaw": -102.374,
+   "object": "Hochsitz"
+  },
+  "TowerHut": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the hut: piers, sill, floor, walls with the door and window openings, gables, roof, trims, stove and flue, furniture, the woodpile, barrel, chopping block, bench, ladder; prefab root (the map's TowerHut prefab, same place)",
+   "object": "TowerHut"
+  }
+ },
+ "sockets": {
+  "Hand_Door_Out": {
+   "pos": [
+    -0.05,
+    -1.325,
+    1.11
+   ],
+   "kind": "hand",
+   "parent": "IX_HutDoor_1",
+   "note": "iron pull outside"
+  },
+  "Hand_Door_In": {
+   "pos": [
+    -0.05,
+    -1.16,
+    1.11
+   ],
+   "kind": "hand",
+   "parent": "IX_HutDoor_1",
+   "note": "wooden handle inside"
+  },
+  "Hand_Window_Shutter": {
+   "pos": [
+    1.145,
+    -0.93,
+    1.546
+   ],
+   "kind": "hand",
+   "parent": "Window_Shutter",
+   "note": ""
+  },
+  "Hand_Window_Latch": {
+   "pos": [
+    1.165,
+    0.38,
+    1.57
+   ],
+   "kind": "hand",
+   "parent": "Window_Latch",
+   "note": ""
+  },
+  "Hand_Stove_Door": {
+   "pos": [
+    1.05,
+    0.478,
+    0.665
+   ],
+   "kind": "hand",
+   "parent": "Stove_Door",
+   "note": ""
+  },
+  "Slot_Stove_Fire": {
+   "pos": [
+    0.94,
+    0.76,
+    0.58
+   ],
+   "kind": "item_slot",
+   "parent": "TowerHut",
+   "note": "firewood and kindling go in here (door open)"
+  },
+  "Hand_Stove_Damper": {
+   "pos": [
+    0.795,
+    0.76,
+    1.42
+   ],
+   "kind": "hand",
+   "parent": "Stove_Damper",
+   "note": ""
+  },
+  "Hand_Kettle": {
+   "pos": [
+    1.0,
+    0.8,
+    1.228
+   ],
+   "kind": "hand",
+   "parent": "Kettle",
+   "note": ""
+  },
+  "Pour_Barrel": {
+   "pos": [
+    -1.66,
+    1.4,
+    0.76
+   ],
+   "kind": "pour",
+   "parent": "TowerHut",
+   "note": "rain water: fill the kettle or a can here"
+  },
+  "Hand_Axe": {
+   "pos": [
+    -1.06,
+    -2.0551,
+    0.1046
+   ],
+   "kind": "hand",
+   "parent": "Axe",
+   "note": ""
+  },
+  "Ladder_Roof_Bottom": {
+   "pos": [
+    2.2996,
+    -0.8,
+    0.0
+   ],
+   "kind": "climb",
+   "parent": "TowerHut",
+   "note": "roof ladder foot (right side, by the window)"
+  },
+  "Ladder_Roof_Top": {
+   "pos": [
+    1.669,
+    -0.8,
+    2.3535
+   ],
+   "kind": "climb",
+   "parent": "TowerHut",
+   "note": "step onto the roof here (the stove pipe, snow)"
+  },
+  "Hide_Hochsitz": {
+   "pos": [
+    11.3331,
+    2.4087,
+    4.6453
+   ],
+   "kind": "hide",
+   "parent": "Hochsitz",
+   "note": "crouched in the cabin under the slot: not seen from the ground",
+   "pose": "crouch",
+   "eye": [
+    11.2355,
+    2.4301,
+    5.0953
+   ],
+   "facing": [
+    -0.9768,
+    0.2143,
+    0.0
+   ]
+  },
+  "Seat_Hochsitz": {
+   "pos": [
+    11.7629,
+    2.3144,
+    4.8053
+   ],
+   "kind": "seat",
+   "parent": "Hochsitz",
+   "note": "bench under the slot: seated eye at the slot (looks out over +y and the sides)",
+   "eye": [
+    11.7434,
+    2.3187,
+    5.5253
+   ],
+   "facing": [
+    0.9768,
+    -0.2143,
+    0.0
+   ]
+  },
+  "Ladder_Hochsitz_Bottom": {
+   "pos": [
+    8.481,
+    3.0344,
+    0.4553
+   ],
+   "kind": "climb",
+   "parent": "Hochsitz",
+   "note": "ladder foot"
+  },
+  "Ladder_Hochsitz_Top": {
+   "pos": [
+    10.0829,
+    2.683,
+    4.3453
+   ],
+   "kind": "climb",
+   "parent": "Hochsitz",
+   "note": "ladder top at the cabin door"
+  },
+  "Spot_Jerrycan": {
+   "pos": [
+    -0.99,
+    -0.52,
+    0.33
+   ],
+   "kind": "item_slot",
+   "parent": "TowerHut",
+   "note": "Jerrycan_Hut spawns here (Forest_Opening.json items, same place as in Update 3)"
+  },
+  "Spot_Funnel": {
+   "pos": [
+    -1.05,
+    -0.05,
+    1.092
+   ],
+   "kind": "item_slot",
+   "parent": "TowerHut",
+   "note": "Funnel_Hut spawns here (Forest_Opening.json items, same place as in Update 3)"
+  },
+  "Spot_Flashlight": {
+   "pos": [
+    0.9,
+    -0.24,
+    1.08
+   ],
+   "kind": "item_slot",
+   "parent": "TowerHut",
+   "note": "Flashlight_Hut spawns here (Forest_Opening.json items, same place as in Update 3)"
+  },
+  "Spot_Note": {
+   "pos": [
+    0.88,
+    0.1,
+    1.08
+   ],
+   "kind": "item_slot",
+   "parent": "TowerHut",
+   "note": "Note_Hut spawns here (Forest_Opening.json items, same place as in Update 3)"
+  },
+  "Audio_Lantern": {
+   "pos": [
+    0.4,
+    -1.46,
+    1.9
+   ],
+   "kind": "audio",
+   "parent": "TowerHut",
+   "note": "lantern: hiss of the flame, the bail creaking in the wind"
+  },
+  "Audio_Stove": {
+   "pos": [
+    0.94,
+    0.76,
+    0.7
+   ],
+   "kind": "audio",
+   "parent": "TowerHut",
+   "note": "stove: crackling, ticking iron as it heats and cools"
+  },
+  "Audio_Roof": {
+   "pos": [
+    0.0,
+    0.0,
+    3.1
+   ],
+   "kind": "audio",
+   "parent": "TowerHut",
+   "note": "tin roof: rain, needles and cones, branches scraping, steps up there"
+  },
+  "Audio_Door": {
+   "pos": [
+    -0.78,
+    -1.25,
+    1.2
+   ],
+   "kind": "audio",
+   "parent": "TowerHut",
+   "note": "door: hinges creaking, slamming in the wind"
+  },
+  "Audio_Window": {
+   "pos": [
+    1.34,
+    0.0,
+    1.5
+   ],
+   "kind": "audio",
+   "parent": "TowerHut",
+   "note": "window: wind at the frame, tapping on the glass"
+  },
+  "VFX_Chimney": {
+   "pos": [
+    0.94,
+    0.76,
+    3.82
+   ],
+   "kind": "vfx",
+   "parent": "TowerHut",
+   "note": "smoke from the stove pipe while the stove burns",
+   "dir": [
+    0,
+    0,
+    1
+   ]
+  },
+  "VFX_StoveGlow": {
+   "pos": [
+    0.94,
+    0.53,
+    0.66
+   ],
+   "kind": "vfx",
+   "parent": "TowerHut",
+   "note": "fire glow through the door slots (and the open door)",
+   "dir": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "VFX_LanternMoths": {
+   "pos": [
+    0.4,
+    -1.56,
+    1.95
+   ],
+   "kind": "vfx",
+   "parent": "TowerHut",
+   "note": "moths round the lantern (warm nights)"
+  },
+  "Hide_Woodpile": {
+   "pos": [
+    -1.89,
+    0.85,
+    0.3
+   ],
+   "kind": "hide",
+   "parent": "TowerHut",
+   "note": "crouched behind the woodpile at the back corner: not seen from the path",
+   "pose": "crouch",
+   "eye": [
+    -1.89,
+    0.8,
+    0.86
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Knock_WallF_1": {
+   "pos": [
+    0.9,
+    -1.205,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallF_2": {
+   "pos": [
+    1.15,
+    -1.205,
+    0.75
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallB_1": {
+   "pos": [
+    -0.8,
+    1.205,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallB_2": {
+   "pos": [
+    0.0,
+    1.205,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallB_3": {
+   "pos": [
+    0.8,
+    1.205,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallR_1": {
+   "pos": [
+    1.345,
+    -0.45,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallR_2": {
+   "pos": [
+    1.345,
+    0.75,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallL_1": {
+   "pos": [
+    -1.345,
+    -0.8,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallL_2": {
+   "pos": [
+    -1.345,
+    0.2,
+    1.6
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallL_3": {
+   "pos": [
+    -1.345,
+    0.9,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Door": {
+   "pos": [
+    -0.38,
+    -1.273,
+    1.4
+   ],
+   "kind": "knock",
+   "parent": "IX_HutDoor_1",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Window": {
+   "pos": [
+    1.2855,
+    0.12,
+    1.4
+   ],
+   "kind": "knock",
+   "parent": "Window_Glass",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_L": {
+   "pos": [
+    -0.7029,
+    0.0,
+    3.0081
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    -0.5736,
+    0.0,
+    0.8192
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_R": {
+   "pos": [
+    0.5029,
+    -0.4,
+    3.1481
+   ],
+   "kind": "knock",
+   "parent": "TowerHut",
+   "dir": [
+    0.5736,
+    0.0,
+    0.8192
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Floor",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.165
+   ],
+   "size": [
+    2.68,
+    2.4,
+    0.33
+   ],
+   "center_hut": [
+    0.0,
+    0.0,
+    0.165
+   ],
+   "centerUnity": [
+    0.0,
+    0.165,
+    0.0
+   ],
+   "sizeUnity": [
+    2.68,
+    0.33,
+    2.4
+   ]
+  },
+  {
+   "name": "COL_Wall_L",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.28,
+    0.0,
+    1.33
+   ],
+   "size": [
+    0.12,
+    2.4,
+    2.0
+   ],
+   "center_hut": [
+    -1.28,
+    0.0,
+    1.33
+   ],
+   "centerUnity": [
+    1.28,
+    1.33,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    2.0,
+    2.4
+   ]
+  },
+  {
+   "name": "COL_Wall_B",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.0,
+    1.14,
+    1.33
+   ],
+   "size": [
+    2.68,
+    0.12,
+    2.0
+   ],
+   "center_hut": [
+    0.0,
+    1.14,
+    1.33
+   ],
+   "centerUnity": [
+    0.0,
+    1.33,
+    -1.14
+   ],
+   "sizeUnity": [
+    2.68,
+    2.0,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_R_F",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    1.28,
+    -0.75,
+    1.33
+   ],
+   "size": [
+    0.12,
+    0.9,
+    2.0
+   ],
+   "center_hut": [
+    1.28,
+    -0.75,
+    1.33
+   ],
+   "centerUnity": [
+    -1.28,
+    1.33,
+    0.75
+   ],
+   "sizeUnity": [
+    0.12,
+    2.0,
+    0.9
+   ]
+  },
+  {
+   "name": "COL_Wall_R_B",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    1.28,
+    0.75,
+    1.33
+   ],
+   "size": [
+    0.12,
+    0.9,
+    2.0
+   ],
+   "center_hut": [
+    1.28,
+    0.75,
+    1.33
+   ],
+   "centerUnity": [
+    -1.28,
+    1.33,
+    -0.75
+   ],
+   "sizeUnity": [
+    0.12,
+    2.0,
+    0.9
+   ]
+  },
+  {
+   "name": "COL_Wall_R_Low",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    1.28,
+    0.0,
+    0.805
+   ],
+   "size": [
+    0.12,
+    0.6,
+    0.95
+   ],
+   "center_hut": [
+    1.28,
+    0.0,
+    0.805
+   ],
+   "centerUnity": [
+    -1.28,
+    0.805,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    0.95,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Wall_R_High",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    1.28,
+    0.0,
+    2.055
+   ],
+   "size": [
+    0.12,
+    0.6,
+    0.55
+   ],
+   "center_hut": [
+    1.28,
+    0.0,
+    2.055
+   ],
+   "centerUnity": [
+    -1.28,
+    2.055,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    0.55,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Window",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    1.28,
+    0.0,
+    1.53
+   ],
+   "size": [
+    0.12,
+    0.6,
+    0.5
+   ],
+   "center_hut": [
+    1.28,
+    0.0,
+    1.53
+   ],
+   "centerUnity": [
+    -1.28,
+    1.53,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Wall_F_L",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.06,
+    -1.14,
+    1.33
+   ],
+   "size": [
+    0.56,
+    0.12,
+    2.0
+   ],
+   "center_hut": [
+    -1.06,
+    -1.14,
+    1.33
+   ],
+   "centerUnity": [
+    1.06,
+    1.33,
+    1.14
+   ],
+   "sizeUnity": [
+    0.56,
+    2.0,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_F_R",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.68,
+    -1.14,
+    1.33
+   ],
+   "size": [
+    1.32,
+    0.12,
+    2.0
+   ],
+   "center_hut": [
+    0.68,
+    -1.14,
+    1.33
+   ],
+   "centerUnity": [
+    -0.68,
+    1.33,
+    1.14
+   ],
+   "sizeUnity": [
+    1.32,
+    2.0,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_F_Head",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -0.38,
+    -1.14,
+    2.255
+   ],
+   "size": [
+    0.8,
+    0.12,
+    0.15
+   ],
+   "center_hut": [
+    -0.38,
+    -1.14,
+    2.255
+   ],
+   "centerUnity": [
+    0.38,
+    2.255,
+    1.14
+   ],
+   "sizeUnity": [
+    0.8,
+    0.15,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Gable_F",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.14,
+    2.58
+   ],
+   "size": [
+    1.4,
+    0.12,
+    0.5
+   ],
+   "center_hut": [
+    0.0,
+    -1.14,
+    2.58
+   ],
+   "centerUnity": [
+    0.0,
+    2.58,
+    1.14
+   ],
+   "sizeUnity": [
+    1.4,
+    0.5,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Gable_B",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.0,
+    1.14,
+    2.58
+   ],
+   "size": [
+    1.4,
+    0.12,
+    0.5
+   ],
+   "center_hut": [
+    0.0,
+    1.14,
+    2.58
+   ],
+   "centerUnity": [
+    0.0,
+    2.58,
+    -1.14
+   ],
+   "sizeUnity": [
+    1.4,
+    0.5,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Stove",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.94,
+    0.76,
+    0.66
+   ],
+   "size": [
+    0.4,
+    0.4,
+    0.66
+   ],
+   "center_hut": [
+    0.94,
+    0.76,
+    0.66
+   ],
+   "centerUnity": [
+    -0.94,
+    0.66,
+    -0.76
+   ],
+   "sizeUnity": [
+    0.4,
+    0.66,
+    0.4
+   ]
+  },
+  {
+   "name": "COL_Flue",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.94,
+    0.76,
+    2.345
+   ],
+   "size": [
+    0.12,
+    0.12,
+    2.75
+   ],
+   "center_hut": [
+    0.94,
+    0.76,
+    2.345
+   ],
+   "centerUnity": [
+    -0.94,
+    2.345,
+    -0.76
+   ],
+   "sizeUnity": [
+    0.12,
+    2.75,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Table",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.88,
+    -0.3,
+    0.705
+   ],
+   "size": [
+    0.64,
+    1.0,
+    0.75
+   ],
+   "center_hut": [
+    0.88,
+    -0.3,
+    0.705
+   ],
+   "centerUnity": [
+    -0.88,
+    0.705,
+    0.3
+   ],
+   "sizeUnity": [
+    0.64,
+    0.75,
+    1.0
+   ]
+  },
+  {
+   "name": "COL_Bunk",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -0.3,
+    0.72,
+    0.54
+   ],
+   "size": [
+    1.8,
+    0.68,
+    0.42
+   ],
+   "center_hut": [
+    -0.3,
+    0.72,
+    0.54
+   ],
+   "centerUnity": [
+    0.3,
+    0.54,
+    -0.72
+   ],
+   "sizeUnity": [
+    1.8,
+    0.42,
+    0.68
+   ]
+  },
+  {
+   "name": "COL_Stool",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.3,
+    -0.1,
+    0.565
+   ],
+   "size": [
+    0.32,
+    0.32,
+    0.47
+   ],
+   "center_hut": [
+    0.3,
+    -0.1,
+    0.565
+   ],
+   "centerUnity": [
+    -0.3,
+    0.565,
+    0.1
+   ],
+   "sizeUnity": [
+    0.32,
+    0.47,
+    0.32
+   ]
+  },
+  {
+   "name": "COL_Shelf_Low",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.06,
+    -0.3,
+    1.0795
+   ],
+   "size": [
+    0.3,
+    1.04,
+    0.025
+   ],
+   "center_hut": [
+    -1.06,
+    -0.3,
+    1.0795
+   ],
+   "centerUnity": [
+    1.06,
+    1.0795,
+    0.3
+   ],
+   "sizeUnity": [
+    0.3,
+    0.025,
+    1.04
+   ]
+  },
+  {
+   "name": "COL_Shelf_Up",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.06,
+    -0.3,
+    1.6305
+   ],
+   "size": [
+    0.3,
+    1.04,
+    0.025
+   ],
+   "center_hut": [
+    -1.06,
+    -0.3,
+    1.6305
+   ],
+   "centerUnity": [
+    1.06,
+    1.6305,
+    0.3
+   ],
+   "sizeUnity": [
+    0.3,
+    0.025,
+    1.04
+   ]
+  },
+  {
+   "name": "COL_Woodpile",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.59,
+    -0.2,
+    0.6
+   ],
+   "size": [
+    0.42,
+    1.5,
+    1.2
+   ],
+   "center_hut": [
+    -1.59,
+    -0.2,
+    0.6
+   ],
+   "centerUnity": [
+    1.59,
+    0.6,
+    0.2
+   ],
+   "sizeUnity": [
+    0.42,
+    1.2,
+    1.5
+   ]
+  },
+  {
+   "name": "COL_Barrel",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.66,
+    1.4,
+    0.4
+   ],
+   "size": [
+    0.58,
+    0.58,
+    0.8
+   ],
+   "center_hut": [
+    -1.66,
+    1.4,
+    0.4
+   ],
+   "centerUnity": [
+    1.66,
+    0.4,
+    -1.4
+   ],
+   "sizeUnity": [
+    0.58,
+    0.8,
+    0.58
+   ]
+  },
+  {
+   "name": "COL_Block",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -1.1,
+    -2.55,
+    0.225
+   ],
+   "size": [
+    0.44,
+    0.44,
+    0.45
+   ],
+   "center_hut": [
+    -1.1,
+    -2.55,
+    0.225
+   ],
+   "centerUnity": [
+    1.1,
+    0.225,
+    2.55
+   ],
+   "sizeUnity": [
+    0.44,
+    0.45,
+    0.44
+   ]
+  },
+  {
+   "name": "COL_Bench",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.91,
+    -1.49,
+    0.2225
+   ],
+   "size": [
+    0.86,
+    0.26,
+    0.445
+   ],
+   "center_hut": [
+    0.91,
+    -1.49,
+    0.2225
+   ],
+   "centerUnity": [
+    -0.91,
+    0.2225,
+    1.49
+   ],
+   "sizeUnity": [
+    0.86,
+    0.445,
+    0.26
+   ]
+  },
+  {
+   "name": "COL_Step",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -0.38,
+    -1.5,
+    0.08
+   ],
+   "size": [
+    0.78,
+    0.46,
+    0.16
+   ],
+   "center_hut": [
+    -0.38,
+    -1.5,
+    0.08
+   ],
+   "centerUnity": [
+    0.38,
+    0.08,
+    1.5
+   ],
+   "sizeUnity": [
+    0.78,
+    0.16,
+    0.46
+   ]
+  },
+  {
+   "name": "COL_Door",
+   "parent": "IX_HutDoor_1",
+   "type": "box",
+   "center": [
+    0.432,
+    0.035,
+    0.0
+   ],
+   "size": [
+    0.84,
+    0.07,
+    1.88
+   ],
+   "center_hut": [
+    -0.38,
+    -1.235,
+    1.26
+   ],
+   "centerUnity": [
+    -0.432,
+    0.0,
+    -0.035
+   ],
+   "sizeUnity": [
+    0.84,
+    1.88,
+    0.07
+   ]
+  },
+  {
+   "name": "COL_Shutter",
+   "parent": "Window_Shutter",
+   "type": "box",
+   "center": [
+    -0.015,
+    -0.33,
+    -0.001
+   ],
+   "size": [
+    0.03,
+    0.66,
+    0.53
+   ],
+   "center_hut": [
+    1.17,
+    -0.66,
+    1.545
+   ],
+   "centerUnity": [
+    0.015,
+    -0.001,
+    0.33
+   ],
+   "sizeUnity": [
+    0.03,
+    0.53,
+    0.66
+   ]
+  },
+  {
+   "name": "COL_Roof_R",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    0.82,
+    -0.05,
+    2.9
+   ],
+   "size": [
+    2.0021,
+    3.02,
+    0.04
+   ],
+   "center_hut": [
+    0.82,
+    -0.05,
+    2.9
+   ],
+   "centerUnity": [
+    -0.82,
+    2.9,
+    0.05
+   ],
+   "sizeUnity": [
+    2.0021,
+    0.04,
+    3.02
+   ],
+   "rotation": [
+    0.0,
+    35.0,
+    0.0
+   ],
+   "rotationUnity": [
+    0.0,
+    0.0,
+    35.0
+   ]
+  },
+  {
+   "name": "COL_Roof_L",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    -0.82,
+    -0.05,
+    2.9
+   ],
+   "size": [
+    2.0021,
+    3.02,
+    0.04
+   ],
+   "center_hut": [
+    -0.82,
+    -0.05,
+    2.9
+   ],
+   "centerUnity": [
+    0.82,
+    2.9,
+    0.05
+   ],
+   "sizeUnity": [
+    2.0021,
+    0.04,
+    3.02
+   ],
+   "rotation": [
+    0.0,
+    -35.0,
+    0.0
+   ],
+   "rotationUnity": [
+    0.0,
+    0.0,
+    -35.0
+   ]
+  },
+  {
+   "name": "COL_Ladder",
+   "parent": "TowerHut",
+   "type": "box",
+   "center": [
+    1.965,
+    -0.8,
+    1.1
+   ],
+   "size": [
+    0.61,
+    0.44,
+    2.2
+   ],
+   "center_hut": [
+    1.965,
+    -0.8,
+    1.1
+   ],
+   "centerUnity": [
+    -1.965,
+    1.1,
+    0.8
+   ],
+   "sizeUnity": [
+    0.61,
+    2.2,
+    0.44
+   ]
+  },
+  {
+   "name": "COL_HS_Platform",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    3.76
+   ],
+   "size": [
+    2.0,
+    2.0,
+    0.16
+   ],
+   "center_hut": [
+    11.0401,
+    2.473,
+    4.2653
+   ],
+   "centerUnity": [
+    0.0,
+    3.76,
+    0.0
+   ],
+   "sizeUnity": [
+    2.0,
+    0.16,
+    2.0
+   ]
+  },
+  {
+   "name": "COL_HS_Wall_L",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    -0.935,
+    0.0,
+    4.8945
+   ],
+   "size": [
+    0.03,
+    1.9,
+    2.109
+   ],
+   "center_hut": [
+    11.2405,
+    3.3863,
+    5.3998
+   ],
+   "centerUnity": [
+    0.935,
+    4.8945,
+    0.0
+   ],
+   "sizeUnity": [
+    0.03,
+    2.109,
+    1.9
+   ]
+  },
+  {
+   "name": "COL_HS_Wall_R",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.935,
+    0.0,
+    4.8945
+   ],
+   "size": [
+    0.03,
+    1.9,
+    2.109
+   ],
+   "center_hut": [
+    10.8397,
+    1.5597,
+    5.3998
+   ],
+   "centerUnity": [
+    -0.935,
+    4.8945,
+    0.0
+   ],
+   "sizeUnity": [
+    0.03,
+    2.109,
+    1.9
+   ]
+  },
+  {
+   "name": "COL_HS_Wall_View",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.0,
+    0.935,
+    4.8945
+   ],
+   "size": [
+    1.84,
+    0.03,
+    2.109
+   ],
+   "center_hut": [
+    11.9534,
+    2.2726,
+    5.3998
+   ],
+   "centerUnity": [
+    0.0,
+    4.8945,
+    -0.935
+   ],
+   "sizeUnity": [
+    1.84,
+    2.109,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_HS_Wall_Door_L",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    -0.62,
+    -0.935,
+    4.8945
+   ],
+   "size": [
+    0.6,
+    0.03,
+    2.109
+   ],
+   "center_hut": [
+    10.2597,
+    3.279,
+    5.3998
+   ],
+   "centerUnity": [
+    0.62,
+    4.8945,
+    0.935
+   ],
+   "sizeUnity": [
+    0.6,
+    2.109,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_HS_Wall_Door_R",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.62,
+    -0.935,
+    4.8945
+   ],
+   "size": [
+    0.6,
+    0.03,
+    2.109
+   ],
+   "center_hut": [
+    9.994,
+    2.0678,
+    5.3998
+   ],
+   "centerUnity": [
+    -0.62,
+    4.8945,
+    0.935
+   ],
+   "sizeUnity": [
+    0.6,
+    2.109,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_HS_Lintel",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.935,
+    5.6945
+   ],
+   "size": [
+    0.64,
+    0.03,
+    0.509
+   ],
+   "center_hut": [
+    10.1268,
+    2.6734,
+    6.1998
+   ],
+   "centerUnity": [
+    0.0,
+    5.6945,
+    0.935
+   ],
+   "sizeUnity": [
+    0.64,
+    0.509,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_HS_Roof",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.0,
+    0.1,
+    5.85
+   ],
+   "size": [
+    2.2,
+    2.4,
+    0.4
+   ],
+   "center_hut": [
+    11.1378,
+    2.4516,
+    6.3553
+   ],
+   "centerUnity": [
+    0.0,
+    5.85,
+    -0.1
+   ],
+   "sizeUnity": [
+    2.2,
+    0.4,
+    2.4
+   ]
+  },
+  {
+   "name": "COL_HS_Bench",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    0.0,
+    0.77,
+    4.07
+   ],
+   "size": [
+    1.8,
+    0.3,
+    0.46
+   ],
+   "center_hut": [
+    11.7922,
+    2.308,
+    4.5753
+   ],
+   "centerUnity": [
+    0.0,
+    4.07,
+    -0.77
+   ],
+   "sizeUnity": [
+    1.8,
+    0.46,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_HS_Leg_LF",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    -1.1,
+    -1.1,
+    1.74
+   ],
+   "size": [
+    0.16,
+    0.16,
+    3.88
+   ],
+   "center_hut": [
+    10.2014,
+    3.7832,
+    2.2453
+   ],
+   "centerUnity": [
+    1.1,
+    1.74,
+    1.1
+   ],
+   "sizeUnity": [
+    0.16,
+    3.88,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_HS_Leg_LB",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    -1.1,
+    1.1,
+    1.74
+   ],
+   "size": [
+    0.16,
+    0.16,
+    3.88
+   ],
+   "center_hut": [
+    12.3503,
+    3.3117,
+    2.2453
+   ],
+   "centerUnity": [
+    1.1,
+    1.74,
+    -1.1
+   ],
+   "sizeUnity": [
+    0.16,
+    3.88,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_HS_Leg_RF",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    1.1,
+    -1.1,
+    1.74
+   ],
+   "size": [
+    0.16,
+    0.16,
+    3.88
+   ],
+   "center_hut": [
+    9.7299,
+    1.6343,
+    2.2453
+   ],
+   "centerUnity": [
+    -1.1,
+    1.74,
+    1.1
+   ],
+   "sizeUnity": [
+    0.16,
+    3.88,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_HS_Leg_RB",
+   "parent": "Hochsitz",
+   "type": "box",
+   "center": [
+    1.1,
+    1.1,
+    1.74
+   ],
+   "size": [
+    0.16,
+    0.16,
+    3.88
+   ],
+   "center_hut": [
+    11.8788,
+    1.1628,
+    2.2453
+   ],
+   "centerUnity": [
+    -1.1,
+    1.74,
+    -1.1
+   ],
+   "sizeUnity": [
+    0.16,
+    3.88,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_Sign_Board",
+   "parent": "Sign_Forsthuette",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.57
+   ],
+   "size": [
+    1.06,
+    0.04,
+    0.38
+   ],
+   "center_hut": [
+    1.6,
+    -3.2,
+    1.6369
+   ],
+   "centerUnity": [
+    0.0,
+    1.57,
+    0.0
+   ],
+   "sizeUnity": [
+    1.06,
+    0.38,
+    0.04
+   ]
+  },
+  {
+   "name": "COL_Sign_Post_L",
+   "parent": "Sign_Forsthuette",
+   "type": "box",
+   "center": [
+    -0.44,
+    0.02,
+    0.69
+   ],
+   "size": [
+    0.1,
+    0.1,
+    1.38
+   ],
+   "center_hut": [
+    1.16,
+    -3.18,
+    0.7569
+   ],
+   "centerUnity": [
+    0.44,
+    0.69,
+    -0.02
+   ],
+   "sizeUnity": [
+    0.1,
+    1.38,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Sign_Post_R",
+   "parent": "Sign_Forsthuette",
+   "type": "box",
+   "center": [
+    0.44,
+    0.02,
+    0.69
+   ],
+   "size": [
+    0.1,
+    0.1,
+    1.38
+   ],
+   "center_hut": [
+    2.04,
+    -3.18,
+    0.7569
+   ],
+   "centerUnity": [
+    -0.44,
+    0.69,
+    -0.02
+   ],
+   "sizeUnity": [
+    0.1,
+    1.38,
+    0.1
+   ]
+  }
+ ],
+ "meta": {
+  "units": "metres, degrees",
+  "frame": "hut frame (the TowerHut prefab's): x to the right seen from the door side, y into the hut (door -> back wall), z up; origin = the middle of the footprint on the ground; floor z = 0.33",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the TowerHut prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy)",
+  "roots": "three roots, each its own prefab at its Update 3 place: TowerHut (the hut), Hochsitz (the hunting stand), Sign_Forsthuette (the sign at the path). part.yaw: the root's turn about z in the hut frame (the object carries it as its rotation, its mesh is in its own axes); map_placement: Forest (Unity world) p / q of each root",
+  "map_placement": {
+   "TowerHut": {
+    "p": [
+     -474.0,
+     28.3963,
+     404.0
+    ],
+    "q": [
+     0.0,
+     0.481952,
+     0.0,
+     0.876197
+    ],
+    "yawUnity": 57.626
+   },
+   "Hochsitz": {
+    "p": [
+     -482.0,
+     28.9016,
+     412.0
+    ],
+    "q": [
+     0.0,
+     0.984808,
+     0.0,
+     0.173648
+    ],
+    "yawUnity": 160.0
+   },
+   "Sign_Forsthuette": {
+    "p": [
+     -472.1541,
+     28.4632,
+     407.0647
+    ],
+    "q": [
+     0.0,
+     0.481952,
+     0.0,
+     0.876197
+    ],
+    "yawUnity": 57.626
+   }
+  },
+  "colliders": "colliders: BoxCollider per entry on its parent: center / size in the parent's own frame (Blender), centerUnity / sizeUnity the same in Unity axes; rotation = Blender XYZ euler of the box (the two roof slopes), rotationUnity = Unity euler; center_hut: the box centre in the hut frame. part.box: the grab / hit box of a moving part or item in its own frame",
+  "lamps": "hut_lights.json",
+  "model": "hut.blend",
+  "textures": "tex",
+  "materials": "M_Hut_Hut (the hut, the sign, the stand) / M_Hut_HutProps: baked PSX atlases (point filter); M_Hut_Panel: map, calendar, sign face; M_Hut_Lamp_Lantern / _Off, M_Hut_Lamp_Oillamp / _Off: lenses burning / out (base + emission textures, night_emit = emission strength); M_Hut_Glow: additive halo (emission texture only); M_Hut_Glass",
+  "prologue": "S2 / X01 (FOREST_OPENING.md): the door IX_HutDoor_1 starts open, the lantern burns; Jerrycan_Hut, Funnel_Hut, the flashlight and note_forester spawn at the Spot_ sockets (same places as Update 3); X01 = LIGHT_Lantern off + Glow_Lantern hidden + Lens_Lantern -> M_Hut_Lamp_Lantern_Off"
+ }
+}

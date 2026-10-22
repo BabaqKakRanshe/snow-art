@@ -1,0 +1,416 @@
+{
+ "package": "Forest_Update5.unitypackage",
+ "bytes": 13491744,
+ "entries": 50,
+ "over": "Forest_Update4",
+ "guid_source": {
+  "Cabin": "Update 3",
+  "Campsite": "Update 3",
+  "Chapel": "Update 3",
+  "Crates": "Update 3",
+  "Dish_1": "Update 3",
+  "Dish_2": "Update 3",
+  "Dish_3": "Update 3",
+  "Dish_4": "Update 3",
+  "Dish_5": "Update 3",
+  "FenceChain": "project",
+  "Forest_Wires": "project",
+  "Hatch": "Update 3",
+  "Helipad": "Update 3",
+  "LightPole": "Update 3",
+  "LogPile": "project",
+  "LookoutTower": "Update 3",
+  "MeteoStation": "Update 3",
+  "OldFence": "project",
+  "OldFence_b": "project",
+  "OldFence_c": "project",
+  "PowerPole": "Update 3",
+  "PumpHouse": "Update 3",
+  "RadioMast": "Update 3",
+  "Radome": "Update 3",
+  "RelayMast": "Update 3"
+ },
+ "files": [
+  {
+   "path": "Assets/Locations",
+   "guid": "8fd0cc986184b4ff32ac708c6e1529c0",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest",
+   "guid": "827abc79a3d02ea4153aa088140cef15",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models",
+   "guid": "7c10d76d05d6b21b64a813f73f55173c",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures",
+   "guid": "1717a890f1c607b4fb17f5d0c38c19f1",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Data",
+   "guid": "ff4e1d6f0d874d42b641e8801beff788",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Cabin.fbx",
+   "guid": "5dcd61810e4489e892a3a4af43cfad55",
+   "bytes": 161228,
+   "md5": "acb2217e3fe6c9323bcf37f62382454b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Campsite.fbx",
+   "guid": "6d36112e75cca85c462c3d7131dfe514",
+   "bytes": 60076,
+   "md5": "706457bf283b4705adbc5cda4fd0a27c"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Chapel.fbx",
+   "guid": "53205557b878f9beaa624f7410556782",
+   "bytes": 120412,
+   "md5": "d535d145aa41447c0f08e633507c23a3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Crates.fbx",
+   "guid": "24541bdab1a22fdc353db977d2d3e858",
+   "bytes": 50236,
+   "md5": "86d96a7aec4f49b0c9ed611c1bd2b2b5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dish_1.fbx",
+   "guid": "0fdb24c67ce63e13aff2aa1eebb02c78",
+   "bytes": 185964,
+   "md5": "e8ab634f764bd6d97b9e21c8975b53ba"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dish_2.fbx",
+   "guid": "cfdfca7753b8876245ffdc402383055d",
+   "bytes": 186092,
+   "md5": "b57264c126377b9965cd344304337947"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dish_3.fbx",
+   "guid": "ab4bbc7e0c1d7edb0f53516ab8082c3c",
+   "bytes": 185628,
+   "md5": "7b892aa792dc9f1462b46ca8e1f19041"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dish_4.fbx",
+   "guid": "0fe941df9776945d3251dc8bef2c20ad",
+   "bytes": 186172,
+   "md5": "f4776c5f8c19aaa7d900915eff4c91f5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dish_5.fbx",
+   "guid": "b5a9a6d38ee4ce561e63b1993cec2ede",
+   "bytes": 186156,
+   "md5": "f995b408c2cc25b9c629e7c212090fb9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/FenceChain.fbx",
+   "guid": "c52efb2f488b20e32e445ef687cda2e5",
+   "bytes": 24860,
+   "md5": "5f035f58a610d738b5c17411be481ff3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Forest_Wires.fbx",
+   "guid": "62a9c3400b37253c3e9e21007ec48caf",
+   "bytes": 71404,
+   "md5": "839ea8fae46ce56c408b9e792eccffd6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Hatch.fbx",
+   "guid": "287a52b99b34b08942f23618ffe84476",
+   "bytes": 51708,
+   "md5": "07f4ad88ec4f8d99e4914c7b871ece03"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Helipad.fbx",
+   "guid": "3a1e2e12626467ee2b3478ff8bf5f4dd",
+   "bytes": 100492,
+   "md5": "c25baf0d20bac2d41497510953be27cf"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/LightPole.fbx",
+   "guid": "67eb42126f01969e602992df11e70a94",
+   "bytes": 31996,
+   "md5": "33af6edc9fd6043b0a45dafd4a088f81"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/LogPile.fbx",
+   "guid": "b411e328025cb9beb4936a7f23ebd90a",
+   "bytes": 46796,
+   "md5": "70a36432be06fe949d636f972c806eae"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/LookoutTower.fbx",
+   "guid": "3325462c71e89c5d0cab1b379b840193",
+   "bytes": 173884,
+   "md5": "57189494627d800aa37709733015d519"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/MeteoStation.fbx",
+   "guid": "d652e33953a5dd378bde45d1d2c143d8",
+   "bytes": 139228,
+   "md5": "1a950db03c2c93b0e641e985506717d3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/OldFence.fbx",
+   "guid": "cff14cd3e0248e29ff56ae8be6fdb848",
+   "bytes": 23180,
+   "md5": "65f3f4313095bd14ce0c2b4831012d67"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/OldFence_b.fbx",
+   "guid": "bd0b65a000303e2d3c2a881bfd563359",
+   "bytes": 23196,
+   "md5": "c4be39f6224e3956fda37b96fd787cf4"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/OldFence_c.fbx",
+   "guid": "2a58e2b49ad5d9ef588498bcd9d5cce4",
+   "bytes": 23628,
+   "md5": "d65125e91b24ebf29b1d3c5aba86892b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/PowerPole.fbx",
+   "guid": "c3c81ad270ceba46460326faf12b3246",
+   "bytes": 40108,
+   "md5": "bd87294bcecd5c707518bfbe0109a2e5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/PumpHouse.fbx",
+   "guid": "2230163526ac14fc14b6f5d68359efd3",
+   "bytes": 59356,
+   "md5": "7de13d5c90bb487565695bf090e7e6b8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/RadioMast.fbx",
+   "guid": "b1ff391f22ad1e175e19995741289e57",
+   "bytes": 395644,
+   "md5": "ac21f70ba1f81ec8d97c8f6a92aef322"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Radome.fbx",
+   "guid": "32de9e0d3da9c834e14b4fed35fde199",
+   "bytes": 146812,
+   "md5": "df9536a3169bbbb70f67b7e50ed1777d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/RelayMast.fbx",
+   "guid": "b830a5cf5c650cbbf899862cb9b180ba",
+   "bytes": 290508,
+   "md5": "61f16c15eaa63507f53c404340b4f469"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Props_A_px.png",
+   "guid": "fb52571a505146f5e46b8c94cf7e077a",
+   "bytes": 373209,
+   "md5": "0309a3b11256030506b9dc0b5f6d0570"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Helipad_A_px.png",
+   "guid": "6773bb9658f3bb5d279d9e48ebca3a91",
+   "bytes": 501818,
+   "md5": "d9acebcaaaeac1334b96795d9aac43b3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Mast_A_px.png",
+   "guid": "0fb33fdbd76263708c6ac10ea37a7cc7",
+   "bytes": 587541,
+   "md5": "0aafb963eeab54e53238b7d28682f097"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Poles_A_px.png",
+   "guid": "a9ff9ae6ccd3810d70350a604529483c",
+   "bytes": 51178,
+   "md5": "d60f9beef0163ce84d3c7062271190e9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Fence_A_px.png",
+   "guid": "fa4443f80abdd5ee63df89441ae0b629",
+   "bytes": 19243,
+   "md5": "eacd0489f6041aed04dc046dd84b1c01"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Panel_A_px.png",
+   "guid": "f6d43bbf13e6440498f9899e8885e9a9",
+   "bytes": 14918,
+   "md5": "9bad1712f4c87382f765d934d937731d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_ChainLink_A_px.png",
+   "guid": "75f2403c3883bad9ac80db0706d7c7f5",
+   "bytes": 6825,
+   "md5": "0c095e108a85c9dd81d2761efd404063"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Barbed_A_px.png",
+   "guid": "8529c4c4cdc91d13918f08b814389090",
+   "bytes": 328,
+   "md5": "b6ee110f8eeee04ee70f586ee4490146"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Rust_A_px.png",
+   "guid": "0500de58628a80a0adb4f8daf8fd7c08",
+   "bytes": 460,
+   "md5": "cc4fa592645ec382a581d7e02b2db705"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Dish16_A_px.png",
+   "guid": "5416a860e631fc9eeb28c1fee01aea01",
+   "bytes": 726257,
+   "md5": "626085b8738e64e9a9d728a196ced093"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Dish12_A_px.png",
+   "guid": "a2cd0e0f7ead074af47e1a79fc11c87f",
+   "bytes": 710673,
+   "md5": "6f135cbce548509465a20196af3512b1"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Towers_A_px.png",
+   "guid": "262ab6db59eaf643dfa19a620f53a9db",
+   "bytes": 2642178,
+   "md5": "116a9883b55c2c84bc2a93f317169260"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Meteo_A_px.png",
+   "guid": "5da3c5aae393c5435fa43cd648e4884b",
+   "bytes": 515254,
+   "md5": "19b3d9163852960140d6c325b30cdf1a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Lookout_A_px.png",
+   "guid": "13d678579f73c910f412e520b610caa8",
+   "bytes": 789434,
+   "md5": "ad0ea5ab77b106c07509b57d4c38816b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Chapel_A_px.png",
+   "guid": "cf442a82fda83fb3ba3a19eacfa88534",
+   "bytes": 1412778,
+   "md5": "a7741d9460bf72d91ef48d1d8404a767"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Small_A_px.png",
+   "guid": "7e1159502faace603e81e4184c30e766",
+   "bytes": 1504287,
+   "md5": "17c2219c469eedb3b665e40a63836198"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Far_Panel_A_px.png",
+   "guid": "e0343b2c3f351e08fb9e8c13254fd126",
+   "bytes": 42081,
+   "md5": "390da1e443436634cab6d88ae801f2dd"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Materials.json",
+   "guid": "2fd4979e6f6a7428958b37f50222ada2",
+   "bytes": 167685,
+   "md5": "76a84cfa1e032c6d3f4cdde2709992ba"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Layout.json",
+   "guid": "d1e0ae0c88a61aaebb2cb18d445ac415",
+   "bytes": 4568488,
+   "md5": "3ba2a3448d786cd04ce1c26e71c0ec09"
+  },
+  {
+   "path": "Assets/Locations/Forest/README.md",
+   "guid": "7570bcddf83da140f4844a61ee40deec",
+   "bytes": 54245,
+   "md5": "a3e201291196e2ddbf056d633521265e"
+  }
+ ],
+ "viewpoints_seeing_new_models": {
+  "Start": [
+   "Dish_1"
+  ],
+  "Hut": [
+   "Dish_1"
+  ],
+  "KPP": [
+   "Crates",
+   "FenceChain",
+   "Forest_Wires",
+   "Helipad",
+   "LightPole",
+   "LogPile",
+   "PowerPole",
+   "RadioMast"
+  ],
+  "Base": [
+   "Crates",
+   "FenceChain",
+   "Forest_Wires",
+   "Hatch",
+   "LightPole",
+   "PowerPole",
+   "RadioMast"
+  ],
+  "Woods": [
+   "Dish_3"
+  ],
+  "Dish1": [
+   "Dish_1"
+  ],
+  "Chapel": [
+   "Chapel",
+   "PumpHouse"
+  ],
+  "ControlRoom": [
+   "FenceChain",
+   "Helipad",
+   "LightPole",
+   "MeteoStation",
+   "RadioMast"
+  ],
+  "Corridor": [
+   "FenceChain",
+   "Helipad",
+   "LightPole",
+   "LogPile",
+   "MeteoStation",
+   "RadioMast"
+  ],
+  "Kitchen": [
+   "FenceChain",
+   "Helipad",
+   "LightPole",
+   "MeteoStation",
+   "RadioMast"
+  ],
+  "SwitchRoom": [
+   "FenceChain",
+   "LightPole",
+   "LogPile",
+   "RadioMast"
+  ],
+  "GenContainer": [
+   "FenceChain",
+   "Helipad",
+   "LightPole",
+   "LogPile",
+   "MeteoStation",
+   "RadioMast"
+  ]
+ },
+ "viewpoints_unchanged": [
+  "Bridge",
+  "Windfall",
+  "Overlook",
+  "UnderHand",
+  "Ribs"
+ ],
+ "changes": []
+}

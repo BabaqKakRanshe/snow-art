@@ -1,0 +1,11 @@
+bake.py                                  Livery bake like the plane: procedural paint (red, white band, mottling, faded roof, road grime, dirt runs,
+clay.py                                  Clay check of the body shape with placeholder wheels.  python3 clay.py <tag>
+interior.py                              Cozy interior of the van concept: cab with the engine hump between the seats, saloon with a dinette, iron stove,
+make_sheets_van.py                       Sheets for the van concept v2: exterior (day) and night / interior / cab / in-game frame.
+make_van.py                              Full build: exterior, interior, livery bake (PSX), exterior night lights -> out/van_full.blend
+render_full.py                           Final renders of the van concept (plane-preview style) + night, interior, cab and an in-game PS1 frame.
+render_van.py                            Renders of the van like the plane previews.  python3 render_van.py <blend> <outdir> <views> [spp] [res]
+sdf_body.py                              Outer body surface of the van concept: intersection of three extruded 2D profiles (side, plan, section)
+tex_van.py                               PSX tile textures for the van concept (plane recipe: palette per texture, Bayer 4x4, shading and wear painted
+van.py                                   Van concept («буханка»-type, original design) built like the plane: smooth SDF body shell with real openings,
+vb.py                                    Blender helpers for the van concept (plane-level build): mesh import, booleans, curves, lathe, materials,

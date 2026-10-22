@@ -1,0 +1,23 @@
+{
+ "both_open": {
+  "hall_free_m2": 72.29,
+  "hall_reached_m2": 71.85,
+  "reached_m2": 232.0
+ },
+ "ix_nearest_eye_m": {
+  "IX_GarageDoor_92": 1.17,
+  "IX_GarageSideDoor_93": 0.34
+ },
+ "ix_out_of_reach": {},
+ "side_only": {
+  "hall_free_m2": 71.53,
+  "hall_reached_m2": 71.1,
+  "reached_m2": 229.7
+ },
+ "gate_only": {
+  "hall_free_m2": 72.22,
+  "hall_reached_m2": 71.79,
+  "reached_m2": 232.4
+ },
+ "gate_open_min_headroom": 2.846
+}

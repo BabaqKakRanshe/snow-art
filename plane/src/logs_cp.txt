@@ -1,0 +1,4 @@
+00:00.313  blend            | Read blend: "/home/claude/plane/out/plane_geo_v2.blend"
+COCKPIT objects 86 tris 49531 moving parts 63
+Info: Saved as "plane_v2.blend"
+saved

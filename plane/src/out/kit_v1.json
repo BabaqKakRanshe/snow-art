@@ -1,0 +1,272 @@
+{
+ "installed": {
+  "Kit_IntakePlug": {
+   "socket": "Socket_Kit_IntakePlug",
+   "pos": [
+    0.0,
+    -4.664999961853027,
+    1.3350000381469727
+   ]
+  },
+  "Kit_ExhaustCover_L": {
+   "socket": "Socket_Kit_ExhaustCover_L",
+   "pos": [
+    0.7355523705482483,
+    -3.7980453968048096,
+    1.5627638101577759
+   ]
+  },
+  "Kit_ExhaustCover_R": {
+   "socket": "Socket_Kit_ExhaustCover_R",
+   "pos": [
+    -0.7355523705482483,
+    -3.7980453968048096,
+    1.5627638101577759
+   ]
+  },
+  "Kit_PitotCover": {
+   "socket": "Socket_Kit_PitotCover",
+   "pos": [
+    4.599999904632568,
+    -2.4719998836517334,
+    2.572999954223633
+   ]
+  },
+  "Kit_WingCover_L": {
+   "socket": "Socket_Kit_WingCover_L",
+   "pos": [
+    3.9000000953674316,
+    -1.5,
+    2.950000047683716
+   ]
+  },
+  "Kit_WingCover_R": {
+   "socket": "Socket_Kit_WingCover_R",
+   "pos": [
+    -3.9000000953674316,
+    -1.5,
+    2.950000047683716
+   ]
+  },
+  "Kit_WindshieldCover": {
+   "socket": "Socket_Kit_WindshieldCover",
+   "pos": [
+    0.0,
+    -2.95,
+    2.35
+   ]
+  },
+  "Kit_EngineCover": {
+   "socket": "Socket_Kit_EngineCover",
+   "pos": [
+    0.0,
+    -3.95,
+    1.95
+   ]
+  },
+  "Kit_Chocks_L": {
+   "socket": "Socket_Kit_Chocks_L",
+   "pos": [
+    1.25,
+    -2.8499996662139893,
+    -0.12399997562170029
+   ]
+  },
+  "Kit_Chocks_R": {
+   "socket": "Socket_Kit_Chocks_R",
+   "pos": [
+    -1.25,
+    -2.8499996662139893,
+    -0.12399997562170029
+   ]
+  },
+  "Kit_Chocks_Tail": {
+   "socket": "Socket_Kit_Chocks_Tail",
+   "pos": [
+    0.0,
+    4.470000267028809,
+    1.164399266242981
+   ]
+  },
+  "Kit_TieDown_L": {
+   "socket": "Socket_Kit_TieDown_L",
+   "pos": [
+    4.210000038146973,
+    -0.9758668541908264,
+    0.2058677077293396
+   ],
+   "attach": [
+    3.36,
+    -1.75,
+    2.585
+   ],
+   "ropeLength": 2.542
+  },
+  "Kit_TieDown_R": {
+   "socket": "Socket_Kit_TieDown_R",
+   "pos": [
+    -4.210000038146973,
+    -0.9758668541908264,
+    0.2058677077293396
+   ],
+   "attach": [
+    -3.36,
+    -1.75,
+    2.585
+   ],
+   "ropeLength": 2.542
+  },
+  "Kit_TieDown_Tail": {
+   "socket": "Socket_Kit_TieDown_Tail",
+   "pos": [
+    0.3199999928474426,
+    3.882350206375122,
+    1.0609664916992188
+   ],
+   "attach": [
+    0.0,
+    3.95,
+    1.715
+   ],
+   "ropeLength": 0.641
+  },
+  "Kit_Heater": {
+   "socket": "Socket_Kit_Heater",
+   "pos": [
+    0.8500000238418579,
+    -5.390632152557373,
+    -0.5711787343025208
+   ],
+   "ductEnd": [
+    0.0,
+    -4.719091415405273,
+    1.3245991468429565
+   ]
+  }
+ },
+ "carry": {
+  "SM_Kit_WingCoverBag": {
+   "mass": 4.5,
+   "note": "one wing cover, rolled",
+   "size": [
+    0.72,
+    0.342,
+    0.382
+   ]
+  },
+  "SM_Kit_WindshieldCoverBag": {
+   "mass": 2.2,
+   "note": "windshield cover, rolled",
+   "size": [
+    0.48,
+    0.28,
+    0.321
+   ]
+  },
+  "SM_Kit_EngineCoverBag": {
+   "mass": 3.8,
+   "note": "insulated engine cover, folded",
+   "size": [
+    0.52,
+    0.34,
+    0.311
+   ]
+  },
+  "SM_Kit_TieDownBag": {
+   "mass": 6.0,
+   "note": "3 screw anchors + 3 ropes",
+   "size": [
+    0.46,
+    0.238,
+    0.28
+   ]
+  },
+  "SM_Kit_JerryCan": {
+   "mass": 4.2,
+   "note": "20 l, empty 4.2 kg, full (Jet A-1, 0.8 kg/l) 20.2 kg",
+   "size": [
+    0.34,
+    0.189,
+    0.476
+   ],
+   "pourPoint": [
+    0.13,
+    0.0,
+    0.45999999999999996
+   ],
+   "capacityL": 20
+  },
+  "SM_Kit_Funnel": {
+   "mass": 0.4,
+   "note": "fuel funnel with water filter screen",
+   "size": [
+    0.3,
+    0.25,
+    0.3
+   ]
+  },
+  "SM_Kit_HeaterStowed": {
+   "mass": 26.0,
+   "note": "forced-air heater, duct coiled on top",
+   "size": [
+    0.49,
+    0.76,
+    0.852
+   ]
+  },
+  "SM_Kit_IntakePlug": {
+   "mass": 0.9,
+   "note": "intake plug, streamer wound round the rim",
+   "size": [
+    0.43,
+    0.178,
+    0.19
+   ]
+  },
+  "SM_Kit_ExhaustCover": {
+   "mass": 0.3,
+   "note": "exhaust plug, streamer wound round the cap",
+   "size": [
+    0.215,
+    0.127,
+    0.213
+   ]
+  },
+  "SM_Kit_PitotCover": {
+   "mass": 0.15,
+   "note": "pitot cover, streamer wound round the sleeve",
+   "size": [
+    0.052,
+    0.2,
+    0.052
+   ]
+  },
+  "SM_Kit_Chocks": {
+   "mass": 5.0,
+   "note": "same mesh as Kit_Chocks_L",
+   "size": [
+    0.486,
+    1.101,
+    0.14
+   ]
+  },
+  "SM_Kit_ChocksTail": {
+   "mass": 2.0,
+   "note": "same mesh as Kit_Chocks_Tail",
+   "size": [
+    0.256,
+    0.662,
+    0.08
+   ]
+  }
+ },
+ "park": {
+  "pitchDeg": 9.982436656104843,
+  "pivot": [
+   0.0,
+   -2.8499999046325684,
+   -0.12399999797344208
+  ],
+  "groundZ": -0.124
+ }
+}

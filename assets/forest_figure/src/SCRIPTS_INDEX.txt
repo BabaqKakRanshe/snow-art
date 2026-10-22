@@ -1,0 +1,21 @@
+bld_common.py                            Shared build steps for the station's buildings (lifted from main_build.py so the garage and the next locations use the
+fig_build.py                             The apparition for the Forest scares X02 (crosses the road in the headlights) and X03 (on the van's rear seat for 0.6 s):
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
+make_sheets_u6.py                        Sheets of Forest Update 6: the generator container (A outside, B inside, C Update 3 and now, D atlases), the items (A..D
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_u6.py                               Package the three asset batches of Forest Update 6 the way the base / far batches are packed: the .blend with relative
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+uvpack.py                                Shelf packing of UV islands by their bounding boxes (the main building's walls, strips and boxes are rectangles:
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+checks/fig_bones.py                      posed bone heads / tails of the figure at a clip frame: python3 -I fig_bones.py <fig.blend> <clip> <frame>
+checks/fig_render2.py                    figure sheet: walk filmstrip (side) + poses front/side, textured. python3 -I fig_render2.py -- <blend> <out.jpg>
+checks/fig_sit_render.py                 Sit / SitLook in a van-bench mock: floor -0.425, bench (y -0.20..0.25, top 0), wall y 0.25, roof 0.709 (figure frame)
+checks/fig_top.py                        the highest vertices of the figure at a clip frame and their bone weights: python3 -I fig_top.py <fig.blend> <clip> <frame>
+checks/walk_speed.py                     the left foot over the Walk clip: where its lowest vertices are per frame (the stance foot should keep still)

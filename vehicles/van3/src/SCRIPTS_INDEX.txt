@@ -1,0 +1,31 @@
+fix_uaz.py                               tiunov.se UAZ FBX: the Kuzov children came in with a Y-up frame inside a Z-up parent; put them back,
+ies_lm63.py                              Minimal IES LM-63-2002 writer (type C photometry, absolute candela, metres).
+inspect_model.py                         Import a downloaded vehicle model, write a report and quick views.
+make_contract_doc.py                     Russian reference for the v3 interaction contract: out/van3_contract.json -> docs/VAN3_CONTRACT.md
+make_sheets_uaz.py                       Sheets for the PSX UAZ-452: A exterior, B saloon / cab / game frame / texels, C the PSX atlases.
+make_sheets_van2.py                      Sheets for the van v2: A exterior (less of a 'bukhanka'), B dashboard in the plane's style, C folding troop seats,
+make_sheets_van3.py                      Sheets for the van v3 (phase 1 of the mechanics): A what opens, B engine, C electrics and controls, D fuel.
+make_sheets_van3b.py                     Sheets for the van v3, phase 1b: E repair kit and snow, F light and horror.
+make_sheets_van3c.py                     Sheets for the van v3, phase 2: G wheels, snow, cold start, colliders; H stove, radio, glovebox, windows, points.
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_van3.py                             Package van v3 for the user: the .blend with relative texture paths, textures, IES / cookies, the interaction
+post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+psx_test.py                              pipeline test on a stand-in model: normalise, split, PSX atlases, Cycles preview
+psx_test2.py                             mode A test: PSX in the source UVs
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+uaz_build.py                             Ready-made UAZ-452 -> PSX like the Utility Plane.
+uaz_props.py                             Cozy kit for the UAZ saloon: wood stove with a flue through the roof, heat shield, wood box with logs,
+uaz_psx.py                               UAZ-452 «Uaz» by tiunov.se (Sketchfab, CC BY 4.0) -> PSX like the Utility Plane.
+uaz_render.py                            Preview renders of the PSX vehicle: day 3/4 front and rear, side with a 1.8 m figure, night (lit windows,
+van2_build.py                            Van v2 on the reassembled tiunov.se body (Sketchfab "Uaz", CC BY 4.0): an original expedition van, not a stock
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_props.py                            Cozy kit for the van v2 saloon (side-facing folding seats along the walls, so the table stands between the rear pair): wood stove with a flue through the roof, heat shield, wood box with logs,
+van2_render.py                           Preview renders of van v2: exterior day / night (light groups), side with a 1.8 m figure, saloon, cab, dashboard
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_build.py                            Van v3 (phase 1 of the mechanics): v2 plus everything a real van has, each moving part its own object with its
+van3_extras.py                           Van v3, phase 1b: what the player takes in hand and what the horror needs.
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+van3_play.py                             Van v3, phase 2: what the player still needed.
+van3_render.py                           Preview renders of van v3: the v2 views plus the mechanics posed from out/van3_contract.json (doors, hatches,
+van_lights.py                            Van v2 lighting, single source of truth (the Utility Plane v11 method):

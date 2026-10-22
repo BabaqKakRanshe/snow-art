@@ -1,0 +1,11703 @@
+{
+ "parts": {
+  "SteeringWheel": {
+   "kind": "hinge",
+   "pivot": [
+    1.517,
+    0.523,
+    1.502
+   ],
+   "axis": [
+    -0.4412,
+    -0.004,
+    0.8974
+   ],
+   "range": [
+    -540,
+    540
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "1.5 turns each way; the hub is the horn button",
+   "object": "SteeringWheel",
+   "box": {
+    "center": [
+     -0.0022,
+     -0.0013,
+     -0.0016
+    ],
+    "size": [
+     0.3317,
+     0.3698,
+     0.1805
+    ]
+   }
+  },
+  "Horn_Button": {
+   "kind": "slide",
+   "pivot": [
+    1.5065,
+    0.5229,
+    1.5234
+   ],
+   "axis": [
+    0.4412,
+    0.004,
+    -0.8974
+   ],
+   "range": [
+    0,
+    0.005
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "SteeringWheel",
+   "states": [],
+   "note": "horn: press the pad; in a blizzard the others find the van by it (Audio_Horn)",
+   "object": "Horn_Button",
+   "box": {
+    "center": [
+     -0.0009,
+     0.0,
+     0.0032
+    ],
+    "size": [
+     0.0628,
+     0.0664,
+     0.0363
+    ]
+   }
+  },
+  "Wiper_L": {
+   "kind": "hinge",
+   "pivot": [
+    1.9885,
+    0.4605,
+    1.4355
+   ],
+   "axis": [
+    -0.9435,
+    -0.2419,
+    -0.2265
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "parked",
+    "sweeping"
+   ],
+   "note": "wiper: sweeps up across its pane and back (Toggle_Wiper, fuse 8); clears snow and frost in its arc",
+   "object": "Wiper_L",
+   "box": {
+    "center": [
+     -0.0153,
+     -0.2245,
+     0.048
+    ],
+    "size": [
+     0.0625,
+     0.4719,
+     0.1061
+    ]
+   }
+  },
+  "Wiper_R": {
+   "kind": "hinge",
+   "pivot": [
+    1.9885,
+    -0.4605,
+    1.4355
+   ],
+   "axis": [
+    0.9435,
+    -0.2419,
+    0.2265
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "parked",
+    "sweeping"
+   ],
+   "note": "wiper: sweeps up across its pane and back (Toggle_Wiper, fuse 8); clears snow and frost in its arc",
+   "object": "Wiper_R",
+   "box": {
+    "center": [
+     -0.0153,
+     0.2245,
+     0.048
+    ],
+    "size": [
+     0.0625,
+     0.4719,
+     0.1061
+    ]
+   }
+  },
+  "Window_doorL": {
+   "kind": "slide",
+   "pivot": [
+    1.4879,
+    0.8633,
+    1.6938
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.3
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "doorL",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "front pane of the cab door window: slides back 30 cm behind the fixed pane (talk, hand things out)",
+   "object": "Window_doorL",
+   "box": {
+    "center": [
+     0.0,
+     -0.004,
+     0.0
+    ],
+    "size": [
+     0.3532,
+     0.0626,
+     0.4634
+    ]
+   }
+  },
+  "Window_doorP": {
+   "kind": "slide",
+   "pivot": [
+    1.4879,
+    -0.8633,
+    1.6938
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.3
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "doorP",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "front pane of the cab door window: slides back 30 cm behind the fixed pane (talk, hand things out)",
+   "object": "Window_doorP",
+   "box": {
+    "center": [
+     0.0,
+     0.004,
+     0.0
+    ],
+    "size": [
+     0.3532,
+     0.0626,
+     0.4634
+    ]
+   }
+  },
+  "doorSalon": {
+   "kind": "hinge",
+   "pivot": [
+    0.348,
+    -0.955,
+    1.36
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    80
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "saloon door, right side, front hinged",
+   "object": "doorSalon",
+   "box": {
+    "center": [
+     -0.4661,
+     0.0475,
+     -0.0093
+    ],
+    "size": [
+     0.9746,
+     0.1471,
+     1.25
+    ]
+   }
+  },
+  "RoofHatch": {
+   "kind": "hinge",
+   "pivot": [
+    -0.27,
+    -0.4,
+    2.1737
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    35
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "vent hatch, hinged at its front edge; the rear lifts",
+   "object": "RoofHatch",
+   "box": {
+    "center": [
+     -0.165,
+     0.0,
+     -0.009
+    ],
+    "size": [
+     0.34,
+     0.45,
+     0.064
+    ]
+   }
+  },
+  "Radiator_Cap": {
+   "kind": "twist",
+   "pivot": [
+    2.1354,
+    0.0,
+    1.28
+   ],
+   "axis": [
+    0.9034,
+    0.0,
+    0.4289
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "note": "half a turn, then off: coolant in here (hot = steam)",
+   "object": "Radiator_Cap",
+   "box": {
+    "center": [
+     0.0038,
+     0.0,
+     0.0015
+    ],
+    "size": [
+     0.0248,
+     0.04,
+     0.0391
+    ]
+   },
+   "removable": "end"
+  },
+  "RadiatorHatch": {
+   "kind": "hinge",
+   "pivot": [
+    2.1753,
+    0.0,
+    1.3103
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "note": "filler hatch above the grille, lifts up",
+   "object": "RadiatorHatch",
+   "box": {
+    "center": [
+     0.0058,
+     0.0,
+     -0.03
+    ],
+    "size": [
+     0.0155,
+     0.24,
+     0.0594
+    ]
+   }
+  },
+  "Winch_Drum": {
+   "kind": "spin",
+   "pivot": [
+    2.375,
+    0.0,
+    0.69
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "note": "turns while the cable winds in (motor) or pays out (clutch free)",
+   "object": "Winch_Drum",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.156,
+     0.38,
+     0.156
+    ]
+   }
+  },
+  "Winch_Clutch": {
+   "kind": "hinge",
+   "pivot": [
+    2.375,
+    -0.218,
+    0.69
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [
+    "engaged",
+    "free spool"
+   ],
+   "note": "free spool: pull the cable out by hand to a tree",
+   "object": "Winch_Clutch",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.033
+    ],
+    "size": [
+     0.01,
+     0.008,
+     0.074
+    ]
+   }
+  },
+  "Winch_Hook": {
+   "kind": "item",
+   "pivot": [
+    2.46,
+    0.0,
+    0.69
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "note": "winch hook: pull it out with the clutch free, hook it round a tree or a stuck car; cable = line from Winch_Fairlead",
+   "object": "Winch_Hook",
+   "box": {
+    "center": [
+     0.0235,
+     0.0,
+     -0.0257
+    ],
+    "size": [
+     0.063,
+     0.0173,
+     0.0714
+    ]
+   }
+  },
+  "SandLadder_1": {
+   "kind": "item",
+   "pivot": [
+    -0.35,
+    0.22,
+    2.324
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_RoofRack",
+   "states": [],
+   "note": "sand ladder (1.1 m): off the rack, under a wheel that spins in the snow, studs up",
+   "object": "SandLadder_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.016
+    ],
+    "size": [
+     1.1,
+     0.32,
+     0.06
+    ]
+   }
+  },
+  "SandLadder_2": {
+   "kind": "item",
+   "pivot": [
+    -0.35,
+    0.58,
+    2.324
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_RoofRack",
+   "states": [],
+   "note": "sand ladder (1.1 m): off the rack, under a wheel that spins in the snow, studs up",
+   "object": "SandLadder_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.016
+    ],
+    "size": [
+     1.1,
+     0.32,
+     0.06
+    ]
+   }
+  },
+  "WorkLamp": {
+   "kind": "item",
+   "pivot": [
+    1.56,
+    -0.58,
+    0.871
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "inspection lamp on a 5 m cord: plug into Plug_12V; hang it by the hook (Hook_WorkLamp) on the open engine cover, a door, the rack; the bulb is lamp WorkLamp (type hand) in van3_lights.json",
+   "object": "WorkLamp",
+   "box": {
+    "center": [
+     0.1255,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.3539,
+     0.0764,
+     0.0667
+    ]
+   }
+  },
+  "WorkLamp_Cord": {
+   "kind": "item",
+   "pivot": [
+    1.66,
+    -0.7,
+    0.839
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "coiled cord: hide it while the lamp is in use and draw the cord from Plug_12V to the lamp handle",
+   "object": "WorkLamp_Cord",
+   "box": {
+    "center": [
+     0.0055,
+     0.0025,
+     0.0065
+    ],
+    "size": [
+     0.189,
+     0.183,
+     0.023
+    ]
+   }
+  },
+  "Glovebox_Lid": {
+   "kind": "hinge",
+   "pivot": [
+    1.7398,
+    -0.56,
+    1.2118
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    80
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "glovebox lid, hinged at the bottom; inside: Map, Logbook, Flashlight, Flare_1..3",
+   "object": "Glovebox_Lid",
+   "box": {
+    "center": [
+     0.0142,
+     0.0,
+     0.0739
+    ],
+    "size": [
+     0.0285,
+     0.44,
+     0.1504
+    ]
+   }
+  },
+  "Map": {
+   "kind": "item",
+   "pivot": [
+    1.84,
+    -0.4305,
+    1.214
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "folded",
+    "open"
+   ],
+   "note": "folded map of the area with the route to the base pencilled in",
+   "object": "Map",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.148,
+     0.169,
+     0.008
+    ]
+   }
+  },
+  "Logbook": {
+   "kind": "item",
+   "pivot": [
+    1.84,
+    -0.43,
+    1.2265
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "trip logbook: dates, fuel, the notes of the previous crew (the story goes in here)",
+   "object": "Logbook",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.128,
+     0.152,
+     0.017
+    ]
+   }
+  },
+  "Flashlight": {
+   "kind": "item",
+   "pivot": [
+    1.8,
+    -0.66,
+    1.236
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "hand torch: the light is lamp Torch (type torch) in van3_lights.json; it rides on the item",
+   "object": "Flashlight",
+   "box": {
+    "center": [
+     0.0,
+     -0.0015,
+     0.0
+    ],
+    "size": [
+     0.052,
+     0.203,
+     0.052
+    ]
+   }
+  },
+  "Flare_1": {
+   "kind": "item",
+   "pivot": [
+    1.848,
+    -0.645,
+    1.2245
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "new",
+    "burning",
+    "spent"
+   ],
+   "note": "road flare: strike the cap; about a minute of red light (lamp Flare_1, type flare)",
+   "object": "Flare_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0276,
+     0.23,
+     0.029
+    ]
+   }
+  },
+  "Flare_2": {
+   "kind": "item",
+   "pivot": [
+    1.877,
+    -0.645,
+    1.2245
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "new",
+    "burning",
+    "spent"
+   ],
+   "note": "road flare: strike the cap; about a minute of red light (lamp Flare_2, type flare)",
+   "object": "Flare_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0276,
+     0.23,
+     0.029
+    ]
+   }
+  },
+  "Flare_3": {
+   "kind": "item",
+   "pivot": [
+    1.906,
+    -0.645,
+    1.2245
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "new",
+    "burning",
+    "spent"
+   ],
+   "note": "road flare: strike the cap; about a minute of red light (lamp Flare_3, type flare)",
+   "object": "Flare_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0276,
+     0.23,
+     0.029
+    ]
+   }
+  },
+  "Radio_Volume": {
+   "kind": "twist",
+   "pivot": [
+    1.7487,
+    -0.0625,
+    1.2646
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": [
+    0,
+    270
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off",
+    "max"
+   ],
+   "note": "power and volume: click on past 0 (clockwise = more; the axis points into the panel)",
+   "object": "Radio_Volume",
+   "box": {
+    "center": [
+     -0.0059,
+     0.0,
+     0.0005
+    ],
+    "size": [
+     0.0137,
+     0.0162,
+     0.0179
+    ]
+   },
+   "removable": false
+  },
+  "Radio_Squelch": {
+   "kind": "twist",
+   "pivot": [
+    1.7487,
+    -0.0844,
+    1.2646
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": [
+    0,
+    270
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "squelch: noise gate (clockwise = more; the axis points into the panel)",
+   "object": "Radio_Squelch",
+   "box": {
+    "center": [
+     -0.0059,
+     0.0,
+     0.0005
+    ],
+    "size": [
+     0.0137,
+     0.0162,
+     0.0179
+    ]
+   },
+   "removable": false
+  },
+  "Radio_ChDown": {
+   "kind": "slide",
+   "pivot": [
+    1.7466,
+    -0.0141,
+    1.2459
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": [
+    0,
+    0.003
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "channel down (1..40), shown on Radio_Display",
+   "object": "Radio_ChDown",
+   "box": {
+    "center": [
+     -0.0015,
+     0.0,
+     0.0002
+    ],
+    "size": [
+     0.0046,
+     0.0115,
+     0.0059
+    ]
+   }
+  },
+  "Radio_ChUp": {
+   "kind": "slide",
+   "pivot": [
+    1.7466,
+    -0.0313,
+    1.2459
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": [
+    0,
+    0.003
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "channel up (1..40), shown on Radio_Display",
+   "object": "Radio_ChUp",
+   "box": {
+    "center": [
+     -0.0015,
+     0.0,
+     0.0002
+    ],
+    "size": [
+     0.0046,
+     0.0115,
+     0.0059
+    ]
+   }
+  },
+  "Radio_Display": {
+   "kind": "static",
+   "pivot": [
+    1.7483,
+    0.0016,
+    1.2661
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "CB display: UV map RT is 0..1 over the glass - put a render texture with the frequency / channel on it",
+   "object": "Radio_Display"
+  },
+  "Radio_MicHook": {
+   "kind": "static",
+   "pivot": [
+    1.7717,
+    -0.285,
+    1.39
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "",
+   "object": "Radio_MicHook"
+  },
+  "Radio_Mic": {
+   "kind": "item",
+   "pivot": [
+    1.7469,
+    -0.285,
+    1.3396
+   ],
+   "axis": [
+    0.1104,
+    0.0,
+    0.9939
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "hand mic on a coiled cord: draw the cord from Radio_Cord_Radio to Radio_Cord_Mic (about 1.2 m stretched)",
+   "object": "Radio_Mic",
+   "box": {
+    "center": [
+     0.0002,
+     0.0,
+     -0.0087
+    ],
+    "size": [
+     0.0395,
+     0.055,
+     0.1129
+    ]
+   }
+  },
+  "Radio_Mic_PTT": {
+   "kind": "slide",
+   "pivot": [
+    1.7478,
+    -0.2555,
+    1.3475
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.003
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Radio_Mic",
+   "states": [],
+   "note": "press to talk",
+   "object": "Radio_Mic_PTT",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0163,
+     0.004,
+     0.0411
+    ]
+   }
+  },
+  "RearMirror": {
+   "kind": "hinge",
+   "pivot": [
+    1.57,
+    0.0,
+    1.88
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -15,
+    15
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "ball joint: the player can turn it",
+   "object": "RearMirror",
+   "box": {
+    "center": [
+     0.0018,
+     -0.0009,
+     0.032
+    ],
+    "size": [
+     0.1123,
+     0.2198,
+     0.1281
+    ]
+   }
+  },
+  "RearMirror_Glass": {
+   "kind": "static",
+   "pivot": [
+    1.57,
+    0.0,
+    1.88
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "RearMirror",
+   "states": [],
+   "note": "render texture quad (UV 0..1, flip U): M_Van_MirrorRT",
+   "object": "RearMirror_Glass"
+  },
+  "doorL": {
+   "kind": "hinge",
+   "pivot": [
+    1.8265,
+    0.8978,
+    1.29
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    70
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "cab door, front hinged; the window slides in the full plan (phase 2)",
+   "object": "doorL",
+   "box": {
+    "center": [
+     -0.4621,
+     0.1025,
+     -0.001
+    ],
+    "size": [
+     0.9945,
+     0.3392,
+     1.3618
+    ]
+   }
+  },
+  "doorP": {
+   "kind": "hinge",
+   "pivot": [
+    1.8265,
+    -0.8978,
+    1.29
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    70
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "cab door, front hinged; the window slides in the full plan (phase 2)",
+   "object": "doorP",
+   "box": {
+    "center": [
+     -0.4621,
+     -0.1025,
+     -0.001
+    ],
+    "size": [
+     0.9945,
+     0.3392,
+     1.3618
+    ]
+   }
+  },
+  "doorZL": {
+   "kind": "hinge",
+   "pivot": [
+    -2.1391,
+    0.7025,
+    1.37
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "rear door, hinged at the outer edge; carries the ladder",
+   "object": "doorZL",
+   "box": {
+    "center": [
+     0.0178,
+     -0.3456,
+     -0.04
+    ],
+    "size": [
+     0.2554,
+     0.7114,
+     1.24
+    ]
+   }
+  },
+  "dooZP": {
+   "kind": "hinge",
+   "pivot": [
+    -2.1391,
+    -0.7017,
+    1.37
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "rear door, hinged at the outer edge; carries the spare wheel",
+   "object": "dooZP",
+   "box": {
+    "center": [
+     -0.0107,
+     0.3456,
+     0.0037
+    ],
+    "size": [
+     0.3124,
+     0.7114,
+     1.1351
+    ]
+   }
+  },
+  "Stove": {
+   "kind": "static",
+   "pivot": [
+    -1.87,
+    0.59,
+    0.806
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "wood stove with the flue through the roof",
+   "object": "Stove"
+  },
+  "StoveGlow": {
+   "kind": "static",
+   "pivot": [
+    -1.709,
+    0.59,
+    1.116
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Stove",
+   "states": [
+    "dark",
+    "glowing"
+   ],
+   "note": "the fire seen through the open door: emissive (M_Van_StoveGlow) while it burns",
+   "object": "StoveGlow"
+  },
+  "WoodBox": {
+   "kind": "static",
+   "pivot": [
+    -1.415,
+    0.22,
+    0.806
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "box for the firewood, beside the stove-front space on the aisle side (clear of the door swing and the ash pan)",
+   "object": "WoodBox"
+  },
+  "StoveDoor": {
+   "kind": "hinge",
+   "pivot": [
+    -1.704,
+    0.69,
+    1.126
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Stove",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "stove door, hinged on the wall side; logs go in through Stove_Load",
+   "object": "StoveDoor",
+   "box": {
+    "center": [
+     0.0165,
+     -0.1,
+     0.0
+    ],
+    "size": [
+     0.045,
+     0.2,
+     0.22
+    ]
+   }
+  },
+  "StoveDoor_Vent": {
+   "kind": "slide",
+   "pivot": [
+    -1.696,
+    0.585,
+    1.051
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.03
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "StoveDoor",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "air vent on the door: more air = hotter and faster",
+   "object": "StoveDoor_Vent",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.004,
+     0.07,
+     0.02
+    ]
+   }
+  },
+  "Stove_AshPan": {
+   "kind": "slide",
+   "pivot": [
+    -1.7,
+    0.59,
+    0.9435
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.15
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Stove",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "ash pan: pull it out to empty it",
+   "object": "Stove_AshPan",
+   "box": {
+    "center": [
+     -0.1064,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.2472,
+     0.18,
+     0.065
+    ]
+   }
+  },
+  "Stove_Damper": {
+   "kind": "twist",
+   "pivot": [
+    -1.92,
+    0.63,
+    1.54
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Stove",
+   "states": [
+    "open",
+    "shut"
+   ],
+   "note": "flue damper: shut it too early and the saloon fills with smoke",
+   "object": "Stove_Damper",
+   "box": {
+    "center": [
+     0.0688,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.1375,
+     0.022,
+     0.022
+    ]
+   },
+   "removable": false
+  },
+  "Kettle": {
+   "kind": "item",
+   "pivot": [
+    -1.79,
+    0.505,
+    1.351
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Stove",
+   "states": [
+    "empty",
+    "cold",
+    "hot"
+   ],
+   "note": "kettle on the stove: hot water for tea or for the radiator on a cold start (Pour_Radiator)",
+   "object": "Kettle",
+   "box": {
+    "center": [
+     0.0268,
+     0.0,
+     0.076
+    ],
+    "size": [
+     0.1963,
+     0.15,
+     0.152
+    ]
+   }
+  },
+  "Log_1": {
+   "kind": "item",
+   "pivot": [
+    -1.453,
+    0.22,
+    0.854
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WoodBox",
+   "states": [],
+   "note": "firewood log: put it in the stove (Stove_Load)",
+   "object": "Log_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.07,
+     0.28,
+     0.07
+    ]
+   }
+  },
+  "Log_2": {
+   "kind": "item",
+   "pivot": [
+    -1.377,
+    0.22,
+    0.854
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WoodBox",
+   "states": [],
+   "note": "firewood log: put it in the stove (Stove_Load)",
+   "object": "Log_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.07,
+     0.28,
+     0.07
+    ]
+   }
+  },
+  "Log_3": {
+   "kind": "item",
+   "pivot": [
+    -1.453,
+    0.22,
+    0.924
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WoodBox",
+   "states": [],
+   "note": "firewood log: put it in the stove (Stove_Load)",
+   "object": "Log_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.07,
+     0.28,
+     0.07
+    ]
+   }
+  },
+  "Log_4": {
+   "kind": "item",
+   "pivot": [
+    -1.377,
+    0.22,
+    0.924
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WoodBox",
+   "states": [],
+   "note": "firewood log: put it in the stove (Stove_Load)",
+   "object": "Log_4",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.07,
+     0.28,
+     0.07
+    ]
+   }
+  },
+  "Curtain_L1A": {
+   "kind": "stretch",
+   "pivot": [
+    -1.5677,
+    0.855,
+    1.9555
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_L1A",
+   "box": {
+    "center": [
+     0.075,
+     -0.03,
+     -0.2567
+    ],
+    "size": [
+     0.1632,
+     0.03,
+     0.5135
+    ]
+   }
+  },
+  "Curtain_L1B": {
+   "kind": "stretch",
+   "pivot": [
+    -0.6223,
+    0.855,
+    1.9555
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_L1B",
+   "box": {
+    "center": [
+     -0.075,
+     -0.03,
+     -0.2567
+    ],
+    "size": [
+     0.1632,
+     0.03,
+     0.5135
+    ]
+   }
+  },
+  "Curtain_L2A": {
+   "kind": "stretch",
+   "pivot": [
+    -0.6039,
+    0.855,
+    1.9555
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_L2A",
+   "box": {
+    "center": [
+     0.075,
+     -0.03,
+     -0.2567
+    ],
+    "size": [
+     0.1632,
+     0.03,
+     0.5135
+    ]
+   }
+  },
+  "Curtain_L2B": {
+   "kind": "stretch",
+   "pivot": [
+    0.3414,
+    0.855,
+    1.9555
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_L2B",
+   "box": {
+    "center": [
+     -0.075,
+     -0.03,
+     -0.2567
+    ],
+    "size": [
+     0.1632,
+     0.03,
+     0.5135
+    ]
+   }
+  },
+  "Curtain_L3A": {
+   "kind": "stretch",
+   "pivot": [
+    0.3731,
+    0.855,
+    1.9555
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    1.545
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 1.54 = closed (meets its pair in the middle)",
+   "object": "Curtain_L3A",
+   "box": {
+    "center": [
+     0.075,
+     -0.03,
+     -0.2567
+    ],
+    "size": [
+     0.1632,
+     0.03,
+     0.5135
+    ]
+   }
+  },
+  "Curtain_L3B": {
+   "kind": "stretch",
+   "pivot": [
+    0.8365,
+    0.855,
+    1.9555
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    1.545
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 1.54 = closed (meets its pair in the middle)",
+   "object": "Curtain_L3B",
+   "box": {
+    "center": [
+     -0.075,
+     -0.03,
+     -0.2567
+    ],
+    "size": [
+     0.1632,
+     0.03,
+     0.5135
+    ]
+   }
+  },
+  "Curtain_R1A": {
+   "kind": "stretch",
+   "pivot": [
+    -1.5677,
+    -0.855,
+    1.9555
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_R1A",
+   "box": {
+    "center": [
+     0.075,
+     0.022,
+     -0.2567
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.5134
+    ]
+   }
+  },
+  "Curtain_R1B": {
+   "kind": "stretch",
+   "pivot": [
+    -0.6223,
+    -0.855,
+    1.9555
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_R1B",
+   "box": {
+    "center": [
+     -0.075,
+     0.022,
+     -0.2567
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.5134
+    ]
+   }
+  },
+  "Curtain_R2A": {
+   "kind": "stretch",
+   "pivot": [
+    -0.6039,
+    -0.855,
+    1.9555
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "doorSalon",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_R2A",
+   "box": {
+    "center": [
+     0.075,
+     0.022,
+     -0.2567
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.5134
+    ]
+   }
+  },
+  "Curtain_R2B": {
+   "kind": "stretch",
+   "pivot": [
+    0.3414,
+    -0.855,
+    1.9555
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    3.151
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "doorSalon",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 3.15 = closed (meets its pair in the middle)",
+   "object": "Curtain_R2B",
+   "box": {
+    "center": [
+     -0.075,
+     0.022,
+     -0.2567
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.5134
+    ]
+   }
+  },
+  "Curtain_R3A": {
+   "kind": "stretch",
+   "pivot": [
+    0.3731,
+    -0.855,
+    1.9555
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    1.545
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 1.54 = closed (meets its pair in the middle)",
+   "object": "Curtain_R3A",
+   "box": {
+    "center": [
+     0.075,
+     0.022,
+     -0.2567
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.5134
+    ]
+   }
+  },
+  "Curtain_R3B": {
+   "kind": "stretch",
+   "pivot": [
+    0.8365,
+    -0.855,
+    1.9555
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    1.0,
+    1.545
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kuzov",
+   "states": [
+    "open",
+    "closed"
+   ],
+   "note": "curtain: scale along axis from the window edge; 1.54 = closed (meets its pair in the middle)",
+   "object": "Curtain_R3B",
+   "box": {
+    "center": [
+     -0.075,
+     0.022,
+     -0.2567
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.5134
+    ]
+   }
+  },
+  "Engine_AirFilterLid": {
+   "kind": "twist",
+   "pivot": [
+    1.19,
+    -0.13,
+    1.078
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    120
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "wing nut, then lift off",
+   "object": "Engine_AirFilterLid",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.005
+    ],
+    "size": [
+     0.25,
+     0.2462,
+     0.042
+    ]
+   },
+   "removable": "end"
+  },
+  "Engine_DistributorCap": {
+   "kind": "item",
+   "pivot": [
+    1.0,
+    0.14,
+    0.88
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "two spring clips, then lift (leads stay on)",
+   "object": "Engine_DistributorCap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.03
+    ],
+    "size": [
+     0.08,
+     0.08,
+     0.06
+    ]
+   }
+  },
+  "Engine_Plug_1": {
+   "kind": "item",
+   "pivot": [
+    1.05,
+    0.099,
+    0.89
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "unscrew (6 turns) along the axis, then free; the lead must be off",
+   "object": "Engine_Plug_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0106,
+     0.015
+    ],
+    "size": [
+     0.0173,
+     0.0372,
+     0.0419
+    ]
+   }
+  },
+  "Engine_Lead_1": {
+   "kind": "slide",
+   "pivot": [
+    1.05,
+    0.123,
+    0.922
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "boot off the plug",
+   "object": "Engine_Lead_1",
+   "box": {
+    "center": [
+     -0.0142,
+     0.0207,
+     0.0406
+    ],
+    "size": [
+     0.0432,
+     0.0599,
+     0.0978
+    ]
+   }
+  },
+  "Engine_Plug_2": {
+   "kind": "item",
+   "pivot": [
+    1.145,
+    0.099,
+    0.89
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "unscrew (6 turns) along the axis, then free; the lead must be off",
+   "object": "Engine_Plug_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0106,
+     0.015
+    ],
+    "size": [
+     0.0173,
+     0.0372,
+     0.0419
+    ]
+   }
+  },
+  "Engine_Lead_2": {
+   "kind": "slide",
+   "pivot": [
+    1.145,
+    0.123,
+    0.922
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "boot off the plug",
+   "object": "Engine_Lead_2",
+   "box": {
+    "center": [
+     -0.08,
+     0.0154,
+     0.0406
+    ],
+    "size": [
+     0.1747,
+     0.0492,
+     0.0978
+    ]
+   }
+  },
+  "Engine_Plug_3": {
+   "kind": "item",
+   "pivot": [
+    1.24,
+    0.099,
+    0.89
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "unscrew (6 turns) along the axis, then free; the lead must be off",
+   "object": "Engine_Plug_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0106,
+     0.015
+    ],
+    "size": [
+     0.0173,
+     0.0372,
+     0.0419
+    ]
+   }
+  },
+  "Engine_Lead_3": {
+   "kind": "slide",
+   "pivot": [
+    1.24,
+    0.123,
+    0.922
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "boot off the plug",
+   "object": "Engine_Lead_3",
+   "box": {
+    "center": [
+     -0.1092,
+     0.0153,
+     0.0406
+    ],
+    "size": [
+     0.233,
+     0.0491,
+     0.0978
+    ]
+   }
+  },
+  "Engine_Plug_4": {
+   "kind": "item",
+   "pivot": [
+    1.335,
+    0.099,
+    0.89
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "unscrew (6 turns) along the axis, then free; the lead must be off",
+   "object": "Engine_Plug_4",
+   "box": {
+    "center": [
+     0.0,
+     0.0106,
+     0.015
+    ],
+    "size": [
+     0.0173,
+     0.0372,
+     0.0419
+    ]
+   }
+  },
+  "Engine_Lead_4": {
+   "kind": "slide",
+   "pivot": [
+    1.335,
+    0.123,
+    0.922
+   ],
+   "axis": [
+    0.0,
+    0.6,
+    0.8
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "boot off the plug",
+   "object": "Engine_Lead_4",
+   "box": {
+    "center": [
+     -0.1752,
+     0.0208,
+     0.0406
+    ],
+    "size": [
+     0.3651,
+     0.06,
+     0.0978
+    ]
+   }
+  },
+  "Engine": {
+   "kind": "static",
+   "pivot": [
+    1.19,
+    0.0,
+    0.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "EngineBay",
+   "states": [],
+   "note": "",
+   "object": "Engine"
+  },
+  "Engine_Belt": {
+   "kind": "static",
+   "pivot": [
+    1.452,
+    0.0,
+    0.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [
+    "ok",
+    "loose",
+    "broken"
+   ],
+   "note": "fan belt: broken = hide the object, loose = slips (sound), the alternator light comes on",
+   "object": "Engine_Belt"
+  },
+  "Engine_Fan": {
+   "kind": "spin",
+   "pivot": [
+    1.455,
+    0.0,
+    0.81
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "turns with the engine (rpm x 1.2)",
+   "object": "Engine_Fan",
+   "box": {
+    "center": [
+     0.006,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0248,
+     0.2454,
+     0.2454
+    ]
+   }
+  },
+  "Engine_Dipstick": {
+   "kind": "slide",
+   "pivot": [
+    1.42,
+    -0.205,
+    1.015
+   ],
+   "axis": [
+    0.1566,
+    -0.261,
+    0.9526
+   ],
+   "range": [
+    0,
+    0.42
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "pull out, the oil level is drawn on the stick (texture), wipe, push back",
+   "object": "Engine_Dipstick",
+   "box": {
+    "center": [
+     -0.0192,
+     0.0453,
+     -0.167
+    ],
+    "size": [
+     0.0912,
+     0.1224,
+     0.4293
+    ]
+   }
+  },
+  "Engine_OilCap": {
+   "kind": "twist",
+   "pivot": [
+    1.33,
+    0.03,
+    0.97
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "quarter turn, then lift: oil goes in here",
+   "object": "Engine_OilCap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.016
+    ],
+    "size": [
+     0.048,
+     0.048,
+     0.032
+    ]
+   },
+   "removable": "end"
+  },
+  "Engine_CoolantCap": {
+   "kind": "twist",
+   "pivot": [
+    0.975,
+    -0.205,
+    0.98
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    270
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "screw cap; hot engine = steam",
+   "object": "Engine_CoolantCap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0085
+    ],
+    "size": [
+     0.038,
+     0.0361,
+     0.017
+    ]
+   },
+   "removable": "end"
+  },
+  "Engine_PrimerLever": {
+   "kind": "hinge",
+   "pivot": [
+    1.39,
+    0.165,
+    0.695
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    35
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [],
+   "note": "hand primer: pump to fill the carb",
+   "object": "Engine_PrimerLever",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.025
+    ],
+    "size": [
+     0.008,
+     0.008,
+     0.05
+    ]
+   }
+  },
+  "EngineCover": {
+   "kind": "hinge",
+   "pivot": [
+    0.905,
+    0.0,
+    1.2
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "latched",
+    "unlatched",
+    "open"
+   ],
+   "note": "two latches in front, then the front edge lifts towards the partition",
+   "object": "EngineCover",
+   "box": {
+    "center": [
+     0.291,
+     0.0,
+     -0.1
+    ],
+    "size": [
+     0.582,
+     0.57,
+     0.2
+    ]
+   }
+  },
+  "MassSwitch_Key": {
+   "kind": "twist",
+   "pivot": [
+    0.47,
+    0.558,
+    0.976
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BatteryBox",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "battery isolator: 0 = off, 90 = on, clockwise seen from the aisle (the axis points into the box); the key comes out in the off position",
+   "object": "MassSwitch_Key",
+   "box": {
+    "center": [
+     0.0,
+     -0.03,
+     0.0
+    ],
+    "size": [
+     0.07,
+     0.036,
+     0.024
+    ]
+   },
+   "removable": "start"
+  },
+  "BatteryBox_Lid": {
+   "kind": "hinge",
+   "pivot": [
+    0.39,
+    0.865,
+    1.079
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    65
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BatteryBox",
+   "states": [],
+   "note": "hinged at the wall, the aisle edge lifts; fold seat L4 up first (its pan is above the lid)",
+   "object": "BatteryBox_Lid",
+   "box": {
+    "center": [
+     0.0,
+     -0.1545,
+     0.006
+    ],
+    "size": [
+     0.31,
+     0.311,
+     0.03
+    ]
+   }
+  },
+  "Battery": {
+   "kind": "item",
+   "pivot": [
+    0.39,
+    0.71,
+    0.816
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BatteryBox",
+   "states": [
+    "charge 0..1"
+   ],
+   "note": "12 V 60 Ah, 18 kg: lift by the strap when both clamps are off; charge at the base",
+   "object": "Battery",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.1322
+    ],
+    "size": [
+     0.278,
+     0.175,
+     0.2644
+    ]
+   }
+  },
+  "Battery_ClampPos": {
+   "kind": "slide",
+   "pivot": [
+    0.285,
+    0.67,
+    1.033
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "BatteryBox",
+   "states": [],
+   "note": "loosen the bolt, lift off the post (minus first)",
+   "object": "Battery_ClampPos",
+   "box": {
+    "center": [
+     0.006,
+     -0.0345,
+     -0.098
+    ],
+    "size": [
+     0.048,
+     0.105,
+     0.234
+    ]
+   }
+  },
+  "Battery_ClampNeg": {
+   "kind": "slide",
+   "pivot": [
+    0.495,
+    0.67,
+    1.033
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "BatteryBox",
+   "states": [],
+   "note": "loosen the bolt, lift off the post (minus first)",
+   "object": "Battery_ClampNeg",
+   "box": {
+    "center": [
+     0.007,
+     -0.0355,
+     -0.1055
+    ],
+    "size": [
+     0.046,
+     0.103,
+     0.219
+    ]
+   }
+  },
+  "FuseBox_Lid": {
+   "kind": "hinge",
+   "pivot": [
+    1.688,
+    -0.3,
+    1.043
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [],
+   "note": "drops down towards the passenger",
+   "object": "FuseBox_Lid",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.052
+    ],
+    "size": [
+     0.004,
+     0.184,
+     0.104
+    ]
+   }
+  },
+  "Fuse_1": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.24,
+    1.117
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "HEAD circuit (same order as the switch plate)",
+   "object": "Fuse_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_2": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.28,
+    1.117
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "FOG circuit (same order as the switch plate)",
+   "object": "Fuse_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_3": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.32,
+    1.117
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "SPOT circuit (same order as the switch plate)",
+   "object": "Fuse_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_4": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.36,
+    1.117
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "ROOF circuit (same order as the switch plate)",
+   "object": "Fuse_4",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_5": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.24,
+    1.073
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "WORK circuit (same order as the switch plate)",
+   "object": "Fuse_5",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_6": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.28,
+    1.073
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "CABIN circuit (same order as the switch plate)",
+   "object": "Fuse_6",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_7": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.32,
+    1.073
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "STOVE circuit (same order as the switch plate)",
+   "object": "Fuse_7",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Fuse_8": {
+   "kind": "item",
+   "pivot": [
+    1.689,
+    -0.36,
+    1.073
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseBox",
+   "states": [
+    "ok",
+    "blown"
+   ],
+   "note": "WIPER circuit (same order as the switch plate)",
+   "object": "Fuse_8",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0083,
+     0.028,
+     0.0096
+    ]
+   }
+  },
+  "Ignition_Key": {
+   "kind": "twist",
+   "pivot": [
+    1.7508,
+    0.4,
+    1.202
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DashControls",
+   "states": [
+    "0 off",
+    "I acc",
+    "II on",
+    "III start"
+   ],
+   "note": "positions 0 / 30 / 60 / 90 deg clockwise (the axis points into the panel); III springs back to II; the key comes out at 0",
+   "object": "Ignition_Key",
+   "box": {
+    "center": [
+     -0.0254,
+     0.0,
+     0.0022
+    ],
+    "size": [
+     0.0389,
+     0.026,
+     0.0088
+    ]
+   },
+   "removable": "start"
+  },
+  "Knob_Choke": {
+   "kind": "slide",
+   "pivot": [
+    1.75,
+    0.27,
+    1.195
+   ],
+   "axis": [
+    -0.9939,
+    0.0,
+    0.1104
+   ],
+   "range": [
+    0,
+    0.05
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "DashControls",
+   "states": [],
+   "note": "choke: pull for a cold start",
+   "object": "Knob_Choke",
+   "box": {
+    "center": [
+     -0.0221,
+     0.0,
+     0.0039
+    ],
+    "size": [
+     0.0452,
+     0.0266,
+     0.0292
+    ]
+   }
+  },
+  "Knob_Throttle": {
+   "kind": "slide",
+   "pivot": [
+    1.75,
+    0.325,
+    1.195
+   ],
+   "axis": [
+    -0.9939,
+    0.0,
+    0.1104
+   ],
+   "range": [
+    0,
+    0.05
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "DashControls",
+   "states": [],
+   "note": "hand throttle: pull to hold the revs",
+   "object": "Knob_Throttle",
+   "box": {
+    "center": [
+     -0.0221,
+     0.0,
+     0.0039
+    ],
+    "size": [
+     0.0452,
+     0.0266,
+     0.0292
+    ]
+   }
+  },
+  "Handbrake": {
+   "kind": "slide",
+   "pivot": [
+    1.7478,
+    0.74,
+    1.175
+   ],
+   "axis": [
+    -0.9939,
+    0.0,
+    0.1104
+   ],
+   "range": [
+    0,
+    0.12
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "DashControls",
+   "states": [],
+   "note": "pull the T-handle, twist to release",
+   "object": "Handbrake",
+   "box": {
+    "center": [
+     -0.0306,
+     0.0,
+     0.0054
+    ],
+    "size": [
+     0.0624,
+     0.11,
+     0.0226
+    ]
+   }
+  },
+  "FuelCap_L": {
+   "kind": "twist",
+   "pivot": [
+    0.143,
+    0.987,
+    0.932
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    360
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelFiller_L",
+   "states": [],
+   "note": "one turn anticlockwise, then it comes off (on a chain in the game if you like)",
+   "object": "FuelCap_L",
+   "box": {
+    "center": [
+     0.0,
+     0.0115,
+     0.0
+    ],
+    "size": [
+     0.068,
+     0.023,
+     0.068
+    ]
+   },
+   "removable": "end"
+  },
+  "FuelFlap_L": {
+   "kind": "hinge",
+   "pivot": [
+    0.223,
+    0.9995,
+    0.932
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelFiller_L",
+   "states": [],
+   "note": "hinged at its front edge, opens outwards",
+   "object": "FuelFlap_L",
+   "box": {
+    "center": [
+     -0.08,
+     0.0008,
+     0.0
+    ],
+    "size": [
+     0.16,
+     0.0055,
+     0.16
+    ]
+   }
+  },
+  "FuelFiller_L": {
+   "kind": "static",
+   "pivot": [
+    0.143,
+    0.961,
+    0.932
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "FuelFiller_L"
+  },
+  "FuelCap_R": {
+   "kind": "twist",
+   "pivot": [
+    0.55,
+    -0.987,
+    0.89
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    360
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelFiller_R",
+   "states": [],
+   "note": "one turn anticlockwise, then it comes off (on a chain in the game if you like)",
+   "object": "FuelCap_R",
+   "box": {
+    "center": [
+     0.0,
+     -0.0115,
+     0.0
+    ],
+    "size": [
+     0.068,
+     0.023,
+     0.068
+    ]
+   },
+   "removable": "end"
+  },
+  "FuelFlap_R": {
+   "kind": "hinge",
+   "pivot": [
+    0.63,
+    -0.9995,
+    0.89
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelFiller_R",
+   "states": [],
+   "note": "hinged at its front edge, opens outwards",
+   "object": "FuelFlap_R",
+   "box": {
+    "center": [
+     -0.08,
+     -0.0008,
+     0.0
+    ],
+    "size": [
+     0.16,
+     0.0055,
+     0.16
+    ]
+   }
+  },
+  "FuelFiller_R": {
+   "kind": "static",
+   "pivot": [
+    0.55,
+    -0.961,
+    0.89
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "FuelFiller_R"
+  },
+  "FuelTanks": {
+   "kind": "static",
+   "pivot": [
+    0.235,
+    0.0,
+    0.48
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "left 0..56 l",
+    "right 0..56 l"
+   ],
+   "note": "",
+   "object": "FuelTanks"
+  },
+  "TankValve_Lever": {
+   "kind": "twist",
+   "pivot": [
+    1.515,
+    0.62,
+    0.92
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    -45,
+    45
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TankValve",
+   "states": [
+    "-45 left",
+    "0 off",
+    "45 right"
+   ],
+   "note": "which tank feeds the engine; the fuel gauge reads the selected tank",
+   "object": "TankValve_Lever",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.026
+    ],
+    "size": [
+     0.008,
+     0.016,
+     0.068
+    ]
+   },
+   "removable": false
+  },
+  "Jerrycan_1": {
+   "kind": "item",
+   "pivot": [
+    -1.385,
+    -0.57,
+    2.3925
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_RoofRack",
+   "states": [
+    "fuel 0..20 l"
+   ],
+   "note": "strapped on the rack; carry by the middle handle, pour with the spout fitted",
+   "object": "Jerrycan_1",
+   "box": {
+    "center": [
+     -0.0232,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.5163,
+     0.345,
+     0.174
+    ]
+   }
+  },
+  "Jerrycan_2": {
+   "kind": "item",
+   "pivot": [
+    -1.385,
+    -0.2,
+    2.3925
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_RoofRack",
+   "states": [
+    "fuel 0..20 l"
+   ],
+   "note": "strapped on the rack; carry by the middle handle, pour with the spout fitted",
+   "object": "Jerrycan_2",
+   "box": {
+    "center": [
+     -0.0232,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.5163,
+     0.345,
+     0.174
+    ]
+   }
+  },
+  "Spout": {
+   "kind": "item",
+   "pivot": [
+    -1.5,
+    0.03,
+    2.33
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_RoofRack",
+   "states": [],
+   "note": "screws onto a jerrycan; its tip goes into a filler (Pour_Fuel_L / _R)",
+   "object": "Spout",
+   "box": {
+    "center": [
+     0.149,
+     0.0517,
+     0.0
+    ],
+    "size": [
+     0.3579,
+     0.1643,
+     0.064
+    ]
+   }
+  },
+  "Pedal_Clutch": {
+   "kind": "hinge",
+   "pivot": [
+    1.928,
+    0.665,
+    1.13
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    18
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "suspended pedal; pressed = 18 deg (the pad goes forward and down)",
+   "object": "Pedal_Clutch",
+   "box": {
+    "center": [
+     -0.0777,
+     0.0,
+     -0.109
+    ],
+    "size": [
+     0.1762,
+     0.065,
+     0.2419
+    ]
+   }
+  },
+  "Pedal_Brake": {
+   "kind": "hinge",
+   "pivot": [
+    1.928,
+    0.435,
+    1.13
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    18
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "suspended pedal; pressed = 18 deg (the pad goes forward and down)",
+   "object": "Pedal_Brake",
+   "box": {
+    "center": [
+     -0.0777,
+     0.0,
+     -0.109
+    ],
+    "size": [
+     0.1762,
+     0.065,
+     0.2419
+    ]
+   }
+  },
+  "Pedal_Gas": {
+   "kind": "hinge",
+   "pivot": [
+    1.7,
+    0.335,
+    0.842
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    14
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "organ pedal hinged at the heel; pressed = 14 deg (the top goes forward and down)",
+   "object": "Pedal_Gas",
+   "box": {
+    "center": [
+     0.0566,
+     0.0,
+     0.0962
+    ],
+    "size": [
+     0.1382,
+     0.068,
+     0.2083
+    ]
+   }
+  },
+  "PedalBox": {
+   "kind": "static",
+   "pivot": [
+    1.85,
+    0.5,
+    1.04
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "PedalBox"
+  },
+  "GearLever_Boot": {
+   "kind": "static",
+   "pivot": [
+    1.66,
+    0.16,
+    1.002
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "GearLever_Boot"
+  },
+  "GearLever": {
+   "kind": "hinge",
+   "pivot": [
+    1.66,
+    0.16,
+    1.032
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "N (0, 0)",
+    "1 (-8, -12)",
+    "2 (-8, +12)",
+    "3 (+8, -12)",
+    "4 (+8, +12)",
+    "R (-14, -12, lift)"
+   ],
+   "note": "two-axis: (side deg about +x, fore-aft deg about +y); 4 + reverse, H pattern on the knob",
+   "object": "GearLever",
+   "box": {
+    "center": [
+     -0.0594,
+     0.0,
+     0.1429
+    ],
+    "size": [
+     0.1348,
+     0.0418,
+     0.3058
+    ]
+   }
+  },
+  "TransferLever_Axle": {
+   "kind": "hinge",
+   "pivot": [
+    1.64,
+    -0.06,
+    1.002
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    -15,
+    15
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "front axle: back = engaged",
+   "object": "TransferLever_Axle",
+   "box": {
+    "center": [
+     -0.0293,
+     0.0,
+     0.0885
+    ],
+    "size": [
+     0.1186,
+     0.04,
+     0.1829
+    ]
+   }
+  },
+  "TransferLever_Range": {
+   "kind": "hinge",
+   "pivot": [
+    1.64,
+    -0.125,
+    1.002
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    -15,
+    15
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "range: forward = high, back = low",
+   "object": "TransferLever_Range",
+   "box": {
+    "center": [
+     -0.0293,
+     0.0,
+     0.0885
+    ],
+    "size": [
+     0.1186,
+     0.04,
+     0.1829
+    ]
+   }
+  },
+  "ToolBox": {
+   "kind": "item",
+   "pivot": [
+    0.63,
+    -0.77,
+    0.806
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "steel tool box under the folding seat R2; carried by the handle on the lid (close it first)",
+   "object": "ToolBox",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     0.076
+    ],
+    "size": [
+     0.42,
+     0.244,
+     0.152
+    ]
+   }
+  },
+  "ToolBox_Lid": {
+   "kind": "hinge",
+   "pivot": [
+    0.63,
+    -0.892,
+    0.954
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    88
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "hinged at the wall, the aisle edge lifts",
+   "object": "ToolBox_Lid",
+   "box": {
+    "center": [
+     0.0,
+     0.122,
+     0.0244
+    ],
+    "size": [
+     0.424,
+     0.244,
+     0.0568
+    ]
+   }
+  },
+  "Tool_Wrench": {
+   "kind": "item",
+   "pivot": [
+    0.54,
+    -0.862,
+    0.817
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "spanner 13 / 17: battery clamp bolts, belt tension, fittings",
+   "object": "Tool_Wrench",
+   "box": {
+    "center": [
+     -0.005,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.206,
+     0.032,
+     0.006
+    ]
+   }
+  },
+  "Tool_PlugSpanner": {
+   "kind": "item",
+   "pivot": [
+    0.52,
+    -0.825,
+    0.825
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "spark plug spanner: fits Engine_Plug_N (take the lead off first)",
+   "object": "Tool_PlugSpanner",
+   "box": {
+    "center": [
+     -0.0075,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.145,
+     0.052,
+     0.025
+    ]
+   }
+  },
+  "Tool_Screwdriver": {
+   "kind": "item",
+   "pivot": [
+    0.58,
+    -0.778,
+    0.826
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "flat screwdriver: clamps, fuse box lid",
+   "object": "Tool_Screwdriver",
+   "box": {
+    "center": [
+     -0.045,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.19,
+     0.0208,
+     0.024
+    ]
+   }
+  },
+  "Tool_Pliers": {
+   "kind": "item",
+   "pivot": [
+    0.52,
+    -0.72,
+    0.818
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "pliers",
+   "object": "Tool_Pliers",
+   "box": {
+    "center": [
+     0.0064,
+     0.0,
+     0.0005
+    ],
+    "size": [
+     0.1729,
+     0.0509,
+     0.009
+    ]
+   }
+  },
+  "Spare_Belt": {
+   "kind": "item",
+   "pivot": [
+    0.74,
+    -0.8,
+    0.818
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "fan belt: fit over the three pulleys to set Engine_Belt broken / loose -> ok",
+   "object": "Spare_Belt",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.1279,
+     0.128,
+     0.008
+    ]
+   }
+  },
+  "FuseTin": {
+   "kind": "item",
+   "pivot": [
+    0.74,
+    -0.7,
+    0.814
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ToolBox",
+   "states": [],
+   "note": "tin with three spare fuses",
+   "object": "FuseTin",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.009
+    ],
+    "size": [
+     0.06,
+     0.06,
+     0.018
+    ]
+   }
+  },
+  "Spare_Fuse_1": {
+   "kind": "item",
+   "pivot": [
+    0.74,
+    -0.712,
+    0.8215
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseTin",
+   "states": [
+    "ok"
+   ],
+   "note": "fits any Fuse_N slot of the fuse box",
+   "object": "Spare_Fuse_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.028,
+     0.0083,
+     0.0096
+    ]
+   }
+  },
+  "Spare_Fuse_2": {
+   "kind": "item",
+   "pivot": [
+    0.74,
+    -0.7,
+    0.8215
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseTin",
+   "states": [
+    "ok"
+   ],
+   "note": "fits any Fuse_N slot of the fuse box",
+   "object": "Spare_Fuse_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.028,
+     0.0083,
+     0.0096
+    ]
+   }
+  },
+  "Spare_Fuse_3": {
+   "kind": "item",
+   "pivot": [
+    0.74,
+    -0.688,
+    0.8215
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuseTin",
+   "states": [
+    "ok"
+   ],
+   "note": "fits any Fuse_N slot of the fuse box",
+   "object": "Spare_Fuse_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.028,
+     0.0083,
+     0.0096
+    ]
+   }
+  },
+  "Jack": {
+   "kind": "item",
+   "pivot": [
+    -0.8,
+    0.8,
+    0.806
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "bottle jack: stand it under the axle; the wheel brace is the pump lever",
+   "object": "Jack",
+   "box": {
+    "center": [
+     0.0075,
+     0.0,
+     0.09
+    ],
+    "size": [
+     0.125,
+     0.09,
+     0.18
+    ]
+   }
+  },
+  "Jack_Ram": {
+   "kind": "slide",
+   "pivot": [
+    -0.8,
+    0.8,
+    0.971
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.12
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Jack",
+   "states": [],
+   "note": "ram: rises 12 cm while pumping (WheelBrace in Jack_PumpSocket)",
+   "object": "Jack_Ram",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.0325
+    ],
+    "size": [
+     0.044,
+     0.0418,
+     0.165
+    ]
+   }
+  },
+  "Jack_Screw": {
+   "kind": "slide",
+   "pivot": [
+    -0.8,
+    0.8,
+    1.041
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.1
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Jack_Ram",
+   "states": [],
+   "note": "extension screw in the ram top: turn it out by hand (up to 10 cm), then pump - the ram closes the last 3-6 cm to the axle and lifts the wheel 6-8 cm; closed 0.242 m + screw 0.10 + ram 0.12 = 0.46 m",
+   "object": "Jack_Screw",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.0615
+    ],
+    "size": [
+     0.04,
+     0.04,
+     0.137
+    ]
+   }
+  },
+  "WheelBrace": {
+   "kind": "item",
+   "pivot": [
+    -0.66,
+    0.62,
+    0.823
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "wheel brace: the wheel nuts (the spare is held by a wing nut, by hand); the jack pump lever",
+   "object": "WheelBrace",
+   "box": {
+    "center": [
+     0.006,
+     -0.0477,
+     0.0
+    ],
+    "size": [
+     0.4219,
+     0.1249,
+     0.034
+    ]
+   }
+  },
+  "OilCan": {
+   "kind": "item",
+   "pivot": [
+    -0.62,
+    0.825,
+    0.806
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "oil 0..5 l"
+   ],
+   "note": "engine oil: pour into Pour_Oil on the valve cover",
+   "object": "OilCan",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.132
+    ],
+    "size": [
+     0.17,
+     0.11,
+     0.2641
+    ]
+   }
+  },
+  "AntifreezeCan": {
+   "kind": "item",
+   "pivot": [
+    -0.43,
+    0.82,
+    0.806
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "antifreeze 0..5 l"
+   ],
+   "note": "antifreeze: pour into Pour_Coolant (bottle) or Pour_Radiator (hatch above the grille)",
+   "object": "AntifreezeCan",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.1293
+    ],
+    "size": [
+     0.15,
+     0.12,
+     0.2586
+    ]
+   }
+  },
+  "Shovel": {
+   "kind": "item",
+   "pivot": [
+    -1.2188,
+    0.3238,
+    2.318
+   ],
+   "axis": [
+    0.7295,
+    -0.6839,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_RoofRack",
+   "states": [],
+   "note": "spade on the roof rack (left rear): dig the wheels out, clear the snow off the hatch",
+   "object": "Shovel",
+   "box": {
+    "center": [
+     -0.1023,
+     0.0986,
+     0.0
+    ],
+    "size": [
+     0.7624,
+     0.7307,
+     0.044
+    ]
+   }
+  },
+  "TowRope": {
+   "kind": "item",
+   "pivot": [
+    -1.78,
+    -0.875,
+    1.67
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "tow strap 5 m with two shackles: Tow_Hook_FL / FR on the bumper, Tow_Rear",
+   "object": "TowRope",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.098
+    ],
+    "size": [
+     0.26,
+     0.044,
+     0.456
+    ]
+   }
+  },
+  "CrankHandle": {
+   "kind": "item",
+   "pivot": [
+    0.858,
+    0.55,
+    1.39
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "starting handle: open CrankHole_Flap, push it in along Crank_Hole until the tip pin catches Crank_Ratchet, then jerk it round clockwise seen from the front (ignition on, choke out); working pose: tip at Crank_Ratchet, rod +x, arm down (object property \"working\")",
+   "object": "CrankHandle",
+   "box": {
+    "center": [
+     0.0,
+     -0.605,
+     -0.0945
+    ],
+    "size": [
+     0.04,
+     1.222,
+     0.211
+    ]
+   }
+  },
+  "Crank_Guide": {
+   "kind": "static",
+   "pivot": [
+    1.9,
+    0.0,
+    0.61
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "crank hole in the bumper, grommet, guide ring, ratchet",
+   "object": "Crank_Guide"
+  },
+  "CrankHole_Flap": {
+   "kind": "hinge",
+   "pivot": [
+    2.337,
+    0.0,
+    0.64
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    95
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "note": "sprung flap over the crank hole: lift it, then insert the handle",
+   "object": "CrankHole_Flap",
+   "box": {
+    "center": [
+     -0.001,
+     0.0,
+     -0.027
+    ],
+    "size": [
+     0.004,
+     0.056,
+     0.062
+    ]
+   }
+  },
+  "Socket_12V_Cap": {
+   "kind": "hinge",
+   "pivot": [
+    1.7393,
+    -0.24,
+    1.1895
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DashControls",
+   "states": [],
+   "note": "cap of the 12 V socket (hinged at the top)",
+   "object": "Socket_12V_Cap",
+   "box": {
+    "center": [
+     -0.0017,
+     0.0,
+     -0.0134
+    ],
+    "size": [
+     0.0065,
+     0.0257,
+     0.0272
+    ]
+   }
+  },
+  "Heater_Temp": {
+   "kind": "slide",
+   "pivot": [
+    1.7411,
+    0.105,
+    1.196
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.062
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "cold",
+    "hot"
+   ],
+   "note": "heat: slide towards the red end of the bar",
+   "object": "Heater_Temp",
+   "box": {
+    "center": [
+     -0.006,
+     0.0,
+     0.0007
+    ],
+    "size": [
+     0.0113,
+     0.01,
+     0.013
+    ]
+   }
+  },
+  "Heater_Fan": {
+   "kind": "slide",
+   "pivot": [
+    1.7412,
+    -0.0012,
+    1.197
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.0507
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "0",
+    "1 (0.0169)",
+    "2 (0.0338)",
+    "3 (0.0507)"
+   ],
+   "note": "fan speed 0..3 (needs Toggle_Stove on)",
+   "object": "Heater_Fan",
+   "box": {
+    "center": [
+     -0.006,
+     0.0,
+     0.0007
+    ],
+    "size": [
+     0.0115,
+     0.008,
+     0.015
+    ]
+   }
+  },
+  "Heater_Air": {
+   "kind": "twist",
+   "pivot": [
+    1.7416,
+    -0.086,
+    1.201
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "feet",
+    "windscreen"
+   ],
+   "note": "air flap, clockwise from feet to windscreen (the axis points into the panel): with heat and fan it clears the frost (see lob)",
+   "object": "Heater_Air",
+   "box": {
+    "center": [
+     -0.006,
+     0.0,
+     0.0004
+    ],
+    "size": [
+     0.0141,
+     0.0171,
+     0.0188
+    ]
+   },
+   "removable": false
+  },
+  "Blowtorch": {
+   "kind": "item",
+   "pivot": [
+    -0.12,
+    0.8,
+    0.806
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "empty",
+    "filled",
+    "pumped",
+    "burning"
+   ],
+   "note": "blowtorch: fill with petrol (Pour_Blowtorch), pump, warm the cup, open the valve; hold the flame under the sump (Heat_OilPan) for a cold start",
+   "object": "Blowtorch",
+   "box": {
+    "center": [
+     -0.0415,
+     0.0,
+     0.112
+    ],
+    "size": [
+     0.287,
+     0.1072,
+     0.224
+    ]
+   }
+  },
+  "Blowtorch_Pump": {
+   "kind": "slide",
+   "pivot": [
+    -0.15,
+    0.8,
+    0.939
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Blowtorch",
+   "states": [],
+   "note": "pump: ten strokes for the pressure",
+   "object": "Blowtorch_Pump",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0395
+    ],
+    "size": [
+     0.044,
+     0.012,
+     0.079
+    ]
+   }
+  },
+  "Blowtorch_Valve": {
+   "kind": "twist",
+   "pivot": [
+    -0.18,
+    0.8,
+    1.023
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    540
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Blowtorch",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "fuel valve: a turn and a half to full flame",
+   "object": "Blowtorch_Valve",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.013
+    ],
+    "size": [
+     0.026,
+     0.0247,
+     0.026
+    ]
+   },
+   "removable": false
+  },
+  "Engine_Drain": {
+   "kind": "twist",
+   "pivot": [
+    1.31,
+    0.1,
+    0.625
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Engine",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "coolant drain cock on the block: open it at night if there is only water in the system; refill hot water (Kettle) through Pour_Radiator",
+   "object": "Engine_Drain",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.016,
+     0.024,
+     0.04
+    ]
+   },
+   "removable": false
+  },
+  "Exhaust": {
+   "kind": "static",
+   "pivot": [
+    -0.6,
+    -0.4,
+    0.56
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "Exhaust"
+  },
+  "ChainBag": {
+   "kind": "item",
+   "pivot": [
+    -1.03,
+    -0.76,
+    1.006
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "full",
+    "empty"
+   ],
+   "note": "canvas bag with the snow chains: fitting it shows Chains_<wheel> on the chosen wheel",
+   "object": "ChainBag",
+   "box": {
+    "center": [
+     0.0117,
+     0.0,
+     0.0713
+    ],
+    "size": [
+     0.2834,
+     0.13,
+     0.1426
+    ]
+   }
+  },
+  "Chains_FR": {
+   "kind": "static",
+   "pivot": [
+    1.2067,
+    -0.8243,
+    0.3618
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "hidden",
+    "fitted"
+   ],
+   "note": "snow chains on this wheel: hidden until fitted from the ChainBag (they turn with the wheel)",
+   "default": "hidden",
+   "object": "Chains_FR"
+  },
+  "Chains_RR": {
+   "kind": "static",
+   "pivot": [
+    -1.2031,
+    -0.8243,
+    0.3618
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "hidden",
+    "fitted"
+   ],
+   "note": "snow chains on this wheel: hidden until fitted from the ChainBag (they turn with the wheel)",
+   "default": "hidden",
+   "object": "Chains_RR"
+  },
+  "Chains_RL": {
+   "kind": "static",
+   "pivot": [
+    -1.2031,
+    0.8272,
+    0.3618
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "hidden",
+    "fitted"
+   ],
+   "note": "snow chains on this wheel: hidden until fitted from the ChainBag (they turn with the wheel)",
+   "default": "hidden",
+   "object": "Chains_RL"
+  },
+  "Chains_FL": {
+   "kind": "static",
+   "pivot": [
+    1.2067,
+    0.8272,
+    0.3618
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "hidden",
+    "fitted"
+   ],
+   "note": "snow chains on this wheel: hidden until fitted from the ChainBag (they turn with the wheel)",
+   "default": "hidden",
+   "object": "Chains_FL"
+  },
+  "Snow_Roof": {
+   "kind": "static",
+   "pivot": [
+    -0.09,
+    0.0,
+    2.17
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "0 none",
+    "1 full (7 cm)"
+   ],
+   "note": "snow on the roof: blend shape Clear (100 = no snow); the roof hatch cannot open while it lies over it",
+   "blendshape": "Clear",
+   "default": "hidden",
+   "object": "Snow_Roof"
+  },
+  "Snow_Visor": {
+   "kind": "static",
+   "pivot": [
+    2.07,
+    0.0,
+    1.965
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow: blend shape Clear (100 = no snow)",
+   "blendshape": "Clear",
+   "default": "hidden",
+   "object": "Snow_Visor"
+  },
+  "Snow_Bumper": {
+   "kind": "static",
+   "pivot": [
+    2.26,
+    0.0,
+    0.75
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow: blend shape Clear (100 = no snow)",
+   "blendshape": "Clear",
+   "default": "hidden",
+   "object": "Snow_Bumper"
+  },
+  "Snow_Head_L": {
+   "kind": "stretch",
+   "pivot": [
+    2.1646,
+    0.5891,
+    1.0956
+   ],
+   "axis": [
+    0.9833,
+    0.18,
+    0.0254
+   ],
+   "range": [
+    0.05,
+    1.0
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow on lamp Head_L: scale along the lamp axis; light x (1 - 0.85 * amount); brush it off",
+   "dims": "Head_L",
+   "default": "hidden",
+   "object": "Snow_Head_L",
+   "box": {
+    "center": [
+     0.0093,
+     0.0006,
+     0.0124
+    ],
+    "size": [
+     0.0444,
+     0.1731,
+     0.1865
+    ]
+   }
+  },
+  "Snow_Head_R": {
+   "kind": "stretch",
+   "pivot": [
+    2.1646,
+    -0.5891,
+    1.0956
+   ],
+   "axis": [
+    0.9833,
+    -0.18,
+    0.0254
+   ],
+   "range": [
+    0.05,
+    1.0
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow on lamp Head_R: scale along the lamp axis; light x (1 - 0.85 * amount); brush it off",
+   "dims": "Head_R",
+   "default": "hidden",
+   "object": "Snow_Head_R",
+   "box": {
+    "center": [
+     0.0093,
+     -0.0006,
+     0.0124
+    ],
+    "size": [
+     0.0444,
+     0.1731,
+     0.1865
+    ]
+   }
+  },
+  "Snow_Spot_L": {
+   "kind": "stretch",
+   "pivot": [
+    2.442,
+    0.24,
+    1.295
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.05,
+    1.0
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow on lamp Spot_L: scale along the lamp axis; light x (1 - 0.85 * amount); brush it off",
+   "dims": "Spot_L",
+   "default": "hidden",
+   "object": "Snow_Spot_L",
+   "box": {
+    "center": [
+     0.017,
+     0.0,
+     0.0109
+    ],
+    "size": [
+     0.028,
+     0.156,
+     0.1654
+    ]
+   }
+  },
+  "Snow_Fog_L": {
+   "kind": "stretch",
+   "pivot": [
+    2.343,
+    0.6,
+    0.668
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.05,
+    1.0
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow on lamp Fog_L: scale along the lamp axis; light x (1 - 0.85 * amount); brush it off",
+   "dims": "Fog_L",
+   "default": "hidden",
+   "object": "Snow_Fog_L",
+   "box": {
+    "center": [
+     0.015,
+     0.0,
+     0.004
+    ],
+    "size": [
+     0.024,
+     0.14,
+     0.072
+    ]
+   }
+  },
+  "Snow_Spot_R": {
+   "kind": "stretch",
+   "pivot": [
+    2.442,
+    -0.24,
+    1.295
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.05,
+    1.0
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow on lamp Spot_R: scale along the lamp axis; light x (1 - 0.85 * amount); brush it off",
+   "dims": "Spot_R",
+   "default": "hidden",
+   "object": "Snow_Spot_R",
+   "box": {
+    "center": [
+     0.017,
+     0.0,
+     0.0109
+    ],
+    "size": [
+     0.028,
+     0.156,
+     0.1654
+    ]
+   }
+  },
+  "Snow_Fog_R": {
+   "kind": "stretch",
+   "pivot": [
+    2.343,
+    -0.6,
+    0.668
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.05,
+    1.0
+   ],
+   "unit": "x",
+   "rest": 1.0,
+   "parent": "Kit_Front",
+   "states": [
+    "0 none",
+    "1 full"
+   ],
+   "note": "snow on lamp Fog_R: scale along the lamp axis; light x (1 - 0.85 * amount); brush it off",
+   "dims": "Fog_R",
+   "default": "hidden",
+   "object": "Snow_Fog_R",
+   "box": {
+    "center": [
+     0.015,
+     0.0,
+     0.004
+    ],
+    "size": [
+     0.024,
+     0.14,
+     0.072
+    ]
+   }
+  },
+  "DoorPocket_P": {
+   "kind": "static",
+   "pivot": [
+    1.255,
+    -0.833,
+    0.975
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "doorP",
+   "states": [],
+   "note": "",
+   "object": "DoorPocket_P"
+  },
+  "SnowBrush": {
+   "kind": "item",
+   "pivot": [
+    1.26,
+    -0.847,
+    0.995
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "doorP",
+   "states": [],
+   "note": "snow brush and ice scraper: clears Snow_* from the glass, the lamps and the roof hatch, frost off lob",
+   "object": "SnowBrush",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.015
+    ],
+    "size": [
+     0.46,
+     0.022,
+     0.09
+    ]
+   }
+  },
+  "Lock_doorL": {
+   "kind": "slide",
+   "pivot": [
+    1.3,
+    0.8731,
+    1.39
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.008
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "doorL",
+   "states": [
+    "unlocked",
+    "locked"
+   ],
+   "note": "lock button: pushed in = locked; a locked door does not open from outside",
+   "object": "Lock_doorL",
+   "box": {
+    "center": [
+     0.0,
+     -0.0095,
+     0.0
+    ],
+    "size": [
+     0.0228,
+     0.027,
+     0.024
+    ]
+   }
+  },
+  "Lock_doorP": {
+   "kind": "slide",
+   "pivot": [
+    1.3,
+    -0.8731,
+    1.39
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.008
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "doorP",
+   "states": [
+    "unlocked",
+    "locked"
+   ],
+   "note": "lock button: pushed in = locked; a locked door does not open from outside",
+   "object": "Lock_doorP",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     0.0
+    ],
+    "size": [
+     0.0228,
+     0.027,
+     0.024
+    ]
+   }
+  },
+  "Lock_doorSalon": {
+   "kind": "slide",
+   "pivot": [
+    -0.5,
+    -0.9043,
+    1.36
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.008
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "doorSalon",
+   "states": [
+    "unlocked",
+    "locked"
+   ],
+   "note": "lock button: pushed in = locked; a locked door does not open from outside",
+   "object": "Lock_doorSalon",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     0.0
+    ],
+    "size": [
+     0.0228,
+     0.027,
+     0.024
+    ]
+   }
+  },
+  "Lock_doorZL": {
+   "kind": "slide",
+   "pivot": [
+    -2.0894,
+    0.12,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.008
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "doorZL",
+   "states": [
+    "unlocked",
+    "locked"
+   ],
+   "note": "lock button: pushed in = locked; a locked door does not open from outside",
+   "object": "Lock_doorZL",
+   "box": {
+    "center": [
+     0.0095,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.027,
+     0.0228,
+     0.024
+    ]
+   }
+  },
+  "Lock_dooZP": {
+   "kind": "slide",
+   "pivot": [
+    -2.0894,
+    -0.12,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.008
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "dooZP",
+   "states": [
+    "unlocked",
+    "locked"
+   ],
+   "note": "lock button: pushed in = locked; a locked door does not open from outside",
+   "object": "Lock_dooZP",
+   "box": {
+    "center": [
+     0.0095,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.027,
+     0.0228,
+     0.024
+    ]
+   }
+  },
+  "Toggle_Head": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    0.1575,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle HEAD: works through Fuse_1; switches Head_L, Head_R, Plate, Tail_L, Tail_R, Marker_Cab0, Marker_Cab1, Marker_Cab2, Marker_Cab3, Marker_Cab4, Marker_SideL0, Marker_SideL1, Marker_SideR0, Marker_SideR1",
+   "controls": [
+    "Head_L",
+    "Head_R",
+    "Plate",
+    "Tail_L",
+    "Tail_R",
+    "Marker_Cab0",
+    "Marker_Cab1",
+    "Marker_Cab2",
+    "Marker_Cab3",
+    "Marker_Cab4",
+    "Marker_SideL0",
+    "Marker_SideL1",
+    "Marker_SideR0",
+    "Marker_SideR1"
+   ],
+   "fuse": "Fuse_1",
+   "object": "Toggle_Head",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Fog": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    0.1125,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle FOG: works through Fuse_2; switches Fog_L, Fog_R",
+   "controls": [
+    "Fog_L",
+    "Fog_R"
+   ],
+   "fuse": "Fuse_2",
+   "object": "Toggle_Fog",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Spot": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    0.0675,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle SPOT: works through Fuse_3; switches Spot_L, Spot_R",
+   "controls": [
+    "Spot_L",
+    "Spot_R"
+   ],
+   "fuse": "Fuse_3",
+   "object": "Toggle_Spot",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Roof": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    0.0225,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle ROOF: works through Fuse_4; switches LightBar0, LightBar1, LightBar2, LightBar3",
+   "controls": [
+    "LightBar0",
+    "LightBar1",
+    "LightBar2",
+    "LightBar3"
+   ],
+   "fuse": "Fuse_4",
+   "object": "Toggle_Roof",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Work": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    -0.0225,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle WORK: works through Fuse_5; switches Work_Rear",
+   "controls": [
+    "Work_Rear"
+   ],
+   "fuse": "Fuse_5",
+   "object": "Toggle_Work",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Cabin": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    -0.0675,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle CABIN: works through Fuse_6; switches Dash_Flood, Dome_Cab, Dome_Saloon_F, Dome_Saloon_R, Night_Red, Pendant",
+   "controls": [
+    "Dash_Flood",
+    "Dome_Cab",
+    "Dome_Saloon_F",
+    "Dome_Saloon_R",
+    "Night_Red",
+    "Pendant"
+   ],
+   "fuse": "Fuse_6",
+   "object": "Toggle_Cabin",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Stove": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    -0.1125,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle STOVE: works through Fuse_7; switches Heater_Fan",
+   "controls": [
+    "Heater_Fan"
+   ],
+   "fuse": "Fuse_7",
+   "object": "Toggle_Stove",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "Toggle_Wiper": {
+   "kind": "hinge",
+   "pivot": [
+    1.7517,
+    -0.1575,
+    1.3277
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    57.6
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "dash toggle WIPER: works through Fuse_8; switches Wiper_L, Wiper_R",
+   "controls": [
+    "Wiper_L",
+    "Wiper_R"
+   ],
+   "fuse": "Fuse_8",
+   "object": "Toggle_Wiper",
+   "box": {
+    "center": [
+     -0.0099,
+     0.0,
+     -0.0041
+    ],
+    "size": [
+     0.0224,
+     0.0055,
+     0.014
+    ]
+   }
+  },
+  "EngineBay": {
+   "kind": "static",
+   "pivot": [
+    1.2075,
+    0.0,
+    0.7645
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "EngineBay"
+  },
+  "BatteryBox": {
+   "kind": "static",
+   "pivot": [
+    0.39,
+    0.708,
+    0.938
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "BatteryBox"
+  },
+  "FuseBox": {
+   "kind": "static",
+   "pivot": [
+    1.7175,
+    -0.3,
+    1.0985
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "",
+   "object": "FuseBox"
+  },
+  "DashControls": {
+   "kind": "static",
+   "pivot": [
+    1.7429,
+    0.2504,
+    1.1918
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dash",
+   "states": [],
+   "note": "",
+   "object": "DashControls"
+  },
+  "TankValve": {
+   "kind": "static",
+   "pivot": [
+    1.4945,
+    0.62,
+    0.8925
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "TankValve"
+  },
+  "Saloon_Hooks": {
+   "kind": "static",
+   "pivot": [
+    -1.78,
+    -0.869,
+    1.832
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "note": "",
+   "object": "Saloon_Hooks"
+  },
+  "Seat_L1": {
+   "kind": "hinge",
+   "pivot": [
+    -1.05,
+    0.833,
+    1.226
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "down",
+    "folded"
+   ],
+   "object": "Seat_L1",
+   "note": "troop seat pan, folds up against the wall",
+   "box": {
+    "center": [
+     0.0,
+     -0.1794,
+     -0.0208
+    ],
+    "size": [
+     0.499,
+     0.3821,
+     0.0685
+    ]
+   }
+  },
+  "Seat_L1_Leg": {
+   "kind": "hinge",
+   "pivot": [
+    -1.05,
+    0.473,
+    1.226
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Seat_L1",
+   "states": [],
+   "object": "Seat_L1_Leg",
+   "note": "leg folds under the pan with the same fold value",
+   "box": {
+    "center": [
+     0.0,
+     -0.0111,
+     -0.2018
+    ],
+    "size": [
+     0.361,
+     0.0535,
+     0.4365
+    ]
+   }
+  },
+  "Seat_L2": {
+   "kind": "hinge",
+   "pivot": [
+    -0.57,
+    0.833,
+    1.226
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "down",
+    "folded"
+   ],
+   "object": "Seat_L2",
+   "note": "troop seat pan, folds up against the wall",
+   "box": {
+    "center": [
+     0.0,
+     -0.1794,
+     -0.0208
+    ],
+    "size": [
+     0.499,
+     0.3821,
+     0.0685
+    ]
+   }
+  },
+  "Seat_L2_Leg": {
+   "kind": "hinge",
+   "pivot": [
+    -0.57,
+    0.473,
+    1.226
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Seat_L2",
+   "states": [],
+   "object": "Seat_L2_Leg",
+   "note": "leg folds under the pan with the same fold value",
+   "box": {
+    "center": [
+     0.0,
+     -0.0111,
+     -0.2018
+    ],
+    "size": [
+     0.361,
+     0.0535,
+     0.4365
+    ]
+   }
+  },
+  "Seat_L3": {
+   "kind": "hinge",
+   "pivot": [
+    -0.09,
+    0.833,
+    1.226
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "down",
+    "folded"
+   ],
+   "object": "Seat_L3",
+   "note": "troop seat pan, folds up against the wall",
+   "box": {
+    "center": [
+     0.0,
+     -0.1794,
+     -0.0208
+    ],
+    "size": [
+     0.499,
+     0.3821,
+     0.0685
+    ]
+   }
+  },
+  "Seat_L3_Leg": {
+   "kind": "hinge",
+   "pivot": [
+    -0.09,
+    0.473,
+    1.226
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Seat_L3",
+   "states": [],
+   "object": "Seat_L3_Leg",
+   "note": "leg folds under the pan with the same fold value",
+   "box": {
+    "center": [
+     0.0,
+     -0.0111,
+     -0.2018
+    ],
+    "size": [
+     0.361,
+     0.0535,
+     0.4365
+    ]
+   }
+  },
+  "Seat_L4": {
+   "kind": "hinge",
+   "pivot": [
+    0.39,
+    0.833,
+    1.226
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "down",
+    "folded"
+   ],
+   "object": "Seat_L4",
+   "note": "troop seat pan, folds up against the wall; the battery box is under L4",
+   "box": {
+    "center": [
+     0.0,
+     -0.1794,
+     -0.0208
+    ],
+    "size": [
+     0.499,
+     0.3821,
+     0.0685
+    ]
+   }
+  },
+  "Seat_L4_Leg": {
+   "kind": "hinge",
+   "pivot": [
+    0.39,
+    0.473,
+    1.226
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Seat_L4",
+   "states": [],
+   "object": "Seat_L4_Leg",
+   "note": "leg folds under the pan with the same fold value",
+   "box": {
+    "center": [
+     0.0,
+     -0.0111,
+     -0.2018
+    ],
+    "size": [
+     0.361,
+     0.0535,
+     0.4365
+    ]
+   }
+  },
+  "Seat_R1": {
+   "kind": "hinge",
+   "pivot": [
+    -1.0,
+    -0.833,
+    1.226
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "down",
+    "folded"
+   ],
+   "object": "Seat_R1",
+   "note": "troop seat pan, folds up against the wall",
+   "box": {
+    "center": [
+     0.0,
+     0.1794,
+     -0.0208
+    ],
+    "size": [
+     0.499,
+     0.3821,
+     0.0685
+    ]
+   }
+  },
+  "Seat_R1_Leg": {
+   "kind": "hinge",
+   "pivot": [
+    -1.0,
+    -0.473,
+    1.226
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Seat_R1",
+   "states": [],
+   "object": "Seat_R1_Leg",
+   "note": "leg folds under the pan with the same fold value",
+   "box": {
+    "center": [
+     0.0,
+     0.0111,
+     -0.2018
+    ],
+    "size": [
+     0.361,
+     0.0535,
+     0.4365
+    ]
+   }
+  },
+  "Seat_R2": {
+   "kind": "hinge",
+   "pivot": [
+    0.62,
+    -0.833,
+    1.226
+   ],
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "down",
+    "folded"
+   ],
+   "object": "Seat_R2",
+   "note": "troop seat pan, folds up against the wall",
+   "box": {
+    "center": [
+     0.0,
+     0.1794,
+     -0.0208
+    ],
+    "size": [
+     0.499,
+     0.3821,
+     0.0685
+    ]
+   }
+  },
+  "Seat_R2_Leg": {
+   "kind": "hinge",
+   "pivot": [
+    0.62,
+    -0.473,
+    1.226
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Seat_R2",
+   "states": [],
+   "object": "Seat_R2_Leg",
+   "note": "leg folds under the pan with the same fold value",
+   "box": {
+    "center": [
+     0.0,
+     0.0111,
+     -0.2018
+    ],
+    "size": [
+     0.361,
+     0.0535,
+     0.4365
+    ]
+   }
+  },
+  "Needle_speedo": {
+   "kind": "hinge",
+   "pivot": [
+    1.7555,
+    0.375,
+    1.3078
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Dash",
+   "states": [],
+   "object": "Needle_speedo",
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the driver; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 120,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "km/h"
+   }
+  },
+  "Needle_tacho": {
+   "kind": "hinge",
+   "pivot": [
+    1.7555,
+    0.675,
+    1.3078
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -81.6,
+   "parent": "Dash",
+   "states": [],
+   "object": "Needle_tacho",
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the driver; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 5000,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "rpm"
+   }
+  },
+  "Needle_fuel": {
+   "kind": "hinge",
+   "pivot": [
+    1.7616,
+    0.792,
+    1.3628
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 18.0,
+   "parent": "Dash",
+   "states": [],
+   "object": "Needle_fuel",
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the driver; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0.0,
+    "max": 1.0,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "tank fraction (E..F)"
+   }
+  },
+  "Needle_temp": {
+   "kind": "hinge",
+   "pivot": [
+    1.7536,
+    0.792,
+    1.2908
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 7.5,
+   "parent": "Dash",
+   "states": [],
+   "object": "Needle_temp",
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the driver; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 40,
+    "max": 120,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "deg C"
+   }
+  },
+  "Needle_oil": {
+   "kind": "hinge",
+   "pivot": [
+    1.7616,
+    0.258,
+    1.3628
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -12.0,
+   "parent": "Dash",
+   "states": [],
+   "object": "Needle_oil",
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the driver; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 8,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "kgf/cm2"
+   }
+  },
+  "Needle_volt": {
+   "kind": "hinge",
+   "pivot": [
+    1.7536,
+    0.258,
+    1.2908
+   ],
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 16.0,
+   "parent": "Dash",
+   "states": [],
+   "object": "Needle_volt",
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the driver; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 10,
+    "max": 16,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "V"
+   }
+  },
+  "Steer_FL": {
+   "kind": "hinge",
+   "pivot": [
+    1.2067,
+    0.8272,
+    0.3618
+   ],
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "range": [
+    -32,
+    32
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "object": "Steer_FL",
+   "links": {
+    "from": "SteeringWheel",
+    "ratio": 16.875
+   },
+   "note": "front wheel steering: yaw about z through the hub; angle = SteeringWheel / 16.875"
+  },
+  "Wheel_FL": {
+   "kind": "spin",
+   "pivot": [
+    1.2067,
+    0.8272,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Steer_FL",
+   "states": [
+    "mounted",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL",
+   "wheel": {
+    "radius": 0.364,
+    "width": 0.343,
+    "suspension_travel": 0.1,
+    "steer": true,
+    "driven": true,
+    "side": "left",
+    "flat_blendshape": "Flat"
+   },
+   "note": "road wheel: + spin about +y rolls it forward; off when its six nuts are off; blend shape Flat = flat tyre",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.7276,
+     0.3427,
+     0.7276
+    ]
+   }
+  },
+  "Wheel_FL_Nut_1": {
+   "kind": "twist",
+   "pivot": [
+    1.2907,
+    0.8967,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL_Nut_1",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FL_Nut_2": {
+   "kind": "twist",
+   "pivot": [
+    1.2487,
+    0.8967,
+    0.4345
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL_Nut_2",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FL_Nut_3": {
+   "kind": "twist",
+   "pivot": [
+    1.1647,
+    0.8967,
+    0.4345
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL_Nut_3",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FL_Nut_4": {
+   "kind": "twist",
+   "pivot": [
+    1.1227,
+    0.8967,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL_Nut_4",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FL_Nut_5": {
+   "kind": "twist",
+   "pivot": [
+    1.1647,
+    0.8967,
+    0.289
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL_Nut_5",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FL_Nut_6": {
+   "kind": "twist",
+   "pivot": [
+    1.2487,
+    0.8967,
+    0.289
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FL_Nut_6",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Steer_FR": {
+   "kind": "hinge",
+   "pivot": [
+    1.2067,
+    -0.8243,
+    0.3618
+   ],
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "range": [
+    -32,
+    32
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [],
+   "object": "Steer_FR",
+   "links": {
+    "from": "SteeringWheel",
+    "ratio": 16.875
+   },
+   "note": "front wheel steering: yaw about z through the hub; angle = SteeringWheel / 16.875"
+  },
+  "Wheel_FR": {
+   "kind": "spin",
+   "pivot": [
+    1.2067,
+    -0.8243,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Steer_FR",
+   "states": [
+    "mounted",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR",
+   "wheel": {
+    "radius": 0.364,
+    "width": 0.343,
+    "suspension_travel": 0.1,
+    "steer": true,
+    "driven": true,
+    "side": "right",
+    "flat_blendshape": "Flat"
+   },
+   "note": "road wheel: + spin about +y rolls it forward; off when its six nuts are off; blend shape Flat = flat tyre",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.7276,
+     0.3427,
+     0.7276
+    ]
+   }
+  },
+  "Wheel_FR_Nut_1": {
+   "kind": "twist",
+   "pivot": [
+    1.2907,
+    -0.8937,
+    0.3618
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR_Nut_1",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FR_Nut_2": {
+   "kind": "twist",
+   "pivot": [
+    1.2487,
+    -0.8937,
+    0.4345
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR_Nut_2",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FR_Nut_3": {
+   "kind": "twist",
+   "pivot": [
+    1.1647,
+    -0.8937,
+    0.4345
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR_Nut_3",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FR_Nut_4": {
+   "kind": "twist",
+   "pivot": [
+    1.1227,
+    -0.8937,
+    0.3618
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR_Nut_4",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FR_Nut_5": {
+   "kind": "twist",
+   "pivot": [
+    1.1647,
+    -0.8937,
+    0.289
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR_Nut_5",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_FR_Nut_6": {
+   "kind": "twist",
+   "pivot": [
+    1.2487,
+    -0.8937,
+    0.289
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_FR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_FR_Nut_6",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RL": {
+   "kind": "spin",
+   "pivot": [
+    -1.2031,
+    0.8272,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "mounted",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL",
+   "wheel": {
+    "radius": 0.364,
+    "width": 0.343,
+    "suspension_travel": 0.1,
+    "steer": false,
+    "driven": true,
+    "side": "left",
+    "flat_blendshape": "Flat"
+   },
+   "note": "road wheel: + spin about +y rolls it forward; off when its six nuts are off; blend shape Flat = flat tyre",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.7276,
+     0.3427,
+     0.7276
+    ]
+   }
+  },
+  "Wheel_RL_Nut_1": {
+   "kind": "twist",
+   "pivot": [
+    -1.1191,
+    0.8967,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL_Nut_1",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RL_Nut_2": {
+   "kind": "twist",
+   "pivot": [
+    -1.1611,
+    0.8967,
+    0.4345
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL_Nut_2",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RL_Nut_3": {
+   "kind": "twist",
+   "pivot": [
+    -1.2451,
+    0.8967,
+    0.4345
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL_Nut_3",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RL_Nut_4": {
+   "kind": "twist",
+   "pivot": [
+    -1.2871,
+    0.8967,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL_Nut_4",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RL_Nut_5": {
+   "kind": "twist",
+   "pivot": [
+    -1.2451,
+    0.8967,
+    0.289
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL_Nut_5",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RL_Nut_6": {
+   "kind": "twist",
+   "pivot": [
+    -1.1611,
+    0.8967,
+    0.289
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RL",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RL_Nut_6",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RR": {
+   "kind": "spin",
+   "pivot": [
+    -1.2031,
+    -0.8243,
+    0.3618
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kuzov",
+   "states": [
+    "mounted",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR",
+   "wheel": {
+    "radius": 0.364,
+    "width": 0.343,
+    "suspension_travel": 0.1,
+    "steer": false,
+    "driven": true,
+    "side": "right",
+    "flat_blendshape": "Flat"
+   },
+   "note": "road wheel: + spin about +y rolls it forward; off when its six nuts are off; blend shape Flat = flat tyre",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.7276,
+     0.3427,
+     0.7276
+    ]
+   }
+  },
+  "Wheel_RR_Nut_1": {
+   "kind": "twist",
+   "pivot": [
+    -1.1191,
+    -0.8937,
+    0.3618
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR_Nut_1",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RR_Nut_2": {
+   "kind": "twist",
+   "pivot": [
+    -1.1611,
+    -0.8937,
+    0.4345
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR_Nut_2",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RR_Nut_3": {
+   "kind": "twist",
+   "pivot": [
+    -1.2451,
+    -0.8937,
+    0.4345
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR_Nut_3",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RR_Nut_4": {
+   "kind": "twist",
+   "pivot": [
+    -1.2871,
+    -0.8937,
+    0.3618
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR_Nut_4",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RR_Nut_5": {
+   "kind": "twist",
+   "pivot": [
+    -1.2451,
+    -0.8937,
+    0.289
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR_Nut_5",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Wheel_RR_Nut_6": {
+   "kind": "twist",
+   "pivot": [
+    -1.1611,
+    -0.8937,
+    0.289
+   ],
+   "axis": [
+    0,
+    -1,
+    0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Wheel_RR",
+   "states": [
+    "tight",
+    "loose",
+    "off"
+   ],
+   "object": "Wheel_RR_Nut_6",
+   "note": "wheel nut: three turns anticlockwise with the WheelBrace, then it comes off (item)",
+   "box": {
+    "center": [
+     0.0,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "SpareWheel": {
+   "kind": "item",
+   "pivot": [
+    -2.4195,
+    -0.36,
+    1.155
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "dooZP",
+   "states": [
+    "on the carrier",
+    "off"
+   ],
+   "object": "SpareWheel",
+   "wheel": {
+    "radius": 0.364,
+    "width": 0.343,
+    "suspension_travel": 0.1,
+    "steer": false,
+    "driven": true,
+    "side": "any",
+    "flat_blendshape": null
+   },
+   "note": "spare: the same wheel as the road ones (fits any corner, the road nuts hold it); comes off the carrier when SpareWheel_Nut is off",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.7276,
+     0.3427,
+     0.7276
+    ]
+   }
+  },
+  "SpareWheel_Nut": {
+   "kind": "twist",
+   "pivot": [
+    -2.5233,
+    -0.36,
+    1.155
+   ],
+   "axis": [
+    -1,
+    0,
+    0
+   ],
+   "range": [
+    0,
+    1440
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "dooZP",
+   "states": [
+    "tight",
+    "off"
+   ],
+   "object": "SpareWheel_Nut",
+   "note": "wing nut holding the spare on its carrier (by hand, four turns)",
+   "box": {
+    "center": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     0.0213,
+     0.0241,
+     0.0246
+    ]
+   },
+   "removable": "end"
+  },
+  "Lens_WorkLamp": {
+   "kind": "static",
+   "pivot": [
+    1.74,
+    -0.58,
+    0.871
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WorkLamp",
+   "states": [],
+   "object": "Lens_WorkLamp",
+   "note": "lamp glass (emissive when lit)"
+  },
+  "Lens_Fog_L": {
+   "kind": "static",
+   "pivot": [
+    2.339,
+    0.6,
+    0.668
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "object": "Lens_Fog_L",
+   "note": "lamp glass (emissive when lit)"
+  },
+  "Lens_Fog_R": {
+   "kind": "static",
+   "pivot": [
+    2.339,
+    -0.6,
+    0.668
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Kit_Front",
+   "states": [],
+   "object": "Lens_Fog_R",
+   "note": "lamp glass (emissive when lit)"
+  },
+  "Lens_Torch": {
+   "kind": "static",
+   "pivot": [
+    1.8,
+    -0.763,
+    1.236
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Flashlight",
+   "states": [],
+   "object": "Lens_Torch",
+   "note": "lamp glass (emissive when lit)"
+  },
+  "Lens_Flare_1": {
+   "kind": "static",
+   "pivot": [
+    1.848,
+    -0.7605,
+    1.2245
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Flare_1",
+   "states": [],
+   "object": "Lens_Flare_1",
+   "note": "lamp glass (emissive when lit)"
+  },
+  "Lens_Flare_2": {
+   "kind": "static",
+   "pivot": [
+    1.877,
+    -0.7605,
+    1.2245
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Flare_2",
+   "states": [],
+   "object": "Lens_Flare_2",
+   "note": "lamp glass (emissive when lit)"
+  },
+  "Lens_Flare_3": {
+   "kind": "static",
+   "pivot": [
+    1.906,
+    -0.7605,
+    1.2245
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Flare_3",
+   "states": [],
+   "object": "Lens_Flare_3",
+   "note": "lamp glass (emissive when lit)"
+  }
+ },
+ "sockets": {
+  "Hand_Wheel_L": {
+   "pos": [
+    1.517,
+    0.703,
+    1.502
+   ],
+   "kind": "hand",
+   "parent": "SteeringWheel",
+   "note": ""
+  },
+  "Hand_Wheel_R": {
+   "pos": [
+    1.517,
+    0.343,
+    1.502
+   ],
+   "kind": "hand",
+   "parent": "SteeringWheel",
+   "note": ""
+  },
+  "Hand_Horn": {
+   "pos": [
+    1.4994,
+    0.5228,
+    1.5378
+   ],
+   "kind": "hand",
+   "parent": "Horn_Button",
+   "note": ""
+  },
+  "Audio_Horn": {
+   "pos": [
+    2.08,
+    0.25,
+    0.95
+   ],
+   "kind": "audio",
+   "parent": "Kit_Front",
+   "note": "horn behind the grille"
+  },
+  "Hand_Window_doorL": {
+   "pos": [
+    1.6225,
+    0.826,
+    1.6621
+   ],
+   "kind": "hand",
+   "parent": "Window_doorL",
+   "note": ""
+  },
+  "Hand_Window_doorP": {
+   "pos": [
+    1.6225,
+    -0.826,
+    1.6621
+   ],
+   "kind": "hand",
+   "parent": "Window_doorP",
+   "note": ""
+  },
+  "Hand_doorSalon": {
+   "pos": [
+    -0.518,
+    -0.99,
+    1.3
+   ],
+   "kind": "hand",
+   "parent": "doorSalon",
+   "note": ""
+  },
+  "Hand_RoofHatch": {
+   "pos": [
+    -0.435,
+    -0.4,
+    2.1377
+   ],
+   "kind": "hand",
+   "parent": "RoofHatch",
+   "note": ""
+  },
+  "Pour_Radiator": {
+   "pos": [
+    2.1625,
+    0.0,
+    1.2929
+   ],
+   "kind": "pour",
+   "parent": "Kit_Front",
+   "note": ""
+  },
+  "Hand_RadiatorHatch": {
+   "pos": [
+    2.1883,
+    0.0,
+    1.2596
+   ],
+   "kind": "hand",
+   "parent": "RadiatorHatch",
+   "note": ""
+  },
+  "Hand_Winch_Clutch": {
+   "pos": [
+    2.375,
+    -0.222,
+    0.755
+   ],
+   "kind": "hand",
+   "parent": "Winch_Clutch",
+   "note": ""
+  },
+  "Winch_Fairlead": {
+   "pos": [
+    2.452,
+    0.0,
+    0.69
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "the cable leaves the drum here (draw it to the hook)"
+  },
+  "Hand_Winch_Hook": {
+   "pos": [
+    2.49,
+    0.0,
+    0.66
+   ],
+   "kind": "hand",
+   "parent": "Winch_Hook",
+   "note": ""
+  },
+  "Hand_SandLadder_1_A": {
+   "pos": [
+    -0.85,
+    0.22,
+    2.344
+   ],
+   "kind": "hand",
+   "parent": "SandLadder_1",
+   "note": ""
+  },
+  "Hand_SandLadder_1_B": {
+   "pos": [
+    0.15,
+    0.22,
+    2.344
+   ],
+   "kind": "hand",
+   "parent": "SandLadder_1",
+   "note": ""
+  },
+  "Hand_SandLadder_2_A": {
+   "pos": [
+    -0.85,
+    0.58,
+    2.344
+   ],
+   "kind": "hand",
+   "parent": "SandLadder_2",
+   "note": ""
+  },
+  "Hand_SandLadder_2_B": {
+   "pos": [
+    0.15,
+    0.58,
+    2.344
+   ],
+   "kind": "hand",
+   "parent": "SandLadder_2",
+   "note": ""
+  },
+  "Hand_WorkLamp": {
+   "pos": [
+    1.62,
+    -0.58,
+    0.871
+   ],
+   "kind": "hand",
+   "parent": "WorkLamp",
+   "note": ""
+  },
+  "Hook_WorkLamp": {
+   "pos": [
+    1.86,
+    -0.56,
+    0.871
+   ],
+   "kind": "item_slot",
+   "parent": "WorkLamp",
+   "note": "hangs from here"
+  },
+  "Hand_Glovebox_Lid": {
+   "pos": [
+    1.7428,
+    -0.56,
+    1.3477
+   ],
+   "kind": "hand",
+   "parent": "Glovebox_Lid",
+   "note": ""
+  },
+  "Hand_Map": {
+   "pos": [
+    1.8,
+    -0.38,
+    1.218
+   ],
+   "kind": "hand",
+   "parent": "Map",
+   "note": ""
+  },
+  "Hand_Logbook": {
+   "pos": [
+    1.8,
+    -0.43,
+    1.235
+   ],
+   "kind": "hand",
+   "parent": "Logbook",
+   "note": ""
+  },
+  "Hand_Flashlight": {
+   "pos": [
+    1.8,
+    -0.62,
+    1.236
+   ],
+   "kind": "hand",
+   "parent": "Flashlight",
+   "note": ""
+  },
+  "Hand_Flare_1": {
+   "pos": [
+    1.848,
+    -0.57,
+    1.2245
+   ],
+   "kind": "hand",
+   "parent": "Flare_1",
+   "note": ""
+  },
+  "Hand_Flare_2": {
+   "pos": [
+    1.877,
+    -0.57,
+    1.2245
+   ],
+   "kind": "hand",
+   "parent": "Flare_2",
+   "note": ""
+  },
+  "Hand_Flare_3": {
+   "pos": [
+    1.906,
+    -0.57,
+    1.2245
+   ],
+   "kind": "hand",
+   "parent": "Flare_3",
+   "note": ""
+  },
+  "Hand_Radio_Volume": {
+   "pos": [
+    1.7338,
+    -0.0625,
+    1.2662
+   ],
+   "kind": "hand",
+   "parent": "Radio_Volume",
+   "note": ""
+  },
+  "Hand_Radio_Squelch": {
+   "pos": [
+    1.7338,
+    -0.0844,
+    1.2662
+   ],
+   "kind": "hand",
+   "parent": "Radio_Squelch",
+   "note": ""
+  },
+  "Hand_Radio_ChDown": {
+   "pos": [
+    1.7406,
+    -0.0141,
+    1.2466
+   ],
+   "kind": "hand",
+   "parent": "Radio_ChDown",
+   "note": ""
+  },
+  "Hand_Radio_ChUp": {
+   "pos": [
+    1.7406,
+    -0.0313,
+    1.2466
+   ],
+   "kind": "hand",
+   "parent": "Radio_ChUp",
+   "note": ""
+  },
+  "Audio_Radio": {
+   "pos": [
+    1.7684,
+    0.0,
+    1.2608
+   ],
+   "kind": "audio",
+   "parent": "Dash",
+   "note": "radio loudspeaker (static, voices)"
+  },
+  "Hook_Radio_Mic": {
+   "pos": [
+    1.7587,
+    -0.285,
+    1.3914
+   ],
+   "kind": "item_slot",
+   "parent": "Radio_MicHook",
+   "note": "the mic hangs here"
+  },
+  "Hand_Radio_Mic": {
+   "pos": [
+    1.7469,
+    -0.285,
+    1.3396
+   ],
+   "kind": "hand",
+   "parent": "Radio_Mic",
+   "note": ""
+  },
+  "Radio_Cord_Mic": {
+   "pos": [
+    1.7398,
+    -0.285,
+    1.275
+   ],
+   "kind": "item_slot",
+   "parent": "Radio_Mic",
+   "note": "coiled cord, mic end"
+  },
+  "Radio_Cord_Radio": {
+   "pos": [
+    1.7458,
+    -0.085,
+    1.2391
+   ],
+   "kind": "item_slot",
+   "parent": "Dash",
+   "note": "coiled cord, radio end"
+  },
+  "MirrorCam": {
+   "pos": [
+    1.588,
+    -0.0087,
+    1.8811
+   ],
+   "kind": "camera",
+   "parent": "RearMirror",
+   "note": "camera for the mirror render texture: looks along dir (the reflection of the driver's eye ray); fov 32; the back seat is in view: ghost scares show here",
+   "dir": [
+    -0.9977,
+    0.0,
+    -0.0671
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "fov": 32
+  },
+  "Hand_StoveDoor": {
+   "pos": [
+    -1.665,
+    0.515,
+    1.126
+   ],
+   "kind": "hand",
+   "parent": "StoveDoor",
+   "note": ""
+  },
+  "Hand_StoveDoor_Vent": {
+   "pos": [
+    -1.692,
+    0.585,
+    1.051
+   ],
+   "kind": "hand",
+   "parent": "StoveDoor_Vent",
+   "note": ""
+  },
+  "Hand_Stove_AshPan": {
+   "pos": [
+    -1.68,
+    0.59,
+    0.9435
+   ],
+   "kind": "hand",
+   "parent": "Stove_AshPan",
+   "note": ""
+  },
+  "Hand_Stove_Damper": {
+   "pos": [
+    -1.795,
+    0.63,
+    1.54
+   ],
+   "kind": "hand",
+   "parent": "Stove_Damper",
+   "note": ""
+  },
+  "Hand_Kettle": {
+   "pos": [
+    -1.79,
+    0.505,
+    1.501
+   ],
+   "kind": "hand",
+   "parent": "Kettle",
+   "note": ""
+  },
+  "Pour_Kettle": {
+   "pos": [
+    -1.665,
+    0.505,
+    1.426
+   ],
+   "kind": "pour",
+   "parent": "Kettle",
+   "note": ""
+  },
+  "Hand_Log_1": {
+   "pos": [
+    -1.453,
+    0.22,
+    0.889
+   ],
+   "kind": "hand",
+   "parent": "Log_1",
+   "note": ""
+  },
+  "Hand_Log_2": {
+   "pos": [
+    -1.377,
+    0.22,
+    0.889
+   ],
+   "kind": "hand",
+   "parent": "Log_2",
+   "note": ""
+  },
+  "Hand_Log_3": {
+   "pos": [
+    -1.453,
+    0.22,
+    0.959
+   ],
+   "kind": "hand",
+   "parent": "Log_3",
+   "note": ""
+  },
+  "Hand_Log_4": {
+   "pos": [
+    -1.377,
+    0.22,
+    0.959
+   ],
+   "kind": "hand",
+   "parent": "Log_4",
+   "note": ""
+  },
+  "Hand_Curtain_L1A": {
+   "pos": [
+    -1.4477,
+    0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_L1A",
+   "note": ""
+  },
+  "Hand_Curtain_L1B": {
+   "pos": [
+    -0.7423,
+    0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_L1B",
+   "note": ""
+  },
+  "Hand_Curtain_L2A": {
+   "pos": [
+    -0.4839,
+    0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_L2A",
+   "note": ""
+  },
+  "Hand_Curtain_L2B": {
+   "pos": [
+    0.2214,
+    0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_L2B",
+   "note": ""
+  },
+  "Hand_Curtain_L3A": {
+   "pos": [
+    0.4931,
+    0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_L3A",
+   "note": ""
+  },
+  "Hand_Curtain_L3B": {
+   "pos": [
+    0.7165,
+    0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_L3B",
+   "note": ""
+  },
+  "Hand_Curtain_R1A": {
+   "pos": [
+    -1.4477,
+    -0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_R1A",
+   "note": ""
+  },
+  "Hand_Curtain_R1B": {
+   "pos": [
+    -0.7423,
+    -0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_R1B",
+   "note": ""
+  },
+  "Hand_Curtain_R2A": {
+   "pos": [
+    -0.4839,
+    -0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_R2A",
+   "note": ""
+  },
+  "Hand_Curtain_R2B": {
+   "pos": [
+    0.2214,
+    -0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_R2B",
+   "note": ""
+  },
+  "Hand_Curtain_R3A": {
+   "pos": [
+    0.4931,
+    -0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_R3A",
+   "note": ""
+  },
+  "Hand_Curtain_R3B": {
+   "pos": [
+    0.7165,
+    -0.855,
+    1.7055
+   ],
+   "kind": "hand",
+   "parent": "Curtain_R3B",
+   "note": ""
+  },
+  "Hand_Plug_1": {
+   "pos": [
+    1.05,
+    0.135,
+    0.938
+   ],
+   "kind": "hand",
+   "parent": "Engine_Lead_1",
+   "note": ""
+  },
+  "Hand_Plug_2": {
+   "pos": [
+    1.145,
+    0.135,
+    0.938
+   ],
+   "kind": "hand",
+   "parent": "Engine_Lead_2",
+   "note": ""
+  },
+  "Hand_Plug_3": {
+   "pos": [
+    1.24,
+    0.135,
+    0.938
+   ],
+   "kind": "hand",
+   "parent": "Engine_Lead_3",
+   "note": ""
+  },
+  "Hand_Plug_4": {
+   "pos": [
+    1.335,
+    0.135,
+    0.938
+   ],
+   "kind": "hand",
+   "parent": "Engine_Lead_4",
+   "note": ""
+  },
+  "Hand_Dipstick": {
+   "pos": [
+    1.4244,
+    -0.2123,
+    1.0417
+   ],
+   "kind": "hand",
+   "parent": "Engine_Dipstick",
+   "note": ""
+  },
+  "Pour_Oil": {
+   "pos": [
+    1.33,
+    0.03,
+    1.0
+   ],
+   "kind": "pour",
+   "parent": "Engine",
+   "note": ""
+  },
+  "Pour_Coolant": {
+   "pos": [
+    0.975,
+    -0.205,
+    1.01
+   ],
+   "kind": "pour",
+   "parent": "Engine",
+   "note": ""
+  },
+  "Hand_EngineCover": {
+   "pos": [
+    1.485,
+    0.0,
+    1.13
+   ],
+   "kind": "hand",
+   "parent": "EngineCover",
+   "note": ""
+  },
+  "Hand_MassSwitch": {
+   "pos": [
+    0.47,
+    0.513,
+    0.976
+   ],
+   "kind": "hand",
+   "parent": "MassSwitch_Key",
+   "note": ""
+  },
+  "Hand_BatteryLid": {
+   "pos": [
+    0.39,
+    0.61,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "BatteryBox_Lid",
+   "note": ""
+  },
+  "Hand_Battery": {
+   "pos": [
+    0.39,
+    0.71,
+    1.076
+   ],
+   "kind": "hand",
+   "parent": "Battery",
+   "note": ""
+  },
+  "Hand_ClampPos": {
+   "pos": [
+    0.285,
+    0.67,
+    1.043
+   ],
+   "kind": "hand",
+   "parent": "Battery_ClampPos",
+   "note": ""
+  },
+  "Hand_ClampNeg": {
+   "pos": [
+    0.495,
+    0.67,
+    1.043
+   ],
+   "kind": "hand",
+   "parent": "Battery_ClampNeg",
+   "note": ""
+  },
+  "Hand_FuseBox": {
+   "pos": [
+    1.675,
+    -0.3,
+    1.095
+   ],
+   "kind": "hand",
+   "parent": "FuseBox_Lid",
+   "note": ""
+  },
+  "Hand_Ignition": {
+   "pos": [
+    1.716,
+    0.4,
+    1.2059
+   ],
+   "kind": "hand",
+   "parent": "Ignition_Key",
+   "note": ""
+  },
+  "Hand_Handbrake": {
+   "pos": [
+    1.6931,
+    0.74,
+    1.1811
+   ],
+   "kind": "hand",
+   "parent": "Handbrake",
+   "note": ""
+  },
+  "Hand_FuelFlap_L": {
+   "pos": [
+    0.143,
+    1.0035,
+    0.872
+   ],
+   "kind": "hand",
+   "parent": "FuelFlap_L",
+   "note": ""
+  },
+  "Pour_Fuel_L": {
+   "pos": [
+    0.143,
+    1.007,
+    0.932
+   ],
+   "kind": "pour",
+   "parent": "FuelFiller_L",
+   "note": "the spout goes in here, 56 l tank"
+  },
+  "Hand_FuelFlap_R": {
+   "pos": [
+    0.55,
+    -1.0035,
+    0.83
+   ],
+   "kind": "hand",
+   "parent": "FuelFlap_R",
+   "note": ""
+  },
+  "Pour_Fuel_R": {
+   "pos": [
+    0.55,
+    -1.007,
+    0.89
+   ],
+   "kind": "pour",
+   "parent": "FuelFiller_R",
+   "note": "the spout goes in here, 56 l tank"
+  },
+  "Hand_TankValve": {
+   "pos": [
+    1.521,
+    0.62,
+    0.97
+   ],
+   "kind": "hand",
+   "parent": "TankValve_Lever",
+   "note": ""
+  },
+  "Hand_Jerrycan_1": {
+   "pos": [
+    -1.66,
+    -0.57,
+    2.3925
+   ],
+   "kind": "hand",
+   "parent": "Jerrycan_1",
+   "note": ""
+  },
+  "Spout_Jerrycan_1": {
+   "pos": [
+    -1.645,
+    -0.705,
+    2.3925
+   ],
+   "kind": "item_slot",
+   "parent": "Jerrycan_1",
+   "note": "the spout screws on here"
+  },
+  "Hand_Jerrycan_2": {
+   "pos": [
+    -1.66,
+    -0.2,
+    2.3925
+   ],
+   "kind": "hand",
+   "parent": "Jerrycan_2",
+   "note": ""
+  },
+  "Spout_Jerrycan_2": {
+   "pos": [
+    -1.645,
+    -0.335,
+    2.3925
+   ],
+   "kind": "item_slot",
+   "parent": "Jerrycan_2",
+   "note": "the spout screws on here"
+  },
+  "Hand_Spout": {
+   "pos": [
+    -1.4,
+    0.03,
+    2.33
+   ],
+   "kind": "hand",
+   "parent": "Spout",
+   "note": ""
+  },
+  "Foot_Clutch": {
+   "pos": [
+    1.7713,
+    0.665,
+    0.9354
+   ],
+   "kind": "foot",
+   "parent": "Pedal_Clutch",
+   "note": ""
+  },
+  "Foot_Brake": {
+   "pos": [
+    1.7713,
+    0.435,
+    0.9354
+   ],
+   "kind": "foot",
+   "parent": "Pedal_Brake",
+   "note": ""
+  },
+  "Foot_Gas": {
+   "pos": [
+    1.7713,
+    0.335,
+    0.9866
+   ],
+   "kind": "foot",
+   "parent": "Pedal_Gas",
+   "note": ""
+  },
+  "Hand_GearLever": {
+   "pos": [
+    1.5534,
+    0.16,
+    1.3089
+   ],
+   "kind": "hand",
+   "parent": "GearLever",
+   "note": ""
+  },
+  "Hand_TransferLever_Axle": {
+   "pos": [
+    1.57,
+    -0.06,
+    1.16
+   ],
+   "kind": "hand",
+   "parent": "TransferLever_Axle",
+   "note": ""
+  },
+  "Hand_TransferLever_Range": {
+   "pos": [
+    1.57,
+    -0.125,
+    1.16
+   ],
+   "kind": "hand",
+   "parent": "TransferLever_Range",
+   "note": ""
+  },
+  "Hand_ToolBox": {
+   "pos": [
+    0.63,
+    -0.77,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "ToolBox_Lid",
+   "note": "carry handle"
+  },
+  "Hand_Wrench": {
+   "pos": [
+    0.54,
+    -0.862,
+    0.823
+   ],
+   "kind": "hand",
+   "parent": "Tool_Wrench",
+   "note": ""
+  },
+  "Hand_PlugSpanner": {
+   "pos": [
+    0.575,
+    -0.825,
+    0.835
+   ],
+   "kind": "hand",
+   "parent": "Tool_PlugSpanner",
+   "note": ""
+  },
+  "Hand_Screwdriver": {
+   "pos": [
+    0.58,
+    -0.778,
+    0.838
+   ],
+   "kind": "hand",
+   "parent": "Tool_Screwdriver",
+   "note": ""
+  },
+  "Hand_Pliers": {
+   "pos": [
+    0.57,
+    -0.72,
+    0.824
+   ],
+   "kind": "hand",
+   "parent": "Tool_Pliers",
+   "note": ""
+  },
+  "Hand_Spare_Belt": {
+   "pos": [
+    0.74,
+    -0.742,
+    0.822
+   ],
+   "kind": "hand",
+   "parent": "Spare_Belt",
+   "note": ""
+  },
+  "Hand_FuseTin": {
+   "pos": [
+    0.74,
+    -0.7,
+    0.834
+   ],
+   "kind": "hand",
+   "parent": "FuseTin",
+   "note": ""
+  },
+  "Hand_Jack": {
+   "pos": [
+    -0.8,
+    0.76,
+    0.926
+   ],
+   "kind": "hand",
+   "parent": "Jack",
+   "note": ""
+  },
+  "Jack_PumpSocket": {
+   "pos": [
+    -0.73,
+    0.8,
+    0.836
+   ],
+   "kind": "item_slot",
+   "parent": "Jack",
+   "note": "WheelBrace goes in here"
+  },
+  "Hand_Jack_Screw": {
+   "pos": [
+    -0.8,
+    0.8,
+    1.048
+   ],
+   "kind": "hand",
+   "parent": "Jack_Screw",
+   "note": ""
+  },
+  "Hand_WheelBrace": {
+   "pos": [
+    -0.45,
+    0.53,
+    0.823
+   ],
+   "kind": "hand",
+   "parent": "WheelBrace",
+   "note": ""
+  },
+  "Pour_OilCan": {
+   "pos": [
+    -0.57,
+    0.825,
+    1.068
+   ],
+   "kind": "pour",
+   "parent": "OilCan",
+   "note": ""
+  },
+  "Hand_OilCan": {
+   "pos": [
+    -0.645,
+    0.825,
+    1.068
+   ],
+   "kind": "hand",
+   "parent": "OilCan",
+   "note": ""
+  },
+  "Pour_AntifreezeCan": {
+   "pos": [
+    -0.385,
+    0.82,
+    1.053
+   ],
+   "kind": "pour",
+   "parent": "AntifreezeCan",
+   "note": ""
+  },
+  "Hand_AntifreezeCan": {
+   "pos": [
+    -0.455,
+    0.82,
+    1.056
+   ],
+   "kind": "hand",
+   "parent": "AntifreezeCan",
+   "note": ""
+  },
+  "Hand_Shovel_Grip": {
+   "pos": [
+    -1.0145,
+    0.1323,
+    2.318
+   ],
+   "kind": "hand",
+   "parent": "Shovel",
+   "note": ""
+  },
+  "Hand_Shovel_Shaft": {
+   "pos": [
+    -1.2188,
+    0.3238,
+    2.318
+   ],
+   "kind": "hand",
+   "parent": "Shovel",
+   "note": ""
+  },
+  "Hand_TowRope": {
+   "pos": [
+    -1.78,
+    -0.845,
+    1.8
+   ],
+   "kind": "hand",
+   "parent": "TowRope",
+   "note": ""
+  },
+  "Tow_Hook_FL": {
+   "pos": [
+    2.395,
+    0.72,
+    0.545
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "red tow hook, front left"
+  },
+  "Tow_Hook_FR": {
+   "pos": [
+    2.395,
+    -0.72,
+    0.545
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "red tow hook, front right"
+  },
+  "Tow_Rear": {
+   "pos": [
+    -2.27,
+    0.0,
+    0.67
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "rear bumper towing eye"
+  },
+  "Hand_Crank_Grip": {
+   "pos": [
+    0.858,
+    -0.591,
+    1.21
+   ],
+   "kind": "hand",
+   "parent": "CrankHandle",
+   "note": ""
+  },
+  "Crank_Hole": {
+   "pos": [
+    2.36,
+    0.0,
+    0.61
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "insert the handle along -x; the flap must be up"
+  },
+  "Crank_Ratchet": {
+   "pos": [
+    1.474,
+    0.0,
+    0.61
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "the tip pin engages here; turning it turns the engine"
+  },
+  "Hand_CrankHole_Flap": {
+   "pos": [
+    2.34,
+    0.0,
+    0.6
+   ],
+   "kind": "hand",
+   "parent": "CrankHole_Flap",
+   "note": ""
+  },
+  "Plug_12V": {
+   "pos": [
+    1.7378,
+    -0.24,
+    1.1761
+   ],
+   "kind": "item_slot",
+   "parent": null,
+   "note": "12 V socket: the inspection lamp plug goes in here"
+  },
+  "Hand_Heater_Temp": {
+   "pos": [
+    1.7262,
+    0.105,
+    1.1977
+   ],
+   "kind": "hand",
+   "parent": "Heater_Temp",
+   "note": ""
+  },
+  "Hand_Heater_Fan": {
+   "pos": [
+    1.7263,
+    -0.0012,
+    1.1987
+   ],
+   "kind": "hand",
+   "parent": "Heater_Fan",
+   "note": ""
+  },
+  "Hand_Heater_Air": {
+   "pos": [
+    1.7267,
+    -0.086,
+    1.2027
+   ],
+   "kind": "hand",
+   "parent": "Heater_Air",
+   "note": ""
+  },
+  "Hand_Blowtorch": {
+   "pos": [
+    -0.03,
+    0.8,
+    0.881
+   ],
+   "kind": "hand",
+   "parent": "Blowtorch",
+   "note": ""
+  },
+  "Hand_Blowtorch_Pump": {
+   "pos": [
+    -0.15,
+    0.8,
+    1.018
+   ],
+   "kind": "hand",
+   "parent": "Blowtorch_Pump",
+   "note": ""
+  },
+  "Hand_Blowtorch_Valve": {
+   "pos": [
+    -0.18,
+    0.8,
+    1.049
+   ],
+   "kind": "hand",
+   "parent": "Blowtorch_Valve",
+   "note": ""
+  },
+  "Pour_Blowtorch": {
+   "pos": [
+    -0.098,
+    0.8,
+    0.956
+   ],
+   "kind": "pour",
+   "parent": "Blowtorch",
+   "note": "petrol in here"
+  },
+  "Blowtorch_Flame": {
+   "pos": [
+    -0.305,
+    0.8,
+    1.011
+   ],
+   "kind": "vfx",
+   "parent": "Blowtorch",
+   "note": "flame out along -x of the item",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Heat_OilPan": {
+   "pos": [
+    1.19,
+    0.0,
+    0.52
+   ],
+   "kind": "heat",
+   "parent": null,
+   "note": "hold the blowtorch flame here (under the skid plate of the sump) for a cold start",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Hand_Engine_Drain": {
+   "pos": [
+    1.31,
+    0.124,
+    0.64
+   ],
+   "kind": "hand",
+   "parent": "Engine_Drain",
+   "note": ""
+  },
+  "Drain_Engine": {
+   "pos": [
+    1.31,
+    0.13,
+    0.605
+   ],
+   "kind": "vfx",
+   "parent": "Engine",
+   "note": "coolant runs out here",
+   "dir": [
+    0.0,
+    0.3,
+    -0.95
+   ]
+  },
+  "VFX_Exhaust": {
+   "pos": [
+    -2.21,
+    -0.452,
+    0.512
+   ],
+   "kind": "vfx",
+   "parent": "Exhaust",
+   "note": "exhaust smoke; thick white steam for the first minute of a cold start",
+   "dir": [
+    -0.96,
+    -0.04,
+    -0.27
+   ]
+  },
+  "Hand_ChainBag": {
+   "pos": [
+    -1.03,
+    -0.76,
+    1.141
+   ],
+   "kind": "hand",
+   "parent": "ChainBag",
+   "note": ""
+  },
+  "Hand_SnowBrush": {
+   "pos": [
+    1.28,
+    -0.847,
+    0.995
+   ],
+   "kind": "hand",
+   "parent": "SnowBrush",
+   "note": ""
+  },
+  "Audio_Engine": {
+   "pos": [
+    1.19,
+    0.0,
+    0.84
+   ],
+   "kind": "audio",
+   "parent": "EngineBay",
+   "note": "engine (idle, revs, the crank turning it over)"
+  },
+  "Audio_Heater": {
+   "pos": [
+    1.8,
+    0.0,
+    1.29
+   ],
+   "kind": "audio",
+   "parent": "Dash",
+   "note": "heater fan"
+  },
+  "Audio_Wipers": {
+   "pos": [
+    1.99,
+    0.0,
+    1.49
+   ],
+   "kind": "audio",
+   "parent": "Kuzov",
+   "note": "wiper motor"
+  },
+  "Audio_Stove": {
+   "pos": [
+    -1.86,
+    0.59,
+    1.106
+   ],
+   "kind": "audio",
+   "parent": "Stove",
+   "note": "stove: fire, the door, ticking iron"
+  },
+  "Audio_Tyres": {
+   "pos": [
+    0.0,
+    0.0,
+    0.49
+   ],
+   "kind": "audio",
+   "parent": "Kuzov",
+   "note": "tyres on snow / ice (follow the speed)"
+  },
+  "Fire_Stove": {
+   "pos": [
+    -1.86,
+    0.59,
+    1.086
+   ],
+   "kind": "vfx",
+   "parent": "Stove",
+   "note": "fire in the stove (VFX); lamp LIGHT_Stove (type stove) is its light; StoveGlow lights up",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Stove_Load": {
+   "pos": [
+    -1.67,
+    0.59,
+    1.116
+   ],
+   "kind": "item_slot",
+   "parent": "Stove",
+   "note": "logs go in here (door open)",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "VFX_EngineSteam": {
+   "pos": [
+    1.19,
+    0.0,
+    1.22
+   ],
+   "kind": "vfx",
+   "parent": "EngineBay",
+   "note": "steam out of the engine bay when it boils over (through the cover seams, or straight up with the cover open)",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "VFX_RadiatorSteam": {
+   "pos": [
+    2.14,
+    0.0,
+    1.4
+   ],
+   "kind": "vfx",
+   "parent": "Kit_Front",
+   "note": "steam out of the radiator hatch",
+   "dir": [
+    0.6,
+    0.0,
+    0.8
+   ]
+  },
+  "Hide_Footwell_P": {
+   "pos": [
+    1.55,
+    -0.48,
+    0.89
+   ],
+   "kind": "hide",
+   "parent": "Kuzov",
+   "note": "down in the passenger footwell",
+   "pose": "crouch",
+   "eye": [
+    1.48,
+    -0.45,
+    1.11
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ]
+  },
+  "Hide_Footwell_D": {
+   "pos": [
+    1.47,
+    0.48,
+    0.89
+   ],
+   "kind": "hide",
+   "parent": "Kuzov",
+   "note": "down behind the pedals",
+   "pose": "crouch",
+   "eye": [
+    1.42,
+    0.45,
+    1.11
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ]
+  },
+  "Hide_CabSeat": {
+   "pos": [
+    1.12,
+    -0.53,
+    1.13
+   ],
+   "kind": "hide",
+   "parent": "Kuzov",
+   "note": "curled up on the passenger seat",
+   "pose": "lie",
+   "eye": [
+    1.12,
+    -0.36,
+    1.28
+   ],
+   "facing": [
+    0,
+    1,
+    0
+   ]
+  },
+  "Hide_Bench_L2": {
+   "pos": [
+    -0.57,
+    0.66,
+    1.26
+   ],
+   "kind": "hide",
+   "parent": "Seat_L2",
+   "note": "flat across the folding seats L2 and L3 (both must be down)",
+   "pose": "lie",
+   "eye": [
+    -0.8,
+    0.66,
+    1.36
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "Hide_Aisle": {
+   "pos": [
+    -0.35,
+    0.05,
+    0.85
+   ],
+   "kind": "hide",
+   "parent": "Kuzov",
+   "note": "flat on the saloon floor",
+   "pose": "lie",
+   "eye": [
+    -0.75,
+    0.05,
+    0.95
+   ],
+   "facing": [
+    1,
+    0,
+    0
+   ]
+  },
+  "Hide_RearRight": {
+   "pos": [
+    -1.8,
+    -0.25,
+    0.85
+   ],
+   "kind": "hide",
+   "parent": "Kuzov",
+   "note": "crouched by the rear doors behind the cargo",
+   "pose": "crouch",
+   "eye": [
+    -1.74,
+    -0.25,
+    1.23
+   ],
+   "facing": [
+    1,
+    0,
+    0
+   ]
+  },
+  "Hand_Lock_doorL": {
+   "pos": [
+    1.3,
+    0.8511,
+    1.39
+   ],
+   "kind": "hand",
+   "parent": "Lock_doorL",
+   "note": ""
+  },
+  "Hand_Lock_doorP": {
+   "pos": [
+    1.3,
+    -0.8511,
+    1.39
+   ],
+   "kind": "hand",
+   "parent": "Lock_doorP",
+   "note": ""
+  },
+  "Hand_Lock_doorSalon": {
+   "pos": [
+    -0.5,
+    -0.8823,
+    1.36
+   ],
+   "kind": "hand",
+   "parent": "Lock_doorSalon",
+   "note": ""
+  },
+  "Hand_Lock_doorZL": {
+   "pos": [
+    -2.0674,
+    0.12,
+    1.36
+   ],
+   "kind": "hand",
+   "parent": "Lock_doorZL",
+   "note": ""
+  },
+  "Hand_Lock_dooZP": {
+   "pos": [
+    -2.0674,
+    -0.12,
+    1.36
+   ],
+   "kind": "hand",
+   "parent": "Lock_dooZP",
+   "note": ""
+  },
+  "Hand_Toggle_Head": {
+   "pos": [
+    1.7318,
+    0.1575,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Head",
+   "note": ""
+  },
+  "Hand_Toggle_Fog": {
+   "pos": [
+    1.7318,
+    0.1125,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Fog",
+   "note": ""
+  },
+  "Hand_Toggle_Spot": {
+   "pos": [
+    1.7318,
+    0.0675,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Spot",
+   "note": ""
+  },
+  "Hand_Toggle_Roof": {
+   "pos": [
+    1.7318,
+    0.0225,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Roof",
+   "note": ""
+  },
+  "Hand_Toggle_Work": {
+   "pos": [
+    1.7318,
+    -0.0225,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Work",
+   "note": ""
+  },
+  "Hand_Toggle_Cabin": {
+   "pos": [
+    1.7318,
+    -0.0675,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Cabin",
+   "note": ""
+  },
+  "Hand_Toggle_Stove": {
+   "pos": [
+    1.7318,
+    -0.1125,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Stove",
+   "note": ""
+  },
+  "Hand_Toggle_Wiper": {
+   "pos": [
+    1.7318,
+    -0.1575,
+    1.3299
+   ],
+   "kind": "hand",
+   "parent": "Toggle_Wiper",
+   "note": ""
+  },
+  "Sit_Driver": {
+   "pos": [
+    1.12,
+    0.53,
+    1.16
+   ],
+   "kind": "sit",
+   "parent": null,
+   "note": "cab seat; look forward",
+   "eye": [
+    1.15,
+    0.53,
+    1.86
+   ],
+   "facing": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "exit": [
+    1.3,
+    1.45,
+    0.0
+   ],
+   "door": "doorL"
+  },
+  "Sit_Passenger": {
+   "pos": [
+    1.12,
+    -0.53,
+    1.16
+   ],
+   "kind": "sit",
+   "parent": null,
+   "note": "cab seat; look forward",
+   "eye": [
+    1.15,
+    -0.53,
+    1.86
+   ],
+   "facing": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "exit": [
+    1.3,
+    -1.45,
+    0.0
+   ],
+   "door": "doorP"
+  },
+  "Sit_L1": {
+   "pos": [
+    -1.05,
+    0.65,
+    1.231
+   ],
+   "kind": "sit",
+   "parent": "Seat_L1",
+   "note": "folding troop seat (must be down)",
+   "eye": [
+    -1.05,
+    0.6,
+    1.87
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "exit": [
+    -0.55,
+    0.15,
+    0.806
+   ],
+   "door": "doorSalon or the rear doors",
+   "exit_note": "preferred spot to stand up (crouched: the saloon is low); if another player is there, slide along the aisle"
+  },
+  "Sit_L2": {
+   "pos": [
+    -0.57,
+    0.65,
+    1.231
+   ],
+   "kind": "sit",
+   "parent": "Seat_L2",
+   "note": "folding troop seat (must be down)",
+   "eye": [
+    -0.57,
+    0.6,
+    1.87
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "exit": [
+    -0.45,
+    0.0,
+    0.806
+   ],
+   "door": "doorSalon or the rear doors",
+   "exit_note": "preferred spot to stand up (crouched: the saloon is low); if another player is there, slide along the aisle"
+  },
+  "Sit_L3": {
+   "pos": [
+    -0.09,
+    0.65,
+    1.231
+   ],
+   "kind": "sit",
+   "parent": "Seat_L3",
+   "note": "folding troop seat (must be down)",
+   "eye": [
+    -0.09,
+    0.6,
+    1.87
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "exit": [
+    -0.09,
+    0.0,
+    0.806
+   ],
+   "door": "doorSalon or the rear doors",
+   "exit_note": "preferred spot to stand up (crouched: the saloon is low); if another player is there, slide along the aisle"
+  },
+  "Sit_L4": {
+   "pos": [
+    0.39,
+    0.65,
+    1.231
+   ],
+   "kind": "sit",
+   "parent": "Seat_L4",
+   "note": "folding troop seat (must be down)",
+   "eye": [
+    0.39,
+    0.6,
+    1.87
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "exit": [
+    0.39,
+    0.0,
+    0.806
+   ],
+   "door": "doorSalon or the rear doors",
+   "exit_note": "preferred spot to stand up (crouched: the saloon is low); if another player is there, slide along the aisle"
+  },
+  "Sit_R1": {
+   "pos": [
+    -1.0,
+    -0.65,
+    1.231
+   ],
+   "kind": "sit",
+   "parent": "Seat_R1",
+   "note": "folding troop seat (must be down)",
+   "eye": [
+    -1.0,
+    -0.6,
+    1.87
+   ],
+   "facing": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "exit": [
+    -0.55,
+    -0.2,
+    0.806
+   ],
+   "door": "doorSalon or the rear doors",
+   "exit_note": "preferred spot to stand up (crouched: the saloon is low); if another player is there, slide along the aisle"
+  },
+  "Sit_R2": {
+   "pos": [
+    0.62,
+    -0.65,
+    1.231
+   ],
+   "kind": "sit",
+   "parent": "Seat_R2",
+   "note": "folding troop seat (must be down)",
+   "eye": [
+    0.62,
+    -0.6,
+    1.87
+   ],
+   "facing": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "exit": [
+    0.62,
+    0.0,
+    0.806
+   ],
+   "door": "doorSalon or the rear doors",
+   "exit_note": "preferred spot to stand up (crouched: the saloon is low); if another player is there, slide along the aisle"
+  },
+  "Hand_SpareWheel": {
+   "pos": [
+    -2.5895,
+    -0.36,
+    1.455
+   ],
+   "kind": "hand",
+   "parent": "SpareWheel",
+   "note": ""
+  },
+  "Hand_SpareWheel_Nut": {
+   "pos": [
+    -2.5533,
+    -0.36,
+    1.155
+   ],
+   "kind": "hand",
+   "parent": "SpareWheel_Nut",
+   "note": ""
+  },
+  "Jack_Point_FL": {
+   "pos": [
+    1.2067,
+    0.45,
+    0.3789
+   ],
+   "kind": "jack",
+   "parent": "Kuzov",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "note": "under the axle housing: stand the jack here, turn Jack_Screw out, then pump Jack_Ram until the saddle meets the axle and lifts it (reach 0.46 m)"
+  },
+  "Jack_Point_FR": {
+   "pos": [
+    1.2067,
+    -0.45,
+    0.376
+   ],
+   "kind": "jack",
+   "parent": "Kuzov",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "note": "under the axle housing: stand the jack here, turn Jack_Screw out, then pump Jack_Ram until the saddle meets the axle and lifts it (reach 0.46 m)"
+  },
+  "Jack_Point_RL": {
+   "pos": [
+    -1.2031,
+    0.45,
+    0.3996
+   ],
+   "kind": "jack",
+   "parent": "Kuzov",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "note": "under the axle housing: stand the jack here, turn Jack_Screw out, then pump Jack_Ram until the saddle meets the axle and lifts it (reach 0.46 m)"
+  },
+  "Jack_Point_RR": {
+   "pos": [
+    -1.2031,
+    -0.45,
+    0.403
+   ],
+   "kind": "jack",
+   "parent": "Kuzov",
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "note": "under the axle housing: stand the jack here, turn Jack_Screw out, then pump Jack_Ram until the saddle meets the axle and lifts it (reach 0.46 m)"
+  },
+  "Knock_Roof_1": {
+   "pos": [
+    -1.55,
+    0.0,
+    2.1459
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.001,
+    1.0
+   ]
+  },
+  "Knock_Roof_2": {
+   "pos": [
+    -0.75,
+    0.0,
+    2.1459
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.001,
+    1.0
+   ]
+  },
+  "Knock_Roof_3": {
+   "pos": [
+    0.05,
+    0.0,
+    2.1459
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.001,
+    1.0
+   ]
+  },
+  "Knock_Roof_4": {
+   "pos": [
+    0.85,
+    0.0,
+    2.302
+   ],
+   "kind": "knock",
+   "parent": "Kit_RoofRack",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.5,
+    0.0,
+    0.866
+   ]
+  },
+  "Knock_Roof_5": {
+   "pos": [
+    1.55,
+    0.0,
+    2.1459
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.001,
+    1.0
+   ]
+  },
+  "Knock_WallL_1": {
+   "pos": [
+    -1.6,
+    0.9093,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    0.998,
+    0.068
+   ]
+  },
+  "Knock_WallL_2": {
+   "pos": [
+    -0.9,
+    0.8967,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    0.998,
+    0.065
+   ]
+  },
+  "Knock_WallL_3": {
+   "pos": [
+    -0.1,
+    0.8967,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    0.998,
+    0.065
+   ]
+  },
+  "Knock_WallL_4": {
+   "pos": [
+    0.6,
+    0.8967,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    0.998,
+    0.065
+   ]
+  },
+  "Knock_WallR_1": {
+   "pos": [
+    -1.6,
+    -0.9093,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.998,
+    0.068
+   ]
+  },
+  "Knock_WallR_2": {
+   "pos": [
+    -1.0,
+    -0.8967,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.998,
+    0.065
+   ]
+  },
+  "Knock_WallR_3": {
+   "pos": [
+    0.6,
+    -0.8967,
+    1.64
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.998,
+    0.065
+   ]
+  },
+  "Knock_doorSalon": {
+   "pos": [
+    -0.12,
+    -0.9553,
+    1.34
+   ],
+   "kind": "knock",
+   "parent": "doorSalon",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    -0.986,
+    0.166
+   ]
+  },
+  "Knock_doorZL": {
+   "pos": [
+    -2.138,
+    0.35,
+    1.39
+   ],
+   "kind": "knock",
+   "parent": "doorZL",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    -0.893,
+    0.0,
+    0.449
+   ]
+  },
+  "Knock_dooZP": {
+   "pos": [
+    -2.0447,
+    -0.3,
+    1.84
+   ],
+   "kind": "knock",
+   "parent": "dooZP",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    -0.949,
+    0.0,
+    0.316
+   ]
+  },
+  "Knock_doorL": {
+   "pos": [
+    1.35,
+    0.9518,
+    1.29
+   ],
+   "kind": "knock",
+   "parent": "doorL",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.021,
+    0.997,
+    0.078
+   ]
+  },
+  "Knock_doorP": {
+   "pos": [
+    1.35,
+    -0.9518,
+    1.29
+   ],
+   "kind": "knock",
+   "parent": "doorP",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.021,
+    -0.997,
+    0.078
+   ]
+  },
+  "Knock_Floor": {
+   "pos": [
+    -0.6,
+    0.0,
+    0.6098
+   ],
+   "kind": "knock",
+   "parent": "Kuzov",
+   "note": "something knocks / scratches here from outside (sound, dent decal)",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Handprint_R1": {
+   "pos": [
+    -1.095,
+    -0.8932,
+    1.6938
+   ],
+   "kind": "decal",
+   "parent": "Kuzov",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.0,
+    -0.998,
+    0.065
+   ]
+  },
+  "Handprint_R2": {
+   "pos": [
+    -0.1312,
+    -0.8932,
+    1.6938
+   ],
+   "kind": "decal",
+   "parent": "doorSalon",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.0,
+    -0.998,
+    0.065
+   ]
+  },
+  "Handprint_R3": {
+   "pos": [
+    0.6048,
+    -0.8932,
+    1.6938
+   ],
+   "kind": "decal",
+   "parent": "Kuzov",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.0,
+    -0.998,
+    0.065
+   ]
+  },
+  "Handprint_L1": {
+   "pos": [
+    -1.095,
+    0.8932,
+    1.6938
+   ],
+   "kind": "decal",
+   "parent": "Kuzov",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.0,
+    0.998,
+    0.065
+   ]
+  },
+  "Handprint_L2": {
+   "pos": [
+    -0.1312,
+    0.8932,
+    1.6938
+   ],
+   "kind": "decal",
+   "parent": "Kuzov",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.0,
+    0.998,
+    0.065
+   ]
+  },
+  "Handprint_L3": {
+   "pos": [
+    0.6048,
+    0.8932,
+    1.6938
+   ],
+   "kind": "decal",
+   "parent": "Kuzov",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.0,
+    0.998,
+    0.065
+   ]
+  },
+  "Handprint_lob": {
+   "pos": [
+    1.824,
+    0.25,
+    1.77
+   ],
+   "kind": "decal",
+   "parent": "lob",
+   "note": "hand print from outside on the windscreen: lob has no FOG layer - use its main UV (0..1, as the frost / snow masks) for the print",
+   "dir": [
+    0.894,
+    0.07,
+    0.443
+   ]
+  },
+  "Handprint_doorL": {
+   "pos": [
+    1.1,
+    0.886,
+    1.71
+   ],
+   "kind": "decal",
+   "parent": "doorL",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.035,
+    0.997,
+    0.065
+   ]
+  },
+  "Handprint_doorP": {
+   "pos": [
+    1.1,
+    -0.886,
+    1.71
+   ],
+   "kind": "decal",
+   "parent": "doorP",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    0.035,
+    -0.997,
+    0.065
+   ]
+  },
+  "Handprint_doorZL": {
+   "pos": [
+    -2.0668,
+    0.35,
+    1.71
+   ],
+   "kind": "decal",
+   "parent": "doorZL",
+   "note": "hand print from outside: decal from T_Van_Handprints on the fogged glass (FOG UVs)",
+   "dir": [
+    -0.969,
+    0.0,
+    0.246
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Floor",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -0.606,
+    0.0,
+    0.666
+   ],
+   "size": [
+    2.988,
+    1.8,
+    0.1
+   ],
+   "center_body": [
+    -0.606,
+    0.0,
+    0.756
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_FloorCab",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    1.434,
+    0.0,
+    0.695
+   ],
+   "size": [
+    1.092,
+    1.8,
+    0.1
+   ],
+   "center_body": [
+    1.434,
+    0.0,
+    0.785
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofRear",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.365,
+    0.0,
+    2.0005
+   ],
+   "size": [
+    1.57,
+    1.96,
+    0.119
+   ],
+   "center_body": [
+    -1.365,
+    0.0,
+    2.0905
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofFront",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.83,
+    0.0,
+    2.0005
+   ],
+   "size": [
+    2.24,
+    1.96,
+    0.119
+   ],
+   "center_body": [
+    0.83,
+    0.0,
+    2.0905
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofHatchL",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -0.435,
+    0.39,
+    2.0005
+   ],
+   "size": [
+    0.29,
+    1.18,
+    0.119
+   ],
+   "center_body": [
+    -0.435,
+    0.39,
+    2.0905
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofHatchR",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -0.435,
+    -0.79,
+    2.0005
+   ],
+   "size": [
+    0.29,
+    0.38,
+    0.119
+   ],
+   "center_body": [
+    -0.435,
+    -0.79,
+    2.0905
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_WallL",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -0.615,
+    0.945,
+    1.331
+   ],
+   "size": [
+    2.97,
+    0.09,
+    1.23
+   ],
+   "center_body": [
+    -0.615,
+    0.945,
+    1.421
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_WallR_Rear",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.3525,
+    -0.945,
+    1.331
+   ],
+   "size": [
+    1.495,
+    0.09,
+    1.23
+   ],
+   "center_body": [
+    -1.3525,
+    -0.945,
+    1.421
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_WallR_Front",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.6195,
+    -0.945,
+    1.331
+   ],
+   "size": [
+    0.501,
+    0.09,
+    1.23
+   ],
+   "center_body": [
+    0.6195,
+    -0.945,
+    1.421
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_CabFront",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    2.05,
+    0.0,
+    1.35
+   ],
+   "size": [
+    0.2,
+    1.9,
+    1.2
+   ],
+   "center_body": [
+    2.05,
+    0.0,
+    1.44
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_APillarL",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    1.921,
+    0.895,
+    1.35
+   ],
+   "size": [
+    0.118,
+    0.19,
+    1.2
+   ],
+   "center_body": [
+    1.921,
+    0.895,
+    1.44
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_APillarR",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    1.921,
+    -0.895,
+    1.35
+   ],
+   "size": [
+    0.118,
+    0.19,
+    1.2
+   ],
+   "center_body": [
+    1.921,
+    -0.895,
+    1.44
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_Dash",
+   "parent": "Dash",
+   "type": "box",
+   "center": [
+    1.84,
+    0.0,
+    1.216
+   ],
+   "size": [
+    0.28,
+    1.69,
+    0.312
+   ],
+   "center_body": [
+    1.84,
+    0.0,
+    1.306
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_Partition",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.909,
+    0.0,
+    1.043
+   ],
+   "size": [
+    0.042,
+    1.8,
+    0.654
+   ],
+   "center_body": [
+    0.909,
+    0.0,
+    1.133
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_ArchL",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.225,
+    0.775,
+    0.816
+   ],
+   "size": [
+    0.65,
+    0.25,
+    0.2
+   ],
+   "center_body": [
+    -1.225,
+    0.775,
+    0.906
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_ArchR",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.225,
+    -0.775,
+    0.816
+   ],
+   "size": [
+    0.65,
+    0.25,
+    0.2
+   ],
+   "center_body": [
+    -1.225,
+    -0.775,
+    0.906
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_CabSeatD",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    1.175,
+    0.54,
+    0.884
+   ],
+   "size": [
+    0.45,
+    0.52,
+    0.278
+   ],
+   "center_body": [
+    1.175,
+    0.54,
+    0.974
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_CabSeatP",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    1.175,
+    -0.54,
+    0.884
+   ],
+   "size": [
+    0.45,
+    0.52,
+    0.278
+   ],
+   "center_body": [
+    1.175,
+    -0.54,
+    0.974
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_CabSeatBackD",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.935,
+    0.54,
+    1.3615
+   ],
+   "size": [
+    0.09,
+    0.52,
+    0.677
+   ],
+   "center_body": [
+    0.935,
+    0.54,
+    1.4515
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_CabSeatBackP",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.935,
+    -0.54,
+    1.3615
+   ],
+   "size": [
+    0.09,
+    0.52,
+    0.677
+   ],
+   "center_body": [
+    0.935,
+    -0.54,
+    1.4515
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_SeatBacksL",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -0.33,
+    0.8545,
+    1.238
+   ],
+   "size": [
+    1.944,
+    0.091,
+    0.276
+   ],
+   "center_body": [
+    -0.33,
+    0.8545,
+    1.328
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_SeatBackR1",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.0,
+    -0.8545,
+    1.238
+   ],
+   "size": [
+    0.504,
+    0.091,
+    0.276
+   ],
+   "center_body": [
+    -1.0,
+    -0.8545,
+    1.328
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_SeatBackR2",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.62,
+    -0.8545,
+    1.238
+   ],
+   "size": [
+    0.504,
+    0.091,
+    0.276
+   ],
+   "center_body": [
+    0.62,
+    -0.8545,
+    1.328
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_TableTop",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.04,
+    0.0,
+    1.3435
+   ],
+   "size": [
+    0.4,
+    0.44,
+    0.025
+   ],
+   "center_body": [
+    -1.04,
+    0.0,
+    1.4335
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_TableLeg",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -1.04,
+    0.0,
+    1.0235
+   ],
+   "size": [
+    0.05,
+    0.05,
+    0.615
+   ],
+   "center_body": [
+    -1.04,
+    0.0,
+    1.1135
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_Stove",
+   "parent": "Stove",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.2725
+   ],
+   "size": [
+    0.35,
+    0.37,
+    0.545
+   ],
+   "center_body": [
+    -1.87,
+    0.59,
+    1.0785
+   ],
+   "parent_origin": [
+    -1.87,
+    0.59,
+    0.806
+   ]
+  },
+  {
+   "name": "COL_StovePipe",
+   "parent": "Stove",
+   "type": "box",
+   "center": [
+    -0.05,
+    0.04,
+    0.8925
+   ],
+   "size": [
+    0.11,
+    0.11,
+    0.665
+   ],
+   "center_body": [
+    -1.92,
+    0.63,
+    1.6985
+   ],
+   "parent_origin": [
+    -1.87,
+    0.59,
+    0.806
+   ]
+  },
+  {
+   "name": "COL_WoodBox",
+   "parent": "WoodBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.12
+   ],
+   "size": [
+    0.17,
+    0.32,
+    0.24
+   ],
+   "center_body": [
+    -1.415,
+    0.22,
+    0.926
+   ],
+   "parent_origin": [
+    -1.415,
+    0.22,
+    0.806
+   ]
+  },
+  {
+   "name": "COL_Cargo",
+   "parent": "Cargo",
+   "type": "box",
+   "center": [
+    -1.75,
+    -0.63,
+    1.066
+   ],
+   "size": [
+    0.58,
+    0.38,
+    0.7
+   ],
+   "center_body": [
+    -1.75,
+    -0.63,
+    1.156
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_Extinguisher",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.825,
+    0.76,
+    0.916
+   ],
+   "size": [
+    0.11,
+    0.12,
+    0.4
+   ],
+   "center_body": [
+    0.825,
+    0.76,
+    1.006
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_BatteryBox",
+   "parent": "BatteryBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.304,
+    0.324,
+    0.264
+   ],
+   "center_body": [
+    0.39,
+    0.708,
+    0.938
+   ],
+   "parent_origin": [
+    0.39,
+    0.708,
+    0.938
+   ]
+  },
+  {
+   "name": "COL_Underbody",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.498
+   ],
+   "size": [
+    4.2,
+    1.2,
+    0.236
+   ],
+   "center_body": [
+    0.0,
+    0.0,
+    0.588
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_Tanks",
+   "parent": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0505
+   ],
+   "size": [
+    0.77,
+    1.702,
+    0.351
+   ],
+   "center_body": [
+    0.235,
+    0.0,
+    0.5305
+   ],
+   "parent_origin": [
+    0.235,
+    0.0,
+    0.48
+   ]
+  },
+  {
+   "name": "COL_BumperF",
+   "parent": "Kit_Front",
+   "type": "box",
+   "center": [
+    2.32,
+    0.0,
+    0.6
+   ],
+   "size": [
+    0.26,
+    1.98,
+    0.2
+   ],
+   "center_body": [
+    2.32,
+    0.0,
+    0.69
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_BullBar",
+   "parent": "Kit_Front",
+   "type": "box",
+   "center": [
+    2.355,
+    0.0,
+    0.88
+   ],
+   "size": [
+    0.05,
+    0.96,
+    0.45
+   ],
+   "center_body": [
+    2.355,
+    0.0,
+    0.97
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_BumperR",
+   "parent": "Kuzov",
+   "type": "box",
+   "center": [
+    -2.0675,
+    0.0,
+    0.587
+   ],
+   "size": [
+    0.367,
+    1.94,
+    0.212
+   ],
+   "center_body": [
+    -2.0675,
+    0.0,
+    0.677
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofRackRear",
+   "parent": "Kit_RoofRack",
+   "type": "box",
+   "center": [
+    -1.166,
+    0.0,
+    2.1925
+   ],
+   "size": [
+    1.1,
+    1.632,
+    0.025
+   ],
+   "center_body": [
+    -1.166,
+    0.0,
+    2.2825
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofRackFront",
+   "parent": "Kit_RoofRack",
+   "type": "box",
+   "center": [
+    0.458,
+    0.0,
+    2.1925
+   ],
+   "size": [
+    1.416,
+    1.632,
+    0.025
+   ],
+   "center_body": [
+    0.458,
+    0.0,
+    2.2825
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofRackMidL",
+   "parent": "Kit_RoofRack",
+   "type": "box",
+   "center": [
+    -0.433,
+    0.333,
+    2.1925
+   ],
+   "size": [
+    0.366,
+    0.966,
+    0.025
+   ],
+   "center_body": [
+    -0.433,
+    0.333,
+    2.2825
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofRackMidR",
+   "parent": "Kit_RoofRack",
+   "type": "box",
+   "center": [
+    -0.433,
+    -0.733,
+    2.1925
+   ],
+   "size": [
+    0.366,
+    0.166,
+    0.025
+   ],
+   "center_body": [
+    -0.433,
+    -0.733,
+    2.2825
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_LightBar",
+   "parent": "Kit_RoofRack",
+   "type": "box",
+   "center": [
+    1.22,
+    0.0,
+    2.285
+   ],
+   "size": [
+    0.1,
+    1.24,
+    0.14
+   ],
+   "center_body": [
+    1.22,
+    0.0,
+    2.375
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofLoadCrate",
+   "parent": "Kit_RoofLoad",
+   "type": "box",
+   "center": [
+    0.49,
+    -0.46,
+    2.37
+   ],
+   "size": [
+    0.54,
+    0.48,
+    0.3
+   ],
+   "center_body": [
+    0.49,
+    -0.46,
+    2.46
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_RoofLoadBag",
+   "parent": "Kit_RoofLoad",
+   "type": "box",
+   "center": [
+    0.6,
+    0.395,
+    2.33
+   ],
+   "size": [
+    0.22,
+    0.69,
+    0.22
+   ],
+   "center_body": [
+    0.6,
+    0.395,
+    2.42
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_doorL",
+   "parent": "doorL",
+   "type": "box",
+   "center": [
+    -0.462,
+    0.0272,
+    -0.001
+   ],
+   "size": [
+    0.995,
+    0.13,
+    1.362
+   ],
+   "center_body": [
+    1.3645,
+    0.925,
+    1.289
+   ],
+   "parent_origin": [
+    1.8265,
+    0.8978,
+    1.29
+   ]
+  },
+  {
+   "name": "COL_doorP",
+   "parent": "doorP",
+   "type": "box",
+   "center": [
+    -0.462,
+    -0.0272,
+    -0.001
+   ],
+   "size": [
+    0.995,
+    0.13,
+    1.362
+   ],
+   "center_body": [
+    1.3645,
+    -0.925,
+    1.289
+   ],
+   "parent_origin": [
+    1.8265,
+    -0.8978,
+    1.29
+   ]
+  },
+  {
+   "name": "COL_doorSalon",
+   "parent": "doorSalon",
+   "type": "box",
+   "center": [
+    -0.466,
+    0.01,
+    -0.009
+   ],
+   "size": [
+    0.974,
+    0.09,
+    1.25
+   ],
+   "center_body": [
+    -0.118,
+    -0.945,
+    1.351
+   ],
+   "parent_origin": [
+    0.348,
+    -0.955,
+    1.36
+   ]
+  },
+  {
+   "name": "COL_doorZL",
+   "parent": "doorZL",
+   "type": "box",
+   "center": [
+    -0.0059,
+    -0.346,
+    -0.04
+   ],
+   "size": [
+    0.11,
+    0.713,
+    1.24
+   ],
+   "center_body": [
+    -2.145,
+    0.3565,
+    1.33
+   ],
+   "parent_origin": [
+    -2.1391,
+    0.7025,
+    1.37
+   ]
+  },
+  {
+   "name": "COL_dooZP",
+   "parent": "dooZP",
+   "type": "box",
+   "center": [
+    -0.0059,
+    0.3452,
+    -0.04
+   ],
+   "size": [
+    0.11,
+    0.713,
+    1.24
+   ],
+   "center_body": [
+    -2.145,
+    -0.3565,
+    1.33
+   ],
+   "parent_origin": [
+    -2.1391,
+    -0.7017,
+    1.37
+   ]
+  },
+  {
+   "name": "COL_Ladder",
+   "parent": "doorZL",
+   "type": "box",
+   "center": [
+    -0.0959,
+    -0.3125,
+    -0.04
+   ],
+   "size": [
+    0.03,
+    0.408,
+    1.24
+   ],
+   "center_body": [
+    -2.235,
+    0.39,
+    1.33
+   ],
+   "parent_origin": [
+    -2.1391,
+    0.7025,
+    1.37
+   ]
+  }
+ ],
+ "meta": {
+  "units": "metres, degrees",
+  "frame": "Blender body frame: x forward, y left, z up; ground at z = 0 (9 cm lift included)",
+  "unity": "position (x, y, z) -> Unity (-y, z, x); axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sy, sz, sx)",
+  "colliders": "colliders: BoxCollider per entry on its parent (centre / size in the parent frame); part.box: the grab / hit box of a moving part in its own frame",
+  "blendshapes": "Wheel_*: Flat (flat tyre); Snow_Roof / Snow_Visor / Snow_Bumper: Clear (100 = no snow)",
+  "lamps": "out/van3_lights.json",
+  "model": "out/van3.blend",
+  "credit": "UAZ 3D model by tiunov.se (Sketchfab), CC BY 4.0, modified"
+ }
+}

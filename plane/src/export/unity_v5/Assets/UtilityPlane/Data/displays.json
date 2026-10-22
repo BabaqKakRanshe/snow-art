@@ -1,0 +1,10 @@
+{
+ "Display_GPS": {
+  "parent": "Cockpit",
+  "size": [
+   0.0874,
+   0.0653
+  ],
+  "note": "quad in the local XY plane, facing -Z (towards the pilot); powered by avionics bus; the static texture shows a placeholder screen"
+ }
+}

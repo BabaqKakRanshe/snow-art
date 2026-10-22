@@ -1,0 +1,163 @@
+{
+ "ies": [
+  "fluor",
+  "bulkhead_kpp"
+ ],
+ "atlases": {
+  "Kpp": {
+   "size": 1024,
+   "ppm": 50.9,
+   "area_m2": 213.22,
+   "uv_fill": 0.528,
+   "colours": 64,
+   "ppm_parts": {
+    "walls outside": 52.0,
+    "inside (ply, floor, timber, roof underside)": 53.9,
+    "roof on top": 39.3,
+    "barrier (boom, posts)": 54.0,
+    "gate (galvanised)": 54.2
+   }
+  },
+  "KppYard": {
+   "size": 512,
+   "ppm": 51.3,
+   "area_m2": 27.48,
+   "uv_fill": 0.276,
+   "colours": 64
+  },
+  "KppProps": {
+   "size": 256,
+   "ppm": 64.0,
+   "area_m2": 5.25,
+   "uv_fill": 0.328,
+   "colours": 64
+  }
+ },
+ "lamps": 2,
+ "knock_points": 15,
+ "part_boxes": 11,
+ "placement": {
+  "Checkpoint": {
+   "p": [
+    313.0406,
+    16.4376,
+    -289.5625
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ],
+   "yawUnity": 8.0
+  },
+  "Barrier": {
+   "p": [
+    310.945,
+    16.0509,
+    -282.1992
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ],
+   "yawUnity": 8.0
+  },
+  "Gate": {
+   "p": [
+    302.1476,
+    16.0604,
+    -288.0316
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ],
+   "yawUnity": 8.0
+  }
+ },
+ "contract": {
+  "parts": 38,
+  "sockets": 48,
+  "colliders": 44,
+  "kinds": {
+   "slide": 8,
+   "static": 27,
+   "hinge": 3
+  }
+ },
+ "tris": 7380,
+ "tris_by_atlas": {
+  "KppYard": 1950,
+  "Kpp": 2922,
+  "barbed": 8,
+  "chainlink": 8,
+  "glow": 10,
+  "glass": 32,
+  "panel": 56,
+  "KppProps": 2280,
+  "lens:bulk": 84,
+  "lens:fluor": 28,
+  "lens:crt": 2
+ },
+ "objects": [
+  "Barrier",
+  "Checkpoint",
+  "Gate",
+  "Gate_Fence_Barbed",
+  "Gate_Fence_Mesh",
+  "Glow_Bulk_Door",
+  "Glow_Fluor",
+  "IX_BarrierArm_82",
+  "IX_BoothDoor_74",
+  "IX_BoothDoor_74_Glass",
+  "IX_BoothDoor_74_Sign",
+  "IX_BoothWindow_302",
+  "IX_BoothWindow_302_Glass",
+  "IX_Drawer_75",
+  "IX_Drawer_76",
+  "IX_Drawer_77",
+  "IX_Drawer_78",
+  "IX_Drawer_79",
+  "IX_Drawer_80",
+  "IX_Gate_81",
+  "IX_Gate_81_Barbed",
+  "IX_Gate_81_Mesh",
+  "IX_Gate_81_Sign",
+  "IX_KeyBoxDoor_303",
+  "IX_KeyBoxDoor_303_Label",
+  "Kpp_Chair",
+  "Kpp_Panel",
+  "Kpp_Props",
+  "Kpp_Signs",
+  "Lamp_Fluor",
+  "Lens_Bulk_Door",
+  "Lens_Fluor",
+  "Phone",
+  "Phone_Bell",
+  "Phone_Dial",
+  "Phone_Receiver",
+  "Screen_CCTV",
+  "Window_Glass"
+ ],
+ "empties": [
+  "LIGHT_Bulk_Door",
+  "LIGHT_Fluor"
+ ],
+ "bbox_booth": [
+  [
+   -3.05,
+   -2.55,
+   -0.25
+  ],
+  [
+   3.05,
+   2.55,
+   3.117
+  ]
+ ]
+}

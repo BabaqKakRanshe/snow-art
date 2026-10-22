@@ -1,0 +1,755 @@
+{
+ "parts": {
+  "Hatch": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the shaft hatch: concrete collar, frame, shaft, vent, hinges, staple and padlock (locked), the SCHACHT sign",
+   "root": "Hatch",
+   "object": "Hatch",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Props",
+    "M_Base_Panel"
+   ]
+  },
+  "IX_HatchLid_94": {
+   "kind": "hinge",
+   "pivot": [
+    -0.9,
+    0.0,
+    0.51
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Hatch",
+   "states": [],
+   "note": "the shaft lid: the hinge along y at x -0.90, z 0.51 (Update 3's), opens up to 100 deg; locked (the padlock on the staple)",
+   "locked": true,
+   "root": "Hatch",
+   "object": "IX_HatchLid_94",
+   "box": {
+    "center": [
+     0.991,
+     0.0,
+     0.042
+    ],
+    "size": [
+     2.018,
+     1.8,
+     0.12
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    0.9,
+    0.51,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Props"
+   ]
+  },
+  "Crates": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "an olive transport chest with a case on top and a small case beside it, two pine crates (one open, straw); stencils in English",
+   "root": "Crates",
+   "object": "Crates",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Props"
+   ]
+  },
+  "LogPile": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "nine spruce logs (Update 3's) on two skids between four stakes",
+   "root": "LogPile",
+   "object": "LogPile",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Props"
+   ]
+  },
+  "LightPole": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "galvanised yard light: footing, base plate, door, arm, luminaire",
+   "root": "LightPole",
+   "object": "LightPole",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Poles",
+    "M_Lamp_SodiumOff"
+   ]
+  },
+  "PowerPole": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "creosoted pole, wooden crossarm and braces, three pin insulators (tops at Update 3's 8.72: the wires end there)",
+   "root": "PowerPole",
+   "object": "PowerPole",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Poles"
+   ]
+  },
+  "FenceChain": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 3 m section of the base fence (post at x 1.5, as Update 3)",
+   "root": "FenceChain",
+   "object": "FenceChain",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Fence",
+    "M_Base_ChainLink",
+    "M_Base_Barbed"
+   ]
+  },
+  "OldFence": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "old boundary fence: a weathered post (Update 3's lean) and four slack strands",
+   "root": "OldFence",
+   "object": "OldFence",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Fence",
+    "M_Base_Rust"
+   ]
+  },
+  "OldFence_b": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "old boundary fence: a weathered post (Update 3's lean) and four slack strands",
+   "root": "OldFence_b",
+   "object": "OldFence_b",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Fence",
+    "M_Base_Rust"
+   ]
+  },
+  "OldFence_c": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "old boundary fence: a weathered post (Update 3's lean) and four slack strands",
+   "root": "OldFence_c",
+   "object": "OldFence_c",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Fence",
+    "M_Base_Rust"
+   ]
+  },
+  "Helipad": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the pad, edge lights, windsock, sign, extinguisher box, tarped pallet",
+   "root": "Helipad",
+   "object": "Helipad",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Helipad",
+    "M_Lamp_WarmOff",
+    "M_Base_Panel"
+   ]
+  },
+  "RadioMast": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "60 m guyed lattice mast, bands, ladder, tray, dipoles, beacons, guys, anchors",
+   "root": "RadioMast",
+   "object": "RadioMast",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Base_Mast",
+    "M_Light_Red",
+    "M_Base_Panel"
+   ]
+  },
+  "Forest_Wires": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "world model: the overhead line's conductors and the two cable risers (zone 0 -> M_Cable, 1 -> M_Galvanized, 2 -> M_Enamel)",
+   "root": "Forest_Wires",
+   "object": "Forest_Wires",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Cable",
+    "M_Galvanized",
+    "M_Enamel"
+   ]
+  }
+ },
+ "sockets": {
+  "Audio_ShaftVent": {
+   "pos": [
+    -1.18,
+    1.18,
+    1.22
+   ],
+   "kind": "audio",
+   "parent": "Hatch",
+   "note": "the shaft breathes through the vent: a low draught, now and then a knock from below",
+   "root": "Hatch"
+  },
+  "Audio_HatchLock": {
+   "pos": [
+    1.035,
+    0.0,
+    0.66
+   ],
+   "kind": "audio",
+   "parent": "Hatch",
+   "note": "the padlock knocks against the staple in the wind",
+   "root": "Hatch"
+  },
+  "Audio_Windsock": {
+   "pos": [
+    14.5,
+    6.0,
+    6.0
+   ],
+   "kind": "audio",
+   "parent": "Helipad",
+   "note": "the windsock flaps, the swivel squeaks",
+   "root": "Helipad"
+  },
+  "Audio_MastGuys": {
+   "pos": [
+    0.0,
+    0.0,
+    30.0
+   ],
+   "kind": "audio",
+   "parent": "RadioMast",
+   "note": "the guys hum in the wind, ice drops from the lattice",
+   "root": "RadioMast"
+  },
+  "Audio_LineHum": {
+   "pos": [
+    0.0,
+    0.0,
+    8.72
+   ],
+   "kind": "audio",
+   "parent": "PowerPole",
+   "note": "the line hums when the generator runs (the power grid on), the insulators crackle in rain",
+   "root": "PowerPole"
+  }
+ },
+ "meta": {
+  "units": "metres, degrees",
+  "frames": "each prefab its own frame - the frame of its Update 3 FBX after import: x / y / z, z up, origin = the prefab's pivot (Update 3's); Forest_Wires is in the map frame",
+  "unity": "position (x, y, z) -> Unity prefab-local (-x, z, -y) (pivotUnity given); the placements are Update 3's (Forest_Layout.json) and stay as they are",
+  "axes": "hinge axes and angles in Blender terms (right-handed, +angle opens); in Unity the axis converts as a position and the angle changes sign - the same axes and signs as Update 3's interactables (IX_HatchLid_94: (0, -1, 0) -> Unity (0, 0, -1), +100 deg lifts the lid)",
+  "blend": "each root stands at its Update 3 place on the map (the scatter prefabs at their first place), in its own collection; for an FBX of one prefab put its root at (0, 0, 0) with no rotation",
+  "map_placement": {
+   "Hatch": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       358.5742,
+       16.3609,
+       -443.3966
+      ],
+      "q": [
+       0.0,
+       0.069756,
+       0.0,
+       0.997564
+      ]
+     }
+    ]
+   },
+   "Crates": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       372.0311,
+       16.2556,
+       -390.7572
+      ],
+      "q": [
+       0.0,
+       -0.061049,
+       0.0,
+       0.998135
+      ]
+     }
+    ]
+   },
+   "LogPile": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       255.2116,
+       16.245,
+       -388.4769
+      ],
+      "q": [
+       0.0,
+       -0.656059,
+       0.0,
+       0.75471
+      ]
+     }
+    ]
+   },
+   "LightPole": {
+    "list": "prefabs",
+    "count": 6,
+    "placements": [
+     {
+      "p": [
+       364.8477,
+       16.3262,
+       -341.2759
+      ],
+      "q": [
+       0.0,
+       -0.190809,
+       0.0,
+       0.981627
+      ]
+     },
+     {
+      "p": [
+       323.781,
+       16.3277,
+       -317.3275
+      ],
+      "q": [
+       0.0,
+       -0.190809,
+       0.0,
+       0.981627
+      ]
+     },
+     {
+      "p": [
+       296.2998,
+       16.2917,
+       -297.308
+      ],
+      "q": [
+       0.0,
+       -0.190809,
+       0.0,
+       0.981627
+      ]
+     },
+     {
+      "p": [
+       375.9601,
+       16.3098,
+       -377.1718
+      ],
+      "q": [
+       0.0,
+       -0.190809,
+       0.0,
+       0.981627
+      ]
+     },
+     {
+      "p": [
+       309.7674,
+       16.2748,
+       -373.928
+      ],
+      "q": [
+       0.0,
+       -0.190809,
+       0.0,
+       0.981627
+      ]
+     },
+     {
+      "p": [
+       362.471,
+       16.2981,
+       -415.6691
+      ],
+      "q": [
+       0.0,
+       -0.190809,
+       0.0,
+       0.981627
+      ]
+     }
+    ]
+   },
+   "PowerPole": {
+    "list": "prefabs",
+    "count": 4,
+    "placements": [
+     {
+      "p": [
+       378.8827,
+       16.2482,
+       -356.3762
+      ],
+      "q": [
+       0.0,
+       -0.794407,
+       0.0,
+       0.607386
+      ]
+     },
+     {
+      "p": [
+       364.184,
+       16.3208,
+       -360.3694
+      ],
+      "q": [
+       0.0,
+       -0.794407,
+       0.0,
+       0.607386
+      ]
+     },
+     {
+      "p": [
+       390.9372,
+       16.3024,
+       -371.1981
+      ],
+      "q": [
+       0.0,
+       0.992851,
+       0.0,
+       -0.119362
+      ]
+     },
+     {
+      "p": [
+       386.1732,
+       16.3618,
+       -390.7251
+      ],
+      "q": [
+       0.0,
+       0.992851,
+       0.0,
+       -0.119362
+      ]
+     }
+    ]
+   },
+   "FenceChain": {
+    "list": "rocks (scatter)",
+    "count": 213,
+    "first": {
+     "p": [
+      446.7268,
+      16.2888,
+      -308.3509
+     ],
+     "q": [
+      0.0,
+      0.069756,
+      0.0,
+      0.997564
+     ]
+    }
+   },
+   "OldFence": {
+    "list": "rocks (scatter)",
+    "count": 98,
+    "first": {
+     "p": [
+      594.0021,
+      9.7986,
+      548.1599
+     ],
+     "q": [
+      0.0,
+      0.01333,
+      0.0,
+      0.999911
+     ]
+    }
+   },
+   "OldFence_b": {
+    "list": "rocks (scatter)",
+    "count": 98,
+    "first": {
+     "p": [
+      590.0036,
+      7.7546,
+      548.2666
+     ],
+     "q": [
+      0.0,
+      0.01333,
+      0.0,
+      0.999911
+     ]
+    }
+   },
+   "OldFence_c": {
+    "list": "rocks (scatter)",
+    "count": 98,
+    "first": {
+     "p": [
+      586.005,
+      6.1494,
+      548.3732
+     ],
+     "q": [
+      0.0,
+      0.01333,
+      0.0,
+      0.999911
+     ]
+    }
+   },
+   "Helipad": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       278.416,
+       16.3039,
+       -331.1484
+      ],
+      "q": [
+       0.0,
+       0.069756,
+       0.0,
+       0.997564
+      ]
+     }
+    ]
+   },
+   "RadioMast": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       293.4306,
+       16.3183,
+       -403.9465
+      ],
+      "q": [
+       0.0,
+       0.069756,
+       0.0,
+       0.997564
+      ]
+     }
+    ]
+   },
+   "Forest_Wires": {
+    "list": "world model (the map frame, at the origin)"
+   }
+  },
+  "hierarchy": "every prefab is one mesh object, as Update 3 (the sign faces, lenses, chain-link and wires are joined in as extra materials); the hatch's lid IX_HatchLid_94 is its child (hinge, locked: Update 3's interactable)",
+  "lights": "unchanged: Update 3's lights and halos (RadioMast beacons at 20 / 40 / 60 m, the LightPole's spot and halo) sit in the new lenses",
+  "materials": "M_Base_Props / Helipad / Mast / Poles / Fence: baked PSX atlases (point filter, no mips); M_Base_Panel: the sign faces, lit, emission = albedo at 0.06 (as M_ObsSigns); M_Base_ChainLink / Barbed / Rust: alpha cut-out 0.5, tiled 0.5 m, two-sided quads; Update 3's M_Lamp_SodiumOff, M_Lamp_WarmOff (the power grid swaps them), M_Light_Red (always lit), M_Cable, M_Galvanized, M_Enamel",
+  "sockets": "audio: the shaft vent, the hatch's padlock, the windsock, the mast's guys, the line",
+  "model": "base.blend",
+  "textures": "tex/base"
+ }
+}

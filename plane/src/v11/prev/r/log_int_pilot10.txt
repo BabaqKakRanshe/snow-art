@@ -1,0 +1,7 @@
+00:00.692  blend            | Read blend: "/home/claude/plane/out/plane_unity_v10.blend"
+/home/claude/plane/v11/prev/cy11.py:72: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  gm = bpy.data.materials.new('snow'); gm.use_nodes = True
+/home/claude/plane/v11/prev/cy11.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  fm = bpy.data.materials.new('figure'); fm.use_nodes = True
+00:11.264  render           | Saved: '/home/claude/plane/v11/prev/r/int_pilot10_passes.exr'
+dumped 90153 verts 137027 tris

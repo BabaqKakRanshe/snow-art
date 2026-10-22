@@ -1,0 +1,7 @@
+00:00.330  blend            | Read blend: "/home/claude/plane/out/plane_unity_v11.blend"
+/home/claude/plane/v12/prev/cy12.py:86: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  gm = bpy.data.materials.new('snow'); gm.use_nodes = True
+/home/claude/plane/v12/prev/cy12.py:97: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  fm = bpy.data.materials.new('figure'); fm.use_nodes = True
+00:12.148  render           | Saved: '/home/claude/plane/v12/prev/r/cabin_rear_512_passes.exr'
+dumped 90445 verts 137519 tris

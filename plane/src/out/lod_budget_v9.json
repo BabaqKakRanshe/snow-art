@@ -1,0 +1,33 @@
+{
+ "note": "v9 UtilityPlane.fbx: triangles of every <part>_LOD1 / _LOD2 (v10b keeps these budgets)",
+ "tris": {
+  "Body_LOD1": 9472,
+  "Body_LOD2": 2742,
+  "Cabin_Fittings_LOD1": 2204,
+  "CargoDoor_L_LOD1": 1030,
+  "CargoDoor_L_LOD2": 290,
+  "CargoDoor_R_LOD1": 1030,
+  "CargoDoor_R_LOD2": 290,
+  "Cockpit_Static_LOD1": 23806,
+  "Cockpit_Static_LOD2": 4432,
+  "Gear_L_LOD2": 348,
+  "Gear_R_LOD2": 348,
+  "PaxSeat_L1_LOD1": 553,
+  "PaxSeat_L2_LOD1": 553,
+  "PaxSeat_R1_LOD1": 553,
+  "PaxSeat_R2_LOD1": 553,
+  "PilotDoor_L_LOD1": 1192,
+  "PilotDoor_L_LOD2": 337,
+  "PilotDoor_R_LOD1": 1193,
+  "PilotDoor_R_LOD2": 336,
+  "Propeller_LOD2": 436,
+  "TailWheel_LOD1": 1193,
+  "TailWheel_LOD2": 198,
+  "Wheel_L_LOD1": 1617,
+  "Wheel_L_LOD2": 280,
+  "Wheel_R_LOD1": 1617,
+  "Wheel_R_LOD2": 280,
+  "Yoke_C_Roll_LOD1": 942,
+  "Yoke_P_Roll_LOD1": 942
+ }
+}

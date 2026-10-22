@@ -1,0 +1,1606 @@
+{
+ "exterior": {
+  "Body": {
+   "head": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": null,
+   "rot_identity": true,
+   "deform": true
+  },
+  "Propeller": {
+   "head": [
+    474.0,
+    -0.0,
+    170.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Gear_L": {
+   "head": [
+    285.0,
+    46.0,
+    103.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Wheel_L": {
+   "head": [
+    285.0,
+    125.0,
+    48.0
+   ],
+   "parent": "Gear_L",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Gear_R": {
+   "head": [
+    285.0,
+    -46.0,
+    103.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Wheel_R": {
+   "head": [
+    285.0,
+    -125.0,
+    48.0
+   ],
+   "parent": "Gear_R",
+   "rot_identity": true,
+   "deform": true
+  },
+  "TailGear": {
+   "head": [
+    -155.0,
+    0.0,
+    110.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "TailWheel_Fork": {
+   "head": [
+    -194.5,
+    0.0,
+    63.0
+   ],
+   "parent": "TailGear",
+   "rot_identity": true,
+   "deform": true
+  },
+  "TailWheel": {
+   "head": [
+    -206.0,
+    0.0,
+    28.5
+   ],
+   "parent": "TailWheel_Fork",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Rudder": {
+   "head": [
+    -460.0,
+    0.0,
+    244.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Elevator_L": {
+   "head": [
+    -474.0,
+    135.0,
+    206.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Elevator_R": {
+   "head": [
+    -474.0,
+    -135.0,
+    206.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Aileron_L": {
+   "head": [
+    101.7,
+    388.0,
+    278.6248
+   ],
+   "parent": "Body",
+   "rot_identity": false,
+   "deform": true
+  },
+  "Aileron_R": {
+   "head": [
+    101.7,
+    -388.0,
+    278.6248
+   ],
+   "parent": "Body",
+   "rot_identity": false,
+   "deform": true
+  },
+  "Flap_L": {
+   "head": [
+    101.7,
+    80.0,
+    267.8692
+   ],
+   "parent": "Body",
+   "rot_identity": false,
+   "deform": true
+  },
+  "Flap_R": {
+   "head": [
+    101.7,
+    -80.0,
+    267.8692
+   ],
+   "parent": "Body",
+   "rot_identity": false,
+   "deform": true
+  },
+  "CargoDoor_L": {
+   "head": [
+    -45.0,
+    75.2,
+    177.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Handle_CargoDoor_L_Out": {
+   "head": [
+    70.0,
+    77.5,
+    175.0
+   ],
+   "parent": "CargoDoor_L",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Handle_CargoDoor_L_In": {
+   "head": [
+    70.0,
+    67.5,
+    172.0
+   ],
+   "parent": "CargoDoor_L",
+   "rot_identity": true,
+   "deform": false
+  },
+  "CargoDoor_R": {
+   "head": [
+    -45.0,
+    -75.2,
+    177.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Handle_CargoDoor_R_Out": {
+   "head": [
+    70.0,
+    -77.5,
+    175.0
+   ],
+   "parent": "CargoDoor_R",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Handle_CargoDoor_R_In": {
+   "head": [
+    70.0,
+    -67.5,
+    172.0
+   ],
+   "parent": "CargoDoor_R",
+   "rot_identity": true,
+   "deform": false
+  },
+  "PilotDoor_L": {
+   "head": [
+    310.0,
+    74.5,
+    160.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Handle_PilotDoor_L_Out": {
+   "head": [
+    232.0,
+    77.5,
+    170.0
+   ],
+   "parent": "PilotDoor_L",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Handle_PilotDoor_L_In": {
+   "head": [
+    230.0,
+    67.5,
+    174.0
+   ],
+   "parent": "PilotDoor_L",
+   "rot_identity": true,
+   "deform": false
+  },
+  "PilotDoor_R": {
+   "head": [
+    310.0,
+    -74.5,
+    160.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Handle_PilotDoor_R_Out": {
+   "head": [
+    232.0,
+    -77.5,
+    170.0
+   ],
+   "parent": "PilotDoor_R",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Handle_PilotDoor_R_In": {
+   "head": [
+    230.0,
+    -67.5,
+    174.0
+   ],
+   "parent": "PilotDoor_R",
+   "rot_identity": true,
+   "deform": false
+  },
+  "FuelCap_L": {
+   "head": [
+    197.8,
+    155.0,
+    285.2738
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "FuelCap_R": {
+   "head": [
+    197.8,
+    -155.0,
+    285.2738
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_PilotEye": {
+   "head": [
+    224.0,
+    33.0,
+    222.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_CopilotEye": {
+   "head": [
+    224.0,
+    -33.0,
+    222.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_WheelContact_L": {
+   "head": [
+    285.0,
+    125.0,
+    48.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_WheelContact_R": {
+   "head": [
+    285.0,
+    -125.0,
+    48.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_WheelContact_Tail": {
+   "head": [
+    -206.0,
+    0.0,
+    28.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Exhaust_L": {
+   "head": [
+    380.0,
+    78.0,
+    156.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Exhaust_R": {
+   "head": [
+    380.0,
+    -78.0,
+    156.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_PropWash": {
+   "head": [
+    474.0,
+    -0.0,
+    0.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_CenterOfMass": {
+   "head": [
+    195.0,
+    -0.0,
+    175.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Audio_Engine": {
+   "head": [
+    400.0,
+    -0.0,
+    155.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Audio_Cabin": {
+   "head": [
+    220.0,
+    -0.0,
+    190.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Audio_Gear_L": {
+   "head": [
+    285.0,
+    46.0,
+    103.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Audio_Gear_R": {
+   "head": [
+    285.0,
+    -46.0,
+    103.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Audio_Tail": {
+   "head": [
+    -155.0,
+    0.0,
+    110.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Cam_Chase": {
+   "head": [
+    -1400.0,
+    0.0001,
+    450.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Nav_L": {
+   "head": [
+    230.0,
+    707.0,
+    286.835
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Nav_R": {
+   "head": [
+    230.0,
+    -707.0,
+    286.835
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Strobe_L": {
+   "head": [
+    208.0001,
+    707.5,
+    286.835
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Strobe_R": {
+   "head": [
+    207.9999,
+    -707.5,
+    286.835
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Nav_Tail": {
+   "head": [
+    -510.0,
+    0.0,
+    226.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Beacon_Top": {
+   "head": [
+    -440.0,
+    0.0,
+    391.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Beacon_Bottom": {
+   "head": [
+    -165.0,
+    0.0,
+    95.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Landing": {
+   "head": [
+    257.0,
+    230.0,
+    268.9778
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Exit_L": {
+   "head": [
+    205.0,
+    120.0,
+    0.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Exit_Cargo_L": {
+   "head": [
+    20.0,
+    135.0,
+    0.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_FuelCap_L": {
+   "head": [
+    202.5,
+    155.0,
+    284.7738
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_Wing_L_In": {
+   "head": [
+    202.5,
+    200.0,
+    275.1302
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_Wing_L_Out": {
+   "head": [
+    202.5001,
+    520.0,
+    286.3048
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_HStab_L": {
+   "head": [
+    -424.0,
+    120.0,
+    206.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Exit_R": {
+   "head": [
+    205.0,
+    -120.0,
+    0.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Exit_Cargo_R": {
+   "head": [
+    20.0,
+    -135.0,
+    0.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_FuelCap_R": {
+   "head": [
+    202.5,
+    -155.0,
+    284.7738
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_Wing_R_In": {
+   "head": [
+    202.5,
+    -200.0,
+    275.1302
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_Wing_R_Out": {
+   "head": [
+    202.5,
+    -520.0,
+    286.3048
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_HStab_R": {
+   "head": [
+    -424.0,
+    -120.0,
+    206.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Seat_P": {
+   "head": [
+    220.0,
+    33.0,
+    143.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Seat_C": {
+   "head": [
+    220.0,
+    -33.0,
+    143.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_Fin": {
+   "head": [
+    -425.0,
+    0.0,
+    300.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Aero_Fuselage": {
+   "head": [
+    100.0,
+    -0.0,
+    175.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Thrust": {
+   "head": [
+    474.0,
+    -0.0,
+    170.0
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Light_Cargo": {
+   "head": [
+    -20.0,
+    0.0,
+    258.6
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_01": {
+   "head": [
+    170.0,
+    50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_02": {
+   "head": [
+    170.0,
+    -0.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_03": {
+   "head": [
+    170.0,
+    -50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_04": {
+   "head": [
+    100.0,
+    50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_05": {
+   "head": [
+    100.0,
+    -0.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_06": {
+   "head": [
+    100.0,
+    -50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_07": {
+   "head": [
+    30.0,
+    50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_08": {
+   "head": [
+    30.0,
+    -0.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_09": {
+   "head": [
+    30.0,
+    -50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_10": {
+   "head": [
+    -40.0,
+    50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_11": {
+   "head": [
+    -40.0,
+    0.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_12": {
+   "head": [
+    -40.0,
+    -50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_13": {
+   "head": [
+    -110.0,
+    50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_14": {
+   "head": [
+    -110.0,
+    0.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_TieDown_15": {
+   "head": [
+    -110.0,
+    -50.0,
+    107.5
+   ],
+   "parent": "Body",
+   "rot_identity": true,
+   "deform": false
+  }
+ },
+ "cockpit": {
+  "Cockpit": {
+   "head": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": null,
+   "rot_identity": true,
+   "deform": true
+  },
+  "Btn_AnnunTest": {
+   "head": [
+    298.5,
+    -2.5,
+    190.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_ASI": {
+   "head": [
+    297.9,
+    42.6,
+    193.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "ATT_Roll": {
+   "head": [
+    297.9,
+    33.0,
+    193.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "ATT_Pitch": {
+   "head": [
+    297.9,
+    33.0,
+    193.5
+   ],
+   "parent": "ATT_Roll",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_ALT100": {
+   "head": [
+    297.9,
+    23.4,
+    193.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_ALT1000": {
+   "head": [
+    297.9,
+    23.4,
+    193.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "TC_Plane": {
+   "head": [
+    297.9,
+    42.6,
+    183.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "TC_Ball": {
+   "head": [
+    297.9,
+    42.6,
+    189.7
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "HDG_Card": {
+   "head": [
+    297.9,
+    33.0,
+    183.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_VSI": {
+   "head": [
+    297.9,
+    23.4,
+    183.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_TRQ": {
+   "head": [
+    297.9,
+    12.0,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_PROP": {
+   "head": [
+    297.9,
+    5.4,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_ITT": {
+   "head": [
+    297.9,
+    -1.2,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_NG": {
+   "head": [
+    297.9,
+    -7.8,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_OILP": {
+   "head": [
+    297.9,
+    -14.4,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_OILT": {
+   "head": [
+    297.9,
+    -14.4,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_FF": {
+   "head": [
+    297.9,
+    -21.0,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_FUELL": {
+   "head": [
+    297.9,
+    -27.6,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_FUELR": {
+   "head": [
+    297.9,
+    -34.2,
+    197.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Clock_Hour": {
+   "head": [
+    297.9,
+    -30.0,
+    189.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Clock_Min": {
+   "head": [
+    297.9,
+    -30.0,
+    189.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_AMP": {
+   "head": [
+    297.9,
+    -37.5,
+    189.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Needle_OAT": {
+   "head": [
+    297.9,
+    -45.0,
+    189.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_CargoDoor_L": {
+   "head": [
+    297.9,
+    59.5,
+    184.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_CargoDoor_R": {
+   "head": [
+    297.9,
+    53.5,
+    184.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_CabinLight": {
+   "head": [
+    297.9,
+    59.5,
+    176.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_CargoLight": {
+   "head": [
+    297.9,
+    53.5,
+    176.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Battery": {
+   "head": [
+    297.9,
+    60.0,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Avionics": {
+   "head": [
+    297.9,
+    55.5,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_FuelPump": {
+   "head": [
+    297.9,
+    51.0,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Ignition": {
+   "head": [
+    297.9,
+    46.5,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Starter": {
+   "head": [
+    297.9,
+    42.0,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Beacon": {
+   "head": [
+    297.9,
+    33.0,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Strobe": {
+   "head": [
+    297.9,
+    28.5,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_NavLights": {
+   "head": [
+    297.9,
+    24.0,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "SW_Landing": {
+   "head": [
+    297.9,
+    19.5,
+    158.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Rheo_Panel": {
+   "head": [
+    298.5,
+    53.0,
+    193.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Rheo_Flood": {
+   "head": [
+    298.5,
+    59.0,
+    193.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Pull_CabinHeat": {
+   "head": [
+    298.5,
+    11.5,
+    147.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Pull_Defrost": {
+   "head": [
+    298.5,
+    4.5,
+    147.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Pull_ParkBrake": {
+   "head": [
+    298.5,
+    52.0,
+    147.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Yoke_P": {
+   "head": [
+    278.0,
+    33.0,
+    170.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Yoke_P_Roll": {
+   "head": [
+    278.0,
+    33.0,
+    170.0
+   ],
+   "parent": "Yoke_P",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Hand_Yoke_L": {
+   "head": [
+    276.0,
+    48.4,
+    176.0
+   ],
+   "parent": "Yoke_P_Roll",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Hand_Yoke_R": {
+   "head": [
+    276.0,
+    17.6,
+    176.0
+   ],
+   "parent": "Yoke_P_Roll",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Yoke_C": {
+   "head": [
+    278.0,
+    -33.0,
+    170.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Yoke_C_Roll": {
+   "head": [
+    278.0,
+    -33.0,
+    170.0
+   ],
+   "parent": "Yoke_C",
+   "rot_identity": true,
+   "deform": true
+  },
+  "PedalP_L": {
+   "head": [
+    312.0,
+    43.0,
+    110.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Foot_L": {
+   "head": [
+    302.6726,
+    43.0,
+    137.3423
+   ],
+   "parent": "PedalP_L",
+   "rot_identity": true,
+   "deform": false
+  },
+  "PedalP_R": {
+   "head": [
+    312.0,
+    23.0,
+    110.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Foot_R": {
+   "head": [
+    302.6726,
+    23.0,
+    137.3423
+   ],
+   "parent": "PedalP_R",
+   "rot_identity": true,
+   "deform": false
+  },
+  "PedalC_L": {
+   "head": [
+    312.0,
+    -23.0,
+    110.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "PedalC_R": {
+   "head": [
+    312.0,
+    -43.0,
+    110.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Lever_Power": {
+   "head": [
+    284.0,
+    4.0,
+    139.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Hand_Throttle": {
+   "head": [
+    289.0,
+    4.0,
+    154.2051
+   ],
+   "parent": "Lever_Power",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Lever_Prop": {
+   "head": [
+    284.0,
+    -0.0,
+    139.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Lever_Condition": {
+   "head": [
+    284.0,
+    -4.0,
+    139.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Lever_Flap": {
+   "head": [
+    266.0,
+    -8.5,
+    130.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "TrimWheel": {
+   "head": [
+    272.0,
+    8.2,
+    124.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Pull_FuelShutoff": {
+   "head": [
+    298.5,
+    -0.0,
+    137.2
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Belt_P_On": {
+   "head": [
+    232.5,
+    33.0,
+    146.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Belt_P_Off": {
+   "head": [
+    238.0,
+    8.0,
+    140.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Belt_C_On": {
+   "head": [
+    232.5,
+    -33.0,
+    146.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Belt_C_Off": {
+   "head": [
+    238.0,
+    -8.0,
+    140.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "FuelSel_L": {
+   "head": [
+    252.0,
+    5.5,
+    254.7273
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "FuelSel_R": {
+   "head": [
+    252.0,
+    -5.5,
+    254.7273
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Visor_P": {
+   "head": [
+    263.5,
+    33.0,
+    256.875
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Visor_C": {
+   "head": [
+    263.5,
+    -33.0,
+    256.875
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": true
+  },
+  "Socket_Light_Dome_L": {
+   "head": [
+    229.0,
+    8.5,
+    255.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Light_Dome_R": {
+   "head": [
+    229.0,
+    -8.5,
+    255.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Light_Flood": {
+   "head": [
+    297.0,
+    -0.0,
+    200.0
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Belt_P": {
+   "head": [
+    232.5,
+    33.0,
+    146.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": false
+  },
+  "Socket_Belt_C": {
+   "head": [
+    232.5,
+    -33.0,
+    146.5
+   ],
+   "parent": "Cockpit",
+   "rot_identity": true,
+   "deform": false
+  }
+ }
+}

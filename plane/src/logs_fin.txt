@@ -1,0 +1,9 @@
+00:00.349  blend            | Read blend: "/home/claude/plane/out/plane_v2_src_t3.blend"
+/home/claude/plane/finalize_v2.py:43: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+materials ['M_Airframe', 'M_CargoNet', 'M_Cockpit', 'M_Details', 'M_GaugeGlass', 'M_Gauges', 'M_Glass', 'M_Light_Beacon', 'M_Light_Green', 'M_Light_Landing', 'M_Light_Red', 'M_Light_White']
+UE textures Airframe (1024, 1024)
+UE textures Details (512, 512)
+UE textures Cockpit (1024, 1024)
+Info: Saved as "plane_v2_final_t3.blend"
+saved final blend

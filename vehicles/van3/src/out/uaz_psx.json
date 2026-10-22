@@ -1,0 +1,123 @@
+{
+ "ceiling_lift_m": [
+  0.001,
+  0.05,
+  0.127
+ ],
+ "window_band": [
+  1.372,
+  1.835
+ ],
+ "saloon_windows": [
+  [
+   -1.548,
+   -0.642,
+   -1,
+   1.372,
+   1.835
+  ],
+  [
+   -0.584,
+   0.321,
+   -1,
+   1.372,
+   1.835
+  ],
+  [
+   0.393,
+   0.816,
+   -1,
+   1.372,
+   1.835
+  ],
+  [
+   -1.548,
+   -0.642,
+   1,
+   1.372,
+   1.835
+  ],
+  [
+   -0.584,
+   0.321,
+   1,
+   1.372,
+   1.835
+  ],
+  [
+   0.393,
+   0.816,
+   1,
+   1.372,
+   1.835
+  ]
+ ],
+ "Body": {
+  "size": 256,
+  "ppm": 37.3,
+  "area_m2": 18.91,
+  "uv_fill": 0.402,
+  "colours": 64
+ },
+ "Trim": {
+  "size": 256,
+  "ppm": 32.3,
+  "area_m2": 17.31,
+  "uv_fill": 0.276,
+  "colours": 64
+ },
+ "Wheel": {
+  "size": 128,
+  "ppm": 41.1,
+  "area_m2": 3.18,
+  "uv_fill": 0.327,
+  "colours": 63
+ },
+ "Cabin": {
+  "size": 512,
+  "ppm": 52.8,
+  "area_m2": 31.81,
+  "uv_fill": 0.338,
+  "colours": 64
+ },
+ "Seats": {
+  "size": 256,
+  "ppm": 41.6,
+  "area_m2": 12.12,
+  "uv_fill": 0.32,
+  "colours": 64
+ },
+ "Props": {
+  "size": 256,
+  "ppm": 53.7,
+  "area_m2": 9.94,
+  "uv_fill": 0.438,
+  "colours": 64
+ },
+ "tris": 62194,
+ "objects": [
+  "Cargo",
+  "Curtains",
+  "FeltBoots",
+  "Kuzov",
+  "Lamp",
+  "LampBulb",
+  "Safety",
+  "Stove",
+  "StoveGlow",
+  "Table",
+  "Wheel",
+  "Wheel.001",
+  "Wheel.002",
+  "Wheel.003",
+  "WoodBox",
+  "bumpP",
+  "bumpZ",
+  "dooZP",
+  "doorL",
+  "doorP",
+  "doorZL",
+  "heat_shield",
+  "lob"
+ ]
+}

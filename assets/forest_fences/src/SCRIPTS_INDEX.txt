@@ -1,0 +1,51 @@
+base_kit.py                              The Forest base's remaining prefabs in the generator shed's style (Update 3's names, pivots, sizes, places, lights):
+base_paint.py                            Painters for the Forest base prefabs' atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n]).
+base_spec.py                             The Forest base's remaining prefabs (the shaft hatch, the helipad, the radio mast, the crates, the log pile, the yard
+base_tex.py                              Panel atlas of the base prefabs (256 x 256, pixel art, point-filtered, 160 px/m on the faces as the road's signs), in
+bld_common.py                            Shared build steps for the station's buildings (lifted from main_build.py so the garage and the next locations use the
+fence_build.py                           Fence and road-block kit build (fence_kit + fence_paint): each prefab one object (its static mesh, the sign faces
+fence_kit.py                             The fence and road-block kit of the Forest (Update 7), in the generator shed's style:
+fence_layout.py                          Forest Update 7 placements, in the frame of the game as it is now: after the Unity side's ForestYardPlan (the yard drawn
+fence_paint.py                           Painters for the fence kit's atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n]).
+fence_spec.py                            Dimensions of the fence and road-block kit (Forest Update 7), metres.
+fence_tex.py                             Textures of the fence kit (Forest Update 7) that are drawn, not baked.
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+hut_kit.py                               Forester's hut (FORSTHÜTTE) in the generator shed's style, for the Forest map's prologue (Forest_Opening.json S2):
+hut_paint.py                             Painters for the forester's hut atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n] or None).
+hut_tex.py                               Panel atlas of the forester's hut (512 x 512, pixel art, point-filtered), on the explicit-UV objects:
+kpp_tex.py                               Panel atlas of the checkpoint (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the chain-link tile:
+main_spec.py                             Main building (BaseMain) — the layout, measured off the Update 3 model on the Forest map (Models/BaseMain.fbx, the
+main_tex.py                              Panel atlas of the main building (1024 x 1024, pixel art, point-filtered): every sign, label, plan, dial and paper of
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_u7.py                               Package the fence and road-block kit of Forest Update 7 the way the asset batches of Updates 5-6 are packed (the .blend
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+road_kit.py                              The Forest map's road prefabs in the generator shed's style (Update 3's names, pivots, sizes and places; the map's
+road_spec.py                             The Forest map's road prefabs (the prologue road from the SPERRGEBIET gate to the observatory) - Update 3's data and the
+road_tex.py                              Panel atlas of the road prefabs (512 x 512, pixel art, point-filtered): the sign faces at a reading density (160 px/m;
+unwrap_fast.py                           psxlib.unwrap_group with Blender's box packing instead of the concave one (lifted from road_build.py so later builds
+uvpack.py                                Shelf packing of UV islands by their bounding boxes (the main building's walls, strips and boxes are rectangles:
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+yard_tex.py                              Panel atlas of the station yard (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the alpha tiles:
+tools/bone_probe.py                      Bone occupancy along lines (Unity frame) from the giant's meshes in Forest.blend (U3), with Blender's BVH:
+tools/bones_footprint.py                 Ground footprint of the giant's bones (vertices below a height above the terrain), Unity frame, 2 m cells:
+tools/closeup.py                         
+tools/closure_u7.py                      Closure of the U7 layout (game frame), flood fill on a 0.25 m grid with the pieces' footprints at the van body's
+tools/drive_grid.py                      Van drivability grid of the Forest (U3 data, Unity frame) and reachability with a blocking line.
+tools/extract_map.py                     Road and terrain samples of the Forest (Unity frame) for planning: python3 -I extract_map.py -- Forest.blend out.json
+tools/game_ground.py                     The ground as the game has it: Unity Terrain tile 1_1 of Forest (x 0..600, z -600..0) read from the project's
+tools/kit_preview.py                     Workbench previews of the kit row: python3 -I kit_preview.py -- <fences.blend> <out_dir> [TEXTURE|MATERIAL]
+tools/kit_render.py                      Cycles renders of the fence and road-block kit (Forest Update 7): scenes set up from instances of the kit's models
+tools/make_sheets_fences.py              Sheets of the fence and road-block kit (Forest Update 7):
+tools/map_big.py                         Whole-forest planning data (Unity frame): terrain vertices (decimated), road triangles (dirt/asphalt), water, bones.
+tools/moire_gif.py                       Walking along a chain-link fence at the game's 240 lines: the old netting (1 px wires in an 8 px lattice, mips with
+tools/moire_test.py                      How a chain-link texture looks along a fence at the game's pixel size: a numpy renderer of one fence plane
+tools/plan_u7.py                         Plan of the U7 placements (game frame) over the terrain, trees, bones, water and road:
+tools/reach.py                           
+tools/read_td.py                         Read the heightmap of a Unity TerrainData asset (binary) -> heights_1_1.npy (float32, world metres, [z, x]).
+tools/u7_preview.py                      Forest Update 7 as it would stand in the game: the in-game forest scene (allblend/Forest_game.blend: Update 3's

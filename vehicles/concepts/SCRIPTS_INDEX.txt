@@ -1,0 +1,12 @@
+c1_kung.py                               Concept 1 «Кунг»: cab-over 4x4 truck with an insulated box body (stove, benches, table, lamp).
+c2_vahta.py                              Concept 2 «Вахтовка»: bonneted 4x4 with a one-volume bus body (driver + 7 seats, table nook, stove).
+c3_balloon.py                            Concept 3 «Буханка на баллонах»: 6x6 on low-pressure tyres, one-volume loaf body, boat hull,
+c4_tracked.py                            Concept 4 «Сцепка»: articulated two-unit tracked carrier; front unit = cab for 4, rear unit = warm box for 6
+dims.py                                  Overall dimensions of each concept from the saved .blend (objects of the Vehicle collection, without the
+make_sheets.py                           Concept sheets: one per concept (4 views + facts), an overview of the four, a size comparison.
+parts.py                                 Shared cozy-interior and exterior parts for the vehicle concepts.
+post.py                                  Post for the concept renders: fog from the depth pass, light glow at night, 15-bit colour with
+run.py                                   python3 run.py <concept module> [views] [samples] -> rend/<module>/{view}.png, _depth, _psx
+scene.py                                 Common scene: snowy forest road, spruces, day / night presets, render of the four views.
+tex_gen.py                               PSX textures for the ground-vehicle concepts (same recipe as the plane: shading in the colour,
+vlib.py                                  Blender helpers for the ground-vehicle concepts: meshes, PSX materials (box projection, point filter),

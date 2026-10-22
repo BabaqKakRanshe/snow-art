@@ -1,0 +1,3998 @@
+{
+ "_doc": "Update 3 data for these prefabs (Forest_Layout.json, Forest_Materials.json, the FBX): placements (Unity p, q xyzw; prefabs list or rocks scatter), interactables, lights and halos (Unity prefab-local), the U3 models (bounds in the Blender import frame, triangles, materials), the materials they used, GUIDs",
+ "prefabs": {
+  "Dish_1": [
+   {
+    "p": [
+     -470.0,
+     28.0689,
+     380.0
+    ],
+    "q": [
+     0.0,
+     -0.415158,
+     0.0,
+     0.909749
+    ]
+   }
+  ],
+  "Dish_2": [
+   {
+    "p": [
+     -380.0,
+     33.896,
+     -200.0
+    ],
+    "q": [
+     0.0,
+     -0.830389,
+     0.0,
+     0.557184
+    ]
+   }
+  ],
+  "Dish_3": [
+   {
+    "p": [
+     480.0,
+     19.8698,
+     330.0
+    ],
+    "q": [
+     0.0,
+     0.435906,
+     0.0,
+     0.899992
+    ]
+   }
+  ],
+  "Dish_4": [
+   {
+    "p": [
+     -150.0,
+     21.5294,
+     430.0
+    ],
+    "q": [
+     0.0,
+     -0.166466,
+     0.0,
+     0.986047
+    ]
+   }
+  ],
+  "Dish_5": [
+   {
+    "p": [
+     60.0,
+     23.5031,
+     -380.0
+    ],
+    "q": [
+     0.0,
+     0.997656,
+     0.0,
+     0.06843
+    ]
+   }
+  ],
+  "Radome": [
+   {
+    "p": [
+     110.0,
+     30.3335,
+     -430.0
+    ],
+    "q": [
+     0.0,
+     -0.130526,
+     0.0,
+     0.991445
+    ]
+   }
+  ],
+  "RelayMast": [
+   {
+    "p": [
+     -320.0,
+     48.5258,
+     -330.0
+    ],
+    "q": [
+     0.0,
+     -0.258819,
+     0.0,
+     0.965926
+    ]
+   }
+  ],
+  "LookoutTower": [
+   {
+    "p": [
+     -260.0,
+     35.4272,
+     -80.0
+    ],
+    "q": [
+     0.0,
+     -0.087156,
+     0.0,
+     0.996195
+    ]
+   }
+  ],
+  "MeteoStation": [
+   {
+    "p": [
+     215.0,
+     13.2559,
+     -300.0
+    ],
+    "q": [
+     0.0,
+     0.069756,
+     0.0,
+     0.997564
+    ]
+   }
+  ],
+  "Campsite": [
+   {
+    "p": [
+     -120.0,
+     10.9963,
+     -300.0
+    ],
+    "q": [
+     0.0,
+     -0.34202,
+     0.0,
+     0.939693
+    ]
+   }
+  ],
+  "Chapel": [
+   {
+    "p": [
+     470.0,
+     4.6327,
+     -120.0
+    ],
+    "q": [
+     0.0,
+     -0.608761,
+     0.0,
+     0.793353
+    ]
+   }
+  ],
+  "Cabin": [
+   {
+    "p": [
+     -420.0,
+     14.037,
+     60.0
+    ],
+    "q": [
+     0.0,
+     0.984808,
+     0.0,
+     0.173648
+    ]
+   }
+  ],
+  "PumpHouse": [
+   {
+    "p": [
+     520.0,
+     1.395,
+     -230.0
+    ],
+    "q": [
+     0.0,
+     -0.707107,
+     0.0,
+     0.707107
+    ]
+   }
+  ]
+ },
+ "scatter": {},
+ "interactables": [
+  {
+   "model": "Dish_1",
+   "child": "IX_CabinetDoor_2",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 110.0,
+   "locked": false
+  },
+  {
+   "model": "Dish_2",
+   "child": "IX_CabinetDoor_3",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 110.0,
+   "locked": false
+  },
+  {
+   "model": "Dish_3",
+   "child": "IX_CabinetDoor_4",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 110.0,
+   "locked": false
+  },
+  {
+   "model": "Dish_4",
+   "child": "IX_CabinetDoor_5",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 110.0,
+   "locked": false
+  },
+  {
+   "model": "Dish_5",
+   "child": "IX_CabinetDoor_6",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 110.0,
+   "locked": false
+  },
+  {
+   "model": "PumpHouse",
+   "child": "IX_PumpDoor_7",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 100.0,
+   "locked": false
+  },
+  {
+   "model": "Chapel",
+   "child": "IX_ChapelDoor_8",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 100.0,
+   "locked": false
+  },
+  {
+   "model": "Cabin",
+   "child": "IX_CabinDoor_9",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 100.0,
+   "locked": false
+  }
+ ],
+ "prefabLights": [
+  {
+   "model": "Dish_1",
+   "lights": [
+    {
+     "t": "spot",
+     "p": [
+      -5.0133,
+      5.85,
+      3.9591
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.7,
+      0.4
+     ],
+     "i": 7.0,
+     "r": 22.0,
+     "a": 110.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      12.2579,
+      -5.4499
+     ],
+     "d": [
+      -0.0,
+      -0.61566,
+      0.78801
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 2.5,
+     "r": 10.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Dish_2",
+   "lights": [
+    {
+     "t": "spot",
+     "p": [
+      -5.0133,
+      5.85,
+      3.9591
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.7,
+      0.4
+     ],
+     "i": 7.0,
+     "r": 22.0,
+     "a": 110.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      12.6277,
+      -5.1396
+     ],
+     "d": [
+      -0.0,
+      -0.66913,
+      0.74314
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 2.5,
+     "r": 10.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Dish_3",
+   "lights": [
+    {
+     "t": "spot",
+     "p": [
+      -5.0133,
+      5.85,
+      3.9591
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.7,
+      0.4
+     ],
+     "i": 7.0,
+     "r": 22.0,
+     "a": 110.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      10.259,
+      -3.759
+     ],
+     "d": [
+      -0.0,
+      -0.70711,
+      0.70711
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 2.5,
+     "r": 10.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Dish_4",
+   "lights": [
+    {
+     "t": "spot",
+     "p": [
+      -5.0133,
+      5.85,
+      3.9591
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.7,
+      0.4
+     ],
+     "i": 7.0,
+     "r": 22.0,
+     "a": 110.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      9.9171,
+      -4.0723
+     ],
+     "d": [
+      -0.0,
+      -0.64279,
+      0.76604
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 2.5,
+     "r": 10.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Dish_5",
+   "lights": [
+    {
+     "t": "spot",
+     "p": [
+      -5.0133,
+      5.85,
+      3.9591
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.7,
+      0.4
+     ],
+     "i": 7.0,
+     "r": 22.0,
+     "a": 110.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      12.0651,
+      -5.5952
+     ],
+     "d": [
+      -0.0,
+      -0.58779,
+      0.80902
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 2.5,
+     "r": 10.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "RelayMast",
+   "lights": [
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      42.37,
+      -0.0
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 7.0,
+     "r": 22.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -1.725,
+      21.294,
+      1.725
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 3.0,
+     "r": 12.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Radome",
+   "lights": [
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      26.222,
+      -0.0
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.08,
+      0.02
+     ],
+     "i": 7.0,
+     "r": 18.0,
+     "a": 60.0,
+     "sh": false,
+     "tag": "beacon",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Campsite",
+   "lights": [
+    {
+     "t": "spot",
+     "p": [
+      -0.6582,
+      0.0652,
+      1.7519
+     ],
+     "d": [
+      -0.86083,
+      0.05064,
+      0.50637
+     ],
+     "c": [
+      1.0,
+      0.92,
+      0.78
+     ],
+     "i": 6.0,
+     "r": 18.0,
+     "a": 40.0,
+     "sh": true,
+     "tag": "torch",
+     "room": "Exterior"
+    }
+   ]
+  },
+  {
+   "model": "Chapel",
+   "lights": [
+    {
+     "t": "point",
+     "p": [
+      -0.0,
+      1.45,
+      -2.45
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.62,
+      0.3
+     ],
+     "i": 0.6,
+     "r": 6.0,
+     "a": 0.0,
+     "sh": false,
+     "tag": "candle",
+     "room": "Exterior"
+    }
+   ]
+  }
+ ],
+ "prefabGlows": [
+  {
+   "model": "Dish_1",
+   "glows": [
+    {
+     "p": [
+      -5.0133,
+      5.95,
+      3.9591
+     ],
+     "m": "M_Glow_Lamp",
+     "s": 1.6,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -0.0,
+      12.2579,
+      -5.4499
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.4
+    }
+   ]
+  },
+  {
+   "model": "Dish_2",
+   "glows": [
+    {
+     "p": [
+      -5.0133,
+      5.95,
+      3.9591
+     ],
+     "m": "M_Glow_Lamp",
+     "s": 1.6,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -0.0,
+      12.6277,
+      -5.1396
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.4
+    }
+   ]
+  },
+  {
+   "model": "Dish_3",
+   "glows": [
+    {
+     "p": [
+      -5.0133,
+      5.95,
+      3.9591
+     ],
+     "m": "M_Glow_Lamp",
+     "s": 1.6,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -0.0,
+      10.259,
+      -3.759
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.4
+    }
+   ]
+  },
+  {
+   "model": "Dish_4",
+   "glows": [
+    {
+     "p": [
+      -5.0133,
+      5.95,
+      3.9591
+     ],
+     "m": "M_Glow_Lamp",
+     "s": 1.6,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -0.0,
+      9.9171,
+      -4.0723
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.4
+    }
+   ]
+  },
+  {
+   "model": "Dish_5",
+   "glows": [
+    {
+     "p": [
+      -5.0133,
+      5.95,
+      3.9591
+     ],
+     "m": "M_Glow_Lamp",
+     "s": 1.6,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -0.0,
+      12.0651,
+      -5.5952
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.4
+    }
+   ]
+  },
+  {
+   "model": "RelayMast",
+   "glows": [
+    {
+     "p": [
+      -0.0,
+      42.37,
+      -0.0
+     ],
+     "m": "M_Glow_Red",
+     "s": 2.25
+    },
+    {
+     "p": [
+      -1.725,
+      21.294,
+      1.725
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.65
+    },
+    {
+     "p": [
+      1.725,
+      21.294,
+      -1.725
+     ],
+     "m": "M_Glow_Red",
+     "s": 1.65
+    }
+   ]
+  },
+  {
+   "model": "Radome",
+   "glows": [
+    {
+     "p": [
+      -0.0,
+      26.222,
+      -0.0
+     ],
+     "m": "M_Glow_Red",
+     "s": 2.55
+    }
+   ]
+  },
+  {
+   "model": "Campsite",
+   "glows": [
+    {
+     "p": [
+      -0.6238,
+      0.0632,
+      1.7317
+     ],
+     "m": "M_Glow_Headlight",
+     "s": 0.5
+    }
+   ]
+  },
+  {
+   "model": "Chapel",
+   "glows": [
+    {
+     "p": [
+      0.55,
+      1.3,
+      -2.7
+     ],
+     "m": "M_Glow_Candle",
+     "s": 0.35,
+     "tag": "candle"
+    },
+    {
+     "p": [
+      0.35,
+      1.3,
+      -2.7
+     ],
+     "m": "M_Glow_Candle",
+     "s": 0.35,
+     "tag": "candle"
+    },
+    {
+     "p": [
+      -0.35,
+      1.3,
+      -2.7
+     ],
+     "m": "M_Glow_Candle",
+     "s": 0.35,
+     "tag": "candle"
+    },
+    {
+     "p": [
+      -0.55,
+      1.3,
+      -2.7
+     ],
+     "m": "M_Glow_Candle",
+     "s": 0.35,
+     "tag": "candle"
+    }
+   ]
+  }
+ ],
+ "u3_models": {
+  "Dish_1": {
+   "bb": [
+    [
+     -8.019,
+     -4.136,
+     -0.5
+    ],
+    [
+     8.019,
+     6.738,
+     15.72
+    ]
+   ],
+   "tris": 7698,
+   "mats": [
+    "M_Chrome",
+    "M_Concrete",
+    "M_DishWhite",
+    "M_Galvanized",
+    "M_LEDOff",
+    "M_Lamp_SodiumOff",
+    "M_Light_Red",
+    "M_MetalGrey",
+    "M_ObsSigns",
+    "M_PlasticBlack",
+    "M_RackBlack",
+    "M_RackGrey",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "Dish_1",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -8.019,
+       -4.136,
+       -0.5
+      ],
+      [
+       8.019,
+       6.738,
+       15.72
+      ]
+     ],
+     "mats": {
+      "M_Concrete": 308,
+      "M_DishWhite": 1560,
+      "M_Galvanized": 5004,
+      "M_RackGrey": 360,
+      "M_Steel": 28,
+      "M_Light_Red": 80,
+      "M_MetalGrey": 136,
+      "M_LEDOff": 48,
+      "M_RackBlack": 44,
+      "M_PlasticBlack": 44,
+      "M_ObsSigns": 2,
+      "M_Lamp_SodiumOff": 12
+     }
+    },
+    {
+     "name": "IX_CabinetDoor_2",
+     "parent": "Dish_1",
+     "loc": [
+      3.65,
+      -2.885,
+      0.17
+     ],
+     "bounds": [
+      [
+       3.65,
+       -2.9,
+       0.17
+      ],
+      [
+       4.75,
+       -2.84,
+       1.87
+      ]
+     ],
+     "mats": {
+      "M_RackGrey": 44,
+      "M_Chrome": 28
+     }
+    }
+   ]
+  },
+  "Dish_2": {
+   "bb": [
+    [
+     -8.019,
+     -4.136,
+     -0.5
+    ],
+    [
+     8.019,
+     7.062,
+     15.484
+    ]
+   ],
+   "tris": 7698,
+   "mats": [
+    "M_Chrome",
+    "M_Concrete",
+    "M_DishWhite",
+    "M_Galvanized",
+    "M_LEDOff",
+    "M_Lamp_SodiumOff",
+    "M_Light_Red",
+    "M_MetalGrey",
+    "M_ObsSigns",
+    "M_PlasticBlack",
+    "M_RackBlack",
+    "M_RackGrey",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "Dish_2",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -8.019,
+       -4.136,
+       -0.5
+      ],
+      [
+       8.019,
+       7.062,
+       15.484
+      ]
+     ],
+     "mats": {
+      "M_Concrete": 308,
+      "M_DishWhite": 1560,
+      "M_Galvanized": 5004,
+      "M_RackGrey": 360,
+      "M_Steel": 28,
+      "M_Light_Red": 80,
+      "M_MetalGrey": 136,
+      "M_LEDOff": 48,
+      "M_RackBlack": 44,
+      "M_PlasticBlack": 44,
+      "M_ObsSigns": 2,
+      "M_Lamp_SodiumOff": 12
+     }
+    },
+    {
+     "name": "IX_CabinetDoor_3",
+     "parent": "Dish_2",
+     "loc": [
+      3.65,
+      -2.885,
+      0.17
+     ],
+     "bounds": [
+      [
+       3.65,
+       -2.9,
+       0.17
+      ],
+      [
+       4.75,
+       -2.84,
+       1.87
+      ]
+     ],
+     "mats": {
+      "M_RackGrey": 44,
+      "M_Chrome": 28
+     }
+    }
+   ]
+  },
+  "Dish_3": {
+   "bb": [
+    [
+     -6.019,
+     -4.136,
+     -0.5
+    ],
+    [
+     6.296,
+     5.427,
+     11.927
+    ]
+   ],
+   "tris": 7586,
+   "mats": [
+    "M_Chrome",
+    "M_Concrete",
+    "M_DishWhite",
+    "M_Galvanized",
+    "M_LEDOff",
+    "M_Lamp_SodiumOff",
+    "M_Light_Red",
+    "M_MetalGrey",
+    "M_ObsSigns",
+    "M_PlasticBlack",
+    "M_RackBlack",
+    "M_RackGrey",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "Dish_3",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -6.019,
+       -4.136,
+       -0.5
+      ],
+      [
+       6.296,
+       5.427,
+       11.927
+      ]
+     ],
+     "mats": {
+      "M_Concrete": 308,
+      "M_DishWhite": 1560,
+      "M_Galvanized": 4892,
+      "M_RackGrey": 360,
+      "M_Steel": 28,
+      "M_Light_Red": 80,
+      "M_MetalGrey": 136,
+      "M_LEDOff": 48,
+      "M_RackBlack": 44,
+      "M_PlasticBlack": 44,
+      "M_ObsSigns": 2,
+      "M_Lamp_SodiumOff": 12
+     }
+    },
+    {
+     "name": "IX_CabinetDoor_4",
+     "parent": "Dish_3",
+     "loc": [
+      3.65,
+      -2.885,
+      0.17
+     ],
+     "bounds": [
+      [
+       3.65,
+       -2.9,
+       0.17
+      ],
+      [
+       4.75,
+       -2.84,
+       1.87
+      ]
+     ],
+     "mats": {
+      "M_RackGrey": 44,
+      "M_Chrome": 28
+     }
+    }
+   ]
+  },
+  "Dish_4": {
+   "bb": [
+    [
+     -6.019,
+     -4.136,
+     -0.5
+    ],
+    [
+     6.296,
+     5.14,
+     12.173
+    ]
+   ],
+   "tris": 7586,
+   "mats": [
+    "M_Chrome",
+    "M_Concrete",
+    "M_DishWhite",
+    "M_Galvanized",
+    "M_LEDOff",
+    "M_Lamp_SodiumOff",
+    "M_Light_Red",
+    "M_MetalGrey",
+    "M_ObsSigns",
+    "M_PlasticBlack",
+    "M_RackBlack",
+    "M_RackGrey",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "Dish_4",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -6.019,
+       -4.136,
+       -0.5
+      ],
+      [
+       6.296,
+       5.14,
+       12.173
+      ]
+     ],
+     "mats": {
+      "M_Concrete": 308,
+      "M_DishWhite": 1560,
+      "M_Galvanized": 4892,
+      "M_RackGrey": 360,
+      "M_Steel": 28,
+      "M_Light_Red": 80,
+      "M_MetalGrey": 136,
+      "M_LEDOff": 48,
+      "M_RackBlack": 44,
+      "M_PlasticBlack": 44,
+      "M_ObsSigns": 2,
+      "M_Lamp_SodiumOff": 12
+     }
+    },
+    {
+     "name": "IX_CabinetDoor_5",
+     "parent": "Dish_4",
+     "loc": [
+      3.65,
+      -2.885,
+      0.17
+     ],
+     "bounds": [
+      [
+       3.65,
+       -2.9,
+       0.17
+      ],
+      [
+       4.75,
+       -2.84,
+       1.87
+      ]
+     ],
+     "mats": {
+      "M_RackGrey": 44,
+      "M_Chrome": 28
+     }
+    }
+   ]
+  },
+  "Dish_5": {
+   "bb": [
+    [
+     -8.019,
+     -4.136,
+     -0.5
+    ],
+    [
+     8.019,
+     6.563,
+     15.824
+    ]
+   ],
+   "tris": 7698,
+   "mats": [
+    "M_Chrome",
+    "M_Concrete",
+    "M_DishWhite",
+    "M_Galvanized",
+    "M_LEDOff",
+    "M_Lamp_SodiumOff",
+    "M_Light_Red",
+    "M_MetalGrey",
+    "M_ObsSigns",
+    "M_PlasticBlack",
+    "M_RackBlack",
+    "M_RackGrey",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "Dish_5",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -8.019,
+       -4.136,
+       -0.5
+      ],
+      [
+       8.019,
+       6.563,
+       15.824
+      ]
+     ],
+     "mats": {
+      "M_Concrete": 308,
+      "M_DishWhite": 1560,
+      "M_Galvanized": 5004,
+      "M_RackGrey": 360,
+      "M_Steel": 28,
+      "M_Light_Red": 80,
+      "M_MetalGrey": 136,
+      "M_LEDOff": 48,
+      "M_RackBlack": 44,
+      "M_PlasticBlack": 44,
+      "M_ObsSigns": 2,
+      "M_Lamp_SodiumOff": 12
+     }
+    },
+    {
+     "name": "IX_CabinetDoor_6",
+     "parent": "Dish_5",
+     "loc": [
+      3.65,
+      -2.885,
+      0.17
+     ],
+     "bounds": [
+      [
+       3.65,
+       -2.9,
+       0.17
+      ],
+      [
+       4.75,
+       -2.84,
+       1.87
+      ]
+     ],
+     "mats": {
+      "M_RackGrey": 44,
+      "M_Chrome": 28
+     }
+    }
+   ]
+  },
+  "Radome": {
+   "bb": [
+    [
+     -5.2,
+     -5.2,
+     -1.2
+    ],
+    [
+     10.35,
+     5.2,
+     26.392
+    ]
+   ],
+   "tris": 3678,
+   "mats": [
+    "M_Concrete",
+    "M_Corrugated",
+    "M_Light_Red",
+    "M_PaintOlive",
+    "M_PaintWhite",
+    "M_Radome",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "Radome",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -5.2,
+       -5.2,
+       -1.2
+      ],
+      [
+       10.35,
+       5.2,
+       26.392
+      ]
+     ],
+     "mats": {
+      "M_Steel": 2608,
+      "M_Concrete": 556,
+      "M_Radome": 296,
+      "M_Light_Red": 80,
+      "M_Corrugated": 44,
+      "M_PaintOlive": 2,
+      "M_PaintWhite": 92
+     }
+    }
+   ]
+  },
+  "RelayMast": {
+   "bb": [
+    [
+     -6.361,
+     -6.361,
+     -1.2
+    ],
+    [
+     10.361,
+     6.361,
+     42.52
+    ]
+   ],
+   "tris": 9352,
+   "mats": [
+    "M_Cable",
+    "M_ChainLink",
+    "M_Concrete",
+    "M_Corrugated",
+    "M_Light_Red",
+    "M_MetalGrey",
+    "M_ObsSigns",
+    "M_PaintGreyMetal",
+    "M_PaintOlive",
+    "M_PaintWhite",
+    "M_Radome",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "RelayMast",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -6.361,
+       -6.361,
+       -1.2
+      ],
+      [
+       10.361,
+       6.361,
+       42.52
+      ]
+     ],
+     "mats": {
+      "M_Steel": 7348,
+      "M_Concrete": 368,
+      "M_Light_Red": 240,
+      "M_PaintWhite": 284,
+      "M_Radome": 56,
+      "M_Corrugated": 44,
+      "M_PaintOlive": 2,
+      "M_ChainLink": 72,
+      "M_Cable": 864,
+      "M_PaintGreyMetal": 28,
+      "M_ObsSigns": 2,
+      "M_MetalGrey": 44
+     }
+    }
+   ]
+  },
+  "MeteoStation": {
+   "bb": [
+    [
+     -6.04,
+     -6.04,
+     -0.0
+    ],
+    [
+     6.04,
+     6.04,
+     8.2
+    ]
+   ],
+   "tris": 8906,
+   "mats": [
+    "M_Chrome",
+    "M_PaintGreyMetal",
+    "M_PaintRedMetal",
+    "M_PaintWhite",
+    "M_Steel"
+   ],
+   "objects": [
+    {
+     "name": "MeteoStation",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -6.04,
+       -6.04,
+       -0.0
+      ],
+      [
+       6.04,
+       6.04,
+       8.2
+      ]
+     ],
+     "mats": {
+      "M_PaintWhite": 8584,
+      "M_PaintGreyMetal": 72,
+      "M_Steel": 172,
+      "M_PaintRedMetal": 2,
+      "M_Chrome": 76
+     }
+    }
+   ]
+  },
+  "LookoutTower": {
+   "bb": [
+    [
+     -3.65,
+     -3.65,
+     -1.2
+    ],
+    [
+     3.65,
+     3.65,
+     27.0
+    ]
+   ],
+   "tris": 14832,
+   "mats": [
+    "M_BoardsDark",
+    "M_Concrete",
+    "M_Corrugated",
+    "M_GlassDirty",
+    "M_Grating",
+    "M_Steel",
+    "M_WoodPlanks"
+   ],
+   "objects": [
+    {
+     "name": "LookoutTower",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -3.65,
+       -3.65,
+       -1.2
+      ],
+      [
+       3.65,
+       3.65,
+       27.0
+      ]
+     ],
+     "mats": {
+      "M_Steel": 3900,
+      "M_Concrete": 368,
+      "M_Grating": 9476,
+      "M_WoodPlanks": 44,
+      "M_BoardsDark": 512,
+      "M_GlassDirty": 528,
+      "M_Corrugated": 4
+     }
+    }
+   ]
+  },
+  "PumpHouse": {
+   "bb": [
+    [
+     -2.15,
+     -1.652,
+     -0.0
+    ],
+    [
+     2.15,
+     4.5,
+     2.76
+    ]
+   ],
+   "tris": 614,
+   "mats": [
+    "M_Brick",
+    "M_Concrete",
+    "M_ConcreteFloor",
+    "M_PaintBlueMetal",
+    "M_PaintGreyMetal",
+    "M_RoofTar",
+    "M_Rust",
+    "M_WallPaint2"
+   ],
+   "objects": [
+    {
+     "name": "IX_PumpDoor_7",
+     "parent": "PumpHouse",
+     "loc": [
+      -0.59,
+      -1.5,
+      0.21
+     ],
+     "bounds": [
+      [
+       -0.59,
+       -1.52,
+       0.21
+      ],
+      [
+       0.29,
+       -1.455,
+       2.19
+      ]
+     ],
+     "mats": {
+      "M_PaintGreyMetal": 44,
+      "M_Rust": 44
+     }
+    },
+    {
+     "name": "PumpHouse",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -2.15,
+       -1.652,
+       -0.0
+      ],
+      [
+       2.15,
+       4.5,
+       2.76
+      ]
+     ],
+     "mats": {
+      "M_Concrete": 44,
+      "M_Brick": 18,
+      "M_WallPaint2": 12,
+      "M_RoofTar": 44,
+      "M_ConcreteFloor": 44,
+      "M_PaintBlueMetal": 92,
+      "M_PaintGreyMetal": 212,
+      "M_Rust": 60
+     }
+    }
+   ]
+  },
+  "Chapel": {
+   "bb": [
+    [
+     -6.553,
+     -4.77,
+     -0.6
+    ],
+    [
+     4.915,
+     4.25,
+     10.0
+    ]
+   ],
+   "tris": 4424,
+   "mats": [
+    "M_BoardsDark",
+    "M_Candle",
+    "M_Concrete",
+    "M_ConcreteFloor",
+    "M_Enamel",
+    "M_FabricBeige",
+    "M_ForestFloor",
+    "M_GlassDirty",
+    "M_LaminateDark",
+    "M_ObsSigns",
+    "M_PlasterWhite",
+    "M_PlasticBlack",
+    "M_Rock",
+    "M_Shingles",
+    "M_StoveIron",
+    "M_WoodPole"
+   ],
+   "objects": [
+    {
+     "name": "Chapel",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -6.553,
+       -4.77,
+       -0.6
+      ],
+      [
+       4.915,
+       4.25,
+       10.0
+      ]
+     ],
+     "mats": {
+      "M_PlasterWhite": 124,
+      "M_Concrete": 2,
+      "M_ConcreteFloor": 2,
+      "M_BoardsDark": 2366,
+      "M_Rock": 108,
+      "M_Shingles": 8,
+      "M_GlassDirty": 16,
+      "M_StoveIron": 664,
+      "M_FabricBeige": 124,
+      "M_LaminateDark": 44,
+      "M_PlasticBlack": 12,
+      "M_Enamel": 176,
+      "M_Candle": 48,
+      "M_ForestFloor": 552,
+      "M_ObsSigns": 2,
+      "M_WoodPole": 88
+     }
+    },
+    {
+     "name": "IX_ChapelDoor_8",
+     "parent": "Chapel",
+     "loc": [
+      -0.56,
+      -3.705,
+      0.01
+     ],
+     "bounds": [
+      [
+       -0.56,
+       -3.74,
+       0.01
+      ],
+      [
+       0.59,
+       -3.645,
+       2.29
+      ]
+     ],
+     "mats": {
+      "M_BoardsDark": 44,
+      "M_StoveIron": 44
+     }
+    }
+   ]
+  },
+  "Cabin": {
+   "bb": [
+    [
+     -4.381,
+     -3.7,
+     -0.029
+    ],
+    [
+     2.95,
+     3.176,
+     5.538
+    ]
+   ],
+   "tris": 4642,
+   "mats": [
+    "M_Bark",
+    "M_Boards",
+    "M_BoardsDark",
+    "M_DeadWood",
+    "M_FloorBoards",
+    "M_GlassDirty",
+    "M_RoofTar",
+    "M_Rust",
+    "M_StoveIron",
+    "M_WoodPlanks"
+   ],
+   "objects": [
+    {
+     "name": "Cabin",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -4.381,
+       -3.7,
+       -0.029
+      ],
+      [
+       2.95,
+       3.176,
+       5.538
+      ]
+     ],
+     "mats": {
+      "M_Bark": 3924,
+      "M_RoofTar": 4,
+      "M_BoardsDark": 18,
+      "M_FloorBoards": 44,
+      "M_GlassDirty": 44,
+      "M_StoveIron": 76,
+      "M_Rust": 60,
+      "M_Boards": 184,
+      "M_WoodPlanks": 92,
+      "M_DeadWood": 108
+     }
+    },
+    {
+     "name": "IX_CabinDoor_9",
+     "parent": "Cabin",
+     "loc": [
+      -1.47,
+      -2.0,
+      0.2
+     ],
+     "bounds": [
+      [
+       -1.47,
+       -2.025,
+       0.2
+      ],
+      [
+       -0.62,
+       -1.95,
+       2.05
+      ]
+     ],
+     "mats": {
+      "M_BoardsDark": 44,
+      "M_Rust": 44
+     }
+    }
+   ]
+  },
+  "Campsite": {
+   "bb": [
+    [
+     -1.2,
+     -1.744,
+     -0.077
+    ],
+    [
+     3.55,
+     1.98,
+     0.65
+    ]
+   ],
+   "tris": 1816,
+   "mats": [
+    "M_DeadWood",
+    "M_FabricBlue",
+    "M_FabricGrey",
+    "M_Galvanized",
+    "M_GlassDark",
+    "M_Headlight",
+    "M_JacketOrange",
+    "M_PlasticBlack",
+    "M_Rock",
+    "M_Steel",
+    "M_StoveIron"
+   ],
+   "objects": [
+    {
+     "name": "Campsite",
+     "parent": null,
+     "loc": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bounds": [
+      [
+       -1.2,
+       -1.744,
+       -0.077
+      ],
+      [
+       3.55,
+       1.98,
+       0.65
+      ]
+     ],
+     "mats": {
+      "M_JacketOrange": 140,
+      "M_Galvanized": 84,
+      "M_Rock": 828,
+      "M_StoveIron": 40,
+      "M_DeadWood": 112,
+      "M_Steel": 76,
+      "M_FabricBlue": 248,
+      "M_FabricGrey": 124,
+      "M_GlassDark": 44,
+      "M_PlasticBlack": 60,
+      "M_Headlight": 60
+     }
+    }
+   ]
+  }
+ },
+ "materials": {
+  "M_Bark": {
+   "name": "M_Bark",
+   "type": "lit",
+   "albedo": "T_Bark_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Boards": {
+   "name": "M_Boards",
+   "type": "lit",
+   "albedo": "T_WoodSiding_A_px.png",
+   "normal": "",
+   "mask": "T_WoodSiding_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.5,
+    0.44,
+    0.38
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_BoardsDark": {
+   "name": "M_BoardsDark",
+   "type": "lit",
+   "albedo": "T_WoodSiding_A_px.png",
+   "normal": "",
+   "mask": "T_WoodSiding_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.34,
+    0.3,
+    0.26
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Brick": {
+   "name": "M_Brick",
+   "type": "lit",
+   "albedo": "T_Brick_A_px.png",
+   "normal": "",
+   "mask": "T_Brick_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Cable": {
+   "name": "M_Cable",
+   "type": "lit",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.02,
+    0.02,
+    0.018
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Candle": {
+   "name": "M_Candle",
+   "type": "emissive",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.5,
+    0.35,
+    0.2
+   ],
+   "emission": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "emissionIntensity": 6.0,
+   "smoothness": 0.5,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_ChainLink": {
+   "name": "M_ChainLink",
+   "type": "cutout",
+   "albedo": "T_ChainLink_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 0.0,
+   "cutoff": 0.45,
+   "normalScale": 1.0,
+   "doubleSided": true,
+   "instancing": true,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Chrome": {
+   "name": "M_Chrome",
+   "type": "lit",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.75,
+    0.75,
+    0.75
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 1.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Concrete": {
+   "name": "M_Concrete",
+   "type": "lit",
+   "albedo": "T_Concrete_A_px.png",
+   "normal": "",
+   "mask": "T_Concrete_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.25,
+    0.25
+   ],
+   "color": [
+    0.6504,
+    0.631,
+    0.5942
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_ConcreteFloor": {
+   "name": "M_ConcreteFloor",
+   "type": "lit",
+   "albedo": "T_Concrete_A_px.png",
+   "normal": "",
+   "mask": "T_Concrete_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.5203,
+    0.5048,
+    0.4634
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Corrugated": {
+   "name": "M_Corrugated",
+   "type": "lit",
+   "albedo": "T_Corrugated_A_px.png",
+   "normal": "",
+   "mask": "T_Corrugated_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.116,
+    0.1081,
+    0.0846
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_DeadWood": {
+   "name": "M_DeadWood",
+   "type": "lit",
+   "albedo": "T_Bark_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    0.5
+   ],
+   "color": [
+    0.95,
+    0.93,
+    0.9
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_DishWhite": {
+   "name": "M_DishWhite",
+   "type": "lit",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.8,
+    0.8,
+    0.78
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Enamel": {
+   "name": "M_Enamel",
+   "type": "lit",
+   "albedo": "T_BVPaintMetal_A_px.png",
+   "normal": "",
+   "mask": "T_BVPaintMetal_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.9991,
+    1.0,
+    0.9516
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_FabricBeige": {
+   "name": "M_FabricBeige",
+   "type": "lit",
+   "albedo": "T_Fabric_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1.0,
+    1.0
+   ],
+   "color": [
+    0.5429,
+    0.4809,
+    0.3723
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_FabricBlue": {
+   "name": "M_FabricBlue",
+   "type": "lit",
+   "albedo": "T_Fabric_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1.0,
+    1.0
+   ],
+   "color": [
+    0.1396,
+    0.1861,
+    0.3102
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_FabricGrey": {
+   "name": "M_FabricGrey",
+   "type": "lit",
+   "albedo": "T_Fabric_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1.0,
+    1.0
+   ],
+   "color": [
+    0.1319,
+    0.1396,
+    0.1551
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_FloorBoards": {
+   "name": "M_FloorBoards",
+   "type": "lit",
+   "albedo": "T_FloorBoards_A_px.png",
+   "normal": "",
+   "mask": "T_FloorBoards_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.7669,
+    0.7669,
+    0.7669
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_ForestFloor": {
+   "name": "M_ForestFloor",
+   "type": "lit",
+   "albedo": "T_ForestFloor_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Galvanized": {
+   "name": "M_Galvanized",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.62,
+    0.63,
+    0.63
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.45,
+   "metallic": 0.6,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_GlassDark": {
+   "name": "M_GlassDark",
+   "type": "lit",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.02,
+    0.022,
+    0.025
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.6666666666666666,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_GlassDirty": {
+   "name": "M_GlassDirty",
+   "type": "transparent",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.09,
+    0.09,
+    0.08
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.7,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   },
+   "alpha": 0.6,
+   "alphaFromTexture": false
+  },
+  "M_Grating": {
+   "name": "M_Grating",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.22,
+    0.22,
+    0.21
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.35,
+   "metallic": 0.4,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Headlight": {
+   "name": "M_Headlight",
+   "type": "emissive",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.5,
+    0.45,
+    0.35
+   ],
+   "emission": [
+    1.0,
+    0.86,
+    0.62
+   ],
+   "emissionIntensity": 6.0,
+   "smoothness": 0.5,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_JacketOrange": {
+   "name": "M_JacketOrange",
+   "type": "lit",
+   "albedo": "T_Fabric_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1.0,
+    1.0
+   ],
+   "color": [
+    0.4266,
+    0.1241,
+    0.0233
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_LEDOff": {
+   "name": "M_LEDOff",
+   "type": "lit",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.05,
+    0.05,
+    0.04
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_LaminateDark": {
+   "name": "M_LaminateDark",
+   "type": "lit",
+   "albedo": "T_BVLaminate_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.155,
+    0.1409,
+    0.1268
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.333,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Lamp_SodiumOff": {
+   "name": "M_Lamp_SodiumOff",
+   "type": "lit",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.22,
+    0.2,
+    0.17
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Light_Red": {
+   "name": "M_Light_Red",
+   "type": "emissive",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.2,
+    0.01,
+    0.005
+   ],
+   "emission": [
+    1.0,
+    0.03,
+    0.006
+   ],
+   "emissionIntensity": 3.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_MetalGrey": {
+   "name": "M_MetalGrey",
+   "type": "lit",
+   "albedo": "T_BVPaintMetal_A_px.png",
+   "normal": "",
+   "mask": "T_BVPaintMetal_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.409,
+    0.4231,
+    0.4369
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_ObsSigns": {
+   "name": "M_ObsSigns",
+   "type": "lit",
+   "albedo": "T_ObsSigns_A_px.png",
+   "normal": "",
+   "mask": "T_ObsSigns_M_px.png",
+   "emissionMap": "T_ObsSigns_A_px.png",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "emissionIntensity": 0.06,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintBlueMetal": {
+   "name": "M_PaintBlueMetal",
+   "type": "lit",
+   "albedo": "T_PaintWhite_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.12,
+    0.2,
+    0.36
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintGreyMetal": {
+   "name": "M_PaintGreyMetal",
+   "type": "lit",
+   "albedo": "T_PaintWhite_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.42,
+    0.43,
+    0.43
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintOlive": {
+   "name": "M_PaintOlive",
+   "type": "lit",
+   "albedo": "T_PaintOlive_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintRedMetal": {
+   "name": "M_PaintRedMetal",
+   "type": "lit",
+   "albedo": "T_PaintRed_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintWhite": {
+   "name": "M_PaintWhite",
+   "type": "lit",
+   "albedo": "T_PaintWhite_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PlasterWhite": {
+   "name": "M_PlasterWhite",
+   "type": "lit",
+   "albedo": "T_Plaster_A_px.png",
+   "normal": "",
+   "mask": "T_Plaster_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.95,
+    0.93,
+    0.88
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PlasticBlack": {
+   "name": "M_PlasticBlack",
+   "type": "lit",
+   "albedo": "T_BVLaminate_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.0423,
+    0.0423,
+    0.0423
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.333,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_RackBlack": {
+   "name": "M_RackBlack",
+   "type": "lit",
+   "albedo": "T_BVPaintMetal_A_px.png",
+   "normal": "",
+   "mask": "T_BVPaintMetal_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.0273,
+    0.0273,
+    0.03
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_RackGrey": {
+   "name": "M_RackGrey",
+   "type": "lit",
+   "albedo": "T_BVPaintMetal_A_px.png",
+   "normal": "",
+   "mask": "T_BVPaintMetal_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.1773,
+    0.1842,
+    0.1911
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Radome": {
+   "name": "M_Radome",
+   "type": "lit",
+   "albedo": "T_Radome_A_px.png",
+   "normal": "",
+   "mask": "T_Radome_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Rock": {
+   "name": "M_Rock",
+   "type": "lit",
+   "albedo": "T_Rock_A_px.png",
+   "normal": "",
+   "mask": "T_Rock_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_RoofTar": {
+   "name": "M_RoofTar",
+   "type": "lit",
+   "albedo": "T_RoofFelt_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.3094,
+    0.3087,
+    0.2941
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Rust": {
+   "name": "M_Rust",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.3,
+    0.14,
+    0.07
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.25,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Shingles": {
+   "name": "M_Shingles",
+   "type": "lit",
+   "albedo": "T_Shingles_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1.0,
+    1.0
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Steel": {
+   "name": "M_Steel",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_StoveIron": {
+   "name": "M_StoveIron",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_WallPaint2": {
+   "name": "M_WallPaint2",
+   "type": "lit",
+   "albedo": "T_BVWall_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    0.25,
+    0.25
+   ],
+   "color": [
+    0.8364,
+    0.8493,
+    0.8124
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_WoodPlanks": {
+   "name": "M_WoodPlanks",
+   "type": "lit",
+   "albedo": "T_WoodSiding_A_px.png",
+   "normal": "",
+   "mask": "T_WoodSiding_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.3,
+    0.26,
+    0.21
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_WoodPole": {
+   "name": "M_WoodPole",
+   "type": "lit",
+   "albedo": "T_Bark_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    0.5
+   ],
+   "color": [
+    0.55,
+    0.45,
+    0.36
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  }
+ },
+ "guids": {
+  "Dish_1": "0fdb24c67ce63e13aff2aa1eebb02c78",
+  "Dish_2": "cfdfca7753b8876245ffdc402383055d",
+  "Dish_3": "ab4bbc7e0c1d7edb0f53516ab8082c3c",
+  "Dish_4": "0fe941df9776945d3251dc8bef2c20ad",
+  "Dish_5": "b5a9a6d38ee4ce561e63b1993cec2ede",
+  "Radome": "32de9e0d3da9c834e14b4fed35fde199",
+  "RelayMast": "b830a5cf5c650cbbf899862cb9b180ba",
+  "MeteoStation": "d652e33953a5dd378bde45d1d2c143d8",
+  "LookoutTower": "3325462c71e89c5d0cab1b379b840193",
+  "PumpHouse": "2230163526ac14fc14b6f5d68359efd3",
+  "Chapel": "53205557b878f9beaa624f7410556782",
+  "Cabin": "5dcd61810e4489e892a3a4af43cfad55",
+  "Campsite": "6d36112e75cca85c462c3d7131dfe514"
+ },
+ "noColliderPrefixes": [
+  "Forest_Wires",
+  "Forest_Water",
+  "Forest_Mist",
+  "Mist_",
+  "Weeds_",
+  "Fern_",
+  "OldFence",
+  "Branches_",
+  "Pebbles_",
+  "Item_"
+ ],
+ "power": {
+  "lightPrefix": "Light_power",
+  "glowPrefix": "Glow_power",
+  "switches": [
+   "IX_GenStart",
+   "IX_MainSwitch"
+  ],
+  "materialsOff": [
+   "M_Lamp_BulbOff",
+   "M_Lamp_FluorOff",
+   "M_Lamp_SodiumOff",
+   "M_Lamp_WarmOff",
+   "M_ScreenOff",
+   "M_LEDOff"
+  ],
+  "materialsOn": [
+   "M_Lamp_Bulb",
+   "M_Lamp_Fluor",
+   "M_Light_Sodium",
+   "M_Light_WarmWhite",
+   "M_ScreenOn",
+   "M_LEDOn"
+  ],
+  "startPowered": false
+ },
+ "flickers": [
+  {
+   "material": "M_Candle",
+   "min": 0.55,
+   "max": 1.0,
+   "speed": 4.0,
+   "lightPrefix": "Light_candle"
+  },
+  {
+   "material": "M_Glow_Candle",
+   "min": 0.55,
+   "max": 1.0,
+   "speed": 4.0,
+   "lightPrefix": "Light_candle"
+  }
+ ]
+}

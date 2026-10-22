@@ -1,0 +1,8 @@
+r/ext_front|v11|r/v11_ext_front.png|{"beacon_top":-60,"beacon_bottom":-100}
+r/ext_rear|v11|r/v11_ext_rear.png|{"beacon_top":140,"beacon_bottom":60}
+r/ext_front|v11|r/v11_ext_front_strobe.png|{"beacon_top":-60,"beacon_bottom":-100,"levels":{"strobe":1}}
+r/ext_far|v11|r/v11_ext_far.png|{"beacon_top":30,"beacon_bottom":-150}
+r/ext_front|v11|r/v11_ext_front_atm0.png|{"beacon_top":-60,"beacon_bottom":-100,"atmosphere":0.0}
+r/ext_front|v11|r/v11_ext_front_atm1.png|{"beacon_top":-60,"beacon_bottom":-100,"atmosphere":1.0}
+r/int_cockpit|v11|r/v11_int_cockpit.png|{}
+r/int_bay|v11|r/v11_int_bay.png|{}

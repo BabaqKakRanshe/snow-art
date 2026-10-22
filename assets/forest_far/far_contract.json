@@ -1,0 +1,1146 @@
+{
+ "parts": {
+  "Dish_1": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "satellite dish 16 m at 38 deg: plinth, pedestal, head, yoke, reflector, feed, beacon, cabinet, conduit, sign, yard light",
+   "root": "Dish_1",
+   "object": "Dish_1",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Dish16",
+    "M_Light_Red",
+    "M_LEDOff",
+    "M_Far_Panel",
+    "M_Lamp_SodiumOff"
+   ]
+  },
+  "IX_CabinetDoor_2": {
+   "kind": "hinge",
+   "pivot": [
+    3.65,
+    -2.885,
+    0.17
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dish_1",
+   "states": [],
+   "note": "the cabinet door: Update 3's hinge (vertical at x 3.65), opens out (+y, towards the pedestal) up to 110 deg",
+   "root": "Dish_1",
+   "object": "IX_CabinetDoor_2",
+   "box": {
+    "center": [
+     0.538,
+     0.017,
+     0.85
+    ],
+    "size": [
+     1.124,
+     0.06,
+     1.7
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    -3.65,
+    0.17,
+    2.885
+   ],
+   "materials": [
+    "M_Far_Dish16"
+   ]
+  },
+  "Dish_2": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "satellite dish 16 m at 42 deg: plinth, pedestal, head, yoke, reflector, feed, beacon, cabinet, conduit, sign, yard light",
+   "root": "Dish_2",
+   "object": "Dish_2",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Dish16",
+    "M_Light_Red",
+    "M_LEDOff",
+    "M_Far_Panel",
+    "M_Lamp_SodiumOff"
+   ]
+  },
+  "IX_CabinetDoor_3": {
+   "kind": "hinge",
+   "pivot": [
+    3.65,
+    -2.885,
+    0.17
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dish_2",
+   "states": [],
+   "note": "the cabinet door: Update 3's hinge (vertical at x 3.65), opens out (+y, towards the pedestal) up to 110 deg",
+   "root": "Dish_2",
+   "object": "IX_CabinetDoor_3",
+   "box": {
+    "center": [
+     0.538,
+     0.017,
+     0.85
+    ],
+    "size": [
+     1.124,
+     0.06,
+     1.7
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    -3.65,
+    0.17,
+    2.885
+   ],
+   "materials": [
+    "M_Far_Dish16"
+   ]
+  },
+  "Dish_3": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "satellite dish 12 m at 45 deg: plinth, pedestal, head, yoke, reflector, feed, beacon, cabinet, conduit, sign, yard light",
+   "root": "Dish_3",
+   "object": "Dish_3",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Dish12",
+    "M_Light_Red",
+    "M_LEDOff",
+    "M_Far_Panel",
+    "M_Lamp_SodiumOff"
+   ]
+  },
+  "IX_CabinetDoor_4": {
+   "kind": "hinge",
+   "pivot": [
+    3.65,
+    -2.885,
+    0.17
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dish_3",
+   "states": [],
+   "note": "the cabinet door: Update 3's hinge (vertical at x 3.65), opens out (+y, towards the pedestal) up to 110 deg",
+   "root": "Dish_3",
+   "object": "IX_CabinetDoor_4",
+   "box": {
+    "center": [
+     0.538,
+     0.017,
+     0.85
+    ],
+    "size": [
+     1.124,
+     0.06,
+     1.7
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    -3.65,
+    0.17,
+    2.885
+   ],
+   "materials": [
+    "M_Far_Dish12"
+   ]
+  },
+  "Dish_4": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "satellite dish 12 m at 40 deg: plinth, pedestal, head, yoke, reflector, feed, beacon, cabinet, conduit, sign, yard light",
+   "root": "Dish_4",
+   "object": "Dish_4",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Dish12",
+    "M_Light_Red",
+    "M_LEDOff",
+    "M_Far_Panel",
+    "M_Lamp_SodiumOff"
+   ]
+  },
+  "IX_CabinetDoor_5": {
+   "kind": "hinge",
+   "pivot": [
+    3.65,
+    -2.885,
+    0.17
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dish_4",
+   "states": [],
+   "note": "the cabinet door: Update 3's hinge (vertical at x 3.65), opens out (+y, towards the pedestal) up to 110 deg",
+   "root": "Dish_4",
+   "object": "IX_CabinetDoor_5",
+   "box": {
+    "center": [
+     0.538,
+     0.017,
+     0.85
+    ],
+    "size": [
+     1.124,
+     0.06,
+     1.7
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    -3.65,
+    0.17,
+    2.885
+   ],
+   "materials": [
+    "M_Far_Dish12"
+   ]
+  },
+  "Dish_5": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "satellite dish 16 m at 36 deg: plinth, pedestal, head, yoke, reflector, feed, beacon, cabinet, conduit, sign, yard light",
+   "root": "Dish_5",
+   "object": "Dish_5",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Dish16",
+    "M_Light_Red",
+    "M_LEDOff",
+    "M_Far_Panel",
+    "M_Lamp_SodiumOff"
+   ]
+  },
+  "IX_CabinetDoor_6": {
+   "kind": "hinge",
+   "pivot": [
+    3.65,
+    -2.885,
+    0.17
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Dish_5",
+   "states": [],
+   "note": "the cabinet door: Update 3's hinge (vertical at x 3.65), opens out (+y, towards the pedestal) up to 110 deg",
+   "root": "Dish_5",
+   "object": "IX_CabinetDoor_6",
+   "box": {
+    "center": [
+     0.538,
+     0.017,
+     0.85
+    ],
+    "size": [
+     1.124,
+     0.06,
+     1.7
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    -3.65,
+    0.17,
+    2.885
+   ],
+   "materials": [
+    "M_Far_Dish16"
+   ]
+  },
+  "Radome": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "16 m lattice tower with a caged ladder, the deck, the radome, the beacon, the equipment shelter, the cable bridge",
+   "root": "Radome",
+   "object": "Radome",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Towers",
+    "M_Light_Red",
+    "M_Far_Panel"
+   ]
+  },
+  "RelayMast": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "42 m lattice mast, beacons, microwave drum, panel antennas, feeders, the shelter, the fenced compound with its gate",
+   "root": "RelayMast",
+   "object": "RelayMast",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Towers",
+    "M_Light_Red",
+    "M_Far_Panel",
+    "M_Base_ChainLink",
+    "M_Base_Barbed"
+   ]
+  },
+  "MeteoStation": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "weather station: picket enclosure and gate, screen, wind mast, rain gauge, logger and solar panel, snow stake",
+   "root": "MeteoStation",
+   "object": "MeteoStation",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Meteo",
+    "M_Far_Panel"
+   ]
+  },
+  "LookoutTower": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "22 m fire lookout: legs, bracing, Update 3's stairs (the same treads and landings), stringers, handrails, a stairwell in the cab floor, a ship ladder up to it, the cab with its windows and roof, the fire finder, the lightning rod",
+   "root": "LookoutTower",
+   "object": "LookoutTower",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Lookout",
+    "M_GlassDirty",
+    "M_Far_Panel"
+   ]
+  },
+  "PumpHouse": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "brick pump house: flat roof, the pump and motor, the pipe to the lake, the switch box, the sign",
+   "root": "PumpHouse",
+   "object": "PumpHouse",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Small",
+    "M_Far_Panel"
+   ]
+  },
+  "IX_PumpDoor_7": {
+   "kind": "hinge",
+   "pivot": [
+    -0.59,
+    -1.5,
+    0.21
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "PumpHouse",
+   "states": [],
+   "note": "the steel door: Update 3's hinge (vertical at x -0.59), opens out (-y) up to 100 deg",
+   "root": "PumpHouse",
+   "object": "IX_PumpDoor_7",
+   "box": {
+    "center": [
+     0.433,
+     -0.003,
+     0.99
+    ],
+    "size": [
+     0.894,
+     0.09,
+     1.98
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    0.59,
+    0.21,
+    1.5
+   ],
+   "materials": [
+    "M_Far_Small"
+   ]
+  },
+  "IX_ChapelDoor_8": {
+   "kind": "hinge",
+   "pivot": [
+    -0.56,
+    -3.705,
+    0.01
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Chapel",
+   "states": [],
+   "note": "the plank door: Update 3's hinge (vertical at x -0.56), opens out (-y) up to 100 deg",
+   "root": "Chapel",
+   "object": "IX_ChapelDoor_8",
+   "box": {
+    "center": [
+     0.575,
+     -0.0063,
+     1.19
+    ],
+    "size": [
+     1.13,
+     0.1026,
+     2.18
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    0.56,
+    0.01,
+    3.705
+   ],
+   "materials": [
+    "M_Far_Chapel"
+   ]
+  },
+  "Chapel": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "forest chapel: plinth, plastered walls, shingled roof, bell turret, spire and cross, windows, pews, altar, candles, the cross on the east wall, the graves, the sign",
+   "root": "Chapel",
+   "object": "Chapel",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Chapel",
+    "M_GlassDirty",
+    "M_Candle",
+    "M_Far_Panel"
+   ]
+  },
+  "Cabin": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "log cabin: notched logs, the window, a board and felt roof, the porch, the stove, the bunk, the table, the woodpile",
+   "root": "Cabin",
+   "object": "Cabin",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Small",
+    "M_GlassDirty"
+   ]
+  },
+  "IX_CabinDoor_9": {
+   "kind": "hinge",
+   "pivot": [
+    -1.47,
+    -2.0,
+    0.2
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Cabin",
+   "states": [],
+   "note": "the plank door: Update 3's hinge (vertical at x -1.47), opens out (-y) up to 100 deg",
+   "root": "Cabin",
+   "object": "IX_CabinDoor_9",
+   "box": {
+    "center": [
+     0.425,
+     -0.005,
+     0.935
+    ],
+    "size": [
+     0.83,
+     0.13,
+     1.83
+    ]
+   },
+   "lightMask": 2,
+   "pivotUnity": [
+    1.47,
+    0.2,
+    2.0
+   ],
+   "materials": [
+    "M_Far_Small"
+   ]
+  },
+  "Campsite": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the abandoned camp: the collapsed tent, the fire ring and the pot, the tipped chair, the rucksack and bedroll, a mug, a bottle, the torch",
+   "root": "Campsite",
+   "object": "Campsite",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Far_Small",
+    "M_Headlight"
+   ]
+  }
+ },
+ "sockets": {
+  "Audio_Dish_1_Drive": {
+   "pos": [
+    0.0,
+    -1.3,
+    6.5
+   ],
+   "kind": "audio",
+   "parent": "Dish_1",
+   "note": "the azimuth drives: a hum, now and then a clunk (the dish never turns)",
+   "root": "Dish_1"
+  },
+  "Audio_Dish_2_Drive": {
+   "pos": [
+    0.0,
+    -1.3,
+    6.5
+   ],
+   "kind": "audio",
+   "parent": "Dish_2",
+   "note": "the azimuth drives: a hum, now and then a clunk (the dish never turns)",
+   "root": "Dish_2"
+  },
+  "Audio_Dish_3_Drive": {
+   "pos": [
+    0.0,
+    -1.3,
+    5.0
+   ],
+   "kind": "audio",
+   "parent": "Dish_3",
+   "note": "the azimuth drives: a hum, now and then a clunk (the dish never turns)",
+   "root": "Dish_3"
+  },
+  "Audio_Dish_4_Drive": {
+   "pos": [
+    0.0,
+    -1.3,
+    5.0
+   ],
+   "kind": "audio",
+   "parent": "Dish_4",
+   "note": "the azimuth drives: a hum, now and then a clunk (the dish never turns)",
+   "root": "Dish_4"
+  },
+  "Audio_Dish_5_Drive": {
+   "pos": [
+    0.0,
+    -1.3,
+    6.5
+   ],
+   "kind": "audio",
+   "parent": "Dish_5",
+   "note": "the azimuth drives: a hum, now and then a clunk (the dish never turns)",
+   "root": "Dish_5"
+  },
+  "Audio_RadomeHum": {
+   "pos": [
+    8.0,
+    0.0,
+    3.2
+   ],
+   "kind": "audio",
+   "parent": "Radome",
+   "note": "the shelter's air conditioner",
+   "root": "Radome"
+  },
+  "Audio_RelayWind": {
+   "pos": [
+    0.0,
+    0.0,
+    30.0
+   ],
+   "kind": "audio",
+   "parent": "RelayMast",
+   "note": "wind in the lattice, the feeders knock",
+   "root": "RelayMast"
+  },
+  "Audio_MeteoCups": {
+   "pos": [
+    3.0,
+    2.0,
+    7.9
+   ],
+   "kind": "audio",
+   "parent": "MeteoStation",
+   "note": "the anemometer's cups whirr, the vane creaks",
+   "root": "MeteoStation"
+  },
+  "Audio_LookoutCab": {
+   "pos": [
+    0.0,
+    0.0,
+    23.0
+   ],
+   "kind": "audio",
+   "parent": "LookoutTower",
+   "note": "the cab's windows rattle, the tower creaks in the wind",
+   "root": "LookoutTower"
+  },
+  "Audio_PumpHum": {
+   "pos": [
+    0.9,
+    0.3,
+    0.7
+   ],
+   "kind": "audio",
+   "parent": "PumpHouse",
+   "note": "the pump (silent unless the power grid is on)",
+   "root": "PumpHouse"
+  },
+  "Audio_ChapelBell": {
+   "pos": [
+    0.0,
+    -2.85,
+    7.3
+   ],
+   "kind": "audio",
+   "parent": "Chapel",
+   "note": "the bell knocks in the wind",
+   "root": "Chapel"
+  },
+  "Audio_CabinStove": {
+   "pos": [
+    1.5,
+    1.2,
+    1.0
+   ],
+   "kind": "audio",
+   "parent": "Cabin",
+   "note": "the cold stove ticks",
+   "root": "Cabin"
+  },
+  "Audio_CampTent": {
+   "pos": [
+    0.0,
+    0.0,
+    0.3
+   ],
+   "kind": "audio",
+   "parent": "Campsite",
+   "note": "the tent's fabric flaps",
+   "root": "Campsite"
+  }
+ },
+ "meta": {
+  "units": "metres, degrees",
+  "frames": "each prefab its own frame - the frame of its Update 3 FBX after import: x / y / z, z up, origin = the prefab's pivot (Update 3's)",
+  "unity": "position (x, y, z) -> Unity prefab-local (-x, z, -y) (pivotUnity given); the placements are Update 3's (Forest_Layout.json) and stay as they are",
+  "axes": "hinge axes and angles in Blender terms (right-handed, +angle opens); in Unity the axis converts as a position and the angle changes sign - the same axes and signs as Update 3's interactables (IX_CabinetDoor_n: (0, 0, 1) -> Unity (0, -1, 0); IX_PumpDoor_7 / IX_ChapelDoor_8 / IX_CabinDoor_9: (0, 0, -1) -> Unity (0, 1, 0); +angle opens every door out)",
+  "blend": "each root stands at its Update 3 place on the map, in its own collection; for an FBX of one prefab put its root at (0, 0, 0) with no rotation",
+  "map_placement": {
+   "Dish_1": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -470.0,
+       28.0689,
+       380.0
+      ],
+      "q": [
+       0.0,
+       -0.415158,
+       0.0,
+       0.909749
+      ]
+     }
+    ]
+   },
+   "Dish_2": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -380.0,
+       33.896,
+       -200.0
+      ],
+      "q": [
+       0.0,
+       -0.830389,
+       0.0,
+       0.557184
+      ]
+     }
+    ]
+   },
+   "Dish_3": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       480.0,
+       19.8698,
+       330.0
+      ],
+      "q": [
+       0.0,
+       0.435906,
+       0.0,
+       0.899992
+      ]
+     }
+    ]
+   },
+   "Dish_4": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -150.0,
+       21.5294,
+       430.0
+      ],
+      "q": [
+       0.0,
+       -0.166466,
+       0.0,
+       0.986047
+      ]
+     }
+    ]
+   },
+   "Dish_5": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       60.0,
+       23.5031,
+       -380.0
+      ],
+      "q": [
+       0.0,
+       0.997656,
+       0.0,
+       0.06843
+      ]
+     }
+    ]
+   },
+   "Radome": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       110.0,
+       30.3335,
+       -430.0
+      ],
+      "q": [
+       0.0,
+       -0.130526,
+       0.0,
+       0.991445
+      ]
+     }
+    ]
+   },
+   "RelayMast": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -320.0,
+       48.5258,
+       -330.0
+      ],
+      "q": [
+       0.0,
+       -0.258819,
+       0.0,
+       0.965926
+      ]
+     }
+    ]
+   },
+   "MeteoStation": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       215.0,
+       13.2559,
+       -300.0
+      ],
+      "q": [
+       0.0,
+       0.069756,
+       0.0,
+       0.997564
+      ]
+     }
+    ]
+   },
+   "LookoutTower": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -260.0,
+       35.4272,
+       -80.0
+      ],
+      "q": [
+       0.0,
+       -0.087156,
+       0.0,
+       0.996195
+      ]
+     }
+    ]
+   },
+   "PumpHouse": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       520.0,
+       1.395,
+       -230.0
+      ],
+      "q": [
+       0.0,
+       -0.707107,
+       0.0,
+       0.707107
+      ]
+     }
+    ]
+   },
+   "Chapel": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       470.0,
+       4.6327,
+       -120.0
+      ],
+      "q": [
+       0.0,
+       -0.608761,
+       0.0,
+       0.793353
+      ]
+     }
+    ]
+   },
+   "Cabin": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -420.0,
+       14.037,
+       60.0
+      ],
+      "q": [
+       0.0,
+       0.984808,
+       0.0,
+       0.173648
+      ]
+     }
+    ]
+   },
+   "Campsite": {
+    "list": "prefabs",
+    "count": 1,
+    "placements": [
+     {
+      "p": [
+       -120.0,
+       10.9963,
+       -300.0
+      ],
+      "q": [
+       0.0,
+       -0.34202,
+       0.0,
+       0.939693
+      ]
+     }
+    ]
+   }
+  },
+  "hierarchy": "every prefab is one mesh object, as Update 3 (sign faces, lenses, glass, flames and the chain-link joined in as extra materials); the doors IX_CabinetDoor_2..6, IX_PumpDoor_7, IX_ChapelDoor_8, IX_CabinDoor_9 are children (Update 3's interactables: names, pivots, axes and ranges unchanged)",
+  "dishes": "the reflector, the feed and the beacon stand where Update 3 has them (each dish at its own elevation: 38 / 42 / 45 / 40 / 36 deg); Dish_2 and Dish_5 share Dish_1's atlas (T_Far_Dish16), Dish_4 Dish_3's (T_Far_Dish12)",
+  "lookout": "Update 3's treads and landings unchanged (decorative, as in Update 3: steep flights, 47..66 deg, stacked one over another - a CharacterController does not climb them); new: a stairwell in the cab floor over the last flight and the top landing (the floor is 0.88 m over that landing: Update 3's cab had no opening and the last flight hit it), a ship ladder of three treads from the landing up to the floor, rails round the well",
+  "lights": "unchanged: Update 3's lights and halos sit in the new lenses (dish beacons and yard lights, the radome's and the relay mast's beacons, the chapel's candles, the campsite's torch)",
+  "materials": "M_Far_Dish16 / Dish12 / Towers / Meteo / Lookout / Chapel / Small: baked PSX atlases (point filter, no mips); M_Far_Panel: the signs, lit, emission = albedo at 0.06; M_Base_ChainLink / M_Base_Barbed: the base's cut-outs (the relay compound); Update 3's M_Light_Red, M_Lamp_SodiumOff, M_LEDOff, M_GlassDirty, M_Candle, M_Headlight",
+  "sockets": "audio: the dishes' drives, the radome's air conditioner, the relay mast's wind, the anemometer, the lookout's cab, the pump, the chapel's bell, the cabin's stove, the tent",
+  "model": "far.blend",
+  "textures": "tex/far"
+ }
+}

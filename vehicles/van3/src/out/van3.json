@@ -1,0 +1,1567 @@
+{
+ "ceiling_lift_m": [
+  0.001,
+  0.05,
+  0.127
+ ],
+ "wheel_tris": [
+  32184,
+  6112
+ ],
+ "saloon_windows": [
+  [
+   -1.548,
+   -0.642,
+   -1,
+   1.372,
+   1.835
+  ],
+  [
+   -0.584,
+   0.321,
+   -1,
+   1.372,
+   1.835
+  ],
+  [
+   0.393,
+   0.816,
+   -1,
+   1.372,
+   1.835
+  ],
+  [
+   -1.548,
+   -0.642,
+   1,
+   1.372,
+   1.835
+  ],
+  [
+   -0.584,
+   0.321,
+   1,
+   1.372,
+   1.835
+  ],
+  [
+   0.393,
+   0.816,
+   1,
+   1.372,
+   1.835
+  ]
+ ],
+ "removed_faces": {
+  "Kuzov": 7581,
+  "doorL": 0,
+  "doorP": 0,
+  "doorZL": 0,
+  "dooZP": 0,
+  "controls": 322,
+  "engine_bay": 117,
+  "cover_skirt": 42,
+  "tanks": 16,
+  "filler_casing_R": 8,
+  "grille": 350,
+  "roof_hatch": 11,
+  "roof_can_boxes": 12
+ },
+ "roof_hatch_z": [
+  1.941,
+  2.021,
+  2.056
+ ],
+ "door_pivots": {
+  "doorL": [
+   1.8265,
+   0.8978,
+   1.29
+  ],
+  "doorP": [
+   1.8265,
+   -0.8978,
+   1.29
+  ],
+  "doorZL": [
+   -2.1391,
+   0.7025,
+   1.37
+  ],
+  "dooZP": [
+   -2.1391,
+   -0.7017,
+   1.37
+  ]
+ },
+ "locks": {
+  "doorL": [
+   1.3,
+   0.8731,
+   1.3
+  ],
+  "doorP": [
+   1.3,
+   -0.8731,
+   1.3
+  ],
+  "doorSalon": [
+   -0.5,
+   -0.9043,
+   1.27
+  ],
+  "doorZL": [
+   -2.0894,
+   0.12,
+   1.27
+  ],
+  "dooZP": [
+   -2.0894,
+   -0.12,
+   1.27
+  ]
+ },
+ "window_band": [
+  1.372,
+  1.835
+ ],
+ "Body": {
+  "size": 256,
+  "ppm": 36.4,
+  "area_m2": 19.31,
+  "uv_fill": 0.39,
+  "colours": 64
+ },
+ "Trim": {
+  "size": 512,
+  "ppm": 39.0,
+  "area_m2": 31.81,
+  "uv_fill": 0.185,
+  "colours": 64
+ },
+ "Wheel": {
+  "size": 128,
+  "ppm": 72.5,
+  "area_m2": 1.91,
+  "uv_fill": 0.614,
+  "colours": 61
+ },
+ "Cabin": {
+  "size": 512,
+  "ppm": 52.2,
+  "area_m2": 33.52,
+  "uv_fill": 0.349,
+  "colours": 64
+ },
+ "Seats": {
+  "size": 256,
+  "ppm": 61.2,
+  "area_m2": 6.89,
+  "uv_fill": 0.394,
+  "colours": 64
+ },
+ "Props": {
+  "size": 256,
+  "ppm": 48.6,
+  "area_m2": 11.97,
+  "uv_fill": 0.431,
+  "colours": 64
+ },
+ "Mech": {
+  "size": 512,
+  "ppm": 55.9,
+  "area_m2": 16.14,
+  "uv_fill": 0.193,
+  "colours": 64
+ },
+ "Snow": {
+  "size": 256,
+  "ppm": 70.3,
+  "area_m2": 6.05,
+  "uv_fill": 0.456,
+  "colours": 63
+ },
+ "fog_uv": {
+  "doorL": 2,
+  "doorP": 2,
+  "doorSalon": 2,
+  "doorZL": 4,
+  "dooZP": 4,
+  "Kuzov": 10,
+  "Window_doorL": 3,
+  "Window_doorP": 3
+ },
+ "masks": [
+  "T_Van_Fog.png",
+  "T_Van_Handprints.png",
+  "T_Van_Snow.png"
+ ],
+ "frost": "/home/claude/uaz/tex/van3/T_Van_Frost.png",
+ "needles": {
+  "Needle_speedo": {
+   "pivot": [
+    1.7555,
+    0.375,
+    1.3078
+   ],
+   "rest_deg": -120.0,
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ]
+  },
+  "Needle_tacho": {
+   "pivot": [
+    1.7555,
+    0.675,
+    1.3078
+   ],
+   "rest_deg": -81.6,
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ]
+  },
+  "Needle_fuel": {
+   "pivot": [
+    1.7616,
+    0.792,
+    1.3628
+   ],
+   "rest_deg": 18.0,
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ]
+  },
+  "Needle_temp": {
+   "pivot": [
+    1.7536,
+    0.792,
+    1.2908
+   ],
+   "rest_deg": 7.5,
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ]
+  },
+  "Needle_oil": {
+   "pivot": [
+    1.7616,
+    0.258,
+    1.3628
+   ],
+   "rest_deg": -12.0,
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ]
+  },
+  "Needle_volt": {
+   "pivot": [
+    1.7536,
+    0.258,
+    1.2908
+   ],
+   "rest_deg": 16.0,
+   "axis": [
+    0.9939,
+    0.0,
+    -0.1104
+   ]
+  }
+ },
+ "seats": {
+  "L1": {
+   "side": "left",
+   "pan_pivot": [
+    -1.05,
+    0.833,
+    1.226
+   ],
+   "leg_pivot": [
+    -1.05,
+    0.473,
+    1.226
+   ],
+   "fold": "pan about +X by -90 deg * fold, leg about +X by +90 deg * fold"
+  },
+  "L2": {
+   "side": "left",
+   "pan_pivot": [
+    -0.57,
+    0.833,
+    1.226
+   ],
+   "leg_pivot": [
+    -0.57,
+    0.473,
+    1.226
+   ],
+   "fold": "pan about +X by -90 deg * fold, leg about +X by +90 deg * fold"
+  },
+  "L3": {
+   "side": "left",
+   "pan_pivot": [
+    -0.09,
+    0.833,
+    1.226
+   ],
+   "leg_pivot": [
+    -0.09,
+    0.473,
+    1.226
+   ],
+   "fold": "pan about +X by -90 deg * fold, leg about +X by +90 deg * fold"
+  },
+  "L4": {
+   "side": "left",
+   "pan_pivot": [
+    0.39,
+    0.833,
+    1.226
+   ],
+   "leg_pivot": [
+    0.39,
+    0.473,
+    1.226
+   ],
+   "fold": "pan about +X by -90 deg * fold, leg about +X by +90 deg * fold"
+  },
+  "R1": {
+   "side": "right",
+   "pan_pivot": [
+    -1.0,
+    -0.833,
+    1.226
+   ],
+   "leg_pivot": [
+    -1.0,
+    -0.473,
+    1.226
+   ],
+   "fold": "pan about +X by +90 deg * fold, leg about +X by -90 deg * fold"
+  },
+  "R2": {
+   "side": "right",
+   "pan_pivot": [
+    0.62,
+    -0.833,
+    1.226
+   ],
+   "leg_pivot": [
+    0.62,
+    -0.473,
+    1.226
+   ],
+   "fold": "pan about +X by +90 deg * fold, leg about +X by -90 deg * fold"
+  }
+ },
+ "lamps": {
+  "Head_L": {
+   "type": "head",
+   "group": "drive",
+   "pos": [
+    2.1746,
+    0.5891,
+    1.096
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Turn_FL": {
+   "type": "amber",
+   "group": "turn",
+   "pos": [
+    2.1608,
+    0.5891,
+    0.93
+   ],
+   "dir": [
+    0.9824,
+    0.1698,
+    -0.0775
+   ],
+   "up": [
+    0.0763,
+    0.0132,
+    0.997
+   ]
+  },
+  "Head_R": {
+   "type": "head",
+   "group": "drive",
+   "pos": [
+    2.1746,
+    -0.5891,
+    1.096
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Turn_FR": {
+   "type": "amber",
+   "group": "turn",
+   "pos": [
+    2.1608,
+    -0.5891,
+    0.93
+   ],
+   "dir": [
+    0.9824,
+    -0.1698,
+    -0.0775
+   ],
+   "up": [
+    0.0763,
+    -0.0132,
+    0.997
+   ]
+  },
+  "Spot_L": {
+   "type": "spot",
+   "group": "spot",
+   "pos": [
+    2.452,
+    0.24,
+    1.295
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Fog_L": {
+   "type": "fog",
+   "group": "fog",
+   "pos": [
+    2.353,
+    0.6,
+    0.668
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Spot_R": {
+   "type": "spot",
+   "group": "spot",
+   "pos": [
+    2.452,
+    -0.24,
+    1.295
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Fog_R": {
+   "type": "fog",
+   "group": "fog",
+   "pos": [
+    2.353,
+    -0.6,
+    0.668
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_Cab0": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    1.9139,
+    -0.62,
+    1.983
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_Cab1": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    2.0079,
+    -0.13,
+    1.983
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_Cab2": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    2.0169,
+    0.0,
+    1.983
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_Cab3": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    2.0079,
+    0.13,
+    1.983
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_Cab4": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    1.9139,
+    0.62,
+    1.983
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "LightBar0": {
+   "type": "work",
+   "group": "work",
+   "pos": [
+    1.266,
+    -0.48,
+    2.395
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "LightBar1": {
+   "type": "work",
+   "group": "work",
+   "pos": [
+    1.266,
+    -0.16,
+    2.395
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "LightBar2": {
+   "type": "work",
+   "group": "work",
+   "pos": [
+    1.266,
+    0.16,
+    2.395
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "LightBar3": {
+   "type": "work",
+   "group": "work",
+   "pos": [
+    1.266,
+    0.48,
+    2.395
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_SideL0": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    -2.03,
+    1.0138,
+    1.02
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_SideL1": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    -0.72,
+    1.0138,
+    1.02
+   ],
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_SideR0": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    -2.03,
+    -1.0138,
+    1.02
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Marker_SideR1": {
+   "type": "marker",
+   "group": "drive",
+   "pos": [
+    -0.78,
+    -1.0138,
+    1.02
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Tail_L": {
+   "type": "tail",
+   "group": "drive",
+   "pos": [
+    -2.2164,
+    0.845,
+    1.13
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Turn_RL": {
+   "type": "amber",
+   "group": "turn",
+   "pos": [
+    -2.2164,
+    0.845,
+    0.995
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Reverse_L": {
+   "type": "reverse",
+   "group": "reverse",
+   "pos": [
+    -2.2164,
+    0.845,
+    0.86
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Tail_R": {
+   "type": "tail",
+   "group": "drive",
+   "pos": [
+    -2.2164,
+    -0.845,
+    1.13
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Turn_RR": {
+   "type": "amber",
+   "group": "turn",
+   "pos": [
+    -2.2164,
+    -0.845,
+    0.995
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Reverse_R": {
+   "type": "reverse",
+   "group": "reverse",
+   "pos": [
+    -2.2164,
+    -0.845,
+    0.86
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Work_Rear": {
+   "type": "work",
+   "group": "work",
+   "pos": [
+    -2.104,
+    0.0,
+    2.019
+   ],
+   "dir": [
+    -0.9397,
+    0.0,
+    -0.342
+   ],
+   "up": [
+    -0.342,
+    0.0,
+    0.9397
+   ]
+  },
+  "Plate": {
+   "type": "plate",
+   "group": "drive",
+   "pos": [
+    -2.21,
+    0.0,
+    0.764
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Dome_Saloon_F": {
+   "type": "dome",
+   "group": "int",
+   "pos": [
+    0.1,
+    0.0,
+    2.016
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Dome_Saloon_R": {
+   "type": "dome",
+   "group": "int",
+   "pos": [
+    -1.75,
+    -0.25,
+    2.02
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Dome_Cab": {
+   "type": "dome",
+   "group": "int",
+   "pos": [
+    1.3,
+    0.0,
+    2.029
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Night_Red": {
+   "type": "night",
+   "group": "int",
+   "pos": [
+    0.833,
+    0.0,
+    1.81
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Dash_Flood": {
+   "type": "flood",
+   "group": "int",
+   "pos": [
+    1.7347,
+    0.525,
+    1.419
+   ],
+   "dir": [
+    0.9939,
+    -0.0,
+    -0.1104
+   ],
+   "up": [
+    0.1104,
+    0.0,
+    0.9939
+   ]
+  },
+  "WorkLamp": {
+   "type": "hand",
+   "group": "hand",
+   "pos": [
+    1.745,
+    -0.58,
+    0.871
+   ],
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Torch": {
+   "type": "torch",
+   "group": "torch",
+   "pos": [
+    1.8,
+    -0.775,
+    1.236
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Flare_1": {
+   "type": "flare",
+   "group": "flare",
+   "pos": [
+    1.848,
+    -0.774,
+    1.225
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Flare_2": {
+   "type": "flare",
+   "group": "flare",
+   "pos": [
+    1.877,
+    -0.774,
+    1.225
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Flare_3": {
+   "type": "flare",
+   "group": "flare",
+   "pos": [
+    1.906,
+    -0.774,
+    1.225
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Stove": {
+   "type": "stove",
+   "group": "fire",
+   "pos": [
+    -1.6,
+    0.45,
+    1.116
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    0,
+    1
+   ]
+  },
+  "Pendant": {
+   "type": "pendant",
+   "group": "int",
+   "pos": [
+    -1.04,
+    0.0,
+    1.962
+   ],
+   "dir": [
+    0,
+    0,
+    -1
+   ],
+   "up": [
+    1,
+    0,
+    0
+   ]
+  }
+ },
+ "lift_m": 0.09,
+ "wheel_scale": 1.12,
+ "knock_points": 28,
+ "part_boxes": 196,
+ "contract": {
+  "parts": 240,
+  "sockets": 200,
+  "kinds": {
+   "hinge": 57,
+   "item": 55,
+   "slide": 28,
+   "spin": 6,
+   "static": 36,
+   "stretch": 18,
+   "twist": 40
+  }
+ },
+ "tris": 73541,
+ "objects": [
+  "AntifreezeCan",
+  "Battery",
+  "BatteryBox",
+  "BatteryBox_Lid",
+  "Battery_ClampNeg",
+  "Battery_ClampPos",
+  "Blowtorch",
+  "Blowtorch_Pump",
+  "Blowtorch_Valve",
+  "COL_APillarL",
+  "COL_APillarR",
+  "COL_ArchL",
+  "COL_ArchR",
+  "COL_BatteryBox",
+  "COL_BullBar",
+  "COL_BumperF",
+  "COL_BumperR",
+  "COL_CabFront",
+  "COL_CabSeatBackD",
+  "COL_CabSeatBackP",
+  "COL_CabSeatD",
+  "COL_CabSeatP",
+  "COL_Cargo",
+  "COL_Dash",
+  "COL_Extinguisher",
+  "COL_Floor",
+  "COL_FloorCab",
+  "COL_Ladder",
+  "COL_LightBar",
+  "COL_Partition",
+  "COL_RoofFront",
+  "COL_RoofHatchL",
+  "COL_RoofHatchR",
+  "COL_RoofLoadBag",
+  "COL_RoofLoadCrate",
+  "COL_RoofRackFront",
+  "COL_RoofRackMidL",
+  "COL_RoofRackMidR",
+  "COL_RoofRackRear",
+  "COL_RoofRear",
+  "COL_SeatBackR1",
+  "COL_SeatBackR2",
+  "COL_SeatBacksL",
+  "COL_Stove",
+  "COL_StovePipe",
+  "COL_TableLeg",
+  "COL_TableTop",
+  "COL_Tanks",
+  "COL_Underbody",
+  "COL_WallL",
+  "COL_WallR_Front",
+  "COL_WallR_Rear",
+  "COL_WoodBox",
+  "COL_dooZP",
+  "COL_doorL",
+  "COL_doorP",
+  "COL_doorSalon",
+  "COL_doorZL",
+  "Cargo",
+  "ChainBag",
+  "Chains_FL",
+  "Chains_FR",
+  "Chains_RL",
+  "Chains_RR",
+  "CrankHandle",
+  "CrankHole_Flap",
+  "Crank_Guide",
+  "CurtainRods",
+  "Curtain_L1A",
+  "Curtain_L1B",
+  "Curtain_L2A",
+  "Curtain_L2B",
+  "Curtain_L3A",
+  "Curtain_L3B",
+  "Curtain_R1A",
+  "Curtain_R1B",
+  "Curtain_R2A",
+  "Curtain_R2B",
+  "Curtain_R3A",
+  "Curtain_R3B",
+  "Dash",
+  "DashControls",
+  "Dash_Gauges",
+  "DoorPocket_P",
+  "Engine",
+  "EngineBay",
+  "EngineCover",
+  "Engine_AirFilterLid",
+  "Engine_Belt",
+  "Engine_CoolantCap",
+  "Engine_Dipstick",
+  "Engine_DistributorCap",
+  "Engine_Drain",
+  "Engine_Fan",
+  "Engine_Lead_1",
+  "Engine_Lead_2",
+  "Engine_Lead_3",
+  "Engine_Lead_4",
+  "Engine_OilCap",
+  "Engine_Plug_1",
+  "Engine_Plug_2",
+  "Engine_Plug_3",
+  "Engine_Plug_4",
+  "Engine_PrimerLever",
+  "Exhaust",
+  "FeltBoots",
+  "Flare_1",
+  "Flare_2",
+  "Flare_3",
+  "Flashlight",
+  "FuelCap_L",
+  "FuelCap_R",
+  "FuelFiller_L",
+  "FuelFiller_R",
+  "FuelFlap_L",
+  "FuelFlap_R",
+  "FuelTanks",
+  "FuseBox",
+  "FuseBox_Lid",
+  "FuseTin",
+  "Fuse_1",
+  "Fuse_2",
+  "Fuse_3",
+  "Fuse_4",
+  "Fuse_5",
+  "Fuse_6",
+  "Fuse_7",
+  "Fuse_8",
+  "GearLever",
+  "GearLever_Boot",
+  "Glovebox_Lid",
+  "Handbrake",
+  "Heater_Air",
+  "Heater_Fan",
+  "Heater_Temp",
+  "Horn_Button",
+  "Ignition_Key",
+  "Jack",
+  "Jack_Ram",
+  "Jack_Screw",
+  "Jerrycan_1",
+  "Jerrycan_2",
+  "Kettle",
+  "Kit_Front",
+  "Kit_Interior",
+  "Kit_Rear",
+  "Kit_RoofLoad",
+  "Kit_RoofRack",
+  "Kit_Side",
+  "Knob_Choke",
+  "Knob_Throttle",
+  "Kuzov",
+  "Lamp",
+  "LampBulb",
+  "Lens_Dome_Cab",
+  "Lens_Dome_Saloon_F",
+  "Lens_Dome_Saloon_R",
+  "Lens_Flare_1",
+  "Lens_Flare_2",
+  "Lens_Flare_3",
+  "Lens_Fog_L",
+  "Lens_Fog_R",
+  "Lens_Head_L",
+  "Lens_Head_R",
+  "Lens_LightBar0",
+  "Lens_LightBar1",
+  "Lens_LightBar2",
+  "Lens_LightBar3",
+  "Lens_Marker_Cab0",
+  "Lens_Marker_Cab1",
+  "Lens_Marker_Cab2",
+  "Lens_Marker_Cab3",
+  "Lens_Marker_Cab4",
+  "Lens_Marker_SideL0",
+  "Lens_Marker_SideL1",
+  "Lens_Marker_SideR0",
+  "Lens_Marker_SideR1",
+  "Lens_Night_Red",
+  "Lens_Plate",
+  "Lens_Reverse_L",
+  "Lens_Reverse_R",
+  "Lens_Spot_L",
+  "Lens_Spot_R",
+  "Lens_Tail_L",
+  "Lens_Tail_R",
+  "Lens_Torch",
+  "Lens_Turn_FL",
+  "Lens_Turn_FR",
+  "Lens_Turn_RL",
+  "Lens_Turn_RR",
+  "Lens_WorkLamp",
+  "Lens_Work_Rear",
+  "Lock_dooZP",
+  "Lock_doorL",
+  "Lock_doorP",
+  "Lock_doorSalon",
+  "Lock_doorZL",
+  "Log_1",
+  "Log_2",
+  "Log_3",
+  "Log_4",
+  "Logbook",
+  "Map",
+  "MassSwitch_Key",
+  "Needle_fuel",
+  "Needle_oil",
+  "Needle_speedo",
+  "Needle_tacho",
+  "Needle_temp",
+  "Needle_volt",
+  "OilCan",
+  "PedalBox",
+  "Pedal_Brake",
+  "Pedal_Clutch",
+  "Pedal_Gas",
+  "RadiatorHatch",
+  "Radiator_Cap",
+  "Radio_ChDown",
+  "Radio_ChUp",
+  "Radio_Display",
+  "Radio_Mic",
+  "Radio_MicHook",
+  "Radio_Mic_PTT",
+  "Radio_Squelch",
+  "Radio_Volume",
+  "RearMirror",
+  "RearMirror_Glass",
+  "RoofHatch",
+  "Safety",
+  "Saloon_Hooks",
+  "SandLadder_1",
+  "SandLadder_2",
+  "Seat_L1",
+  "Seat_L1_Fixed",
+  "Seat_L1_Leg",
+  "Seat_L2",
+  "Seat_L2_Fixed",
+  "Seat_L2_Leg",
+  "Seat_L3",
+  "Seat_L3_Fixed",
+  "Seat_L3_Leg",
+  "Seat_L4",
+  "Seat_L4_Fixed",
+  "Seat_L4_Leg",
+  "Seat_R1",
+  "Seat_R1_Fixed",
+  "Seat_R1_Leg",
+  "Seat_R2",
+  "Seat_R2_Fixed",
+  "Seat_R2_Leg",
+  "Shovel",
+  "SnowBrush",
+  "Snow_Bumper",
+  "Snow_Fog_L",
+  "Snow_Fog_R",
+  "Snow_Head_L",
+  "Snow_Head_R",
+  "Snow_Roof",
+  "Snow_Spot_L",
+  "Snow_Spot_R",
+  "Snow_Visor",
+  "Socket_12V_Cap",
+  "SpareWheel",
+  "SpareWheel_Nut",
+  "Spare_Belt",
+  "Spare_Fuse_1",
+  "Spare_Fuse_2",
+  "Spare_Fuse_3",
+  "Spout",
+  "SteeringWheel",
+  "Stove",
+  "StoveDoor",
+  "StoveDoor_Vent",
+  "StoveGlow",
+  "Stove_AshPan",
+  "Stove_Damper",
+  "Table",
+  "TankValve",
+  "TankValve_Lever",
+  "Toggle_Cabin",
+  "Toggle_Fog",
+  "Toggle_Head",
+  "Toggle_Roof",
+  "Toggle_Spot",
+  "Toggle_Stove",
+  "Toggle_Wiper",
+  "Toggle_Work",
+  "ToolBox",
+  "ToolBox_Lid",
+  "Tool_Pliers",
+  "Tool_PlugSpanner",
+  "Tool_Screwdriver",
+  "Tool_Wrench",
+  "TowRope",
+  "TransferLever_Axle",
+  "TransferLever_Range",
+  "WheelBrace",
+  "Wheel_FL",
+  "Wheel_FL_Nut_1",
+  "Wheel_FL_Nut_2",
+  "Wheel_FL_Nut_3",
+  "Wheel_FL_Nut_4",
+  "Wheel_FL_Nut_5",
+  "Wheel_FL_Nut_6",
+  "Wheel_FR",
+  "Wheel_FR_Nut_1",
+  "Wheel_FR_Nut_2",
+  "Wheel_FR_Nut_3",
+  "Wheel_FR_Nut_4",
+  "Wheel_FR_Nut_5",
+  "Wheel_FR_Nut_6",
+  "Wheel_RL",
+  "Wheel_RL_Nut_1",
+  "Wheel_RL_Nut_2",
+  "Wheel_RL_Nut_3",
+  "Wheel_RL_Nut_4",
+  "Wheel_RL_Nut_5",
+  "Wheel_RL_Nut_6",
+  "Wheel_RR",
+  "Wheel_RR_Nut_1",
+  "Wheel_RR_Nut_2",
+  "Wheel_RR_Nut_3",
+  "Wheel_RR_Nut_4",
+  "Wheel_RR_Nut_5",
+  "Wheel_RR_Nut_6",
+  "Winch_Clutch",
+  "Winch_Drum",
+  "Winch_Hook",
+  "Window_doorL",
+  "Window_doorP",
+  "Wiper_L",
+  "Wiper_R",
+  "WoodBox",
+  "WorkLamp",
+  "WorkLamp_Cord",
+  "bumpZ",
+  "dooZP",
+  "doorL",
+  "doorP",
+  "doorSalon",
+  "doorZL",
+  "heat_shield",
+  "lob"
+ ],
+ "empties": [
+  "LIGHT_Dash_Flood",
+  "LIGHT_Dome_Cab",
+  "LIGHT_Dome_Saloon_F",
+  "LIGHT_Dome_Saloon_R",
+  "LIGHT_Flare_1",
+  "LIGHT_Flare_2",
+  "LIGHT_Flare_3",
+  "LIGHT_Fog_L",
+  "LIGHT_Fog_R",
+  "LIGHT_Head_L",
+  "LIGHT_Head_R",
+  "LIGHT_LightBar0",
+  "LIGHT_LightBar1",
+  "LIGHT_LightBar2",
+  "LIGHT_LightBar3",
+  "LIGHT_Marker_Cab0",
+  "LIGHT_Marker_Cab1",
+  "LIGHT_Marker_Cab2",
+  "LIGHT_Marker_Cab3",
+  "LIGHT_Marker_Cab4",
+  "LIGHT_Marker_SideL0",
+  "LIGHT_Marker_SideL1",
+  "LIGHT_Marker_SideR0",
+  "LIGHT_Marker_SideR1",
+  "LIGHT_Night_Red",
+  "LIGHT_Pendant",
+  "LIGHT_Plate",
+  "LIGHT_Reverse_L",
+  "LIGHT_Reverse_R",
+  "LIGHT_Spot_L",
+  "LIGHT_Spot_R",
+  "LIGHT_Stove",
+  "LIGHT_Tail_L",
+  "LIGHT_Tail_R",
+  "LIGHT_Torch",
+  "LIGHT_Turn_FL",
+  "LIGHT_Turn_FR",
+  "LIGHT_Turn_RL",
+  "LIGHT_Turn_RR",
+  "LIGHT_WorkLamp",
+  "LIGHT_Work_Rear",
+  "Steer_FL",
+  "Steer_FR"
+ ],
+ "bbox": [
+  [
+   -2.591,
+   -1.17,
+   -0.009
+  ],
+  [
+   2.515,
+   1.17,
+   2.61
+  ]
+ ]
+}

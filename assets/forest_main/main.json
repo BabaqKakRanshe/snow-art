@@ -1,0 +1,320 @@
+{
+ "coplanar_moved_mm": {
+  "n": 1254,
+  "max": 3.2
+ },
+ "coplanar_separated": 1254,
+ "atlases": {
+  "Ext": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 788.76,
+   "uv_fill": 0.495,
+   "colours": 59,
+   "seconds": 199.7
+  },
+  "Roof": {
+   "size": 1024,
+   "ppm": 45.4,
+   "area_m2": 341.06,
+   "uv_fill": 0.671,
+   "colours": 62,
+   "seconds": 48.1
+  },
+  "Rm_Flur_EG": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 153.66,
+   "uv_fill": 0.386,
+   "colours": 64,
+   "seconds": 42.2
+  },
+  "Rm_Flur_OG": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 161.93,
+   "uv_fill": 0.406,
+   "colours": 64,
+   "seconds": 44.5
+  },
+  "Rm_Flur_UG": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 110.76,
+   "uv_fill": 0.278,
+   "colours": 64,
+   "seconds": 36.3
+  },
+  "Rm_Garage": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 399.51,
+   "uv_fill": 0.251,
+   "colours": 64,
+   "seconds": 131.9
+  },
+  "Rm_Heizung": {
+   "size": 1024,
+   "ppm": 48.5,
+   "area_m2": 258.59,
+   "uv_fill": 0.581,
+   "colours": 64,
+   "seconds": 70.3
+  },
+  "Rm_Kaserne": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 234.06,
+   "uv_fill": 0.587,
+   "colours": 64,
+   "seconds": 53.7
+  },
+  "Rm_Kueche": {
+   "size": 1024,
+   "ppm": 51.2,
+   "area_m2": 244.71,
+   "uv_fill": 0.613,
+   "colours": 64,
+   "seconds": 57.6
+  },
+  "Rm_Lager": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 204.12,
+   "uv_fill": 0.512,
+   "colours": 64,
+   "seconds": 52.4
+  },
+  "Rm_Leitstand": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 340.84,
+   "uv_fill": 0.214,
+   "colours": 64,
+   "seconds": 123.2
+  },
+  "Rm_Schaltraum": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 140.24,
+   "uv_fill": 0.352,
+   "colours": 64,
+   "seconds": 44.5
+  },
+  "Rm_Serverraum": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 180.76,
+   "uv_fill": 0.454,
+   "colours": 63,
+   "seconds": 53.6
+  },
+  "Rm_Stationsleiter": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 175.9,
+   "uv_fill": 0.441,
+   "colours": 64,
+   "seconds": 44.1
+  },
+  "Rm_Treppenhaus": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 427.35,
+   "uv_fill": 0.268,
+   "colours": 63,
+   "seconds": 125.9
+  },
+  "Rm_Waschraum": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 155.69,
+   "uv_fill": 0.391,
+   "colours": 64,
+   "seconds": 43.6
+  },
+  "Rm_Windfang": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 89.43,
+   "uv_fill": 0.224,
+   "colours": 64,
+   "seconds": 37.4
+  },
+  "Parts": {
+   "size": 2048,
+   "ppm": 64.0,
+   "area_m2": 370.31,
+   "uv_fill": 0.362,
+   "colours": 64,
+   "seconds": 147.5
+  },
+  "Opening": {
+   "size": 256,
+   "ppm": 96.0,
+   "area_m2": 2.34,
+   "uv_fill": 0.329,
+   "colours": 64,
+   "seconds": 6.9
+  }
+ },
+ "knock_points": 28,
+ "part_boxes": 139,
+ "mask_derived": [
+  "IX_HeatPump_304",
+  "IX_HeatBurner_305",
+  "IX_HeatThermostat_306",
+  "IX_HeatGauge_309",
+  "IX_HeatTempGauge_310",
+  "IX_HeatFill_307",
+  "IX_BurnerReset_308"
+ ],
+ "ix": {
+  "count": 139,
+  "u3": 139,
+  "missing": [],
+  "extra": []
+ },
+ "lights": {
+  "u3": 63,
+  "fixture_missing": []
+ },
+ "contract": {
+  "parts": 220,
+  "sockets": 71,
+  "kinds": {
+   "scale": 19,
+   "hinge": 93,
+   "slide": 27,
+   "static": 81
+  }
+ },
+ "tris": 120308,
+ "tris_by_root": {
+  "BaseMain": 118794,
+  "BaseMain_Opening": 1514
+ },
+ "tris_big": [
+  [
+   13288,
+   "R_Leitstand"
+  ],
+  [
+   9878,
+   "R_Kaserne"
+  ],
+  [
+   8914,
+   "BaseMain"
+  ],
+  [
+   7604,
+   "R_Kueche"
+  ],
+  [
+   7472,
+   "R_Garage"
+  ],
+  [
+   6062,
+   "R_Heizung"
+  ],
+  [
+   5718,
+   "R_Stationsleiter"
+  ],
+  [
+   5062,
+   "R_Waschraum"
+  ],
+  [
+   4320,
+   "R_Windfang"
+  ],
+  [
+   4292,
+   "R_Treppenhaus"
+  ],
+  [
+   3548,
+   "R_Serverraum"
+  ],
+  [
+   3222,
+   "R_Lager"
+  ],
+  [
+   2528,
+   "R_Flur_OG"
+  ],
+  [
+   2510,
+   "R_Schaltraum"
+  ],
+  [
+   2310,
+   "R_Flur_EG"
+  ],
+  [
+   1578,
+   "R_Flur_UG"
+  ],
+  [
+   1034,
+   "BaseMain_Opening"
+  ],
+  [
+   760,
+   "FX_Bulkhead_63"
+  ],
+  [
+   760,
+   "FX_Bulkhead_61"
+  ],
+  [
+   760,
+   "FX_Bulkhead_59"
+  ]
+ ],
+ "objects": 220,
+ "materials": [
+  "M_FX_Bulb",
+  "M_FX_Diffuser",
+  "M_FX_EmergencyLens",
+  "M_FX_Exit",
+  "M_FX_Globe",
+  "M_FX_Halogen",
+  "M_FX_Red",
+  "M_FX_Tube",
+  "M_GlassClear",
+  "M_GlassDark",
+  "M_HeatFault",
+  "M_LEDOff",
+  "M_LEDOn",
+  "M_Main_Ext",
+  "M_Main_Opening",
+  "M_Main_Panel",
+  "M_Main_Parts",
+  "M_Main_Rm_Flur_EG",
+  "M_Main_Rm_Flur_OG",
+  "M_Main_Rm_Flur_UG",
+  "M_Main_Rm_Garage",
+  "M_Main_Rm_Heizung",
+  "M_Main_Rm_Kaserne",
+  "M_Main_Rm_Kueche",
+  "M_Main_Rm_Lager",
+  "M_Main_Rm_Leitstand",
+  "M_Main_Rm_Schaltraum",
+  "M_Main_Rm_Serverraum",
+  "M_Main_Rm_Stationsleiter",
+  "M_Main_Rm_Treppenhaus",
+  "M_Main_Rm_Waschraum",
+  "M_Main_Rm_Windfang",
+  "M_Main_Roof",
+  "M_ScreenOff"
+ ],
+ "glass_dupes_removed": {
+  "faces": 132,
+  "tris": 264
+ }
+}

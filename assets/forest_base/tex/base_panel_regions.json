@@ -1,0 +1,53 @@
+{
+ "size": 256,
+ "ppm": 160.0,
+ "regions": {
+  "heli": [
+   0,
+   0,
+   192,
+   67
+  ],
+  "ice": [
+   0,
+   69,
+   67,
+   123
+  ],
+  "hatch": [
+   69,
+   69,
+   218,
+   114
+  ]
+ },
+ "chainlink": {
+  "size": 64,
+  "metres_per_tile": 0.5
+ },
+ "barbed": {
+  "size": [
+   64,
+   67
+  ],
+  "metres_per_tile": [
+   0.5,
+   0.52
+  ],
+  "strands_along_band": [
+   0.141,
+   0.311,
+   0.481
+  ]
+ },
+ "rust": {
+  "size": [
+   64,
+   12
+  ],
+  "metres_per_tile": [
+   0.5,
+   0.08
+  ]
+ }
+}

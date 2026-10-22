@@ -1,0 +1,20 @@
+{
+ "cam": {
+  "pos": [
+   0.22,
+   1.92,
+   -1.25
+  ],
+  "look": [
+   -0.12,
+   1.62,
+   2.6
+  ],
+  "fov": 74
+ },
+ "figures": [],
+ "out": "/home/claude/plane/v12r2/prev/r/cabin_rear_R2",
+ "W": 1920,
+ "H": 1080,
+ "tex": "/home/claude/plane/v12r2/work/tex_prevR2"
+}

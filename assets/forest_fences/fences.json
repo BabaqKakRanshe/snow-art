@@ -1,0 +1,68 @@
+{
+ "coplanar_separated": 69,
+ "atlases": {
+  "Concrete": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 126.92,
+   "uv_fill": 0.319,
+   "colours": 64,
+   "seconds": 129.8
+  },
+  "Props": {
+   "size": 512,
+   "ppm": 44.5,
+   "area_m2": 44.56,
+   "uv_fill": 0.337,
+   "colours": 64,
+   "seconds": 35.6
+  }
+ },
+ "part_boxes": 0,
+ "tris": 5630,
+ "tris_by_object": {
+  "Abatis": 1868,
+  "Abatis_b": 932,
+  "ChainFence": 68,
+  "ChainFence_Torn": 80,
+  "ConcreteFence": 120,
+  "ConcreteFence_b": 120,
+  "ConcreteFence_Broken": 240,
+  "ConcreteFence_Plain": 32,
+  "ConcreteFence_Sign": 244,
+  "ConcreteFence_Socket": 68,
+  "ConcreteFence_Wicket": 270,
+  "Hedgehog": 108,
+  "RoadBlock_Cube": 74,
+  "RoadBlock_FBS": 122,
+  "RoadBlock_Jersey": 26,
+  "RoadBlock_Jersey_Striped": 26,
+  "Sign_Halt": 232,
+  "Sign_NoEntry": 148,
+  "TankTooth": 12,
+  "TankTooth_b": 12,
+  "WireBarricade": 196,
+  "WireCoil": 632
+ },
+ "objects": 22,
+ "materials": [
+  "M_Fence_Barbed",
+  "M_Fence_ChainBarbed",
+  "M_Fence_ChainLink",
+  "M_Fence_Concrete",
+  "M_Fence_Panel",
+  "M_Fence_Props",
+  "M_Fence_Razor"
+ ],
+ "replacements": {
+  "T_Base_ChainLink": "/home/claude/uaz/tex/fence/replacements/T_Base_ChainLink_A_px.png",
+  "T_Kpp_ChainLink": "/home/claude/uaz/tex/fence/replacements/T_Kpp_ChainLink_A_px.png",
+  "T_Yard_ChainLink": "/home/claude/uaz/tex/fence/replacements/T_Yard_ChainLink_A_px.png",
+  "T_Road_ChainLink": "/home/claude/uaz/tex/fence/replacements/T_Road_ChainLink_A_px.png",
+  "T_Base_Barbed": "/home/claude/uaz/tex/fence/replacements/T_Base_Barbed_A_px.png",
+  "T_Kpp_Barbed": "/home/claude/uaz/tex/fence/replacements/T_Kpp_Barbed_A_px.png",
+  "T_Yard_Barbed": "/home/claude/uaz/tex/fence/replacements/T_Yard_Barbed_A_px.png",
+  "T_Road_Barbed": "/home/claude/uaz/tex/fence/replacements/T_Road_Barbed_A_px.png",
+  "T_Base_Rust": "/home/claude/uaz/tex/fence/replacements/T_Base_Rust_A_px.png"
+ }
+}

@@ -1,0 +1,23 @@
+bld_common.py                            Shared build steps for the station's buildings (lifted from main_build.py so the garage and the next locations use the
+cont_kit.py                              Generator container kit: the generator shed's interior (gen_set, gen_room) moved into two 20 ft ISO containers that
+cont_paint.py                            Painter for the generator container's building atlas Cont (psxbake): outside, inside, both in one (paint_cont_all).
+cont_tex.py                              Panel atlas of the generator container: the generator shed's atlas (gen_tex: dials, control panel, switchboard face,
+gcf_build.py                             GenContainer for the Forest map (Update 6): the generator container (cont_kit + gcf_kit) built and baked in the
+gcf_kit.py                               The generator container for the Forest map (Update 6): cont_kit's twin container with what the map needs, built in the
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_room.py                              Generator shed kit, part 3: the switchboard (cabinet, door with a latch and the circuit card, meters, lamps, kWh
+gen_set.py                               Generator shed kit, part 2: the old diesel generating set on its skid and its control panel.
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
+make_sheets_u6.py                        Sheets of Forest Update 6: the generator container (A outside, B inside, C Update 3 and now, D atlases), the items (A..D
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_u6.py                               Package the three asset batches of Forest Update 6 the way the base / far batches are packed: the .blend with relative
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+u6_render.py                             Renders for the Update 6 sheets (Workbench, the PSX textures point-filtered, studio light with shadows, a ground plane).
+uvpack.py                                Shelf packing of UV islands by their bounding boxes (the main building's walls, strips and boxes are rectangles:
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.

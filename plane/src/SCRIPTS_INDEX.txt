@@ -1,0 +1,293 @@
+build.py                                 Build the utility aircraft geometry. Output: out/plane_geo.blend
+build_v2.py                              v2 (UE5.6 FP-sim): solid fuselage with real openings, doors, glass, split gear. Output: out/plane_geo_v2.blend
+cockpit.py                               Cockpit blockout for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cockpit2.py                              (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cockpit_v5.py                            (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cockpit_v6.py                            (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cockpit_v7.py                            (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cp_body.py                               
+cp_body5.py                              
+cp_body6.py                              
+cp_body7.py                              
+cp_equip.py                              
+cp_equip6.py                             
+cp_head.py                               (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cp_head7.py                              (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+cp_panel6.py                             
+cp_panel7.py                             
+cp_shell.py                              
+cp_tail5.py                              
+cp_tail6.py                              
+cp_tail7.py                              
+export_unity_v10.py                      Unity export of Utility Plane v10 (from out/plane_v9_final_<tag>.blend = the v9 scene after the v10 geometry pass;
+export_unity_v10.v10a.py                 Unity export of Utility Plane v10 (from out/plane_v9_final_<tag>.blend = the v9 scene after the v10 geometry pass;
+export_unity_v11.py                      Unity export of Utility Plane v10 (from out/plane_v9_final_<tag>.blend = the v9 scene after the v10 geometry pass;
+export_unity_v13.py                      Unity export of Utility Plane v10 (from out/plane_v9_final_<tag>.blend = the v9 scene after the v10 geometry pass;
+export_unity_v4.py                       Unity export of Utility Plane v4 (from out/plane_v2_final_final4.blend + export/ue/*.json + export/ue/Textures).
+export_unity_v5.py                       Unity export of Utility Plane v5 (from out/plane_v5_final_<tag>.blend; textures already written by finalize_v5.py).
+export_unity_v6.py                       Unity export of Utility Plane v6 (from out/plane_v6_final_<tag>.blend; textures already written by finalize_v6.py).
+export_unity_v7.py                       Unity export of Utility Plane v7 (from out/plane_v7_final_<tag>.blend; textures already written by finalize_v7.py).
+export_unity_v8.py                       Unity export of Utility Plane v8 (from out/plane_v8_final_<tag>.blend; textures already written by finalize_v8.py).
+export_unity_v9.py                       Unity export of Utility Plane v9 (from out/plane_v9_final_<tag>.blend; textures already written by finalize_v9.py).
+ext_v7.py                                v7 exterior edits on top of the v5/v6 exterior (out/plane_geo_v2.blend -> out/plane_geo_v7.blend).
+ext_v8.py                                v8 exterior edits on top of v7 (out/plane_v7.blend -> out/plane_v8.blend). Only airframe-atlas meshes change (v8
+ext_v9.py                                v9 cabin additions on top of v8 (out/plane_v8_final_v8.blend -> out/plane_v9.blend, out/ext_v9.json).
+fbxcheck.py                              Print FBX global axes + per-model local transforms, and what Unity will show (X mirrored).
+fbxcheck_ue.py                           Inspect a UE-bound skeletal FBX: axes/units, root + bone rest transforms, clusters, mesh bounds.
+finalize.py                              Pack Unity textures, build final materials, join static parts, export FBX.
+finalize_v2.py                           Assemble final PBR materials from the baked atlases.
+finalize_v5.py                           v5 finalize: Unity textures + final materials.
+finalize_v6.py                           v6 finalize: Unity textures + final materials (as v5; panel v6: 4096 x 4096 gauge atlas, M_Screen, M_Annunciator
+finalize_v7.py                           v7 finalize: Unity textures + final materials.
+finalize_v8.py                           v8 finalize: Unity textures + final materials.
+finalize_v9.py                           v9 finalize: Unity textures + final materials (out/plane_v9_uv.blend -> out/plane_v9_final_v9.blend).
+gauges_tex.py                            Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+gauges_tex7.py                           Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+geo9.py                                  v9 mesh builder: bmesh primitives with per-loop metric UVs (1 UV unit = 1 m on the surface) and face attributes
+kit_export.py                            Winter kit -> Unity (add-on to the Utility Plane v7 package).
+kit_finalize.py                          Winter kit finalize: Unity textures + final blend.
+kit_geo.py                               Winter preflight kit + fuel can for the Utility Plane (kit v1).
+kit_shade.py                             Winter kit: procedural materials, two UV atlases and bakes: T_KitCovers (wing/windshield/engine covers, 4K) and
+layout.py                                Shared cockpit/fuselage layout (Blender build frame: nose -Y, left/port +X, up +Z, metres).
+lib.py                                   Geometry helpers for the utility aircraft build (bpy 5.x, metric, Z-up, nose toward -Y).
+livery_v8.py                             v8 airframe livery (numpy): BaseColor / MaskMap / Normal for the two airframe atlases from the baked geometry maps.
+make_package.py                          Assemble the UE deliverable and split it into zips below the 30 MiB transfer limit.
+meshopt_lod.py                           v10 LOD and shadow-proxy meshes with meshoptimizer (edge collapses onto existing vertices: every kept corner keeps
+meshopt_lod.v10a.py                      v10 LOD and shadow-proxy meshes with meshoptimizer (edge collapses onto existing vertices: every kept corner keeps
+nodes.py                                 Tiny shader-node DSL + procedural materials for the aircraft (Cycles, baked later).
+nodes7.py                                v7 procedural materials for the Details atlas (prop blades, tundra tyres, exhaust heat tint, brakes, ladder, key).
+nodes_cp.py                              Procedural cockpit materials (baked into T_Cockpit). World-space patterns, metres, Blender build frame.
+paint_v9.py                              v9 texture painter (numpy) from the bake inputs of tex_v9.py.
+panel6.py                                v6 instrument panel specification (no bpy): positions, sizes and atlas regions shared by
+panel7.py                                v7 instrument panel specification (v6 + cabin door switches, movable radio / instrument knobs,
+patch_aux_swap.py                        v4 fix without re-baking: left cargo-door / cabin-light toggles belong on the pilot's left (larger X).
+patch_orm.py                             Post-bake ORM tweaks without re-baking: raise roughness on the anti-glare glareshield.
+plane_geo.py                             Geometry builder for the expedition utility aircraft.
+pose_test.py                             Pose the UE skeletons in Blender (UE frame: cm, nose +X, left +Y, up +Z) and render to validate pivots/axes.
+preview.py                               Build geometry and render ID-coloured check views.
+psx_tex.py                               PS1 / PSX lo-fi versions of the exterior atlases (Airframe, Wing, Details) from the v8 4K maps.
+render.py                                Render preview views of a blend. usage: python3 render.py file.blend outprefix [views] [samples] [simple]
+render_eye.py                            First-person renders from the pilot eye point. usage: python3 render_eye.py <blend> <prefix> <views> <samples>
+rig_ue.py                                Build UE5 rigid skeletal meshes from out/plane_v2.blend and export FBX.
+shade.py                                 UV-unwrap, build procedural source materials, bake PBR atlases.
+shade_v2.py                              v2 bake: UV-unwrap three atlases and bake BaseColor / MR / Normal / AO, then assemble preview materials.
+shade_v5.py                              v5 bake: Airframe UVs transferred from the v4 bake (textures reused), UV-unwrap and bake five atlases.
+shade_v6.py                              v6 bake (panel v6; otherwise as v5): Airframe UVs transferred from the v4 bake (textures reused), UV-unwrap and bake five atlases.
+shade_v7.py                              v7 bake (v6 + new Details parts: prop blades, tundra tyres, exhaust, antennas, locks, ladder, key; Details at 4K): Airframe UVs transferred from the v4 bake (textures reused), UV-unwrap and bake five atlases.
+shade_v8.py                              v8 UVs + geometry bakes.
+sheet.py                                 Compose a turnaround sheet from renders. usage: python3 sheet.py <prefix> <out.png>
+tex_v9.py                                v9 UV packing + bake inputs for the two new atlases (out/plane_v9.blend -> out/plane_v9_uv.blend, tex/v9/*.npy).
+texture.py                               Compose game textures from baked helper maps (position / normal / id / AO).
+uvbake.py                                Build geometry, UV-unwrap per texture set, bake helper maps (position, normal, id, AO) to .npy.
+bak_v4/build_v2.py                       v2 (UE5.6 FP-sim): solid fuselage with real openings, doors, glass, split gear. Output: out/plane_geo_v2.blend
+bak_v4/cp_body.py                        
+bak_v4/cp_head.py                        (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+bak_v4/export_unity_v4.py                Unity export of Utility Plane v4 (from out/plane_v2_final_final4.blend + export/ue/*.json + export/ue/Textures).
+bak_v4/finalize_v2.py                    Assemble final PBR materials from the baked atlases.
+bak_v4/gauges_tex.py                     Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+bak_v4/gauges_tex_pre_radio.py           Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+bak_v4/layout.py                         Shared cockpit/fuselage layout (Blender build frame: nose -Y, left/port +X, up +Z, metres).
+bak_v4/nodes.py                          Tiny shader-node DSL + procedural materials for the aircraft (Cycles, baked later).
+bak_v4/nodes_cp.py                       Procedural cockpit materials (baked into T_Cockpit). World-space patterns, metres, Blender build frame.
+bak_v4/nodes_cp_v4.py                    Procedural cockpit materials (baked into T_Cockpit). World-space patterns, metres, Blender build frame.
+bak_v4/rig_ue.py                         Build UE5 rigid skeletal meshes from out/plane_v2.blend and export FBX.
+bak_v4/shade_v2.py                       v2 bake: UV-unwrap three atlases and bake BaseColor / MR / Normal / AO, then assemble preview materials.
+bak_v5/cockpit_v5.py                     (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+bak_v5/cp_body5.py                       
+bak_v5/cp_equip.py                       
+bak_v5/cp_head.py                        (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+bak_v5/cp_shell.py                       
+bak_v5/cp_tail5.py                       
+bak_v5/export_unity_v5.py                Unity export of Utility Plane v5 (from out/plane_v5_final_<tag>.blend; textures already written by finalize_v5.py).
+bak_v5/finalize_v5.py                    v5 finalize: Unity textures + final materials.
+bak_v5/gauges_tex.py                     Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+bak_v5/layout.py                         Shared cockpit/fuselage layout (Blender build frame: nose -Y, left/port +X, up +Z, metres).
+bak_v5/nodes_cp.py                       Procedural cockpit materials (baked into T_Cockpit). World-space patterns, metres, Blender build frame.
+bak_v5/shade_v5.py                       v5 bake: Airframe UVs transferred from the v4 bake (textures reused), UV-unwrap and bake five atlases.
+bak_v6/build_v2.py                       v2 (UE5.6 FP-sim): solid fuselage with real openings, doors, glass, split gear. Output: out/plane_geo_v2.blend
+bak_v6/cockpit_v6.py                     (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+bak_v6/cp_body.py                        
+bak_v6/cp_body5.py                       
+bak_v6/cp_body6.py                       
+bak_v6/cp_equip.py                       
+bak_v6/cp_equip6.py                      
+bak_v6/cp_head.py                        (v2 detail) Cockpit for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+bak_v6/cp_panel6.py                      
+bak_v6/cp_shell.py                       
+bak_v6/cp_tail5.py                       
+bak_v6/cp_tail6.py                       
+bak_v6/export_unity_v6.py                Unity export of Utility Plane v6 (from out/plane_v6_final_<tag>.blend; textures already written by finalize_v6.py).
+bak_v6/export_unity_v7_pre_ladderfix.py  Unity export of Utility Plane v7 (from out/plane_v7_final_<tag>.blend; textures already written by finalize_v7.py).
+bak_v6/ext_v7_pre_ladderfix.py           v7 exterior edits on top of the v5/v6 exterior (out/plane_geo_v2.blend -> out/plane_geo_v7.blend).
+bak_v6/finalize_v6.py                    v6 finalize: Unity textures + final materials (as v5; panel v6: 4096 x 4096 gauge atlas, M_Screen, M_Annunciator
+bak_v6/gauges_tex.py                     Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+bak_v6/kit_geo_v1a.py                    Winter preflight kit + fuel can for the Utility Plane (kit v1).
+bak_v6/kit_geo_v1b.py                    Winter preflight kit + fuel can for the Utility Plane (kit v1).
+bak_v6/layout.py                         Shared cockpit/fuselage layout (Blender build frame: nose -Y, left/port +X, up +Z, metres).
+bak_v6/lib.py                            Geometry helpers for the utility aircraft build (bpy 5.x, metric, Z-up, nose toward -Y).
+bak_v6/nodes.py                          Tiny shader-node DSL + procedural materials for the aircraft (Cycles, baked later).
+bak_v6/nodes_cp.py                       Procedural cockpit materials (baked into T_Cockpit). World-space patterns, metres, Blender build frame.
+bak_v6/panel6.py                         v6 instrument panel specification (no bpy): positions, sizes and atlas regions shared by
+bak_v6/shade_v6.py                       v6 bake (panel v6; otherwise as v5): Airframe UVs transferred from the v4 bake (textures reused), UV-unwrap and bake five atlases.
+deliver/UtilityPlane_UE_v3/ue_import_utility_plane.py Unreal Engine 5.6 editor script: import the Utility Plane package and build its materials.
+deliver/UtilityPlane_UE_v4/ue_import_utility_plane.py Unreal Engine 5.6 editor script: import the Utility Plane package and build its materials.
+deliver/blender_pkg/blender_scripts/build.py Build the utility aircraft geometry. Output: out/plane_geo.blend
+deliver/blender_pkg/blender_scripts/fbxcheck.py Print FBX global axes + per-model local transforms, and what Unity will show (X mirrored).
+deliver/blender_pkg/blender_scripts/finalize.py Pack Unity textures, build final materials, join static parts, export FBX.
+deliver/blender_pkg/blender_scripts/lib.py Geometry helpers for the utility aircraft build (bpy 5.x, metric, Z-up, nose toward -Y).
+deliver/blender_pkg/blender_scripts/nodes.py Tiny shader-node DSL + procedural materials for the aircraft (Cycles, baked later).
+deliver/blender_pkg/blender_scripts/render.py Render preview views of a blend. usage: python3 render.py file.blend outprefix [views] [samples] [simple]
+deliver/blender_pkg/blender_scripts/shade.py UV-unwrap, build procedural source materials, bake PBR atlases.
+deliver/blender_pkg/blender_scripts/sheet.py Compose a turnaround sheet from renders. usage: python3 sheet.py <prefix> <out.png>
+deliver/pkg/Blender/blender_scripts/build.py Build the utility aircraft geometry. Output: out/plane_geo.blend
+deliver/pkg/Blender/blender_scripts/fbxcheck.py Print FBX global axes + per-model local transforms, and what Unity will show (X mirrored).
+deliver/pkg/Blender/blender_scripts/finalize.py Pack Unity textures, build final materials, join static parts, export FBX.
+deliver/pkg/Blender/blender_scripts/lib.py Geometry helpers for the utility aircraft build (bpy 5.x, metric, Z-up, nose toward -Y).
+deliver/pkg/Blender/blender_scripts/nodes.py Tiny shader-node DSL + procedural materials for the aircraft (Cycles, baked later).
+deliver/pkg/Blender/blender_scripts/render.py Render preview views of a blend. usage: python3 render.py file.blend outprefix [views] [samples] [simple]
+deliver/pkg/Blender/blender_scripts/shade.py UV-unwrap, build procedural source materials, bake PBR atlases.
+deliver/pkg/Blender/blender_scripts/sheet.py Compose a turnaround sheet from renders. usage: python3 sheet.py <prefix> <out.png>
+deliver/ue_v2/Blender/scripts/build_v2.py v2 (UE5.6 FP-sim): solid fuselage with real openings, doors, glass, split gear. Output: out/plane_geo_v2.blend
+deliver/ue_v2/Blender/scripts/cockpit.py Cockpit blockout for the FP sim: floor, bulkheads, instrument panel + gauges (UV-mapped to T_Gauges),
+deliver/ue_v2/Blender/scripts/fbxcheck_ue.py Inspect a UE-bound skeletal FBX: axes/units, root + bone rest transforms, clusters, mesh bounds.
+deliver/ue_v2/Blender/scripts/gauges_tex.py Draw the instrument atlas T_Gauges (4096x2048). 8x4 grid of 512 px cells (rows 0-2 = dials/radios),
+deliver/ue_v2/Blender/scripts/layout.py  Shared cockpit/fuselage layout (Blender build frame: nose -Y, left/port +X, up +Z, metres).
+deliver/ue_v2/Blender/scripts/lib.py     Geometry helpers for the utility aircraft build (bpy 5.x, metric, Z-up, nose toward -Y).
+deliver/ue_v2/Blender/scripts/pose_test.py Pose the UE skeletons in Blender (UE frame: cm, nose +X, left +Y, up +Z) and render to validate pivots/axes.
+deliver/ue_v2/Blender/scripts/render_eye.py First-person renders from the pilot eye point. usage: python3 render_eye.py <blend> <prefix> <views> <samples>
+deliver/ue_v2/Blender/scripts/rig_ue.py  Build UE5 rigid skeletal meshes from out/plane_v2.blend and export FBX.
+docs_kit/fill_kit_prompt.py              Fill the winter-kit Unity prompt: python3 docs_kit/fill_kit_prompt.py -> deliver/prompt_kit/{PLANE_WINTERKIT_UNITY.md,
+docs_kit/fill_kit_prompt12.py            Fill the winter-kit Unity prompt (kit 1.2, plane v9): python3 docs_kit/fill_kit_prompt.py -> deliver/prompt_kit/{PLANE_WINTERKIT_UNITY.md,
+docs_kit/fill_kit_prompt121.py           Fill the winter-kit Unity prompt (kit 1.2, prompt 1.2.1: plane v9 or v10): python3 docs_kit/fill_kit_prompt.py -> deliver/prompt_kit/{PLANE_WINTERKIT_UNITY.md,
+docs_kit/make_kit_docs.py                Generate WINTER_KIT.md (Russian) from Data/winter_kit.json: python3 docs_kit/make_kit_docs.py
+docs_v10/build_components10.py           v10 COMPONENTS template: COMPONENTS.v9src.md + v10 edits -> COMPONENTS.md.
+docs_v10/build_contract10.py             v10 contract template: UNITY_CONTRACT.v9src.md (the v9 template) + v10 edits -> UNITY_CONTRACT.md (still with
+docs_v10/build_contract10.v10a.py        v10 contract template: UNITY_CONTRACT.v9src.md (the v9 template) + v10 edits -> UNITY_CONTRACT.md (still with
+docs_v10/build_readme10.py               v10 README template: README.v9src.md + v10 edits -> README.md (placeholders stay for make_docs.py).
+docs_v10/fill_prompt10.py                Fill the v10 upgrade prompt from the export data:
+docs_v10/fill_prompt9.v9src.py           Fill the v9 upgrade prompt from the export data:
+docs_v10/make_docs.py                    Fill the v10 docs from the export data: python3 make_docs.py <export_log> <verify_log>
+docs_v10/v10_numbers.py                  v9 vs v10 numbers for the docs and the Unity task (one source for make_docs.py and fill_prompt10.py).
+docs_v10/v10_numbers.v10a.py             v9 vs v10 numbers for the docs and the Unity task (one source for make_docs.py and fill_prompt10.py).
+docs_v5/make_docs.py                     Fill the v5 docs from the export data: python3 make_docs.py <export_log> <verify_log>
+docs_v6/make_docs.py                     Fill the v6 docs from the export data: python3 make_docs.py <export_log> <verify_log>
+docs_v7/make_docs.py                     Fill the v7 docs from the export data: python3 make_docs.py <export_log> <verify_log>
+docs_v8/fill_prompt8.py                  Fill the v8 upgrade prompt from the export data:
+docs_v8/make_docs.py                     Fill the v8 docs from the export data: python3 make_docs.py <export_log> <verify_log>
+docs_v9/build_components.py              v9 COMPONENTS template from the v8 one: python3 build_components.py -> COMPONENTS.md (placeholders for make_docs.py)
+docs_v9/build_contract.py                v9 contract template from the v8 one: python3 build_contract.py -> UNITY_CONTRACT.md (placeholders for make_docs.py)
+docs_v9/fill_prompt9.py                  Fill the v9 upgrade prompt from the export data:
+docs_v9/make_docs.py                     Fill the v9 docs from the export data: python3 make_docs.py <export_log> <verify_log>
+export/ue/ue_import_utility_plane.py     Unreal Engine 5.6 editor script: import the Utility Plane package and build its materials.
+v10b/audit_fbx.py                        Audit UtilityPlane.fbx as Unity sees it: per mesh object tris, split verts (unique pos+normal+uv per corner),
+v10b/colcmp.py                           compare the convex colliders (COL_*) of two FBX: max distance of each one's vertices outside the other's hull
+v10b/dump_scene.py                       Dump the rendered triangles of a blend (world space, evaluated) for the visibility comparison:
+v10b/fbxverify_v10.py                    v10 (as v9; as v8, + survival kit FBX): re-import UtilityPlane.fbx (+ SM_StepLadder.fbx, SM_PlaneKey.fbx) and compare every object's world position /
+v10b/fix_normals.py                      Repair shading after face deletion (in place on out/plane_v9_final_v10.blend):
+v10b/lodcheck.py                         LOD pop check: for v9 and v10 (FBX as imported), the exterior seen from 50 m (LOD0 -> LOD1 switch, Unity 60 deg
+v10b/make_blend10_all.py                 One Blender file with everything (v10): plane v10 (out/plane_unity_v10.blend, the scene UtilityPlane.fbx was exported
+v10b/make_blend11_all.py                 One Blender file with everything (v10): plane v10 (out/plane_unity_v10.blend, the scene UtilityPlane.fbx was exported
+v10b/make_sheets10.py                    v10 preview sheets (v9 vs v10, same cameras) -> r/fin/sheet_*_v10_*.jpg
+v10b/mark_sharp_v10.py                   Last geometry step of v10b (in place on out/plane_v9_final_v10.blend): on every mesh with custom normals (the
+v10b/opt_lib.py                          Error-bounded mesh reduction for the v10 optimisation pass (Blender 5, bpy as a module).
+v10b/opt_lib2.py                         Per-triangle acceptance check for the v10 reduction (added after the v10 wheel lugs showed 56 deg shading errors
+v10b/opt_mo.py                           meshoptimizer-based error-bounded reduction (v10). Edge collapses only onto existing vertices, so every kept
+v10b/opt_v10b.py                         v10 geometry pass, revision b (after the first v10 showed wrong shading on a few small places: door chamfers, liner
+v10b/sharp_lib.py                        v10b normal storage helpers.
+v10b/tex_v10.py                          v10 textures: interior atlases (Cockpit, Interior, Floor, Seats, Fittings) -> 1024 px; gauges / displays -> 2048 px.
+v10b/vis_remove2.py                      v10b hidden-face removal (Embree; replaces vis_remove.py). Reads the reduced blend, deletes the faces of interior
+v10b/viscmp.py                           Visibility comparison of two scene dumps (dump_scene.py) with Embree ray casting, back faces culled (opaque Unity
+v10b/viscmp3.py                          3-way view comparison: v10 (B) against two references of v9 - the v9 FBX as imported (A1, what Unity got) and the
+v10b/wire.py                             ray-cast wireframe-over-shading image of a dump: python3 wire.py dump.npz out.png view_json
+v11/check_sync.py                        Cross-check the C# LightDefs against spec_v11.LIGHTS (angles, range, intensity, kelvin, offsets, glow / beam numbers).
+v11/fx_numpy.py                          numpy port of the v11 shaders UtilityPlane/Airlight and UtilityPlane/Beam (same maths, same parameters) for the
+v11/make_cookies.py                      Writes Textures/Cookies/T_Cookie_<key>.png (sRGB-encoded grey, alpha = grey) + a contact sheet.
+v11/make_lights_json.py                  Data/lights.json for the package (from spec_v11).
+v11/probe_cockpit.py                     
+v11/probe_glare.py                       
+v11/probe_lights.py                      
+v11/sim_ground.py                        Top-down snow illuminance (Unity units, URP falloff) for the parked plane, per exterior light and combined.
+v11/spec_v11.py                          Utility Plane v11 lighting: single source of truth.
+v11/blender/anim_cycles_v11.py           Short animation of the light functions (Cycles): beacons rotating, strobe double flashes, then the horror flicker
+v11/blender/blend_inspect.py             
+v11/blender/blend_inspect2.py            
+v11/blender/build_lights_v11.py          Utility Plane v11 - Blender light rig with IES profiles and light functions (Cycles).
+v11/blender/check_blend.py               
+v11/blender/gen_ies.py                   IES (LM-63-2002, type C, absolute candela) for every v11 lamp, from the same emission diagrams as the cookies
+v11/blender/ies_lm63.py                  Minimal IES LM-63-2002 writer (type C photometry, absolute candela, metres).
+v11/blender/make_sheets_cycles.py        Sheets: Cycles (IES + light functions + volumetric fog) next to the URP previews (what Unity shows).
+v11/blender/make_source_v11.py           out/plane_v9_final_v11.blend = the v10 export source + CP_PanelFloods (panel flood lamp housings and lenses).
+v11/blender/panel_flood_geo.py           Panel flood lamp fixtures (v11): the two red floods (Light_Flood, Light_Flood_2) get a visible lamp - a short black
+v11/blender/post.py                      EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+v11/blender/preview_floods.py            
+v11/blender/render_cycles_v11.py         Render one preview of UtilityPlane_v11_lights.blend in Cycles (linear EXR).
+v11/blender/iestest/ies_conv_test.py     
+v11/blender/iestest/ies_vs_cookie.py     
+v11/blender/iestest/make_test_ies.py     
+v11/docs/build_docs11.py                 v11 docs = v10 docs + lighting. python3 build_docs11.py <v10 package dir> <v11 package dir>
+v11/docs/psx_texture_tool.py             PS1 / PSX texture reduction used for the Utility Plane exterior (v9) and its survival kit.
+v11/prev/cy11.py                         v11 lighting previews, step 1 (Blender): the parked plane on snow at night, one camera, render passes only
+v11/prev/dbg_land.py                     
+v11/prev/dbg_px.py                       
+v11/prev/falloff_test.py                 
+v11/prev/gobo_test.py                    
+v11/prev/make_sheets11.py                v11 preview sheets (v10 vs v11 lighting, same cameras) -> export/unity_v11/previews/sheet_*_v11_*.jpg
+v11/prev/probe_mats.py                   
+v11/prev/run_jobs.py                     Runs the composite jobs (jobs.txt: prefix|variant|out|json) two at a time.
+v11/prev/urp_emulate.py                  v11 lighting previews, step 2: URP forward lighting recomputed per pixel from the Cycles passes (albedo, normal,
+v11/shadercheck/check.py                 Compile the HLSLPROGRAM blocks of a Unity URP .shader with DXC against the real URP 17 (6000.0) ShaderLibrary.
+v12/build_docs12.py                      v12 docs inside the package: UNITY_CONTRACT.md, README.md, COMPONENTS.md (replacements on the v11 texts + new
+v12/make_blend12.py                      v12 Blender files from the v11 ones: same scenes, PSX interior materials (as Unity v12):
+v12/make_package_v12.py                  v12 package (PSX interior + pixel-art text atlas): export/unity_v12/Assets/UtilityPlane from the v11 package.
+v12/docs/psx_texture_tool.py             PS1 / PSX texture reduction used for the Utility Plane exterior (v9) and its survival kit.
+v12/prev/cy12.py                         v12 previews (PSX interior), step 1 (Blender). Same as v11/prev/cy11.py plus: cfg "tex" = texture folder (default
+v12/prev/make_sheets12.py                v12 preview sheets (v11 vs v12: PSX interior, pixel-art text; same cameras, URP twin) -> v12 deliv previews/
+v12/tex/dump_text_faces.py               For every triangle of the text-atlas materials (M_Gauges, M_Annunciator, M_RadioDisplay): object, UVs, world
+v12/tex/dump_uv.py                       Dump UV triangles per material from the v11 Unity-hierarchy scene (what the FBX carries).
+v12/tex/gauges_psx.py                    v12: the instrument / placard atlas redrawn as PS1-style pixel art, 1024 x 1024, same UV layout as v7-v11
+v12/tex/make_font_cs.py                  Writes Scripts/UtilityPlanePixelFont.cs (glyph tables generated from pxfont.py, so the game's screen text uses
+v12/tex/psx_interior.py                  v12: PS1 / PSX versions of the interior atlases (Cockpit, Interior, Floor, Seats, Fittings) from the v9 sources
+v12/tex/pxfont.py                        Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+v12/work/probe_mats.py                   
+v12r2/build_docs12r2.py                  v12 edition 2 docs inside the package: UNITY_CONTRACT.md, README.md, COMPONENTS.md (replacements on the v11 texts +
+v12r2/make_package_v12r2.py              v12 package, edition 2 (stronger PSX interior + pixel-art text atlas): export/unity_v12r2/Assets/UtilityPlane from
+v12r2/docs/psx_texture_tool.py           PS1 / PSX texture reduction used for the Utility Plane exterior (v9) and its survival kit.
+v12r2/prev/make_sheets12r2.py            v12 edition 2 preview sheets (v11 / v12 edition 1 / edition 2: stronger PSX interior; same cameras, URP twin)
+v12r2/prev/ps1_post_emul.py              Quick look: PS1 output (15-bit colour, the PS1 GPU 4x4 dither table, at a virtual 240-line pixel grid) applied to a
+v12r2/tex/dump_geo.py                    v12r2: per-material triangles with UV, world position and shading normal from the v11 Unity-hierarchy scene (the
+v12r2/tex/geomaps.py                     v12r2: per-texel world position / shading normal / object id of the interior atlases, rasterised from
+v12r2/tex/psx_interior2.py               v12 r2: stronger PS1 / PSX interior atlases (user: "сильнее PSX везде": bigger texels, fewer colours, more contrast,
+v13/build_docs13.py                      v13 docs: README.md, COMPONENTS.md, UNITY_CONTRACT.md of export/unity_v13/Assets/UtilityPlane (copied from v12r2 by
+v13/lens_tex_v13.py                      T_Lens_BaseColor.png / T_Lens_Emission.png (64 px, 32 px per region: PS1 / PSX texel size close to the airframe's
+v13/make_blend13.py                      v13 Blender files from the v12 ones (same scenes, collections, kit, lights):
+v13/make_package_v13.py                  v13 package: export/unity_v13/Assets/UtilityPlane from the v12 edition-2 package (export/unity_v12r2) +
+v13/make_sheets13.py                     Preview sheets and the door GIF for the v13 delivery.
+v13/patch_builder13.py                   One-off: extend build_docs13.py with the v13.1 edge grip (zones 81, sockets 127, FBX 399) and fix the 20.3 ref.
+v13/prev_seq.py                          Door motion frames for a GIF: python3 prev_seq.py <blend> <outdir> <view> <frames> <w> <h> <samples>
+v13/prev_src.py                          Quick Cycles close-ups of the v13 source (fixtures, rails, door poses). python3 prev_src.py <blend> <outdir> [views]
+v13/src_v13.py                           Utility Plane v13 source: out/plane_v9_final_v11.blend +
+v13/stage_outputs13.py                   Copy the v13 delivery into /mnt/user-data/outputs (for the device commit) and write an md5 manifest.
+v13/insp/blend12_info.py                 
+v13/insp/cargo_door.py                   
+v13/insp/cmp_objs.py                     
+v13/insp/door_clear.py                   Clearance of the sliding cargo doors along their path: door vertices vs the fuselage outer skin (aft of the opening),
+v13/insp/door_edge.py                    
+v13/insp/door_profile.py                 
+v13/insp/door_rails.py                   
+v13/insp/door_x.py                       
+v13/insp/door_x2.py                      
+v13/insp/fbx_cmp.py                      Compare two FBX files: model names, parents, local transforms; geometry vertex counts by model.
+v13/insp/fbx_col.py                      
+v13/insp/flap_door.py                    
+v13/insp/heights.py                      
+v13/insp/le_profile.py                   
+v13/insp/lens_gap.py                     
+v13/insp/lights_link.py                  
+v13/insp/mats.py                         
+v13/insp/mounts.py                       
+v13/insp/side_profile.py                 
+v13/insp/src_uv.py                       
+v13/insp/taper.py                        
+v13/insp/tri_count.py                    
+v13/insp/verify_blend13.py               
+v13/insp/zone_overlap.py                 

@@ -1,0 +1,128 @@
+{
+ "struts": {
+  "L": {
+   "pin_fuselage": [
+    0.75618,
+    -1.55416,
+    1.13243
+   ],
+   "pin_wing": [
+    3.4,
+    -1.75,
+    2.65865
+   ],
+   "length": 3.059
+  },
+  "R": {
+   "pin_fuselage": [
+    -0.75618,
+    -1.55416,
+    1.13243
+   ],
+   "pin_wing": [
+    -3.4,
+    -1.75,
+    2.65865
+   ],
+   "length": 3.059
+  }
+ },
+ "strut_section": {
+  "chord": 0.14,
+  "thickness": 0.042,
+  "axis_at_chord": 0.35
+ },
+ "jury": {
+  "L": {
+   "base": [
+    2.185,
+    -1.66,
+    1.95726
+   ],
+   "top": [
+    2.185,
+    -1.61,
+    2.62458
+   ]
+  },
+  "R": {
+   "base": [
+    -2.185,
+    -1.66,
+    1.95726
+   ],
+   "top": [
+    -2.185,
+    -1.61,
+    2.62458
+   ]
+  }
+ },
+ "grab_handle": {
+  "L": {
+   "a": [
+    1.17996,
+    -1.69478,
+    1.37707
+   ],
+   "b": [
+    1.50396,
+    -1.71878,
+    1.56411
+   ]
+  },
+  "R": {
+   "a": [
+    -1.17996,
+    -1.69478,
+    1.37707
+   ],
+   "b": [
+    -1.50396,
+    -1.71878,
+    1.56411
+   ]
+  }
+ },
+ "dorsal": {
+  "start_y": 1.75,
+  "merge": [
+   3.67246,
+   2.98
+  ],
+  "end_y": 3.95,
+  "embed": 0.035
+ },
+ "antennas_moved": {
+  "comm_blade_to_y": 0.85,
+  "whip_to_y": 1.3,
+  "components": {
+   "blade": 6,
+   "whip": 3
+  }
+ },
+ "checks": {
+  "L": {
+   "min_dist_main_to_fuselage": 0.5241,
+   "main_verts_in_wing": 0,
+   "tiedown_ring_to_strut": 0.0395,
+   "kit_attach_to_strut": 0.0114
+  },
+  "R": {
+   "min_dist_main_to_fuselage": 0.5241,
+   "main_verts_in_wing": 0,
+   "tiedown_ring_to_strut": 0.0395,
+   "kit_attach_to_strut": 0.0115
+  },
+  "dorsal": {
+   "verts": 2419,
+   "aft_verts": 451,
+   "aft_verts_outside_fin_above_skin": 0,
+   "merge": [
+    3.6725,
+    2.98
+   ]
+  },
+  "antenna_to_dorsal": 0.4172
+ }
+}

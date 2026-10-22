@@ -1,0 +1,6489 @@
+{
+ "parts": {
+  "Window_Glass": {
+   "kind": "static",
+   "pivot": [
+    -0.1,
+    -1.64,
+    1.55
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "window pane (glass material, both faces)",
+   "object": "Window_Glass"
+  },
+  "Door_L": {
+   "kind": "hinge",
+   "pivot": [
+    -2.47,
+    0.815,
+    1.115
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    170
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "passive leaf: lift Door_DropBolt first; opens after Door_R",
+   "object": "Door_L",
+   "box": {
+    "center": [
+     0.0402,
+     -0.4015,
+     0.0
+    ],
+    "size": [
+     0.1505,
+     0.827,
+     2.01
+    ]
+   }
+  },
+  "Door_R": {
+   "kind": "hinge",
+   "pivot": [
+    -2.47,
+    -0.815,
+    1.115
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    170
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "active leaf: padlock off, hasp open (or Door_Bolt drawn from inside); opens outward",
+   "object": "Door_R",
+   "box": {
+    "center": [
+     0.0397,
+     0.4015,
+     0.0
+    ],
+    "size": [
+     0.1516,
+     0.827,
+     2.01
+    ]
+   }
+  },
+  "Door_Hasp": {
+   "kind": "hinge",
+   "pivot": [
+    -2.479,
+    -0.03,
+    1.1
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    170
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Door_R",
+   "states": [
+    "over the staple",
+    "folded back"
+   ],
+   "note": "hasp strap: swings out once the padlock is off the staple",
+   "object": "Door_Hasp",
+   "box": {
+    "center": [
+     0.0,
+     0.0549,
+     0.0
+    ],
+    "size": [
+     0.012,
+     0.1202,
+     0.048
+    ]
+   }
+  },
+  "Padlock": {
+   "kind": "item",
+   "pivot": [
+    -2.497,
+    0.045,
+    1.115
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Door_L",
+   "states": [
+    "locked",
+    "open",
+    "off"
+   ],
+   "note": "brass padlock through the staple and the hasp: Shed_Key opens it, then it lifts off",
+   "object": "Padlock",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.0396
+    ],
+    "size": [
+     0.022,
+     0.05,
+     0.0958
+    ]
+   }
+  },
+  "Door_DropBolt": {
+   "kind": "slide",
+   "pivot": [
+    -2.385,
+    0.08,
+    0.05
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Door_L",
+   "states": [
+    "down (in the slab)",
+    "up"
+   ],
+   "note": "cane bolt inside the passive leaf: drops 5 cm into a hole in the slab; lift it to open Door_L",
+   "object": "Door_DropBolt",
+   "box": {
+    "center": [
+     0.0168,
+     0.0,
+     0.3
+    ],
+    "size": [
+     0.0485,
+     0.013,
+     0.6
+    ]
+   }
+  },
+  "Door_Bolt": {
+   "kind": "slide",
+   "pivot": [
+    -2.389,
+    -0.03,
+    1.1
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Door_R",
+   "states": [
+    "drawn",
+    "shot"
+   ],
+   "note": "barrel bolt inside: shoot it (+0.06) into the keeper on Door_L to lock the doors from inside",
+   "object": "Door_Bolt",
+   "box": {
+    "center": [
+     0.0122,
+     -0.065,
+     0.0
+    ],
+    "size": [
+     0.0356,
+     0.13,
+     0.013
+    ]
+   }
+  },
+  "Shed_Key": {
+   "kind": "item",
+   "pivot": [
+    -2.422,
+    0.55,
+    2.288
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "padlock key on a nail above the door, outside (find it with a torch)",
+   "object": "Shed_Key",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.022
+    ],
+    "size": [
+     0.004,
+     0.022,
+     0.066
+    ]
+   }
+  },
+  "Window_Shutter": {
+   "kind": "hinge",
+   "pivot": [
+    0.23,
+    -1.545,
+    1.566
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "open (on the wall)",
+    "closed"
+   ],
+   "note": "inside shutter: 0 = folded open on the wall, 180 = over the window; Window_Latch holds it shut",
+   "object": "Window_Shutter",
+   "box": {
+    "center": [
+     0.326,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.668,
+     0.08,
+     0.528
+    ]
+   }
+  },
+  "Window_Latch": {
+   "kind": "hinge",
+   "pivot": [
+    -0.48,
+    -1.545,
+    1.55
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "free",
+    "holding the shutter"
+   ],
+   "note": "turn-button on the wall west of the window: 90 = across the closed shutter edge (+ = clockwise seen from the room)",
+   "object": "Window_Latch",
+   "box": {
+    "center": [
+     0.0,
+     0.01,
+     0.0
+    ],
+    "size": [
+     0.024,
+     0.02,
+     0.16
+    ]
+   }
+  },
+  "Louvre_Blade_1": {
+   "kind": "hinge",
+   "pivot": [
+    2.34,
+    -0.25,
+    0.575
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "object": "Louvre_Blade_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0357,
+     1.01,
+     0.159
+    ]
+   }
+  },
+  "Louvre_Blade_2": {
+   "kind": "hinge",
+   "pivot": [
+    2.34,
+    -0.25,
+    0.725
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "object": "Louvre_Blade_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0357,
+     1.01,
+     0.159
+    ]
+   }
+  },
+  "Louvre_Blade_3": {
+   "kind": "hinge",
+   "pivot": [
+    2.34,
+    -0.25,
+    0.875
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "object": "Louvre_Blade_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0357,
+     1.01,
+     0.159
+    ]
+   }
+  },
+  "Louvre_Blade_4": {
+   "kind": "hinge",
+   "pivot": [
+    2.34,
+    -0.25,
+    1.025
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "object": "Louvre_Blade_4",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0357,
+     1.01,
+     0.159
+    ]
+   }
+  },
+  "Louvre_Blade_5": {
+   "kind": "hinge",
+   "pivot": [
+    2.34,
+    -0.25,
+    1.175
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "object": "Louvre_Blade_5",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0357,
+     1.01,
+     0.159
+    ]
+   }
+  },
+  "Louvre_Blade_6": {
+   "kind": "hinge",
+   "pivot": [
+    2.34,
+    -0.25,
+    1.325
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "object": "Louvre_Blade_6",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0357,
+     1.01,
+     0.159
+    ]
+   }
+  },
+  "Louvre_Lever": {
+   "kind": "hinge",
+   "pivot": [
+    2.24,
+    0.35,
+    1.1
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "louvre operator: pull the handle towards the room (0 shut .. 75 open); the six blades follow; running with it shut overheats the engine (TEMP lamp)",
+   "object": "Louvre_Lever",
+   "box": {
+    "center": [
+     0.0,
+     -0.0005,
+     -0.1465
+    ],
+    "size": [
+     0.032,
+     0.041,
+     0.317
+    ]
+   }
+  },
+  "Exhaust_Flap": {
+   "kind": "hinge",
+   "pivot": [
+    2.75,
+    -0.082,
+    3.706
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    70
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "shut",
+    "lifted"
+   ],
+   "note": "rain flap on the stack: the exhaust lifts it while the engine runs (flutter 20..60 with the beat), drops shut when it stops",
+   "object": "Exhaust_Flap",
+   "box": {
+    "center": [
+     0.0,
+     -0.0452,
+     0.0
+    ],
+    "size": [
+     0.1,
+     0.1007,
+     0.012
+    ]
+   }
+  },
+  "Light_Switch": {
+   "kind": "hinge",
+   "pivot": [
+    -2.235,
+    -0.98,
+    1.4
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    50
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "shed lights (both bulkheads) on the SHED circuit (Board_MCB_8): up = on (+50)",
+   "object": "Light_Switch",
+   "box": {
+    "center": [
+     0.0122,
+     0.0,
+     -0.0053
+    ],
+    "size": [
+     0.0287,
+     0.0087,
+     0.0197
+    ]
+   }
+  },
+  "Lens_Bulk_Ceiling": {
+   "kind": "static",
+   "pivot": [
+    0.83,
+    0.2,
+    2.372
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "frosted dome of the ceiling bulkhead (lights up with LIGHT_Bulk_Ceiling)",
+   "object": "Lens_Bulk_Ceiling"
+  },
+  "Lens_Bulk_Board": {
+   "kind": "static",
+   "pivot": [
+    -1.45,
+    -1.502,
+    2.22
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "frosted dome of the wall bulkhead",
+   "object": "Lens_Bulk_Board"
+  },
+  "Lens_Ext_Door": {
+   "kind": "static",
+   "pivot": [
+    -2.8,
+    0.0,
+    2.36
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "bulb under the barn-light shade over the door",
+   "object": "Lens_Ext_Door"
+  },
+  "Shed_Signs": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "wall signs (panel atlas)",
+   "object": "Shed_Signs"
+  },
+  "Door_L_Sign": {
+   "kind": "static",
+   "pivot": [
+    -2.453,
+    0.47,
+    1.55
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Door_L",
+   "states": [],
+   "note": "DANGER 400 V on the passive leaf",
+   "object": "Door_L_Sign"
+  },
+  "Door_R_Sign": {
+   "kind": "static",
+   "pivot": [
+    -2.453,
+    -0.42,
+    1.86
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Door_R",
+   "states": [],
+   "note": "GENERATOR on the active leaf",
+   "object": "Door_R_Sign"
+  },
+  "Snow_Roof": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    3.4855
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "0 none",
+    "1 full (~11 cm)"
+   ],
+   "note": "snow on the roof: blend shape Clear (100 = no snow: the mesh sinks into the roof sheet, hide the renderer there); slides off in chunks (VFX) when the stack warms it",
+   "blendshape": "Clear",
+   "default": "hidden",
+   "object": "Snow_Roof"
+  },
+  "Snow_DoorDrift": {
+   "kind": "static",
+   "pivot": [
+    -2.9,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "0 none",
+    "1 drift up to 0.7 m"
+   ],
+   "note": "drift against the doors outside: blend shape Clear (100 = dug out, the mesh sinks under the ground: hide it); the leaves (bottom edge 0.11 m up) sweep over it only from Clear 85, below that they jam after a few degrees - dig with the van's shovel",
+   "blendshape": "Clear",
+   "default": "hidden",
+   "object": "Snow_DoorDrift"
+  },
+  "Shed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the shed (slab, walls, roof, trims, services); prefab root",
+   "object": "Shed"
+  },
+  "Engine_Belt": {
+   "kind": "static",
+   "pivot": [
+    1.135,
+    -0.25,
+    0.84
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "ok",
+    "loose",
+    "broken"
+   ],
+   "note": "fan belt (crank, fan, dynamo): broken = hide it (CHG lamp on, the fan stops: overheating), loose = squeal and a weak charge",
+   "object": "Engine_Belt"
+  },
+  "Engine_Fan": {
+   "kind": "spin",
+   "pivot": [
+    1.36,
+    -0.25,
+    0.84
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "cooling fan: turns with the engine (1500 rpm x 1.2), negative about +x - it blows through the radiator towards the louvre",
+   "spin_sign": -1,
+   "object": "Engine_Fan",
+   "box": {
+    "center": [
+     -0.0042,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.0416,
+     0.3643,
+     0.3643
+    ]
+   }
+  },
+  "Radiator_Cap": {
+   "kind": "twist",
+   "pivot": [
+    1.54,
+    -0.1,
+    1.31
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "safety stop",
+    "off"
+   ],
+   "note": "pressure cap: 90 = first stop (hot: steam hisses out), push down and turn on to 180, then it lifts off",
+   "object": "Radiator_Cap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.012
+    ],
+    "size": [
+     0.085,
+     0.07,
+     0.024
+    ]
+   },
+   "removable": "end"
+  },
+  "Radiator_Drain": {
+   "kind": "twist",
+   "pivot": [
+    1.582,
+    -0.67,
+    0.36
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator drain cock (south side, low, beside the upright): unscrew (+) to open, coolant runs out (VFX_RadDrain)",
+   "removable": false,
+   "object": "Radiator_Drain",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.05,
+     0.02,
+     0.01
+    ]
+   }
+  },
+  "Engine_AirFilterLid": {
+   "kind": "twist",
+   "pivot": [
+    0.66,
+    -0.63,
+    1.325
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    120
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "air filter lid: undo the wing nut (+), then lift off",
+   "object": "Engine_AirFilterLid",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.0175
+    ],
+    "size": [
+     0.188,
+     0.1833,
+     0.055
+    ]
+   },
+   "removable": "end"
+  },
+  "Engine_StopLever": {
+   "kind": "hinge",
+   "pivot": [
+    0.43,
+    -0.575,
+    0.8
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    40
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "run",
+    "stop"
+   ],
+   "note": "manual stop on the injection pump: pull the red knob back (+40) and hold until the engine dies; springs back",
+   "object": "Engine_StopLever",
+   "box": {
+    "center": [
+     0.0,
+     -0.004,
+     0.061
+    ],
+    "size": [
+     0.028,
+     0.028,
+     0.122
+    ]
+   }
+  },
+  "Engine_GovernorLever": {
+   "kind": "hinge",
+   "pivot": [
+    0.6,
+    -0.566,
+    0.7
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    -15,
+    15
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "set (1500 rpm, 50 Hz)"
+   ],
+   "note": "governor speed lever, locked at 1500 rpm: frequency = 50 + angle / 6 Hz (needs a spanner to move)",
+   "object": "Engine_GovernorLever",
+   "box": {
+    "center": [
+     0.024,
+     0.0,
+     -0.032
+    ],
+    "size": [
+     0.0676,
+     0.01,
+     0.0528
+    ]
+   }
+  },
+  "Engine_FuelFilter": {
+   "kind": "twist",
+   "pivot": [
+    0.92,
+    -0.59,
+    0.778
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "clean",
+    "clogged (waxed diesel)"
+   ],
+   "note": "spin-on fuel filter: unscrew (+, two turns, from below), then it comes off; FuelFilter_Spare goes on in its place (Slot_FuelFilter); clogged = the engine starves and dies",
+   "removable": "end",
+   "object": "Engine_FuelFilter",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.079
+    ],
+    "size": [
+     0.084,
+     0.084,
+     0.158
+    ]
+   }
+  },
+  "Engine_BleedScrew": {
+   "kind": "twist",
+   "pivot": [
+    0.92,
+    -0.59,
+    0.82
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "bleed screw on the filter head: open a turn or two (+), pump Engine_PrimerLever until fuel comes out without bubbles (VFX_FuelBleed), close it; needed after the tank ran dry",
+   "removable": false,
+   "object": "Engine_BleedScrew",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.009
+    ],
+    "size": [
+     0.017,
+     0.0147,
+     0.018
+    ]
+   }
+  },
+  "Engine_PrimerLever": {
+   "kind": "hinge",
+   "pivot": [
+    0.66,
+    -0.5,
+    0.52
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    35
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "rest"
+   ],
+   "note": "hand primer on the lift pump: pump it (0..35 and back) to push fuel through for bleeding",
+   "object": "Engine_PrimerLever",
+   "box": {
+    "center": [
+     0.0,
+     -0.0105,
+     -0.0335
+    ],
+    "size": [
+     0.0121,
+     0.019,
+     0.067
+    ]
+   }
+  },
+  "Engine_WaterDrain": {
+   "kind": "twist",
+   "pivot": [
+    1.2,
+    -0.73,
+    0.36
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "drain tap under the water separator bowl: open (+) until the water layer has run out, then diesel",
+   "removable": false,
+   "object": "Engine_WaterDrain",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.012
+    ],
+    "size": [
+     0.03,
+     0.0113,
+     0.024
+    ]
+   }
+  },
+  "Engine_Dipstick": {
+   "kind": "slide",
+   "pivot": [
+    0.9,
+    0.09,
+    1.0
+   ],
+   "axis": [
+    0.04,
+    0.2798,
+    0.9592
+   ],
+   "range": [
+    0,
+    0.42
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "pull out by the yellow ring (+0.42): oil level marks on the stick (texture), wipe, push back",
+   "object": "Engine_Dipstick",
+   "box": {
+    "center": [
+     0.0013,
+     -0.0483,
+     -0.1683
+    ],
+    "size": [
+     0.0432,
+     0.1315,
+     0.432
+    ]
+   }
+  },
+  "Engine_OilCap": {
+   "kind": "twist",
+   "pivot": [
+    0.92,
+    -0.2,
+    1.2
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "oil filler on the rocker cover: quarter turn (+), lift off; Pour_Oil",
+   "removable": "end",
+   "object": "Engine_OilCap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.014
+    ],
+    "size": [
+     0.056,
+     0.056,
+     0.028
+    ]
+   }
+  },
+  "Battery": {
+   "kind": "item",
+   "pivot": [
+    0.47,
+    -0.5025,
+    0.22
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "charge 0..1"
+   ],
+   "note": "12 V 60 Ah starting battery, the same size and post layout as the van's Battery (they swap); lift by the strap with both clamps off",
+   "object": "Battery",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.1322
+    ],
+    "size": [
+     0.278,
+     0.175,
+     0.2644
+    ]
+   }
+  },
+  "Battery_ClampPos": {
+   "kind": "slide",
+   "pivot": [
+    0.365,
+    -0.5425,
+    0.437
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "loosen the bolt, lift off the post (minus first); the cable runs under the skid to the starter",
+   "object": "Battery_ClampPos",
+   "box": {
+    "center": [
+     0.006,
+     -0.0633,
+     -0.13
+    ],
+    "size": [
+     0.048,
+     0.1625,
+     0.294
+    ]
+   }
+  },
+  "Battery_ClampNeg": {
+   "kind": "slide",
+   "pivot": [
+    0.575,
+    -0.5425,
+    0.437
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "loosen the bolt, lift off the post (minus first); the cable runs under the skid to the starter",
+   "object": "Battery_ClampNeg",
+   "box": {
+    "center": [
+     0.007,
+     -0.0643,
+     -0.1365
+    ],
+    "size": [
+     0.046,
+     0.1605,
+     0.281
+    ]
+   }
+  },
+  "Gen_Breaker": {
+   "kind": "hinge",
+   "pivot": [
+    -0.15,
+    -0.65,
+    0.72
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "alternator main breaker on the terminal box (63 A): up = output to the board; trips to the middle on overload",
+   "object": "Gen_Breaker",
+   "box": {
+    "center": [
+     0.0,
+     -0.0132,
+     -0.0176
+    ],
+    "size": [
+     0.03,
+     0.036,
+     0.0424
+    ]
+   }
+  },
+  "Genset_Plates": {
+   "kind": "static",
+   "pivot": [
+    -0.603,
+    -0.25,
+    0.93
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "start instructions under the panel, alternator nameplate",
+   "object": "Genset_Plates"
+  },
+  "GPanel_Face": {
+   "kind": "static",
+   "pivot": [
+    -0.663,
+    -0.25,
+    1.29
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "control panel face (panel atlas): gauges and labels",
+   "object": "GPanel_Face"
+  },
+  "Needle_Oil": {
+   "kind": "hinge",
+   "pivot": [
+    -0.668,
+    -0.05,
+    1.445
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -60.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 8,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "bar"
+   },
+   "object": "Needle_Oil"
+  },
+  "Needle_Temp": {
+   "kind": "hinge",
+   "pivot": [
+    -0.668,
+    -0.18,
+    1.445
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -60.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 40,
+    "max": 120,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "deg C"
+   },
+   "object": "Needle_Temp"
+  },
+  "Needle_Batt": {
+   "kind": "hinge",
+   "pivot": [
+    -0.668,
+    -0.31,
+    1.445
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -60.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 8,
+    "max": 16,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "V"
+   },
+   "object": "Needle_Batt"
+  },
+  "Needle_GenV": {
+   "kind": "hinge",
+   "pivot": [
+    -0.668,
+    -0.07,
+    1.308
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 500,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "V"
+   },
+   "object": "Needle_GenV"
+  },
+  "Needle_GenA": {
+   "kind": "hinge",
+   "pivot": [
+    -0.668,
+    -0.25,
+    1.308
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 100,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "A"
+   },
+   "object": "Needle_GenA"
+  },
+  "Needle_GenHz": {
+   "kind": "hinge",
+   "pivot": [
+    -0.668,
+    -0.43,
+    1.308
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 45,
+    "max": 55,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "Hz"
+   },
+   "object": "Needle_GenHz"
+  },
+  "GLamp_GLOW": {
+   "kind": "static",
+   "pivot": [
+    -0.667,
+    -0.01,
+    1.21
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "amber: glow plugs heating (GLOW button held / key at START)",
+   "object": "GLamp_GLOW"
+  },
+  "GLamp_CHG": {
+   "kind": "static",
+   "pivot": [
+    -0.667,
+    -0.09,
+    1.21
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "red: no charge from the dynamo (key ON, engine stopped, or the belt broken)",
+   "object": "GLamp_CHG"
+  },
+  "GLamp_OIL": {
+   "kind": "static",
+   "pivot": [
+    -0.667,
+    -0.17,
+    1.21
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "red: low oil pressure (key ON, engine stopped, or out of oil: stop it!)",
+   "object": "GLamp_OIL"
+  },
+  "GLamp_TEMP": {
+   "kind": "static",
+   "pivot": [
+    -0.667,
+    -0.25,
+    1.21
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "red: coolant too hot (louvre shut, belt broken, no coolant)",
+   "object": "GLamp_TEMP"
+  },
+  "GLamp_RUN": {
+   "kind": "static",
+   "pivot": [
+    -0.667,
+    -0.33,
+    1.21
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "green: running and the voltage is up",
+   "object": "GLamp_RUN"
+  },
+  "Gen_VAdj": {
+   "kind": "hinge",
+   "pivot": [
+    -0.663,
+    -0.46,
+    1.205
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    -135,
+    135
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "nominal 400 V at 0"
+   ],
+   "note": "voltage trim: + (clockwise) raises the output voltage, 400 V + angle x 0.3 V",
+   "object": "Gen_VAdj",
+   "box": {
+    "center": [
+     -0.01,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.02,
+     0.03,
+     0.03
+    ]
+   }
+  },
+  "Gen_Key": {
+   "kind": "twist",
+   "pivot": [
+    -0.663,
+    -0.05,
+    1.1
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    95
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "OFF 0",
+    "ON 52",
+    "START 95"
+   ],
+   "note": "key switch: ON (52) powers the panel; START (95, springs back to ON) cranks; pulled out at OFF",
+   "removable": "start",
+   "object": "Gen_Key",
+   "box": {
+    "center": [
+     -0.0255,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.043,
+     0.0061,
+     0.024
+    ]
+   }
+  },
+  "Gen_GlowButton": {
+   "kind": "slide",
+   "pivot": [
+    -0.675,
+    -0.23,
+    1.1
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.006
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "out",
+    "pressed"
+   ],
+   "note": "GLOW: hold 20 s before starting in the cold (GLamp_GLOW on); springs back",
+   "object": "Gen_GlowButton",
+   "box": {
+    "center": [
+     0.006,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.012,
+     0.0247,
+     0.026
+    ]
+   }
+  },
+  "Gen_StopButton": {
+   "kind": "slide",
+   "pivot": [
+    -0.675,
+    -0.33,
+    1.1
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.006
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "out",
+    "pressed"
+   ],
+   "note": "STOP: electric fuel cut-off while held; springs back",
+   "object": "Gen_StopButton",
+   "box": {
+    "center": [
+     0.006,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.012,
+     0.0247,
+     0.026
+    ]
+   }
+  },
+  "Gen_EStop": {
+   "kind": "slide",
+   "pivot": [
+    -0.7,
+    -0.44,
+    1.1
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.01
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "released",
+    "latched in"
+   ],
+   "note": "emergency stop: push in (latches, the engine stops at once); twist clockwise to release (back to 0)",
+   "object": "Gen_EStop",
+   "box": {
+    "center": [
+     0.0125,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.025,
+     0.048,
+     0.048
+    ]
+   }
+  },
+  "Genset": {
+   "kind": "static",
+   "pivot": [
+    0.55,
+    -0.25,
+    0.1
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "stopped",
+    "cranking",
+    "running",
+    "dying"
+   ],
+   "note": "diesel generating set on its skid: engine, alternator, radiator, panel (one mesh); moving parts are children",
+   "object": "Genset"
+  },
+  "Board_Face": {
+   "kind": "static",
+   "pivot": [
+    -1.45,
+    -1.46,
+    1.45
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "switchboard face plate (panel atlas)",
+   "object": "Board_Face"
+  },
+  "Needle_BoardV": {
+   "kind": "hinge",
+   "pivot": [
+    -1.21,
+    -1.454,
+    1.77
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 500,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "V"
+   },
+   "object": "Needle_BoardV"
+  },
+  "Needle_BoardA": {
+   "kind": "hinge",
+   "pivot": [
+    -1.45,
+    -1.454,
+    1.77
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 100,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "A"
+   },
+   "object": "Needle_BoardA"
+  },
+  "Needle_BoardHz": {
+   "kind": "hinge",
+   "pivot": [
+    -1.69,
+    -1.454,
+    1.77
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 45,
+    "max": 55,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "Hz"
+   },
+   "object": "Needle_BoardHz"
+  },
+  "BLamp_LINE": {
+   "kind": "static",
+   "pivot": [
+    -1.21,
+    -1.454,
+    1.585
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "white: grid voltage on the LINE drop",
+   "object": "BLamp_LINE"
+  },
+  "BLamp_GEN": {
+   "kind": "static",
+   "pivot": [
+    -1.45,
+    -1.454,
+    1.585
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "green: the set is running and Gen_Breaker is on",
+   "object": "BLamp_GEN"
+  },
+  "BLamp_OVERLOAD": {
+   "kind": "static",
+   "pivot": [
+    -1.69,
+    -1.454,
+    1.585
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "red: more than 63 A drawn (too many circuits at once): a breaker trips",
+   "object": "BLamp_OVERLOAD"
+  },
+  "Board_Changeover": {
+   "kind": "hinge",
+   "pivot": [
+    -1.25,
+    -1.46,
+    1.35
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    -60,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "LINE -60",
+    "OFF 0",
+    "GEN 60"
+   ],
+   "note": "changeover switch: the handle points at LINE (-60), OFF (0) or GEN (+60); + = clockwise seen from the room",
+   "object": "Board_Changeover",
+   "box": {
+    "center": [
+     0.0,
+     0.0335,
+     0.0
+    ],
+    "size": [
+     0.0418,
+     0.035,
+     0.13
+    ]
+   }
+  },
+  "Board_Brk_Gen": {
+   "kind": "hinge",
+   "pivot": [
+    -1.55,
+    -1.41,
+    1.35
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "GEN main breaker (63 A): up = the set feeds the busbar (with GEN selected)",
+   "object": "Board_Brk_Gen",
+   "box": {
+    "center": [
+     0.0,
+     0.0152,
+     -0.0087
+    ],
+    "size": [
+     0.022,
+     0.0369,
+     0.0289
+    ]
+   }
+  },
+  "Board_Brk_Line": {
+   "kind": "hinge",
+   "pivot": [
+    -1.73,
+    -1.41,
+    1.35
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "LINE main breaker (63 A): up = the grid feeds the busbar (with LINE selected)",
+   "object": "Board_Brk_Line",
+   "box": {
+    "center": [
+     0.0,
+     0.0152,
+     -0.0087
+    ],
+    "size": [
+     0.022,
+     0.0369,
+     0.0289
+    ]
+   }
+  },
+  "Board_MCB_1": {
+   "kind": "hinge",
+   "pivot": [
+    -1.135,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 1: HALL LIGHTS (up = on); trips on overload",
+   "object": "Board_MCB_1",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_2": {
+   "kind": "hinge",
+   "pivot": [
+    -1.225,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 2: OUTDOOR LIGHTS (up = on); trips on overload",
+   "object": "Board_MCB_2",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_3": {
+   "kind": "hinge",
+   "pivot": [
+    -1.315,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 3: HEATING (up = on); trips on overload",
+   "object": "Board_MCB_3",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_4": {
+   "kind": "hinge",
+   "pivot": [
+    -1.405,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 4: RADIO / MAST (up = on); trips on overload",
+   "object": "Board_MCB_4",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_5": {
+   "kind": "hinge",
+   "pivot": [
+    -1.495,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 5: SERVER ROOM (up = on); trips on overload",
+   "object": "Board_MCB_5",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_6": {
+   "kind": "hinge",
+   "pivot": [
+    -1.585,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 6: WORKSHOP (up = on); trips on overload",
+   "object": "Board_MCB_6",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_7": {
+   "kind": "hinge",
+   "pivot": [
+    -1.675,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 7: WATER PUMP (up = on); trips on overload",
+   "object": "Board_MCB_7",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_MCB_8": {
+   "kind": "hinge",
+   "pivot": [
+    -1.765,
+    -1.405,
+    1.15
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 8: SHED (up = on); trips on overload",
+   "object": "Board_MCB_8",
+   "box": {
+    "center": [
+     0.0,
+     0.0095,
+     -0.0055
+    ],
+    "size": [
+     0.013,
+     0.023,
+     0.0177
+    ]
+   }
+  },
+  "Board_Door": {
+   "kind": "hinge",
+   "pivot": [
+    -1.875,
+    -1.34,
+    1.45
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "switchboard door: unlock Board_Latch (90), swings into the room on its west hinges",
+   "object": "Board_Door",
+   "box": {
+    "center": [
+     0.421,
+     -0.0065,
+     0.0
+    ],
+    "size": [
+     0.858,
+     0.0269,
+     1.11
+    ]
+   }
+  },
+  "Board_Latch": {
+   "kind": "twist",
+   "pivot": [
+    -1.07,
+    -1.34,
+    1.45
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Board_Door",
+   "states": [
+    "locked",
+    "open"
+   ],
+   "note": "quarter-turn latch: + (clockwise seen from the room) to 90 opens the door",
+   "removable": false,
+   "object": "Board_Latch",
+   "box": {
+    "center": [
+     0.0,
+     0.013,
+     0.0
+    ],
+    "size": [
+     0.0285,
+     0.026,
+     0.065
+    ]
+   }
+  },
+  "Board_Door_Signs": {
+   "kind": "static",
+   "pivot": [
+    -1.875,
+    -1.34,
+    1.45
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Board_Door",
+   "states": [],
+   "note": "DANGER sign outside, the circuit card inside the door",
+   "object": "Board_Door_Signs"
+  },
+  "Switchboard": {
+   "kind": "static",
+   "pivot": [
+    -1.45,
+    -1.58,
+    0.9
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "main switchboard cabinet on the south wall",
+   "object": "Switchboard"
+  },
+  "DayTank_Cap": {
+   "kind": "twist",
+   "pivot": [
+    -0.55,
+    1.36,
+    1.775
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    540
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "filler cap of the day tank: unscrew (+, one and a half turns), then it comes off",
+   "removable": "end",
+   "object": "DayTank_Cap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.015
+    ],
+    "size": [
+     0.084,
+     0.084,
+     0.03
+    ]
+   }
+  },
+  "DayTank_Glass": {
+   "kind": "static",
+   "pivot": [
+    -1.12,
+    1.17,
+    1.51
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [],
+   "note": "sight glass tube (glass material)",
+   "object": "DayTank_Glass"
+  },
+  "DayTank_Level": {
+   "kind": "stretch",
+   "pivot": [
+    -1.12,
+    1.17,
+    1.357
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1
+   ],
+   "unit": "scale",
+   "rest": 1.0,
+   "parent": "DayTank",
+   "states": [
+    "0 empty",
+    "1 full (100 l)"
+   ],
+   "note": "diesel column in the sight glass: scale along +z = tank fraction (1 = modelled full); the scale reads F .. E",
+   "object": "DayTank_Level",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.153
+    ],
+    "size": [
+     0.0124,
+     0.0124,
+     0.306
+    ]
+   }
+  },
+  "DayTank_Decals": {
+   "kind": "static",
+   "pivot": [
+    -0.8,
+    1.2,
+    1.5
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [],
+   "note": "level scale, DIESEL DAY TANK stencil, DIESEL ONLY",
+   "object": "DayTank_Decals"
+  },
+  "DayTank_Valve": {
+   "kind": "hinge",
+   "pivot": [
+    -0.44,
+    1.32,
+    1.24
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "shut (across the pipe)",
+    "open (along it)"
+   ],
+   "note": "fuel supply ball valve: + (clockwise seen from the room) turns the red lever down along the pipe = open; shut = no fuel to the engine",
+   "object": "DayTank_Valve",
+   "box": {
+    "center": [
+     0.0525,
+     -0.004,
+     0.0
+    ],
+    "size": [
+     0.105,
+     0.012,
+     0.022
+    ]
+   }
+  },
+  "DayTank_Drain": {
+   "kind": "twist",
+   "pivot": [
+    -1.15,
+    1.36,
+    1.245
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "drain cock under the tank: + opens (water and sludge first, VFX_TankDrain)",
+   "removable": false,
+   "object": "DayTank_Drain",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.0105
+    ],
+    "size": [
+     0.035,
+     0.0069,
+     0.021
+    ]
+   }
+  },
+  "DayTank": {
+   "kind": "static",
+   "pivot": [
+    -0.8,
+    1.58,
+    1.3
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "fuel 0..100 l"
+   ],
+   "note": "100 l day tank, gravity feed to the engine through DayTank_Valve; the level shows in the sight glass",
+   "object": "DayTank"
+  },
+  "Drum_1_Vent": {
+   "kind": "twist",
+   "pivot": [
+    1.27,
+    1.435,
+    1.112
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_1",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "3/4\" vent bung: open it when pumping so the drum breathes",
+   "removable": "end",
+   "object": "Drum_1_Vent",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.007
+    ],
+    "size": [
+     0.032,
+     0.0277,
+     0.014
+    ]
+   }
+  },
+  "Drum_1_Stencil": {
+   "kind": "static",
+   "pivot": [
+    1.27,
+    1.235,
+    0.675
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_1",
+   "states": [],
+   "note": "painted stencil (panel atlas)",
+   "object": "Drum_1_Stencil"
+  },
+  "Drum_2_Bung": {
+   "kind": "twist",
+   "pivot": [
+    1.88,
+    1.045,
+    1.112
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_2",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "2\" bung: needs the BungWrench, three turns (+), then it comes out",
+   "removable": "end",
+   "object": "Drum_2_Bung",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.007
+    ],
+    "size": [
+     0.062,
+     0.0537,
+     0.014
+    ]
+   }
+  },
+  "Drum_2_Vent": {
+   "kind": "twist",
+   "pivot": [
+    1.88,
+    1.435,
+    1.112
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_2",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "3/4\" vent bung: open it when pumping so the drum breathes",
+   "removable": "end",
+   "object": "Drum_2_Vent",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.007
+    ],
+    "size": [
+     0.032,
+     0.0277,
+     0.014
+    ]
+   }
+  },
+  "Drum_2_Stencil": {
+   "kind": "static",
+   "pivot": [
+    1.88,
+    1.235,
+    0.675
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_2",
+   "states": [],
+   "note": "painted stencil (panel atlas)",
+   "object": "Drum_2_Stencil"
+  },
+  "Drum_3_Bung": {
+   "kind": "twist",
+   "pivot": [
+    1.8156,
+    -1.0656,
+    0.972
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_3",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "2\" bung: needs the BungWrench, three turns (+), then it comes out",
+   "removable": "end",
+   "object": "Drum_3_Bung",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.007
+    ],
+    "size": [
+     0.062,
+     0.0537,
+     0.014
+    ]
+   }
+  },
+  "Drum_3_Vent": {
+   "kind": "twist",
+   "pivot": [
+    2.0914,
+    -1.3414,
+    0.972
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_3",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "3/4\" vent bung: open it when pumping so the drum breathes",
+   "removable": "end",
+   "object": "Drum_3_Vent",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.007
+    ],
+    "size": [
+     0.032,
+     0.0277,
+     0.014
+    ]
+   }
+  },
+  "Drum_3_Stencil": {
+   "kind": "static",
+   "pivot": [
+    1.95,
+    -1.2,
+    0.535
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_3",
+   "states": [],
+   "note": "painted stencil (panel atlas)",
+   "object": "Drum_3_Stencil"
+  },
+  "Drum_1": {
+   "kind": "static",
+   "pivot": [
+    1.27,
+    1.235,
+    0.24
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Pallet",
+   "states": [
+    "full",
+    "half",
+    "empty"
+   ],
+   "note": "200 l drum, WINTER diesel (blue): the one that works in the cold; its 2\" bung is out - the DrumPump lives here",
+   "object": "Drum_1"
+  },
+  "Drum_2": {
+   "kind": "static",
+   "pivot": [
+    1.88,
+    1.235,
+    0.24
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Pallet",
+   "states": [
+    "full",
+    "half",
+    "empty",
+    "waxed"
+   ],
+   "note": "200 l drum, SUMMER diesel (blue): waxes below about -10 C - it clogs the filter if used (story trap)",
+   "object": "Drum_2"
+  },
+  "Drum_3": {
+   "kind": "static",
+   "pivot": [
+    1.95,
+    -1.2,
+    0.1
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "full",
+    "half",
+    "empty"
+   ],
+   "note": "200 l drum, PETROL (red): for the van, never for the genset",
+   "object": "Drum_3"
+  },
+  "Pallet": {
+   "kind": "static",
+   "pivot": [
+    1.575,
+    1.235,
+    0.1
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "spill pallet under the two diesel drums (grid deck)",
+   "object": "Pallet"
+  },
+  "DrumPump": {
+   "kind": "item",
+   "pivot": [
+    1.27,
+    1.045,
+    1.108
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_1",
+   "states": [
+    "in a drum",
+    "carried"
+   ],
+   "note": "rotary drum pump: stands in a 2\" bung hole (Slot_DrumPump_N), suction tube down to the bottom; crank to pump; the coiled hose goes with it (draw a rope from DrumPump_Hose_Start to the nozzle when it is taken off the coil)",
+   "object": "DrumPump",
+   "box": {
+    "center": [
+     0.0397,
+     0.1243,
+     -0.226
+    ],
+    "size": [
+     0.3024,
+     0.3545,
+     1.148
+    ]
+   }
+  },
+  "DrumPump_Crank": {
+   "kind": "spin",
+   "pivot": [
+    1.27,
+    0.995,
+    1.355
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DrumPump",
+   "states": [],
+   "note": "crank either way: about 0.3 l per turn",
+   "object": "DrumPump_Crank",
+   "box": {
+    "center": [
+     0.0,
+     -0.055,
+     0.067
+    ],
+    "size": [
+     0.04,
+     0.11,
+     0.174
+    ]
+   }
+  },
+  "DrumPump_Nozzle": {
+   "kind": "item",
+   "pivot": [
+    1.37,
+    1.235,
+    1.242
+   ],
+   "axis": [
+    -0.2873,
+    0.9578,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DrumPump",
+   "states": [
+    "on the coil",
+    "in hand",
+    "in a filler"
+   ],
+   "note": "hose nozzle: into Pour_DayTank (or a jerrycan), then crank",
+   "object": "DrumPump_Nozzle",
+   "box": {
+    "center": [
+     -0.0465,
+     0.1171,
+     -0.0087
+    ],
+    "size": [
+     0.1064,
+     0.2602,
+     0.0637
+    ]
+   }
+  },
+  "Shelf": {
+   "kind": "static",
+   "pivot": [
+    -2.28,
+    1.25,
+    0.1
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "wooden shelf on the west wall north of the door",
+   "object": "Shelf"
+  },
+  "EngineOil": {
+   "kind": "item",
+   "pivot": [
+    -2.13,
+    1.38,
+    1.47
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "oil 0..5 l"
+   ],
+   "note": "5 l engine oil can: tip into Pour_Oil",
+   "object": "EngineOil",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.1571
+    ],
+    "size": [
+     0.12,
+     0.2,
+     0.3143
+    ]
+   }
+  },
+  "EngineOil_Cap": {
+   "kind": "twist",
+   "pivot": [
+    -2.13,
+    1.32,
+    1.768
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    360
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "EngineOil",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "screw cap of the oil can",
+   "removable": "end",
+   "object": "EngineOil_Cap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.009
+    ],
+    "size": [
+     0.042,
+     0.042,
+     0.018
+    ]
+   }
+  },
+  "Coolant": {
+   "kind": "item",
+   "pivot": [
+    -2.13,
+    1.4,
+    0.97
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "coolant 0..5 l"
+   ],
+   "note": "5 l coolant (antifreeze mix): into Pour_Coolant",
+   "object": "Coolant",
+   "box": {
+    "center": [
+     0.0,
+     0.0014,
+     0.1478
+    ],
+    "size": [
+     0.12,
+     0.1628,
+     0.2955
+    ]
+   }
+  },
+  "Coolant_Cap": {
+   "kind": "twist",
+   "pivot": [
+    -2.13,
+    1.355,
+    1.246
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    360
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Coolant",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "screw cap of the coolant jug",
+   "removable": "end",
+   "object": "Coolant_Cap",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.009
+    ],
+    "size": [
+     0.042,
+     0.042,
+     0.018
+    ]
+   }
+  },
+  "FuelFilter_Spare": {
+   "kind": "item",
+   "pivot": [
+    -2.13,
+    1.1,
+    0.97
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "spare fuel filter in its box: replaces the clogged one (waxed summer diesel)",
+   "object": "FuelFilter_Spare",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.08
+    ],
+    "size": [
+     0.12,
+     0.12,
+     0.16
+    ]
+   }
+  },
+  "Funnel": {
+   "kind": "item",
+   "pivot": [
+    -2.13,
+    1.1,
+    1.47
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "steel funnel (stands on its rim): goes into any filler",
+   "object": "Funnel",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.075
+    ],
+    "size": [
+     0.16,
+     0.16,
+     0.15
+    ]
+   }
+  },
+  "Toolbox": {
+   "kind": "item",
+   "pivot": [
+    -2.13,
+    1.2,
+    0.47
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "red toolbox (spanners: lets Engine_GovernorLever move)",
+   "object": "Toolbox",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.1124
+    ],
+    "size": [
+     0.2,
+     0.36,
+     0.2249
+    ]
+   }
+  },
+  "JumperCables": {
+   "kind": "item",
+   "pivot": [
+    -2.16,
+    0.915,
+    1.22
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "jumper cables (red +, black -), 3 m: the van battery to the genset battery when it is flat (ropes between the clamp ends)",
+   "object": "JumperCables",
+   "box": {
+    "center": [
+     0.0,
+     -0.008,
+     -0.0626
+    ],
+    "size": [
+     0.185,
+     0.028,
+     0.3349
+    ]
+   }
+  },
+  "BungWrench": {
+   "kind": "item",
+   "pivot": [
+    -2.2,
+    0.915,
+    0.8
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "drum bung wrench: opens Drum_N_Bung and Drum_N_Vent",
+   "object": "BungWrench",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.1665
+    ],
+    "size": [
+     0.07,
+     0.012,
+     0.357
+    ]
+   }
+  },
+  "Extinguisher": {
+   "kind": "item",
+   "pivot": [
+    -2.195,
+    -1.3,
+    0.7
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [
+    "full",
+    "used"
+   ],
+   "note": "6 kg powder extinguisher on its wall bracket: squeeze the lever (VFX_Extinguisher at the hose end)",
+   "object": "Extinguisher",
+   "box": {
+    "center": [
+     -0.0085,
+     0.0,
+     0.286
+    ],
+    "size": [
+     0.167,
+     0.15,
+     0.572
+    ]
+   }
+  },
+  "Mat": {
+   "kind": "static",
+   "pivot": [
+    -1.45,
+    -0.98,
+    0.1
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "rubber insulating mat in front of the switchboard",
+   "object": "Mat"
+  },
+  "Logbook": {
+   "kind": "item",
+   "pivot": [
+    -0.75,
+    -1.568,
+    1.45
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Shed",
+   "states": [],
+   "note": "generator log on a clipboard (hangs on a nail): the last entries",
+   "object": "Logbook",
+   "box": {
+    "center": [
+     0.0,
+     0.0055,
+     0.0
+    ],
+    "size": [
+     0.23,
+     0.017,
+     0.32
+    ]
+   }
+  },
+  "Logbook_Page": {
+   "kind": "static",
+   "pivot": [
+    -0.75,
+    -1.5642,
+    1.45
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Logbook",
+   "states": [],
+   "note": "the log page (panel atlas)",
+   "object": "Logbook_Page"
+  }
+ },
+ "sockets": {
+  "Hand_Door_L_In": {
+   "pos": [
+    -2.36,
+    0.25,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "Door_L",
+   "note": ""
+  },
+  "Hand_Door_R_In": {
+   "pos": [
+    -2.36,
+    -0.25,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "Door_R",
+   "note": ""
+  },
+  "Hand_Door_R_Out": {
+   "pos": [
+    -2.51,
+    -0.25,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "Door_R",
+   "note": ""
+  },
+  "Hand_Door_Hasp": {
+   "pos": [
+    -2.49,
+    0.07,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "Door_Hasp",
+   "note": ""
+  },
+  "Hand_Padlock": {
+   "pos": [
+    -2.497,
+    0.045,
+    1.05
+   ],
+   "kind": "hand",
+   "parent": "Padlock",
+   "note": ""
+  },
+  "Slot_Padlock": {
+   "pos": [
+    -2.5,
+    0.045,
+    1.1
+   ],
+   "kind": "item_slot",
+   "parent": "Door_L",
+   "note": "the padlock shackle goes through here"
+  },
+  "Hand_Door_DropBolt": {
+   "pos": [
+    -2.35,
+    0.08,
+    0.63
+   ],
+   "kind": "hand",
+   "parent": "Door_DropBolt",
+   "note": ""
+  },
+  "Hand_Door_Bolt": {
+   "pos": [
+    -2.359,
+    -0.105,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "Door_Bolt",
+   "note": ""
+  },
+  "Nail_Key": {
+   "pos": [
+    -2.42,
+    0.55,
+    2.3
+   ],
+   "kind": "item_slot",
+   "parent": "Shed",
+   "note": "the key hangs here"
+  },
+  "Hand_Window_Shutter": {
+   "pos": [
+    0.83,
+    -1.505,
+    1.566
+   ],
+   "kind": "hand",
+   "parent": "Window_Shutter",
+   "note": ""
+  },
+  "Hand_Window_Latch": {
+   "pos": [
+    -0.48,
+    -1.525,
+    1.59
+   ],
+   "kind": "hand",
+   "parent": "Window_Latch",
+   "note": ""
+  },
+  "Hand_Louvre_Lever": {
+   "pos": [
+    2.24,
+    0.345,
+    0.85
+   ],
+   "kind": "hand",
+   "parent": "Louvre_Lever",
+   "note": ""
+  },
+  "Line_In": {
+   "pos": [
+    -0.7,
+    -2.535,
+    2.06
+   ],
+   "kind": "item_slot",
+   "parent": "Shed",
+   "note": "LINE (grid) drop: continue the overhead line from here (rope / line renderer); feeds the board via Board_Brk_Line",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Feed_Out": {
+   "pos": [
+    -0.6,
+    -2.535,
+    2.24
+   ],
+   "kind": "item_slot",
+   "parent": "Shed",
+   "note": "feeder to the base: the eight circuits leave here (draw the cable to the base poles)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Hand_Light_Switch": {
+   "pos": [
+    -2.21,
+    -0.98,
+    1.4
+   ],
+   "kind": "hand",
+   "parent": "Light_Switch",
+   "note": ""
+  },
+  "Outlet_Wall": {
+   "pos": [
+    -2.228,
+    -0.98,
+    0.45
+   ],
+   "kind": "item_slot",
+   "parent": "Shed",
+   "note": "230 V outlet on the SHED circuit: plugs go here (inspection lamp, charger)",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Audio_Fan": {
+   "pos": [
+    1.41,
+    -0.25,
+    0.84
+   ],
+   "kind": "audio",
+   "parent": "Genset",
+   "note": "fan roar and the belt (squeal when loose)"
+  },
+  "Hand_Radiator_Cap": {
+   "pos": [
+    1.54,
+    -0.1,
+    1.33
+   ],
+   "kind": "hand",
+   "parent": "Radiator_Cap",
+   "note": ""
+  },
+  "Pour_Coolant": {
+   "pos": [
+    1.54,
+    -0.1,
+    1.32
+   ],
+   "kind": "pour",
+   "parent": "Genset",
+   "note": "coolant goes in here (cap off)"
+  },
+  "VFX_RadSteam": {
+   "pos": [
+    1.54,
+    -0.1,
+    1.34
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "steam out of the neck when the hot cap is opened / the engine boils over",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Hand_Radiator_Drain": {
+   "pos": [
+    1.582,
+    -0.69,
+    0.36
+   ],
+   "kind": "hand",
+   "parent": "Radiator_Drain",
+   "note": ""
+  },
+  "VFX_RadDrain": {
+   "pos": [
+    1.582,
+    -0.67,
+    0.345
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "coolant runs out here",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Heat_Silencer": {
+   "pos": [
+    0.7,
+    -0.11,
+    1.53
+   ],
+   "kind": "heat",
+   "parent": "Genset",
+   "note": "hot silencer: burns, warms hands, melts snow"
+  },
+  "Hand_AirFilterLid": {
+   "pos": [
+    0.66,
+    -0.63,
+    1.33
+   ],
+   "kind": "hand",
+   "parent": "Engine_AirFilterLid",
+   "note": ""
+  },
+  "Hand_Engine_StopLever": {
+   "pos": [
+    0.43,
+    -0.581,
+    0.91
+   ],
+   "kind": "hand",
+   "parent": "Engine_StopLever",
+   "note": ""
+  },
+  "Hand_Engine_FuelFilter": {
+   "pos": [
+    0.92,
+    -0.635,
+    0.68
+   ],
+   "kind": "hand",
+   "parent": "Engine_FuelFilter",
+   "note": ""
+  },
+  "Slot_FuelFilter": {
+   "pos": [
+    0.92,
+    -0.59,
+    0.778
+   ],
+   "kind": "item_slot",
+   "parent": "Genset",
+   "note": "filter head: a spin-on filter screws on here"
+  },
+  "Hand_Engine_BleedScrew": {
+   "pos": [
+    0.92,
+    -0.59,
+    0.84
+   ],
+   "kind": "hand",
+   "parent": "Engine_BleedScrew",
+   "note": ""
+  },
+  "VFX_FuelBleed": {
+   "pos": [
+    0.92,
+    -0.6,
+    0.826
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "froth, then clear diesel dribbles out while bleeding",
+   "dir": [
+    0.0,
+    -1.0,
+    0.3
+   ]
+  },
+  "Hand_Engine_PrimerLever": {
+   "pos": [
+    0.66,
+    -0.52,
+    0.46
+   ],
+   "kind": "hand",
+   "parent": "Engine_PrimerLever",
+   "note": ""
+  },
+  "Hand_Engine_WaterDrain": {
+   "pos": [
+    1.2,
+    -0.73,
+    0.34
+   ],
+   "kind": "hand",
+   "parent": "Engine_WaterDrain",
+   "note": ""
+  },
+  "VFX_WaterDrain": {
+   "pos": [
+    1.2,
+    -0.73,
+    0.33
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "water, then diesel drips",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Hand_Engine_Dipstick": {
+   "pos": [
+    0.9011,
+    0.0978,
+    1.0269
+   ],
+   "kind": "hand",
+   "parent": "Engine_Dipstick",
+   "note": ""
+  },
+  "Hand_Engine_OilCap": {
+   "pos": [
+    0.92,
+    -0.2,
+    1.225
+   ],
+   "kind": "hand",
+   "parent": "Engine_OilCap",
+   "note": ""
+  },
+  "Pour_Oil": {
+   "pos": [
+    0.92,
+    -0.2,
+    1.24
+   ],
+   "kind": "pour",
+   "parent": "Genset",
+   "note": "engine oil goes in here (cap off)"
+  },
+  "Audio_Engine": {
+   "pos": [
+    0.68,
+    -0.25,
+    0.8
+   ],
+   "kind": "audio",
+   "parent": "Genset",
+   "note": "diesel: glow tick, cranking, knock, idle 1500 rpm, labouring under load, dying"
+  },
+  "Audio_Alternator": {
+   "pos": [
+    -0.2,
+    -0.25,
+    0.64
+   ],
+   "kind": "audio",
+   "parent": "Genset",
+   "note": "alternator whine, rises with the load"
+  },
+  "Hand_Battery": {
+   "pos": [
+    0.47,
+    -0.5025,
+    0.48
+   ],
+   "kind": "hand",
+   "parent": "Battery",
+   "note": ""
+  },
+  "Slot_Battery": {
+   "pos": [
+    0.47,
+    -0.5025,
+    0.22
+   ],
+   "kind": "item_slot",
+   "parent": "Genset",
+   "note": "battery tray inside the skid under the fuel side (reach over the south rail): a battery stands here, posts towards the aisle"
+  },
+  "Jump_Pos": {
+   "pos": [
+    0.365,
+    -0.5425,
+    0.437
+   ],
+   "kind": "item_slot",
+   "parent": "Battery",
+   "note": "plus post: a jumper-cable clamp bites here (the van's Battery has its posts at the same place relative to its pivot)"
+  },
+  "Jump_Neg": {
+   "pos": [
+    0.575,
+    -0.5425,
+    0.437
+   ],
+   "kind": "item_slot",
+   "parent": "Battery",
+   "note": "minus post: a jumper-cable clamp bites here (the van's Battery has its posts at the same place relative to its pivot)"
+  },
+  "Hand_ClampPos": {
+   "pos": [
+    0.365,
+    -0.5425,
+    0.447
+   ],
+   "kind": "hand",
+   "parent": "Battery_ClampPos",
+   "note": ""
+  },
+  "Hand_ClampNeg": {
+   "pos": [
+    0.575,
+    -0.5425,
+    0.447
+   ],
+   "kind": "hand",
+   "parent": "Battery_ClampNeg",
+   "note": ""
+  },
+  "Hand_Gen_Breaker": {
+   "pos": [
+    -0.15,
+    -0.674,
+    0.688
+   ],
+   "kind": "hand",
+   "parent": "Gen_Breaker",
+   "note": ""
+  },
+  "Hand_Gen_VAdj": {
+   "pos": [
+    -0.683,
+    -0.46,
+    1.205
+   ],
+   "kind": "hand",
+   "parent": "Gen_VAdj",
+   "note": ""
+  },
+  "Hand_Gen_Key": {
+   "pos": [
+    -0.698,
+    -0.05,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "Gen_Key",
+   "note": ""
+  },
+  "Hand_Gen_GlowButton": {
+   "pos": [
+    -0.677,
+    -0.23,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "Gen_GlowButton",
+   "note": ""
+  },
+  "Hand_Gen_StopButton": {
+   "pos": [
+    -0.677,
+    -0.33,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "Gen_StopButton",
+   "note": ""
+  },
+  "Hand_Gen_EStop": {
+   "pos": [
+    -0.701,
+    -0.44,
+    1.1
+   ],
+   "kind": "hand",
+   "parent": "Gen_EStop",
+   "note": ""
+  },
+  "Hand_Board_Changeover": {
+   "pos": [
+    -1.25,
+    -1.415,
+    1.4
+   ],
+   "kind": "hand",
+   "parent": "Board_Changeover",
+   "note": ""
+  },
+  "Hand_Board_Brk_Gen": {
+   "pos": [
+    -1.55,
+    -1.3797,
+    1.3326
+   ],
+   "kind": "hand",
+   "parent": "Board_Brk_Gen",
+   "note": ""
+  },
+  "Hand_Board_Brk_Line": {
+   "pos": [
+    -1.73,
+    -1.3797,
+    1.3326
+   ],
+   "kind": "hand",
+   "parent": "Board_Brk_Line",
+   "note": ""
+  },
+  "Hand_Board_MCB_1": {
+   "pos": [
+    -1.135,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_1",
+   "note": ""
+  },
+  "Hand_Board_MCB_2": {
+   "pos": [
+    -1.225,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_2",
+   "note": ""
+  },
+  "Hand_Board_MCB_3": {
+   "pos": [
+    -1.315,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_3",
+   "note": ""
+  },
+  "Hand_Board_MCB_4": {
+   "pos": [
+    -1.405,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_4",
+   "note": ""
+  },
+  "Hand_Board_MCB_5": {
+   "pos": [
+    -1.495,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_5",
+   "note": ""
+  },
+  "Hand_Board_MCB_6": {
+   "pos": [
+    -1.585,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_6",
+   "note": ""
+  },
+  "Hand_Board_MCB_7": {
+   "pos": [
+    -1.675,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_7",
+   "note": ""
+  },
+  "Hand_Board_MCB_8": {
+   "pos": [
+    -1.765,
+    -1.3859,
+    1.139
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_8",
+   "note": ""
+  },
+  "Audio_Board": {
+   "pos": [
+    -1.45,
+    -1.41,
+    1.45
+   ],
+   "kind": "audio",
+   "parent": "Switchboard",
+   "note": "hum of the busbar, the clack of the breakers, the changeover thunk, a breaker tripping"
+  },
+  "VFX_BoardSparks": {
+   "pos": [
+    -1.64,
+    -1.4,
+    1.35
+   ],
+   "kind": "vfx",
+   "parent": "Switchboard",
+   "note": "sparks / smoke when a breaker trips under load or the changeover is thrown on load",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Hand_Board_Door": {
+   "pos": [
+    -1.075,
+    -1.31,
+    1.45
+   ],
+   "kind": "hand",
+   "parent": "Board_Door",
+   "note": ""
+  },
+  "Hand_Board_Latch": {
+   "pos": [
+    -1.07,
+    -1.315,
+    1.45
+   ],
+   "kind": "hand",
+   "parent": "Board_Latch",
+   "note": ""
+  },
+  "Hand_DayTank_Cap": {
+   "pos": [
+    -0.55,
+    1.36,
+    1.8
+   ],
+   "kind": "hand",
+   "parent": "DayTank_Cap",
+   "note": ""
+  },
+  "Pour_DayTank": {
+   "pos": [
+    -0.55,
+    1.36,
+    1.78
+   ],
+   "kind": "pour",
+   "parent": "DayTank",
+   "note": "diesel goes in here (DrumPump_Nozzle, a jerrycan with the van's Spout); 100 l"
+  },
+  "Hand_DayTank_Valve": {
+   "pos": [
+    -0.35,
+    1.31,
+    1.24
+   ],
+   "kind": "hand",
+   "parent": "DayTank_Valve",
+   "note": ""
+  },
+  "Hand_DayTank_Drain": {
+   "pos": [
+    -1.15,
+    1.36,
+    1.227
+   ],
+   "kind": "hand",
+   "parent": "DayTank_Drain",
+   "note": ""
+  },
+  "VFX_TankDrain": {
+   "pos": [
+    -1.15,
+    1.36,
+    1.22
+   ],
+   "kind": "vfx",
+   "parent": "DayTank",
+   "note": "drips into the tray",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Hand_Drum_1_Vent": {
+   "pos": [
+    1.27,
+    1.435,
+    1.124
+   ],
+   "kind": "hand",
+   "parent": "Drum_1_Vent",
+   "note": ""
+  },
+  "Slot_DrumPump_1": {
+   "pos": [
+    1.27,
+    1.045,
+    1.112
+   ],
+   "kind": "item_slot",
+   "parent": "Drum_1",
+   "note": "the DrumPump stands in this bung hole (bung out)"
+  },
+  "Hand_Drum_2_Bung": {
+   "pos": [
+    1.88,
+    1.045,
+    1.124
+   ],
+   "kind": "hand",
+   "parent": "Drum_2_Bung",
+   "note": ""
+  },
+  "Hand_Drum_2_Vent": {
+   "pos": [
+    1.88,
+    1.435,
+    1.124
+   ],
+   "kind": "hand",
+   "parent": "Drum_2_Vent",
+   "note": ""
+  },
+  "Slot_DrumPump_2": {
+   "pos": [
+    1.88,
+    1.045,
+    1.112
+   ],
+   "kind": "item_slot",
+   "parent": "Drum_2",
+   "note": "the DrumPump stands in this bung hole (bung out)"
+  },
+  "Hand_Drum_3_Bung": {
+   "pos": [
+    1.8156,
+    -1.0656,
+    0.984
+   ],
+   "kind": "hand",
+   "parent": "Drum_3_Bung",
+   "note": ""
+  },
+  "Hand_Drum_3_Vent": {
+   "pos": [
+    2.0914,
+    -1.3414,
+    0.984
+   ],
+   "kind": "hand",
+   "parent": "Drum_3_Vent",
+   "note": ""
+  },
+  "Slot_DrumPump_3": {
+   "pos": [
+    1.8156,
+    -1.0656,
+    0.972
+   ],
+   "kind": "item_slot",
+   "parent": "Drum_3",
+   "note": "the DrumPump stands in this bung hole (bung out)"
+  },
+  "Hand_DrumPump": {
+   "pos": [
+    1.27,
+    1.045,
+    1.425
+   ],
+   "kind": "hand",
+   "parent": "DrumPump",
+   "note": ""
+  },
+  "DrumPump_Hose_Start": {
+   "pos": [
+    1.4,
+    1.045,
+    1.44
+   ],
+   "kind": "item_slot",
+   "parent": "DrumPump",
+   "note": "hose leaves the pump here (3.5 m: reaches the day tank from any drum on the pallet)"
+  },
+  "Audio_DrumPump": {
+   "pos": [
+    1.27,
+    1.045,
+    1.355
+   ],
+   "kind": "audio",
+   "parent": "DrumPump",
+   "note": "clank of the crank, gurgle, splash in the tank"
+  },
+  "Hand_DrumPump_Crank": {
+   "pos": [
+    1.27,
+    0.915,
+    1.495
+   ],
+   "kind": "hand",
+   "parent": "DrumPump_Crank",
+   "note": ""
+  },
+  "Hand_DrumPump_Nozzle": {
+   "pos": [
+    1.332,
+    1.295,
+    1.254
+   ],
+   "kind": "hand",
+   "parent": "DrumPump_Nozzle",
+   "note": ""
+  },
+  "Nozzle_Tip": {
+   "pos": [
+    1.278,
+    1.475,
+    1.204
+   ],
+   "kind": "vfx",
+   "parent": "DrumPump_Nozzle",
+   "note": "fuel stream while cranking (splash if not in a filler)",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Hand_EngineOil": {
+   "pos": [
+    -2.13,
+    1.44,
+    1.78
+   ],
+   "kind": "hand",
+   "parent": "EngineOil",
+   "note": ""
+  },
+  "Pour_EngineOil": {
+   "pos": [
+    -2.13,
+    1.32,
+    1.78
+   ],
+   "kind": "pour",
+   "parent": "EngineOil",
+   "note": "oil comes out here (cap off)"
+  },
+  "Hand_Coolant": {
+   "pos": [
+    -2.13,
+    1.45,
+    1.26
+   ],
+   "kind": "hand",
+   "parent": "Coolant",
+   "note": ""
+  },
+  "Pour_CoolantJug": {
+   "pos": [
+    -2.13,
+    1.355,
+    1.26
+   ],
+   "kind": "pour",
+   "parent": "Coolant",
+   "note": "coolant comes out here (cap off)"
+  },
+  "Hand_FuelFilter_Spare": {
+   "pos": [
+    -2.13,
+    1.1,
+    1.13
+   ],
+   "kind": "hand",
+   "parent": "FuelFilter_Spare",
+   "note": ""
+  },
+  "Hand_Funnel": {
+   "pos": [
+    -2.13,
+    1.1,
+    1.57
+   ],
+   "kind": "hand",
+   "parent": "Funnel",
+   "note": ""
+  },
+  "Hand_Toolbox": {
+   "pos": [
+    -2.13,
+    1.2,
+    0.69
+   ],
+   "kind": "hand",
+   "parent": "Toolbox",
+   "note": ""
+  },
+  "JumperCables_RedA": {
+   "pos": [
+    -2.21,
+    0.915,
+    1.01
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "red clamp, end A: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)"
+  },
+  "JumperCables_RedB": {
+   "pos": [
+    -2.11,
+    0.915,
+    1.01
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "red clamp, end B: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)"
+  },
+  "JumperCables_BlackA": {
+   "pos": [
+    -2.21,
+    0.899,
+    1.01
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "black clamp, end A: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)"
+  },
+  "JumperCables_BlackB": {
+   "pos": [
+    -2.11,
+    0.899,
+    1.01
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "black clamp, end B: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)"
+  },
+  "Hand_JumperCables": {
+   "pos": [
+    -2.16,
+    0.915,
+    1.31
+   ],
+   "kind": "hand",
+   "parent": "JumperCables",
+   "note": ""
+  },
+  "Hand_BungWrench": {
+   "pos": [
+    -2.2,
+    0.915,
+    0.7
+   ],
+   "kind": "hand",
+   "parent": "BungWrench",
+   "note": ""
+  },
+  "Hand_Extinguisher": {
+   "pos": [
+    -2.175,
+    -1.3,
+    1.28
+   ],
+   "kind": "hand",
+   "parent": "Extinguisher",
+   "note": ""
+  },
+  "VFX_Extinguisher": {
+   "pos": [
+    -2.275,
+    -1.3,
+    0.82
+   ],
+   "kind": "vfx",
+   "parent": "Extinguisher",
+   "note": "powder cloud",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Slot_Extinguisher": {
+   "pos": [
+    -2.195,
+    -1.3,
+    0.7
+   ],
+   "kind": "item_slot",
+   "parent": "Shed",
+   "note": "the extinguisher hangs here"
+  },
+  "Hand_Logbook": {
+   "pos": [
+    -0.75,
+    -1.558,
+    1.59
+   ],
+   "kind": "hand",
+   "parent": "Logbook",
+   "note": ""
+  },
+  "Nail_Logbook": {
+   "pos": [
+    -0.75,
+    -1.555,
+    1.62
+   ],
+   "kind": "item_slot",
+   "parent": "Shed",
+   "note": "the logbook hangs here"
+  },
+  "Audio_Exhaust": {
+   "pos": [
+    2.75,
+    -0.13,
+    3.7
+   ],
+   "kind": "audio",
+   "parent": "Shed",
+   "note": "exhaust beat at the stack (outside), the flap rattling"
+  },
+  "Audio_Louvre": {
+   "pos": [
+    2.28,
+    -0.25,
+    0.95
+   ],
+   "kind": "audio",
+   "parent": "Shed",
+   "note": "louvre blades rattling in the wind / in the fan blast"
+  },
+  "Audio_Door": {
+   "pos": [
+    -2.4,
+    0.0,
+    1.1
+   ],
+   "kind": "audio",
+   "parent": "Shed",
+   "note": "door leaves: creak, the hasp, the padlock, wind gap whistle"
+  },
+  "Audio_Roof": {
+   "pos": [
+    0.0,
+    0.0,
+    3.3
+   ],
+   "kind": "audio",
+   "parent": "Shed",
+   "note": "roof: creaks in the cold, snow sliding off, footsteps up there"
+  },
+  "Audio_Wind": {
+   "pos": [
+    -2.4,
+    0.0,
+    2.77
+   ],
+   "kind": "audio",
+   "parent": "Shed",
+   "note": "wind through the intake louvre in the west gable"
+  },
+  "VFX_Exhaust": {
+   "pos": [
+    2.75,
+    -0.13,
+    3.73
+   ],
+   "kind": "vfx",
+   "parent": "Shed",
+   "note": "exhaust: a black puff on starting, grey smoke under load, thin haze idling",
+   "dir": [
+    0,
+    0,
+    1
+   ]
+  },
+  "VFX_LouvreHeat": {
+   "pos": [
+    2.45,
+    -0.25,
+    0.95
+   ],
+   "kind": "vfx",
+   "parent": "Shed",
+   "note": "warm air from the radiator through the open louvre: steam in the frost, melts the snow below",
+   "dir": [
+    1,
+    0,
+    0
+   ]
+  },
+  "VFX_DoorSnow": {
+   "pos": [
+    -2.23,
+    0.0,
+    0.2
+   ],
+   "kind": "vfx",
+   "parent": "Shed",
+   "note": "snow blowing in under / between the leaves",
+   "dir": [
+    1,
+    0,
+    0
+   ]
+  },
+  "Heat_Louvre": {
+   "pos": [
+    2.6,
+    -0.25,
+    0.95
+   ],
+   "kind": "heat",
+   "parent": "Shed",
+   "note": "warm spot outside the louvre while the set runs"
+  },
+  "Hide_Nook": {
+   "pos": [
+    1.98,
+    0.62,
+    0.4
+   ],
+   "kind": "hide",
+   "parent": "Shed",
+   "note": "crouched in the nook between the radiator duct and the diesel drums (behind the genset from the door)",
+   "pose": "crouch",
+   "eye": [
+    1.92,
+    0.62,
+    0.98
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ]
+  },
+  "Hide_UnderWindow": {
+   "pos": [
+    -0.1,
+    -1.27,
+    0.4
+   ],
+   "kind": "hide",
+   "parent": "Shed",
+   "note": "crouched under the window sill: not seen from outside through the glass",
+   "pose": "crouch",
+   "eye": [
+    -0.1,
+    -1.21,
+    0.96
+   ],
+   "facing": [
+    0,
+    1,
+    0
+   ]
+  },
+  "Knock_WallE_1": {
+   "pos": [
+    2.405,
+    -1.1,
+    1.25
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallE_2": {
+   "pos": [
+    2.409,
+    -0.2,
+    1.85
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallE_3": {
+   "pos": [
+    2.405,
+    0.7,
+    1.25
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallS_1": {
+   "pos": [
+    -1.6,
+    -1.705,
+    1.15
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallS_2": {
+   "pos": [
+    -0.7,
+    -1.705,
+    1.15
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallS_3": {
+   "pos": [
+    0.9,
+    -1.705,
+    1.15
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallS_4": {
+   "pos": [
+    1.8,
+    -1.705,
+    1.15
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallN_1": {
+   "pos": [
+    -1.6,
+    1.705,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallN_2": {
+   "pos": [
+    -0.6,
+    1.705,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallN_3": {
+   "pos": [
+    0.5,
+    1.705,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallN_4": {
+   "pos": [
+    1.6,
+    1.705,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallW_S": {
+   "pos": [
+    -2.405,
+    -1.25,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_WallW_N": {
+   "pos": [
+    -2.405,
+    1.25,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Door_L": {
+   "pos": [
+    -2.473,
+    0.4,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "Door_L",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Door_R": {
+   "pos": [
+    -2.473,
+    -0.4,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "Door_R",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Window": {
+   "pos": [
+    -0.25,
+    -1.645,
+    1.42
+   ],
+   "kind": "knock",
+   "parent": "Window_Glass",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_1": {
+   "pos": [
+    -1.5,
+    0.9021,
+    3.0703
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    0.4226,
+    0.9063
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_2": {
+   "pos": [
+    0.0,
+    -0.9021,
+    3.0703
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    -0.4226,
+    0.9063
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_3": {
+   "pos": [
+    1.5,
+    0.9021,
+    3.0703
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    0.4226,
+    0.9063
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_4": {
+   "pos": [
+    0.6,
+    -1.4021,
+    2.8372
+   ],
+   "kind": "knock",
+   "parent": "Shed",
+   "dir": [
+    0.0,
+    -0.4226,
+    0.9063
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Slab",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.05
+   ],
+   "size": [
+    5.04,
+    3.64,
+    0.1
+   ],
+   "center_body": [
+    0.0,
+    0.0,
+    0.05
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_W_S",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    -1.25,
+    1.275
+   ],
+   "size": [
+    0.12,
+    0.9,
+    2.35
+   ],
+   "center_body": [
+    -2.34,
+    -1.25,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_W_N",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    1.25,
+    1.275
+   ],
+   "size": [
+    0.12,
+    0.9,
+    2.35
+   ],
+   "center_body": [
+    -2.34,
+    1.25,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_W_Head",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    0.0,
+    2.275
+   ],
+   "size": [
+    0.12,
+    1.6,
+    0.35
+   ],
+   "center_body": [
+    -2.34,
+    0.0,
+    2.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_W_1",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    0.0,
+    2.55
+   ],
+   "size": [
+    0.12,
+    3.4,
+    0.2
+   ],
+   "center_body": [
+    -2.34,
+    0.0,
+    2.55
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_W_2",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    0.0,
+    2.75
+   ],
+   "size": [
+    0.12,
+    2.54,
+    0.2
+   ],
+   "center_body": [
+    -2.34,
+    0.0,
+    2.75
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_W_3",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    0.0,
+    2.95
+   ],
+   "size": [
+    0.12,
+    1.68,
+    0.2
+   ],
+   "center_body": [
+    -2.34,
+    0.0,
+    2.95
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_W_4",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -2.34,
+    0.0,
+    3.15
+   ],
+   "size": [
+    0.12,
+    0.82,
+    0.2
+   ],
+   "center_body": [
+    -2.34,
+    0.0,
+    3.15
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_E_S",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    -1.225,
+    1.275
+   ],
+   "size": [
+    0.12,
+    0.95,
+    2.35
+   ],
+   "center_body": [
+    2.34,
+    -1.225,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_E_N",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    0.975,
+    1.275
+   ],
+   "size": [
+    0.12,
+    1.45,
+    2.35
+   ],
+   "center_body": [
+    2.34,
+    0.975,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_E_Low",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    -0.25,
+    0.3
+   ],
+   "size": [
+    0.12,
+    1.0,
+    0.4
+   ],
+   "center_body": [
+    2.34,
+    -0.25,
+    0.3
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_E_High",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    -0.25,
+    1.925
+   ],
+   "size": [
+    0.12,
+    1.0,
+    1.05
+   ],
+   "center_body": [
+    2.34,
+    -0.25,
+    1.925
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Louvre",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    -0.25,
+    0.95
+   ],
+   "size": [
+    0.12,
+    1.0,
+    0.9
+   ],
+   "center_body": [
+    2.34,
+    -0.25,
+    0.95
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_E_1",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    0.0,
+    2.55
+   ],
+   "size": [
+    0.12,
+    3.4,
+    0.2
+   ],
+   "center_body": [
+    2.34,
+    0.0,
+    2.55
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_E_2",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    0.0,
+    2.75
+   ],
+   "size": [
+    0.12,
+    2.54,
+    0.2
+   ],
+   "center_body": [
+    2.34,
+    0.0,
+    2.75
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_E_3",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    0.0,
+    2.95
+   ],
+   "size": [
+    0.12,
+    1.68,
+    0.2
+   ],
+   "center_body": [
+    2.34,
+    0.0,
+    2.95
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Gable_E_4",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.34,
+    0.0,
+    3.15
+   ],
+   "size": [
+    0.12,
+    0.82,
+    0.2
+   ],
+   "center_body": [
+    2.34,
+    0.0,
+    3.15
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Ridge",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    3.39
+   ],
+   "size": [
+    5.25,
+    0.24,
+    0.22
+   ],
+   "center_body": [
+    0.0,
+    0.0,
+    3.39
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_S_W",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -1.34,
+    -1.64,
+    1.275
+   ],
+   "size": [
+    1.88,
+    0.12,
+    2.35
+   ],
+   "center_body": [
+    -1.34,
+    -1.64,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_S_E",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    1.24,
+    -1.64,
+    1.275
+   ],
+   "size": [
+    2.08,
+    0.12,
+    2.35
+   ],
+   "center_body": [
+    1.24,
+    -1.64,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_S_Low",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -0.1,
+    -1.64,
+    0.7
+   ],
+   "size": [
+    0.6,
+    0.12,
+    1.2
+   ],
+   "center_body": [
+    -0.1,
+    -1.64,
+    0.7
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_S_High",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -0.1,
+    -1.64,
+    2.125
+   ],
+   "size": [
+    0.6,
+    0.12,
+    0.65
+   ],
+   "center_body": [
+    -0.1,
+    -1.64,
+    2.125
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Window",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    -0.1,
+    -1.64,
+    1.55
+   ],
+   "size": [
+    0.6,
+    0.12,
+    0.5
+   ],
+   "center_body": [
+    -0.1,
+    -1.64,
+    1.55
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Wall_N",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    0.0,
+    1.64,
+    1.275
+   ],
+   "size": [
+    4.56,
+    0.12,
+    2.35
+   ],
+   "center_body": [
+    0.0,
+    1.64,
+    1.275
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Stack",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.75,
+    -0.13,
+    2.8
+   ],
+   "size": [
+    0.09,
+    0.09,
+    1.8
+   ],
+   "center_body": [
+    2.75,
+    -0.13,
+    2.8
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_StackPipe",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    2.575,
+    -0.13,
+    1.95
+   ],
+   "size": [
+    0.35,
+    0.09,
+    0.09
+   ],
+   "center_body": [
+    2.575,
+    -0.13,
+    1.95
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Door_L",
+   "parent": "Door_L",
+   "type": "box",
+   "center": [
+    0.035,
+    -0.41,
+    0.0
+   ],
+   "size": [
+    0.07,
+    0.81,
+    2.01
+   ],
+   "center_body": [
+    -2.435,
+    0.405,
+    1.115
+   ],
+   "parent_origin": [
+    -2.47,
+    0.815,
+    1.115
+   ]
+  },
+  {
+   "name": "COL_Door_R",
+   "parent": "Door_R",
+   "type": "box",
+   "center": [
+    0.035,
+    0.41,
+    0.0
+   ],
+   "size": [
+    0.07,
+    0.81,
+    2.01
+   ],
+   "center_body": [
+    -2.435,
+    -0.405,
+    1.115
+   ],
+   "parent_origin": [
+    -2.47,
+    -0.815,
+    1.115
+   ]
+  },
+  {
+   "name": "COL_Shutter",
+   "parent": "Window_Shutter",
+   "type": "box",
+   "center": [
+    0.33,
+    0.005,
+    -0.001
+   ],
+   "size": [
+    0.66,
+    0.05,
+    0.53
+   ],
+   "center_body": [
+    0.56,
+    -1.54,
+    1.565
+   ],
+   "parent_origin": [
+    0.23,
+    -1.545,
+    1.566
+   ]
+  },
+  {
+   "name": "COL_Genset_Skid",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.1
+   ],
+   "size": [
+    2.5,
+    0.84,
+    0.2
+   ],
+   "center_body": [
+    0.55,
+    -0.25,
+    0.2
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Engine",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    0.275,
+    0.015,
+    0.66
+   ],
+   "size": [
+    1.25,
+    0.69,
+    0.92
+   ],
+   "center_body": [
+    0.825,
+    -0.235,
+    0.76
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_AirFilter",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    0.11,
+    -0.38,
+    1.08
+   ],
+   "size": [
+    0.18,
+    0.18,
+    0.36
+   ],
+   "center_body": [
+    0.66,
+    -0.63,
+    1.18
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Silencer",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    0.21,
+    0.14,
+    1.265
+   ],
+   "size": [
+    0.72,
+    0.18,
+    0.29
+   ],
+   "center_body": [
+    0.76,
+    -0.11,
+    1.365
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Alternator",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    -0.74,
+    0.01,
+    0.5
+   ],
+   "size": [
+    0.78,
+    0.82,
+    0.6
+   ],
+   "center_body": [
+    -0.19,
+    -0.24,
+    0.6
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Radiator",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    0.96,
+    0.0,
+    0.72
+   ],
+   "size": [
+    0.22,
+    0.82,
+    1.04
+   ],
+   "center_body": [
+    1.51,
+    -0.25,
+    0.82
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Duct",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    1.4,
+    0.0,
+    0.77
+   ],
+   "size": [
+    0.66,
+    1.0,
+    1.1
+   ],
+   "center_body": [
+    1.95,
+    -0.25,
+    0.87
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Panel",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    -1.12,
+    0.0,
+    1.165
+   ],
+   "size": [
+    0.2,
+    0.62,
+    0.57
+   ],
+   "center_body": [
+    -0.57,
+    -0.25,
+    1.265
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_Riser",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    0.65,
+    0.12,
+    1.595
+   ],
+   "size": [
+    0.08,
+    0.08,
+    0.59
+   ],
+   "center_body": [
+    1.2,
+    -0.13,
+    1.695
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Genset_ExhaustPipe",
+   "parent": "Genset",
+   "type": "box",
+   "center": [
+    1.19,
+    0.12,
+    1.85
+   ],
+   "size": [
+    1.08,
+    0.08,
+    0.08
+   ],
+   "center_body": [
+    1.74,
+    -0.13,
+    1.95
+   ],
+   "parent_origin": [
+    0.55,
+    -0.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Switchboard",
+   "parent": "Switchboard",
+   "type": "box",
+   "center": [
+    0.0,
+    0.11,
+    0.55
+   ],
+   "size": [
+    0.84,
+    0.22,
+    1.1
+   ],
+   "center_body": [
+    -1.45,
+    -1.47,
+    1.45
+   ],
+   "parent_origin": [
+    -1.45,
+    -1.58,
+    0.9
+   ]
+  },
+  {
+   "name": "COL_Board_Door",
+   "parent": "Board_Door",
+   "type": "box",
+   "center": [
+    0.425,
+    -0.01,
+    0.0
+   ],
+   "size": [
+    0.85,
+    0.02,
+    1.11
+   ],
+   "center_body": [
+    -1.45,
+    -1.35,
+    1.45
+   ],
+   "parent_origin": [
+    -1.875,
+    -1.34,
+    1.45
+   ]
+  },
+  {
+   "name": "COL_DayTank",
+   "parent": "DayTank",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.21,
+    0.2
+   ],
+   "size": [
+    0.84,
+    0.42,
+    0.6
+   ],
+   "center_body": [
+    -0.8,
+    1.37,
+    1.5
+   ],
+   "parent_origin": [
+    -0.8,
+    1.58,
+    1.3
+   ]
+  },
+  {
+   "name": "COL_Pallet",
+   "parent": "Pallet",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.075
+   ],
+   "size": [
+    1.25,
+    0.63,
+    0.15
+   ],
+   "center_body": [
+    1.575,
+    1.235,
+    0.175
+   ],
+   "parent_origin": [
+    1.575,
+    1.235,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Shelf",
+   "parent": "Shelf",
+   "type": "box",
+   "center": [
+    0.15,
+    -0.02,
+    0.825
+   ],
+   "size": [
+    0.3,
+    0.64,
+    1.65
+   ],
+   "center_body": [
+    -2.13,
+    1.23,
+    0.925
+   ],
+   "parent_origin": [
+    -2.28,
+    1.25,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Drum_1",
+   "parent": "Drum_1",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.44
+   ],
+   "size": [
+    0.605,
+    0.605,
+    0.88
+   ],
+   "center_body": [
+    1.27,
+    1.235,
+    0.68
+   ],
+   "parent_origin": [
+    1.27,
+    1.235,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Drum_2",
+   "parent": "Drum_2",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.44
+   ],
+   "size": [
+    0.605,
+    0.605,
+    0.88
+   ],
+   "center_body": [
+    1.88,
+    1.235,
+    0.68
+   ],
+   "parent_origin": [
+    1.88,
+    1.235,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Drum_3",
+   "parent": "Drum_3",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.44
+   ],
+   "size": [
+    0.605,
+    0.605,
+    0.88
+   ],
+   "center_body": [
+    1.95,
+    -1.2,
+    0.54
+   ],
+   "parent_origin": [
+    1.95,
+    -1.2,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Roof_N",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    0.0,
+    1.0465,
+    2.8761
+   ],
+   "size": [
+    5.25,
+    2.2668,
+    0.22
+   ],
+   "center_body": [
+    0.0,
+    1.0465,
+    2.8761
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation": [
+    -25.0,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    0.0,
+    0.0,
+    25.0
+   ]
+  },
+  {
+   "name": "COL_Roof_S",
+   "parent": "Shed",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.0465,
+    2.8761
+   ],
+   "size": [
+    5.25,
+    2.2668,
+    0.22
+   ],
+   "center_body": [
+    0.0,
+    -1.0465,
+    2.8761
+   ],
+   "parent_origin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation": [
+    25.0,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    0.0,
+    0.0,
+    -25.0
+   ]
+  }
+ ],
+ "meta": {
+  "units": "metres, degrees",
+  "frame": "shed frame: x east (the louvre end), y north, z up; ground z = 0 at the slab edge, floor z = 0.10; origin = the middle of the slab",
+  "unity": "position (x, y, z) -> Unity (-y, z, x); axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sy, sz, sx)",
+  "colliders": "colliders: BoxCollider per entry on its parent (centre / size in the parent frame); rotation = Blender XYZ euler of the box (only the two roof slopes), rotationUnity = Unity euler; part.box: the grab / hit box of a moving part in its own frame",
+  "blendshapes": "Snow_Roof, Snow_DoorDrift: Clear (100 = no snow)",
+  "lamps": "out/gen_lights.json",
+  "model": "out/gen.blend",
+  "textures": "tex/gen",
+  "links": "links.from / ratio: the part follows another part"
+ }
+}

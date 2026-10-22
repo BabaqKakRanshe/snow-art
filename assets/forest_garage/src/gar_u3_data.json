@@ -1,0 +1,224 @@
+{
+ "prefab": [
+  {
+   "m": "Garage",
+   "p": [
+    379.691,
+    16.4452,
+    -400.9222
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ]
+  }
+ ],
+ "interactables": [
+  {
+   "model": "Garage",
+   "child": "IX_GarageDoor_92",
+   "kind": "hinge",
+   "axis": [
+    1.0,
+    -0.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 85.0,
+   "locked": false
+  },
+  {
+   "model": "Garage",
+   "child": "IX_GarageSideDoor_93",
+   "kind": "hinge",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "min": 0.0,
+   "max": 100.0,
+   "locked": false
+  }
+ ],
+ "prefabLights": [
+  {
+   "model": "Garage",
+   "lights": [
+    {
+     "t": "point",
+     "p": [
+      3.0,
+      4.03,
+      -0.0
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      0.86,
+      0.96,
+      1.0
+     ],
+     "i": 0.4,
+     "r": 6.5,
+     "a": 0.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -3.0,
+      4.03,
+      -0.0
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      0.86,
+      0.96,
+      1.0
+     ],
+     "i": 0.4,
+     "r": 6.5,
+     "a": 0.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      1.5,
+      3.35,
+      5.0
+     ],
+     "d": [
+      -0.0,
+      -1.0,
+      -0.0
+     ],
+     "c": [
+      1.0,
+      0.72,
+      0.42
+     ],
+     "i": 1.0,
+     "r": 9.0,
+     "a": 0.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    }
+   ]
+  }
+ ],
+ "prefabGlows": [
+  {
+   "model": "Garage",
+   "glows": [
+    {
+     "p": [
+      3.0,
+      4.33,
+      -0.0
+     ],
+     "m": "M_Glow_Fluor",
+     "s": 0.9,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -3.0,
+      4.33,
+      -0.0
+     ],
+     "m": "M_Glow_Fluor",
+     "s": 0.9,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      1.5,
+      3.55,
+      4.62
+     ],
+     "m": "M_Glow_Bulb",
+     "s": 0.6,
+     "tag": "power",
+     "off": true
+    }
+   ]
+  }
+ ],
+ "power": {
+  "lightPrefix": "Light_power",
+  "glowPrefix": "Glow_power",
+  "switches": [
+   "IX_GenStart",
+   "IX_MainSwitch"
+  ],
+  "materialsOff": [
+   "M_Lamp_BulbOff",
+   "M_Lamp_FluorOff",
+   "M_Lamp_SodiumOff",
+   "M_Lamp_WarmOff",
+   "M_ScreenOff",
+   "M_LEDOff"
+  ],
+  "materialsOn": [
+   "M_Lamp_Bulb",
+   "M_Lamp_Fluor",
+   "M_Light_Sodium",
+   "M_Light_WarmWhite",
+   "M_ScreenOn",
+   "M_LEDOn"
+  ],
+  "startPowered": false
+ },
+ "assign": [
+  {
+   "model": "BaseMain",
+   "node": "R_Garage",
+   "mask": 64
+  },
+  {
+   "model": "BaseMain",
+   "node": "IX_GarageGate_18",
+   "mask": 66
+  },
+  {
+   "model": "BaseMain",
+   "node": "IX_GarageDoor_19",
+   "mask": 66
+  },
+  {
+   "model": "BaseMain",
+   "node": "IX_LightSwitch_Garage_87",
+   "mask": 100
+  }
+ ],
+ "rooms": [
+  {
+   "name": "Garage",
+   "layer": 6,
+   "sw": "IX_LightSwitch_Garage_"
+  }
+ ],
+ "flickers": [],
+ "anchors": []
+}

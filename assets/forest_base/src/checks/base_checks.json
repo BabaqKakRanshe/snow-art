@@ -1,0 +1,1160 @@
+{
+ "u3": {
+  "missing": [],
+  "extra": [],
+  "parents": {},
+  "pivots": {
+   "IX_HatchLid_94": {
+    "ours": [
+     -0.9,
+     0.0,
+     0.51
+    ],
+    "u3": [
+     -0.9,
+     0.0,
+     0.51
+    ],
+    "ok": true
+   }
+  },
+  "boxes": {
+   "Hatch": {
+    "ours": [
+     [
+      -1.5,
+      -1.93,
+      -0.4
+     ],
+     [
+      2.465,
+      1.5,
+      1.54
+     ]
+    ],
+    "u3": [
+     [
+      -1.5,
+      -1.942,
+      -0.3
+     ],
+     [
+      2.465,
+      1.5,
+      1.6
+     ]
+    ],
+    "d_lo": [
+     0.0,
+     0.012,
+     -0.1
+    ],
+    "d_hi": [
+     -0.0,
+     0.0,
+     -0.06
+    ]
+   },
+   "Crates": {
+    "ours": [
+     [
+      -1.437,
+      -1.101,
+      -0.002
+     ],
+     [
+      1.367,
+      0.662,
+      1.139
+     ]
+    ],
+    "u3": [
+     [
+      -1.439,
+      -0.954,
+      -0.0
+     ],
+     [
+      1.352,
+      0.651,
+      1.153
+     ]
+    ],
+    "d_lo": [
+     0.002,
+     -0.147,
+     -0.002
+    ],
+    "d_hi": [
+     0.015,
+     0.011,
+     -0.014
+    ]
+   },
+   "LogPile": {
+    "ours": [
+     [
+      -2.811,
+      -1.0,
+      -0.301
+     ],
+     [
+      2.898,
+      1.0,
+      1.211
+     ]
+    ],
+    "u3": [
+     [
+      -2.811,
+      -0.852,
+      -0.03
+     ],
+     [
+      2.898,
+      0.85,
+      1.112
+     ]
+    ],
+    "d_lo": [
+     -0.0,
+     -0.148,
+     -0.271
+    ],
+    "d_hi": [
+     0.0,
+     0.15,
+     0.099
+    ]
+   },
+   "LightPole": {
+    "ours": [
+     [
+      -0.25,
+      -0.25,
+      -0.4
+     ],
+     [
+      1.3,
+      0.25,
+      6.11
+     ]
+    ],
+    "u3": [
+     [
+      -0.25,
+      -0.25,
+      -0.4
+     ],
+     [
+      1.3,
+      0.25,
+      6.126
+     ]
+    ],
+    "d_lo": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "d_hi": [
+     -0.0,
+     0.0,
+     -0.016
+    ]
+   },
+   "PowerPole": {
+    "ours": [
+     [
+      -1.25,
+      -0.147,
+      -1.0
+     ],
+     [
+      1.25,
+      0.128,
+      9.06
+     ]
+    ],
+    "u3": [
+     [
+      -1.25,
+      -0.13,
+      -1.0
+     ],
+     [
+      1.25,
+      0.13,
+      9.0
+     ]
+    ],
+    "d_lo": [
+     0.0,
+     -0.017,
+     0.0
+    ],
+    "d_hi": [
+     0.0,
+     -0.002,
+     0.06
+    ]
+   },
+   "FenceChain": {
+    "ours": [
+     [
+      -1.5,
+      -0.371,
+      -0.4
+     ],
+     [
+      1.541,
+      0.036,
+      2.67
+     ]
+    ],
+    "u3": [
+     [
+      -1.5,
+      -0.361,
+      -0.4
+     ],
+     [
+      1.535,
+      0.04,
+      2.661
+     ]
+    ],
+    "d_lo": [
+     0.0,
+     -0.01,
+     -0.0
+    ],
+    "d_hi": [
+     0.006,
+     -0.004,
+     0.009
+    ]
+   },
+   "OldFence": {
+    "ours": [
+     [
+      -2.0,
+      -0.208,
+      -0.404
+     ],
+     [
+      2.066,
+      0.057,
+      1.896
+     ]
+    ],
+    "u3": [
+     [
+      -2.001,
+      -0.229,
+      -0.405
+     ],
+     [
+      2.061,
+      0.07,
+      1.898
+     ]
+    ],
+    "d_lo": [
+     0.001,
+     0.021,
+     0.001
+    ],
+    "d_hi": [
+     0.005,
+     -0.013,
+     -0.002
+    ]
+   },
+   "OldFence_b": {
+    "ours": [
+     [
+      -2.0,
+      -0.126,
+      -0.402
+     ],
+     [
+      2.064,
+      0.055,
+      1.901
+     ]
+    ],
+    "u3": [
+     [
+      -2.001,
+      -0.146,
+      -0.402
+     ],
+     [
+      2.061,
+      0.07,
+      1.901
+     ]
+    ],
+    "d_lo": [
+     0.001,
+     0.02,
+     -0.0
+    ],
+    "d_hi": [
+     0.003,
+     -0.015,
+     0.0
+    ]
+   },
+   "OldFence_c": {
+    "ours": [
+     [
+      -2.0,
+      -0.057,
+      -0.405
+     ],
+     [
+      2.068,
+      0.244,
+      1.894
+     ]
+    ],
+    "u3": [
+     [
+      -2.001,
+      -0.07,
+      -0.406
+     ],
+     [
+      2.073,
+      0.265,
+      1.896
+     ]
+    ],
+    "d_lo": [
+     0.001,
+     0.013,
+     0.001
+    ],
+    "d_hi": [
+     -0.005,
+     -0.021,
+     -0.002
+    ]
+   },
+   "Helipad": {
+    "ours": [
+     [
+      -13.1,
+      -11.53,
+      -0.4
+     ],
+     [
+      16.365,
+      10.4,
+      6.718
+     ]
+    ],
+    "u3": [
+     [
+      -13.1,
+      -11.542,
+      -0.3
+     ],
+     [
+      16.16,
+      10.4,
+      6.614
+     ]
+    ],
+    "d_lo": [
+     -0.0,
+     0.012,
+     -0.1
+    ],
+    "d_hi": [
+     0.205,
+     -0.0,
+     0.104
+    ]
+   },
+   "RadioMast": {
+    "ours": [
+     [
+      -24.82,
+      -32.79,
+      -1.0
+     ],
+     [
+      32.13,
+      23.03,
+      64.6
+     ]
+    ],
+    "u3": [
+     [
+      -24.809,
+      -32.778,
+      -1.2
+     ],
+     [
+      32.126,
+      23.026,
+      64.6
+     ]
+    ],
+    "d_lo": [
+     -0.011,
+     -0.012,
+     0.2
+    ],
+    "d_hi": [
+     0.004,
+     0.004,
+     -0.0
+    ]
+   },
+   "Forest_Wires": {
+    "ours": [
+     [
+      -392.79,
+      350.959,
+      16.071
+     ],
+     [
+      -363.686,
+      391.218,
+      25.109
+     ]
+    ],
+    "u3": [
+     [
+      -392.798,
+      350.951,
+      24.018
+     ],
+     [
+      -363.901,
+      390.981,
+      25.099
+     ]
+    ],
+    "d_lo": [
+     0.008,
+     0.008,
+     -7.947
+    ],
+    "d_hi": [
+     0.215,
+     0.237,
+     0.01
+    ]
+   }
+  },
+  "hinge": {
+   "IX_HatchLid_94": {
+    "ours": {
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "range": [
+      0,
+      100
+     ],
+     "locked": true,
+     "pivot": [
+      -0.9,
+      0.0,
+      0.51
+     ]
+    },
+    "u3": {
+     "axis_expected": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "axis_unity": [
+      0.0,
+      -0.0,
+      -1.0
+     ],
+     "range": [
+      0.0,
+      100.0
+     ],
+     "locked": true
+    },
+    "ok": true
+   }
+  }
+ },
+ "backfaces": {
+  "Hatch": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "Crates": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "LogPile": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "LightPole": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "PowerPole": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "FenceChain": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "OldFence": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "OldFence_b": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "OldFence_c": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "Helipad": {
+   "rays": 7320,
+   "bad": {}
+  },
+  "RadioMast": {
+   "rays": 7320,
+   "bad": {}
+  }
+ },
+ "floating": {
+  "Hatch": {
+   "groups": 2,
+   "islands": 54,
+   "floating": []
+  },
+  "Crates": {
+   "groups": 2,
+   "islands": 96,
+   "floating": []
+  },
+  "LogPile": {
+   "groups": 5,
+   "islands": 15,
+   "floating": []
+  },
+  "LightPole": {
+   "groups": 1,
+   "islands": 20,
+   "floating": []
+  },
+  "PowerPole": {
+   "groups": 1,
+   "islands": 30,
+   "floating": []
+  },
+  "FenceChain": {
+   "groups": 1,
+   "islands": 8,
+   "floating": []
+  },
+  "OldFence": {
+   "groups": 1,
+   "islands": 25,
+   "floating": []
+  },
+  "OldFence_b": {
+   "groups": 1,
+   "islands": 25,
+   "floating": []
+  },
+  "OldFence_c": {
+   "groups": 1,
+   "islands": 31,
+   "floating": []
+  },
+  "Helipad": {
+   "groups": 5,
+   "islands": 89,
+   "floating": []
+  },
+  "RadioMast": {
+   "groups": 1,
+   "islands": 1075,
+   "floating": []
+  }
+ },
+ "lights": {
+  "RadioMast": [
+   {
+    "p": [
+     1.153,
+     -1.153,
+     20.294
+    ],
+    "lens_dist": 0.033,
+    "enclosed": true,
+    "lens_rays": 13,
+    "kind": "light"
+   },
+   {
+    "p": [
+     0.987,
+     -0.987,
+     40.294
+    ],
+    "lens_dist": 0.033,
+    "enclosed": true,
+    "lens_rays": 13,
+    "kind": "light"
+   },
+   {
+    "p": [
+     0.0,
+     0.0,
+     60.384
+    ],
+    "lens_dist": 0.097,
+    "enclosed": false,
+    "lens_rays": 12,
+    "kind": "light"
+   },
+   {
+    "p": [
+     1.153,
+     -1.153,
+     20.294
+    ],
+    "lens_dist": 0.033,
+    "enclosed": true,
+    "lens_rays": 13,
+    "kind": "halo"
+   },
+   {
+    "p": [
+     -1.153,
+     1.153,
+     20.294
+    ],
+    "lens_dist": 0.033,
+    "enclosed": true,
+    "lens_rays": 13,
+    "kind": "halo"
+   },
+   {
+    "p": [
+     0.987,
+     -0.987,
+     40.294
+    ],
+    "lens_dist": 0.033,
+    "enclosed": true,
+    "lens_rays": 13,
+    "kind": "halo"
+   },
+   {
+    "p": [
+     -0.987,
+     0.987,
+     40.294
+    ],
+    "lens_dist": 0.033,
+    "enclosed": true,
+    "lens_rays": 13,
+    "kind": "halo"
+   },
+   {
+    "p": [
+     0.0,
+     0.0,
+     60.384
+    ],
+    "lens_dist": 0.097,
+    "enclosed": false,
+    "lens_rays": 12,
+    "kind": "halo"
+   }
+  ],
+  "LightPole": [
+   {
+    "p": [
+     1.05,
+     0.0,
+     5.85
+    ],
+    "lens_dist": 0.135,
+    "enclosed": false,
+    "lens_rays": 1,
+    "kind": "light"
+   },
+   {
+    "p": [
+     1.05,
+     0.0,
+     5.95
+    ],
+    "lens_dist": 0.035,
+    "enclosed": false,
+    "lens_rays": 5,
+    "kind": "halo"
+   }
+  ]
+ },
+ "hatch_swing": {
+  "0": [
+   [
+    "Z_HHINGE",
+    "Z_HHINGE"
+   ]
+  ],
+  "1": [
+   [
+    "Z_HHINGE",
+    "Z_HHINGE"
+   ],
+   [
+    "Z_HHINGE",
+    "Z_HLOCK"
+   ]
+  ],
+  "2": [
+   [
+    "Z_HHINGE",
+    "Z_HHINGE"
+   ],
+   [
+    "Z_HHINGE",
+    "Z_HLOCK"
+   ]
+  ],
+  "3": [
+   [
+    "Z_HHINGE",
+    "Z_HHINGE"
+   ]
+  ],
+  "4": [
+   [
+    "Z_HHINGE",
+    "Z_HHINGE"
+   ]
+  ]
+ },
+ "hatch_rest": {
+  "lid_bottom": 0.51,
+  "frame_top": 0.512,
+  "lid_half": 0.9,
+  "frame_in": 0.91,
+  "side_gap": 0.01
+ },
+ "wires": {
+  "conductor_vertices": 1212,
+  "spans_m": {
+   "T-1": 13.58,
+   "1-2": 15.23,
+   "T-3": 20.26,
+   "3-4": 20.1
+  },
+  "mid_sag_m": {
+   "T-1": 0.44,
+   "1-2": 0.56,
+   "T-3": 0.99,
+   "3-4": 0.97
+  },
+  "min_clearance_terrain_m": 7.62,
+  "min_dist_other_base_prefabs_m": 12.16,
+  "end_to_insulator_max_m": 0.01,
+  "sag_per_m2": 0.0024
+ },
+ "layout": {
+  "OldFence": {
+   "n": 98,
+   "post_floating": 6,
+   "post_mostly_buried": 2
+  },
+  "OldFence_b": {
+   "n": 98,
+   "post_floating": 6,
+   "post_mostly_buried": 3
+  },
+  "OldFence_c": {
+   "n": 98,
+   "post_floating": 6,
+   "post_mostly_buried": 2
+  },
+  "old_strand_joints": {
+   "joined": 292,
+   "step_over_0_3m": 80,
+   "step_over_1m": 48,
+   "max_step_m": 3.39
+  },
+  "FenceChain": {
+   "n": 213,
+   "post_floating": 0,
+   "max_fall_along_section_m": 0.066
+  }
+ },
+ "coplanar_pairs": {},
+ "uv": {
+  "Hatch": {
+   "M_Base_Props": {
+    "box": [
+     0.0007,
+     0.0007,
+     0.6577,
+     0.6457
+    ],
+    "ok": true
+   },
+   "M_Base_Panel": {
+    "box": [
+     0.2715,
+     0.5566,
+     0.8496,
+     0.7285
+    ],
+    "ok": true
+   }
+  },
+  "IX_HatchLid_94": {
+   "M_Base_Props": {
+    "box": [
+     0.0007,
+     0.0007,
+     0.6596,
+     0.6457
+    ],
+    "ok": true
+   }
+  },
+  "Crates": {
+   "M_Base_Props": {
+    "box": [
+     0.0007,
+     0.1574,
+     0.6611,
+     0.644
+    ],
+    "ok": true
+   }
+  },
+  "LogPile": {
+   "M_Base_Props": {
+    "box": [
+     0.0007,
+     0.236,
+     0.6499,
+     0.6172
+    ],
+    "ok": true
+   }
+  },
+  "LightPole": {
+   "M_Base_Poles": {
+    "box": [
+     0.0043,
+     0.0043,
+     0.9902,
+     0.3844
+    ],
+    "ok": true
+   }
+  },
+  "PowerPole": {
+   "M_Base_Poles": {
+    "box": [
+     0.0043,
+     0.0043,
+     0.9957,
+     0.3843
+    ],
+    "ok": true
+   }
+  },
+  "FenceChain": {
+   "M_Base_Fence": {
+    "box": [
+     0.0027,
+     0.1472,
+     0.6246,
+     0.4124
+    ],
+    "ok": true
+   }
+  },
+  "OldFence": {
+   "M_Base_Fence": {
+    "box": [
+     0.0027,
+     0.0027,
+     0.5727,
+     0.2465
+    ],
+    "ok": true
+   }
+  },
+  "OldFence_b": {
+   "M_Base_Fence": {
+    "box": [
+     0.0027,
+     0.0897,
+     0.5145,
+     0.2839
+    ],
+    "ok": true
+   }
+  },
+  "OldFence_c": {
+   "M_Base_Fence": {
+    "box": [
+     0.0027,
+     0.0318,
+     0.5433,
+     0.2652
+    ],
+    "ok": true
+   }
+  },
+  "Helipad": {
+   "M_Base_Helipad": {
+    "box": [
+     0.0021,
+     0.0021,
+     0.9979,
+     0.9863
+    ],
+    "ok": true
+   },
+   "M_Base_Panel": {
+    "box": [
+     0.002,
+     0.7402,
+     0.748,
+     0.998
+    ],
+    "ok": true
+   }
+  },
+  "RadioMast": {
+   "M_Base_Mast": {
+    "box": [
+     0.0011,
+     0.0011,
+     0.9989,
+     0.9967
+    ],
+    "ok": true
+   },
+   "M_Base_Panel": {
+    "box": [
+     0.002,
+     0.5215,
+     0.2598,
+     0.7285
+    ],
+    "ok": true
+   }
+  }
+ },
+ "uv_bad": {},
+ "images": {
+  "M_Base_Barbed": [
+   [
+    "T_Base_Barbed.png",
+    [
+     64,
+     67
+    ]
+   ]
+  ],
+  "M_Base_ChainLink": [
+   [
+    "T_Base_ChainLink.png",
+    [
+     64,
+     64
+    ]
+   ]
+  ],
+  "M_Base_Fence": [
+   [
+    "T_Base_Fence_BaseColor.png",
+    [
+     256,
+     256
+    ]
+   ]
+  ],
+  "M_Base_Helipad": [
+   [
+    "T_Base_Helipad_BaseColor.png",
+    [
+     1024,
+     1024
+    ]
+   ]
+  ],
+  "M_Base_Mast": [
+   [
+    "T_Base_Mast_BaseColor.png",
+    [
+     1024,
+     1024
+    ]
+   ]
+  ],
+  "M_Base_Panel": [
+   [
+    "T_Base_Panel_BaseColor.png",
+    [
+     256,
+     256
+    ]
+   ],
+   [
+    "T_Base_Panel_BaseColor.png",
+    [
+     256,
+     256
+    ]
+   ]
+  ],
+  "M_Base_Poles": [
+   [
+    "T_Base_Poles_BaseColor.png",
+    [
+     512,
+     512
+    ]
+   ]
+  ],
+  "M_Base_Props": [
+   [
+    "T_Base_Props_BaseColor.png",
+    [
+     1024,
+     1024
+    ]
+   ]
+  ],
+  "M_Base_Rust": [
+   [
+    "T_Base_Rust.png",
+    [
+     64,
+     12
+    ]
+   ]
+  ],
+  "M_RoadDirt": [
+   [
+    "T_RoadGravel_A_px.png",
+    [
+     0,
+     0
+    ]
+   ]
+  ],
+  "M_TrailSoil": [
+   [
+    "T_TrailSoil_A_px.png",
+    [
+     0,
+     0
+    ]
+   ]
+  ]
+ },
+ "tris": {
+  "Crates": 1156,
+  "FenceChain": 60,
+  "Forest_BasePaved": 535,
+  "Forest_Road": 24582,
+  "Forest_Wires": 2936,
+  "Hatch": 996,
+  "Helipad": 3606,
+  "IX_HatchLid_94": 296,
+  "LightPole": 546,
+  "LogPile": 1052,
+  "OldFence": 76,
+  "OldFence_b": 76,
+  "OldFence_c": 88,
+  "PowerPole": 1014,
+  "RadioMast": 14480,
+  "Terrain_0_0": 9704,
+  "Terrain_0_1": 9957,
+  "Terrain_0_2": 9524,
+  "Terrain_0_3": 8089,
+  "Terrain_0_4": 6725,
+  "Terrain_0_5": 7180,
+  "Terrain_0_6": 10272,
+  "Terrain_0_7": 8230,
+  "Terrain_1_0": 1250,
+  "Terrain_1_1": 1250,
+  "Terrain_1_2": 1789,
+  "Terrain_1_3": 1521,
+  "Terrain_1_4": 7183,
+  "Terrain_1_5": 8507,
+  "Terrain_1_6": 12500,
+  "Terrain_1_7": 7876,
+  "Terrain_2_0": 1250,
+  "Terrain_2_1": 1250,
+  "Terrain_2_2": 1250,
+  "Terrain_2_3": 1250,
+  "Terrain_2_4": 8091,
+  "Terrain_2_5": 12161,
+  "Terrain_2_6": 11228,
+  "Terrain_2_7": 6189,
+  "Terrain_3_0": 1250,
+  "Terrain_3_1": 1250,
+  "Terrain_3_2": 1251,
+  "Terrain_3_3": 5317,
+  "Terrain_3_4": 7681,
+  "Terrain_3_5": 6330,
+  "Terrain_3_6": 2536,
+  "Terrain_3_7": 3424,
+  "Terrain_4_0": 1345,
+  "Terrain_4_1": 1250,
+  "Terrain_4_2": 3493,
+  "Terrain_4_3": 12500,
+  "Terrain_4_4": 7645,
+  "Terrain_4_5": 1250,
+  "Terrain_4_6": 1250,
+  "Terrain_4_7": 3547,
+  "Terrain_5_0": 6200,
+  "Terrain_5_1": 5036,
+  "Terrain_5_2": 7723,
+  "Terrain_5_3": 6926,
+  "Terrain_5_4": 2598,
+  "Terrain_5_5": 1565,
+  "Terrain_5_6": 3056,
+  "Terrain_5_7": 3322,
+  "Terrain_6_0": 2811,
+  "Terrain_6_1": 8507,
+  "Terrain_6_2": 5413,
+  "Terrain_6_3": 1250,
+  "Terrain_6_4": 1250,
+  "Terrain_6_5": 1250,
+  "Terrain_6_6": 2335,
+  "Terrain_6_7": 3210,
+  "Terrain_7_0": 7776,
+  "Terrain_7_1": 2741,
+  "Terrain_7_2": 6737,
+  "Terrain_7_3": 4868,
+  "Terrain_7_4": 2998,
+  "Terrain_7_5": 2132,
+  "Terrain_7_6": 2962,
+  "Terrain_7_7": 4923
+ }
+}

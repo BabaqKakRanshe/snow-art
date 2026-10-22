@@ -1,0 +1,71 @@
+{
+ "size": 256,
+ "ppm": 160.0,
+ "regions": {
+  "halt": [
+   0,
+   0,
+   192,
+   128
+  ],
+  "sperr": [
+   0,
+   130,
+   160,
+   226
+  ],
+  "noentry": [
+   162,
+   130,
+   250,
+   218
+  ]
+ },
+ "netting": {
+  "size": 64,
+  "metres_per_tile": 0.5,
+  "diamond_px": 16,
+  "wire_px": 2
+ },
+ "barbed": {
+  "size": [
+   64,
+   66
+  ],
+  "metres_per_tile": [
+   0.5,
+   0.5
+  ],
+  "strands": [
+   0.08,
+   0.21,
+   0.34,
+   0.46
+  ]
+ },
+ "chain_barbed": {
+  "size": [
+   64,
+   67
+  ],
+  "metres_per_tile": [
+   0.5,
+   0.52
+  ],
+  "strands": [
+   0.141,
+   0.311,
+   0.481
+  ]
+ },
+ "razor": {
+  "size": [
+   64,
+   12
+  ],
+  "metres_per_tile": [
+   0.5,
+   0.06
+  ]
+ }
+}

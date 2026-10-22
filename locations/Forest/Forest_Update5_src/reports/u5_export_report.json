@@ -1,0 +1,1087 @@
+{
+ "Hatch": {
+  "file": "Hatch.fbx",
+  "objects": [
+   "Hatch",
+   "IX_HatchLid_94"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Panel",
+   "M_Base_Props"
+  ],
+  "tris": 1292,
+  "remap": [],
+  "bytes": 51708,
+  "aabb": {
+   "Hatch": [
+    [
+     -1.5,
+     -1.93,
+     -0.4
+    ],
+    [
+     2.465,
+     1.5,
+     1.54
+    ]
+   ],
+   "IX_HatchLid_94": [
+    [
+     -0.918,
+     -0.9,
+     0.492
+    ],
+    [
+     1.1,
+     0.9,
+     0.612
+    ]
+   ]
+  },
+  "pivots": {
+   "Hatch": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_HatchLid_94": [
+    -0.9,
+    0.0,
+    0.51
+   ]
+  }
+ },
+ "Crates": {
+  "file": "Crates.fbx",
+  "objects": [
+   "Crates"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Props"
+  ],
+  "tris": 1156,
+  "remap": [],
+  "bytes": 50236,
+  "aabb": {
+   "Crates": [
+    [
+     -1.4371,
+     -1.1008,
+     -0.002
+    ],
+    [
+     1.3674,
+     0.6617,
+     1.1386
+    ]
+   ]
+  },
+  "pivots": {
+   "Crates": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "LogPile": {
+  "file": "LogPile.fbx",
+  "objects": [
+   "LogPile"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Props"
+  ],
+  "tris": 1052,
+  "remap": [],
+  "bytes": 46796,
+  "aabb": {
+   "LogPile": [
+    [
+     -2.811,
+     -1.0,
+     -0.3014
+    ],
+    [
+     2.898,
+     1.0001,
+     1.2113
+    ]
+   ]
+  },
+  "pivots": {
+   "LogPile": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "LightPole": {
+  "file": "LightPole.fbx",
+  "objects": [
+   "LightPole"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Poles",
+   "M_Lamp_SodiumOff"
+  ],
+  "tris": 546,
+  "remap": [],
+  "bytes": 31996,
+  "aabb": {
+   "LightPole": [
+    [
+     -0.25,
+     -0.25,
+     -0.4
+    ],
+    [
+     1.3,
+     0.25,
+     6.11
+    ]
+   ]
+  },
+  "pivots": {
+   "LightPole": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "PowerPole": {
+  "file": "PowerPole.fbx",
+  "objects": [
+   "PowerPole"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Poles"
+  ],
+  "tris": 1014,
+  "remap": [],
+  "bytes": 40108,
+  "aabb": {
+   "PowerPole": [
+    [
+     -1.25,
+     -0.1472,
+     -1.0
+    ],
+    [
+     1.25,
+     0.1284,
+     9.06
+    ]
+   ]
+  },
+  "pivots": {
+   "PowerPole": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "FenceChain": {
+  "file": "FenceChain.fbx",
+  "objects": [
+   "FenceChain"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Barbed",
+   "M_Base_ChainLink",
+   "M_Base_Fence"
+  ],
+  "tris": 60,
+  "remap": [],
+  "bytes": 24860,
+  "aabb": {
+   "FenceChain": [
+    [
+     -1.5,
+     -0.3712,
+     -0.4
+    ],
+    [
+     1.541,
+     0.0355,
+     2.67
+    ]
+   ]
+  },
+  "pivots": {
+   "FenceChain": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "OldFence": {
+  "file": "OldFence.fbx",
+  "objects": [
+   "OldFence"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Fence",
+   "M_Base_Rust"
+  ],
+  "tris": 76,
+  "remap": [],
+  "bytes": 23180,
+  "aabb": {
+   "OldFence": [
+    [
+     -2.0,
+     -0.2084,
+     -0.4039
+    ],
+    [
+     2.0661,
+     0.0567,
+     1.8965
+    ]
+   ]
+  },
+  "pivots": {
+   "OldFence": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "OldFence_b": {
+  "file": "OldFence_b.fbx",
+  "objects": [
+   "OldFence_b"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Fence",
+   "M_Base_Rust"
+  ],
+  "tris": 76,
+  "remap": [],
+  "bytes": 23196,
+  "aabb": {
+   "OldFence_b": [
+    [
+     -2.0,
+     -0.1265,
+     -0.4023
+    ],
+    [
+     2.0643,
+     0.0549,
+     1.9011
+    ]
+   ]
+  },
+  "pivots": {
+   "OldFence_b": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "OldFence_c": {
+  "file": "OldFence_c.fbx",
+  "objects": [
+   "OldFence_c"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Fence",
+   "M_Base_Rust"
+  ],
+  "tris": 88,
+  "remap": [],
+  "bytes": 23628,
+  "aabb": {
+   "OldFence_c": [
+    [
+     -2.0,
+     -0.0571,
+     -0.4049
+    ],
+    [
+     2.0684,
+     0.2439,
+     1.8943
+    ]
+   ]
+  },
+  "pivots": {
+   "OldFence_c": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Helipad": {
+  "file": "Helipad.fbx",
+  "objects": [
+   "Helipad"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Helipad",
+   "M_Base_Panel",
+   "M_Lamp_WarmOff"
+  ],
+  "tris": 3606,
+  "remap": [],
+  "bytes": 100492,
+  "aabb": {
+   "Helipad": [
+    [
+     -13.1,
+     -11.53,
+     -0.4
+    ],
+    [
+     16.3651,
+     10.4,
+     6.718
+    ]
+   ]
+  },
+  "pivots": {
+   "Helipad": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "RadioMast": {
+  "file": "RadioMast.fbx",
+  "objects": [
+   "RadioMast"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Mast",
+   "M_Base_Panel",
+   "M_Light_Red"
+  ],
+  "tris": 14480,
+  "remap": [],
+  "bytes": 395644,
+  "aabb": {
+   "RadioMast": [
+    [
+     -24.82,
+     -32.79,
+     -1.0
+    ],
+    [
+     32.13,
+     23.03,
+     64.6
+    ]
+   ]
+  },
+  "pivots": {
+   "RadioMast": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Forest_Wires": {
+  "file": "Forest_Wires.fbx",
+  "objects": [
+   "Forest_Wires"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Cable",
+   "M_Enamel",
+   "M_Galvanized"
+  ],
+  "tris": 2936,
+  "remap": [],
+  "bytes": 71404,
+  "aabb": {
+   "Forest_Wires": [
+    [
+     -392.7898,
+     350.9595,
+     16.0707
+    ],
+    [
+     -363.686,
+     391.2178,
+     25.1086
+    ]
+   ]
+  },
+  "pivots": {
+   "Forest_Wires": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Dish_1": {
+  "file": "Dish_1.fbx",
+  "objects": [
+   "Dish_1",
+   "IX_CabinetDoor_2"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Dish16",
+   "M_Far_Panel",
+   "M_LEDOff",
+   "M_Lamp_SodiumOff",
+   "M_Light_Red"
+  ],
+  "tris": 6320,
+  "remap": [],
+  "bytes": 185964,
+  "aabb": {
+   "Dish_1": [
+    [
+     -8.0,
+     -4.1411,
+     -0.5
+    ],
+    [
+     8.0,
+     6.7377,
+     15.7201
+    ]
+   ],
+   "IX_CabinetDoor_2": [
+    [
+     3.626,
+     -2.898,
+     0.17
+    ],
+    [
+     4.75,
+     -2.838,
+     1.87
+    ]
+   ]
+  },
+  "pivots": {
+   "Dish_1": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_CabinetDoor_2": [
+    3.65,
+    -2.885,
+    0.17
+   ]
+  }
+ },
+ "Dish_2": {
+  "file": "Dish_2.fbx",
+  "objects": [
+   "Dish_2",
+   "IX_CabinetDoor_3"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Dish16",
+   "M_Far_Panel",
+   "M_LEDOff",
+   "M_Lamp_SodiumOff",
+   "M_Light_Red"
+  ],
+  "tris": 6320,
+  "remap": [],
+  "bytes": 186092,
+  "aabb": {
+   "Dish_2": [
+    [
+     -8.0,
+     -4.1411,
+     -0.5
+    ],
+    [
+     8.0,
+     7.0623,
+     15.4842
+    ]
+   ],
+   "IX_CabinetDoor_3": [
+    [
+     3.626,
+     -2.898,
+     0.17
+    ],
+    [
+     4.75,
+     -2.838,
+     1.87
+    ]
+   ]
+  },
+  "pivots": {
+   "Dish_2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_CabinetDoor_3": [
+    3.65,
+    -2.885,
+    0.17
+   ]
+  }
+ },
+ "Dish_3": {
+  "file": "Dish_3.fbx",
+  "objects": [
+   "Dish_3",
+   "IX_CabinetDoor_4"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Dish12",
+   "M_Far_Panel",
+   "M_LEDOff",
+   "M_Lamp_SodiumOff",
+   "M_Light_Red"
+  ],
+  "tris": 6248,
+  "remap": [],
+  "bytes": 185628,
+  "aabb": {
+   "Dish_3": [
+    [
+     -6.0,
+     -4.1411,
+     -0.5
+    ],
+    [
+     6.3204,
+     5.427,
+     11.927
+    ]
+   ],
+   "IX_CabinetDoor_4": [
+    [
+     3.626,
+     -2.898,
+     0.17
+    ],
+    [
+     4.75,
+     -2.838,
+     1.87
+    ]
+   ]
+  },
+  "pivots": {
+   "Dish_3": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_CabinetDoor_4": [
+    3.65,
+    -2.885,
+    0.17
+   ]
+  }
+ },
+ "Dish_4": {
+  "file": "Dish_4.fbx",
+  "objects": [
+   "Dish_4",
+   "IX_CabinetDoor_5"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Dish12",
+   "M_Far_Panel",
+   "M_LEDOff",
+   "M_Lamp_SodiumOff",
+   "M_Light_Red"
+  ],
+  "tris": 6248,
+  "remap": [],
+  "bytes": 186172,
+  "aabb": {
+   "Dish_4": [
+    [
+     -6.0,
+     -4.1411,
+     -0.5
+    ],
+    [
+     6.3204,
+     5.1399,
+     12.1729
+    ]
+   ],
+   "IX_CabinetDoor_5": [
+    [
+     3.626,
+     -2.898,
+     0.17
+    ],
+    [
+     4.75,
+     -2.838,
+     1.87
+    ]
+   ]
+  },
+  "pivots": {
+   "Dish_4": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_CabinetDoor_5": [
+    3.65,
+    -2.885,
+    0.17
+   ]
+  }
+ },
+ "Dish_5": {
+  "file": "Dish_5.fbx",
+  "objects": [
+   "Dish_5",
+   "IX_CabinetDoor_6"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Dish16",
+   "M_Far_Panel",
+   "M_LEDOff",
+   "M_Lamp_SodiumOff",
+   "M_Light_Red"
+  ],
+  "tris": 6320,
+  "remap": [],
+  "bytes": 186156,
+  "aabb": {
+   "Dish_5": [
+    [
+     -8.0,
+     -4.1411,
+     -0.5
+    ],
+    [
+     8.0,
+     6.563,
+     15.824
+    ]
+   ],
+   "IX_CabinetDoor_6": [
+    [
+     3.626,
+     -2.898,
+     0.17
+    ],
+    [
+     4.75,
+     -2.838,
+     1.87
+    ]
+   ]
+  },
+  "pivots": {
+   "Dish_5": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_CabinetDoor_6": [
+    3.65,
+    -2.885,
+    0.17
+   ]
+  }
+ },
+ "Radome": {
+  "file": "Radome.fbx",
+  "objects": [
+   "Radome"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Panel",
+   "M_Far_Towers",
+   "M_Light_Red"
+  ],
+  "tris": 5480,
+  "remap": [],
+  "bytes": 146812,
+  "aabb": {
+   "Radome": [
+    [
+     -5.1738,
+     -5.1738,
+     -1.0
+    ],
+    [
+     10.7,
+     5.1738,
+     26.392
+    ]
+   ]
+  },
+  "pivots": {
+   "Radome": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "RelayMast": {
+  "file": "RelayMast.fbx",
+  "objects": [
+   "RelayMast"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Base_Barbed",
+   "M_Base_ChainLink",
+   "M_Far_Panel",
+   "M_Far_Towers",
+   "M_Light_Red"
+  ],
+  "tris": 11620,
+  "remap": [],
+  "bytes": 290508,
+  "aabb": {
+   "RelayMast": [
+    [
+     -6.371,
+     -6.371,
+     -1.0
+    ],
+    [
+     10.371,
+     6.371,
+     42.52
+    ]
+   ]
+  },
+  "pivots": {
+   "RelayMast": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "MeteoStation": {
+  "file": "MeteoStation.fbx",
+  "objects": [
+   "MeteoStation"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Meteo",
+   "M_Far_Panel"
+  ],
+  "tris": 5618,
+  "remap": [],
+  "bytes": 139228,
+  "aabb": {
+   "MeteoStation": [
+    [
+     -6.04,
+     -6.04,
+     -0.5
+    ],
+    [
+     6.04,
+     6.04,
+     8.28
+    ]
+   ]
+  },
+  "pivots": {
+   "MeteoStation": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "LookoutTower": {
+  "file": "LookoutTower.fbx",
+  "objects": [
+   "LookoutTower"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Lookout",
+   "M_Far_Panel",
+   "M_GlassDirty"
+  ],
+  "tris": 6474,
+  "remap": [],
+  "bytes": 173884,
+  "aabb": {
+   "LookoutTower": [
+    [
+     -3.75,
+     -3.65,
+     -1.0
+    ],
+    [
+     3.65,
+     3.65,
+     27.12
+    ]
+   ]
+  },
+  "pivots": {
+   "LookoutTower": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "PumpHouse": {
+  "file": "PumpHouse.fbx",
+  "objects": [
+   "PumpHouse",
+   "IX_PumpDoor_7"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Panel",
+   "M_Far_Small"
+  ],
+  "tris": 1550,
+  "remap": [],
+  "bytes": 59356,
+  "aabb": {
+   "PumpHouse": [
+    [
+     -2.17,
+     -1.67,
+     -0.3077
+    ],
+    [
+     2.17,
+     4.5997,
+     3.29
+    ]
+   ],
+   "IX_PumpDoor_7": [
+    [
+     -0.604,
+     -1.548,
+     0.21
+    ],
+    [
+     0.29,
+     -1.458,
+     2.19
+    ]
+   ]
+  },
+  "pivots": {
+   "PumpHouse": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_PumpDoor_7": [
+    -0.59,
+    -1.5,
+    0.21
+   ]
+  }
+ },
+ "Chapel": {
+  "file": "Chapel.fbx",
+  "objects": [
+   "Chapel",
+   "IX_ChapelDoor_8"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Candle",
+   "M_Far_Chapel",
+   "M_Far_Panel",
+   "M_GlassDirty"
+  ],
+  "tris": 3962,
+  "remap": [],
+  "bytes": 120412,
+  "aabb": {
+   "Chapel": [
+    [
+     -6.71,
+     -4.75,
+     -0.4
+    ],
+    [
+     4.915,
+     4.3016,
+     10.0
+    ]
+   ],
+   "IX_ChapelDoor_8": [
+    [
+     -0.55,
+     -3.7626,
+     0.11
+    ],
+    [
+     0.58,
+     -3.66,
+     2.29
+    ]
+   ]
+  },
+  "pivots": {
+   "Chapel": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_ChapelDoor_8": [
+    -0.56,
+    -3.705,
+    0.01
+   ]
+  }
+ },
+ "Cabin": {
+  "file": "Cabin.fbx",
+  "objects": [
+   "Cabin",
+   "IX_CabinDoor_9"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Small",
+   "M_GlassDirty"
+  ],
+  "tris": 5260,
+  "remap": [],
+  "bytes": 161228,
+  "aabb": {
+   "Cabin": [
+    [
+     -4.3642,
+     -3.85,
+     -0.001
+    ],
+    [
+     2.9858,
+     3.0,
+     5.538
+    ]
+   ],
+   "IX_CabinDoor_9": [
+    [
+     -1.46,
+     -2.07,
+     0.22
+    ],
+    [
+     -0.63,
+     -1.94,
+     2.05
+    ]
+   ]
+  },
+  "pivots": {
+   "Cabin": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_CabinDoor_9": [
+    -1.47,
+    -2.0,
+    0.2
+   ]
+  }
+ },
+ "Campsite": {
+  "file": "Campsite.fbx",
+  "objects": [
+   "Campsite"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Far_Small",
+   "M_Headlight"
+  ],
+  "tris": 1475,
+  "remap": [],
+  "bytes": 60076,
+  "aabb": {
+   "Campsite": [
+    [
+     -1.658,
+     -1.7514,
+     -0.08
+    ],
+    [
+     3.4766,
+     1.963,
+     0.676
+    ]
+   ]
+  },
+  "pivots": {
+   "Campsite": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

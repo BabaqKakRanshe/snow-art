@@ -1,0 +1,39 @@
+cont_kit.py                              Generator container kit: the generator shed's interior (gen_set, gen_room) moved into two 20 ft ISO containers that
+cont_tex.py                              Panel atlas of the generator container: the generator shed's atlas (gen_tex: dials, control panel, switchboard face,
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+kpp_tex.py                               Panel atlas of the checkpoint (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the chain-link tile:
+main_build.py                            Main building build (main_shell / main_open / main_rooms / main_rooms2 / main_fx / main_signs): one object per part with
+main_draft.py                            Main building draft: the shell / openings / rooms built with flat zone colours, quick renders (axonometric views
+main_furn.py                             Main building — furniture and equipment pieces (the generator shed's way: real thicknesses, rounded edges where hands
+main_fx.py                               Main building — the 64 light fixtures of Update 3 (FX_*), rebuilt at their Update 3 transforms: bulkheads (wall /
+main_fx_u3.py                            Update 3 fixtures of BaseMain (generated from the Forest FBX dump and Forest_Layout prefabLights): name, type, pivot (loc),
+main_ix_u3.py                            Update 3 interactables of BaseMain and BaseMain_Opening (Forest_Layout.json + the FBX objects): kind, Unity axis,
+main_open.py                             Main building — openings: windows (frames, sashes, transoms, glass, inner window boards, galvanised outer sills, the
+main_paint.py                            Painters for the main building's atlases (psxbake): paint_main(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n]).
+main_render.py                           Renders of the baked main building (out/main.blend posed from out/main_contract.json): outside by day, the rooms with
+main_rooms.py                            Main building — the rooms' furniture and equipment at the Update 3 places (measured off the Forest model: every
+main_rooms2.py                           Main building — the upper floor, the basement and the outside details (main_rooms carries the ground floor). Every piece
+main_shell.py                            Main building — the shell (main_spec gives the measured layout): one object per room (R_<Room> = the room's light
+main_signs.py                            Main building — the signs, labels, plans, dials and papers of Update 3 (measured off the Forest model: every
+main_spec.py                             Main building (BaseMain) — the layout, measured off the Update 3 model on the Forest map (Models/BaseMain.fbx, the
+main_tex.py                              Panel atlas of the main building (1024 x 1024, pixel art, point-filtered): every sign, label, plan, dial and paper of
+make_main_doc.py                         Russian reference for the main building: out/main_contract.json + out/main.json (+ the checks' summary) ->
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_main.py                             Package the main building (BaseMain + BaseMain_Opening): the .blend with relative texture paths, the textures, the
+post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+uvpack.py                                Shelf packing of UV islands by their bounding boxes (the main building's walls, strips and boxes are rectangles:
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+checks/backfaces.py                      Faces the camera would see from behind (Unity culls them: the surface vanishes): rays from inside every room (a grid of
+checks/coplanar2.py                      coplanar same-facing overlapping faces in out/main.blend (or the .blend given last) (z-fighting and black AO patches in the bake)
+checks/probe_main.py                     The rebuilt main building against Update 3's data (main_u3_data.json = Forest_Layout.json's BaseMain part): every
+checks/props_check.py                    Update 3's dressing props, notes and floor decals against the rebuilt main building: each prop must rest on a surface
+checks/summary.py                        The checks' logs -> a short Russian summary for the reference (make_main_doc.py ... checks_summary.json).
+checks/sweep2.py                         Moving parts through their ranges: how deep does a part sink into anything else (or anything into it)?
+checks/walk.py                           Walkability of the rebuilt main building (out/main.blend posed from the contract: every door open, the gate shut, the

@@ -1,0 +1,2827 @@
+{
+ "parts": {
+  "IX_BoothWindow_302": {
+   "kind": "slide",
+   "pivot": [
+    2.009,
+    -0.88,
+    1.225
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.54
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "pass window (Schalterfenster): the sash slides toward the front behind the fixed pane, 0.54 m open (Update 3: same name, axis and travel)",
+   "object": "IX_BoothWindow_302",
+   "box": {
+    "center": [
+     -0.007,
+     0.29,
+     0.55
+    ],
+    "size": [
+     0.04,
+     0.58,
+     1.1
+    ]
+   }
+  },
+  "IX_BoothWindow_302_Glass": {
+   "kind": "static",
+   "pivot": [
+    2.009,
+    -0.59,
+    1.775
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_BoothWindow_302",
+   "states": [],
+   "note": "the sash pane (glass material)",
+   "object": "IX_BoothWindow_302_Glass"
+  },
+  "IX_BoothDoor_74": {
+   "kind": "hinge",
+   "pivot": [
+    1.375,
+    1.66,
+    1.2
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "booth door in the back wall, hung outside on strap hinges at its +x edge; opens outward (+) to 100; lever handles both sides; not locked (Update 3: same name, hinge side and travel)",
+   "object": "IX_BoothDoor_74",
+   "box": {
+    "center": [
+     -0.462,
+     -0.031,
+     -0.008
+    ],
+    "size": [
+     0.946,
+     0.1556,
+     2.06
+    ]
+   }
+  },
+  "IX_BoothDoor_74_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.905,
+    1.629,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_BoothDoor_74",
+   "states": [],
+   "note": "the door pane (glass material)",
+   "object": "IX_BoothDoor_74_Glass"
+  },
+  "IX_BoothDoor_74_Sign": {
+   "kind": "static",
+   "pivot": [
+    0.79,
+    1.654,
+    1.285
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_BoothDoor_74",
+   "states": [],
+   "note": "NUR FÜR PERSONAL / STAFF ONLY plate on the door (panel atlas)",
+   "object": "IX_BoothDoor_74_Sign"
+  },
+  "IX_Drawer_75": {
+   "kind": "slide",
+   "pivot": [
+    1.4,
+    0.745,
+    0.625
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.38
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "out"
+   ],
+   "note": "desk drawer under the road-side desk: pulls into the room, 0.38 m (Update 3: same name, axis and travel)",
+   "object": "IX_Drawer_75",
+   "box": {
+    "center": [
+     0.258,
+     0.0,
+     0.095
+    ],
+    "size": [
+     0.584,
+     0.396,
+     0.19
+    ]
+   }
+  },
+  "IX_Drawer_76": {
+   "kind": "slide",
+   "pivot": [
+    1.4,
+    0.745,
+    0.415
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.38
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "out"
+   ],
+   "note": "desk drawer under the road-side desk: pulls into the room, 0.38 m (Update 3: same name, axis and travel)",
+   "object": "IX_Drawer_76",
+   "box": {
+    "center": [
+     0.258,
+     0.0,
+     0.095
+    ],
+    "size": [
+     0.584,
+     0.396,
+     0.19
+    ]
+   }
+  },
+  "IX_Drawer_77": {
+   "kind": "slide",
+   "pivot": [
+    1.4,
+    0.745,
+    0.195
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.38
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "out"
+   ],
+   "note": "desk drawer under the road-side desk: pulls into the room, 0.38 m (Update 3: same name, axis and travel)",
+   "object": "IX_Drawer_77",
+   "box": {
+    "center": [
+     0.258,
+     0.0,
+     0.105
+    ],
+    "size": [
+     0.584,
+     0.396,
+     0.21
+    ]
+   }
+  },
+  "IX_Drawer_78": {
+   "kind": "slide",
+   "pivot": [
+    -1.38,
+    1.205,
+    0.875
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.45
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "out"
+   ],
+   "note": "filing cabinet drawer: pulls into the room (+x), 0.45 m (Update 3: same name, axis and travel)",
+   "object": "IX_Drawer_78",
+   "box": {
+    "center": [
+     -0.278,
+     0.0,
+     0.15
+    ],
+    "size": [
+     0.584,
+     0.436,
+     0.3
+    ]
+   }
+  },
+  "IX_Drawer_79": {
+   "kind": "slide",
+   "pivot": [
+    -1.38,
+    1.205,
+    0.535
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.45
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "out"
+   ],
+   "note": "filing cabinet drawer: pulls into the room (+x), 0.45 m (Update 3: same name, axis and travel)",
+   "object": "IX_Drawer_79",
+   "box": {
+    "center": [
+     -0.278,
+     0.0,
+     0.165
+    ],
+    "size": [
+     0.584,
+     0.436,
+     0.33
+    ]
+   }
+  },
+  "IX_Drawer_80": {
+   "kind": "slide",
+   "pivot": [
+    -1.38,
+    1.205,
+    0.195
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.45
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "out"
+   ],
+   "note": "filing cabinet drawer: pulls into the room (+x), 0.45 m (Update 3: same name, axis and travel)",
+   "object": "IX_Drawer_80",
+   "box": {
+    "center": [
+     -0.278,
+     0.0,
+     0.165
+    ],
+    "size": [
+     0.584,
+     0.436,
+     0.33
+    ]
+   }
+  },
+  "IX_KeyBoxDoor_303": {
+   "kind": "hinge",
+   "pivot": [
+    -0.77,
+    1.429,
+    1.8
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    120
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "key cabinet door: hinged at its left edge, opens into the room (+) to 120; inside the hooks Schranke, Hauptgebäude, Garage, Generator with their keys and the empty Stationsleiter hook (Update 3: same name, pivot and travel)",
+   "object": "IX_KeyBoxDoor_303",
+   "box": {
+    "center": [
+     0.26,
+     -0.012,
+     0.0
+    ],
+    "size": [
+     0.52,
+     0.026,
+     0.54
+    ]
+   }
+  },
+  "IX_KeyBoxDoor_303_Label": {
+   "kind": "static",
+   "pivot": [
+    -0.51,
+    1.418,
+    1.98
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_KeyBoxDoor_303",
+   "states": [],
+   "note": "SCHLÜSSEL / KEYS label on the cabinet door (panel atlas)",
+   "object": "IX_KeyBoxDoor_303_Label"
+  },
+  "Kpp_Props": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "small things: vests, extinguisher, CCTV monitor, binders, thermos, mug, papers, the radio and its mic, the wall clock, the first-aid box, the CCTV camera under the front eave",
+   "object": "Kpp_Props"
+  },
+  "Kpp_Chair": {
+   "kind": "static",
+   "pivot": [
+    0.68,
+    -0.45,
+    0.15
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "the guard's swivel chair at the road-side desk",
+   "object": "Kpp_Chair"
+  },
+  "Phone": {
+   "kind": "static",
+   "pivot": [
+    1.67,
+    -0.55,
+    0.9
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "rotary desk phone (70s, orange) by the pass window: X05 rings it twice; zone Phone_KPP (Update 3) is round the receiver",
+   "object": "Phone"
+  },
+  "Phone_Receiver": {
+   "kind": "static",
+   "pivot": [
+    1.72,
+    -0.55,
+    1.025
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Phone",
+   "states": [],
+   "note": "the receiver on its cradle: hide / animate it while it is picked up (X05: silence, then breathing)",
+   "object": "Phone_Receiver"
+  },
+  "Phone_Dial": {
+   "kind": "static",
+   "pivot": [
+    1.625,
+    -0.55,
+    0.966
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Phone",
+   "states": [],
+   "note": "dial face (panel atlas)",
+   "object": "Phone_Dial"
+  },
+  "Phone_Bell": {
+   "kind": "static",
+   "pivot": [
+    2.19,
+    1.0,
+    2.6
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "the phone's bell outside on the road-side wall: rings with the phone (X05)",
+   "object": "Phone_Bell"
+  },
+  "Lamp_Fluor": {
+   "kind": "static",
+   "pivot": [
+    -0.3,
+    0.1,
+    2.65
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "fluorescent batten under the rafters: flickers from the start although there is no power (Update 3: Light_booth, M_Lamp_FluorFlicker)",
+   "object": "Lamp_Fluor"
+  },
+  "Lens_Fluor": {
+   "kind": "static",
+   "pivot": [
+    -0.3,
+    0.1,
+    2.612
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Fluor",
+   "states": [],
+   "note": "the tube: M_Kpp_Lamp_Fluor (lit, flickering) / M_Kpp_Lamp_Fluor_Off",
+   "object": "Lens_Fluor"
+  },
+  "Glow_Fluor": {
+   "kind": "static",
+   "pivot": [
+    -0.3,
+    0.1,
+    2.61
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Fluor",
+   "states": [],
+   "note": "halo cards along the tube: additive, unlit; flicker with the light",
+   "object": "Glow_Fluor"
+  },
+  "Lens_Bulk_Door": {
+   "kind": "static",
+   "pivot": [
+    0.905,
+    1.678,
+    2.44
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "frosted dome of the bulkhead over the door: lit with the station power (M_Kpp_Lamp_Bulk / _Off)",
+   "object": "Lens_Bulk_Door"
+  },
+  "Glow_Bulk_Door": {
+   "kind": "static",
+   "pivot": [
+    0.905,
+    1.658,
+    2.44
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "halo cards of the bulkhead: shown with the power",
+   "object": "Glow_Bulk_Door"
+  },
+  "Screen_CCTV": {
+   "kind": "static",
+   "pivot": [
+    -1.05,
+    -1.097,
+    1.075
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "the CCTV monitor's screen: the gate camera with the power (M_Kpp_Lamp_Crt), dark glass without (_Off)",
+   "object": "Screen_CCTV"
+  },
+  "Kpp_Signs": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "KONTROLLPUNKT / CHECKPOINT on the front fascia, HALT! AUSWEIS VORZEIGEN / STOP! SHOW YOUR ID under the pass window (panel atlas)",
+   "object": "Kpp_Signs"
+  },
+  "Kpp_Panel": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "duty roster, phone list and the October calendar on the corkboard, the hook labels in the key cabinet, the radio's front, the clock face (stopped at 2:40), ERSTE HILFE / FIRST AID (panel atlas)",
+   "object": "Kpp_Panel"
+  },
+  "Checkpoint": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the booth: pad, bollards, walls, windows, roof, desk, cabinet carcasses, the key cabinet, corkboard, heater, bulkhead; prefab root (the map's Checkpoint prefab, same place)",
+   "object": "Checkpoint"
+  },
+  "Window_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    1.8
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Checkpoint",
+   "states": [],
+   "note": "the fixed panes (glass material)",
+   "object": "Window_Glass"
+  },
+  "IX_BarrierArm_82": {
+   "kind": "hinge",
+   "pivot": [
+    3.1,
+    -7.0,
+    0.7833
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    80
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Barrier",
+   "states": [
+    "down",
+    "up"
+   ],
+   "note": "barrier boom: lift by hand (+, up to 80) once Padlock_Barrier is off; the counterweight swings down beside the post (Update 3: same name, pivot and travel)",
+   "object": "IX_BarrierArm_82",
+   "box": {
+    "center": [
+     2.715,
+     0.0,
+     -0.034
+    ],
+    "size": [
+     6.57,
+     0.14,
+     0.258
+    ]
+   }
+  },
+  "Barrier": {
+   "kind": "static",
+   "pivot": [
+    3.1,
+    -7.0,
+    -0.3867
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "barrier 7 m out on the road in front of the booth (separate root: the map's Barrier prefab, same place)",
+   "yaw": 0.0,
+   "object": "Barrier"
+  },
+  "Gate_Fence_Barbed": {
+   "kind": "static",
+   "pivot": [
+    12.3,
+    0.0,
+    1.8428
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Gate",
+   "states": [],
+   "note": "barbed wire over the fixed panel: alpha band M_Kpp_Barbed (three strands)",
+   "object": "Gate_Fence_Barbed"
+  },
+  "Gate_Fence_Mesh": {
+   "kind": "static",
+   "pivot": [
+    12.3,
+    0.0,
+    0.6228
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Gate",
+   "states": [],
+   "note": "chain-link of the fixed panel (M_Kpp_ChainLink)",
+   "object": "Gate_Fence_Mesh"
+  },
+  "IX_Gate_81": {
+   "kind": "slide",
+   "pivot": [
+    4.0,
+    0.0,
+    -0.3772
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    6.6
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Gate",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "sliding gate leaf on a ground rail, 0.22 m inside the fence line: slides behind the fixed panel (+x), 6.6 m; heavy: two players push faster (Update 3: same name, origin, axis and travel)",
+   "object": "IX_Gate_81",
+   "box": {
+    "center": [
+     3.5,
+     0.216,
+     1.2325
+    ],
+    "size": [
+     7.0,
+     0.076,
+     2.375
+    ]
+   }
+  },
+  "IX_Gate_81_Barbed": {
+   "kind": "static",
+   "pivot": [
+    7.5,
+    0.22,
+    1.8628
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_Gate_81",
+   "states": [],
+   "note": "barbed wire on the leaf's upright arms: alpha band M_Kpp_Barbed (three strands)",
+   "object": "IX_Gate_81_Barbed"
+  },
+  "IX_Gate_81_Mesh": {
+   "kind": "static",
+   "pivot": [
+    7.5,
+    0.22,
+    0.7028
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_Gate_81",
+   "states": [],
+   "note": "chain-link infill: tiled alpha-cutout material M_Kpp_ChainLink (0.5 m per tile)",
+   "object": "IX_Gate_81_Mesh"
+  },
+  "IX_Gate_81_Sign": {
+   "kind": "static",
+   "pivot": [
+    7.5,
+    0.18,
+    0.9228
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_Gate_81",
+   "states": [],
+   "note": "SPERRGEBIET / RESTRICTED AREA, ZUTRITT VERBOTEN / NO ENTRY on the outer face (panel atlas)",
+   "object": "IX_Gate_81_Sign"
+  },
+  "Gate": {
+   "kind": "static",
+   "pivot": [
+    11.0,
+    0.0,
+    -0.3772
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "sliding gate beside the booth (separate root: the map's Gate prefab, same place)",
+   "yaw": 0.0,
+   "object": "Gate"
+  }
+ },
+ "sockets": {
+  "Hand_BoothWindow": {
+   "pos": [
+    1.966,
+    -0.4,
+    1.685
+   ],
+   "kind": "hand",
+   "parent": "IX_BoothWindow_302",
+   "note": "finger pull"
+  },
+  "Hand_BoothDoor_Out": {
+   "pos": [
+    0.59,
+    1.724,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "IX_BoothDoor_74",
+   "note": "lever outside"
+  },
+  "Hand_BoothDoor_In": {
+   "pos": [
+    0.59,
+    1.534,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "IX_BoothDoor_74",
+   "note": "lever inside"
+  },
+  "Hand_Drawer_75": {
+   "pos": [
+    1.355,
+    0.745,
+    0.72
+   ],
+   "kind": "hand",
+   "parent": "IX_Drawer_75",
+   "note": ""
+  },
+  "Hand_Drawer_76": {
+   "pos": [
+    1.355,
+    0.745,
+    0.51
+   ],
+   "kind": "hand",
+   "parent": "IX_Drawer_76",
+   "note": ""
+  },
+  "Hand_Drawer_77": {
+   "pos": [
+    1.355,
+    0.745,
+    0.3
+   ],
+   "kind": "hand",
+   "parent": "IX_Drawer_77",
+   "note": ""
+  },
+  "Hand_Drawer_78": {
+   "pos": [
+    -1.345,
+    1.205,
+    1.11
+   ],
+   "kind": "hand",
+   "parent": "IX_Drawer_78",
+   "note": ""
+  },
+  "Hand_Drawer_79": {
+   "pos": [
+    -1.345,
+    1.205,
+    0.8
+   ],
+   "kind": "hand",
+   "parent": "IX_Drawer_79",
+   "note": ""
+  },
+  "Hand_Drawer_80": {
+   "pos": [
+    -1.345,
+    1.205,
+    0.46
+   ],
+   "kind": "hand",
+   "parent": "IX_Drawer_80",
+   "note": ""
+  },
+  "Key_Hook_Schranke": {
+   "pos": [
+    -0.7,
+    1.473,
+    1.95
+   ],
+   "kind": "item_slot",
+   "parent": "Checkpoint",
+   "note": "Key_Schranke hangs here (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
+  },
+  "Key_Hook_Hauptgebaeude": {
+   "pos": [
+    -0.6,
+    1.473,
+    1.95
+   ],
+   "kind": "item_slot",
+   "parent": "Checkpoint",
+   "note": "Key_Hauptgebaeude hangs here (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
+  },
+  "Key_Hook_Garage": {
+   "pos": [
+    -0.5,
+    1.473,
+    1.95
+   ],
+   "kind": "item_slot",
+   "parent": "Checkpoint",
+   "note": "Key_Garage hangs here (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
+  },
+  "Key_Hook_Generator": {
+   "pos": [
+    -0.4,
+    1.473,
+    1.95
+   ],
+   "kind": "item_slot",
+   "parent": "Checkpoint",
+   "note": "Key_Generator hangs here (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
+  },
+  "Key_Hook_Stationsleiter": {
+   "pos": [
+    -0.3,
+    1.473,
+    1.95
+   ],
+   "kind": "item_slot",
+   "parent": "Checkpoint",
+   "note": "the Stationsleiter hook: empty (its key is not here)"
+  },
+  "Hand_KeyBoxDoor": {
+   "pos": [
+    -0.295,
+    1.383,
+    1.8
+   ],
+   "kind": "hand",
+   "parent": "IX_KeyBoxDoor_303",
+   "note": ""
+  },
+  "Seat_Chair": {
+   "pos": [
+    0.68,
+    -0.45,
+    0.63
+   ],
+   "kind": "seat",
+   "parent": "Kpp_Chair",
+   "note": "sit at the desk: the pass window and the phone in reach",
+   "eye": [
+    0.7,
+    -0.45,
+    1.35
+   ],
+   "facing": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Hand_Phone_Receiver": {
+   "pos": [
+    1.72,
+    -0.55,
+    1.055
+   ],
+   "kind": "hand",
+   "parent": "Phone_Receiver",
+   "note": ""
+  },
+  "Spot_KPPLog": {
+   "pos": [
+    1.62,
+    0.15,
+    0.902
+   ],
+   "kind": "item_slot",
+   "parent": "Checkpoint",
+   "note": "Note_KPPLog (the guard book, readable kpp_log) lies here on the road-side desk (same place as Update 3)"
+  },
+  "Audio_Phone": {
+   "pos": [
+    1.67,
+    -0.55,
+    0.98
+   ],
+   "kind": "audio",
+   "parent": "Checkpoint",
+   "note": "the phone rings (two bursts, a 70s bell); the receiver: silence, then breathing (X05)"
+  },
+  "Audio_PhoneBell": {
+   "pos": [
+    2.19,
+    1.0,
+    2.6
+   ],
+   "kind": "audio",
+   "parent": "Checkpoint",
+   "note": "the bell outside rings with the phone (X05)"
+  },
+  "Audio_Fluor": {
+   "pos": [
+    -0.3,
+    0.1,
+    2.65
+   ],
+   "kind": "audio",
+   "parent": "Checkpoint",
+   "note": "the tube: hum and ticking while it flickers"
+  },
+  "Audio_Radio": {
+   "pos": [
+    0.8,
+    -1.34,
+    1.0
+   ],
+   "kind": "audio",
+   "parent": "Checkpoint",
+   "note": "the radio: hiss, someone counting (the guard book)"
+  },
+  "Audio_BoothDoor": {
+   "pos": [
+    1.35,
+    1.6,
+    1.2
+   ],
+   "kind": "audio",
+   "parent": "Checkpoint",
+   "note": "door: latch, hinges"
+  },
+  "Audio_Roof": {
+   "pos": [
+    0.0,
+    0.0,
+    3.1
+   ],
+   "kind": "audio",
+   "parent": "Checkpoint",
+   "note": "tin roof: rain, needles, steps"
+  },
+  "VFX_Fluor": {
+   "pos": [
+    -0.3,
+    0.1,
+    2.61
+   ],
+   "kind": "vfx",
+   "parent": "Checkpoint",
+   "note": "the tube flickers (light + halo + lens; Update 3 flicker: min 0.08, max 1.0, speed 5)",
+   "dir": [
+    0,
+    0,
+    -1
+   ]
+  },
+  "Hide_UnderDesk": {
+   "pos": [
+    -0.3,
+    -1.18,
+    0.45
+   ],
+   "kind": "hide",
+   "parent": "Checkpoint",
+   "note": "crouched under the front desk: not seen through the windows",
+   "pose": "crouch",
+   "eye": [
+    -0.3,
+    -1.06,
+    0.77
+   ],
+   "facing": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Spot_Padlock": {
+   "pos": [
+    8.95,
+    -7.0,
+    0.6283
+   ],
+   "kind": "item_slot",
+   "parent": "Barrier",
+   "note": "Padlock_Barrier hangs here through the post eye and the boom eye (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
+  },
+  "Hand_BarrierArm": {
+   "pos": [
+    8.5,
+    -7.0,
+    0.8533
+   ],
+   "kind": "hand",
+   "parent": "IX_BarrierArm_82",
+   "note": "lift it here"
+  },
+  "Audio_Barrier": {
+   "pos": [
+    3.1,
+    -7.0,
+    0.7833
+   ],
+   "kind": "audio",
+   "parent": "Barrier",
+   "note": "boom: the bearing creaks, the counterweight thuds at the top"
+  },
+  "Hand_Gate": {
+   "pos": [
+    4.25,
+    0.12,
+    0.7228
+   ],
+   "kind": "hand",
+   "parent": "IX_Gate_81",
+   "note": "push / pull here (the free end), outside"
+  },
+  "Hand_Gate_2": {
+   "pos": [
+    4.25,
+    0.32,
+    0.7228
+   ],
+   "kind": "hand",
+   "parent": "IX_Gate_81",
+   "note": "the second player, inside"
+  },
+  "Audio_Gate": {
+   "pos": [
+    7.5,
+    0.22,
+    -0.2772
+   ],
+   "kind": "audio",
+   "parent": "IX_Gate_81",
+   "note": "wheels grinding on the rail, the chain-link rattles"
+  },
+  "Audio_GateCatch": {
+   "pos": [
+    3.9,
+    0.22,
+    0.6228
+   ],
+   "kind": "audio",
+   "parent": "Gate",
+   "note": "the catch clanks when the leaf closes"
+  },
+  "Knock_Front_1": {
+   "pos": [
+    -1.97,
+    -1.63,
+    0.7
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Front_2": {
+   "pos": [
+    1.97,
+    -1.63,
+    0.7
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Back_1": {
+   "pos": [
+    -1.2,
+    1.605,
+    1.4
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Back_2": {
+   "pos": [
+    -0.3,
+    1.605,
+    1.4
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Back_3": {
+   "pos": [
+    1.8,
+    1.605,
+    1.0
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Road_1": {
+   "pos": [
+    2.105,
+    -1.3,
+    0.55
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Road_2": {
+   "pos": [
+    2.105,
+    0.0,
+    1.0
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Road_3": {
+   "pos": [
+    2.105,
+    1.0,
+    1.0
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Left_1": {
+   "pos": [
+    -2.105,
+    -1.0,
+    1.6
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Left_2": {
+   "pos": [
+    -2.105,
+    1.0,
+    1.6
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_1": {
+   "pos": [
+    -1.0,
+    -0.4996,
+    2.9645
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Roof_2": {
+   "pos": [
+    1.0,
+    0.8004,
+    2.8508
+   ],
+   "kind": "knock",
+   "parent": "Checkpoint",
+   "dir": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Window_Front": {
+   "pos": [
+    -0.3,
+    -1.5455,
+    1.95
+   ],
+   "kind": "knock",
+   "parent": "Window_Glass",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Window_Left": {
+   "pos": [
+    -2.0455,
+    -0.3,
+    1.95
+   ],
+   "kind": "knock",
+   "parent": "Window_Glass",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Door": {
+   "pos": [
+    0.75,
+    1.6345,
+    1.75
+   ],
+   "kind": "knock",
+   "parent": "IX_BoothDoor_74_Glass",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Pad",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.05
+   ],
+   "size": [
+    6.1,
+    5.1,
+    0.4
+   ],
+   "center_kpp": [
+    0.0,
+    0.0,
+    -0.05
+   ],
+   "centerUnity": [
+    0.0,
+    -0.05,
+    0.0
+   ],
+   "sizeUnity": [
+    6.1,
+    0.4,
+    5.1
+   ]
+  },
+  {
+   "name": "COL_Wall_Front_L",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -1.96,
+    -1.54,
+    1.5
+   ],
+   "size": [
+    0.28,
+    0.12,
+    2.7
+   ],
+   "center_kpp": [
+    -1.96,
+    -1.54,
+    1.5
+   ],
+   "centerUnity": [
+    1.96,
+    1.5,
+    1.54
+   ],
+   "sizeUnity": [
+    0.28,
+    2.7,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_Front_R",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    1.96,
+    -1.54,
+    1.5
+   ],
+   "size": [
+    0.28,
+    0.12,
+    2.7
+   ],
+   "center_kpp": [
+    1.96,
+    -1.54,
+    1.5
+   ],
+   "centerUnity": [
+    -1.96,
+    1.5,
+    1.54
+   ],
+   "sizeUnity": [
+    0.28,
+    2.7,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_Front_Low",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.54,
+    0.675
+   ],
+   "size": [
+    3.64,
+    0.12,
+    1.05
+   ],
+   "center_kpp": [
+    0.0,
+    -1.54,
+    0.675
+   ],
+   "centerUnity": [
+    0.0,
+    0.675,
+    1.54
+   ],
+   "sizeUnity": [
+    3.64,
+    1.05,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_Front_High",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.54,
+    2.6
+   ],
+   "size": [
+    3.64,
+    0.12,
+    0.5
+   ],
+   "center_kpp": [
+    0.0,
+    -1.54,
+    2.6
+   ],
+   "centerUnity": [
+    0.0,
+    2.6,
+    1.54
+   ],
+   "sizeUnity": [
+    3.64,
+    0.5,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Window_Front",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.54,
+    1.775
+   ],
+   "size": [
+    3.64,
+    0.08,
+    1.15
+   ],
+   "center_kpp": [
+    0.0,
+    -1.54,
+    1.775
+   ],
+   "centerUnity": [
+    0.0,
+    1.775,
+    1.54
+   ],
+   "sizeUnity": [
+    3.64,
+    1.15,
+    0.08
+   ]
+  },
+  {
+   "name": "COL_Wall_Back_L",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -0.82,
+    1.54,
+    1.3653
+   ],
+   "size": [
+    2.56,
+    0.12,
+    2.4305
+   ],
+   "center_kpp": [
+    -0.82,
+    1.54,
+    1.3653
+   ],
+   "centerUnity": [
+    0.82,
+    1.3653,
+    -1.54
+   ],
+   "sizeUnity": [
+    2.56,
+    2.4305,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_Back_R",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    1.725,
+    1.54,
+    1.3653
+   ],
+   "size": [
+    0.75,
+    0.12,
+    2.4305
+   ],
+   "center_kpp": [
+    1.725,
+    1.54,
+    1.3653
+   ],
+   "centerUnity": [
+    -1.725,
+    1.3653,
+    -1.54
+   ],
+   "sizeUnity": [
+    0.75,
+    2.4305,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_Back_Head",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    0.905,
+    1.54,
+    2.3903
+   ],
+   "size": [
+    0.89,
+    0.12,
+    0.3805
+   ],
+   "center_kpp": [
+    0.905,
+    1.54,
+    2.3903
+   ],
+   "centerUnity": [
+    -0.905,
+    2.3903,
+    -1.54
+   ],
+   "sizeUnity": [
+    0.89,
+    0.3805,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Wall_Road_Low",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.04,
+    0.0,
+    0.675
+   ],
+   "size": [
+    0.12,
+    2.96,
+    1.05
+   ],
+   "center_kpp": [
+    2.04,
+    0.0,
+    0.675
+   ],
+   "centerUnity": [
+    -2.04,
+    0.675,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    1.05,
+    2.96
+   ]
+  },
+  {
+   "name": "COL_Wall_Road_F",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.04,
+    -1.465,
+    1.8903
+   ],
+   "size": [
+    0.12,
+    0.03,
+    1.3805
+   ],
+   "center_kpp": [
+    2.04,
+    -1.465,
+    1.8903
+   ],
+   "centerUnity": [
+    -2.04,
+    1.8903,
+    1.465
+   ],
+   "sizeUnity": [
+    0.12,
+    1.3805,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_Wall_Road_B",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.04,
+    0.915,
+    1.8903
+   ],
+   "size": [
+    0.12,
+    1.13,
+    1.3805
+   ],
+   "center_kpp": [
+    2.04,
+    0.915,
+    1.8903
+   ],
+   "centerUnity": [
+    -2.04,
+    1.8903,
+    -0.915
+   ],
+   "sizeUnity": [
+    0.12,
+    1.3805,
+    1.13
+   ]
+  },
+  {
+   "name": "COL_Wall_Road_High",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.04,
+    -0.55,
+    2.4653
+   ],
+   "size": [
+    0.12,
+    1.8,
+    0.2305
+   ],
+   "center_kpp": [
+    2.04,
+    -0.55,
+    2.4653
+   ],
+   "centerUnity": [
+    -2.04,
+    2.4653,
+    0.55
+   ],
+   "sizeUnity": [
+    0.12,
+    0.2305,
+    1.8
+   ]
+  },
+  {
+   "name": "COL_Window_Road_Fixed_F",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.0575,
+    -1.155,
+    1.775
+   ],
+   "size": [
+    0.045,
+    0.59,
+    1.15
+   ],
+   "center_kpp": [
+    2.0575,
+    -1.155,
+    1.775
+   ],
+   "centerUnity": [
+    -2.0575,
+    1.775,
+    1.155
+   ],
+   "sizeUnity": [
+    0.045,
+    1.15,
+    0.59
+   ]
+  },
+  {
+   "name": "COL_Window_Road_Fixed_B",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.0575,
+    0.015,
+    1.775
+   ],
+   "size": [
+    0.045,
+    0.67,
+    1.15
+   ],
+   "center_kpp": [
+    2.0575,
+    0.015,
+    1.775
+   ],
+   "centerUnity": [
+    -2.0575,
+    1.775,
+    -0.015
+   ],
+   "sizeUnity": [
+    0.045,
+    1.15,
+    0.67
+   ]
+  },
+  {
+   "name": "COL_Wall_Left_Low",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.04,
+    0.0,
+    0.675
+   ],
+   "size": [
+    0.12,
+    2.96,
+    1.05
+   ],
+   "center_kpp": [
+    -2.04,
+    0.0,
+    0.675
+   ],
+   "centerUnity": [
+    2.04,
+    0.675,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    1.05,
+    2.96
+   ]
+  },
+  {
+   "name": "COL_Wall_Left_F",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.04,
+    -1.04,
+    1.8903
+   ],
+   "size": [
+    0.12,
+    0.88,
+    1.3805
+   ],
+   "center_kpp": [
+    -2.04,
+    -1.04,
+    1.8903
+   ],
+   "centerUnity": [
+    2.04,
+    1.8903,
+    1.04
+   ],
+   "sizeUnity": [
+    0.12,
+    1.3805,
+    0.88
+   ]
+  },
+  {
+   "name": "COL_Wall_Left_B",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.04,
+    1.04,
+    1.8903
+   ],
+   "size": [
+    0.12,
+    0.88,
+    1.3805
+   ],
+   "center_kpp": [
+    -2.04,
+    1.04,
+    1.8903
+   ],
+   "centerUnity": [
+    2.04,
+    1.8903,
+    -1.04
+   ],
+   "sizeUnity": [
+    0.12,
+    1.3805,
+    0.88
+   ]
+  },
+  {
+   "name": "COL_Wall_Left_High",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.04,
+    0.0,
+    2.4653
+   ],
+   "size": [
+    0.12,
+    1.2,
+    0.2305
+   ],
+   "center_kpp": [
+    -2.04,
+    0.0,
+    2.4653
+   ],
+   "centerUnity": [
+    2.04,
+    2.4653,
+    0.0
+   ],
+   "sizeUnity": [
+    0.12,
+    0.2305,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Window_Left",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.04,
+    0.0,
+    1.775
+   ],
+   "size": [
+    0.08,
+    1.2,
+    1.15
+   ],
+   "center_kpp": [
+    -2.04,
+    0.0,
+    1.775
+   ],
+   "centerUnity": [
+    2.04,
+    1.775,
+    0.0
+   ],
+   "sizeUnity": [
+    0.08,
+    1.15,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Desk_Front",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -0.3,
+    -1.18,
+    0.525
+   ],
+   "size": [
+    3.36,
+    0.6,
+    0.75
+   ],
+   "center_kpp": [
+    -0.3,
+    -1.18,
+    0.525
+   ],
+   "centerUnity": [
+    0.3,
+    0.525,
+    1.18
+   ],
+   "sizeUnity": [
+    3.36,
+    0.75,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Desk_Road",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    1.68,
+    -0.26,
+    0.525
+   ],
+   "size": [
+    0.6,
+    2.44,
+    0.75
+   ],
+   "center_kpp": [
+    1.68,
+    -0.26,
+    0.525
+   ],
+   "centerUnity": [
+    -1.68,
+    0.525,
+    0.26
+   ],
+   "sizeUnity": [
+    0.6,
+    0.75,
+    2.44
+   ]
+  },
+  {
+   "name": "COL_Cabinet",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -1.68,
+    1.205,
+    0.675
+   ],
+   "size": [
+    0.6,
+    0.47,
+    1.05
+   ],
+   "center_kpp": [
+    -1.68,
+    1.205,
+    0.675
+   ],
+   "centerUnity": [
+    1.68,
+    0.675,
+    -1.205
+   ],
+   "sizeUnity": [
+    0.6,
+    1.05,
+    0.47
+   ]
+  },
+  {
+   "name": "COL_KeyBox",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -0.51,
+    1.455,
+    1.8
+   ],
+   "size": [
+    0.52,
+    0.05,
+    0.54
+   ],
+   "center_kpp": [
+    -0.51,
+    1.455,
+    1.8
+   ],
+   "centerUnity": [
+    0.51,
+    1.8,
+    -1.455
+   ],
+   "sizeUnity": [
+    0.52,
+    0.54,
+    0.05
+   ]
+  },
+  {
+   "name": "COL_Heater",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -1.935,
+    -0.45,
+    0.47
+   ],
+   "size": [
+    0.09,
+    0.7,
+    0.42
+   ],
+   "center_kpp": [
+    -1.935,
+    -0.45,
+    0.47
+   ],
+   "centerUnity": [
+    1.935,
+    0.47,
+    0.45
+   ],
+   "sizeUnity": [
+    0.09,
+    0.42,
+    0.7
+   ]
+  },
+  {
+   "name": "COL_Door",
+   "parent": "IX_BoothDoor_74",
+   "type": "box",
+   "center": [
+    -0.47,
+    -0.031,
+    -0.008
+   ],
+   "size": [
+    0.93,
+    0.05,
+    2.06
+   ],
+   "center_kpp": [
+    0.905,
+    1.629,
+    1.192
+   ],
+   "centerUnity": [
+    0.47,
+    -0.008,
+    0.031
+   ],
+   "sizeUnity": [
+    0.93,
+    2.06,
+    0.05
+   ]
+  },
+  {
+   "name": "COL_KeyBoxDoor",
+   "parent": "IX_KeyBoxDoor_303",
+   "type": "box",
+   "center": [
+    0.26,
+    -0.005,
+    0.0
+   ],
+   "size": [
+    0.52,
+    0.012,
+    0.54
+   ],
+   "center_kpp": [
+    -0.51,
+    1.424,
+    1.8
+   ],
+   "centerUnity": [
+    -0.26,
+    0.0,
+    0.005
+   ],
+   "sizeUnity": [
+    0.52,
+    0.54,
+    0.012
+   ]
+  },
+  {
+   "name": "COL_Sash",
+   "parent": "IX_BoothWindow_302",
+   "type": "box",
+   "center": [
+    0.0,
+    0.29,
+    0.55
+   ],
+   "size": [
+    0.026,
+    0.58,
+    1.1
+   ],
+   "center_kpp": [
+    2.009,
+    -0.59,
+    1.775
+   ],
+   "centerUnity": [
+    0.0,
+    0.55,
+    -0.29
+   ],
+   "sizeUnity": [
+    0.026,
+    1.1,
+    0.58
+   ]
+  },
+  {
+   "name": "COL_Chair",
+   "parent": "Kpp_Chair",
+   "type": "box",
+   "center": [
+    -0.01,
+    0.0,
+    0.48
+   ],
+   "size": [
+    0.62,
+    0.6,
+    0.96
+   ],
+   "center_kpp": [
+    0.67,
+    -0.45,
+    0.63
+   ],
+   "centerUnity": [
+    0.01,
+    0.48,
+    0.0
+   ],
+   "sizeUnity": [
+    0.62,
+    0.96,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Roof",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.05,
+    2.9076
+   ],
+   "size": [
+    5.0,
+    4.0153,
+    0.06
+   ],
+   "center_kpp": [
+    0.0,
+    -0.05,
+    2.9076
+   ],
+   "centerUnity": [
+    0.0,
+    2.9076,
+    0.05
+   ],
+   "sizeUnity": [
+    5.0,
+    0.06,
+    4.0153
+   ],
+   "rotation": [
+    -5.0,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    -5.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Bollard_LF",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.9,
+    -2.4,
+    0.5725
+   ],
+   "size": [
+    0.13,
+    0.13,
+    0.845
+   ],
+   "center_kpp": [
+    -2.9,
+    -2.4,
+    0.5725
+   ],
+   "centerUnity": [
+    2.9,
+    0.5725,
+    2.4
+   ],
+   "sizeUnity": [
+    0.13,
+    0.845,
+    0.13
+   ]
+  },
+  {
+   "name": "COL_Bollard_LB",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    -2.9,
+    2.4,
+    0.5725
+   ],
+   "size": [
+    0.13,
+    0.13,
+    0.845
+   ],
+   "center_kpp": [
+    -2.9,
+    2.4,
+    0.5725
+   ],
+   "centerUnity": [
+    2.9,
+    0.5725,
+    -2.4
+   ],
+   "sizeUnity": [
+    0.13,
+    0.845,
+    0.13
+   ]
+  },
+  {
+   "name": "COL_Bollard_RF",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.9,
+    -2.4,
+    0.5725
+   ],
+   "size": [
+    0.13,
+    0.13,
+    0.845
+   ],
+   "center_kpp": [
+    2.9,
+    -2.4,
+    0.5725
+   ],
+   "centerUnity": [
+    -2.9,
+    0.5725,
+    2.4
+   ],
+   "sizeUnity": [
+    0.13,
+    0.845,
+    0.13
+   ]
+  },
+  {
+   "name": "COL_Bollard_RB",
+   "parent": "Checkpoint",
+   "type": "box",
+   "center": [
+    2.9,
+    2.4,
+    0.5725
+   ],
+   "size": [
+    0.13,
+    0.13,
+    0.845
+   ],
+   "center_kpp": [
+    2.9,
+    2.4,
+    0.5725
+   ],
+   "centerUnity": [
+    -2.9,
+    0.5725,
+    -2.4
+   ],
+   "sizeUnity": [
+    0.13,
+    0.845,
+    0.13
+   ]
+  },
+  {
+   "name": "COL_Barrier_Foot",
+   "parent": "Barrier",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.13
+   ],
+   "size": [
+    0.75,
+    0.75,
+    0.56
+   ],
+   "center_kpp": [
+    3.1,
+    -7.0,
+    -0.5167
+   ],
+   "centerUnity": [
+    0.0,
+    -0.13,
+    0.0
+   ],
+   "sizeUnity": [
+    0.75,
+    0.56,
+    0.75
+   ]
+  },
+  {
+   "name": "COL_Barrier_Post",
+   "parent": "Barrier",
+   "type": "box",
+   "center": [
+    0.0,
+    0.2,
+    0.74
+   ],
+   "size": [
+    0.24,
+    0.24,
+    1.18
+   ],
+   "center_kpp": [
+    3.1,
+    -6.8,
+    0.3533
+   ],
+   "centerUnity": [
+    0.0,
+    0.74,
+    -0.2
+   ],
+   "sizeUnity": [
+    0.24,
+    1.18,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Barrier_Rest",
+   "parent": "Barrier",
+   "type": "box",
+   "center": [
+    5.6,
+    0.0,
+    0.55
+   ],
+   "size": [
+    0.24,
+    0.15,
+    0.86
+   ],
+   "center_kpp": [
+    8.7,
+    -7.0,
+    0.1633
+   ],
+   "centerUnity": [
+    -5.6,
+    0.55,
+    0.0
+   ],
+   "sizeUnity": [
+    0.24,
+    0.86,
+    0.15
+   ]
+  },
+  {
+   "name": "COL_Boom",
+   "parent": "IX_BarrierArm_82",
+   "type": "box",
+   "center": [
+    2.715,
+    0.0,
+    0.0
+   ],
+   "size": [
+    6.57,
+    0.14,
+    0.19
+   ],
+   "center_kpp": [
+    5.815,
+    -7.0,
+    0.7833
+   ],
+   "centerUnity": [
+    -2.715,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    6.57,
+    0.19,
+    0.14
+   ]
+  },
+  {
+   "name": "COL_Gate_Receiver",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -7.175,
+    0.22,
+    0.85
+   ],
+   "size": [
+    0.45,
+    0.46,
+    2.9
+   ],
+   "center_kpp": [
+    3.825,
+    0.22,
+    0.4728
+   ],
+   "centerUnity": [
+    7.175,
+    0.85,
+    -0.22
+   ],
+   "sizeUnity": [
+    0.45,
+    2.9,
+    0.46
+   ]
+  },
+  {
+   "name": "COL_Gate_Guide_Out",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -0.16,
+    0.09,
+    1.075
+   ],
+   "size": [
+    0.16,
+    0.16,
+    2.15
+   ],
+   "center_kpp": [
+    10.84,
+    0.09,
+    0.6978
+   ],
+   "centerUnity": [
+    0.16,
+    1.075,
+    -0.09
+   ],
+   "sizeUnity": [
+    0.16,
+    2.15,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_Gate_Guide_In",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -0.16,
+    0.35,
+    1.075
+   ],
+   "size": [
+    0.16,
+    0.16,
+    2.15
+   ],
+   "center_kpp": [
+    10.84,
+    0.35,
+    0.6978
+   ],
+   "centerUnity": [
+    0.16,
+    1.075,
+    -0.35
+   ],
+   "sizeUnity": [
+    0.16,
+    2.15,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_Gate_Stop",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    6.69,
+    0.22,
+    0.3
+   ],
+   "size": [
+    0.14,
+    0.08,
+    0.6
+   ],
+   "center_kpp": [
+    17.69,
+    0.22,
+    -0.0772
+   ],
+   "centerUnity": [
+    -6.69,
+    0.3,
+    -0.22
+   ],
+   "sizeUnity": [
+    0.14,
+    0.6,
+    0.08
+   ]
+  },
+  {
+   "name": "COL_Gate_Fence",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    1.3,
+    0.0,
+    1.19
+   ],
+   "size": [
+    2.26,
+    0.06,
+    2.38
+   ],
+   "center_kpp": [
+    12.3,
+    0.0,
+    0.8128
+   ],
+   "centerUnity": [
+    -1.3,
+    1.19,
+    0.0
+   ],
+   "sizeUnity": [
+    2.26,
+    2.38,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Gate_Leaf",
+   "parent": "IX_Gate_81",
+   "type": "box",
+   "center": [
+    3.5,
+    0.22,
+    1.225
+   ],
+   "size": [
+    7.0,
+    0.07,
+    2.35
+   ],
+   "center_kpp": [
+    7.5,
+    0.22,
+    0.8478
+   ],
+   "centerUnity": [
+    -3.5,
+    1.225,
+    -0.22
+   ],
+   "sizeUnity": [
+    7.0,
+    2.35,
+    0.07
+   ]
+  }
+ ],
+ "meta": {
+  "units": "metres, degrees",
+  "frame": "booth frame (the Checkpoint prefab's): x toward the road, y toward the back (the door, the station side), z up; origin = the middle of the pad on the ground; floor z = 0.15; the road at the barrier and the gate is 0.38 lower",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the Checkpoint prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy)",
+  "roots": "three roots, each its own prefab at its Update 3 place, with the booth's axes (yaw 0 between them): Checkpoint (the booth), Barrier (7 m out on the road), Gate (beside the booth on the fence line). Barrier and Gate parts and sockets are given in the booth frame; map_placement: Forest (Unity world) p / q of each root",
+  "map_placement": {
+   "Checkpoint": {
+    "p": [
+     313.0406,
+     16.4376,
+     -289.5625
+    ],
+    "q": [
+     0.0,
+     0.069756,
+     0.0,
+     0.997564
+    ],
+    "yawUnity": 8.0
+   },
+   "Barrier": {
+    "p": [
+     310.945,
+     16.0509,
+     -282.1992
+    ],
+    "q": [
+     0.0,
+     0.069756,
+     0.0,
+     0.997564
+    ],
+    "yawUnity": 8.0
+   },
+   "Gate": {
+    "p": [
+     302.1476,
+     16.0604,
+     -288.0316
+    ],
+    "q": [
+     0.0,
+     0.069756,
+     0.0,
+     0.997564
+    ],
+    "yawUnity": 8.0
+   }
+  },
+  "colliders": "colliders: BoxCollider per entry on its parent: center / size in the parent's own frame (Blender), centerUnity / sizeUnity the same in Unity axes; rotation = Blender XYZ euler of the box (the roof sheet), rotationUnity = Unity euler; center_kpp: the box centre in the booth frame. part.box: the grab / hit box of a moving part in its own frame",
+  "lamps": "kpp_lights.json",
+  "model": "kpp.blend",
+  "textures": "tex",
+  "materials": "M_Kpp_Kpp (the booth) / M_Kpp_KppYard (the barrier, the gate) / M_Kpp_KppProps: baked PSX atlases (point filter); M_Kpp_Panel: signs, papers, labels, the clock, the radio, the dial; M_Kpp_Lamp_Fluor / _Off, M_Kpp_Lamp_Bulk / _Off, M_Kpp_Lamp_Crt / _Off: lit / off (base + emission textures, night_emit = emission strength); M_Kpp_Glow: additive halo (emission texture only); M_Kpp_Glass; M_Kpp_ChainLink, M_Kpp_Barbed: alpha cut-out 0.5, tiled 0.5 m",
+  "prologue": "S6 / X05 (FOREST_OPENING.md): the keys hang on the Key_Hook_ sockets in the key cabinet (IX_KeyBoxDoor_303), Note_KPPLog lies on Spot_KPPLog, Padlock_Barrier on Spot_Padlock locks the boom (IX_BarrierArm_82) until Key_Schranke opens it; IX_Gate_81 slides 6.6 m. X05: the phone (Phone, Phone_Receiver, zone Phone_KPP) and Phone_Bell ring; the batten flickers from the start"
+ }
+}

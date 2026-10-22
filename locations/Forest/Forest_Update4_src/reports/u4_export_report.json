@@ -1,0 +1,6029 @@
+{
+ "TowerHut": {
+  "file": "TowerHut.fbx",
+  "objects": [
+   "TowerHut",
+   "Axe",
+   "Hut_Panel",
+   "Hut_Props",
+   "IX_HutDoor_1",
+   "Kettle",
+   "Lamp_Oil",
+   "Lantern",
+   "Stove_Damper",
+   "Stove_Door",
+   "Window_Glass",
+   "Window_Latch",
+   "Window_Shutter"
+  ],
+  "skipped": [
+   "COL_Barrel",
+   "COL_Bench",
+   "COL_Block",
+   "COL_Bunk",
+   "COL_Floor",
+   "COL_Flue",
+   "COL_Gable_B",
+   "COL_Gable_F",
+   "COL_Ladder",
+   "COL_Roof_L",
+   "COL_Roof_R",
+   "COL_Shelf_Low",
+   "COL_Shelf_Up",
+   "COL_Step",
+   "COL_Stool",
+   "COL_Stove",
+   "COL_Table",
+   "COL_Wall_B",
+   "COL_Wall_F_Head",
+   "COL_Wall_F_L",
+   "COL_Wall_F_R",
+   "COL_Wall_L",
+   "COL_Wall_R_B",
+   "COL_Wall_R_F",
+   "COL_Wall_R_High",
+   "COL_Wall_R_Low",
+   "COL_Window",
+   "COL_Woodpile",
+   "COL_Door",
+   "LIGHT_OilLamp",
+   "Glow_Lantern",
+   "LIGHT_Lantern",
+   "COL_Shutter"
+  ],
+  "joined": [
+   "Lamp_Oil <- Lens_OilLamp",
+   "Lantern <- Lens_Lantern"
+  ],
+  "materials": [
+   "M_GlassDirty",
+   "M_Hut_Hut",
+   "M_Hut_HutProps",
+   "M_Hut_LampOil",
+   "M_Hut_Panel",
+   "M_Lantern"
+  ],
+  "tris": 7594,
+  "remap": [
+   "Lens_OilLamp: M_Hut_Lamp_Oillamp -> M_Hut_LampOil",
+   "Lens_Lantern: M_Hut_Lamp_Lantern -> M_Lantern",
+   "Window_Glass: M_Hut_Glass -> M_GlassDirty"
+  ],
+  "bytes": 236396,
+  "aabb": {
+   "TowerHut": [
+    [
+     -1.95,
+     -3.1475,
+     -0.217
+    ],
+    [
+     2.3141,
+     1.6827,
+     3.84
+    ]
+   ],
+   "Axe": [
+    [
+     -1.0806,
+     -2.6178,
+     0.0348
+    ],
+    [
+     -1.0394,
+     -1.9626,
+     0.5077
+    ]
+   ],
+   "Hut_Panel": [
+    [
+     -1.13,
+     1.077,
+     1.54
+    ],
+    [
+     0.48,
+     1.077,
+     2.3
+    ]
+   ],
+   "Hut_Props": [
+    [
+     -1.19,
+     -1.3856,
+     0.33
+    ],
+    [
+     1.14,
+     0.1828,
+     3.1243
+    ]
+   ],
+   "IX_HutDoor_1": [
+    [
+     -0.823,
+     -1.3221,
+     0.32
+    ],
+    [
+     0.04,
+     -1.165,
+     2.2
+    ]
+   ],
+   "Kettle": [
+    [
+     0.8167,
+     0.7,
+     0.988
+    ],
+    [
+     1.1,
+     0.9,
+     1.2305
+    ]
+   ],
+   "Lamp_Oil": [
+    [
+     -0.16,
+     -0.156,
+     2.24
+    ],
+    [
+     0.16,
+     0.156,
+     3.2383
+    ]
+   ],
+   "Lantern": [
+    [
+     0.322,
+     -1.535,
+     1.82
+    ],
+    [
+     0.478,
+     -1.385,
+     2.068
+    ]
+   ],
+   "Stove_Damper": [
+    [
+     0.78,
+     0.7548,
+     1.398
+    ],
+    [
+     0.876,
+     0.7652,
+     1.442
+    ]
+   ],
+   "Stove_Door": [
+    [
+     0.8,
+     0.4811,
+     0.53
+    ],
+    [
+     1.08,
+     0.558,
+     0.8
+    ]
+   ],
+   "Window_Glass": [
+    [
+     1.2795,
+     -0.255,
+     1.325
+    ],
+    [
+     1.2805,
+     0.255,
+     1.735
+    ]
+   ],
+   "Window_Latch": [
+    [
+     1.165,
+     0.368,
+     1.45
+    ],
+    [
+     1.184,
+     0.392,
+     1.61
+    ]
+   ],
+   "Window_Shutter": [
+    [
+     1.155,
+     -0.99,
+     1.282
+    ],
+    [
+     1.215,
+     -0.3231,
+     1.81
+    ]
+   ]
+  },
+  "pivots": {
+   "TowerHut": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Axe": [
+    -1.06,
+    -2.57,
+    0.45
+   ],
+   "Hut_Panel": [
+    0.0,
+    1.08,
+    1.9
+   ],
+   "Hut_Props": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_HutDoor_1": [
+    -0.812,
+    -1.27,
+    1.26
+   ],
+   "Kettle": [
+    1.0,
+    0.8,
+    0.988
+   ],
+   "Lamp_Oil": [
+    0.0,
+    0.0,
+    2.36
+   ],
+   "Lantern": [
+    0.4,
+    -1.46,
+    2.065
+   ],
+   "Stove_Damper": [
+    0.94,
+    0.76,
+    1.42
+   ],
+   "Stove_Door": [
+    0.79,
+    0.55,
+    0.665
+   ],
+   "Window_Glass": [
+    1.28,
+    0.0,
+    1.53
+   ],
+   "Window_Latch": [
+    1.185,
+    0.38,
+    1.53
+   ],
+   "Window_Shutter": [
+    1.185,
+    -0.33,
+    1.546
+   ]
+  }
+ },
+ "Hochsitz": {
+  "file": "Hochsitz.fbx",
+  "objects": [
+   "Hochsitz"
+  ],
+  "skipped": [
+   "COL_HS_Bench",
+   "COL_HS_Leg_LB",
+   "COL_HS_Leg_LF",
+   "COL_HS_Leg_RB",
+   "COL_HS_Leg_RF",
+   "COL_HS_Lintel",
+   "COL_HS_Platform",
+   "COL_HS_Roof",
+   "COL_HS_Wall_Door_L",
+   "COL_HS_Wall_Door_R",
+   "COL_HS_Wall_L",
+   "COL_HS_Wall_R",
+   "COL_HS_Wall_View"
+  ],
+  "joined": [],
+  "materials": [
+   "M_Hut_Hut"
+  ],
+  "tris": 954,
+  "remap": [],
+  "bytes": 46060,
+  "aabb": {
+   "Hochsitz": [
+    [
+     -1.432,
+     -2.643,
+     -0.206
+    ],
+    [
+     1.4335,
+     1.4353,
+     6.05
+    ]
+   ]
+  },
+  "pivots": {
+   "Hochsitz": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Forsthuette": {
+  "file": "Sign_Forsthuette.fbx",
+  "objects": [
+   "Sign_Forsthuette",
+   "Sign_Forsthuette_Text"
+  ],
+  "skipped": [
+   "COL_Sign_Board",
+   "COL_Sign_Post_L",
+   "COL_Sign_Post_R"
+  ],
+  "joined": [],
+  "materials": [
+   "M_Hut_Hut",
+   "M_Hut_Panel"
+  ],
+  "tris": 186,
+  "remap": [],
+  "bytes": 28348,
+  "aabb": {
+   "Sign_Forsthuette": [
+    [
+     -0.55,
+     -0.0239,
+     -0.3
+    ],
+    [
+     0.55,
+     0.0639,
+     1.8
+    ]
+   ],
+   "Sign_Forsthuette_Text": [
+    [
+     -0.5,
+     -0.019,
+     1.41
+    ],
+    [
+     0.5,
+     -0.019,
+     1.69
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Forsthuette": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Sign_Forsthuette_Text": [
+    0.0,
+    -0.019,
+    1.55
+   ]
+  }
+ },
+ "Checkpoint": {
+  "file": "Checkpoint.fbx",
+  "objects": [
+   "Checkpoint",
+   "IX_BoothDoor_74",
+   "IX_BoothWindow_302",
+   "IX_Drawer_75",
+   "IX_Drawer_76",
+   "IX_Drawer_77",
+   "IX_Drawer_78",
+   "IX_Drawer_79",
+   "IX_Drawer_80",
+   "IX_KeyBoxDoor_303",
+   "Kpp_Chair",
+   "Kpp_Panel",
+   "Kpp_Props",
+   "Kpp_Signs",
+   "Lamp_Fluor",
+   "Lens_Bulk_Door",
+   "Phone",
+   "Phone_Bell",
+   "Screen_CCTV",
+   "Window_Glass"
+  ],
+  "skipped": [
+   "COL_Bollard_LB",
+   "COL_Bollard_LF",
+   "COL_Bollard_RB",
+   "COL_Bollard_RF",
+   "COL_Cabinet",
+   "COL_Desk_Front",
+   "COL_Desk_Road",
+   "COL_Heater",
+   "COL_KeyBox",
+   "COL_Pad",
+   "COL_Roof",
+   "COL_Wall_Back_Head",
+   "COL_Wall_Back_L",
+   "COL_Wall_Back_R",
+   "COL_Wall_Front_High",
+   "COL_Wall_Front_L",
+   "COL_Wall_Front_Low",
+   "COL_Wall_Front_R",
+   "COL_Wall_Left_B",
+   "COL_Wall_Left_F",
+   "COL_Wall_Left_High",
+   "COL_Wall_Left_Low",
+   "COL_Wall_Road_B",
+   "COL_Wall_Road_F",
+   "COL_Wall_Road_High",
+   "COL_Wall_Road_Low",
+   "COL_Window_Front",
+   "COL_Window_Left",
+   "COL_Window_Road_Fixed_B",
+   "COL_Window_Road_Fixed_F",
+   "Glow_Bulk_Door",
+   "COL_Door",
+   "COL_Sash",
+   "COL_KeyBoxDoor",
+   "COL_Chair",
+   "Glow_Fluor",
+   "LIGHT_Fluor",
+   "LIGHT_Bulk_Door"
+  ],
+  "joined": [
+   "IX_BoothDoor_74 <- IX_BoothDoor_74_Glass, IX_BoothDoor_74_Sign",
+   "IX_BoothWindow_302 <- IX_BoothWindow_302_Glass",
+   "IX_KeyBoxDoor_303 <- IX_KeyBoxDoor_303_Label",
+   "Lamp_Fluor <- Lens_Fluor",
+   "Phone <- Phone_Dial, Phone_Receiver"
+  ],
+  "materials": [
+   "M_GlassClear",
+   "M_Kpp_Kpp",
+   "M_Kpp_KppProps",
+   "M_Kpp_Panel",
+   "M_Lamp_BulbOff",
+   "M_Lamp_FluorFlicker",
+   "M_ScreenOff"
+  ],
+  "tris": 5402,
+  "remap": [
+   "IX_BoothDoor_74_Glass: M_Kpp_Glass -> M_GlassClear",
+   "IX_BoothWindow_302_Glass: M_Kpp_Glass -> M_GlassClear",
+   "Lens_Fluor: M_Kpp_Lamp_Fluor -> M_Lamp_FluorFlicker",
+   "Lens_Bulk_Door: M_Kpp_Lamp_Bulk -> M_Lamp_BulbOff",
+   "Screen_CCTV: M_Kpp_Lamp_Crt -> M_ScreenOff",
+   "Window_Glass: M_Kpp_Glass -> M_GlassClear"
+  ],
+  "bytes": 203484,
+  "aabb": {
+   "Checkpoint": [
+    [
+     -3.05,
+     -2.55,
+     -0.25
+    ],
+    [
+     3.05,
+     2.55,
+     3.1173
+    ]
+   ],
+   "IX_BoothDoor_74": [
+    [
+     0.44,
+     1.5512,
+     0.162
+    ],
+    [
+     1.386,
+     1.7068,
+     2.222
+    ]
+   ],
+   "IX_BoothWindow_302": [
+    [
+     1.982,
+     -0.88,
+     1.225
+    ],
+    [
+     2.022,
+     -0.3,
+     2.325
+    ]
+   ],
+   "IX_Drawer_75": [
+    [
+     1.366,
+     0.547,
+     0.625
+    ],
+    [
+     1.95,
+     0.943,
+     0.815
+    ]
+   ],
+   "IX_Drawer_76": [
+    [
+     1.366,
+     0.547,
+     0.415
+    ],
+    [
+     1.95,
+     0.943,
+     0.605
+    ]
+   ],
+   "IX_Drawer_77": [
+    [
+     1.366,
+     0.547,
+     0.195
+    ],
+    [
+     1.95,
+     0.943,
+     0.405
+    ]
+   ],
+   "IX_Drawer_78": [
+    [
+     -1.95,
+     0.987,
+     0.875
+    ],
+    [
+     -1.366,
+     1.423,
+     1.175
+    ]
+   ],
+   "IX_Drawer_79": [
+    [
+     -1.95,
+     0.987,
+     0.535
+    ],
+    [
+     -1.366,
+     1.423,
+     0.865
+    ]
+   ],
+   "IX_Drawer_80": [
+    [
+     -1.95,
+     0.987,
+     0.195
+    ],
+    [
+     -1.366,
+     1.423,
+     0.525
+    ]
+   ],
+   "IX_KeyBoxDoor_303": [
+    [
+     -0.77,
+     1.404,
+     1.53
+    ],
+    [
+     -0.25,
+     1.43,
+     2.07
+    ]
+   ],
+   "Kpp_Chair": [
+    [
+     0.3792,
+     -0.7063,
+     0.15
+    ],
+    [
+     0.9808,
+     -0.1383,
+     1.11
+    ]
+   ],
+   "Kpp_Panel": [
+    [
+     -1.785,
+     -1.2175,
+     0.935
+    ],
+    [
+     0.965,
+     1.4755,
+     2.1529
+    ]
+   ],
+   "Kpp_Props": [
+    [
+     -1.97,
+     -2.1161,
+     0.66
+    ],
+    [
+     2.193,
+     1.48,
+     2.76
+    ]
+   ],
+   "Kpp_Signs": [
+    [
+     -0.9,
+     -2.0935,
+     0.6
+    ],
+    [
+     2.1105,
+     -0.19,
+     3.09
+    ]
+   ],
+   "Lamp_Fluor": [
+    [
+     -0.93,
+     0.05,
+     2.5985
+    ],
+    [
+     0.33,
+     0.15,
+     2.675
+    ]
+   ],
+   "Lens_Bulk_Door": [
+    [
+     0.837,
+     1.658,
+     2.372
+    ],
+    [
+     0.973,
+     1.698,
+     2.508
+    ]
+   ],
+   "Phone": [
+    [
+     1.57,
+     -0.6804,
+     0.9
+    ],
+    [
+     1.8339,
+     -0.3764,
+     1.037
+    ]
+   ],
+   "Phone_Bell": [
+    [
+     2.1,
+     0.9171,
+     2.51
+    ],
+    [
+     2.192,
+     1.0829,
+     2.69
+    ]
+   ],
+   "Screen_CCTV": [
+    [
+     -1.175,
+     -1.097,
+     0.98
+    ],
+    [
+     -0.925,
+     -1.097,
+     1.17
+    ]
+   ],
+   "Window_Glass": [
+    [
+     -2.0405,
+     -1.5405,
+     1.245
+    ],
+    [
+     2.058,
+     0.555,
+     2.305
+    ]
+   ]
+  },
+  "pivots": {
+   "Checkpoint": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_BoothDoor_74": [
+    1.375,
+    1.66,
+    1.2
+   ],
+   "IX_BoothWindow_302": [
+    2.009,
+    -0.88,
+    1.225
+   ],
+   "IX_Drawer_75": [
+    1.4,
+    0.745,
+    0.625
+   ],
+   "IX_Drawer_76": [
+    1.4,
+    0.745,
+    0.415
+   ],
+   "IX_Drawer_77": [
+    1.4,
+    0.745,
+    0.195
+   ],
+   "IX_Drawer_78": [
+    -1.38,
+    1.205,
+    0.875
+   ],
+   "IX_Drawer_79": [
+    -1.38,
+    1.205,
+    0.535
+   ],
+   "IX_Drawer_80": [
+    -1.38,
+    1.205,
+    0.195
+   ],
+   "IX_KeyBoxDoor_303": [
+    -0.77,
+    1.429,
+    1.8
+   ],
+   "Kpp_Chair": [
+    0.68,
+    -0.45,
+    0.15
+   ],
+   "Kpp_Panel": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Kpp_Props": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Kpp_Signs": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Lamp_Fluor": [
+    -0.3,
+    0.1,
+    2.65
+   ],
+   "Lens_Bulk_Door": [
+    0.905,
+    1.678,
+    2.44
+   ],
+   "Phone": [
+    1.67,
+    -0.55,
+    0.9
+   ],
+   "Phone_Bell": [
+    2.19,
+    1.0,
+    2.6
+   ],
+   "Screen_CCTV": [
+    -1.05,
+    -1.097,
+    1.075
+   ],
+   "Window_Glass": [
+    0.0,
+    0.0,
+    1.8
+   ]
+  }
+ },
+ "Barrier": {
+  "file": "Barrier.fbx",
+  "objects": [
+   "Barrier",
+   "IX_BarrierArm_82"
+  ],
+  "skipped": [
+   "COL_Barrier_Foot",
+   "COL_Barrier_Post",
+   "COL_Barrier_Rest",
+   "COL_Boom"
+  ],
+  "joined": [],
+  "materials": [
+   "M_Kpp_KppYard"
+  ],
+  "tris": 916,
+  "remap": [],
+  "bytes": 38716,
+  "aabb": {
+   "Barrier": [
+    [
+     -0.375,
+     -0.375,
+     -0.15
+    ],
+    [
+     5.8698,
+     0.375,
+     1.33
+    ]
+   ],
+   "IX_BarrierArm_82": [
+    [
+     -0.57,
+     -0.07,
+     1.007
+    ],
+    [
+     6.0,
+     0.07,
+     1.265
+    ]
+   ]
+  },
+  "pivots": {
+   "Barrier": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_BarrierArm_82": [
+    0.0,
+    0.0,
+    1.17
+   ]
+  }
+ },
+ "Gate": {
+  "file": "Gate.fbx",
+  "objects": [
+   "Gate",
+   "Gate_Fence_Barbed",
+   "Gate_Fence_Mesh",
+   "IX_Gate_81"
+  ],
+  "skipped": [
+   "COL_Gate_Fence",
+   "COL_Gate_Guide_In",
+   "COL_Gate_Guide_Out",
+   "COL_Gate_Receiver",
+   "COL_Gate_Stop",
+   "COL_Gate_Leaf"
+  ],
+  "joined": [
+   "IX_Gate_81 <- IX_Gate_81_Barbed, IX_Gate_81_Mesh, IX_Gate_81_Sign"
+  ],
+  "materials": [
+   "M_Kpp_Barbed",
+   "M_Kpp_ChainLink",
+   "M_Kpp_KppYard",
+   "M_Kpp_Panel"
+  ],
+  "tris": 1052,
+  "remap": [],
+  "bytes": 57788,
+  "aabb": {
+   "Gate": [
+    [
+     -7.4,
+     -0.15,
+     -0.15
+    ],
+    [
+     7.0,
+     0.47,
+     2.42
+    ]
+   ],
+   "Gate_Fence_Barbed": [
+    [
+     0.2,
+     -0.0006,
+     2.04
+    ],
+    [
+     2.4,
+     0.0006,
+     2.4
+    ]
+   ],
+   "Gate_Fence_Mesh": [
+    [
+     0.23,
+     -0.0006,
+     0.06
+    ],
+    [
+     2.37,
+     0.0006,
+     1.93
+    ]
+   ],
+   "IX_Gate_81": [
+    [
+     -7.0,
+     0.1755,
+     0.045
+    ],
+    [
+     0.0,
+     0.254,
+     2.42
+    ]
+   ]
+  },
+  "pivots": {
+   "Gate": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Gate_Fence_Barbed": [
+    1.3,
+    0.0,
+    2.22
+   ],
+   "Gate_Fence_Mesh": [
+    1.3,
+    0.0,
+    1.0
+   ],
+   "IX_Gate_81": [
+    -7.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "FuelTanks": {
+  "file": "FuelTanks.fbx",
+  "objects": [
+   "FuelTanks",
+   "FuelTanks_Props",
+   "FuelTanks_Signs",
+   "IX_PumpLever_301",
+   "Pump"
+  ],
+  "skipped": [
+   "COL_Board",
+   "COL_Board_Post_L",
+   "COL_Board_Post_R",
+   "COL_Bund_Slab",
+   "COL_Bund_Wall_B",
+   "COL_Bund_Wall_F",
+   "COL_Bund_Wall_L",
+   "COL_Bund_Wall_R",
+   "COL_Extinguisher",
+   "COL_Fill_Drops",
+   "COL_Ladder",
+   "COL_Saddle_T1_L",
+   "COL_Saddle_T1_R",
+   "COL_Saddle_T2_L",
+   "COL_Saddle_T2_R",
+   "COL_Stile_1",
+   "COL_Stile_2",
+   "COL_Stile_3",
+   "COL_Stile_4",
+   "COL_Stile_Rail_L",
+   "COL_Stile_Rail_R",
+   "COL_Stile_Top",
+   "COL_Tank_T1_A",
+   "COL_Tank_T1_B",
+   "COL_Tank_T2_A",
+   "COL_Tank_T2_B",
+   "COL_Pump"
+  ],
+  "joined": [],
+  "materials": [
+   "M_Yard_Panel",
+   "M_Yard_Tanks",
+   "M_Yard_YardProps"
+  ],
+  "tris": 8816,
+  "remap": [],
+  "bytes": 221724,
+  "aabb": {
+   "FuelTanks": [
+    [
+     -4.3,
+     -4.7,
+     -0.3
+    ],
+    [
+     4.3,
+     3.6,
+     3.51
+    ]
+   ],
+   "FuelTanks_Props": [
+    [
+     -4.1037,
+     -4.295,
+     0.1175
+    ],
+    [
+     1.805,
+     0.9756,
+     1.225
+    ]
+   ],
+   "FuelTanks_Signs": [
+    [
+     -3.58,
+     -4.191,
+     0.421
+    ],
+    [
+     1.82,
+     -1.65,
+     1.77
+    ]
+   ],
+   "IX_PumpLever_301": [
+    [
+     -1.5247,
+     -4.3,
+     0.97
+    ],
+    [
+     -1.4753,
+     -4.212,
+     1.4
+    ]
+   ],
+   "Pump": [
+    [
+     -1.605,
+     -4.272,
+     0.02
+    ],
+    [
+     -1.34,
+     -4.06,
+     1.12
+    ]
+   ]
+  },
+  "pivots": {
+   "FuelTanks": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "FuelTanks_Props": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "FuelTanks_Signs": [
+    0.0,
+    -3.6,
+    1.0
+   ],
+   "IX_PumpLever_301": [
+    -1.5,
+    -4.222,
+    1.02
+   ],
+   "Pump": [
+    -1.5,
+    -4.15,
+    0.0
+   ]
+  }
+ },
+ "Trafo": {
+  "file": "Trafo.fbx",
+  "objects": [
+   "Trafo",
+   "IX_TrafoGate_91",
+   "Trafo_Fence_Barbed",
+   "Trafo_Fence_Mesh",
+   "Trafo_Props",
+   "Trafo_Signs"
+  ],
+  "skipped": [
+   "COL_Cabinet",
+   "COL_Fence_Back",
+   "COL_Fence_Front_L",
+   "COL_Fence_Front_R",
+   "COL_Fence_Left",
+   "COL_Fence_Right",
+   "COL_Pole",
+   "COL_Trafo_Pad",
+   "COL_Transformer",
+   "COL_Gate_Leaf"
+  ],
+  "joined": [
+   "IX_TrafoGate_91 <- IX_TrafoGate_91_Barbed, IX_TrafoGate_91_Mesh, IX_TrafoGate_91_Sign"
+  ],
+  "materials": [
+   "M_Yard_Barbed",
+   "M_Yard_ChainLink",
+   "M_Yard_Panel",
+   "M_Yard_Trafo",
+   "M_Yard_YardProps"
+  ],
+  "tris": 7418,
+  "remap": [],
+  "bytes": 209836,
+  "aabb": {
+   "Trafo": [
+    [
+     -2.6,
+     -2.1,
+     -0.3
+    ],
+    [
+     2.6,
+     2.1284,
+     8.66
+    ]
+   ],
+   "IX_TrafoGate_91": [
+    [
+     -1.517,
+     -2.0539,
+     0.23
+    ],
+    [
+     0.07,
+     -1.983,
+     2.51
+    ]
+   ],
+   "Trafo_Fence_Barbed": [
+    [
+     -2.5006,
+     -2.0006,
+     2.23
+    ],
+    [
+     2.5006,
+     1.7806,
+     2.59
+    ]
+   ],
+   "Trafo_Fence_Mesh": [
+    [
+     -2.5006,
+     -2.0006,
+     0.22
+    ],
+    [
+     2.5006,
+     1.7806,
+     2.18
+    ]
+   ],
+   "Trafo_Props": [
+    [
+     -1.88,
+     -2.096,
+     0.204
+    ],
+    [
+     0.765,
+     1.312,
+     1.36
+    ]
+   ],
+   "Trafo_Signs": [
+    [
+     -2.22,
+     -2.028,
+     0.88
+    ],
+    [
+     1.09,
+     1.8581,
+     2.7
+    ]
+   ]
+  },
+  "pivots": {
+   "Trafo": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_TrafoGate_91": [
+    -1.5,
+    -2.0,
+    0.0
+   ],
+   "Trafo_Fence_Barbed": [
+    0.0,
+    0.0,
+    2.4
+   ],
+   "Trafo_Fence_Mesh": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "Trafo_Props": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "Trafo_Signs": [
+    0.0,
+    0.0,
+    1.5
+   ]
+  }
+ },
+ "BaseMain": {
+  "file": "BaseMain.fbx",
+  "objects": [
+   "BaseMain",
+   "FX_Bulkhead_21",
+   "FX_Bulkhead_22",
+   "FX_Bulkhead_23",
+   "FX_Bulkhead_24",
+   "FX_Bulkhead_39",
+   "FX_Bulkhead_40",
+   "FX_Bulkhead_41",
+   "FX_Bulkhead_59",
+   "FX_Bulkhead_61",
+   "FX_Bulkhead_63",
+   "FX_BulkheadCeiling_1",
+   "FX_BulkheadCeiling_34",
+   "FX_DeskLamp_36",
+   "FX_DeskLamp_6",
+   "FX_DeskLamp_7",
+   "FX_EmergencyLight_47",
+   "FX_EmergencyLight_48",
+   "FX_EmergencyLight_49",
+   "FX_EmergencyLight_50",
+   "FX_EmergencyLight_51",
+   "FX_EmergencyLight_52",
+   "FX_EmergencyLight_53",
+   "FX_EmergencyLight_54",
+   "FX_EmergencyLight_55",
+   "FX_EmergencyLight_56",
+   "FX_EmergencyLight_57",
+   "FX_EmergencyLight_58",
+   "FX_ExitSign_43",
+   "FX_ExitSign_44",
+   "FX_ExitSign_45",
+   "FX_ExitSign_46",
+   "FX_FluorBatten2_25",
+   "FX_FluorBatten2_26",
+   "FX_FluorBatten2_27",
+   "FX_FluorBatten2_28",
+   "FX_FluorBatten_12",
+   "FX_FluorBatten_13",
+   "FX_FluorBatten_20",
+   "FX_FluorBatten_29",
+   "FX_FluorBatten_31",
+   "FX_FluorBatten_32",
+   "FX_FluorBatten_33",
+   "FX_FluorBatten_37",
+   "FX_FluorBatten_38",
+   "FX_FluorBatten_42",
+   "FX_Obstruction_64",
+   "FX_Pendant_16",
+   "FX_Pendant_17",
+   "FX_Pendant_18",
+   "FX_Pendant_19",
+   "FX_Pendant_30",
+   "FX_Pendant_35",
+   "FX_Raster_10",
+   "FX_Raster_11",
+   "FX_Raster_14",
+   "FX_Raster_15",
+   "FX_Raster_2",
+   "FX_Raster_3",
+   "FX_Raster_4",
+   "FX_Raster_5",
+   "FX_Raster_8",
+   "FX_Raster_9",
+   "FX_WallFlood_60",
+   "FX_WallFlood_62",
+   "IX_Breaker_45",
+   "IX_Breaker_46",
+   "IX_Breaker_47",
+   "IX_Breaker_48",
+   "IX_Breaker_49",
+   "IX_Breaker_50",
+   "IX_Breaker_69",
+   "IX_Breaker_70",
+   "IX_Breaker_71",
+   "IX_Breaker_72",
+   "IX_Breaker_73",
+   "IX_Breaker_74",
+   "IX_Breaker_76",
+   "IX_Breaker_77",
+   "IX_Breaker_78",
+   "IX_Breaker_79",
+   "IX_Breaker_80",
+   "IX_Breaker_81",
+   "IX_Door_10",
+   "IX_Door_11",
+   "IX_Door_12",
+   "IX_Door_13",
+   "IX_Door_14",
+   "IX_Door_15",
+   "IX_Door_16",
+   "IX_Door_3",
+   "IX_Door_4",
+   "IX_Door_5",
+   "IX_Door_6",
+   "IX_Door_7",
+   "IX_Door_8",
+   "IX_Door_9",
+   "IX_Drawer_22",
+   "IX_Drawer_23",
+   "IX_Drawer_24",
+   "IX_Drawer_25",
+   "IX_Drawer_26",
+   "IX_Drawer_27",
+   "IX_Drawer_28",
+   "IX_Drawer_29",
+   "IX_Drawer_30",
+   "IX_Drawer_31",
+   "IX_Drawer_32",
+   "IX_Drawer_33",
+   "IX_Drawer_34",
+   "IX_Drawer_35",
+   "IX_Drawer_36",
+   "IX_Drawer_37",
+   "IX_Drawer_59",
+   "IX_Drawer_60",
+   "IX_Drawer_61",
+   "IX_Drawer_62",
+   "IX_Drawer_63",
+   "IX_Drawer_64",
+   "IX_Drawer_65",
+   "IX_Drawer_66",
+   "IX_Drawer_67",
+   "IX_Drawer_68",
+   "IX_ExitDoor_2",
+   "IX_FridgeDoor_58",
+   "IX_GarageDoor_19",
+   "IX_GarageGate_18",
+   "IX_HeatingStop_131",
+   "IX_Isolator_51",
+   "IX_Isolator_82",
+   "IX_LightSwitch_Exterior_102",
+   "IX_LightSwitch_Flur_EG_85",
+   "IX_LightSwitch_Flur_EG_86",
+   "IX_LightSwitch_Flur_OG_95",
+   "IX_LightSwitch_Flur_UG_100",
+   "IX_LightSwitch_Garage_87",
+   "IX_LightSwitch_Heizung_99",
+   "IX_LightSwitch_Kaserne_94",
+   "IX_LightSwitch_Kueche_96",
+   "IX_LightSwitch_Lager_88",
+   "IX_LightSwitch_Leitstand_89",
+   "IX_LightSwitch_Schaltraum_101",
+   "IX_LightSwitch_Serverraum_93",
+   "IX_LightSwitch_Stationsleiter_98",
+   "IX_LightSwitch_Treppenhaus_90",
+   "IX_LightSwitch_Treppenhaus_91",
+   "IX_LightSwitch_Treppenhaus_92",
+   "IX_LightSwitch_Waschraum_97",
+   "IX_LightSwitch_Windfang_84",
+   "IX_LockerDoor_20",
+   "IX_LockerDoor_21",
+   "IX_LockerDoor_54",
+   "IX_LockerDoor_55",
+   "IX_LockerDoor_56",
+   "IX_LockerDoor_57",
+   "IX_MainDoor_1",
+   "IX_MainSwitch_75",
+   "IX_PanelDoor_83",
+   "IX_RackDoor_38",
+   "IX_RackDoor_39",
+   "IX_RackDoor_40",
+   "IX_RackDoor_41",
+   "IX_RackDoor_42",
+   "IX_RackDoor_43",
+   "IX_RackDoor_44",
+   "IX_RoofDoor_17",
+   "IX_Shutter_Flur_OG_123",
+   "IX_Shutter_Flur_OG_126",
+   "IX_Shutter_Kaserne_111",
+   "IX_Shutter_Kaserne_113",
+   "IX_Shutter_Kueche_115",
+   "IX_Shutter_Kueche_116",
+   "IX_Shutter_Kueche_117",
+   "IX_Shutter_Kueche_122",
+   "IX_Shutter_Lager_108",
+   "IX_Shutter_Leitstand_103",
+   "IX_Shutter_Leitstand_104",
+   "IX_Shutter_Leitstand_105",
+   "IX_Shutter_Leitstand_106",
+   "IX_Shutter_Leitstand_107",
+   "IX_Shutter_Leitstand_110",
+   "IX_Shutter_Stationsleiter_120",
+   "IX_Shutter_Stationsleiter_121",
+   "IX_Shutter_Stationsleiter_125",
+   "IX_Shutter_Waschraum_118",
+   "IX_ShutterSwitch_Kueche_129",
+   "IX_ShutterSwitch_Leitstand_128",
+   "IX_ShutterSwitch_Stationsleiter_130",
+   "IX_ShutterWinder_Flur_OG_124",
+   "IX_ShutterWinder_Flur_OG_127",
+   "IX_ShutterWinder_Kaserne_112",
+   "IX_ShutterWinder_Kaserne_114",
+   "IX_ShutterWinder_Lager_109",
+   "IX_ShutterWinder_Waschraum_119",
+   "IX_TumbaDoor_52",
+   "IX_TumbaDoor_53",
+   "R_Flur_EG",
+   "R_Flur_OG",
+   "R_Flur_UG",
+   "R_Garage",
+   "R_Heizung",
+   "R_Kaserne",
+   "R_Kueche",
+   "R_Lager",
+   "R_Leitstand",
+   "R_Schaltraum",
+   "R_Serverraum",
+   "R_Stationsleiter",
+   "R_Treppenhaus",
+   "R_Waschraum",
+   "R_Windfang"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_FX_Bulb",
+   "M_FX_Diffuser",
+   "M_FX_EmergencyLens",
+   "M_FX_Exit",
+   "M_FX_Globe",
+   "M_FX_Halogen",
+   "M_FX_Red",
+   "M_FX_Tube",
+   "M_GlassClear",
+   "M_GlassDark",
+   "M_LEDOff",
+   "M_LEDOn",
+   "M_Main_Ext",
+   "M_Main_Panel",
+   "M_Main_Parts",
+   "M_Main_Rm_Flur_EG",
+   "M_Main_Rm_Flur_OG",
+   "M_Main_Rm_Flur_UG",
+   "M_Main_Rm_Garage",
+   "M_Main_Rm_Heizung",
+   "M_Main_Rm_Kaserne",
+   "M_Main_Rm_Kueche",
+   "M_Main_Rm_Lager",
+   "M_Main_Rm_Leitstand",
+   "M_Main_Rm_Schaltraum",
+   "M_Main_Rm_Serverraum",
+   "M_Main_Rm_Stationsleiter",
+   "M_Main_Rm_Treppenhaus",
+   "M_Main_Rm_Waschraum",
+   "M_Main_Rm_Windfang",
+   "M_Main_Roof",
+   "M_ScreenOff"
+  ],
+  "tris": 118794,
+  "remap": [],
+  "bytes": 2972060,
+  "aabb": {
+   "BaseMain": [
+    [
+     -18.045,
+     -8.26,
+     -0.75
+    ],
+    [
+     10.36,
+     7.03,
+     18.5026
+    ]
+   ],
+   "FX_Bulkhead_21": [
+    [
+     -0.135,
+     6.6092,
+     0.619
+    ],
+    [
+     0.135,
+     6.75,
+     0.781
+    ]
+   ],
+   "FX_Bulkhead_22": [
+    [
+     -0.135,
+     6.6092,
+     3.819
+    ],
+    [
+     0.135,
+     6.75,
+     3.981
+    ]
+   ],
+   "FX_Bulkhead_23": [
+    [
+     -0.135,
+     6.6092,
+     7.119
+    ],
+    [
+     0.135,
+     6.75,
+     7.281
+    ]
+   ],
+   "FX_Bulkhead_24": [
+    [
+     0.965,
+     1.15,
+     8.919
+    ],
+    [
+     1.235,
+     1.2908,
+     9.081
+    ]
+   ],
+   "FX_Bulkhead_39": [
+    [
+     3.865,
+     -1.2908,
+     -1.081
+    ],
+    [
+     4.135,
+     -1.15,
+     -0.919
+    ]
+   ],
+   "FX_Bulkhead_40": [
+    [
+     1.165,
+     0.8592,
+     -0.981
+    ],
+    [
+     1.435,
+     1.0,
+     -0.819
+    ]
+   ],
+   "FX_Bulkhead_41": [
+    [
+     5.465,
+     0.8592,
+     -0.981
+    ],
+    [
+     5.735,
+     1.0,
+     -0.819
+    ]
+   ],
+   "FX_Bulkhead_59": [
+    [
+     -6.585,
+     -6.1408,
+     2.369
+    ],
+    [
+     -6.315,
+     -6.0,
+     2.531
+    ]
+   ],
+   "FX_Bulkhead_61": [
+    [
+     8.0,
+     1.015,
+     2.369
+    ],
+    [
+     8.1408,
+     1.285,
+     2.531
+    ]
+   ],
+   "FX_Bulkhead_63": [
+    [
+     0.965,
+     0.8592,
+     8.969
+    ],
+    [
+     1.235,
+     1.0,
+     9.131
+    ]
+   ],
+   "FX_BulkheadCeiling_1": [
+    [
+     -6.585,
+     -3.481,
+     2.9598
+    ],
+    [
+     -6.315,
+     -3.319,
+     3.1
+    ]
+   ],
+   "FX_BulkheadCeiling_34": [
+    [
+     -7.035,
+     4.519,
+     6.1598
+    ],
+    [
+     -6.765,
+     4.681,
+     6.3
+    ]
+   ],
+   "FX_DeskLamp_36": [
+    [
+     5.075,
+     3.4339,
+     4.15
+    ],
+    [
+     5.4834,
+     3.695,
+     4.6161
+    ]
+   ],
+   "FX_DeskLamp_6": [
+    [
+     -0.695,
+     -1.7813,
+     0.75
+    ],
+    [
+     -0.378,
+     -1.395,
+     1.2161
+    ]
+   ],
+   "FX_DeskLamp_7": [
+    [
+     3.475,
+     -1.7813,
+     0.75
+    ],
+    [
+     3.625,
+     -1.325,
+     1.2161
+    ]
+   ],
+   "FX_EmergencyLight_47": [
+    [
+     -7.65,
+     -4.76,
+     2.29
+    ],
+    [
+     -7.567,
+     -4.44,
+     2.41
+    ]
+   ],
+   "FX_EmergencyLight_48": [
+    [
+     -4.76,
+     -1.233,
+     2.29
+    ],
+    [
+     -4.44,
+     -1.15,
+     2.41
+    ]
+   ],
+   "FX_EmergencyLight_49": [
+    [
+     -0.16,
+     0.917,
+     2.36
+    ],
+    [
+     0.16,
+     1.0,
+     2.48
+    ]
+   ],
+   "FX_EmergencyLight_50": [
+    [
+     5.44,
+     0.917,
+     2.36
+    ],
+    [
+     5.76,
+     1.0,
+     2.48
+    ]
+   ],
+   "FX_EmergencyLight_51": [
+    [
+     7.567,
+     1.84,
+     2.29
+    ],
+    [
+     7.65,
+     2.16,
+     2.41
+    ]
+   ],
+   "FX_EmergencyLight_52": [
+    [
+     -8.083,
+     1.84,
+     2.39
+    ],
+    [
+     -8.0,
+     2.16,
+     2.51
+    ]
+   ],
+   "FX_EmergencyLight_53": [
+    [
+     -0.16,
+     1.15,
+     2.36
+    ],
+    [
+     0.16,
+     1.233,
+     2.48
+    ]
+   ],
+   "FX_EmergencyLight_54": [
+    [
+     -0.16,
+     1.15,
+     5.76
+    ],
+    [
+     0.16,
+     1.233,
+     5.88
+    ]
+   ],
+   "FX_EmergencyLight_55": [
+    [
+     -0.16,
+     1.15,
+     -0.64
+    ],
+    [
+     0.16,
+     1.233,
+     -0.52
+    ]
+   ],
+   "FX_EmergencyLight_56": [
+    [
+     -0.16,
+     0.917,
+     5.76
+    ],
+    [
+     0.16,
+     1.0,
+     5.88
+    ]
+   ],
+   "FX_EmergencyLight_57": [
+    [
+     -0.16,
+     0.917,
+     -0.64
+    ],
+    [
+     0.16,
+     1.0,
+     -0.52
+    ]
+   ],
+   "FX_EmergencyLight_58": [
+    [
+     3.915,
+     1.15,
+     -0.71
+    ],
+    [
+     4.235,
+     1.233,
+     -0.59
+    ]
+   ],
+   "FX_ExitSign_43": [
+    [
+     -6.66,
+     -5.65,
+     2.32
+    ],
+    [
+     -6.24,
+     -5.5884,
+     2.52
+    ]
+   ],
+   "FX_ExitSign_44": [
+    [
+     7.5884,
+     -0.21,
+     2.32
+    ],
+    [
+     7.65,
+     0.21,
+     2.52
+    ]
+   ],
+   "FX_ExitSign_45": [
+    [
+     -6.66,
+     -1.0,
+     2.32
+    ],
+    [
+     -6.24,
+     -0.9384,
+     2.52
+    ]
+   ],
+   "FX_ExitSign_46": [
+    [
+     -11.03,
+     -4.7,
+     2.1
+    ],
+    [
+     -10.61,
+     -4.6384,
+     2.3
+    ]
+   ],
+   "FX_FluorBatten2_25": [
+    [
+     -6.385,
+     -3.474,
+     6.17
+    ],
+    [
+     -4.638,
+     -3.325,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten2_26": [
+    [
+     -3.785,
+     -3.474,
+     6.17
+    ],
+    [
+     -2.038,
+     -3.325,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten2_27": [
+    [
+     -0.385,
+     -3.474,
+     6.17
+    ],
+    [
+     1.362,
+     -3.325,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten2_28": [
+    [
+     1.815,
+     -3.474,
+     6.17
+    ],
+    [
+     3.562,
+     -3.325,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten_12": [
+    [
+     -6.985,
+     3.343,
+     2.982
+    ],
+    [
+     -5.238,
+     3.457,
+     3.1008
+    ]
+   ],
+   "FX_FluorBatten_13": [
+    [
+     -4.185,
+     3.343,
+     2.982
+    ],
+    [
+     -2.438,
+     3.457,
+     3.1008
+    ]
+   ],
+   "FX_FluorBatten_20": [
+    [
+     -10.985,
+     3.843,
+     3.332
+    ],
+    [
+     -9.238,
+     3.957,
+     3.4508
+    ]
+   ],
+   "FX_FluorBatten_29": [
+    [
+     5.415,
+     -2.457,
+     6.182
+    ],
+    [
+     7.162,
+     -2.343,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten_31": [
+    [
+     -4.785,
+     -0.057,
+     6.182
+    ],
+    [
+     -3.038,
+     0.057,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten_32": [
+    [
+     2.815,
+     -0.057,
+     6.182
+    ],
+    [
+     4.562,
+     0.057,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten_33": [
+    [
+     -4.857,
+     2.615,
+     6.182
+    ],
+    [
+     -4.743,
+     4.362,
+     6.3008
+    ]
+   ],
+   "FX_FluorBatten_37": [
+    [
+     1.815,
+     -3.257,
+     -0.418
+    ],
+    [
+     3.562,
+     -3.143,
+     -0.2992
+    ]
+   ],
+   "FX_FluorBatten_38": [
+    [
+     4.815,
+     -3.257,
+     -0.418
+    ],
+    [
+     6.562,
+     -3.143,
+     -0.2992
+    ]
+   ],
+   "FX_FluorBatten_42": [
+    [
+     4.015,
+     3.343,
+     -0.418
+    ],
+    [
+     5.762,
+     3.457,
+     -0.2992
+    ]
+   ],
+   "FX_Obstruction_64": [
+    [
+     5.385,
+     2.8866,
+     18.5
+    ],
+    [
+     5.515,
+     3.0134,
+     18.645
+    ]
+   ],
+   "FX_Pendant_16": [
+    [
+     -15.605,
+     -1.105,
+     2.387
+    ],
+    [
+     -15.195,
+     -0.695,
+     3.45
+    ]
+   ],
+   "FX_Pendant_17": [
+    [
+     -15.605,
+     2.495,
+     2.387
+    ],
+    [
+     -15.195,
+     2.905,
+     3.45
+    ]
+   ],
+   "FX_Pendant_18": [
+    [
+     -11.205,
+     -2.405,
+     2.387
+    ],
+    [
+     -10.795,
+     -1.995,
+     3.45
+    ]
+   ],
+   "FX_Pendant_19": [
+    [
+     -11.205,
+     1.195,
+     2.387
+    ],
+    [
+     -10.795,
+     1.605,
+     3.45
+    ]
+   ],
+   "FX_Pendant_30": [
+    [
+     4.395,
+     -3.905,
+     5.237
+    ],
+    [
+     4.805,
+     -3.495,
+     6.3
+    ]
+   ],
+   "FX_Pendant_35": [
+    [
+     4.595,
+     3.195,
+     5.437
+    ],
+    [
+     5.005,
+     3.605,
+     6.3
+    ]
+   ],
+   "FX_Raster_10": [
+    [
+     1.59,
+     -0.31,
+     2.6684
+    ],
+    [
+     2.21,
+     0.31,
+     2.75
+    ]
+   ],
+   "FX_Raster_11": [
+    [
+     5.39,
+     -0.31,
+     2.6684
+    ],
+    [
+     6.01,
+     0.31,
+     2.75
+    ]
+   ],
+   "FX_Raster_14": [
+    [
+     3.09,
+     3.09,
+     2.6684
+    ],
+    [
+     3.71,
+     3.71,
+     2.75
+    ]
+   ],
+   "FX_Raster_15": [
+    [
+     5.69,
+     3.09,
+     2.6676
+    ],
+    [
+     6.31,
+     3.71,
+     2.75
+    ]
+   ],
+   "FX_Raster_2": [
+    [
+     -3.81,
+     -3.71,
+     2.6668
+    ],
+    [
+     -3.19,
+     -3.09,
+     2.75
+    ]
+   ],
+   "FX_Raster_3": [
+    [
+     -0.81,
+     -3.71,
+     2.6684
+    ],
+    [
+     -0.19,
+     -3.09,
+     2.75
+    ]
+   ],
+   "FX_Raster_4": [
+    [
+     2.19,
+     -3.71,
+     2.6668
+    ],
+    [
+     2.81,
+     -3.09,
+     2.75
+    ]
+   ],
+   "FX_Raster_5": [
+    [
+     5.19,
+     -3.71,
+     2.6676
+    ],
+    [
+     5.81,
+     -3.09,
+     2.75
+    ]
+   ],
+   "FX_Raster_8": [
+    [
+     -6.01,
+     -0.31,
+     2.6684
+    ],
+    [
+     -5.39,
+     0.31,
+     2.75
+    ]
+   ],
+   "FX_Raster_9": [
+    [
+     -2.21,
+     -0.31,
+     2.6684
+    ],
+    [
+     -1.59,
+     0.31,
+     2.75
+    ]
+   ],
+   "FX_WallFlood_60": [
+    [
+     -5.7569,
+     -8.1961,
+     2.3794
+    ],
+    [
+     -5.4431,
+     -7.9253,
+     2.8875
+    ]
+   ],
+   "FX_WallFlood_62": [
+    [
+     -12.3569,
+     -5.2625,
+     2.7494
+    ],
+    [
+     -12.0431,
+     -4.9953,
+     3.2581
+    ]
+   ],
+   "IX_Breaker_45": [
+    [
+     7.36,
+     2.81,
+     1.52
+    ],
+    [
+     7.39,
+     2.83,
+     1.56
+    ]
+   ],
+   "IX_Breaker_46": [
+    [
+     7.36,
+     2.922,
+     1.52
+    ],
+    [
+     7.39,
+     2.942,
+     1.56
+    ]
+   ],
+   "IX_Breaker_47": [
+    [
+     7.36,
+     3.034,
+     1.52
+    ],
+    [
+     7.39,
+     3.054,
+     1.56
+    ]
+   ],
+   "IX_Breaker_48": [
+    [
+     7.36,
+     3.146,
+     1.52
+    ],
+    [
+     7.39,
+     3.166,
+     1.56
+    ]
+   ],
+   "IX_Breaker_49": [
+    [
+     7.36,
+     3.258,
+     1.52
+    ],
+    [
+     7.39,
+     3.278,
+     1.56
+    ]
+   ],
+   "IX_Breaker_50": [
+    [
+     7.36,
+     3.37,
+     1.52
+    ],
+    [
+     7.39,
+     3.39,
+     1.56
+    ]
+   ],
+   "IX_Breaker_69": [
+    [
+     5.17,
+     5.045,
+     -1.475
+    ],
+    [
+     5.23,
+     5.282,
+     -1.425
+    ]
+   ],
+   "IX_Breaker_70": [
+    [
+     4.93,
+     5.045,
+     -1.475
+    ],
+    [
+     4.99,
+     5.282,
+     -1.425
+    ]
+   ],
+   "IX_Breaker_71": [
+    [
+     4.69,
+     5.045,
+     -1.475
+    ],
+    [
+     4.75,
+     5.282,
+     -1.425
+    ]
+   ],
+   "IX_Breaker_72": [
+    [
+     4.45,
+     5.045,
+     -1.475
+    ],
+    [
+     4.51,
+     5.282,
+     -1.425
+    ]
+   ],
+   "IX_Breaker_73": [
+    [
+     4.21,
+     5.045,
+     -1.475
+    ],
+    [
+     4.27,
+     5.282,
+     -1.425
+    ]
+   ],
+   "IX_Breaker_74": [
+    [
+     3.97,
+     5.045,
+     -1.475
+    ],
+    [
+     4.03,
+     5.282,
+     -1.425
+    ]
+   ],
+   "IX_Breaker_76": [
+    [
+     7.36,
+     2.91,
+     -1.48
+    ],
+    [
+     7.39,
+     2.93,
+     -1.44
+    ]
+   ],
+   "IX_Breaker_77": [
+    [
+     7.36,
+     3.022,
+     -1.48
+    ],
+    [
+     7.39,
+     3.042,
+     -1.44
+    ]
+   ],
+   "IX_Breaker_78": [
+    [
+     7.36,
+     3.134,
+     -1.48
+    ],
+    [
+     7.39,
+     3.154,
+     -1.44
+    ]
+   ],
+   "IX_Breaker_79": [
+    [
+     7.36,
+     3.246,
+     -1.48
+    ],
+    [
+     7.39,
+     3.266,
+     -1.44
+    ]
+   ],
+   "IX_Breaker_80": [
+    [
+     7.36,
+     3.358,
+     -1.48
+    ],
+    [
+     7.39,
+     3.378,
+     -1.44
+    ]
+   ],
+   "IX_Breaker_81": [
+    [
+     7.36,
+     3.47,
+     -1.48
+    ],
+    [
+     7.39,
+     3.49,
+     -1.44
+    ]
+   ],
+   "IX_Door_10": [
+    [
+     -3.4725,
+     -1.2,
+     3.41
+    ],
+    [
+     -2.518,
+     -1.035,
+     5.482
+    ]
+   ],
+   "IX_Door_11": [
+    [
+     -5.4725,
+     1.035,
+     3.41
+    ],
+    [
+     -4.618,
+     1.2,
+     5.482
+    ]
+   ],
+   "IX_Door_12": [
+    [
+     -0.5675,
+     1.03,
+     3.41
+    ],
+    [
+     0.582,
+     1.195,
+     5.582
+    ]
+   ],
+   "IX_Door_13": [
+    [
+     2.618,
+     1.035,
+     3.41
+    ],
+    [
+     3.4725,
+     1.2,
+     5.482
+    ]
+   ],
+   "IX_Door_14": [
+    [
+     2.0325,
+     -1.12,
+     -2.99
+    ],
+    [
+     2.932,
+     -0.955,
+     -0.918
+    ]
+   ],
+   "IX_Door_15": [
+    [
+     -0.5675,
+     1.03,
+     -2.99
+    ],
+    [
+     0.582,
+     1.195,
+     -0.818
+    ]
+   ],
+   "IX_Door_16": [
+    [
+     3.6325,
+     1.03,
+     -2.99
+    ],
+    [
+     4.532,
+     1.195,
+     -0.918
+    ]
+   ],
+   "IX_Door_3": [
+    [
+     -8.045,
+     -0.5175,
+     0.01
+    ],
+    [
+     -7.88,
+     0.507,
+     2.057
+    ]
+   ],
+   "IX_Door_4": [
+    [
+     -8.045,
+     3.043,
+     0.01
+    ],
+    [
+     -7.88,
+     3.9175,
+     2.057
+    ]
+   ],
+   "IX_Door_5": [
+    [
+     -6.982,
+     -1.0655,
+     0.01
+    ],
+    [
+     -5.9275,
+     -0.9995,
+     2.182
+    ]
+   ],
+   "IX_Door_6": [
+    [
+     -3.4725,
+     -1.2,
+     0.01
+    ],
+    [
+     -2.518,
+     -1.035,
+     2.082
+    ]
+   ],
+   "IX_Door_7": [
+    [
+     -5.4725,
+     1.035,
+     0.01
+    ],
+    [
+     -4.518,
+     1.2,
+     2.082
+    ]
+   ],
+   "IX_Door_8": [
+    [
+     -0.5675,
+     1.03,
+     0.01
+    ],
+    [
+     0.582,
+     1.195,
+     2.182
+    ]
+   ],
+   "IX_Door_9": [
+    [
+     2.618,
+     1.03,
+     0.01
+    ],
+    [
+     3.4675,
+     1.195,
+     2.082
+    ]
+   ],
+   "IX_Drawer_22": [
+    [
+     -1.737,
+     -1.917,
+     0.063
+    ],
+    [
+     -1.363,
+     -1.28,
+     0.247
+    ]
+   ],
+   "IX_Drawer_23": [
+    [
+     -1.737,
+     -1.917,
+     0.278
+    ],
+    [
+     -1.363,
+     -1.28,
+     0.462
+    ]
+   ],
+   "IX_Drawer_24": [
+    [
+     -1.737,
+     -1.917,
+     0.493
+    ],
+    [
+     -1.363,
+     -1.28,
+     0.677
+    ]
+   ],
+   "IX_Drawer_25": [
+    [
+     0.263,
+     -1.917,
+     0.063
+    ],
+    [
+     0.637,
+     -1.28,
+     0.247
+    ]
+   ],
+   "IX_Drawer_26": [
+    [
+     0.263,
+     -1.917,
+     0.278
+    ],
+    [
+     0.637,
+     -1.28,
+     0.462
+    ]
+   ],
+   "IX_Drawer_27": [
+    [
+     0.263,
+     -1.917,
+     0.493
+    ],
+    [
+     0.637,
+     -1.28,
+     0.677
+    ]
+   ],
+   "IX_Drawer_28": [
+    [
+     2.263,
+     -1.917,
+     0.063
+    ],
+    [
+     2.637,
+     -1.28,
+     0.247
+    ]
+   ],
+   "IX_Drawer_29": [
+    [
+     2.263,
+     -1.917,
+     0.278
+    ],
+    [
+     2.637,
+     -1.28,
+     0.462
+    ]
+   ],
+   "IX_Drawer_30": [
+    [
+     2.263,
+     -1.917,
+     0.493
+    ],
+    [
+     2.637,
+     -1.28,
+     0.677
+    ]
+   ],
+   "IX_Drawer_31": [
+    [
+     -4.962,
+     -5.58,
+     0.043
+    ],
+    [
+     -4.538,
+     -4.993,
+     0.337
+    ]
+   ],
+   "IX_Drawer_32": [
+    [
+     -4.962,
+     -5.58,
+     0.363
+    ],
+    [
+     -4.538,
+     -4.993,
+     0.657
+    ]
+   ],
+   "IX_Drawer_33": [
+    [
+     -4.962,
+     -5.58,
+     0.683
+    ],
+    [
+     -4.538,
+     -4.993,
+     0.977
+    ]
+   ],
+   "IX_Drawer_34": [
+    [
+     -4.962,
+     -5.58,
+     1.003
+    ],
+    [
+     -4.538,
+     -4.993,
+     1.297
+    ]
+   ],
+   "IX_Drawer_35": [
+    [
+     -5.03,
+     -4.762,
+     0.043
+    ],
+    [
+     -4.443,
+     -4.338,
+     0.337
+    ]
+   ],
+   "IX_Drawer_36": [
+    [
+     -5.03,
+     -4.762,
+     0.363
+    ],
+    [
+     -4.443,
+     -4.338,
+     0.657
+    ]
+   ],
+   "IX_Drawer_37": [
+    [
+     -5.03,
+     -4.762,
+     0.683
+    ],
+    [
+     -4.443,
+     -4.338,
+     0.977
+    ]
+   ],
+   "IX_Drawer_59": [
+    [
+     5.363,
+     3.68,
+     3.463
+    ],
+    [
+     5.737,
+     4.317,
+     3.647
+    ]
+   ],
+   "IX_Drawer_60": [
+    [
+     5.363,
+     3.68,
+     3.678
+    ],
+    [
+     5.737,
+     4.317,
+     3.862
+    ]
+   ],
+   "IX_Drawer_61": [
+    [
+     5.363,
+     3.68,
+     3.893
+    ],
+    [
+     5.737,
+     4.317,
+     4.077
+    ]
+   ],
+   "IX_Drawer_62": [
+    [
+     2.02,
+     4.738,
+     3.443
+    ],
+    [
+     2.607,
+     5.162,
+     3.737
+    ]
+   ],
+   "IX_Drawer_63": [
+    [
+     2.02,
+     4.738,
+     3.763
+    ],
+    [
+     2.607,
+     5.162,
+     4.057
+    ]
+   ],
+   "IX_Drawer_64": [
+    [
+     2.02,
+     4.738,
+     4.083
+    ],
+    [
+     2.607,
+     5.162,
+     4.377
+    ]
+   ],
+   "IX_Drawer_65": [
+    [
+     2.02,
+     4.738,
+     4.403
+    ],
+    [
+     2.607,
+     5.162,
+     4.697
+    ]
+   ],
+   "IX_Drawer_66": [
+    [
+     2.02,
+     4.238,
+     3.443
+    ],
+    [
+     2.607,
+     4.662,
+     3.737
+    ]
+   ],
+   "IX_Drawer_67": [
+    [
+     2.02,
+     4.238,
+     3.763
+    ],
+    [
+     2.607,
+     4.662,
+     4.057
+    ]
+   ],
+   "IX_Drawer_68": [
+    [
+     2.02,
+     4.238,
+     4.083
+    ],
+    [
+     2.607,
+     4.662,
+     4.377
+    ]
+   ],
+   "IX_ExitDoor_2": [
+    [
+     7.865,
+     -0.5175,
+     0.01
+    ],
+    [
+     8.045,
+     0.507,
+     2.157
+    ]
+   ],
+   "IX_FridgeDoor_58": [
+    [
+     6.512,
+     -1.864,
+     3.422
+    ],
+    [
+     7.088,
+     -1.777,
+     5.218
+    ]
+   ],
+   "IX_GarageDoor_19": [
+    [
+     -11.2675,
+     -5.045,
+     -0.14
+    ],
+    [
+     -10.393,
+     -4.88,
+     1.907
+    ]
+   ],
+   "IX_GarageGate_18": [
+    [
+     -16.58,
+     -4.79,
+     -0.12
+    ],
+    [
+     -13.12,
+     -4.66,
+     2.85
+    ]
+   ],
+   "IX_HeatingStop_131": [
+    [
+     1.53,
+     -0.9335,
+     -1.5275
+    ],
+    [
+     1.57,
+     -0.9155,
+     -1.4725
+    ]
+   ],
+   "IX_Isolator_51": [
+    [
+     7.33,
+     3.015,
+     1.022
+    ],
+    [
+     7.39,
+     3.185,
+     1.078
+    ]
+   ],
+   "IX_Isolator_82": [
+    [
+     7.33,
+     3.115,
+     -1.978
+    ],
+    [
+     7.39,
+     3.285,
+     -1.922
+    ]
+   ],
+   "IX_LightSwitch_Exterior_102": [
+    [
+     -7.338,
+     -1.172,
+     1.027
+    ],
+    [
+     -7.302,
+     -1.162,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Flur_EG_85": [
+    [
+     0.802,
+     0.978,
+     1.027
+    ],
+    [
+     0.838,
+     0.988,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Flur_EG_86": [
+    [
+     -7.238,
+     -0.988,
+     1.027
+    ],
+    [
+     -7.202,
+     -0.978,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Flur_OG_95": [
+    [
+     0.802,
+     0.978,
+     4.427
+    ],
+    [
+     0.838,
+     0.988,
+     4.473
+    ]
+   ],
+   "IX_LightSwitch_Flur_UG_100": [
+    [
+     0.802,
+     0.946,
+     -1.973
+    ],
+    [
+     0.838,
+     0.956,
+     -1.927
+    ]
+   ],
+   "IX_LightSwitch_Garage_87": [
+    [
+     -8.054,
+     0.752,
+     0.877
+    ],
+    [
+     -8.044,
+     0.788,
+     0.923
+    ]
+   ],
+   "IX_LightSwitch_Heizung_99": [
+    [
+     3.152,
+     -1.204,
+     -1.973
+    ],
+    [
+     3.188,
+     -1.194,
+     -1.927
+    ]
+   ],
+   "IX_LightSwitch_Kaserne_94": [
+    [
+     -2.298,
+     -1.172,
+     4.427
+    ],
+    [
+     -2.262,
+     -1.162,
+     4.473
+    ]
+   ],
+   "IX_LightSwitch_Kueche_96": [
+    [
+     2.802,
+     -1.172,
+     4.427
+    ],
+    [
+     2.838,
+     -1.162,
+     4.473
+    ]
+   ],
+   "IX_LightSwitch_Lager_88": [
+    [
+     -4.298,
+     1.194,
+     1.027
+    ],
+    [
+     -4.262,
+     1.204,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Leitstand_89": [
+    [
+     -2.298,
+     -1.172,
+     1.027
+    ],
+    [
+     -2.262,
+     -1.162,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Schaltraum_101": [
+    [
+     4.752,
+     1.194,
+     -1.973
+    ],
+    [
+     4.788,
+     1.204,
+     -1.927
+    ]
+   ],
+   "IX_LightSwitch_Serverraum_93": [
+    [
+     2.362,
+     1.162,
+     1.027
+    ],
+    [
+     2.398,
+     1.172,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Stationsleiter_98": [
+    [
+     2.362,
+     1.162,
+     4.427
+    ],
+    [
+     2.398,
+     1.172,
+     4.473
+    ]
+   ],
+   "IX_LightSwitch_Treppenhaus_90": [
+    [
+     0.802,
+     1.194,
+     1.027
+    ],
+    [
+     0.838,
+     1.204,
+     1.073
+    ]
+   ],
+   "IX_LightSwitch_Treppenhaus_91": [
+    [
+     0.802,
+     1.194,
+     4.427
+    ],
+    [
+     0.838,
+     1.204,
+     4.473
+    ]
+   ],
+   "IX_LightSwitch_Treppenhaus_92": [
+    [
+     0.802,
+     1.194,
+     -1.973
+    ],
+    [
+     0.838,
+     1.204,
+     -1.927
+    ]
+   ],
+   "IX_LightSwitch_Waschraum_97": [
+    [
+     -4.398,
+     1.162,
+     4.427
+    ],
+    [
+     -4.362,
+     1.172,
+     4.473
+    ]
+   ],
+   "IX_LightSwitch_Windfang_84": [
+    [
+     -7.238,
+     -1.172,
+     1.027
+    ],
+    [
+     -7.202,
+     -1.162,
+     1.073
+    ]
+   ],
+   "IX_LockerDoor_20": [
+    [
+     -5.782,
+     -4.987,
+     0.023
+    ],
+    [
+     -5.738,
+     -4.513,
+     1.777
+    ]
+   ],
+   "IX_LockerDoor_21": [
+    [
+     -5.782,
+     -4.467,
+     0.023
+    ],
+    [
+     -5.738,
+     -3.993,
+     1.777
+    ]
+   ],
+   "IX_LockerDoor_54": [
+    [
+     -7.437,
+     -1.682,
+     3.423
+    ],
+    [
+     -6.963,
+     -1.638,
+     5.177
+    ]
+   ],
+   "IX_LockerDoor_55": [
+    [
+     -6.917,
+     -1.682,
+     3.423
+    ],
+    [
+     -6.443,
+     -1.638,
+     5.177
+    ]
+   ],
+   "IX_LockerDoor_56": [
+    [
+     -6.397,
+     -1.682,
+     3.423
+    ],
+    [
+     -5.923,
+     -1.638,
+     5.177
+    ]
+   ],
+   "IX_LockerDoor_57": [
+    [
+     -5.877,
+     -1.682,
+     3.423
+    ],
+    [
+     -5.403,
+     -1.638,
+     5.177
+    ]
+   ],
+   "IX_MainDoor_1": [
+    [
+     -6.9675,
+     -6.045,
+     0.01
+    ],
+    [
+     -5.943,
+     -5.88,
+     2.157
+    ]
+   ],
+   "IX_MainSwitch_75": [
+    [
+     4.51,
+     4.89,
+     -2.13
+    ],
+    [
+     4.69,
+     5.269,
+     -2.07
+    ]
+   ],
+   "IX_PanelDoor_83": [
+    [
+     7.361,
+     4.202,
+     -2.088
+    ],
+    [
+     7.418,
+     4.978,
+     -1.112
+    ]
+   ],
+   "IX_RackDoor_38": [
+    [
+     2.312,
+     4.696,
+     0.022
+    ],
+    [
+     2.888,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RackDoor_39": [
+    [
+     2.932,
+     4.696,
+     0.022
+    ],
+    [
+     3.508,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RackDoor_40": [
+    [
+     3.552,
+     4.696,
+     0.022
+    ],
+    [
+     4.128,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RackDoor_41": [
+    [
+     4.172,
+     4.696,
+     0.022
+    ],
+    [
+     4.748,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RackDoor_42": [
+    [
+     4.792,
+     4.696,
+     0.022
+    ],
+    [
+     5.368,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RackDoor_43": [
+    [
+     5.412,
+     4.696,
+     0.022
+    ],
+    [
+     5.988,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RackDoor_44": [
+    [
+     6.032,
+     4.696,
+     0.022
+    ],
+    [
+     6.608,
+     4.753,
+     1.978
+    ]
+   ],
+   "IX_RoofDoor_17": [
+    [
+     -0.5675,
+     0.955,
+     6.62
+    ],
+    [
+     0.557,
+     1.12,
+     8.757
+    ]
+   ],
+   "IX_Shutter_Flur_OG_123": [
+    [
+     7.93,
+     -0.588,
+     4.312
+    ],
+    [
+     7.95,
+     0.588,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Flur_OG_126": [
+    [
+     -7.95,
+     -0.588,
+     4.412
+    ],
+    [
+     -7.93,
+     0.588,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Kaserne_111": [
+    [
+     -6.988,
+     -5.95,
+     4.312
+    ],
+    [
+     -4.612,
+     -5.93,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Kaserne_113": [
+    [
+     -4.188,
+     -5.95,
+     4.312
+    ],
+    [
+     -2.212,
+     -5.93,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Kueche_115": [
+    [
+     -0.788,
+     -5.95,
+     4.312
+    ],
+    [
+     1.811,
+     -5.93,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Kueche_116": [
+    [
+     1.823,
+     -5.95,
+     4.312
+    ],
+    [
+     4.377,
+     -5.93,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Kueche_117": [
+    [
+     4.389,
+     -5.95,
+     4.312
+    ],
+    [
+     6.988,
+     -5.93,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Kueche_122": [
+    [
+     7.93,
+     -4.988,
+     4.312
+    ],
+    [
+     7.95,
+     -2.012,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Lager_108": [
+    [
+     -6.588,
+     5.93,
+     1.412
+    ],
+    [
+     -3.212,
+     5.95,
+     2.3
+    ]
+   ],
+   "IX_Shutter_Leitstand_103": [
+    [
+     -4.388,
+     -5.95,
+     0.812
+    ],
+    [
+     -1.7,
+     -5.93,
+     2.75
+    ]
+   ],
+   "IX_Shutter_Leitstand_104": [
+    [
+     -1.688,
+     -5.95,
+     0.812
+    ],
+    [
+     0.955,
+     -5.93,
+     2.75
+    ]
+   ],
+   "IX_Shutter_Leitstand_105": [
+    [
+     0.967,
+     -5.95,
+     0.812
+    ],
+    [
+     3.611,
+     -5.93,
+     2.75
+    ]
+   ],
+   "IX_Shutter_Leitstand_106": [
+    [
+     3.623,
+     -5.95,
+     0.812
+    ],
+    [
+     6.266,
+     -5.93,
+     2.75
+    ]
+   ],
+   "IX_Shutter_Leitstand_107": [
+    [
+     6.278,
+     -5.95,
+     0.812
+    ],
+    [
+     7.638,
+     -5.93,
+     2.75
+    ]
+   ],
+   "IX_Shutter_Leitstand_110": [
+    [
+     7.93,
+     -5.488,
+     0.812
+    ],
+    [
+     7.95,
+     -1.812,
+     2.75
+    ]
+   ],
+   "IX_Shutter_Stationsleiter_120": [
+    [
+     2.812,
+     5.93,
+     4.312
+    ],
+    [
+     5.444,
+     5.95,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Stationsleiter_121": [
+    [
+     5.456,
+     5.93,
+     4.312
+    ],
+    [
+     6.788,
+     5.95,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Stationsleiter_125": [
+    [
+     7.93,
+     2.212,
+     4.312
+    ],
+    [
+     7.95,
+     4.988,
+     5.6
+    ]
+   ],
+   "IX_Shutter_Waschraum_118": [
+    [
+     -6.588,
+     5.93,
+     5.012
+    ],
+    [
+     -4.212,
+     5.95,
+     5.65
+    ]
+   ],
+   "IX_ShutterSwitch_Kueche_129": [
+    [
+     2.802,
+     -1.172,
+     4.513
+    ],
+    [
+     2.838,
+     -1.162,
+     4.559
+    ]
+   ],
+   "IX_ShutterSwitch_Leitstand_128": [
+    [
+     -2.298,
+     -1.172,
+     1.113
+    ],
+    [
+     -2.262,
+     -1.162,
+     1.159
+    ]
+   ],
+   "IX_ShutterSwitch_Stationsleiter_130": [
+    [
+     2.362,
+     1.162,
+     4.513
+    ],
+    [
+     2.398,
+     1.172,
+     4.559
+    ]
+   ],
+   "IX_ShutterWinder_Flur_OG_124": [
+    [
+     7.637,
+     0.67,
+     4.295
+    ],
+    [
+     7.646,
+     0.75,
+     4.505
+    ]
+   ],
+   "IX_ShutterWinder_Flur_OG_127": [
+    [
+     -7.646,
+     0.67,
+     4.295
+    ],
+    [
+     -7.637,
+     0.75,
+     4.505
+    ]
+   ],
+   "IX_ShutterWinder_Kaserne_112": [
+    [
+     -7.15,
+     -5.646,
+     4.295
+    ],
+    [
+     -7.07,
+     -5.637,
+     4.505
+    ]
+   ],
+   "IX_ShutterWinder_Kaserne_114": [
+    [
+     -2.13,
+     -5.646,
+     4.295
+    ],
+    [
+     -2.05,
+     -5.637,
+     4.505
+    ]
+   ],
+   "IX_ShutterWinder_Lager_109": [
+    [
+     -3.13,
+     5.637,
+     0.895
+    ],
+    [
+     -3.05,
+     5.646,
+     1.105
+    ]
+   ],
+   "IX_ShutterWinder_Waschraum_119": [
+    [
+     -4.13,
+     5.637,
+     4.295
+    ],
+    [
+     -4.05,
+     5.646,
+     4.505
+    ]
+   ],
+   "IX_TumbaDoor_52": [
+    [
+     -7.258,
+     -4.443,
+     3.422
+    ],
+    [
+     -7.217,
+     -4.017,
+     3.978
+    ]
+   ],
+   "IX_TumbaDoor_53": [
+    [
+     -7.258,
+     -2.493,
+     3.422
+    ],
+    [
+     -7.217,
+     -2.067,
+     3.978
+    ]
+   ],
+   "R_Flur_EG": [
+    [
+     -8.0008,
+     -1.0,
+     -0.02
+    ],
+    [
+     7.9975,
+     1.055,
+     2.75
+    ]
+   ],
+   "R_Flur_OG": [
+    [
+     -7.92,
+     -1.075,
+     3.4
+    ],
+    [
+     7.92,
+     1.0,
+     6.3
+    ]
+   ],
+   "R_Flur_UG": [
+    [
+     -1.95,
+     -1.0008,
+     -3.0036
+    ],
+    [
+     7.65,
+     1.0,
+     -0.3
+    ]
+   ],
+   "R_Garage": [
+    [
+     -17.945,
+     -4.9975,
+     -0.17
+    ],
+    [
+     -8.0,
+     4.945,
+     3.45
+    ]
+   ],
+   "R_Heizung": [
+    [
+     -1.95,
+     -5.65,
+     -3.02
+    ],
+    [
+     7.65,
+     -0.988,
+     -0.2992
+    ]
+   ],
+   "R_Kaserne": [
+    [
+     -7.6508,
+     -5.92,
+     3.38
+    ],
+    [
+     -1.6,
+     -0.988,
+     6.3
+    ]
+   ],
+   "R_Kueche": [
+    [
+     -1.4508,
+     -5.92,
+     3.4
+    ],
+    [
+     7.92,
+     -1.075,
+     6.3
+    ]
+   ],
+   "R_Lager": [
+    [
+     -8.0008,
+     0.988,
+     -0.02
+    ],
+    [
+     -1.95,
+     5.92,
+     3.1
+    ]
+   ],
+   "R_Leitstand": [
+    [
+     -5.1008,
+     -5.9208,
+     -0.02
+    ],
+    [
+     7.9208,
+     -0.988,
+     2.75
+    ]
+   ],
+   "R_Schaltraum": [
+    [
+     1.95,
+     0.988,
+     -3.02
+    ],
+    [
+     7.65,
+     5.65,
+     -0.3
+    ]
+   ],
+   "R_Serverraum": [
+    [
+     1.95,
+     0.988,
+     -0.02
+    ],
+    [
+     7.6508,
+     5.65,
+     2.75
+    ]
+   ],
+   "R_Stationsleiter": [
+    [
+     1.9492,
+     0.988,
+     3.38
+    ],
+    [
+     7.92,
+     5.92,
+     6.3
+    ]
+   ],
+   "R_Treppenhaus": [
+    [
+     -1.7049,
+     0.988,
+     -3.12
+    ],
+    [
+     1.7049,
+     6.91,
+     9.4
+    ]
+   ],
+   "R_Waschraum": [
+    [
+     -7.65,
+     0.988,
+     3.38
+    ],
+    [
+     -1.95,
+     5.92,
+     6.3
+    ]
+   ],
+   "R_Windfang": [
+    [
+     -7.65,
+     -5.9975,
+     -0.02
+    ],
+    [
+     -5.2492,
+     -0.988,
+     3.1
+    ]
+   ]
+  },
+  "pivots": {
+   "BaseMain": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "FX_Bulkhead_21": [
+    0.0,
+    6.75,
+    0.7
+   ],
+   "FX_Bulkhead_22": [
+    0.0,
+    6.75,
+    3.9
+   ],
+   "FX_Bulkhead_23": [
+    0.0,
+    6.75,
+    7.2
+   ],
+   "FX_Bulkhead_24": [
+    1.1,
+    1.15,
+    9.0
+   ],
+   "FX_Bulkhead_39": [
+    4.0,
+    -1.15,
+    -1.0
+   ],
+   "FX_Bulkhead_40": [
+    1.3,
+    1.0,
+    -0.9
+   ],
+   "FX_Bulkhead_41": [
+    5.6,
+    1.0,
+    -0.9
+   ],
+   "FX_Bulkhead_59": [
+    -6.45,
+    -6.0,
+    2.45
+   ],
+   "FX_Bulkhead_61": [
+    8.0,
+    1.15,
+    2.45
+   ],
+   "FX_Bulkhead_63": [
+    1.1,
+    1.0,
+    9.05
+   ],
+   "FX_BulkheadCeiling_1": [
+    -6.45,
+    -3.4,
+    3.1
+   ],
+   "FX_BulkheadCeiling_34": [
+    -6.9,
+    4.6,
+    6.3
+   ],
+   "FX_DeskLamp_36": [
+    5.65,
+    3.35,
+    4.15
+   ],
+   "FX_DeskLamp_6": [
+    -0.45,
+    -1.4,
+    0.75
+   ],
+   "FX_DeskLamp_7": [
+    3.55,
+    -1.4,
+    0.75
+   ],
+   "FX_EmergencyLight_47": [
+    -7.65,
+    -4.6,
+    2.35
+   ],
+   "FX_EmergencyLight_48": [
+    -4.6,
+    -1.15,
+    2.35
+   ],
+   "FX_EmergencyLight_49": [
+    0.0,
+    1.0,
+    2.42
+   ],
+   "FX_EmergencyLight_50": [
+    5.6,
+    1.0,
+    2.42
+   ],
+   "FX_EmergencyLight_51": [
+    7.65,
+    2.0,
+    2.35
+   ],
+   "FX_EmergencyLight_52": [
+    -8.0,
+    2.0,
+    2.45
+   ],
+   "FX_EmergencyLight_53": [
+    0.0,
+    1.15,
+    2.42
+   ],
+   "FX_EmergencyLight_54": [
+    0.0,
+    1.15,
+    5.82
+   ],
+   "FX_EmergencyLight_55": [
+    0.0,
+    1.15,
+    -0.58
+   ],
+   "FX_EmergencyLight_56": [
+    0.0,
+    1.0,
+    5.82
+   ],
+   "FX_EmergencyLight_57": [
+    0.0,
+    1.0,
+    -0.58
+   ],
+   "FX_EmergencyLight_58": [
+    4.075,
+    1.15,
+    -0.65
+   ],
+   "FX_ExitSign_43": [
+    -6.45,
+    -5.65,
+    2.42
+   ],
+   "FX_ExitSign_44": [
+    7.65,
+    0.0,
+    2.42
+   ],
+   "FX_ExitSign_45": [
+    -6.45,
+    -1.0,
+    2.42
+   ],
+   "FX_ExitSign_46": [
+    -10.82,
+    -4.7,
+    2.2
+   ],
+   "FX_FluorBatten2_25": [
+    -5.6,
+    -3.4,
+    6.3
+   ],
+   "FX_FluorBatten2_26": [
+    -3.0,
+    -3.4,
+    6.3
+   ],
+   "FX_FluorBatten2_27": [
+    0.4,
+    -3.4,
+    6.3
+   ],
+   "FX_FluorBatten2_28": [
+    2.6,
+    -3.4,
+    6.3
+   ],
+   "FX_FluorBatten_12": [
+    -6.2,
+    3.4,
+    3.1
+   ],
+   "FX_FluorBatten_13": [
+    -3.4,
+    3.4,
+    3.1
+   ],
+   "FX_FluorBatten_20": [
+    -10.2,
+    3.9,
+    3.45
+   ],
+   "FX_FluorBatten_29": [
+    6.2,
+    -2.4,
+    6.3
+   ],
+   "FX_FluorBatten_31": [
+    -4.0,
+    0.0,
+    6.3
+   ],
+   "FX_FluorBatten_32": [
+    3.6,
+    0.0,
+    6.3
+   ],
+   "FX_FluorBatten_33": [
+    -4.8,
+    3.4,
+    6.3
+   ],
+   "FX_FluorBatten_37": [
+    2.6,
+    -3.2,
+    -0.3
+   ],
+   "FX_FluorBatten_38": [
+    5.6,
+    -3.2,
+    -0.3
+   ],
+   "FX_FluorBatten_42": [
+    4.8,
+    3.4,
+    -0.3
+   ],
+   "FX_Obstruction_64": [
+    5.45,
+    2.95,
+    18.5
+   ],
+   "FX_Pendant_16": [
+    -15.4,
+    -0.9,
+    3.45
+   ],
+   "FX_Pendant_17": [
+    -15.4,
+    2.7,
+    3.45
+   ],
+   "FX_Pendant_18": [
+    -11.0,
+    -2.2,
+    3.45
+   ],
+   "FX_Pendant_19": [
+    -11.0,
+    1.4,
+    3.45
+   ],
+   "FX_Pendant_30": [
+    4.6,
+    -3.7,
+    6.3
+   ],
+   "FX_Pendant_35": [
+    4.8,
+    3.4,
+    6.3
+   ],
+   "FX_Raster_10": [
+    1.9,
+    0.0,
+    2.75
+   ],
+   "FX_Raster_11": [
+    5.7,
+    0.0,
+    2.75
+   ],
+   "FX_Raster_14": [
+    3.4,
+    3.4,
+    2.75
+   ],
+   "FX_Raster_15": [
+    6.0,
+    3.4,
+    2.75
+   ],
+   "FX_Raster_2": [
+    -3.5,
+    -3.4,
+    2.75
+   ],
+   "FX_Raster_3": [
+    -0.5,
+    -3.4,
+    2.75
+   ],
+   "FX_Raster_4": [
+    2.5,
+    -3.4,
+    2.75
+   ],
+   "FX_Raster_5": [
+    5.5,
+    -3.4,
+    2.75
+   ],
+   "FX_Raster_8": [
+    -5.7,
+    0.0,
+    2.75
+   ],
+   "FX_Raster_9": [
+    -1.9,
+    0.0,
+    2.75
+   ],
+   "FX_WallFlood_60": [
+    -5.6,
+    -7.93,
+    2.78
+   ],
+   "FX_WallFlood_62": [
+    -12.2,
+    -5.0,
+    3.15
+   ],
+   "IX_Breaker_45": [
+    7.39,
+    2.82,
+    1.52
+   ],
+   "IX_Breaker_46": [
+    7.39,
+    2.932,
+    1.52
+   ],
+   "IX_Breaker_47": [
+    7.39,
+    3.044,
+    1.52
+   ],
+   "IX_Breaker_48": [
+    7.39,
+    3.156,
+    1.52
+   ],
+   "IX_Breaker_49": [
+    7.39,
+    3.268,
+    1.52
+   ],
+   "IX_Breaker_50": [
+    7.39,
+    3.38,
+    1.52
+   ],
+   "IX_Breaker_69": [
+    5.2,
+    5.28,
+    -1.45
+   ],
+   "IX_Breaker_70": [
+    4.96,
+    5.28,
+    -1.45
+   ],
+   "IX_Breaker_71": [
+    4.72,
+    5.28,
+    -1.45
+   ],
+   "IX_Breaker_72": [
+    4.48,
+    5.28,
+    -1.45
+   ],
+   "IX_Breaker_73": [
+    4.24,
+    5.28,
+    -1.45
+   ],
+   "IX_Breaker_74": [
+    4.0,
+    5.28,
+    -1.45
+   ],
+   "IX_Breaker_76": [
+    7.39,
+    2.92,
+    -1.48
+   ],
+   "IX_Breaker_77": [
+    7.39,
+    3.032,
+    -1.48
+   ],
+   "IX_Breaker_78": [
+    7.39,
+    3.144,
+    -1.48
+   ],
+   "IX_Breaker_79": [
+    7.39,
+    3.256,
+    -1.48
+   ],
+   "IX_Breaker_80": [
+    7.39,
+    3.368,
+    -1.48
+   ],
+   "IX_Breaker_81": [
+    7.39,
+    3.48,
+    -1.48
+   ],
+   "IX_Door_10": [
+    -3.4725,
+    -1.1175,
+    3.41
+   ],
+   "IX_Door_11": [
+    -5.4725,
+    1.1175,
+    3.41
+   ],
+   "IX_Door_12": [
+    -0.5675,
+    1.1125,
+    3.41
+   ],
+   "IX_Door_13": [
+    3.4725,
+    1.1175,
+    3.41
+   ],
+   "IX_Door_14": [
+    2.0325,
+    -1.0375,
+    -2.99
+   ],
+   "IX_Door_15": [
+    -0.5675,
+    1.1125,
+    -2.99
+   ],
+   "IX_Door_16": [
+    3.6325,
+    1.1125,
+    -2.99
+   ],
+   "IX_Door_3": [
+    -7.9625,
+    -0.5175,
+    0.01
+   ],
+   "IX_Door_4": [
+    -7.9625,
+    3.9175,
+    0.01
+   ],
+   "IX_Door_5": [
+    -5.9275,
+    -1.0325,
+    0.01
+   ],
+   "IX_Door_6": [
+    -3.4725,
+    -1.1175,
+    0.01
+   ],
+   "IX_Door_7": [
+    -5.4725,
+    1.1175,
+    0.01
+   ],
+   "IX_Door_8": [
+    -0.5675,
+    1.1125,
+    0.01
+   ],
+   "IX_Door_9": [
+    3.4675,
+    1.1125,
+    0.01
+   ],
+   "IX_Drawer_22": [
+    -1.55,
+    -1.88,
+    0.06
+   ],
+   "IX_Drawer_23": [
+    -1.55,
+    -1.88,
+    0.275
+   ],
+   "IX_Drawer_24": [
+    -1.55,
+    -1.88,
+    0.49
+   ],
+   "IX_Drawer_25": [
+    0.45,
+    -1.88,
+    0.06
+   ],
+   "IX_Drawer_26": [
+    0.45,
+    -1.88,
+    0.275
+   ],
+   "IX_Drawer_27": [
+    0.45,
+    -1.88,
+    0.49
+   ],
+   "IX_Drawer_28": [
+    2.45,
+    -1.88,
+    0.06
+   ],
+   "IX_Drawer_29": [
+    2.45,
+    -1.88,
+    0.275
+   ],
+   "IX_Drawer_30": [
+    2.45,
+    -1.88,
+    0.49
+   ],
+   "IX_Drawer_31": [
+    -4.75,
+    -5.03,
+    0.04
+   ],
+   "IX_Drawer_32": [
+    -4.75,
+    -5.03,
+    0.36
+   ],
+   "IX_Drawer_33": [
+    -4.75,
+    -5.03,
+    0.68
+   ],
+   "IX_Drawer_34": [
+    -4.75,
+    -5.03,
+    1.0
+   ],
+   "IX_Drawer_35": [
+    -4.48,
+    -4.55,
+    0.04
+   ],
+   "IX_Drawer_36": [
+    -4.48,
+    -4.55,
+    0.36
+   ],
+   "IX_Drawer_37": [
+    -4.48,
+    -4.55,
+    0.68
+   ],
+   "IX_Drawer_59": [
+    5.55,
+    4.28,
+    3.46
+   ],
+   "IX_Drawer_60": [
+    5.55,
+    4.28,
+    3.675
+   ],
+   "IX_Drawer_61": [
+    5.55,
+    4.28,
+    3.89
+   ],
+   "IX_Drawer_62": [
+    2.57,
+    4.95,
+    3.44
+   ],
+   "IX_Drawer_63": [
+    2.57,
+    4.95,
+    3.76
+   ],
+   "IX_Drawer_64": [
+    2.57,
+    4.95,
+    4.08
+   ],
+   "IX_Drawer_65": [
+    2.57,
+    4.95,
+    4.4
+   ],
+   "IX_Drawer_66": [
+    2.57,
+    4.45,
+    3.44
+   ],
+   "IX_Drawer_67": [
+    2.57,
+    4.45,
+    3.76
+   ],
+   "IX_Drawer_68": [
+    2.57,
+    4.45,
+    4.08
+   ],
+   "IX_ExitDoor_2": [
+    7.9625,
+    -0.5175,
+    0.01
+   ],
+   "IX_FridgeDoor_58": [
+    7.09,
+    -1.785,
+    3.42
+   ],
+   "IX_GarageDoor_19": [
+    -11.2675,
+    -4.9625,
+    -0.14
+   ],
+   "IX_GarageGate_18": [
+    -16.58,
+    -4.66,
+    2.85
+   ],
+   "IX_HeatingStop_131": [
+    1.55,
+    -0.934,
+    -1.5
+   ],
+   "IX_Isolator_51": [
+    7.39,
+    3.1,
+    1.05
+   ],
+   "IX_Isolator_82": [
+    7.39,
+    3.2,
+    -1.95
+   ],
+   "IX_LightSwitch_Exterior_102": [
+    -7.32,
+    -1.167,
+    1.05
+   ],
+   "IX_LightSwitch_Flur_EG_85": [
+    0.82,
+    0.983,
+    1.05
+   ],
+   "IX_LightSwitch_Flur_EG_86": [
+    -7.22,
+    -0.983,
+    1.05
+   ],
+   "IX_LightSwitch_Flur_OG_95": [
+    0.82,
+    0.983,
+    4.45
+   ],
+   "IX_LightSwitch_Flur_UG_100": [
+    0.82,
+    0.951,
+    -1.95
+   ],
+   "IX_LightSwitch_Garage_87": [
+    -8.049,
+    0.77,
+    0.9
+   ],
+   "IX_LightSwitch_Heizung_99": [
+    3.17,
+    -1.199,
+    -1.95
+   ],
+   "IX_LightSwitch_Kaserne_94": [
+    -2.28,
+    -1.167,
+    4.45
+   ],
+   "IX_LightSwitch_Kueche_96": [
+    2.82,
+    -1.167,
+    4.45
+   ],
+   "IX_LightSwitch_Lager_88": [
+    -4.28,
+    1.199,
+    1.05
+   ],
+   "IX_LightSwitch_Leitstand_89": [
+    -2.28,
+    -1.167,
+    1.05
+   ],
+   "IX_LightSwitch_Schaltraum_101": [
+    4.77,
+    1.199,
+    -1.95
+   ],
+   "IX_LightSwitch_Serverraum_93": [
+    2.38,
+    1.167,
+    1.05
+   ],
+   "IX_LightSwitch_Stationsleiter_98": [
+    2.38,
+    1.167,
+    4.45
+   ],
+   "IX_LightSwitch_Treppenhaus_90": [
+    0.82,
+    1.199,
+    1.05
+   ],
+   "IX_LightSwitch_Treppenhaus_91": [
+    0.82,
+    1.199,
+    4.45
+   ],
+   "IX_LightSwitch_Treppenhaus_92": [
+    0.82,
+    1.199,
+    -1.95
+   ],
+   "IX_LightSwitch_Waschraum_97": [
+    -4.38,
+    1.167,
+    4.45
+   ],
+   "IX_LightSwitch_Windfang_84": [
+    -7.22,
+    -1.167,
+    1.05
+   ],
+   "IX_LockerDoor_20": [
+    -5.75,
+    -4.99,
+    0.02
+   ],
+   "IX_LockerDoor_21": [
+    -5.75,
+    -4.47,
+    0.02
+   ],
+   "IX_LockerDoor_54": [
+    -6.96,
+    -1.65,
+    3.42
+   ],
+   "IX_LockerDoor_55": [
+    -6.44,
+    -1.65,
+    3.42
+   ],
+   "IX_LockerDoor_56": [
+    -5.92,
+    -1.65,
+    3.42
+   ],
+   "IX_LockerDoor_57": [
+    -5.4,
+    -1.65,
+    3.42
+   ],
+   "IX_MainDoor_1": [
+    -6.9675,
+    -5.9625,
+    0.01
+   ],
+   "IX_MainSwitch_75": [
+    4.6,
+    5.25,
+    -2.1
+   ],
+   "IX_PanelDoor_83": [
+    7.41,
+    4.2,
+    -2.1
+   ],
+   "IX_RackDoor_38": [
+    2.89,
+    4.745,
+    0.02
+   ],
+   "IX_RackDoor_39": [
+    3.51,
+    4.745,
+    0.02
+   ],
+   "IX_RackDoor_40": [
+    4.13,
+    4.745,
+    0.02
+   ],
+   "IX_RackDoor_41": [
+    4.75,
+    4.745,
+    0.02
+   ],
+   "IX_RackDoor_42": [
+    5.37,
+    4.745,
+    0.02
+   ],
+   "IX_RackDoor_43": [
+    5.99,
+    4.745,
+    0.02
+   ],
+   "IX_RackDoor_44": [
+    6.61,
+    4.745,
+    0.02
+   ],
+   "IX_RoofDoor_17": [
+    -0.5675,
+    1.0375,
+    6.62
+   ],
+   "IX_Shutter_Flur_OG_123": [
+    7.94,
+    0.0,
+    5.6
+   ],
+   "IX_Shutter_Flur_OG_126": [
+    -7.94,
+    0.0,
+    5.6
+   ],
+   "IX_Shutter_Kaserne_111": [
+    -5.8,
+    -5.94,
+    5.6
+   ],
+   "IX_Shutter_Kaserne_113": [
+    -3.2,
+    -5.94,
+    5.6
+   ],
+   "IX_Shutter_Kueche_115": [
+    0.5115,
+    -5.94,
+    5.6
+   ],
+   "IX_Shutter_Kueche_116": [
+    3.1,
+    -5.94,
+    5.6
+   ],
+   "IX_Shutter_Kueche_117": [
+    5.6885,
+    -5.94,
+    5.6
+   ],
+   "IX_Shutter_Kueche_122": [
+    7.94,
+    -3.5,
+    5.6
+   ],
+   "IX_Shutter_Lager_108": [
+    -4.9,
+    5.94,
+    2.3
+   ],
+   "IX_Shutter_Leitstand_103": [
+    -3.044,
+    -5.94,
+    2.75
+   ],
+   "IX_Shutter_Leitstand_104": [
+    -0.3665,
+    -5.94,
+    2.75
+   ],
+   "IX_Shutter_Leitstand_105": [
+    2.289,
+    -5.94,
+    2.75
+   ],
+   "IX_Shutter_Leitstand_106": [
+    4.9445,
+    -5.94,
+    2.75
+   ],
+   "IX_Shutter_Leitstand_107": [
+    6.958,
+    -5.94,
+    2.75
+   ],
+   "IX_Shutter_Leitstand_110": [
+    7.94,
+    -3.65,
+    2.75
+   ],
+   "IX_Shutter_Stationsleiter_120": [
+    4.128,
+    5.94,
+    5.6
+   ],
+   "IX_Shutter_Stationsleiter_121": [
+    6.122,
+    5.94,
+    5.6
+   ],
+   "IX_Shutter_Stationsleiter_125": [
+    7.94,
+    3.6,
+    5.6
+   ],
+   "IX_Shutter_Waschraum_118": [
+    -5.4,
+    5.94,
+    5.65
+   ],
+   "IX_ShutterSwitch_Kueche_129": [
+    2.82,
+    -1.167,
+    4.536
+   ],
+   "IX_ShutterSwitch_Leitstand_128": [
+    -2.28,
+    -1.167,
+    1.136
+   ],
+   "IX_ShutterSwitch_Stationsleiter_130": [
+    2.38,
+    1.167,
+    4.536
+   ],
+   "IX_ShutterWinder_Flur_OG_124": [
+    7.646,
+    0.71,
+    4.4
+   ],
+   "IX_ShutterWinder_Flur_OG_127": [
+    -7.646,
+    0.71,
+    4.4
+   ],
+   "IX_ShutterWinder_Kaserne_112": [
+    -7.11,
+    -5.646,
+    4.4
+   ],
+   "IX_ShutterWinder_Kaserne_114": [
+    -2.09,
+    -5.646,
+    4.4
+   ],
+   "IX_ShutterWinder_Lager_109": [
+    -3.09,
+    5.646,
+    1.0
+   ],
+   "IX_ShutterWinder_Waschraum_119": [
+    -4.09,
+    5.646,
+    4.4
+   ],
+   "IX_TumbaDoor_52": [
+    -7.25,
+    -4.015,
+    3.42
+   ],
+   "IX_TumbaDoor_53": [
+    -7.25,
+    -2.065,
+    3.42
+   ],
+   "R_Flur_EG": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Flur_OG": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Flur_UG": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Garage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Heizung": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Kaserne": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Kueche": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Lager": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Leitstand": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Schaltraum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Serverraum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Stationsleiter": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Treppenhaus": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Waschraum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "R_Windfang": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "BaseMain_Opening": {
+  "file": "BaseMain_Opening.fbx",
+  "objects": [
+   "BaseMain_Opening",
+   "IX_BurnerReset_308",
+   "IX_HeatBurner_305",
+   "IX_HeatFill_307",
+   "IX_HeatGauge_309",
+   "IX_HeatPump_304",
+   "IX_HeatTempGauge_310",
+   "IX_HeatThermostat_306",
+   "IX_MainDoorBar_311"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_HeatFault",
+   "M_Main_Opening",
+   "M_Main_Panel"
+  ],
+  "tris": 1514,
+  "remap": [],
+  "bytes": 79532,
+  "aabb": {
+   "BaseMain_Opening": [
+    [
+     -7.235,
+     -5.76,
+     -2.998
+    ],
+    [
+     6.6492,
+     -1.1592,
+     1.13
+    ]
+   ],
+   "IX_BurnerReset_308": [
+    [
+     6.1585,
+     -2.4315,
+     -2.08
+    ],
+    [
+     6.1815,
+     -2.4085,
+     -2.071
+    ]
+   ],
+   "IX_HeatBurner_305": [
+    [
+     0.848,
+     -1.364,
+     -1.751
+    ],
+    [
+     0.872,
+     -1.3448,
+     -1.721
+    ]
+   ],
+   "IX_HeatFill_307": [
+    [
+     5.552,
+     -1.378,
+     -2.476
+    ],
+    [
+     5.62,
+     -1.362,
+     -2.458
+    ]
+   ],
+   "IX_HeatGauge_309": [
+    [
+     6.5685,
+     -1.4079,
+     -1.2515
+    ],
+    [
+     6.605,
+     -1.4043,
+     -1.215
+    ]
+   ],
+   "IX_HeatPump_304": [
+    [
+     0.748,
+     -1.364,
+     -1.751
+    ],
+    [
+     0.772,
+     -1.3448,
+     -1.721
+    ]
+   ],
+   "IX_HeatTempGauge_310": [
+    [
+     5.9546,
+     -2.1689,
+     -1.6454
+    ],
+    [
+     5.985,
+     -2.1653,
+     -1.615
+    ]
+   ],
+   "IX_HeatThermostat_306": [
+    [
+     1.0444,
+     -1.361,
+     -1.75
+    ],
+    [
+     1.0756,
+     -1.3372,
+     -1.718
+    ]
+   ],
+   "IX_MainDoorBar_311": [
+    [
+     -7.2,
+     -5.743,
+     1.018
+    ],
+    [
+     -5.7,
+     -5.668,
+     1.092
+    ]
+   ]
+  },
+  "pivots": {
+   "BaseMain_Opening": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_BurnerReset_308": [
+    6.17,
+    -2.42,
+    -2.083
+   ],
+   "IX_HeatBurner_305": [
+    0.86,
+    -1.338,
+    -1.736
+   ],
+   "IX_HeatFill_307": [
+    5.56,
+    -1.37,
+    -2.468
+   ],
+   "IX_HeatGauge_309": [
+    6.6,
+    -1.4036,
+    -1.22
+   ],
+   "IX_HeatPump_304": [
+    0.76,
+    -1.338,
+    -1.736
+   ],
+   "IX_HeatTempGauge_310": [
+    5.98,
+    -2.1646,
+    -1.62
+   ],
+   "IX_HeatThermostat_306": [
+    1.06,
+    -1.339,
+    -1.734
+   ],
+   "IX_MainDoorBar_311": [
+    -7.18,
+    -5.705,
+    1.055
+   ]
+  }
+ },
+ "Garage": {
+  "file": "Garage.fbx",
+  "objects": [
+   "Garage",
+   "IX_GarageDoor_92",
+   "IX_GarageSideDoor_93"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Gar_Bld",
+   "M_Gar_Panel",
+   "M_Gar_Parts",
+   "M_GlassDirty",
+   "M_Lamp_BulbOff",
+   "M_Lamp_FluorOff"
+  ],
+  "tris": 21796,
+  "remap": [],
+  "bytes": 424860,
+  "aabb": {
+   "Garage": [
+    [
+     -6.2,
+     -6.3,
+     -0.5
+    ],
+    [
+     6.65,
+     5.12,
+     4.67
+    ]
+   ],
+   "IX_GarageDoor_92": [
+    [
+     -3.284,
+     -4.549,
+     0.004
+    ],
+    [
+     0.284,
+     -4.375,
+     3.194
+    ]
+   ],
+   "IX_GarageSideDoor_93": [
+    [
+     5.856,
+     1.057,
+     0.01
+    ],
+    [
+     6.05,
+     1.965,
+     2.09
+    ]
+   ]
+  },
+  "pivots": {
+   "Garage": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_GarageDoor_92": [
+    -3.28,
+    -4.4,
+    3.18
+   ],
+   "IX_GarageSideDoor_93": [
+    5.965,
+    1.055,
+    0.01
+   ]
+  }
+ },
+ "Sign_Observatory": {
+  "file": "Sign_Observatory.fbx",
+  "objects": [
+   "Sign_Observatory"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 29964,
+  "aabb": {
+   "Sign_Observatory": [
+    [
+     -1.215,
+     -0.024,
+     -0.4
+    ],
+    [
+     1.215,
+     0.0712,
+     2.227
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Observatory": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Viewpoint": {
+  "file": "Sign_Viewpoint.fbx",
+  "objects": [
+   "Sign_Viewpoint"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 29916,
+  "aabb": {
+   "Sign_Viewpoint": [
+    [
+     -0.615,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.615,
+     0.0712,
+     1.823
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Viewpoint": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Lookout": {
+  "file": "Sign_Lookout.fbx",
+  "objects": [
+   "Sign_Lookout"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30124,
+  "aabb": {
+   "Sign_Lookout": [
+    [
+     -0.665,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.665,
+     0.0712,
+     1.833
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Lookout": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Pump": {
+  "file": "Sign_Pump.fbx",
+  "objects": [
+   "Sign_Pump"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30108,
+  "aabb": {
+   "Sign_Pump": [
+    [
+     -0.565,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.565,
+     0.0712,
+     1.873
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Pump": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Radar": {
+  "file": "Sign_Radar.fbx",
+  "objects": [
+   "Sign_Radar"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30060,
+  "aabb": {
+   "Sign_Radar": [
+    [
+     -0.465,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.465,
+     0.0712,
+     1.872
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Radar": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Relay": {
+  "file": "Sign_Relay.fbx",
+  "objects": [
+   "Sign_Relay"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30140,
+  "aabb": {
+   "Sign_Relay": [
+    [
+     -0.665,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.665,
+     0.0712,
+     1.861
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Relay": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Weather": {
+  "file": "Sign_Weather.fbx",
+  "objects": [
+   "Sign_Weather"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30028,
+  "aabb": {
+   "Sign_Weather": [
+    [
+     -0.665,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.665,
+     0.0712,
+     1.848
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Weather": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Dist_11": {
+  "file": "Dist_11.fbx",
+  "objects": [
+   "Dist_11"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 29884,
+  "aabb": {
+   "Dist_11": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.0712,
+     1.781
+    ]
+   ]
+  },
+  "pivots": {
+   "Dist_11": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Dist_09": {
+  "file": "Dist_09.fbx",
+  "objects": [
+   "Dist_09"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 29980,
+  "aabb": {
+   "Dist_09": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.0712,
+     1.781
+    ]
+   ]
+  },
+  "pivots": {
+   "Dist_09": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Dist_07": {
+  "file": "Dist_07.fbx",
+  "objects": [
+   "Dist_07"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 29932,
+  "aabb": {
+   "Dist_07": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.0712,
+     1.781
+    ]
+   ]
+  },
+  "pivots": {
+   "Dist_07": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Dist_23": {
+  "file": "Dist_23.fbx",
+  "objects": [
+   "Dist_23"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30028,
+  "aabb": {
+   "Dist_23": [
+    [
+     -0.765,
+     -0.024,
+     -0.568
+    ],
+    [
+     0.765,
+     0.0712,
+     1.781
+    ]
+   ]
+  },
+  "pivots": {
+   "Dist_23": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Dist_03": {
+  "file": "Dist_03.fbx",
+  "objects": [
+   "Dist_03"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Panel",
+   "M_Road_Signs"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 30028,
+  "aabb": {
+   "Dist_03": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.0712,
+     1.781
+    ]
+   ]
+  },
+  "pivots": {
+   "Dist_03": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "EuroPost": {
+  "file": "EuroPost.fbx",
+  "objects": [
+   "EuroPost"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Reflector",
+   "M_Road_Signs"
+  ],
+  "tris": 70,
+  "remap": [],
+  "bytes": 21196,
+  "aabb": {
+   "EuroPost": [
+    [
+     -0.06,
+     -0.0555,
+     -0.35
+    ],
+    [
+     0.06,
+     0.0555,
+     1.0
+    ]
+   ]
+  },
+  "pivots": {
+   "EuroPost": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ZoneGate": {
+  "file": "ZoneGate.fbx",
+  "objects": [
+   "ZoneGate"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Barbed",
+   "M_Road_ChainLink",
+   "M_Road_Gate",
+   "M_Road_Panel"
+  ],
+  "tris": 1918,
+  "remap": [],
+  "bytes": 72300,
+  "aabb": {
+   "ZoneGate": [
+    [
+     -4.52,
+     -0.27,
+     -1.0866
+    ],
+    [
+     4.52,
+     0.27,
+     2.89
+    ]
+   ]
+  },
+  "pivots": {
+   "ZoneGate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Bridge30": {
+  "file": "Bridge30.fbx",
+  "objects": [
+   "Bridge30"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Bridge",
+   "M_Road_Panel"
+  ],
+  "tris": 14442,
+  "remap": [],
+  "bytes": 357420,
+  "aabb": {
+   "Bridge30": [
+    [
+     -16.6,
+     -3.56,
+     -11.3746
+    ],
+    [
+     16.6,
+     3.36,
+     1.8344
+    ]
+   ]
+  },
+  "pivots": {
+   "Bridge30": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "OverlookDeck": {
+  "file": "OverlookDeck.fbx",
+  "objects": [
+   "OverlookDeck"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Deck"
+  ],
+  "tris": 3772,
+  "remap": [],
+  "bytes": 93324,
+  "aabb": {
+   "OverlookDeck": [
+    [
+     -2.631,
+     -0.98,
+     -1.7004
+    ],
+    [
+     2.631,
+     3.731,
+     1.995
+    ]
+   ]
+  },
+  "pivots": {
+   "OverlookDeck": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "FallenTree": {
+  "file": "FallenTree.fbx",
+  "objects": [
+   "FallenTree"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Windfall"
+  ],
+  "tris": 5313,
+  "remap": [],
+  "bytes": 220732,
+  "aabb": {
+   "FallenTree": [
+    [
+     -2.3,
+     -2.0385,
+     -0.5701
+    ],
+    [
+     31.0012,
+     2.6671,
+     2.6501
+    ]
+   ]
+  },
+  "pivots": {
+   "FallenTree": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "LogCut": {
+  "file": "LogCut.fbx",
+  "objects": [
+   "LogCut"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Road_Windfall"
+  ],
+  "tris": 266,
+  "remap": [],
+  "bytes": 27548,
+  "aabb": {
+   "LogCut": [
+    [
+     -3.2102,
+     -0.3108,
+     -0.1935
+    ],
+    [
+     3.2079,
+     5.9326,
+     0.7592
+    ]
+   ]
+  },
+  "pivots": {
+   "LogCut": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

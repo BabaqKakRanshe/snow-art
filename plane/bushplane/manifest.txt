@@ -1,0 +1,21 @@
+BushPlane — длина 10.58 м, размах 14.80 м, высота киля 3.52 м, колея 2.52 м, винт 2.36 м
+треугольников: 14796
+габариты: 15.32 x 10.58 x 3.58 м
+
+Aileron_L                  96
+Aileron_R                  96
+Body                     7082
+BushPlane                   -
+CargoDoor_L               108
+CargoDoor_R               108
+Cargo_Crates              120
+CenterOfMass                -
+Elevator_L                 96
+Elevator_R                 96
+Flap_L                     96
+Flap_R                     96
+Propeller                2292
+Rudder                    246
+Wheel_L                  1664
+Wheel_R                  1664
+Wheel_Tail                936

@@ -1,0 +1,2006 @@
+{
+ "parts": {
+  "IX_PumpLever_301": {
+   "kind": "hinge",
+   "pivot": [
+    -1.5,
+    -4.222,
+    1.02
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    -60,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelTanks",
+   "states": [
+    "left",
+    "right"
+   ],
+   "note": "the wing pump's lever: held (use) it swings -60..+60 and back, +0.5 L/s into a jerrycan under the nozzle (Pump_FuelTanks, Forest_Opening.json; Update 3: same name, pivot and travel)",
+   "root": "FuelTanks",
+   "object": "IX_PumpLever_301",
+   "box": {
+    "center": [
+     0.0,
+     -0.034,
+     0.165
+    ],
+    "size": [
+     0.0495,
+     0.088,
+     0.43
+    ]
+   }
+  },
+  "Pump": {
+   "kind": "static",
+   "pivot": [
+    -1.5,
+    -4.15,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelTanks",
+   "states": [],
+   "note": "the wing pump on its post: body, hose, the brass nozzle in its holder (Pump_FuelTanks.nozzle at its tip)",
+   "root": "FuelTanks",
+   "object": "Pump"
+  },
+  "FuelTanks": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the fuel tanks: the bund, two tanks on their saddles, the lines, the stile and the ladder, the signboard (Update 3: the map's FuelTanks prefab, same place)",
+   "root": "FuelTanks",
+   "object": "FuelTanks"
+  },
+  "FuelTanks_Props": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelTanks",
+   "states": [],
+   "note": "small things: the outlet valve, the fill couplings and caps, the level dials, the overfill socket, the drain valve with its padlock, the extinguisher, the earth leads",
+   "root": "FuelTanks",
+   "object": "FuelTanks_Props"
+  },
+  "FuelTanks_Signs": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -3.6,
+    1.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FuelTanks",
+   "states": [],
+   "note": "panel decals: the signboard, FILL T1 / T2, the dials, the GHS flame, the pump's plate, the tanks' name plate, the extinguisher sign",
+   "root": "FuelTanks",
+   "object": "FuelTanks_Signs"
+  },
+  "Trafo_Fence_Mesh": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Trafo",
+   "states": [],
+   "note": "chain-link of the fence (M_Yard_ChainLink, 0.5 m tile)",
+   "root": "Trafo",
+   "object": "Trafo_Fence_Mesh"
+  },
+  "Trafo_Fence_Barbed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    2.4
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Trafo",
+   "states": [],
+   "note": "barbed wire over the fence (M_Yard_Barbed)",
+   "root": "Trafo",
+   "object": "Trafo_Fence_Barbed"
+  },
+  "IX_TrafoGate_91": {
+   "kind": "hinge",
+   "pivot": [
+    -1.5,
+    -2.0,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Trafo",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "the transformer gate: opens outward 0..100 (Update 3: same name, pivot and travel; not locked)",
+   "root": "Trafo",
+   "object": "IX_TrafoGate_91",
+   "box": {
+    "center": [
+     0.7765,
+     -0.0185,
+     1.36
+    ],
+    "size": [
+     1.587,
+     0.0709,
+     2.26
+    ]
+   }
+  },
+  "IX_TrafoGate_91_Mesh": {
+   "kind": "static",
+   "pivot": [
+    -0.73,
+    -2.0,
+    1.2
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_TrafoGate_91",
+   "states": [],
+   "note": "chain-link of the gate (M_Yard_ChainLink)",
+   "root": "Trafo",
+   "object": "IX_TrafoGate_91_Mesh"
+  },
+  "IX_TrafoGate_91_Barbed": {
+   "kind": "static",
+   "pivot": [
+    -0.73,
+    -2.0,
+    1.2
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_TrafoGate_91",
+   "states": [],
+   "note": "barbed wire over the gate (M_Yard_Barbed)",
+   "root": "Trafo",
+   "object": "IX_TrafoGate_91_Barbed"
+  },
+  "IX_TrafoGate_91_Sign": {
+   "kind": "static",
+   "pivot": [
+    -0.73,
+    -2.0,
+    1.2
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_TrafoGate_91",
+   "states": [],
+   "note": "HOCHSPANNUNG — LEBENSGEFAHR / HIGH VOLTAGE — DANGER OF DEATH on the gate",
+   "root": "Trafo",
+   "object": "IX_TrafoGate_91_Sign"
+  },
+  "Trafo_Signs": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    1.5
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Trafo",
+   "states": [],
+   "note": "panel decals: the fence sign, the pole's arrow plate and number, the rating plate, the oil dial, the cabinet sticker",
+   "root": "Trafo",
+   "object": "Trafo_Signs"
+  },
+  "Trafo_Props": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Trafo",
+   "states": [],
+   "note": "small things: the silica-gel breather, the cabinet lock, the open padlock on the gate keeper, the drain valve, the earth lead",
+   "root": "Trafo",
+   "object": "Trafo_Props"
+  },
+  "Trafo": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the transformer station: pad, transformer, cabinet, fence, the pole (Update 3: the map's Trafo prefab, same place)",
+   "root": "Trafo",
+   "object": "Trafo"
+  }
+ },
+ "sockets": {
+  "Spot_Jerrycan": {
+   "pos": [
+    -1.1,
+    -4.45,
+    0.03
+   ],
+   "kind": "item_slot",
+   "parent": "FuelTanks",
+   "note": "Jerrycan_Yard stands here at the start: empty, on the drip-tray grating under the nozzle, turned -20 deg (Forest_Opening.json, same place as Update 3)",
+   "yaw": -20.0,
+   "root": "FuelTanks"
+  },
+  "Stand_PumpOperator": {
+   "pos": [
+    -1.5,
+    -4.95,
+    0.0
+   ],
+   "kind": "stand",
+   "parent": "FuelTanks",
+   "note": "where the one who pumps stands (Pump_FuelTanks.operatorPos)",
+   "root": "FuelTanks"
+  },
+  "Hand_PumpLever": {
+   "pos": [
+    -1.5,
+    -4.27,
+    1.38
+   ],
+   "kind": "hand",
+   "parent": "IX_PumpLever_301",
+   "note": "hold use: the lever swings left and right (+-60); 0.5 L/s while held",
+   "root": "FuelTanks"
+  },
+  "Pump_Nozzle": {
+   "pos": [
+    -1.4,
+    -4.25,
+    0.74
+   ],
+   "kind": "vfx",
+   "parent": "Pump",
+   "note": "the nozzle's tip (Pump_FuelTanks.nozzle): diesel runs out here while pumping into a can within 0.45 m (horizontal) and at most 0.7 m below",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "FuelTanks"
+  },
+  "VFX_FuelDrip": {
+   "pos": [
+    -1.4,
+    -4.25,
+    0.73
+   ],
+   "kind": "vfx",
+   "parent": "Pump",
+   "note": "a drop of diesel now and then; the tray smells",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "FuelTanks"
+  },
+  "Audio_Pump": {
+   "pos": [
+    -1.5,
+    -4.15,
+    1.02
+   ],
+   "kind": "audio",
+   "parent": "Pump",
+   "note": "the wing pump: suck-clack each stroke, the can gurgling",
+   "root": "FuelTanks"
+  },
+  "Audio_Tank_T1": {
+   "pos": [
+    0.0,
+    -1.75,
+    1.75
+   ],
+   "kind": "audio",
+   "parent": "FuelTanks",
+   "note": "tank 1 booms when knocked (tank 2 nearly empty: a hollow ring); diesel sloshing",
+   "root": "FuelTanks"
+  },
+  "Audio_Tank_T2": {
+   "pos": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "kind": "audio",
+   "parent": "FuelTanks",
+   "note": "tank 2 booms when knocked (tank 2 nearly empty: a hollow ring); diesel sloshing",
+   "root": "FuelTanks"
+  },
+  "Audio_Stile": {
+   "pos": [
+    3.46,
+    -3.5,
+    0.9
+   ],
+   "kind": "audio",
+   "parent": "FuelTanks",
+   "note": "steps on the galvanised grating",
+   "root": "FuelTanks"
+  },
+  "Hide_TankGap": {
+   "pos": [
+    0.0,
+    0.0,
+    0.15
+   ],
+   "kind": "hide",
+   "parent": "FuelTanks",
+   "note": "crouch between the two tanks inside the bund: out of sight from the yard and the pump",
+   "root": "FuelTanks"
+  },
+  "Hand_TrafoGate": {
+   "pos": [
+    0.03,
+    -2.06,
+    1.06
+   ],
+   "kind": "hand",
+   "parent": "IX_TrafoGate_91",
+   "note": "lift the drop latch and swing the gate out (not locked; the open padlock hangs on the keeper)",
+   "root": "Trafo"
+  },
+  "Audio_TrafoHum": {
+   "pos": [
+    0.0,
+    0.3,
+    1.0
+   ],
+   "kind": "audio",
+   "parent": "Trafo",
+   "note": "the transformer hums when the line is live (silent in the prologue: the station runs on the generator)",
+   "root": "Trafo"
+  },
+  "Audio_TrafoGate": {
+   "pos": [
+    -1.5,
+    -2.0,
+    1.2
+   ],
+   "kind": "audio",
+   "parent": "IX_TrafoGate_91",
+   "note": "the gate's hinges squeal",
+   "root": "Trafo"
+  },
+  "VFX_Arc_Cutouts": {
+   "pos": [
+    0.0,
+    1.65,
+    5.38
+   ],
+   "kind": "vfx",
+   "parent": "Trafo",
+   "note": "flash and bang at the fuse cutouts on the pole (a storm, the line coming back)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Trafo"
+  },
+  "Audio_Wires": {
+   "pos": [
+    0.0,
+    2.0,
+    8.4
+   ],
+   "kind": "audio",
+   "parent": "Trafo",
+   "note": "the wires sing in the wind; insulators crackle in rain",
+   "root": "Trafo"
+  },
+  "Hide_Trafo": {
+   "pos": [
+    0.0,
+    1.28,
+    0.2
+   ],
+   "kind": "hide",
+   "parent": "Trafo",
+   "note": "behind the transformer inside the fence, under the conservator",
+   "root": "Trafo"
+  },
+  "Knock_T1_Side0": {
+   "pos": [
+    -1.8,
+    -2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    -0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_Side1": {
+   "pos": [
+    -0.4,
+    -2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    -0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_Side2": {
+   "pos": [
+    1.0,
+    -2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    -0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_Side3": {
+   "pos": [
+    2.0,
+    -2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    -0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_Top0": {
+   "pos": [
+    -1.2,
+    -1.4487,
+    2.7624
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.2588,
+    0.9659
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_Top1": {
+   "pos": [
+    1.4,
+    -1.4487,
+    2.7624
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.2588,
+    0.9659
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_HeadL": {
+   "pos": [
+    -2.7934,
+    -1.3995,
+    2.0505
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    -0.9887,
+    0.1058,
+    0.1058
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T1_HeadR": {
+   "pos": [
+    2.7934,
+    -1.3995,
+    2.0505
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.9887,
+    0.1058,
+    0.1058
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_Side0": {
+   "pos": [
+    -1.8,
+    2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_Side1": {
+   "pos": [
+    -0.4,
+    2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_Side2": {
+   "pos": [
+    1.0,
+    2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_Side3": {
+   "pos": [
+    2.0,
+    2.7758,
+    2.0013
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_Top0": {
+   "pos": [
+    -1.2,
+    2.0513,
+    2.7624
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.2588,
+    0.9659
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_Top1": {
+   "pos": [
+    1.4,
+    2.0513,
+    2.7624
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.0,
+    0.2588,
+    0.9659
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_HeadL": {
+   "pos": [
+    -2.7934,
+    2.1005,
+    2.0505
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    -0.9887,
+    0.1058,
+    0.1058
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_T2_HeadR": {
+   "pos": [
+    2.7934,
+    2.1005,
+    2.0505
+   ],
+   "kind": "knock",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "dir": [
+    0.9887,
+    0.1058,
+    0.1058
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Trafo_L": {
+   "pos": [
+    -0.625,
+    0.3,
+    0.95
+   ],
+   "kind": "knock",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Trafo_R": {
+   "pos": [
+    0.625,
+    0.25,
+    0.8
+   ],
+   "kind": "knock",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Trafo_Lid": {
+   "pos": [
+    0.2,
+    0.2,
+    1.545
+   ],
+   "kind": "knock",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Cabinet": {
+   "pos": [
+    -1.925,
+    1.297,
+    0.8
+   ],
+   "kind": "knock",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  },
+  "Knock_Cabinet_Top": {
+   "pos": [
+    -1.925,
+    1.48,
+    1.355
+   ],
+   "kind": "knock",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, frost-print decal)"
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Bund_Slab",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.045
+   ],
+   "size": [
+    8.6,
+    7.2,
+    0.21
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.045
+   ],
+   "centerUnity": [
+    0.0,
+    0.045,
+    0.0
+   ],
+   "sizeUnity": [
+    8.6,
+    0.21,
+    7.2
+   ]
+  },
+  {
+   "name": "COL_Bund_Wall_F",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    -3.5,
+    0.505
+   ],
+   "size": [
+    8.6,
+    0.2,
+    0.71
+   ],
+   "center_root": [
+    0.0,
+    -3.5,
+    0.505
+   ],
+   "centerUnity": [
+    0.0,
+    0.505,
+    3.5
+   ],
+   "sizeUnity": [
+    8.6,
+    0.71,
+    0.2
+   ]
+  },
+  {
+   "name": "COL_Bund_Wall_B",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    3.5,
+    0.505
+   ],
+   "size": [
+    8.6,
+    0.2,
+    0.71
+   ],
+   "center_root": [
+    0.0,
+    3.5,
+    0.505
+   ],
+   "centerUnity": [
+    0.0,
+    0.505,
+    -3.5
+   ],
+   "sizeUnity": [
+    8.6,
+    0.71,
+    0.2
+   ]
+  },
+  {
+   "name": "COL_Bund_Wall_L",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    -4.2,
+    0.0,
+    0.505
+   ],
+   "size": [
+    0.2,
+    6.8,
+    0.71
+   ],
+   "center_root": [
+    -4.2,
+    0.0,
+    0.505
+   ],
+   "centerUnity": [
+    4.2,
+    0.505,
+    0.0
+   ],
+   "sizeUnity": [
+    0.2,
+    0.71,
+    6.8
+   ]
+  },
+  {
+   "name": "COL_Bund_Wall_R",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    4.2,
+    0.0,
+    0.505
+   ],
+   "size": [
+    0.2,
+    6.8,
+    0.71
+   ],
+   "center_root": [
+    4.2,
+    0.0,
+    0.505
+   ],
+   "centerUnity": [
+    -4.2,
+    0.505,
+    0.0
+   ],
+   "sizeUnity": [
+    0.2,
+    0.71,
+    6.8
+   ]
+  },
+  {
+   "name": "COL_Tank_T1_A",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.75,
+    1.75
+   ],
+   "size": [
+    5.64,
+    1.5,
+    2.1019
+   ],
+   "center_root": [
+    0.0,
+    -1.75,
+    1.75
+   ],
+   "centerUnity": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "sizeUnity": [
+    5.64,
+    2.1019,
+    1.5
+   ]
+  },
+  {
+   "name": "COL_Tank_T1_B",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.75,
+    1.75
+   ],
+   "size": [
+    5.64,
+    2.1019,
+    1.1
+   ],
+   "center_root": [
+    0.0,
+    -1.75,
+    1.75
+   ],
+   "centerUnity": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "sizeUnity": [
+    5.64,
+    1.1,
+    2.1019
+   ]
+  },
+  {
+   "name": "COL_Saddle_T1_L",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    -1.6,
+    -1.75,
+    0.54
+   ],
+   "size": [
+    0.6,
+    1.7,
+    0.78
+   ],
+   "center_root": [
+    -1.6,
+    -1.75,
+    0.54
+   ],
+   "centerUnity": [
+    1.6,
+    0.54,
+    1.75
+   ],
+   "sizeUnity": [
+    0.6,
+    0.78,
+    1.7
+   ]
+  },
+  {
+   "name": "COL_Saddle_T1_R",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    1.6,
+    -1.75,
+    0.54
+   ],
+   "size": [
+    0.6,
+    1.7,
+    0.78
+   ],
+   "center_root": [
+    1.6,
+    -1.75,
+    0.54
+   ],
+   "centerUnity": [
+    -1.6,
+    0.54,
+    1.75
+   ],
+   "sizeUnity": [
+    0.6,
+    0.78,
+    1.7
+   ]
+  },
+  {
+   "name": "COL_Tank_T2_A",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "size": [
+    5.64,
+    1.5,
+    2.1019
+   ],
+   "center_root": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "centerUnity": [
+    0.0,
+    1.75,
+    -1.75
+   ],
+   "sizeUnity": [
+    5.64,
+    2.1019,
+    1.5
+   ]
+  },
+  {
+   "name": "COL_Tank_T2_B",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "size": [
+    5.64,
+    2.1019,
+    1.1
+   ],
+   "center_root": [
+    0.0,
+    1.75,
+    1.75
+   ],
+   "centerUnity": [
+    0.0,
+    1.75,
+    -1.75
+   ],
+   "sizeUnity": [
+    5.64,
+    1.1,
+    2.1019
+   ]
+  },
+  {
+   "name": "COL_Saddle_T2_L",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    -1.6,
+    1.75,
+    0.54
+   ],
+   "size": [
+    0.6,
+    1.7,
+    0.78
+   ],
+   "center_root": [
+    -1.6,
+    1.75,
+    0.54
+   ],
+   "centerUnity": [
+    1.6,
+    0.54,
+    -1.75
+   ],
+   "sizeUnity": [
+    0.6,
+    0.78,
+    1.7
+   ]
+  },
+  {
+   "name": "COL_Saddle_T2_R",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    1.6,
+    1.75,
+    0.54
+   ],
+   "size": [
+    0.6,
+    1.7,
+    0.78
+   ],
+   "center_root": [
+    1.6,
+    1.75,
+    0.54
+   ],
+   "centerUnity": [
+    -1.6,
+    0.54,
+    -1.75
+   ],
+   "sizeUnity": [
+    0.6,
+    0.78,
+    1.7
+   ]
+  },
+  {
+   "name": "COL_Pump",
+   "parent": "Pump",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.015,
+    0.01,
+    0.56
+   ],
+   "size": [
+    0.23,
+    0.18,
+    1.12
+   ],
+   "center_root": [
+    -1.485,
+    -4.14,
+    0.56
+   ],
+   "centerUnity": [
+    -0.015,
+    0.56,
+    -0.01
+   ],
+   "sizeUnity": [
+    0.23,
+    1.12,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_Stile_1",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.46,
+    -4.08,
+    0.145
+   ],
+   "size": [
+    0.84,
+    0.24,
+    0.29
+   ],
+   "center_root": [
+    3.46,
+    -4.08,
+    0.145
+   ],
+   "centerUnity": [
+    -3.46,
+    0.145,
+    4.08
+   ],
+   "sizeUnity": [
+    0.84,
+    0.29,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Stile_2",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.46,
+    -3.84,
+    0.29
+   ],
+   "size": [
+    0.84,
+    0.24,
+    0.58
+   ],
+   "center_root": [
+    3.46,
+    -3.84,
+    0.29
+   ],
+   "centerUnity": [
+    -3.46,
+    0.29,
+    3.84
+   ],
+   "sizeUnity": [
+    0.84,
+    0.58,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Stile_Top",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.46,
+    -3.5,
+    0.44
+   ],
+   "size": [
+    0.84,
+    0.44,
+    0.88
+   ],
+   "center_root": [
+    3.46,
+    -3.5,
+    0.44
+   ],
+   "centerUnity": [
+    -3.46,
+    0.44,
+    3.5
+   ],
+   "sizeUnity": [
+    0.84,
+    0.88,
+    0.44
+   ]
+  },
+  {
+   "name": "COL_Stile_3",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.46,
+    -3.16,
+    0.385
+   ],
+   "size": [
+    0.84,
+    0.24,
+    0.47
+   ],
+   "center_root": [
+    3.46,
+    -3.16,
+    0.385
+   ],
+   "centerUnity": [
+    -3.46,
+    0.385,
+    3.16
+   ],
+   "sizeUnity": [
+    0.84,
+    0.47,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Stile_4",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.46,
+    -2.92,
+    0.265
+   ],
+   "size": [
+    0.84,
+    0.24,
+    0.23
+   ],
+   "center_root": [
+    3.46,
+    -2.92,
+    0.265
+   ],
+   "centerUnity": [
+    -3.46,
+    0.265,
+    2.92
+   ],
+   "sizeUnity": [
+    0.84,
+    0.23,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Stile_Rail_L",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.005,
+    -3.48,
+    0.935
+   ],
+   "size": [
+    0.05,
+    1.6,
+    1.87
+   ],
+   "center_root": [
+    3.005,
+    -3.48,
+    0.935
+   ],
+   "centerUnity": [
+    -3.005,
+    0.935,
+    3.48
+   ],
+   "sizeUnity": [
+    0.05,
+    1.87,
+    1.6
+   ]
+  },
+  {
+   "name": "COL_Stile_Rail_R",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    3.915,
+    -3.48,
+    0.935
+   ],
+   "size": [
+    0.05,
+    1.6,
+    1.87
+   ],
+   "center_root": [
+    3.915,
+    -3.48,
+    0.935
+   ],
+   "centerUnity": [
+    -3.915,
+    0.935,
+    3.48
+   ],
+   "sizeUnity": [
+    0.05,
+    1.87,
+    1.6
+   ]
+  },
+  {
+   "name": "COL_Ladder",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    2.98,
+    -1.75,
+    1.705
+   ],
+   "size": [
+    0.08,
+    0.52,
+    3.11
+   ],
+   "center_root": [
+    2.98,
+    -1.75,
+    1.705
+   ],
+   "centerUnity": [
+    -2.98,
+    1.705,
+    1.75
+   ],
+   "sizeUnity": [
+    0.08,
+    3.11,
+    0.52
+   ]
+  },
+  {
+   "name": "COL_Fill_Drops",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    -3.375,
+    -3.81,
+    1.045
+   ],
+   "size": [
+    0.37,
+    0.42,
+    0.39
+   ],
+   "center_root": [
+    -3.375,
+    -3.81,
+    1.045
+   ],
+   "centerUnity": [
+    3.375,
+    1.045,
+    3.81
+   ],
+   "sizeUnity": [
+    0.37,
+    0.39,
+    0.42
+   ]
+  },
+  {
+   "name": "COL_Board",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.9,
+    -3.875,
+    1.48
+   ],
+   "size": [
+    1.2,
+    0.05,
+    0.6
+   ],
+   "center_root": [
+    0.9,
+    -3.875,
+    1.48
+   ],
+   "centerUnity": [
+    -0.9,
+    1.48,
+    3.875
+   ],
+   "sizeUnity": [
+    1.2,
+    0.6,
+    0.05
+   ]
+  },
+  {
+   "name": "COL_Board_Post_L",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    0.35,
+    -3.86,
+    0.59
+   ],
+   "size": [
+    0.06,
+    0.06,
+    1.18
+   ],
+   "center_root": [
+    0.35,
+    -3.86,
+    0.59
+   ],
+   "centerUnity": [
+    -0.35,
+    0.59,
+    3.86
+   ],
+   "sizeUnity": [
+    0.06,
+    1.18,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Board_Post_R",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    1.45,
+    -3.86,
+    0.59
+   ],
+   "size": [
+    0.06,
+    0.06,
+    1.18
+   ],
+   "center_root": [
+    1.45,
+    -3.86,
+    0.59
+   ],
+   "centerUnity": [
+    -1.45,
+    0.59,
+    3.86
+   ],
+   "sizeUnity": [
+    0.06,
+    1.18,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Extinguisher",
+   "parent": "FuelTanks",
+   "root": "FuelTanks",
+   "type": "box",
+   "center": [
+    1.72,
+    -4.185,
+    0.85
+   ],
+   "size": [
+    0.34,
+    0.23,
+    1.7
+   ],
+   "center_root": [
+    1.72,
+    -4.185,
+    0.85
+   ],
+   "centerUnity": [
+    -1.72,
+    0.85,
+    4.185
+   ],
+   "sizeUnity": [
+    0.34,
+    1.7,
+    0.23
+   ]
+  },
+  {
+   "name": "COL_Trafo_Pad",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.025
+   ],
+   "size": [
+    5.2,
+    4.2,
+    0.35
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.025
+   ],
+   "centerUnity": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "sizeUnity": [
+    5.2,
+    0.35,
+    4.2
+   ]
+  },
+  {
+   "name": "COL_Fence_Front_L",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    -2.03,
+    -2.0,
+    1.4
+   ],
+   "size": [
+    1.0,
+    0.06,
+    2.4
+   ],
+   "center_root": [
+    -2.03,
+    -2.0,
+    1.4
+   ],
+   "centerUnity": [
+    2.03,
+    1.4,
+    2.0
+   ],
+   "sizeUnity": [
+    1.0,
+    2.4,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Fence_Front_R",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    1.3025,
+    -2.0,
+    1.4
+   ],
+   "size": [
+    2.455,
+    0.06,
+    2.4
+   ],
+   "center_root": [
+    1.3025,
+    -2.0,
+    1.4
+   ],
+   "centerUnity": [
+    -1.3025,
+    1.4,
+    2.0
+   ],
+   "sizeUnity": [
+    2.455,
+    2.4,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Fence_Right",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    2.5,
+    -0.11,
+    1.4
+   ],
+   "size": [
+    0.06,
+    3.78,
+    2.4
+   ],
+   "center_root": [
+    2.5,
+    -0.11,
+    1.4
+   ],
+   "centerUnity": [
+    -2.5,
+    1.4,
+    0.11
+   ],
+   "sizeUnity": [
+    0.06,
+    2.4,
+    3.78
+   ]
+  },
+  {
+   "name": "COL_Fence_Back",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    0.0,
+    1.78,
+    1.4
+   ],
+   "size": [
+    5.06,
+    0.06,
+    2.4
+   ],
+   "center_root": [
+    0.0,
+    1.78,
+    1.4
+   ],
+   "centerUnity": [
+    0.0,
+    1.4,
+    -1.78
+   ],
+   "sizeUnity": [
+    5.06,
+    2.4,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Fence_Left",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    -2.5,
+    -0.11,
+    1.4
+   ],
+   "size": [
+    0.06,
+    3.78,
+    2.4
+   ],
+   "center_root": [
+    -2.5,
+    -0.11,
+    1.4
+   ],
+   "centerUnity": [
+    2.5,
+    1.4,
+    0.11
+   ],
+   "sizeUnity": [
+    0.06,
+    2.4,
+    3.78
+   ]
+  },
+  {
+   "name": "COL_Gate_Leaf",
+   "parent": "IX_TrafoGate_91",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    0.78,
+    -0.0025,
+    1.36
+   ],
+   "size": [
+    1.56,
+    0.045,
+    2.26
+   ],
+   "center_root": [
+    -0.72,
+    -2.0025,
+    1.36
+   ],
+   "centerUnity": [
+    -0.78,
+    1.36,
+    0.0025
+   ],
+   "sizeUnity": [
+    1.56,
+    2.26,
+    0.045
+   ]
+  },
+  {
+   "name": "COL_Transformer",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    0.0,
+    0.3,
+    1.05
+   ],
+   "size": [
+    1.4,
+    0.98,
+    1.7
+   ],
+   "center_root": [
+    0.0,
+    0.3,
+    1.05
+   ],
+   "centerUnity": [
+    0.0,
+    1.05,
+    -0.3
+   ],
+   "sizeUnity": [
+    1.4,
+    1.7,
+    0.98
+   ]
+  },
+  {
+   "name": "COL_Cabinet",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    -1.925,
+    1.475,
+    0.775
+   ],
+   "size": [
+    0.79,
+    0.41,
+    1.15
+   ],
+   "center_root": [
+    -1.925,
+    1.475,
+    0.775
+   ],
+   "centerUnity": [
+    1.925,
+    0.775,
+    -1.475
+   ],
+   "sizeUnity": [
+    0.79,
+    1.15,
+    0.41
+   ]
+  },
+  {
+   "name": "COL_Pole",
+   "parent": "Trafo",
+   "root": "Trafo",
+   "type": "box",
+   "center": [
+    0.0,
+    2.0,
+    4.15
+   ],
+   "size": [
+    0.27,
+    0.27,
+    8.9
+   ],
+   "center_root": [
+    0.0,
+    2.0,
+    4.15
+   ],
+   "centerUnity": [
+    0.0,
+    4.15,
+    -2.0
+   ],
+   "sizeUnity": [
+    0.27,
+    8.9,
+    0.27
+   ]
+  }
+ ],
+ "meta": {
+  "units": "metres, degrees",
+  "frames": "each root is its own prefab and has its own frame; a part / socket / collider gives its root. FuelTanks: x along the tanks, y toward the back (-y = the yard side with the pump), z up, origin = the middle of the bund on the ground (bund floor 0.15). Trafo: x along the gate side, y toward the back (the pole), z up, origin = the middle of the pad on the ground (pad top 0.20)",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the root's prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy)",
+  "map_placement": {
+   "FuelTanks": {
+    "p": [
+     403.0346,
+     16.3273,
+     -342.6034
+    ],
+    "q": [
+     0.0,
+     -0.656059,
+     0.0,
+     0.75471
+    ],
+    "yawUnity": -82.0
+   },
+   "Trafo": {
+    "p": [
+     392.0185,
+     16.2829,
+     -349.1338
+    ],
+    "q": [
+     0.0,
+     0.069756,
+     0.0,
+     0.997564
+    ],
+    "yawUnity": 8.0
+   }
+  },
+  "blend": "in yard.blend FuelTanks stands at the origin and Trafo at its place beside it (8, -10, -0.044 in the FuelTanks frame, turned -90 deg), as on the map",
+  "colliders": "colliders: BoxCollider per entry on its parent: center / size in the parent's own frame (Blender), centerUnity / sizeUnity the same in Unity axes; center_root: the box centre in its root's frame. part.box: the grab / hit box of a moving part in its own frame",
+  "model": "yard.blend",
+  "textures": "tex",
+  "materials": "M_Yard_Tanks (the bund, the tanks, the lines, the stile) / M_Yard_Trafo (pad, transformer, pole, cabinet, fence steel) / M_Yard_YardProps (the pump, the valves, the extinguisher, small things): baked PSX atlases (point filter); M_Yard_Panel: signs, plates, dials; M_Yard_ChainLink, M_Yard_Barbed: alpha cut-out 0.5, tiled 0.5 m",
+  "prologue": "S7 (FOREST_OPENING.md): the day tank of the generator is empty; Jerrycan_Yard (Spot_Jerrycan) is filled at the wing pump (IX_PumpLever_301, held: +0.5 L/s into a can within 0.45 m of Pump_Nozzle and at most 0.7 m below it), carried to the generator container. The transformer gate IX_TrafoGate_91 is not locked"
+ }
+}

@@ -1,0 +1,6288 @@
+{
+ "parts": {
+  "Engine_Belt": {
+   "kind": "static",
+   "pivot": [
+    -1.755,
+    -0.205,
+    1.05
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "ok",
+    "loose",
+    "broken"
+   ],
+   "note": "fan belt (crank, fan, dynamo): broken = hide it (CHG lamp on, the fan stops: overheating), loose = squeal and a weak charge",
+   "pivotUnity": [
+    1.755,
+    1.05,
+    0.205
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_Fan": {
+   "kind": "spin",
+   "pivot": [
+    -1.98,
+    -0.205,
+    1.05
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "cooling fan: turns with the engine (1500 rpm x 1.2), negative about +x - it blows through the radiator towards the louvre",
+   "spin_sign": -1,
+   "pivotUnity": [
+    1.98,
+    1.05,
+    0.205
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Radiator_Cap": {
+   "kind": "twist",
+   "pivot": [
+    -2.16,
+    -0.355,
+    1.52
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "safety stop",
+    "off"
+   ],
+   "note": "pressure cap: 90 = first stop (hot: steam hisses out), push down and turn on to 180, then it lifts off",
+   "pivotUnity": [
+    2.16,
+    1.52,
+    0.355
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Radiator_Drain": {
+   "kind": "twist",
+   "pivot": [
+    -2.202,
+    0.215,
+    0.57
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator drain cock (south side, low, beside the upright): unscrew (+) to open, coolant runs out (VFX_RadDrain)",
+   "removable": false,
+   "pivotUnity": [
+    2.202,
+    0.57,
+    -0.215
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_AirFilterLid": {
+   "kind": "twist",
+   "pivot": [
+    -1.28,
+    0.175,
+    1.535
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    120
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "air filter lid: undo the wing nut (+), then lift off",
+   "pivotUnity": [
+    1.28,
+    1.535,
+    -0.175
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_StopLever": {
+   "kind": "hinge",
+   "pivot": [
+    -1.05,
+    0.12,
+    1.01
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    40
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "run",
+    "stop"
+   ],
+   "note": "manual stop on the injection pump: pull the red knob back (+40) and hold until the engine dies; springs back",
+   "pivotUnity": [
+    1.05,
+    1.01,
+    -0.12
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_GovernorLever": {
+   "kind": "hinge",
+   "pivot": [
+    -1.22,
+    0.111,
+    0.91
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    -15,
+    15
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "set (1500 rpm, 50 Hz)"
+   ],
+   "note": "governor speed lever, locked at 1500 rpm: frequency = 50 + angle / 6 Hz (needs a spanner to move)",
+   "pivotUnity": [
+    1.22,
+    0.91,
+    -0.111
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_FuelFilter": {
+   "kind": "twist",
+   "pivot": [
+    -1.54,
+    0.135,
+    0.988
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "clean",
+    "clogged (waxed diesel)"
+   ],
+   "note": "spin-on fuel filter: unscrew (+, two turns, from below), then it comes off; FuelFilter_Spare goes on in its place (Slot_FuelFilter); clogged = the engine starves and dies",
+   "removable": "end",
+   "pivotUnity": [
+    1.54,
+    0.988,
+    -0.135
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_BleedScrew": {
+   "kind": "twist",
+   "pivot": [
+    -1.54,
+    0.135,
+    1.03
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "bleed screw on the filter head: open a turn or two (+), pump Engine_PrimerLever until fuel comes out without bubbles (VFX_FuelBleed), close it; needed after the tank ran dry",
+   "removable": false,
+   "pivotUnity": [
+    1.54,
+    1.03,
+    -0.135
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_PrimerLever": {
+   "kind": "hinge",
+   "pivot": [
+    -1.28,
+    0.045,
+    0.73
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    35
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "rest"
+   ],
+   "note": "hand primer on the lift pump: pump it (0..35 and back) to push fuel through for bleeding",
+   "pivotUnity": [
+    1.28,
+    0.73,
+    -0.045
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_WaterDrain": {
+   "kind": "twist",
+   "pivot": [
+    -1.82,
+    0.275,
+    0.57
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "drain tap under the water separator bowl: open (+) until the water layer has run out, then diesel",
+   "removable": false,
+   "pivotUnity": [
+    1.82,
+    0.57,
+    -0.275
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_Dipstick": {
+   "kind": "slide",
+   "pivot": [
+    -1.52,
+    -0.545,
+    1.21
+   ],
+   "axis": [
+    -0.04,
+    -0.2798,
+    0.9592
+   ],
+   "range": [
+    0,
+    0.42
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "pull out by the yellow ring (+0.42): oil level marks on the stick (texture), wipe, push back",
+   "pivotUnity": [
+    1.52,
+    1.21,
+    0.545
+   ],
+   "axisUnity": [
+    -0.04,
+    -0.9592,
+    -0.2798
+   ],
+   "object": "GenContainer"
+  },
+  "Engine_OilCap": {
+   "kind": "twist",
+   "pivot": [
+    -1.54,
+    -0.255,
+    1.41
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "oil filler on the rocker cover: quarter turn (+), lift off; Pour_Oil",
+   "removable": "end",
+   "pivotUnity": [
+    1.54,
+    1.41,
+    0.255
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Battery": {
+   "kind": "item",
+   "pivot": [
+    -1.09,
+    0.0475,
+    0.43
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "charge 0..1"
+   ],
+   "note": "12 V 60 Ah starting battery, the same size and post layout as the van's Battery (they swap); lift by the strap with both clamps off",
+   "pivotUnity": [
+    1.09,
+    0.43,
+    -0.0475
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Battery_ClampPos": {
+   "kind": "slide",
+   "pivot": [
+    -0.985,
+    0.0875,
+    0.647
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "loosen the bolt, lift off the post (minus first); the cable runs under the skid to the starter",
+   "pivotUnity": [
+    0.985,
+    0.647,
+    -0.0875
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Battery_ClampNeg": {
+   "kind": "slide",
+   "pivot": [
+    -1.195,
+    0.0875,
+    0.647
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.04
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "loosen the bolt, lift off the post (minus first); the cable runs under the skid to the starter",
+   "pivotUnity": [
+    1.195,
+    0.647,
+    -0.0875
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Gen_Breaker": {
+   "kind": "hinge",
+   "pivot": [
+    -0.47,
+    0.195,
+    0.93
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "alternator main breaker on the terminal box (63 A): up = output to the board; trips to the middle on overload",
+   "pivotUnity": [
+    0.47,
+    0.93,
+    -0.195
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Genset_Plates": {
+   "kind": "static",
+   "pivot": [
+    -0.017,
+    -0.205,
+    1.14
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "start instructions under the panel, alternator nameplate",
+   "pivotUnity": [
+    0.017,
+    1.14,
+    0.205
+   ],
+   "object": "GenContainer"
+  },
+  "GPanel_Face": {
+   "kind": "static",
+   "pivot": [
+    0.043,
+    -0.205,
+    1.5
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "control panel face (panel atlas): gauges and labels",
+   "pivotUnity": [
+    -0.043,
+    1.5,
+    0.205
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_Oil": {
+   "kind": "hinge",
+   "pivot": [
+    0.048,
+    -0.405,
+    1.655
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -60.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 8,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "bar"
+   },
+   "pivotUnity": [
+    -0.048,
+    1.655,
+    0.405
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_Temp": {
+   "kind": "hinge",
+   "pivot": [
+    0.048,
+    -0.275,
+    1.655
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -60.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 40,
+    "max": 120,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "deg C"
+   },
+   "pivotUnity": [
+    -0.048,
+    1.655,
+    0.275
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_Batt": {
+   "kind": "hinge",
+   "pivot": [
+    0.048,
+    -0.145,
+    1.655
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -60.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 8,
+    "max": 16,
+    "angle_min": -60,
+    "angle_max": 60,
+    "unit": "V"
+   },
+   "pivotUnity": [
+    -0.048,
+    1.655,
+    0.145
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_GenV": {
+   "kind": "hinge",
+   "pivot": [
+    0.048,
+    -0.385,
+    1.518
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 500,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "V"
+   },
+   "pivotUnity": [
+    -0.048,
+    1.518,
+    0.385
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_GenA": {
+   "kind": "hinge",
+   "pivot": [
+    0.048,
+    -0.205,
+    1.518
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 100,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "A"
+   },
+   "pivotUnity": [
+    -0.048,
+    1.518,
+    0.205
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_GenHz": {
+   "kind": "hinge",
+   "pivot": [
+    0.048,
+    -0.025,
+    1.518
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 45,
+    "max": 55,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "Hz"
+   },
+   "pivotUnity": [
+    -0.048,
+    1.518,
+    0.025
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "GLamp_GLOW": {
+   "kind": "static",
+   "pivot": [
+    0.047,
+    -0.445,
+    1.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "amber: glow plugs heating (GLOW button held / key at START)",
+   "pivotUnity": [
+    -0.047,
+    1.42,
+    0.445
+   ],
+   "object": "GenContainer"
+  },
+  "GLamp_CHG": {
+   "kind": "static",
+   "pivot": [
+    0.047,
+    -0.365,
+    1.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "red: no charge from the dynamo (key ON, engine stopped, or the belt broken)",
+   "pivotUnity": [
+    -0.047,
+    1.42,
+    0.365
+   ],
+   "object": "GenContainer"
+  },
+  "GLamp_OIL": {
+   "kind": "static",
+   "pivot": [
+    0.047,
+    -0.285,
+    1.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "red: low oil pressure (key ON, engine stopped, or out of oil: stop it!)",
+   "pivotUnity": [
+    -0.047,
+    1.42,
+    0.285
+   ],
+   "object": "GenContainer"
+  },
+  "GLamp_TEMP": {
+   "kind": "static",
+   "pivot": [
+    0.047,
+    -0.205,
+    1.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "red: coolant too hot (louvre shut, belt broken, no coolant)",
+   "pivotUnity": [
+    -0.047,
+    1.42,
+    0.205
+   ],
+   "object": "GenContainer"
+  },
+  "GLamp_RUN": {
+   "kind": "static",
+   "pivot": [
+    0.047,
+    -0.125,
+    1.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [],
+   "note": "green: running and the voltage is up",
+   "pivotUnity": [
+    -0.047,
+    1.42,
+    0.125
+   ],
+   "object": "GenContainer"
+  },
+  "Gen_VAdj": {
+   "kind": "hinge",
+   "pivot": [
+    0.043,
+    0.005,
+    1.415
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    -135,
+    135
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "nominal 400 V at 0"
+   ],
+   "note": "voltage trim: + (clockwise) raises the output voltage, 400 V + angle x 0.3 V",
+   "pivotUnity": [
+    -0.043,
+    1.415,
+    -0.005
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Gen_GlowButton": {
+   "kind": "slide",
+   "pivot": [
+    0.055,
+    -0.225,
+    1.31
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.006
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "out",
+    "pressed"
+   ],
+   "note": "GLOW: hold 20 s before starting in the cold (GLamp_GLOW on); springs back",
+   "pivotUnity": [
+    -0.055,
+    1.31,
+    0.225
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Gen_StopButton": {
+   "kind": "slide",
+   "pivot": [
+    0.055,
+    -0.125,
+    1.31
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.006
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "out",
+    "pressed"
+   ],
+   "note": "STOP: electric fuel cut-off while held; springs back",
+   "pivotUnity": [
+    -0.055,
+    1.31,
+    0.125
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Gen_EStop": {
+   "kind": "slide",
+   "pivot": [
+    0.08,
+    -0.015,
+    1.31
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.01
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "released",
+    "latched in"
+   ],
+   "note": "emergency stop: push in (latches, the engine stops at once); twist clockwise to release (back to 0)",
+   "pivotUnity": [
+    -0.08,
+    1.31,
+    0.015
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Genset": {
+   "kind": "static",
+   "pivot": [
+    -1.17,
+    -0.205,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "stopped",
+    "cranking",
+    "running",
+    "dying"
+   ],
+   "note": "diesel generating set on its skid: engine, alternator, radiator, panel (one mesh); moving parts are children",
+   "pivotUnity": [
+    1.17,
+    0.31,
+    0.205
+   ],
+   "object": "GenContainer"
+  },
+  "Board_Face": {
+   "kind": "static",
+   "pivot": [
+    1.45,
+    1.005,
+    1.66
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "switchboard face plate (panel atlas)",
+   "pivotUnity": [
+    -1.45,
+    1.66,
+    -1.005
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_BoardV": {
+   "kind": "hinge",
+   "pivot": [
+    1.21,
+    0.999,
+    1.98
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 500,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "V"
+   },
+   "pivotUnity": [
+    -1.21,
+    1.98,
+    -0.999
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_BoardA": {
+   "kind": "hinge",
+   "pivot": [
+    1.45,
+    0.999,
+    1.98
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 0,
+    "max": 100,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "A"
+   },
+   "pivotUnity": [
+    -1.45,
+    1.98,
+    -0.999
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Needle_BoardHz": {
+   "kind": "hinge",
+   "pivot": [
+    1.69,
+    0.999,
+    1.98
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": -120.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "gauge needle: the axis points into the panel, + = clockwise for the viewer; rest = the modelled angle from 12 o'clock; angle(value) from scale (linear), turn by angle - rest",
+   "scale": {
+    "min": 45,
+    "max": 55,
+    "angle_min": -120,
+    "angle_max": 120,
+    "unit": "Hz"
+   },
+   "pivotUnity": [
+    -1.69,
+    1.98,
+    -0.999
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "BLamp_LINE": {
+   "kind": "static",
+   "pivot": [
+    1.21,
+    0.999,
+    1.795
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "white: grid voltage on the LINE drop",
+   "pivotUnity": [
+    -1.21,
+    1.795,
+    -0.999
+   ],
+   "object": "GenContainer"
+  },
+  "BLamp_GEN": {
+   "kind": "static",
+   "pivot": [
+    1.45,
+    0.999,
+    1.795
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "green: the set is running and Gen_Breaker is on",
+   "pivotUnity": [
+    -1.45,
+    1.795,
+    -0.999
+   ],
+   "object": "GenContainer"
+  },
+  "BLamp_OVERLOAD": {
+   "kind": "static",
+   "pivot": [
+    1.69,
+    0.999,
+    1.795
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [],
+   "note": "red: more than 63 A drawn (too many circuits at once): a breaker trips",
+   "pivotUnity": [
+    -1.69,
+    1.795,
+    -0.999
+   ],
+   "object": "GenContainer"
+  },
+  "Board_Brk_Gen": {
+   "kind": "hinge",
+   "pivot": [
+    1.55,
+    0.955,
+    1.56
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "GEN main breaker (63 A): up = the set feeds the busbar (with GEN selected)",
+   "pivotUnity": [
+    -1.55,
+    1.56,
+    -0.955
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_Brk_Line": {
+   "kind": "hinge",
+   "pivot": [
+    1.73,
+    0.955,
+    1.56
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "LINE main breaker (63 A): up = the grid feeds the busbar (with LINE selected)",
+   "pivotUnity": [
+    -1.73,
+    1.56,
+    -0.955
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_MCB_4": {
+   "kind": "hinge",
+   "pivot": [
+    1.405,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 4: RADIO / MAST (up = on); trips on overload",
+   "pivotUnity": [
+    -1.405,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_MCB_5": {
+   "kind": "hinge",
+   "pivot": [
+    1.495,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 5: SERVER ROOM (up = on); trips on overload",
+   "pivotUnity": [
+    -1.495,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_MCB_6": {
+   "kind": "hinge",
+   "pivot": [
+    1.585,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 6: WORKSHOP (up = on); trips on overload",
+   "pivotUnity": [
+    -1.585,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_MCB_7": {
+   "kind": "hinge",
+   "pivot": [
+    1.675,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 7: WATER PUMP (up = on); trips on overload",
+   "pivotUnity": [
+    -1.675,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_MCB_8": {
+   "kind": "hinge",
+   "pivot": [
+    1.765,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 8: CONTAINER (up = on); trips on overload",
+   "pivotUnity": [
+    -1.765,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_Door": {
+   "kind": "hinge",
+   "pivot": [
+    1.875,
+    0.885,
+    1.66
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "switchboard door: unlock Board_Latch (90), swings into the room on its west hinges",
+   "modelled_at": 165.0,
+   "pivotUnity": [
+    -1.875,
+    1.66,
+    -0.885
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_Latch": {
+   "kind": "twist",
+   "pivot": [
+    1.07,
+    0.885,
+    1.66
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Board_Door",
+   "states": [
+    "locked",
+    "open"
+   ],
+   "note": "quarter-turn latch: + (clockwise seen from the room) to 90 opens the door",
+   "removable": false,
+   "pivotUnity": [
+    -1.07,
+    1.66,
+    -0.885
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Board_Door_Signs": {
+   "kind": "static",
+   "pivot": [
+    1.875,
+    0.885,
+    1.66
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Board_Door",
+   "states": [],
+   "note": "DANGER sign outside, the circuit card inside the door",
+   "pivotUnity": [
+    -1.875,
+    1.66,
+    -0.885
+   ],
+   "object": "GenContainer"
+  },
+  "Switchboard": {
+   "kind": "static",
+   "pivot": [
+    1.45,
+    1.125,
+    1.11
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "main switchboard cabinet on the south wall",
+   "pivotUnity": [
+    -1.45,
+    1.11,
+    -1.125
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank_Cap": {
+   "kind": "twist",
+   "pivot": [
+    -0.07,
+    -3.345,
+    1.985
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    540
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "filler cap of the day tank: unscrew (+, one and a half turns), then it comes off",
+   "removable": "end",
+   "pivotUnity": [
+    0.07,
+    1.985,
+    3.345
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.5,
+    -3.155,
+    1.72
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [],
+   "note": "sight glass tube (glass material)",
+   "pivotUnity": [
+    -0.5,
+    1.72,
+    3.155
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank_Level": {
+   "kind": "stretch",
+   "pivot": [
+    0.5,
+    -3.155,
+    1.567
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1
+   ],
+   "unit": "scale",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "0 empty",
+    "1 full (100 l)"
+   ],
+   "note": "diesel column in the sight glass: scale along +z = tank fraction (1 = modelled full); the scale reads F .. E",
+   "pivotUnity": [
+    -0.5,
+    1.567,
+    3.155
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank_Decals": {
+   "kind": "static",
+   "pivot": [
+    0.18,
+    -3.185,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [],
+   "note": "level scale, DIESEL DAY TANK stencil, DIESEL ONLY",
+   "pivotUnity": [
+    -0.18,
+    1.71,
+    3.185
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank_Valve": {
+   "kind": "hinge",
+   "pivot": [
+    -0.18,
+    -3.305,
+    1.45
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "shut (across the pipe)",
+    "open (along it)"
+   ],
+   "note": "fuel supply ball valve: + (clockwise seen from the room) turns the red lever down along the pipe = open; shut = no fuel to the engine",
+   "pivotUnity": [
+    0.18,
+    1.45,
+    3.305
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank_Drain": {
+   "kind": "twist",
+   "pivot": [
+    0.53,
+    -3.345,
+    1.455
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DayTank",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "drain cock under the tank: + opens (water and sludge first, VFX_TankDrain)",
+   "removable": false,
+   "pivotUnity": [
+    -0.53,
+    1.455,
+    3.345
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "DayTank": {
+   "kind": "static",
+   "pivot": [
+    0.18,
+    -3.565,
+    1.51
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "fuel 0..100 l"
+   ],
+   "note": "100 l day tank, gravity feed to the engine through DayTank_Valve; the level shows in the sight glass",
+   "pivotUnity": [
+    -0.18,
+    1.51,
+    3.565
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_1_Vent": {
+   "kind": "twist",
+   "pivot": [
+    -1.89,
+    -3.42,
+    1.322
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_1",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "3/4\" vent bung: open it when pumping so the drum breathes",
+   "removable": "end",
+   "pivotUnity": [
+    1.89,
+    1.322,
+    3.42
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_1_Stencil": {
+   "kind": "static",
+   "pivot": [
+    -1.89,
+    -3.22,
+    0.885
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_1",
+   "states": [],
+   "note": "painted stencil (panel atlas)",
+   "pivotUnity": [
+    1.89,
+    0.885,
+    3.22
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_2_Bung": {
+   "kind": "twist",
+   "pivot": [
+    -2.5,
+    -3.03,
+    1.322
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_2",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "2\" bung: needs the BungWrench, three turns (+), then it comes out",
+   "removable": "end",
+   "pivotUnity": [
+    2.5,
+    1.322,
+    3.03
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_2_Vent": {
+   "kind": "twist",
+   "pivot": [
+    -2.5,
+    -3.42,
+    1.322
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_2",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "3/4\" vent bung: open it when pumping so the drum breathes",
+   "removable": "end",
+   "pivotUnity": [
+    2.5,
+    1.322,
+    3.42
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_2_Stencil": {
+   "kind": "static",
+   "pivot": [
+    -2.5,
+    -3.22,
+    0.885
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_2",
+   "states": [],
+   "note": "painted stencil (panel atlas)",
+   "pivotUnity": [
+    2.5,
+    0.885,
+    3.22
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_3_Bung": {
+   "kind": "twist",
+   "pivot": [
+    -2.4356,
+    0.6106,
+    1.182
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_3",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "2\" bung: needs the BungWrench, three turns (+), then it comes out",
+   "removable": "end",
+   "pivotUnity": [
+    2.4356,
+    1.182,
+    -0.6106
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_3_Vent": {
+   "kind": "twist",
+   "pivot": [
+    -2.7114,
+    0.8864,
+    1.182
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_3",
+   "states": [
+    "in",
+    "out"
+   ],
+   "note": "3/4\" vent bung: open it when pumping so the drum breathes",
+   "removable": "end",
+   "pivotUnity": [
+    2.7114,
+    1.182,
+    -0.8864
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_3_Stencil": {
+   "kind": "static",
+   "pivot": [
+    -2.57,
+    0.745,
+    0.745
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_3",
+   "states": [],
+   "note": "painted stencil (panel atlas)",
+   "pivotUnity": [
+    2.57,
+    0.745,
+    -0.745
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_1": {
+   "kind": "static",
+   "pivot": [
+    -1.89,
+    -3.22,
+    0.45
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Pallet",
+   "states": [
+    "full",
+    "half",
+    "empty"
+   ],
+   "note": "200 l drum, WINTER diesel (blue): the one that works in the cold; its 2\" bung is out - the DrumPump lives here",
+   "pivotUnity": [
+    1.89,
+    0.45,
+    3.22
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_2": {
+   "kind": "static",
+   "pivot": [
+    -2.5,
+    -3.22,
+    0.45
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Pallet",
+   "states": [
+    "full",
+    "half",
+    "empty",
+    "waxed"
+   ],
+   "note": "200 l drum, SUMMER diesel (blue): waxes below about -10 C - it clogs the filter if used (story trap)",
+   "pivotUnity": [
+    2.5,
+    0.45,
+    3.22
+   ],
+   "object": "GenContainer"
+  },
+  "Drum_3": {
+   "kind": "static",
+   "pivot": [
+    -2.57,
+    0.745,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "full",
+    "half",
+    "empty"
+   ],
+   "note": "200 l drum, PETROL (red): for the van, never for the genset",
+   "pivotUnity": [
+    2.57,
+    0.31,
+    -0.745
+   ],
+   "object": "GenContainer"
+  },
+  "Pallet": {
+   "kind": "static",
+   "pivot": [
+    -2.195,
+    -3.22,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "spill pallet under the two diesel drums (grid deck)",
+   "pivotUnity": [
+    2.195,
+    0.31,
+    3.22
+   ],
+   "object": "GenContainer"
+  },
+  "DrumPump": {
+   "kind": "item",
+   "pivot": [
+    -1.89,
+    -3.03,
+    1.318
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Drum_1",
+   "states": [
+    "in a drum",
+    "carried"
+   ],
+   "note": "rotary drum pump: stands in a 2\" bung hole (Slot_DrumPump_N), suction tube down to the bottom; crank to pump; the coiled hose goes with it (draw a rope from DrumPump_Hose_Start to the nozzle when it is taken off the coil)",
+   "pivotUnity": [
+    1.89,
+    1.318,
+    3.03
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "DrumPump_Crank": {
+   "kind": "spin",
+   "pivot": [
+    -1.89,
+    -2.98,
+    1.565
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DrumPump",
+   "states": [],
+   "note": "crank either way: about 0.3 l per turn",
+   "pivotUnity": [
+    1.89,
+    1.565,
+    2.98
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "DrumPump_Nozzle": {
+   "kind": "item",
+   "pivot": [
+    -1.99,
+    -3.22,
+    1.452
+   ],
+   "axis": [
+    0.2873,
+    -0.9578,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DrumPump",
+   "states": [
+    "on the coil",
+    "in hand",
+    "in a filler"
+   ],
+   "note": "hose nozzle: into Pour_DayTank (or a jerrycan), then crank",
+   "pivotUnity": [
+    1.99,
+    1.452,
+    3.22
+   ],
+   "axisUnity": [
+    0.2873,
+    0.0,
+    -0.9578
+   ],
+   "object": "GenContainer"
+  },
+  "Shelf": {
+   "kind": "static",
+   "pivot": [
+    2.9,
+    -2.47,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "wooden shelf on the west wall north of the door",
+   "pivotUnity": [
+    -2.9,
+    0.31,
+    2.47
+   ],
+   "object": "GenContainer"
+  },
+  "EngineOil": {
+   "kind": "item",
+   "pivot": [
+    2.75,
+    -2.6,
+    1.68
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "oil 0..5 l"
+   ],
+   "note": "5 l engine oil can: tip into Pour_Oil",
+   "pivotUnity": [
+    -2.75,
+    1.68,
+    2.6
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "EngineOil_Cap": {
+   "kind": "twist",
+   "pivot": [
+    2.75,
+    -2.54,
+    1.978
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    360
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "EngineOil",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "screw cap of the oil can",
+   "removable": "end",
+   "pivotUnity": [
+    -2.75,
+    1.978,
+    2.54
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Coolant": {
+   "kind": "item",
+   "pivot": [
+    2.75,
+    -2.62,
+    1.18
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "coolant 0..5 l"
+   ],
+   "note": "5 l coolant (antifreeze mix): into Pour_Coolant",
+   "pivotUnity": [
+    -2.75,
+    1.18,
+    2.62
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Coolant_Cap": {
+   "kind": "twist",
+   "pivot": [
+    2.75,
+    -2.575,
+    1.456
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    360
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Coolant",
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "screw cap of the coolant jug",
+   "removable": "end",
+   "pivotUnity": [
+    -2.75,
+    1.456,
+    2.575
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "FuelFilter_Spare": {
+   "kind": "item",
+   "pivot": [
+    2.75,
+    -2.32,
+    1.18
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "spare fuel filter in its box: replaces the clogged one (waxed summer diesel)",
+   "pivotUnity": [
+    -2.75,
+    1.18,
+    2.32
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Toolbox": {
+   "kind": "item",
+   "pivot": [
+    2.75,
+    -2.42,
+    0.68
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "red toolbox (spanners: lets Engine_GovernorLever move)",
+   "pivotUnity": [
+    -2.75,
+    0.68,
+    2.42
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "JumperCables": {
+   "kind": "item",
+   "pivot": [
+    2.78,
+    -2.135,
+    1.43
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "jumper cables (red +, black -), 3 m: the van battery to the genset battery when it is flat (ropes between the clamp ends)",
+   "pivotUnity": [
+    -2.78,
+    1.43,
+    2.135
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "BungWrench": {
+   "kind": "item",
+   "pivot": [
+    2.82,
+    -2.135,
+    1.01
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "drum bung wrench: opens Drum_N_Bung and Drum_N_Vent",
+   "pivotUnity": [
+    -2.82,
+    1.01,
+    2.135
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Extinguisher": {
+   "kind": "item",
+   "pivot": [
+    2.815,
+    -1.77,
+    0.91
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "full",
+    "used"
+   ],
+   "note": "6 kg powder extinguisher on its wall bracket: squeeze the lever (VFX_Extinguisher at the hose end)",
+   "pivotUnity": [
+    -2.815,
+    0.91,
+    1.77
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Mat": {
+   "kind": "static",
+   "pivot": [
+    1.45,
+    0.525,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "rubber insulating mat in front of the switchboard",
+   "pivotUnity": [
+    -1.45,
+    0.31,
+    -0.525
+   ],
+   "object": "GenContainer"
+  },
+  "Logbook": {
+   "kind": "item",
+   "pivot": [
+    0.75,
+    1.113,
+    1.66
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "generator log on a clipboard (hangs on a nail): the last entries",
+   "pivotUnity": [
+    -0.75,
+    1.66,
+    -1.113
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Logbook_Page": {
+   "kind": "static",
+   "pivot": [
+    0.75,
+    1.1092,
+    1.66
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Logbook",
+   "states": [],
+   "note": "the log page (panel atlas)",
+   "pivotUnity": [
+    -0.75,
+    1.66,
+    -1.1092
+   ],
+   "object": "GenContainer"
+  },
+  "Door_R_Bar_1": {
+   "kind": "hinge",
+   "pivot": [
+    3.013,
+    0.88,
+    1.3
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContDoorR_84",
+   "states": [
+    "locked",
+    "turned out"
+   ],
+   "note": "locking bar (modelled locked; on the map it goes with its leaf: the lock is the key \"Generator\")",
+   "pivotUnity": [
+    -3.013,
+    1.3,
+    -0.88
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "IX_ContDoorR_84"
+  },
+  "Door_R_Bar_2": {
+   "kind": "hinge",
+   "pivot": [
+    3.013,
+    0.35,
+    1.3
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContDoorR_84",
+   "states": [
+    "locked",
+    "turned out"
+   ],
+   "note": "locking bar (modelled locked; on the map it goes with its leaf: the lock is the key \"Generator\")",
+   "pivotUnity": [
+    -3.013,
+    1.3,
+    -0.35
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "IX_ContDoorR_84"
+  },
+  "Door_L_Bar_1": {
+   "kind": "hinge",
+   "pivot": [
+    3.013,
+    -0.882,
+    1.3
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContDoorL_83",
+   "states": [
+    "locked",
+    "turned out"
+   ],
+   "note": "locking bar (modelled locked; on the map it goes with its leaf: the lock is the key \"Generator\")",
+   "pivotUnity": [
+    -3.013,
+    1.3,
+    0.882
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "IX_ContDoorL_83"
+  },
+  "Door_L_Bar_2": {
+   "kind": "hinge",
+   "pivot": [
+    3.013,
+    -0.352,
+    1.3
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContDoorL_83",
+   "states": [
+    "locked",
+    "turned out"
+   ],
+   "note": "locking bar (modelled locked; on the map it goes with its leaf: the lock is the key \"Generator\")",
+   "pivotUnity": [
+    -3.013,
+    1.3,
+    0.352
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "IX_ContDoorL_83"
+  },
+  "Door_Bolt": {
+   "kind": "slide",
+   "pivot": [
+    2.938,
+    0.015,
+    1.3
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    0.06
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_ContDoorR_84",
+   "states": [
+    "drawn",
+    "shot"
+   ],
+   "note": "barrel bolt on the planks inside the active leaf (modelled drawn; on the map it goes with the leaf)",
+   "pivotUnity": [
+    -2.938,
+    1.3,
+    -0.015
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "IX_ContDoorR_84"
+  },
+  "Window_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.1,
+    1.17,
+    1.76
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "window pane (glass material, both faces)",
+   "pivotUnity": [
+    -0.1,
+    1.76,
+    -1.17
+   ],
+   "object": "Window_Glass"
+  },
+  "Window_Shutter": {
+   "kind": "hinge",
+   "pivot": [
+    -0.23,
+    1.09,
+    1.776
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    180
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "open (on the wall)",
+    "closed"
+   ],
+   "note": "inside board shutter: 0 = folded open on the wall east of the window, 180 = over the window; Window_Latch holds it shut",
+   "pivotUnity": [
+    0.23,
+    1.776,
+    -1.09
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Window_Latch": {
+   "kind": "hinge",
+   "pivot": [
+    0.48,
+    1.09,
+    1.76
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "free",
+    "holding the shutter"
+   ],
+   "note": "turn-button on the wall west of the window: 90 = across the closed shutter edge (+ = clockwise seen from the room)",
+   "pivotUnity": [
+    -0.48,
+    1.76,
+    -1.09
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Blade_1": {
+   "kind": "hinge",
+   "pivot": [
+    -2.9605,
+    -0.205,
+    0.8
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "pivotUnity": [
+    2.9605,
+    0.8,
+    0.205
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Blade_2": {
+   "kind": "hinge",
+   "pivot": [
+    -2.9605,
+    -0.205,
+    0.944
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "pivotUnity": [
+    2.9605,
+    0.944,
+    0.205
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Blade_3": {
+   "kind": "hinge",
+   "pivot": [
+    -2.9605,
+    -0.205,
+    1.088
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "pivotUnity": [
+    2.9605,
+    1.088,
+    0.205
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Blade_4": {
+   "kind": "hinge",
+   "pivot": [
+    -2.9605,
+    -0.205,
+    1.232
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "pivotUnity": [
+    2.9605,
+    1.232,
+    0.205
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Blade_5": {
+   "kind": "hinge",
+   "pivot": [
+    -2.9605,
+    -0.205,
+    1.376
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "pivotUnity": [
+    2.9605,
+    1.376,
+    0.205
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Blade_6": {
+   "kind": "hinge",
+   "pivot": [
+    -2.9605,
+    -0.205,
+    1.52
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "radiator outlet louvre blade: follows Louvre_Lever 1:1 (linkage hidden in the frame)",
+   "links": {
+    "from": "Louvre_Lever",
+    "ratio": 1.0
+   },
+   "pivotUnity": [
+    2.9605,
+    1.52,
+    0.205
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Louvre_Lever": {
+   "kind": "hinge",
+   "pivot": [
+    -2.86,
+    -0.805,
+    1.31
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "louvre operator: pull the handle towards the room (0 shut .. 75 open); the six blades follow; running with it shut overheats the engine (TEMP lamp)",
+   "pivotUnity": [
+    2.86,
+    1.31,
+    0.805
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Exhaust_Flap": {
+   "kind": "hinge",
+   "pivot": [
+    -3.38,
+    -0.373,
+    3.606
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    70
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "lifted"
+   ],
+   "note": "rain flap on the stack: the exhaust lifts it while the engine runs (flutter 20..60 with the beat), drops shut when it stops",
+   "pivotUnity": [
+    3.38,
+    3.606,
+    0.373
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Light_Switch": {
+   "kind": "hinge",
+   "pivot": [
+    2.855,
+    -1.52,
+    1.61
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    50
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "off (down)",
+    "on (up)"
+   ],
+   "note": "container lights switch (static on the map: the lamps follow the power grid)",
+   "pivotUnity": [
+    -2.855,
+    1.61,
+    1.52
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "GenContainer"
+  },
+  "Lens_Bulk_Genset": {
+   "kind": "static",
+   "pivot": [
+    0.78,
+    -0.22,
+    2.477
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "frosted dome of a caged bulkhead (lights up with LIGHT_Bulk_Genset)",
+   "pivotUnity": [
+    -0.78,
+    2.477,
+    0.22
+   ],
+   "object": "GenContainer"
+  },
+  "Lens_Bulk_Ceiling": {
+   "kind": "static",
+   "pivot": [
+    -0.78,
+    -2.32,
+    2.477
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "frosted dome of a caged bulkhead (lights up with LIGHT_Bulk_Ceiling)",
+   "pivotUnity": [
+    0.78,
+    2.477,
+    2.32
+   ],
+   "object": "GenContainer"
+  },
+  "Lens_Bulk_Board": {
+   "kind": "static",
+   "pivot": [
+    1.45,
+    1.047,
+    2.43
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "frosted dome of a caged bulkhead (lights up with LIGHT_Bulk_Board)",
+   "pivotUnity": [
+    -1.45,
+    2.43,
+    -1.047
+   ],
+   "object": "GenContainer"
+  },
+  "Lens_Ext_Door": {
+   "kind": "static",
+   "pivot": [
+    3.37,
+    0.0,
+    2.7
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "bulb under the barn-light shade over the doors",
+   "pivotUnity": [
+    -3.37,
+    2.7,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "Cont_Signs": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -1.22,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "STROMERZEUGER / GENERATOR plate on the south wall; inside: the louvre and no-flames signs (panel atlas)",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    1.22
+   ],
+   "object": "GenContainer"
+  },
+  "Door_R_Sign": {
+   "kind": "static",
+   "pivot": [
+    3.001,
+    0.615,
+    1.95
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContDoorR_84",
+   "states": [],
+   "note": "STROMERZEUGER / GENERATOR on the active leaf",
+   "pivotUnity": [
+    -3.001,
+    1.95,
+    -0.615
+   ],
+   "object": "IX_ContDoorR_84"
+  },
+  "Door_L_Sign": {
+   "kind": "static",
+   "pivot": [
+    3.001,
+    -0.617,
+    1.7
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContDoorL_83",
+   "states": [],
+   "note": "VORSICHT 400 V / DANGER 400 V and ZUTRITT VERBOTEN / NO ENTRY on the passive leaf",
+   "pivotUnity": [
+    -3.001,
+    1.7,
+    0.617
+   ],
+   "object": "IX_ContDoorL_83"
+  },
+  "IX_ContSideDoor_85_Sign": {
+   "kind": "static",
+   "pivot": [
+    -3.0255,
+    -2.06,
+    1.62
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ContSideDoor_85",
+   "states": [],
+   "note": "ZUTRITT VERBOTEN / NO ENTRY on the side door",
+   "pivotUnity": [
+    3.0255,
+    1.62,
+    2.06
+   ],
+   "object": "IX_ContSideDoor_85"
+  },
+  "IX_ContSideDoor_85": {
+   "kind": "hinge",
+   "pivot": [
+    -3.016,
+    -1.63,
+    1.32
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "personnel door in the north box's front end (the far end from the cargo doors): steel leaf, hinged on its south edge, opens out to 100; locked with the key \"Generator\" like the cargo doors (Update 3: IX_ContSideDoor_85)",
+   "pivotUnity": [
+    3.016,
+    1.32,
+    1.63
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "IX_ContSideDoor_85"
+  },
+  "IX_GenFillCap_300_Sign": {
+   "kind": "static",
+   "pivot": [
+    -3.1776,
+    -2.945,
+    1.235
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_GenFillCap_300",
+   "states": [],
+   "note": "DIESEL / DAY TANK 100 L on the fill box lid",
+   "pivotUnity": [
+    3.1776,
+    1.235,
+    2.945
+   ],
+   "object": "IX_GenFillCap_300"
+  },
+  "IX_GenFillCap_300": {
+   "kind": "hinge",
+   "pivot": [
+    -3.174,
+    -2.945,
+    1.376
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "lid of the fuel fill box on the north box's front end, hinged on its top edge: lift it (to 110) and the 2\" fill neck is there - the jerrycan goes in here; the pipe runs inside to the day tank (Update 3: IX_GenFillCap_300, the filler on the container wall)",
+   "pivotUnity": [
+    3.174,
+    1.376,
+    2.945
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "IX_GenFillCap_300"
+  },
+  "GenContainer_FillSign": {
+   "kind": "static",
+   "pivot": [
+    -2.897,
+    -2.945,
+    1.62
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "no naked flames, inside by the fill pipe",
+   "pivotUnity": [
+    2.897,
+    1.62,
+    2.945
+   ],
+   "object": "GenContainer"
+  },
+  "GenContainer": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the twin container (castings, posts, rails, corrugated walls, roofs, the welded doors of the north box, pads, steps, the feeder riser, the stack, the fill box); prefab root",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "object": "GenContainer"
+  },
+  "GenContainer_In": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -1.22,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [],
+   "note": "inside of the container, finished as the generator shed: ply lining, concrete floor, spruce joists and blocking under the roof's underside, chequer covers, the window, conduits, the fill pipe, lamps",
+   "pivotUnity": [
+    0.0,
+    0.31,
+    1.22
+   ],
+   "object": "GenContainer"
+  },
+  "IX_ContDoorL_83": {
+   "kind": "hinge",
+   "pivot": [
+    3.015,
+    -1.216,
+    1.445
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    160
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "passive cargo leaf (hinged at the joint): stops against the welded doors of the north box at 160",
+   "was": "Door_L",
+   "pivotUnity": [
+    -3.015,
+    1.445,
+    1.216
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "object": "IX_ContDoorL_83"
+  },
+  "IX_ContDoorR_84": {
+   "kind": "hinge",
+   "pivot": [
+    3.015,
+    1.235,
+    1.445
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    170
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "GenContainer",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "active cargo leaf (south box, south hinge): unlocked with the key \"Generator\", swings out",
+   "was": "Door_R",
+   "pivotUnity": [
+    -3.015,
+    1.445,
+    -1.235
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "object": "IX_ContDoorR_84"
+  },
+  "IX_GenStart_86": {
+   "kind": "twist",
+   "pivot": [
+    0.043,
+    -0.405,
+    1.31
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    95
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Genset",
+   "states": [
+    "OFF 0",
+    "ON 52",
+    "START 95"
+   ],
+   "note": "key switch: ON (52) powers the panel; START (95, springs back to ON) cranks; pulled out at OFF",
+   "removable": "start",
+   "was": "Gen_Key",
+   "range_forest": [
+    0,
+    52
+   ],
+   "pivotUnity": [
+    -0.043,
+    1.31,
+    0.405
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "IX_GenStart_86"
+  },
+  "IX_Breaker_87": {
+   "kind": "hinge",
+   "pivot": [
+    1.135,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 1: HALL LIGHTS (up = on); trips on overload",
+   "was": "Board_MCB_1",
+   "pivotUnity": [
+    -1.135,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "IX_Breaker_87"
+  },
+  "IX_Breaker_88": {
+   "kind": "hinge",
+   "pivot": [
+    1.225,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 2: OUTDOOR LIGHTS (up = on); trips on overload",
+   "was": "Board_MCB_2",
+   "pivotUnity": [
+    -1.225,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "IX_Breaker_88"
+  },
+  "IX_Breaker_89": {
+   "kind": "hinge",
+   "pivot": [
+    1.315,
+    0.95,
+    1.36
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "off (down)",
+    "on (up)",
+    "tripped (middle)"
+   ],
+   "note": "circuit breaker 3: HEATING (up = on); trips on overload",
+   "was": "Board_MCB_3",
+   "pivotUnity": [
+    -1.315,
+    1.36,
+    -0.95
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "object": "IX_Breaker_89"
+  },
+  "IX_MainSwitch_90": {
+   "kind": "hinge",
+   "pivot": [
+    1.25,
+    1.005,
+    1.56
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    -60,
+    60
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Switchboard",
+   "states": [
+    "LINE -60",
+    "OFF 0",
+    "GEN 60"
+   ],
+   "note": "changeover switch: the handle points at LINE (-60), OFF (0) or GEN (+60); + = clockwise seen from the room",
+   "was": "Board_Changeover",
+   "range_forest": [
+    0,
+    60
+   ],
+   "pivotUnity": [
+    -1.25,
+    1.56,
+    -1.005
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "object": "IX_MainSwitch_90"
+  }
+ },
+ "sockets": {
+  "Audio_Fan": {
+   "pos": [
+    -2.03,
+    -0.205,
+    1.05
+   ],
+   "kind": "audio",
+   "parent": "Genset",
+   "note": "fan roar and the belt (squeal when loose)",
+   "posUnity": [
+    2.03,
+    1.05,
+    0.205
+   ]
+  },
+  "Hand_Radiator_Cap": {
+   "pos": [
+    -2.16,
+    -0.355,
+    1.54
+   ],
+   "kind": "hand",
+   "parent": "Radiator_Cap",
+   "note": "",
+   "posUnity": [
+    2.16,
+    1.54,
+    0.355
+   ]
+  },
+  "Pour_Coolant": {
+   "pos": [
+    -2.16,
+    -0.355,
+    1.53
+   ],
+   "kind": "pour",
+   "parent": "Genset",
+   "note": "coolant goes in here (cap off)",
+   "posUnity": [
+    2.16,
+    1.53,
+    0.355
+   ]
+  },
+  "VFX_RadSteam": {
+   "pos": [
+    -2.16,
+    -0.355,
+    1.55
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "steam out of the neck when the hot cap is opened / the engine boils over",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "posUnity": [
+    2.16,
+    1.55,
+    0.355
+   ]
+  },
+  "Hand_Radiator_Drain": {
+   "pos": [
+    -2.202,
+    0.235,
+    0.57
+   ],
+   "kind": "hand",
+   "parent": "Radiator_Drain",
+   "note": "",
+   "posUnity": [
+    2.202,
+    0.57,
+    -0.235
+   ]
+  },
+  "VFX_RadDrain": {
+   "pos": [
+    -2.202,
+    0.215,
+    0.555
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "coolant runs out here",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    2.202,
+    0.555,
+    -0.215
+   ]
+  },
+  "Heat_Silencer": {
+   "pos": [
+    -1.32,
+    -0.345,
+    1.74
+   ],
+   "kind": "heat",
+   "parent": "Genset",
+   "note": "hot silencer: burns, warms hands, melts snow",
+   "posUnity": [
+    1.32,
+    1.74,
+    0.345
+   ]
+  },
+  "Hand_AirFilterLid": {
+   "pos": [
+    -1.28,
+    0.175,
+    1.54
+   ],
+   "kind": "hand",
+   "parent": "Engine_AirFilterLid",
+   "note": "",
+   "posUnity": [
+    1.28,
+    1.54,
+    -0.175
+   ]
+  },
+  "Hand_Engine_StopLever": {
+   "pos": [
+    -1.05,
+    0.126,
+    1.12
+   ],
+   "kind": "hand",
+   "parent": "Engine_StopLever",
+   "note": "",
+   "posUnity": [
+    1.05,
+    1.12,
+    -0.126
+   ]
+  },
+  "Hand_Engine_FuelFilter": {
+   "pos": [
+    -1.54,
+    0.18,
+    0.89
+   ],
+   "kind": "hand",
+   "parent": "Engine_FuelFilter",
+   "note": "",
+   "posUnity": [
+    1.54,
+    0.89,
+    -0.18
+   ]
+  },
+  "Slot_FuelFilter": {
+   "pos": [
+    -1.54,
+    0.135,
+    0.988
+   ],
+   "kind": "item_slot",
+   "parent": "Genset",
+   "note": "filter head: a spin-on filter screws on here",
+   "posUnity": [
+    1.54,
+    0.988,
+    -0.135
+   ]
+  },
+  "Hand_Engine_BleedScrew": {
+   "pos": [
+    -1.54,
+    0.135,
+    1.05
+   ],
+   "kind": "hand",
+   "parent": "Engine_BleedScrew",
+   "note": "",
+   "posUnity": [
+    1.54,
+    1.05,
+    -0.135
+   ]
+  },
+  "VFX_FuelBleed": {
+   "pos": [
+    -1.54,
+    0.145,
+    1.036
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "froth, then clear diesel dribbles out while bleeding",
+   "dir": [
+    0.0,
+    1.0,
+    0.3
+   ],
+   "posUnity": [
+    1.54,
+    1.036,
+    -0.145
+   ]
+  },
+  "Hand_Engine_PrimerLever": {
+   "pos": [
+    -1.28,
+    0.065,
+    0.67
+   ],
+   "kind": "hand",
+   "parent": "Engine_PrimerLever",
+   "note": "",
+   "posUnity": [
+    1.28,
+    0.67,
+    -0.065
+   ]
+  },
+  "Hand_Engine_WaterDrain": {
+   "pos": [
+    -1.82,
+    0.275,
+    0.55
+   ],
+   "kind": "hand",
+   "parent": "Engine_WaterDrain",
+   "note": "",
+   "posUnity": [
+    1.82,
+    0.55,
+    -0.275
+   ]
+  },
+  "VFX_WaterDrain": {
+   "pos": [
+    -1.82,
+    0.275,
+    0.54
+   ],
+   "kind": "vfx",
+   "parent": "Genset",
+   "note": "water, then diesel drips",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    1.82,
+    0.54,
+    -0.275
+   ]
+  },
+  "Hand_Engine_Dipstick": {
+   "pos": [
+    -1.5211,
+    -0.5528,
+    1.2369
+   ],
+   "kind": "hand",
+   "parent": "Engine_Dipstick",
+   "note": "",
+   "posUnity": [
+    1.5211,
+    1.2369,
+    0.5528
+   ]
+  },
+  "Hand_Engine_OilCap": {
+   "pos": [
+    -1.54,
+    -0.255,
+    1.435
+   ],
+   "kind": "hand",
+   "parent": "Engine_OilCap",
+   "note": "",
+   "posUnity": [
+    1.54,
+    1.435,
+    0.255
+   ]
+  },
+  "Pour_Oil": {
+   "pos": [
+    -1.54,
+    -0.255,
+    1.45
+   ],
+   "kind": "pour",
+   "parent": "Genset",
+   "note": "engine oil goes in here (cap off)",
+   "posUnity": [
+    1.54,
+    1.45,
+    0.255
+   ]
+  },
+  "Audio_Engine": {
+   "pos": [
+    -1.3,
+    -0.205,
+    1.01
+   ],
+   "kind": "audio",
+   "parent": "Genset",
+   "note": "diesel: glow tick, cranking, knock, idle 1500 rpm, labouring under load, dying",
+   "posUnity": [
+    1.3,
+    1.01,
+    0.205
+   ]
+  },
+  "Audio_Alternator": {
+   "pos": [
+    -0.42,
+    -0.205,
+    0.85
+   ],
+   "kind": "audio",
+   "parent": "Genset",
+   "note": "alternator whine, rises with the load",
+   "posUnity": [
+    0.42,
+    0.85,
+    0.205
+   ]
+  },
+  "Hand_Battery": {
+   "pos": [
+    -1.09,
+    0.0475,
+    0.69
+   ],
+   "kind": "hand",
+   "parent": "Battery",
+   "note": "",
+   "posUnity": [
+    1.09,
+    0.69,
+    -0.0475
+   ]
+  },
+  "Slot_Battery": {
+   "pos": [
+    -1.09,
+    0.0475,
+    0.43
+   ],
+   "kind": "item_slot",
+   "parent": "Genset",
+   "note": "battery tray inside the skid under the fuel side (reach over the south rail): a battery stands here, posts towards the aisle",
+   "posUnity": [
+    1.09,
+    0.43,
+    -0.0475
+   ]
+  },
+  "Jump_Pos": {
+   "pos": [
+    -0.985,
+    0.0875,
+    0.647
+   ],
+   "kind": "item_slot",
+   "parent": "Battery",
+   "note": "plus post: a jumper-cable clamp bites here (the van's Battery has its posts at the same place relative to its pivot)",
+   "posUnity": [
+    0.985,
+    0.647,
+    -0.0875
+   ]
+  },
+  "Jump_Neg": {
+   "pos": [
+    -1.195,
+    0.0875,
+    0.647
+   ],
+   "kind": "item_slot",
+   "parent": "Battery",
+   "note": "minus post: a jumper-cable clamp bites here (the van's Battery has its posts at the same place relative to its pivot)",
+   "posUnity": [
+    1.195,
+    0.647,
+    -0.0875
+   ]
+  },
+  "Hand_ClampPos": {
+   "pos": [
+    -0.985,
+    0.0875,
+    0.657
+   ],
+   "kind": "hand",
+   "parent": "Battery_ClampPos",
+   "note": "",
+   "posUnity": [
+    0.985,
+    0.657,
+    -0.0875
+   ]
+  },
+  "Hand_ClampNeg": {
+   "pos": [
+    -1.195,
+    0.0875,
+    0.657
+   ],
+   "kind": "hand",
+   "parent": "Battery_ClampNeg",
+   "note": "",
+   "posUnity": [
+    1.195,
+    0.657,
+    -0.0875
+   ]
+  },
+  "Hand_Gen_Breaker": {
+   "pos": [
+    -0.47,
+    0.219,
+    0.898
+   ],
+   "kind": "hand",
+   "parent": "Gen_Breaker",
+   "note": "",
+   "posUnity": [
+    0.47,
+    0.898,
+    -0.219
+   ]
+  },
+  "Hand_Gen_VAdj": {
+   "pos": [
+    0.063,
+    0.005,
+    1.415
+   ],
+   "kind": "hand",
+   "parent": "Gen_VAdj",
+   "note": "",
+   "posUnity": [
+    -0.063,
+    1.415,
+    -0.005
+   ]
+  },
+  "Hand_Gen_GlowButton": {
+   "pos": [
+    0.057,
+    -0.225,
+    1.31
+   ],
+   "kind": "hand",
+   "parent": "Gen_GlowButton",
+   "note": "",
+   "posUnity": [
+    -0.057,
+    1.31,
+    0.225
+   ]
+  },
+  "Hand_Gen_StopButton": {
+   "pos": [
+    0.057,
+    -0.125,
+    1.31
+   ],
+   "kind": "hand",
+   "parent": "Gen_StopButton",
+   "note": "",
+   "posUnity": [
+    -0.057,
+    1.31,
+    0.125
+   ]
+  },
+  "Hand_Gen_EStop": {
+   "pos": [
+    0.081,
+    -0.015,
+    1.31
+   ],
+   "kind": "hand",
+   "parent": "Gen_EStop",
+   "note": "",
+   "posUnity": [
+    -0.081,
+    1.31,
+    0.015
+   ]
+  },
+  "Hand_Board_Brk_Gen": {
+   "pos": [
+    1.55,
+    0.9247,
+    1.5426
+   ],
+   "kind": "hand",
+   "parent": "Board_Brk_Gen",
+   "note": "",
+   "posUnity": [
+    -1.55,
+    1.5426,
+    -0.9247
+   ]
+  },
+  "Hand_Board_Brk_Line": {
+   "pos": [
+    1.73,
+    0.9247,
+    1.5426
+   ],
+   "kind": "hand",
+   "parent": "Board_Brk_Line",
+   "note": "",
+   "posUnity": [
+    -1.73,
+    1.5426,
+    -0.9247
+   ]
+  },
+  "Hand_Board_MCB_4": {
+   "pos": [
+    1.405,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_4",
+   "note": "",
+   "posUnity": [
+    -1.405,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Hand_Board_MCB_5": {
+   "pos": [
+    1.495,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_5",
+   "note": "",
+   "posUnity": [
+    -1.495,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Hand_Board_MCB_6": {
+   "pos": [
+    1.585,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_6",
+   "note": "",
+   "posUnity": [
+    -1.585,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Hand_Board_MCB_7": {
+   "pos": [
+    1.675,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_7",
+   "note": "",
+   "posUnity": [
+    -1.675,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Hand_Board_MCB_8": {
+   "pos": [
+    1.765,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "Board_MCB_8",
+   "note": "",
+   "posUnity": [
+    -1.765,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Audio_Board": {
+   "pos": [
+    1.45,
+    0.955,
+    1.66
+   ],
+   "kind": "audio",
+   "parent": "Switchboard",
+   "note": "hum of the busbar, the clack of the breakers, the changeover thunk, a breaker tripping",
+   "posUnity": [
+    -1.45,
+    1.66,
+    -0.955
+   ]
+  },
+  "VFX_BoardSparks": {
+   "pos": [
+    1.64,
+    0.945,
+    1.56
+   ],
+   "kind": "vfx",
+   "parent": "Switchboard",
+   "note": "sparks / smoke when a breaker trips under load or the changeover is thrown on load",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "posUnity": [
+    -1.64,
+    1.56,
+    -0.945
+   ]
+  },
+  "Hand_Board_Door": {
+   "pos": [
+    1.075,
+    0.855,
+    1.66
+   ],
+   "kind": "hand",
+   "parent": "Board_Door",
+   "note": "",
+   "posUnity": [
+    -1.075,
+    1.66,
+    -0.855
+   ]
+  },
+  "Hand_Board_Latch": {
+   "pos": [
+    1.07,
+    0.86,
+    1.66
+   ],
+   "kind": "hand",
+   "parent": "Board_Latch",
+   "note": "",
+   "posUnity": [
+    -1.07,
+    1.66,
+    -0.86
+   ]
+  },
+  "Hand_DayTank_Cap": {
+   "pos": [
+    -0.07,
+    -3.345,
+    2.01
+   ],
+   "kind": "hand",
+   "parent": "DayTank_Cap",
+   "note": "",
+   "posUnity": [
+    0.07,
+    2.01,
+    3.345
+   ]
+  },
+  "Pour_DayTank": {
+   "pos": [
+    -0.07,
+    -3.345,
+    1.99
+   ],
+   "kind": "pour",
+   "parent": "DayTank",
+   "note": "diesel goes in here (DrumPump_Nozzle, a jerrycan with the van's Spout); 100 l",
+   "posUnity": [
+    0.07,
+    1.99,
+    3.345
+   ]
+  },
+  "Hand_DayTank_Valve": {
+   "pos": [
+    -0.27,
+    -3.295,
+    1.45
+   ],
+   "kind": "hand",
+   "parent": "DayTank_Valve",
+   "note": "",
+   "posUnity": [
+    0.27,
+    1.45,
+    3.295
+   ]
+  },
+  "Hand_DayTank_Drain": {
+   "pos": [
+    0.53,
+    -3.345,
+    1.437
+   ],
+   "kind": "hand",
+   "parent": "DayTank_Drain",
+   "note": "",
+   "posUnity": [
+    -0.53,
+    1.437,
+    3.345
+   ]
+  },
+  "VFX_TankDrain": {
+   "pos": [
+    0.53,
+    -3.345,
+    1.43
+   ],
+   "kind": "vfx",
+   "parent": "DayTank",
+   "note": "drips into the tray",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    -0.53,
+    1.43,
+    3.345
+   ]
+  },
+  "Hand_Drum_1_Vent": {
+   "pos": [
+    -1.89,
+    -3.42,
+    1.334
+   ],
+   "kind": "hand",
+   "parent": "Drum_1_Vent",
+   "note": "",
+   "posUnity": [
+    1.89,
+    1.334,
+    3.42
+   ]
+  },
+  "Slot_DrumPump_1": {
+   "pos": [
+    -1.89,
+    -3.03,
+    1.322
+   ],
+   "kind": "item_slot",
+   "parent": "Drum_1",
+   "note": "the DrumPump stands in this bung hole (bung out)",
+   "posUnity": [
+    1.89,
+    1.322,
+    3.03
+   ]
+  },
+  "Hand_Drum_2_Bung": {
+   "pos": [
+    -2.5,
+    -3.03,
+    1.334
+   ],
+   "kind": "hand",
+   "parent": "Drum_2_Bung",
+   "note": "",
+   "posUnity": [
+    2.5,
+    1.334,
+    3.03
+   ]
+  },
+  "Hand_Drum_2_Vent": {
+   "pos": [
+    -2.5,
+    -3.42,
+    1.334
+   ],
+   "kind": "hand",
+   "parent": "Drum_2_Vent",
+   "note": "",
+   "posUnity": [
+    2.5,
+    1.334,
+    3.42
+   ]
+  },
+  "Slot_DrumPump_2": {
+   "pos": [
+    -2.5,
+    -3.03,
+    1.322
+   ],
+   "kind": "item_slot",
+   "parent": "Drum_2",
+   "note": "the DrumPump stands in this bung hole (bung out)",
+   "posUnity": [
+    2.5,
+    1.322,
+    3.03
+   ]
+  },
+  "Hand_Drum_3_Bung": {
+   "pos": [
+    -2.4356,
+    0.6106,
+    1.194
+   ],
+   "kind": "hand",
+   "parent": "Drum_3_Bung",
+   "note": "",
+   "posUnity": [
+    2.4356,
+    1.194,
+    -0.6106
+   ]
+  },
+  "Hand_Drum_3_Vent": {
+   "pos": [
+    -2.7114,
+    0.8864,
+    1.194
+   ],
+   "kind": "hand",
+   "parent": "Drum_3_Vent",
+   "note": "",
+   "posUnity": [
+    2.7114,
+    1.194,
+    -0.8864
+   ]
+  },
+  "Slot_DrumPump_3": {
+   "pos": [
+    -2.4356,
+    0.6106,
+    1.182
+   ],
+   "kind": "item_slot",
+   "parent": "Drum_3",
+   "note": "the DrumPump stands in this bung hole (bung out)",
+   "posUnity": [
+    2.4356,
+    1.182,
+    -0.6106
+   ]
+  },
+  "Hand_DrumPump": {
+   "pos": [
+    -1.89,
+    -3.03,
+    1.635
+   ],
+   "kind": "hand",
+   "parent": "DrumPump",
+   "note": "",
+   "posUnity": [
+    1.89,
+    1.635,
+    3.03
+   ]
+  },
+  "DrumPump_Hose_Start": {
+   "pos": [
+    -2.02,
+    -3.03,
+    1.65
+   ],
+   "kind": "item_slot",
+   "parent": "DrumPump",
+   "note": "hose leaves the pump here (3.5 m: reaches the day tank from any drum on the pallet)",
+   "posUnity": [
+    2.02,
+    1.65,
+    3.03
+   ]
+  },
+  "Audio_DrumPump": {
+   "pos": [
+    -1.89,
+    -3.03,
+    1.565
+   ],
+   "kind": "audio",
+   "parent": "DrumPump",
+   "note": "clank of the crank, gurgle, splash in the tank",
+   "posUnity": [
+    1.89,
+    1.565,
+    3.03
+   ]
+  },
+  "Hand_DrumPump_Crank": {
+   "pos": [
+    -1.89,
+    -2.9,
+    1.705
+   ],
+   "kind": "hand",
+   "parent": "DrumPump_Crank",
+   "note": "",
+   "posUnity": [
+    1.89,
+    1.705,
+    2.9
+   ]
+  },
+  "Hand_DrumPump_Nozzle": {
+   "pos": [
+    -1.952,
+    -3.28,
+    1.464
+   ],
+   "kind": "hand",
+   "parent": "DrumPump_Nozzle",
+   "note": "",
+   "posUnity": [
+    1.952,
+    1.464,
+    3.28
+   ]
+  },
+  "Nozzle_Tip": {
+   "pos": [
+    -1.898,
+    -3.46,
+    1.414
+   ],
+   "kind": "vfx",
+   "parent": "DrumPump_Nozzle",
+   "note": "fuel stream while cranking (splash if not in a filler)",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    1.898,
+    1.414,
+    3.46
+   ]
+  },
+  "Hand_EngineOil": {
+   "pos": [
+    2.75,
+    -2.66,
+    1.99
+   ],
+   "kind": "hand",
+   "parent": "EngineOil",
+   "note": "",
+   "posUnity": [
+    -2.75,
+    1.99,
+    2.66
+   ]
+  },
+  "Pour_EngineOil": {
+   "pos": [
+    2.75,
+    -2.54,
+    1.99
+   ],
+   "kind": "pour",
+   "parent": "EngineOil",
+   "note": "oil comes out here (cap off)",
+   "posUnity": [
+    -2.75,
+    1.99,
+    2.54
+   ]
+  },
+  "Hand_Coolant": {
+   "pos": [
+    2.75,
+    -2.67,
+    1.47
+   ],
+   "kind": "hand",
+   "parent": "Coolant",
+   "note": "",
+   "posUnity": [
+    -2.75,
+    1.47,
+    2.67
+   ]
+  },
+  "Pour_CoolantJug": {
+   "pos": [
+    2.75,
+    -2.575,
+    1.47
+   ],
+   "kind": "pour",
+   "parent": "Coolant",
+   "note": "coolant comes out here (cap off)",
+   "posUnity": [
+    -2.75,
+    1.47,
+    2.575
+   ]
+  },
+  "Hand_FuelFilter_Spare": {
+   "pos": [
+    2.75,
+    -2.32,
+    1.34
+   ],
+   "kind": "hand",
+   "parent": "FuelFilter_Spare",
+   "note": "",
+   "posUnity": [
+    -2.75,
+    1.34,
+    2.32
+   ]
+  },
+  "Hand_Toolbox": {
+   "pos": [
+    2.75,
+    -2.42,
+    0.9
+   ],
+   "kind": "hand",
+   "parent": "Toolbox",
+   "note": "",
+   "posUnity": [
+    -2.75,
+    0.9,
+    2.42
+   ]
+  },
+  "JumperCables_RedA": {
+   "pos": [
+    2.83,
+    -2.135,
+    1.22
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "red clamp, end A: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)",
+   "posUnity": [
+    -2.83,
+    1.22,
+    2.135
+   ]
+  },
+  "JumperCables_RedB": {
+   "pos": [
+    2.73,
+    -2.135,
+    1.22
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "red clamp, end B: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)",
+   "posUnity": [
+    -2.73,
+    1.22,
+    2.135
+   ]
+  },
+  "JumperCables_BlackA": {
+   "pos": [
+    2.83,
+    -2.119,
+    1.22
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "black clamp, end A: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)",
+   "posUnity": [
+    -2.83,
+    1.22,
+    2.119
+   ]
+  },
+  "JumperCables_BlackB": {
+   "pos": [
+    2.73,
+    -2.119,
+    1.22
+   ],
+   "kind": "item_slot",
+   "parent": "JumperCables",
+   "note": "black clamp, end B: clips onto Jump_Pos / Jump_Neg (or the van's battery posts)",
+   "posUnity": [
+    -2.73,
+    1.22,
+    2.119
+   ]
+  },
+  "Hand_JumperCables": {
+   "pos": [
+    2.78,
+    -2.135,
+    1.52
+   ],
+   "kind": "hand",
+   "parent": "JumperCables",
+   "note": "",
+   "posUnity": [
+    -2.78,
+    1.52,
+    2.135
+   ]
+  },
+  "Hand_BungWrench": {
+   "pos": [
+    2.82,
+    -2.135,
+    0.91
+   ],
+   "kind": "hand",
+   "parent": "BungWrench",
+   "note": "",
+   "posUnity": [
+    -2.82,
+    0.91,
+    2.135
+   ]
+  },
+  "Hand_Extinguisher": {
+   "pos": [
+    2.795,
+    -1.77,
+    1.49
+   ],
+   "kind": "hand",
+   "parent": "Extinguisher",
+   "note": "",
+   "posUnity": [
+    -2.795,
+    1.49,
+    1.77
+   ]
+  },
+  "VFX_Extinguisher": {
+   "pos": [
+    2.895,
+    -1.77,
+    1.03
+   ],
+   "kind": "vfx",
+   "parent": "Extinguisher",
+   "note": "powder cloud",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    -2.895,
+    1.03,
+    1.77
+   ]
+  },
+  "Slot_Extinguisher": {
+   "pos": [
+    2.815,
+    -1.77,
+    0.91
+   ],
+   "kind": "item_slot",
+   "parent": "GenContainer",
+   "note": "the extinguisher hangs here",
+   "posUnity": [
+    -2.815,
+    0.91,
+    1.77
+   ]
+  },
+  "Hand_Logbook": {
+   "pos": [
+    0.75,
+    1.103,
+    1.8
+   ],
+   "kind": "hand",
+   "parent": "Logbook",
+   "note": "",
+   "posUnity": [
+    -0.75,
+    1.8,
+    -1.103
+   ]
+  },
+  "Nail_Logbook": {
+   "pos": [
+    0.75,
+    1.1,
+    1.83
+   ],
+   "kind": "item_slot",
+   "parent": "GenContainer",
+   "note": "the logbook hangs here",
+   "posUnity": [
+    -0.75,
+    1.83,
+    -1.1
+   ]
+  },
+  "Hand_Door_R_In": {
+   "pos": [
+    2.9,
+    0.2,
+    1.06
+   ],
+   "kind": "hand",
+   "parent": "IX_ContDoorR_84",
+   "note": "",
+   "posUnity": [
+    -2.9,
+    1.06,
+    -0.2
+   ]
+  },
+  "Hand_Door_R_Out": {
+   "pos": [
+    3.053,
+    0.65,
+    1.38
+   ],
+   "kind": "hand",
+   "parent": "IX_ContDoorR_84",
+   "note": "",
+   "posUnity": [
+    -3.053,
+    1.38,
+    -0.65
+   ]
+  },
+  "Hand_Door_L_In": {
+   "pos": [
+    2.9,
+    -0.2,
+    1.06
+   ],
+   "kind": "hand",
+   "parent": "IX_ContDoorL_83",
+   "note": "",
+   "posUnity": [
+    -2.9,
+    1.06,
+    0.2
+   ]
+  },
+  "Hand_Door_L_Out": {
+   "pos": [
+    3.053,
+    -0.052,
+    1.38
+   ],
+   "kind": "hand",
+   "parent": "IX_ContDoorL_83",
+   "note": "",
+   "posUnity": [
+    -3.053,
+    1.38,
+    0.052
+   ]
+  },
+  "Hand_Window_Shutter": {
+   "pos": [
+    -0.83,
+    1.05,
+    1.776
+   ],
+   "kind": "hand",
+   "parent": "Window_Shutter",
+   "note": "",
+   "posUnity": [
+    0.83,
+    1.776,
+    -1.05
+   ]
+  },
+  "Hand_Window_Latch": {
+   "pos": [
+    0.48,
+    1.07,
+    1.8
+   ],
+   "kind": "hand",
+   "parent": "Window_Latch",
+   "note": "",
+   "posUnity": [
+    -0.48,
+    1.8,
+    -1.07
+   ]
+  },
+  "Hand_Louvre_Lever": {
+   "pos": [
+    -2.86,
+    -0.8,
+    1.06
+   ],
+   "kind": "hand",
+   "parent": "Louvre_Lever",
+   "note": "",
+   "posUnity": [
+    2.86,
+    1.06,
+    0.8
+   ]
+  },
+  "Line_In": {
+   "pos": [
+    1.2,
+    1.258,
+    0.0
+   ],
+   "kind": "item_slot",
+   "parent": "GenContainer",
+   "note": "LINE (grid) cable: underground from the trafo; feeds the board via Board_Brk_Line",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    -1.2,
+    0.0,
+    -1.258
+   ]
+  },
+  "Feed_Out": {
+   "pos": [
+    1.2,
+    1.268,
+    0.0
+   ],
+   "kind": "item_slot",
+   "parent": "GenContainer",
+   "note": "feeder to the base: the eight circuits go underground from here",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    -1.2,
+    0.0,
+    -1.268
+   ]
+  },
+  "Outlet_Wall": {
+   "pos": [
+    2.848,
+    -1.52,
+    0.66
+   ],
+   "kind": "item_slot",
+   "parent": "GenContainer",
+   "note": "230 V outlet on the CONTAINER circuit",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "posUnity": [
+    -2.848,
+    0.66,
+    1.52
+   ]
+  },
+  "Hand_IX_ContSideDoor_85_Out": {
+   "pos": [
+    -3.073,
+    -2.313,
+    1.05
+   ],
+   "kind": "hand",
+   "parent": "IX_ContSideDoor_85",
+   "note": "",
+   "posUnity": [
+    3.073,
+    1.05,
+    2.313
+   ]
+  },
+  "Hand_IX_ContSideDoor_85_In": {
+   "pos": [
+    -2.908,
+    -2.313,
+    1.05
+   ],
+   "kind": "hand",
+   "parent": "IX_ContSideDoor_85",
+   "note": "",
+   "posUnity": [
+    2.908,
+    1.05,
+    2.313
+   ]
+  },
+  "Lock_IX_ContSideDoor_85": {
+   "pos": [
+    -3.025,
+    -2.413,
+    0.965
+   ],
+   "kind": "item_slot",
+   "parent": "IX_ContSideDoor_85",
+   "note": "lock cylinder: the key \"Generator\"",
+   "posUnity": [
+    3.025,
+    0.965,
+    2.413
+   ]
+  },
+  "Pour_Fill": {
+   "pos": [
+    -3.133,
+    -2.945,
+    1.17
+   ],
+   "kind": "pour",
+   "parent": "GenContainer",
+   "note": "fill neck (cap off): the jerrycan pours here, the fuel goes to the day tank (100 l)",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "posUnity": [
+    3.133,
+    1.17,
+    2.945
+   ]
+  },
+  "Hand_IX_GenFillCap_300": {
+   "pos": [
+    -3.191,
+    -2.945,
+    1.05
+   ],
+   "kind": "hand",
+   "parent": "IX_GenFillCap_300",
+   "note": "",
+   "posUnity": [
+    3.191,
+    1.05,
+    2.945
+   ]
+  },
+  "Audio_Exhaust": {
+   "pos": [
+    -3.38,
+    -0.325,
+    3.6
+   ],
+   "kind": "audio",
+   "parent": "GenContainer",
+   "note": "exhaust beat at the stack, the flap rattling",
+   "posUnity": [
+    3.38,
+    3.6,
+    0.325
+   ]
+  },
+  "Audio_Louvre": {
+   "pos": [
+    -2.9,
+    -0.205,
+    1.16
+   ],
+   "kind": "audio",
+   "parent": "GenContainer",
+   "note": "louvre blades rattling in the wind / in the fan blast",
+   "posUnity": [
+    2.9,
+    1.16,
+    0.205
+   ]
+  },
+  "Audio_Door": {
+   "pos": [
+    2.97,
+    0.0,
+    1.3
+   ],
+   "kind": "audio",
+   "parent": "GenContainer",
+   "note": "cargo doors: the bars and cams, hinges groaning, wind",
+   "posUnity": [
+    -2.97,
+    1.3,
+    0.0
+   ]
+  },
+  "Audio_SideDoor": {
+   "pos": [
+    -3.029,
+    -2.06,
+    1.2
+   ],
+   "kind": "audio",
+   "parent": "GenContainer",
+   "note": "side door: the latch, the hinges",
+   "posUnity": [
+    3.029,
+    1.2,
+    2.06
+   ]
+  },
+  "Audio_Roof": {
+   "pos": [
+    0.0,
+    -1.22,
+    3.0
+   ],
+   "kind": "audio",
+   "parent": "GenContainer",
+   "note": "steel roof: ticks and booms in the cold, needles and cones dropping, footsteps up there",
+   "posUnity": [
+    0.0,
+    3.0,
+    1.22
+   ]
+  },
+  "Audio_Wind": {
+   "pos": [
+    2.95,
+    -2.44,
+    2.22
+   ],
+   "kind": "audio",
+   "parent": "GenContainer",
+   "note": "wind through the two intake louvres in the north box's doors",
+   "posUnity": [
+    -2.95,
+    2.22,
+    2.44
+   ]
+  },
+  "VFX_Exhaust": {
+   "pos": [
+    -3.38,
+    -0.325,
+    3.63
+   ],
+   "kind": "vfx",
+   "parent": "GenContainer",
+   "note": "exhaust: a black puff on starting, grey smoke under load, thin haze idling",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "posUnity": [
+    3.38,
+    3.63,
+    0.325
+   ]
+  },
+  "VFX_LouvreHeat": {
+   "pos": [
+    -3.079,
+    -0.205,
+    1.16
+   ],
+   "kind": "vfx",
+   "parent": "GenContainer",
+   "note": "warm air from the radiator through the open louvre: steam in the cold night air",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "posUnity": [
+    3.079,
+    1.16,
+    0.205
+   ]
+  },
+  "VFX_FillSpill": {
+   "pos": [
+    -3.131,
+    -2.945,
+    1.12
+   ],
+   "kind": "vfx",
+   "parent": "GenContainer",
+   "note": "diesel spilling at the fill neck (poured without the funnel)",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "posUnity": [
+    3.131,
+    1.12,
+    2.945
+   ]
+  },
+  "Heat_Louvre": {
+   "pos": [
+    -3.229,
+    -0.205,
+    1.16
+   ],
+   "kind": "heat",
+   "parent": "GenContainer",
+   "note": "warm spot outside the louvre while the set runs",
+   "posUnity": [
+    3.229,
+    1.16,
+    0.205
+   ]
+  },
+  "Hide_UnderWindow": {
+   "pos": [
+    0.1,
+    0.815,
+    0.61
+   ],
+   "kind": "hide",
+   "parent": "GenContainer",
+   "note": "crouched under the window: not seen from outside through the glass",
+   "pose": "crouch",
+   "eye": [
+    0.1,
+    0.755,
+    1.17
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "posUnity": [
+    -0.1,
+    0.61,
+    -0.815
+   ]
+  },
+  "Hide_ShelfCorner": {
+   "pos": [
+    2.55,
+    -3.22,
+    0.61
+   ],
+   "kind": "hide",
+   "parent": "GenContainer",
+   "note": "crouched in the north-west corner behind the shelf: not seen from the cargo doors",
+   "pose": "crouch",
+   "eye": [
+    2.5,
+    -3.17,
+    1.17
+   ],
+   "facing": [
+    -0.7071,
+    0.7071,
+    0.0
+   ],
+   "posUnity": [
+    -2.55,
+    0.61,
+    3.22
+   ]
+  },
+  "Knock_WallS_1": {
+   "pos": [
+    2.3023,
+    1.1795,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.4679,
+    0.8838,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -2.3023,
+    1.2,
+    -1.1795
+   ]
+  },
+  "Knock_WallS_2": {
+   "pos": [
+    0.9023,
+    1.1848,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.4679,
+    0.8838,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -0.9023,
+    1.2,
+    -1.1848
+   ]
+  },
+  "Knock_WallS_3": {
+   "pos": [
+    -1.0,
+    1.179,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    1.0,
+    1.2,
+    -1.179
+   ]
+  },
+  "Knock_WallS_4": {
+   "pos": [
+    -2.1977,
+    1.207,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.4679,
+    0.8838,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    2.1977,
+    1.2,
+    -1.207
+   ]
+  },
+  "Knock_WallN_1": {
+   "pos": [
+    2.0023,
+    -3.6311,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.4679,
+    -0.8838,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -2.0023,
+    1.2,
+    3.6311
+   ]
+  },
+  "Knock_WallN_2": {
+   "pos": [
+    0.7,
+    -3.619,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -0.7,
+    1.2,
+    3.619
+   ]
+  },
+  "Knock_WallN_3": {
+   "pos": [
+    -0.9023,
+    -3.6523,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    -0.4679,
+    -0.8838,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    0.9023,
+    1.2,
+    3.6523
+   ]
+  },
+  "Knock_WallN_4": {
+   "pos": [
+    -2.1977,
+    -3.647,
+    1.2
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.4679,
+    -0.8838,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    2.1977,
+    1.2,
+    3.647
+   ]
+  },
+  "Knock_WallE_1": {
+   "pos": [
+    -3.026,
+    0.73,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    3.026,
+    1.3,
+    -0.73
+   ]
+  },
+  "Knock_WallE_3": {
+   "pos": [
+    -3.182,
+    -3.02,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "IX_GenFillCap_300",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    3.182,
+    1.3,
+    3.02
+   ]
+  },
+  "Knock_Louvre": {
+   "pos": [
+    -2.9628,
+    -0.22,
+    1.0491
+   ],
+   "kind": "knock",
+   "parent": "Louvre_Blade_3",
+   "dir": [
+    -0.9848,
+    0.0,
+    -0.1736
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    2.9628,
+    1.0491,
+    0.22
+   ]
+  },
+  "Knock_WallW_1": {
+   "pos": [
+    2.9821,
+    -1.82,
+    1.4526
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.8575,
+    0.0,
+    0.5145
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -2.9821,
+    1.4526,
+    1.82
+   ]
+  },
+  "Knock_WallW_2": {
+   "pos": [
+    2.9821,
+    -3.02,
+    1.4526
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.8575,
+    0.0,
+    0.5145
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -2.9821,
+    1.4526,
+    3.02
+   ]
+  },
+  "Knock_Window": {
+   "pos": [
+    0.1,
+    1.19,
+    1.62
+   ],
+   "kind": "knock",
+   "parent": "GenContainer_In",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -0.1,
+    1.62,
+    -1.19
+   ]
+  },
+  "Knock_Roof_1": {
+   "pos": [
+    1.5,
+    -2.42,
+    2.736
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -1.5,
+    2.736,
+    2.42
+   ]
+  },
+  "Knock_Roof_2": {
+   "pos": [
+    -1.5,
+    -2.42,
+    2.736
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    1.5,
+    2.736,
+    2.42
+   ]
+  },
+  "Knock_Roof_3": {
+   "pos": [
+    1.5,
+    -0.02,
+    2.736
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -1.5,
+    2.736,
+    0.02
+   ]
+  },
+  "Knock_Roof_4": {
+   "pos": [
+    -1.5,
+    -0.02,
+    2.736
+   ],
+   "kind": "knock",
+   "parent": "GenContainer",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    1.5,
+    2.736,
+    0.02
+   ]
+  },
+  "Knock_SideDoor": {
+   "pos": [
+    -3.018,
+    -2.06,
+    1.3
+   ],
+   "kind": "knock",
+   "parent": "IX_ContSideDoor_85",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    3.018,
+    1.3,
+    2.06
+   ]
+  },
+  "Hand_IX_GenStart_86": {
+   "pos": [
+    0.078,
+    -0.405,
+    1.31
+   ],
+   "kind": "hand",
+   "parent": "IX_GenStart_86",
+   "note": "",
+   "posUnity": [
+    -0.078,
+    1.31,
+    0.405
+   ]
+  },
+  "Hand_IX_MainSwitch_90": {
+   "pos": [
+    1.25,
+    0.96,
+    1.61
+   ],
+   "kind": "hand",
+   "parent": "IX_MainSwitch_90",
+   "note": "",
+   "posUnity": [
+    -1.25,
+    1.61,
+    -0.96
+   ]
+  },
+  "Hand_IX_Breaker_87": {
+   "pos": [
+    1.135,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "IX_Breaker_87",
+   "note": "",
+   "posUnity": [
+    -1.135,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Hand_IX_Breaker_88": {
+   "pos": [
+    1.225,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "IX_Breaker_88",
+   "note": "",
+   "posUnity": [
+    -1.225,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Hand_IX_Breaker_89": {
+   "pos": [
+    1.315,
+    0.9309,
+    1.349
+   ],
+   "kind": "hand",
+   "parent": "IX_Breaker_89",
+   "note": "",
+   "posUnity": [
+    -1.315,
+    1.349,
+    -0.9309
+   ]
+  },
+  "Lock_IX_ContDoorR_84": {
+   "pos": [
+    3.0415,
+    0.6675,
+    1.23
+   ],
+   "kind": "item_slot",
+   "parent": "IX_ContDoorR_84",
+   "note": "lock box on the active leaf: the key \"Generator\" unlocks here (the padlock is inside the shroud)",
+   "posUnity": [
+    -3.0415,
+    1.23,
+    -0.6675
+   ]
+  },
+  "Knock_IX_ContDoorR_84": {
+   "pos": [
+    2.999,
+    0.58,
+    1.7
+   ],
+   "kind": "knock",
+   "parent": "IX_ContDoorR_84",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -2.999,
+    1.7,
+    -0.58
+   ]
+  },
+  "Knock_IX_ContDoorL_83": {
+   "pos": [
+    2.981,
+    -0.62,
+    1.05
+   ],
+   "kind": "knock",
+   "parent": "IX_ContDoorL_83",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "note": "something knocks / scratches here from outside (sound, a print in the dew)",
+   "posUnity": [
+    -2.981,
+    1.05,
+    0.62
+   ]
+  }
+ },
+ "lamps": [
+  {
+   "name": "Bulk_Genset",
+   "pos": [
+    0.78,
+    -0.22,
+    2.467
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "type": "bulkhead",
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "posUnity": [
+    -0.78,
+    2.467,
+    0.22
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Bulk_Ceiling",
+   "pos": [
+    -0.78,
+    -2.32,
+    2.467
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "type": "bulkhead",
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "posUnity": [
+    0.78,
+    2.467,
+    2.32
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Bulk_Board",
+   "pos": [
+    1.45,
+    1.037,
+    2.43
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "type": "bulkhead",
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.45,
+    2.43,
+    -1.037
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Ext_Door",
+   "pos": [
+    3.37,
+    0.0,
+    2.69
+   ],
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "type": "barnlight",
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "posUnity": [
+    -3.37,
+    2.69,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "meta": {
+  "units": "metres, degrees",
+  "frame": "Update 3's GenContainer frame (its FBX after import): x along the boxes, the cargo doors at +x, y across (the north box with the day tank and the side door at -y), z up, ground z = 0, floor 0.31; Unity prefab-local (-x, z, -y); placement unchanged (Forest_Layout.json)",
+  "axes": "axis + range: right hand, + opens; Unity: axisUnity with the same +range (the axis flips with the handedness)",
+  "objects": "GenContainer (everything static joined in) + the nine IX parts (what moves with each joined in) + Window_Glass; part.object = the object a detail ended up in",
+  "origin": "the generator container package (cont_kit, GENCONT_CONTRACT.md) with gcf_kit's map changes"
+ }
+}

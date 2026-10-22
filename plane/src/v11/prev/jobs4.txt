@@ -1,0 +1,2 @@
+r/int_cockpit|v11|r/v11_int_cockpit.png|{}
+r/int_bay|v11|r/v11_int_bay.png|{}

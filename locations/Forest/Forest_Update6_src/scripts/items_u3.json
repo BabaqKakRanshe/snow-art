@@ -1,0 +1,3861 @@
+{
+ "Item_Ashtray": {
+  "bounds": [
+   [
+    -0.075,
+    -0.075,
+    -0.0
+   ],
+   [
+    0.075,
+    0.075,
+    0.03
+   ]
+  ],
+  "tris": 308,
+  "mats": [
+   "M_BV_StripeOrange",
+   "M_GlassClearProp",
+   "M_Paper",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_Ashtray",
+   "label": "Пепельница",
+   "itemKey": "Item_Ashtray",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.02,
+     -0.0
+    ],
+    "size": [
+     0.15,
+     0.04,
+     0.15
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 308
+  },
+  "count": 5,
+  "rooms": {
+   "Leitstand": 2,
+   "Kaserne": 1,
+   "Kueche": 1,
+   "Stationsleiter": 1
+  },
+  "guid": "a79bcf30501ac1fb62a4317a7d0e5444"
+ },
+ "Item_Backpack": {
+  "bounds": [
+   [
+    -0.16,
+    -0.15,
+    -0.0
+   ],
+   [
+    0.16,
+    0.152,
+    0.49
+   ]
+  ],
+  "tris": 268,
+  "mats": [
+   "M_FabricGreen",
+   "M_FabricGrey",
+   "M_PlasticBlack"
+  ],
+  "catalog": {
+   "model": "Item_Backpack",
+   "label": "Рюкзак",
+   "itemKey": "Item_Backpack",
+   "massKg": 4.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.25,
+     -0.0
+    ],
+    "size": [
+     0.32,
+     0.5,
+     0.3
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 268
+  },
+  "count": 2,
+  "rooms": {
+   "Kaserne": 2
+  },
+  "guid": "92aae93c2b458db50b1b0c46b37bce2c"
+ },
+ "Item_BinderBlue": {
+  "bounds": [
+   [
+    -0.16,
+    -0.145,
+    -0.0
+   ],
+   [
+    0.166,
+    0.145,
+    0.07
+   ]
+  ],
+  "tris": 104,
+  "mats": [
+   "M_BV_BlueMetal",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_BinderBlue",
+   "label": "Папка",
+   "itemKey": "Item_BinderBlue",
+   "massKg": 1.2,
+   "collider": {
+    "center": [
+     -0.0,
+     0.035,
+     -0.0
+    ],
+    "size": [
+     0.33,
+     0.07,
+     0.29
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 104
+  },
+  "count": 4,
+  "rooms": {
+   "Leitstand": 2,
+   "Stationsleiter": 2
+  },
+  "guid": "f596e2f2f42fd5cf8a7b5e10f28807b5"
+ },
+ "Item_BinderRed": {
+  "bounds": [
+   [
+    -0.16,
+    -0.145,
+    -0.0
+   ],
+   [
+    0.166,
+    0.145,
+    0.07
+   ]
+  ],
+  "tris": 104,
+  "mats": [
+   "M_BV_RedMetal",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_BinderRed",
+   "label": "Папка",
+   "itemKey": "Item_BinderRed",
+   "massKg": 1.2,
+   "collider": {
+    "center": [
+     -0.0,
+     0.035,
+     -0.0
+    ],
+    "size": [
+     0.33,
+     0.07,
+     0.29
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 104
+  },
+  "count": 3,
+  "rooms": {
+   "Serverraum": 2,
+   "Stationsleiter": 1
+  },
+  "guid": "1fb233352dd97881e2f5a1cc9696992a"
+ },
+ "Item_Book": {
+  "bounds": [
+   [
+    -0.075,
+    -0.11,
+    -0.0
+   ],
+   [
+    0.075,
+    0.11,
+    0.03
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_Book",
+   "label": "Книга",
+   "itemKey": "Item_Book",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.015,
+     -0.0
+    ],
+    "size": [
+     0.15,
+     0.03,
+     0.22
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 2,
+  "rooms": {
+   "Kaserne": 2
+  },
+  "guid": "91f8110088454292e7f03259c098659d"
+ },
+ "Item_BookOpen": {
+  "bounds": [
+   [
+    -0.15,
+    -0.11,
+    -0.004
+   ],
+   [
+    0.15,
+    0.11,
+    0.02
+   ]
+  ],
+  "tris": 24,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_BookOpen",
+   "label": "Раскрытая книга",
+   "itemKey": "Item_BookOpen",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.015,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.03,
+     0.22
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 24,
+   "readable": true
+  },
+  "count": 2,
+  "rooms": {
+   "Leitstand": 1,
+   "Kaserne": 1
+  },
+  "guid": "a63425eefb92c34909113bd7327a93b7"
+ },
+ "Item_BookStack": {
+  "bounds": [
+   [
+    -0.119,
+    -0.119,
+    -0.0
+   ],
+   [
+    0.09,
+    0.133,
+    0.096
+   ]
+  ],
+  "tris": 36,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_BookStack",
+   "label": "Стопка книг",
+   "itemKey": "Item_BookStack",
+   "massKg": 1.5,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0478,
+     -0.0
+    ],
+    "size": [
+     0.2,
+     0.09564,
+     0.26
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 36
+  },
+  "count": 3,
+  "rooms": {
+   "Kaserne": 1,
+   "Stationsleiter": 2
+  },
+  "guid": "b4a3dccfac8a9c517f9526f466a6228d"
+ },
+ "Item_Boots": {
+  "bounds": [
+   [
+    -0.059,
+    -0.141,
+    -0.0
+   ],
+   [
+    0.199,
+    0.141,
+    0.26
+   ]
+  ],
+  "tris": 264,
+  "mats": [
+   "M_LaminateDark",
+   "M_Rubber"
+  ],
+  "catalog": {
+   "model": "Item_Boots",
+   "label": "Ботинки",
+   "itemKey": "Item_Boots",
+   "massKg": 2.0,
+   "collider": {
+    "center": [
+     -0.05,
+     0.13,
+     -0.0
+    ],
+    "size": [
+     0.32,
+     0.26,
+     0.26
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 264
+  },
+  "count": 3,
+  "rooms": {
+   "Windfang": 1,
+   "Kaserne": 2
+  },
+  "guid": "f5c9370b606a233c2712e4b16bfc31e1"
+ },
+ "Item_BottleBeer": {
+  "bounds": [
+   [
+    -0.033,
+    -0.033,
+    -0.0
+   ],
+   [
+    0.033,
+    0.034,
+    0.255
+   ]
+  ],
+  "tris": 188,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_Dress",
+   "M_GlassBrown"
+  ],
+  "catalog": {
+   "model": "Item_BottleBeer",
+   "label": "Пивная бутылка",
+   "itemKey": "Item_BottleBeer",
+   "massKg": 0.45,
+   "collider": {
+    "center": [
+     -0.0,
+     0.13,
+     -0.0
+    ],
+    "size": [
+     0.07,
+     0.26,
+     0.07
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 188
+  },
+  "count": 8,
+  "rooms": {
+   "Garage": 2,
+   "Kaserne": 3,
+   "Kueche": 2,
+   "Flur_OG": 1
+  },
+  "guid": "4a81632e5dce14515f8c2ae09576c1e8"
+ },
+ "Item_BottleBeerLying": {
+  "bounds": [
+   [
+    -0.12,
+    -0.033,
+    0.0
+   ],
+   [
+    0.135,
+    0.034,
+    0.066
+   ]
+  ],
+  "tris": 188,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_Dress",
+   "M_GlassBrown"
+  ],
+  "catalog": {
+   "model": "Item_BottleBeerLying",
+   "label": "Пивная бутылка",
+   "itemKey": "Item_BottleBeerLying",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.035,
+     -0.0
+    ],
+    "size": [
+     0.26,
+     0.07,
+     0.07
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 188
+  },
+  "count": 2,
+  "rooms": {
+   "Kaserne": 2
+  },
+  "guid": "8266becd99e33e83897169b0baa47660"
+ },
+ "Item_BottleSchnapps": {
+  "bounds": [
+   [
+    -0.042,
+    -0.042,
+    -0.0
+   ],
+   [
+    0.042,
+    0.043,
+    0.265
+   ]
+  ],
+  "tris": 188,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_Dress",
+   "M_GlassClearProp"
+  ],
+  "catalog": {
+   "model": "Item_BottleSchnapps",
+   "label": "Бутылка шнапса",
+   "itemKey": "Item_BottleSchnapps",
+   "massKg": 0.45,
+   "collider": {
+    "center": [
+     -0.0,
+     0.13,
+     -0.0
+    ],
+    "size": [
+     0.07,
+     0.26,
+     0.07
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 188
+  },
+  "count": 2,
+  "rooms": {
+   "Kaserne": 1,
+   "Stationsleiter": 1
+  },
+  "guid": "ca8ffdfde37be56742f1dfdf7be9623b"
+ },
+ "Item_BottleWater": {
+  "bounds": [
+   [
+    -0.033,
+    -0.031,
+    -0.0
+   ],
+   [
+    0.033,
+    0.031,
+    0.255
+   ]
+  ],
+  "tris": 168,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_GlassGreen"
+  ],
+  "catalog": {
+   "model": "Item_BottleWater",
+   "label": "Бутылка воды",
+   "itemKey": "Item_BottleWater",
+   "massKg": 0.45,
+   "collider": {
+    "center": [
+     -0.0,
+     0.13,
+     -0.0
+    ],
+    "size": [
+     0.07,
+     0.26,
+     0.07
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 168
+  },
+  "count": 4,
+  "rooms": {
+   "Lager": 2,
+   "Kueche": 2
+  },
+  "guid": "c0aa91f0c527f1ffc7f1e3307e5ee1db"
+ },
+ "Item_BoxLarge": {
+  "bounds": [
+   [
+    -0.275,
+    -0.2,
+    -0.0
+   ],
+   [
+    0.275,
+    0.2,
+    0.4
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_BoxLarge",
+   "label": "Большая коробка",
+   "itemKey": "Item_BoxLarge",
+   "massKg": 2.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.2,
+     -0.0
+    ],
+    "size": [
+     0.55,
+     0.4,
+     0.4
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 4,
+  "rooms": {
+   "Lager": 4
+  },
+  "guid": "c569a6b650110fe4ac6199805adcdf09"
+ },
+ "Item_BoxOpen": {
+  "bounds": [
+   [
+    -0.225,
+    -0.295,
+    -0.0
+   ],
+   [
+    0.225,
+    0.295,
+    0.338
+   ]
+  ],
+  "tris": 36,
+  "mats": [
+   "M_Dress",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_BoxOpen",
+   "label": "Открытая коробка",
+   "itemKey": "Item_BoxOpen",
+   "massKg": 0.6,
+   "collider": {
+    "center": [
+     -0.0,
+     0.15,
+     -0.0
+    ],
+    "size": [
+     0.45,
+     0.3,
+     0.32
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 36
+  },
+  "count": 2,
+  "rooms": {
+   "Lager": 2
+  },
+  "guid": "b90b0073ca61511f41dc23cec8f93c19"
+ },
+ "Item_BoxSmall": {
+  "bounds": [
+   [
+    -0.15,
+    -0.11,
+    -0.0
+   ],
+   [
+    0.15,
+    0.11,
+    0.2
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_BoxSmall",
+   "label": "Коробка",
+   "itemKey": "Item_BoxSmall",
+   "massKg": 2.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.1,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.2,
+     0.22
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 5,
+  "rooms": {
+   "Windfang": 1,
+   "Lager": 4
+  },
+  "guid": "0ea494c3de2583151ca3564906788937"
+ },
+ "Item_BreadMouldy": {
+  "bounds": [
+   [
+    -0.12,
+    -0.07,
+    -0.0
+   ],
+   [
+    0.12,
+    0.055,
+    0.091
+   ]
+  ],
+  "tris": 104,
+  "mats": [
+   "M_BV_GreenMetal",
+   "M_Sawdust"
+  ],
+  "catalog": {
+   "model": "Item_BreadMouldy",
+   "label": "Заплесневелый хлеб",
+   "itemKey": "Item_BreadMouldy",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.045,
+     -0.0
+    ],
+    "size": [
+     0.24,
+     0.09,
+     0.11
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 104
+  },
+  "count": 1,
+  "rooms": {
+   "Kueche": 1
+  },
+  "guid": "60256f72e24f4169d27897f866479607"
+ },
+ "Item_Broom": {
+  "bounds": [
+   [
+    -0.16,
+    -0.03,
+    -0.0
+   ],
+   [
+    0.16,
+    0.03,
+    1.4
+   ]
+  ],
+  "tris": 468,
+  "mats": [
+   "M_HutTimber",
+   "M_Sawdust"
+  ],
+  "catalog": {
+   "model": "Item_Broom",
+   "label": "Метла",
+   "itemKey": "Item_Broom",
+   "massKg": 0.8,
+   "collider": {
+    "center": [
+     -0.0,
+     0.7,
+     -0.0
+    ],
+    "size": [
+     0.33,
+     1.4,
+     0.07
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 468
+  },
+  "count": 1,
+  "rooms": {
+   "Flur_UG": 1
+  },
+  "guid": "64f56affee004f74cca4d2020579492e"
+ },
+ "Item_Bucket": {
+  "bounds": [
+   [
+    -0.153,
+    -0.15,
+    -0.0
+   ],
+   [
+    0.153,
+    0.15,
+    0.37
+   ]
+  ],
+  "tris": 172,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Bucket",
+   "label": "Ведро",
+   "itemKey": "Item_Bucket",
+   "massKg": 1.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.185,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.37,
+     0.3
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 172
+  },
+  "count": 1,
+  "rooms": {
+   "Lager": 1
+  },
+  "guid": "dab9326d70d3ca86f89c50c5dbf3b85c"
+ },
+ "Item_BucketWater": {
+  "bounds": [
+   [
+    -0.153,
+    -0.15,
+    -0.0
+   ],
+   [
+    0.153,
+    0.15,
+    0.37
+   ]
+  ],
+  "tris": 216,
+  "mats": [
+   "M_BV_BlueMetal",
+   "M_Steel",
+   "M_Water"
+  ],
+  "catalog": {
+   "model": "Item_BucketWater",
+   "label": "Ведро с водой",
+   "itemKey": "Item_BucketWater",
+   "massKg": 1.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.185,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.37,
+     0.3
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 216
+  },
+  "count": 2,
+  "rooms": {
+   "Flur_EG": 1,
+   "Waschraum": 1
+  },
+  "guid": "151a02e1ec3e8b7b9436c717f07ef29e"
+ },
+ "Item_Butts": {
+  "bounds": [
+   [
+    -0.043,
+    -0.052,
+    0.0
+   ],
+   [
+    0.059,
+    0.03,
+    0.008
+   ]
+  ],
+  "tris": 192,
+  "mats": [
+   "M_BV_StripeOrange",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_Butts",
+   "label": "Окурки",
+   "itemKey": "Item_Butts",
+   "massKg": 0.005,
+   "collider": {
+    "center": [
+     -0.0,
+     0.005,
+     -0.0
+    ],
+    "size": [
+     0.12,
+     0.01,
+     0.12
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 192
+  },
+  "count": 3,
+  "rooms": {
+   "Leitstand": 2,
+   "Treppenhaus": 1
+  },
+  "guid": "432396e0e35e5ec8d7691e384d7c89f5"
+ },
+ "Item_CableReel": {
+  "bounds": [
+   [
+    -0.18,
+    -0.14,
+    -0.0
+   ],
+   [
+    0.18,
+    0.14,
+    0.373
+   ]
+  ],
+  "tris": 264,
+  "mats": [
+   "M_BV_OliveDark",
+   "M_BV_RedMetal",
+   "M_PlasticBlack",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_CableReel",
+   "label": "Катушка кабеля",
+   "itemKey": "Item_CableReel",
+   "massKg": 5.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.185,
+     -0.0
+    ],
+    "size": [
+     0.36,
+     0.37,
+     0.28
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 264
+  },
+  "count": 2,
+  "rooms": {
+   "Lager": 1,
+   "Serverraum": 1
+  },
+  "guid": "d514883850c8125528e5b617f9b8be62"
+ },
+ "Item_CanCrushed": {
+  "bounds": [
+   [
+    -0.037,
+    -0.049,
+    0.006
+   ],
+   [
+    0.037,
+    0.0,
+    0.058
+   ]
+  ],
+  "tris": 76,
+  "mats": [
+   "M_BV_Galvanized"
+  ],
+  "catalog": {
+   "model": "Item_CanCrushed",
+   "label": "Мятая банка",
+   "itemKey": "Item_CanCrushed",
+   "massKg": 0.015,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0325,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.065,
+     0.05
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 76
+  },
+  "count": 3,
+  "rooms": {
+   "Kaserne": 3
+  },
+  "guid": "d3d99a0c8d54bd00bea35e19d9a16c7d"
+ },
+ "Item_CanGreen": {
+  "bounds": [
+   [
+    -0.031,
+    -0.033,
+    -0.0
+   ],
+   [
+    0.031,
+    0.033,
+    0.117
+   ]
+  ],
+  "tris": 240,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_BV_GreenMetal"
+  ],
+  "catalog": {
+   "model": "Item_CanGreen",
+   "label": "Банка",
+   "itemKey": "Item_CanGreen",
+   "massKg": 0.015,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0575,
+     -0.0
+    ],
+    "size": [
+     0.066,
+     0.115,
+     0.066
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 240
+  },
+  "count": 0,
+  "rooms": {},
+  "guid": "b0ec8a91e8601650e05e196f8ffaccb4"
+ },
+ "Item_CanRed": {
+  "bounds": [
+   [
+    -0.031,
+    -0.033,
+    -0.0
+   ],
+   [
+    0.031,
+    0.033,
+    0.117
+   ]
+  ],
+  "tris": 240,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_BV_RedMetal"
+  ],
+  "catalog": {
+   "model": "Item_CanRed",
+   "label": "Банка",
+   "itemKey": "Item_CanRed",
+   "massKg": 0.015,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0575,
+     -0.0
+    ],
+    "size": [
+     0.066,
+     0.115,
+     0.066
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 240
+  },
+  "count": 4,
+  "rooms": {
+   "Leitstand": 2,
+   "Kueche": 2
+  },
+  "guid": "5dc7266307f8c9357fbafa25c958daa8"
+ },
+ "Item_CardboardFlat": {
+  "bounds": [
+   [
+    -0.275,
+    -0.21,
+    -0.0
+   ],
+   [
+    0.275,
+    0.21,
+    0.012
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress",
+   "M_Sawdust"
+  ],
+  "catalog": {
+   "model": "Item_CardboardFlat",
+   "label": "Картон",
+   "itemKey": "Item_CardboardFlat",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.006,
+     -0.0
+    ],
+    "size": [
+     0.55,
+     0.012,
+     0.42
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 12
+  },
+  "count": 1,
+  "rooms": {
+   "Windfang": 1
+  },
+  "guid": "038a8d58d0f7d4791f6088ae0ab9c9b7"
+ },
+ "Item_Cards": {
+  "bounds": [
+   [
+    -0.187,
+    -0.217,
+    -0.0
+   ],
+   [
+    0.291,
+    0.222,
+    0.016
+   ]
+  ],
+  "tris": 96,
+  "mats": [
+   "M_Dress",
+   "M_PaintWhite"
+  ],
+  "catalog": {
+   "model": "Item_Cards",
+   "label": "Игральные карты",
+   "itemKey": "Item_Cards",
+   "massKg": 0.1,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0085,
+     -0.0
+    ],
+    "size": [
+     0.56,
+     0.017,
+     0.42
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 96
+  },
+  "count": 1,
+  "rooms": {
+   "Kaserne": 1
+  },
+  "guid": "d5e2fda91e49c59a690b6fac70169e8d"
+ },
+ "Item_CigPack": {
+  "bounds": [
+   [
+    -0.027,
+    -0.011,
+    -0.0
+   ],
+   [
+    0.027,
+    0.011,
+    0.088
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_CigPack",
+   "label": "Пачка сигарет",
+   "itemKey": "Item_CigPack",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     0.044,
+     -0.0
+    ],
+    "size": [
+     0.055,
+     0.088,
+     0.022
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 12
+  },
+  "count": 5,
+  "rooms": {
+   "Leitstand": 2,
+   "Flur_EG": 1,
+   "Kaserne": 2
+  },
+  "guid": "57923f3cf57c783a839fc9af6b1b170a"
+ },
+ "Item_CigPackCrushed": {
+  "bounds": [
+   [
+    -0.033,
+    -0.025,
+    -0.0
+   ],
+   [
+    0.033,
+    0.025,
+    0.02
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_CigPackCrushed",
+   "label": "Мятая пачка",
+   "itemKey": "Item_CigPackCrushed",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     0.01,
+     -0.0
+    ],
+    "size": [
+     0.06,
+     0.02,
+     0.03
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 12
+  },
+  "count": 1,
+  "rooms": {
+   "Treppenhaus": 1
+  },
+  "guid": "37f8069adefe37f1615bccfe5398baa4"
+ },
+ "Item_Clipboard": {
+  "bounds": [
+   [
+    -0.115,
+    -0.16,
+    -0.0
+   ],
+   [
+    0.115,
+    0.16,
+    0.017
+   ]
+  ],
+  "tris": 26,
+  "mats": [
+   "M_LaminateDark",
+   "M_Notes",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Clipboard",
+   "label": "Планшет с бумагами",
+   "itemKey": "Item_Clipboard",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.01,
+     -0.0
+    ],
+    "size": [
+     0.23,
+     0.02,
+     0.32
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 26,
+   "readable": true
+  },
+  "count": 4,
+  "rooms": {
+   "Leitstand": 1,
+   "Stationsleiter": 1,
+   "Schaltraum": 1,
+   "Heizung": 1
+  },
+  "guid": "a60f15f40d29adffed4c4fe25517465c"
+ },
+ "Item_Clothes": {
+  "bounds": [
+   [
+    -0.418,
+    -0.347,
+    -0.0
+   ],
+   [
+    0.379,
+    0.22,
+    0.14
+   ]
+  ],
+  "tris": 48,
+  "mats": [
+   "M_FabricBlue",
+   "M_FabricGreen",
+   "M_FabricGrey"
+  ],
+  "catalog": {
+   "model": "Item_Clothes",
+   "label": "Одежда",
+   "itemKey": "Item_Clothes",
+   "massKg": 1.2,
+   "collider": {
+    "center": [
+     -0.0,
+     0.07,
+     -0.0
+    ],
+    "size": [
+     0.5,
+     0.14,
+     0.4
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 48
+  },
+  "count": 3,
+  "rooms": {
+   "Kaserne": 3
+  },
+  "guid": "414c63159a18b3a8d22cc0f2d68b2dfc"
+ },
+ "Item_Dustpan": {
+  "bounds": [
+   [
+    -0.123,
+    -0.11,
+    -0.0
+   ],
+   [
+    0.123,
+    0.243,
+    0.11
+   ]
+  ],
+  "tris": 76,
+  "mats": [
+   "M_BV_RedMetal",
+   "M_PlasticBlack"
+  ],
+  "catalog": {
+   "model": "Item_Dustpan",
+   "label": "Совок",
+   "itemKey": "Item_Dustpan",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.05,
+     -0.07
+    ],
+    "size": [
+     0.25,
+     0.1,
+     0.36
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 76
+  },
+  "count": 1,
+  "rooms": {
+   "Flur_UG": 1
+  },
+  "guid": "adcbe2c6b4e23129509ec6dea00f109c"
+ },
+ "Item_Envelope": {
+  "bounds": [
+   [
+    -0.119,
+    -0.076,
+    -0.0
+   ],
+   [
+    0.119,
+    0.076,
+    0.004
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_Envelope",
+   "label": "Конверт",
+   "itemKey": "Item_Envelope",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     0.002,
+     -0.0
+    ],
+    "size": [
+     0.22,
+     0.004,
+     0.11
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 4,
+  "rooms": {
+   "Kaserne": 2,
+   "Stationsleiter": 2
+  },
+  "guid": "251bcdb6e454e11b02ce79b1f3d64103"
+ },
+ "Item_Flashlight": {
+  "bounds": [
+   [
+    -0.118,
+    -0.029,
+    -0.027
+   ],
+   [
+    0.132,
+    0.029,
+    0.027
+   ]
+  ],
+  "tris": 448,
+  "mats": [
+   "M_PaintOliveDark",
+   "M_Rubber",
+   "M_Steel",
+   "M_StoveIron",
+   "M_TorchLens"
+  ],
+  "catalog": {
+   "model": "Item_Flashlight",
+   "label": "Фонарик",
+   "itemKey": "Item_Flashlight",
+   "massKg": 0.45,
+   "collider": {
+    "center": [
+     -0.01,
+     0.0,
+     -0.0
+    ],
+    "size": [
+     0.245,
+     0.057,
+     0.057
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 448,
+   "light": {
+    "p": [
+     -0.133,
+     0.0,
+     -0.0
+    ],
+    "d": [
+     -1.0,
+     0.0,
+     -0.0
+    ],
+    "lensOn": "M_TorchLensOn",
+    "lensOff": "M_TorchLens"
+   }
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "02fc8da1a162c62ec226662780795182"
+ },
+ "Item_Funnel": {
+  "bounds": [
+   [
+    -0.117,
+    -0.117,
+    -0.0
+   ],
+   [
+    0.138,
+    0.117,
+    0.307
+   ]
+  ],
+  "tris": 388,
+  "mats": [
+   "M_Galvanized"
+  ],
+  "catalog": {
+   "model": "Item_Funnel",
+   "label": "Воронка",
+   "itemKey": "Item_Funnel",
+   "massKg": 0.35,
+   "collider": {
+    "center": [
+     -0.0,
+     0.155,
+     -0.0
+    ],
+    "size": [
+     0.23,
+     0.31,
+     0.23
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 388
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "6f036dbf77df1ba38dadee2f1f510f1a"
+ },
+ "Item_Hammer": {
+  "bounds": [
+   [
+    -0.14,
+    -0.055,
+    0.0
+   ],
+   [
+    0.157,
+    0.055,
+    0.036
+   ]
+  ],
+  "tris": 72,
+  "mats": [
+   "M_HutTimber",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_Hammer",
+   "label": "Молоток",
+   "itemKey": "Item_Hammer",
+   "massKg": 0.6,
+   "collider": {
+    "center": [
+     -0.0,
+     0.018,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.036,
+     0.11
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 72
+  },
+  "count": 1,
+  "rooms": {
+   "Garage": 1
+  },
+  "guid": "f5b1d4c431c0e57de022c69a0d8126a7"
+ },
+ "Item_Headphones": {
+  "bounds": [
+   [
+    -0.118,
+    -0.04,
+    -0.0
+   ],
+   [
+    0.118,
+    0.04,
+    0.108
+   ]
+  ],
+  "tris": 200,
+  "mats": [
+   "M_PlasticBlack"
+  ],
+  "catalog": {
+   "model": "Item_Headphones",
+   "label": "Наушники",
+   "itemKey": "Item_Headphones",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.055,
+     -0.0
+    ],
+    "size": [
+     0.22,
+     0.11,
+     0.09
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 200
+  },
+  "count": 2,
+  "rooms": {
+   "Leitstand": 1,
+   "Kaserne": 1
+  },
+  "guid": "46e133c9b2babfbe114e7f0d79467777"
+ },
+ "Item_Jar": {
+  "bounds": [
+   [
+    -0.043,
+    -0.045,
+    -0.0
+   ],
+   [
+    0.043,
+    0.045,
+    0.145
+   ]
+  ],
+  "tris": 228,
+  "mats": [
+   "M_BV_OliveDark",
+   "M_BV_RedMetal",
+   "M_GlassClearProp"
+  ],
+  "catalog": {
+   "model": "Item_Jar",
+   "label": "Стеклянная банка",
+   "itemKey": "Item_Jar",
+   "massKg": 0.5,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0725,
+     -0.0
+    ],
+    "size": [
+     0.09,
+     0.145,
+     0.09
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 228
+  },
+  "count": 2,
+  "rooms": {
+   "Kueche": 2
+  },
+  "guid": "0c10f862f39a7e8d9180cc6066caa050"
+ },
+ "Item_Jerrycan20": {
+  "bounds": [
+   [
+    -0.177,
+    -0.093,
+    -0.005
+   ],
+   [
+    0.177,
+    0.093,
+    0.537
+   ]
+  ],
+  "tris": 692,
+  "mats": [
+   "M_Jerrycan",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_Jerrycan20",
+   "label": "Канистра 20 л",
+   "itemKey": "Item_Jerrycan20",
+   "massKg": 18.5,
+   "collider": {
+    "center": [
+     -0.0,
+     0.26,
+     -0.0
+    ],
+    "size": [
+     0.355,
+     0.52,
+     0.175
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 692,
+   "capacityL": 20.0,
+   "massEmptyKg": 4.0,
+   "massFullKg": 18.5,
+   "grip": [
+    0.035,
+    0.504,
+    -0.0
+   ],
+   "spout": [
+    -0.1393,
+    0.5193,
+    -0.0
+   ]
+  },
+  "count": 2,
+  "rooms": {
+   "null": 2
+  },
+  "guid": "30111994ed606c46a76842b266a39ecd"
+ },
+ "Item_Kettle": {
+  "bounds": [
+   [
+    -0.092,
+    -0.092,
+    -0.0
+   ],
+   [
+    0.154,
+    0.092,
+    0.207
+   ]
+  ],
+  "tris": 240,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_PlasticBlack"
+  ],
+  "catalog": {
+   "model": "Item_Kettle",
+   "label": "Чайник",
+   "itemKey": "Item_Kettle",
+   "massKg": 0.8,
+   "collider": {
+    "center": [
+     -0.0,
+     0.11,
+     -0.0
+    ],
+    "size": [
+     0.26,
+     0.22,
+     0.2
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 240
+  },
+  "count": 1,
+  "rooms": {
+   "Kueche": 1
+  },
+  "guid": "edb5cb159c6a68f8be2b76dd55786f97"
+ },
+ "Item_Key_Garage": {
+  "bounds": [
+   [
+    -0.016,
+    -0.003,
+    -0.084
+   ],
+   [
+    0.016,
+    0.003,
+    0.001
+   ]
+  ],
+  "tris": 200,
+  "mats": [
+   "M_BV_Brass",
+   "M_BV_GreenMetal",
+   "M_Paper",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Key_Garage",
+   "label": "Ключ «Garage»",
+   "itemKey": "Item_Key_Garage",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     -0.04,
+     -0.0
+    ],
+    "size": [
+     0.04,
+     0.08,
+     0.012
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 200,
+   "key": "Garage"
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "bcf17af2b336a64b72e148f9aacfe699"
+ },
+ "Item_Key_Generator": {
+  "bounds": [
+   [
+    -0.016,
+    -0.003,
+    -0.084
+   ],
+   [
+    0.016,
+    0.003,
+    0.001
+   ]
+  ],
+  "tris": 200,
+  "mats": [
+   "M_BV_Brass",
+   "M_BV_YellowMetal",
+   "M_Paper",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Key_Generator",
+   "label": "Ключ «Generator»",
+   "itemKey": "Item_Key_Generator",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     -0.04,
+     -0.0
+    ],
+    "size": [
+     0.04,
+     0.08,
+     0.012
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 200,
+   "key": "Generator"
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "d2c9347403f4e3f033282f8995ff08f5"
+ },
+ "Item_Key_Hauptgebaeude": {
+  "bounds": [
+   [
+    -0.016,
+    -0.003,
+    -0.084
+   ],
+   [
+    0.016,
+    0.003,
+    0.001
+   ]
+  ],
+  "tris": 200,
+  "mats": [
+   "M_BV_BlueMetal",
+   "M_BV_Brass",
+   "M_Paper",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Key_Hauptgebaeude",
+   "label": "Ключ «Hauptgebäude»",
+   "itemKey": "Item_Key_Hauptgebaeude",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     -0.04,
+     -0.0
+    ],
+    "size": [
+     0.04,
+     0.08,
+     0.012
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 200,
+   "key": "Hauptgebäude"
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "d05d6a667075e82dc384bf9c1e38ccf4"
+ },
+ "Item_Key_Schranke": {
+  "bounds": [
+   [
+    -0.016,
+    -0.003,
+    -0.084
+   ],
+   [
+    0.016,
+    0.003,
+    0.001
+   ]
+  ],
+  "tris": 200,
+  "mats": [
+   "M_BV_Brass",
+   "M_BV_RedMetal",
+   "M_Paper",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Key_Schranke",
+   "label": "Ключ «Schranke»",
+   "itemKey": "Item_Key_Schranke",
+   "massKg": 0.02,
+   "collider": {
+    "center": [
+     -0.0,
+     -0.04,
+     -0.0
+    ],
+    "size": [
+     0.04,
+     0.08,
+     0.012
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 200,
+   "key": "Schranke"
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "180c3dd08d96d655cd2908ef8306a9fe"
+ },
+ "Item_Magazine": {
+  "bounds": [
+   [
+    -0.142,
+    -0.165,
+    -0.0
+   ],
+   [
+    0.142,
+    0.165,
+    0.006
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_Magazine",
+   "label": "Журнал",
+   "itemKey": "Item_Magazine",
+   "massKg": 0.15,
+   "collider": {
+    "center": [
+     -0.0,
+     0.003,
+     -0.0
+    ],
+    "size": [
+     0.21,
+     0.006,
+     0.28
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 3,
+  "rooms": {
+   "Kaserne": 2,
+   "Kueche": 1
+  },
+  "guid": "77e1b56e8b5291aa67e7b82cc05d5744"
+ },
+ "Item_Medicine": {
+  "bounds": [
+   [
+    -0.045,
+    -0.02,
+    -0.0
+   ],
+   [
+    0.045,
+    0.02,
+    0.04
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_Medicine",
+   "label": "Лекарства",
+   "itemKey": "Item_Medicine",
+   "massKg": 0.05,
+   "collider": {
+    "center": [
+     -0.0,
+     0.02,
+     -0.0
+    ],
+    "size": [
+     0.09,
+     0.04,
+     0.04
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 2,
+  "rooms": {
+   "Waschraum": 1,
+   "Stationsleiter": 1
+  },
+  "guid": "cee6406dc64043c8d7774b0b815f9c78"
+ },
+ "Item_Mop": {
+  "bounds": [
+   [
+    -0.131,
+    -0.125,
+    -0.011
+   ],
+   [
+    0.131,
+    0.125,
+    1.35
+   ]
+  ],
+  "tris": 384,
+  "mats": [
+   "M_BV_RedMetal",
+   "M_FabricBeige",
+   "M_HutTimber"
+  ],
+  "catalog": {
+   "model": "Item_Mop",
+   "label": "Швабра",
+   "itemKey": "Item_Mop",
+   "massKg": 1.2,
+   "collider": {
+    "center": [
+     -0.0,
+     0.68,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     1.36,
+     0.3
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 384
+  },
+  "count": 2,
+  "rooms": {
+   "Flur_EG": 1,
+   "Waschraum": 1
+  },
+  "guid": "7ae8cd250b7ec0038b01b536c6366304"
+ },
+ "Item_MugGreen": {
+  "bounds": [
+   [
+    -0.041,
+    -0.041,
+    -0.0
+   ],
+   [
+    0.065,
+    0.041,
+    0.095
+   ]
+  ],
+  "tris": 190,
+  "mats": [
+   "M_FX_EnamelGreen",
+   "M_FX_EnamelWhite",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_MugGreen",
+   "label": "Кружка",
+   "itemKey": "Item_MugGreen",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0475,
+     -0.0
+    ],
+    "size": [
+     0.11,
+     0.095,
+     0.085
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 190
+  },
+  "count": 3,
+  "rooms": {
+   "Serverraum": 1,
+   "Kaserne": 2
+  },
+  "guid": "8a6ad9a9814dc85ad38713d275e87cab"
+ },
+ "Item_MugTipped": {
+  "bounds": [
+   [
+    -0.047,
+    -0.041,
+    -0.024
+   ],
+   [
+    0.048,
+    0.041,
+    0.082
+   ]
+  ],
+  "tris": 190,
+  "mats": [
+   "M_FX_EnamelGreen",
+   "M_FX_EnamelWhite",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_MugTipped",
+   "label": "Кружка",
+   "itemKey": "Item_MugTipped",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.045,
+     -0.0
+    ],
+    "size": [
+     0.1,
+     0.09,
+     0.09
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 190
+  },
+  "count": 2,
+  "rooms": {
+   "Leitstand": 1,
+   "Kueche": 1
+  },
+  "guid": "a2da48ac50d51d33f10fe58d439825c8"
+ },
+ "Item_MugWhite": {
+  "bounds": [
+   [
+    -0.041,
+    -0.041,
+    -0.0
+   ],
+   [
+    0.065,
+    0.041,
+    0.095
+   ]
+  ],
+  "tris": 190,
+  "mats": [
+   "M_FX_EnamelGreen",
+   "M_FX_EnamelWhite",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_MugWhite",
+   "label": "Кружка",
+   "itemKey": "Item_MugWhite",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0475,
+     -0.0
+    ],
+    "size": [
+     0.11,
+     0.095,
+     0.085
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 190
+  },
+  "count": 6,
+  "rooms": {
+   "Leitstand": 2,
+   "Kueche": 3,
+   "Stationsleiter": 1
+  },
+  "guid": "44fbe2555858502ded526bc45d25db15"
+ },
+ "Item_Newspaper": {
+  "bounds": [
+   [
+    -0.15,
+    -0.21,
+    -0.0
+   ],
+   [
+    0.15,
+    0.21,
+    0.012
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_Newspaper",
+   "label": "Газета",
+   "itemKey": "Item_Newspaper",
+   "massKg": 0.15,
+   "collider": {
+    "center": [
+     -0.0,
+     0.006,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.012,
+     0.42
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 12
+  },
+  "count": 1,
+  "rooms": {
+   "Windfang": 1
+  },
+  "guid": "854a9438ed643fe004e174b800a54db4"
+ },
+ "Item_NewspaperOpen": {
+  "bounds": [
+   [
+    -0.415,
+    -0.278,
+    0.0
+   ],
+   [
+    0.403,
+    0.278,
+    0.004
+   ]
+  ],
+  "tris": 24,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_NewspaperOpen",
+   "label": "Раскрытая газета",
+   "itemKey": "Item_NewspaperOpen",
+   "massKg": 0.15,
+   "collider": {
+    "center": [
+     -0.0,
+     0.005,
+     -0.0
+    ],
+    "size": [
+     0.8,
+     0.01,
+     0.55
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 24
+  },
+  "count": 2,
+  "rooms": {
+   "Leitstand": 1,
+   "Kueche": 1
+  },
+  "guid": "f67ca8900c48572c8177ca2c26bbc3a1"
+ },
+ "Item_Note": {
+  "bounds": [
+   [
+    -0.074,
+    -0.105,
+    0.001
+   ],
+   [
+    0.074,
+    0.105,
+    0.006
+   ]
+  ],
+  "tris": 8,
+  "mats": [
+   "M_Notes",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_Note",
+   "label": "Записка",
+   "itemKey": "Item_Note",
+   "massKg": 0.005,
+   "collider": {
+    "center": [
+     -0.0,
+     0.003,
+     -0.0
+    ],
+    "size": [
+     0.148,
+     0.006,
+     0.21
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 8,
+   "readable": true
+  },
+  "count": 10,
+  "rooms": {
+   "Windfang": 1,
+   "Serverraum": 1,
+   "Kueche": 2,
+   "Kaserne": 2,
+   "Schaltraum": 1,
+   "Garage": 1,
+   "Treppenhaus": 1,
+   "null": 1
+  },
+  "guid": "1eadeeb4cc0851a9b5e19c7110e099ec"
+ },
+ "Item_NoteForm": {
+  "bounds": [
+   [
+    -0.074,
+    -0.105,
+    0.001
+   ],
+   [
+    0.074,
+    0.105,
+    0.006
+   ]
+  ],
+  "tris": 8,
+  "mats": [
+   "M_Notes",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_NoteForm",
+   "label": "Бланк",
+   "itemKey": "Item_NoteForm",
+   "massKg": 0.005,
+   "collider": {
+    "center": [
+     -0.0,
+     0.003,
+     -0.0
+    ],
+    "size": [
+     0.148,
+     0.006,
+     0.21
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 8,
+   "readable": true
+  },
+  "count": 7,
+  "rooms": {
+   "Leitstand": 2,
+   "Lager": 1,
+   "Stationsleiter": 2,
+   "null": 2
+  },
+  "guid": "fa314a0e0916c66349aa5246be4d1b40"
+ },
+ "Item_OilCan": {
+  "bounds": [
+   [
+    -0.1,
+    -0.05,
+    -0.0
+   ],
+   [
+    0.1,
+    0.05,
+    0.29
+   ]
+  ],
+  "tris": 100,
+  "mats": [
+   "M_BV_BlueMetal",
+   "M_BV_YellowMetal"
+  ],
+  "catalog": {
+   "model": "Item_OilCan",
+   "label": "Канистра масла",
+   "itemKey": "Item_OilCan",
+   "massKg": 5.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.145,
+     -0.0
+    ],
+    "size": [
+     0.2,
+     0.29,
+     0.1
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 100
+  },
+  "count": 4,
+  "rooms": {
+   "Lager": 1,
+   "Garage": 2,
+   "Heizung": 1
+  },
+  "guid": "354c95c30e12cfa4715e038b166974f8"
+ },
+ "Item_Padlock": {
+  "bounds": [
+   [
+    -0.025,
+    -0.014,
+    -0.07
+   ],
+   [
+    0.025,
+    0.012,
+    0.013
+   ]
+  ],
+  "tris": 134,
+  "mats": [
+   "M_BV_Brass",
+   "M_Grille",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Padlock",
+   "label": "Навесной замок",
+   "itemKey": "Item_Padlock",
+   "massKg": 0.2,
+   "collider": {
+    "center": [
+     -0.0,
+     -0.035,
+     -0.0
+    ],
+    "size": [
+     0.05,
+     0.07,
+     0.025
+    ]
+   },
+   "kind": "opening",
+   "clean": false,
+   "tris": 134
+  },
+  "count": 1,
+  "rooms": {
+   "null": 1
+  },
+  "guid": "e72b98374835f71183445c7fb97423d9"
+ },
+ "Item_PaintCan": {
+  "bounds": [
+   [
+    -0.086,
+    -0.085,
+    -0.0
+   ],
+   [
+    0.092,
+    0.086,
+    0.301
+   ]
+  ],
+  "tris": 212,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_PaintWhite",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_PaintCan",
+   "label": "Банка краски",
+   "itemKey": "Item_PaintCan",
+   "massKg": 2.5,
+   "collider": {
+    "center": [
+     -0.0,
+     0.1,
+     -0.0
+    ],
+    "size": [
+     0.17,
+     0.2,
+     0.17
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 212
+  },
+  "count": 3,
+  "rooms": {
+   "Lager": 2,
+   "Garage": 1
+  },
+  "guid": "7bdf36a752ab5a6971c4716caafd9072"
+ },
+ "Item_Pan": {
+  "bounds": [
+   [
+    -0.124,
+    -0.127,
+    -0.0
+   ],
+   [
+    0.33,
+    0.127,
+    0.06
+   ]
+  ],
+  "tris": 136,
+  "mats": [
+   "M_PlasticBlack",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_Pan",
+   "label": "Сковорода",
+   "itemKey": "Item_Pan",
+   "massKg": 1.0,
+   "collider": {
+    "center": [
+     -0.08,
+     0.03,
+     -0.0
+    ],
+    "size": [
+     0.46,
+     0.06,
+     0.26
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 136
+  },
+  "count": 1,
+  "rooms": {
+   "Kueche": 1
+  },
+  "guid": "3b7ab0e8e365bcb649b51c3ec0019965"
+ },
+ "Item_PaperBall": {
+  "bounds": [
+   [
+    -0.035,
+    -0.038,
+    0.001
+   ],
+   [
+    0.032,
+    0.027,
+    0.054
+   ]
+  ],
+  "tris": 24,
+  "mats": [
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_PaperBall",
+   "label": "Скомканная бумага",
+   "itemKey": "Item_PaperBall",
+   "massKg": 0.01,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0325,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.065,
+     0.08
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 24
+  },
+  "count": 13,
+  "rooms": {
+   "Windfang": 2,
+   "Leitstand": 3,
+   "Serverraum": 2,
+   "Flur_EG": 2,
+   "Treppenhaus": 1,
+   "Kueche": 2,
+   "Flur_OG": 1
+  },
+  "guid": "30449876b00572591a348669b5a491d0"
+ },
+ "Item_PaperBallB": {
+  "bounds": [
+   [
+    -0.037,
+    -0.038,
+    0.001
+   ],
+   [
+    0.035,
+    0.034,
+    0.061
+   ]
+  ],
+  "tris": 32,
+  "mats": [
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_PaperBallB",
+   "label": "Скомканная бумага",
+   "itemKey": "Item_PaperBallB",
+   "massKg": 0.01,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0325,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.065,
+     0.08
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 32
+  },
+  "count": 1,
+  "rooms": {
+   "Leitstand": 1
+  },
+  "guid": "6d633f23604f1a4b9c95c44c91a684ea"
+ },
+ "Item_PaperStack": {
+  "bounds": [
+   [
+    -0.124,
+    -0.162,
+    0.0
+   ],
+   [
+    0.12,
+    0.161,
+    0.025
+   ]
+  ],
+  "tris": 96,
+  "mats": [
+   "M_Notes",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_PaperStack",
+   "label": "Стопка бумаг",
+   "itemKey": "Item_PaperStack",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.015,
+     -0.0
+    ],
+    "size": [
+     0.22,
+     0.03,
+     0.31
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 96
+  },
+  "count": 9,
+  "rooms": {
+   "Leitstand": 3,
+   "Serverraum": 2,
+   "Stationsleiter": 3,
+   "Schaltraum": 1
+  },
+  "guid": "1317bcbc05cf7b4524a781b41f334b11"
+ },
+ "Item_PhotoFrame": {
+  "bounds": [
+   [
+    -0.08,
+    -0.017,
+    -0.011
+   ],
+   [
+    0.08,
+    0.049,
+    0.129
+   ]
+  ],
+  "tris": 58,
+  "mats": [
+   "M_Dress",
+   "M_LaminateDark"
+  ],
+  "catalog": {
+   "model": "Item_PhotoFrame",
+   "label": "Фото в рамке",
+   "itemKey": "Item_PhotoFrame",
+   "massKg": 0.25,
+   "collider": {
+    "center": [
+     -0.0,
+     0.07,
+     -0.0
+    ],
+    "size": [
+     0.16,
+     0.14,
+     0.08
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 58
+  },
+  "count": 2,
+  "rooms": {
+   "Kaserne": 1,
+   "Stationsleiter": 1
+  },
+  "guid": "7102fb275cf4704fef8c96f2ffe9d091"
+ },
+ "Item_PhotoLoose": {
+  "bounds": [
+   [
+    -0.068,
+    -0.068,
+    -0.0
+   ],
+   [
+    0.068,
+    0.068,
+    0.002
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_Dress",
+   "M_Paper"
+  ],
+  "catalog": {
+   "model": "Item_PhotoLoose",
+   "label": "Фотография",
+   "itemKey": "Item_PhotoLoose",
+   "massKg": 0.005,
+   "collider": {
+    "center": [
+     -0.0,
+     0.001,
+     -0.0
+    ],
+    "size": [
+     0.1,
+     0.002,
+     0.1
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 12,
+   "readable": true
+  },
+  "count": 2,
+  "rooms": {
+   "Kaserne": 1,
+   "Stationsleiter": 1
+  },
+  "guid": "7b1146a9b2bc3c6590b74fd3a941eca2"
+ },
+ "Item_Plate": {
+  "bounds": [
+   [
+    -0.122,
+    -0.125,
+    -0.0
+   ],
+   [
+    0.122,
+    0.125,
+    0.02
+   ]
+  ],
+  "tris": 80,
+  "mats": [
+   "M_FX_EnamelWhite"
+  ],
+  "catalog": {
+   "model": "Item_Plate",
+   "label": "Тарелка",
+   "itemKey": "Item_Plate",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.01,
+     -0.0
+    ],
+    "size": [
+     0.25,
+     0.02,
+     0.25
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 80
+  },
+  "count": 3,
+  "rooms": {
+   "Kueche": 3
+  },
+  "guid": "509451ed189298bf8748891af268438f"
+ },
+ "Item_PlateDirty": {
+  "bounds": [
+   [
+    -0.122,
+    -0.125,
+    -0.0
+   ],
+   [
+    0.122,
+    0.125,
+    0.02
+   ]
+  ],
+  "tris": 120,
+  "mats": [
+   "M_FX_EnamelWhite",
+   "M_Sawdust",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_PlateDirty",
+   "label": "Грязная тарелка",
+   "itemKey": "Item_PlateDirty",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.01,
+     -0.0
+    ],
+    "size": [
+     0.25,
+     0.02,
+     0.25
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 120
+  },
+  "count": 4,
+  "rooms": {
+   "Kueche": 4
+  },
+  "guid": "2e837471bead1344e4db4cd83b188407"
+ },
+ "Item_Pot": {
+  "bounds": [
+   [
+    -0.14,
+    -0.115,
+    -0.0
+   ],
+   [
+    0.14,
+    0.115,
+    0.165
+   ]
+  ],
+  "tris": 304,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_PlasticBlack",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_Pot",
+   "label": "Кастрюля",
+   "itemKey": "Item_Pot",
+   "massKg": 1.2,
+   "collider": {
+    "center": [
+     -0.0,
+     0.085,
+     -0.0
+    ],
+    "size": [
+     0.28,
+     0.17,
+     0.23
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 304
+  },
+  "count": 2,
+  "rooms": {
+   "Kueche": 2
+  },
+  "guid": "a81e59d03ed88f9bad792febd8312804"
+ },
+ "Item_Radio": {
+  "bounds": [
+   [
+    -0.14,
+    -0.06,
+    -0.0
+   ],
+   [
+    0.14,
+    0.045,
+    0.551
+   ]
+  ],
+  "tris": 148,
+  "mats": [
+   "M_BeigePlastic",
+   "M_Grille",
+   "M_PlasticBlack",
+   "M_ScreenOff",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Radio",
+   "label": "Радиоприёмник",
+   "itemKey": "Item_Radio",
+   "massKg": 1.2,
+   "collider": {
+    "center": [
+     -0.0,
+     0.09,
+     -0.0
+    ],
+    "size": [
+     0.28,
+     0.18,
+     0.1
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 148
+  },
+  "count": 1,
+  "rooms": {
+   "Kaserne": 1
+  },
+  "guid": "bd8d614b27d10509e6cc16d8b699f517"
+ },
+ "Item_Rag": {
+  "bounds": [
+   [
+    -0.257,
+    -0.15,
+    -0.0
+   ],
+   [
+    0.154,
+    0.236,
+    0.022
+   ]
+  ],
+  "tris": 16,
+  "mats": [
+   "M_FabricGrey"
+  ],
+  "catalog": {
+   "model": "Item_Rag",
+   "label": "Тряпка",
+   "itemKey": "Item_Rag",
+   "massKg": 0.08,
+   "collider": {
+    "center": [
+     -0.0,
+     0.015,
+     -0.0
+    ],
+    "size": [
+     0.26,
+     0.03,
+     0.2
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 16
+  },
+  "count": 5,
+  "rooms": {
+   "Windfang": 1,
+   "Garage": 2,
+   "Waschraum": 1,
+   "Heizung": 1
+  },
+  "guid": "5bbb176bf1005b30dda834eca3a1b80c"
+ },
+ "Item_RopeCoil": {
+  "bounds": [
+   [
+    -0.176,
+    -0.169,
+    0.001
+   ],
+   [
+    0.176,
+    0.169,
+    0.041
+   ]
+  ],
+  "tris": 320,
+  "mats": [
+   "M_Tarp"
+  ],
+  "catalog": {
+   "model": "Item_RopeCoil",
+   "label": "Моток верёвки",
+   "itemKey": "Item_RopeCoil",
+   "massKg": 2.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.025,
+     -0.0
+    ],
+    "size": [
+     0.34,
+     0.05,
+     0.34
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 320
+  },
+  "count": 1,
+  "rooms": {
+   "Lager": 1
+  },
+  "guid": "7500a56d0160a41fa3de5573cf0a48a0"
+ },
+ "Item_Rug": {
+  "bounds": [
+   [
+    -0.9,
+    -0.45,
+    0.004
+   ],
+   [
+    0.9,
+    0.45,
+    0.004
+   ]
+  ],
+  "tris": 2,
+  "mats": [
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_Rug",
+   "label": "Коврик",
+   "itemKey": "Item_Rug",
+   "massKg": 3.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.005,
+     -0.0
+    ],
+    "size": [
+     1.8,
+     0.01,
+     0.9
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 2
+  },
+  "count": 1,
+  "rooms": {
+   "Kueche": 1
+  },
+  "guid": "81115006a515e7e27dc8905f675bbedb"
+ },
+ "Item_Sack": {
+  "bounds": [
+   [
+    -0.236,
+    -0.18,
+    0.02
+   ],
+   [
+    0.26,
+    0.158,
+    0.338
+   ]
+  ],
+  "tris": 36,
+  "mats": [
+   "M_FabricBeige"
+  ],
+  "catalog": {
+   "model": "Item_Sack",
+   "label": "Мешок",
+   "itemKey": "Item_Sack",
+   "massKg": 25.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.175,
+     -0.0
+    ],
+    "size": [
+     0.56,
+     0.35,
+     0.4
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 36
+  },
+  "count": 2,
+  "rooms": {
+   "Lager": 2
+  },
+  "guid": "c78a79c5db9c0413d840d71eb6987f24"
+ },
+ "Item_Screwdriver": {
+  "bounds": [
+   [
+    -0.05,
+    -0.012,
+    0.002
+   ],
+   [
+    0.14,
+    0.012,
+    0.022
+   ]
+  ],
+  "tris": 56,
+  "mats": [
+   "M_BV_RedMetal",
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Screwdriver",
+   "label": "Отвёртка",
+   "itemKey": "Item_Screwdriver",
+   "massKg": 0.1,
+   "collider": {
+    "center": [
+     -0.045,
+     0.012,
+     -0.0
+    ],
+    "size": [
+     0.2,
+     0.025,
+     0.025
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 56
+  },
+  "count": 3,
+  "rooms": {
+   "Serverraum": 1,
+   "Garage": 1,
+   "Schaltraum": 1
+  },
+  "guid": "f4f9c360f3b43f02b659688776be7d15"
+ },
+ "Item_Soap": {
+  "bounds": [
+   [
+    -0.04,
+    -0.025,
+    -0.0
+   ],
+   [
+    0.04,
+    0.025,
+    0.024
+   ]
+  ],
+  "tris": 44,
+  "mats": [
+   "M_BV_CreamMetal"
+  ],
+  "catalog": {
+   "model": "Item_Soap",
+   "label": "Мыло",
+   "itemKey": "Item_Soap",
+   "massKg": 0.1,
+   "collider": {
+    "center": [
+     -0.0,
+     0.012,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.024,
+     0.05
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 44
+  },
+  "count": 2,
+  "rooms": {
+   "Waschraum": 2
+  },
+  "guid": "f19cf540825584f28750603f86443d78"
+ },
+ "Item_StickyNote": {
+  "bounds": [
+   [
+    -0.038,
+    -0.038,
+    -0.0
+   ],
+   [
+    0.038,
+    0.038,
+    0.001
+   ]
+  ],
+  "tris": 12,
+  "mats": [
+   "M_BV_YellowMetal",
+   "M_Dress"
+  ],
+  "catalog": {
+   "model": "Item_StickyNote",
+   "label": "Записка-стикер",
+   "itemKey": "Item_StickyNote",
+   "massKg": 0.002,
+   "collider": {
+    "center": [
+     -0.0,
+     0.001,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.002,
+     0.08
+    ]
+   },
+   "kind": "paper",
+   "clean": false,
+   "tris": 12,
+   "readable": true
+  },
+  "count": 5,
+  "rooms": {
+   "Leitstand": 2,
+   "Stationsleiter": 2,
+   "Waschraum": 1
+  },
+  "guid": "9bb5b86269bac5f026ccb190bcd6867d"
+ },
+ "Item_Thermos": {
+  "bounds": [
+   [
+    -0.043,
+    -0.045,
+    -0.0
+   ],
+   [
+    0.043,
+    0.045,
+    0.32
+   ]
+  ],
+  "tris": 152,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_BV_GreenMetal"
+  ],
+  "catalog": {
+   "model": "Item_Thermos",
+   "label": "Термос",
+   "itemKey": "Item_Thermos",
+   "massKg": 0.7,
+   "collider": {
+    "center": [
+     -0.0,
+     0.16,
+     -0.0
+    ],
+    "size": [
+     0.09,
+     0.32,
+     0.09
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 152
+  },
+  "count": 1,
+  "rooms": {
+   "Leitstand": 1
+  },
+  "guid": "36cdd5c9b4c7f6de164fecafc354275e"
+ },
+ "Item_TinLying": {
+  "bounds": [
+   [
+    -0.037,
+    -0.042,
+    -0.01
+   ],
+   [
+    0.074,
+    0.042,
+    0.082
+   ]
+  ],
+  "tris": 140,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_Dress",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_TinLying",
+   "label": "Консервная банка",
+   "itemKey": "Item_TinLying",
+   "massKg": 0.06,
+   "collider": {
+    "center": [
+     -0.0,
+     0.0425,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.085,
+     0.085
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 140
+  },
+  "count": 4,
+  "rooms": {
+   "Lager": 2,
+   "Kueche": 2
+  },
+  "guid": "f2f9abb2cdddee9ceb960db39de21221"
+ },
+ "Item_TinOpen": {
+  "bounds": [
+   [
+    -0.04,
+    -0.042,
+    -0.0
+   ],
+   [
+    0.052,
+    0.042,
+    0.111
+   ]
+  ],
+  "tris": 140,
+  "mats": [
+   "M_BV_Galvanized",
+   "M_Dress",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_TinOpen",
+   "label": "Открытая консерва",
+   "itemKey": "Item_TinOpen",
+   "massKg": 0.06,
+   "collider": {
+    "center": [
+     -0.0,
+     0.04,
+     -0.0
+    ],
+    "size": [
+     0.085,
+     0.08,
+     0.085
+    ]
+   },
+   "kind": "trash",
+   "clean": true,
+   "tris": 140
+  },
+  "count": 4,
+  "rooms": {
+   "Garage": 1,
+   "Kueche": 3
+  },
+  "guid": "4b5f8e83504ddebf0447c55e2ea5cd3a"
+ },
+ "Item_ToiletRolls": {
+  "bounds": [
+   [
+    -0.052,
+    -0.055,
+    -0.0
+   ],
+   [
+    0.282,
+    0.055,
+    0.1
+   ]
+  ],
+  "tris": 312,
+  "mats": [
+   "M_PaintWhite",
+   "M_Sawdust"
+  ],
+  "catalog": {
+   "model": "Item_ToiletRolls",
+   "label": "Туалетная бумага",
+   "itemKey": "Item_ToiletRolls",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.115,
+     0.05,
+     -0.0
+    ],
+    "size": [
+     0.33,
+     0.1,
+     0.11
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 312
+  },
+  "count": 2,
+  "rooms": {
+   "Waschraum": 2
+  },
+  "guid": "bb05c0db1278afd458419616f4737c40"
+ },
+ "Item_Toolbox": {
+  "bounds": [
+   [
+    -0.23,
+    -0.106,
+    -0.0
+   ],
+   [
+    0.23,
+    0.105,
+    0.255
+   ]
+  ],
+  "tris": 196,
+  "mats": [
+   "M_BV_RedMetal",
+   "M_PlasticBlack",
+   "M_StoveIron"
+  ],
+  "catalog": {
+   "model": "Item_Toolbox",
+   "label": "Ящик с инструментами",
+   "itemKey": "Item_Toolbox",
+   "massKg": 6.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.13,
+     -0.0
+    ],
+    "size": [
+     0.46,
+     0.26,
+     0.21
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 196
+  },
+  "count": 4,
+  "rooms": {
+   "Lager": 1,
+   "Serverraum": 1,
+   "Garage": 1,
+   "Schaltraum": 1
+  },
+  "guid": "94769d12f8b056c35c750a65bc142dbc"
+ },
+ "Item_ToothCup": {
+  "bounds": [
+   [
+    -0.033,
+    -0.035,
+    -0.0
+   ],
+   [
+    0.034,
+    0.035,
+    0.183
+   ]
+  ],
+  "tris": 96,
+  "mats": [
+   "M_BV_BlueMetal",
+   "M_BV_GreenMetal",
+   "M_BV_RedMetal",
+   "M_PaintWhite"
+  ],
+  "catalog": {
+   "model": "Item_ToothCup",
+   "label": "Стакан для щёток",
+   "itemKey": "Item_ToothCup",
+   "massKg": 0.15,
+   "collider": {
+    "center": [
+     -0.0,
+     0.09,
+     -0.0
+    ],
+    "size": [
+     0.08,
+     0.18,
+     0.08
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 96
+  },
+  "count": 2,
+  "rooms": {
+   "Waschraum": 2
+  },
+  "guid": "b541e155578b1b950dfaa5fc853959bf"
+ },
+ "Item_Towel": {
+  "bounds": [
+   [
+    -0.152,
+    -0.105,
+    -0.0
+   ],
+   [
+    0.152,
+    0.105,
+    0.06
+   ]
+  ],
+  "tris": 372,
+  "mats": [
+   "M_FabricBlue"
+  ],
+  "catalog": {
+   "model": "Item_Towel",
+   "label": "Полотенце",
+   "itemKey": "Item_Towel",
+   "massKg": 0.4,
+   "collider": {
+    "center": [
+     -0.0,
+     0.03,
+     -0.0
+    ],
+    "size": [
+     0.3,
+     0.06,
+     0.2
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 372
+  },
+  "count": 5,
+  "rooms": {
+   "Kaserne": 2,
+   "Waschraum": 3
+  },
+  "guid": "fc763fcf4298f1dc750d4b2e14e1c0d4"
+ },
+ "Item_TrashBag": {
+  "bounds": [
+   [
+    -0.218,
+    -0.197,
+    0.028
+   ],
+   [
+    0.179,
+    0.199,
+    0.627
+   ]
+  ],
+  "tris": 138,
+  "mats": [
+   "M_TrashBag"
+  ],
+  "catalog": {
+   "model": "Item_TrashBag",
+   "label": "Мешок для мусора",
+   "itemKey": "Item_TrashBag",
+   "massKg": 3.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.31,
+     -0.0
+    ],
+    "size": [
+     0.48,
+     0.62,
+     0.44
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 138
+  },
+  "count": 2,
+  "rooms": {
+   "Kueche": 2
+  },
+  "guid": "846f538372b603284d6989195634c045"
+ },
+ "Item_WoodCrate": {
+  "bounds": [
+   [
+    -0.305,
+    -0.255,
+    -0.0
+   ],
+   [
+    0.305,
+    0.255,
+    0.4
+   ]
+  ],
+  "tris": 540,
+  "mats": [
+   "M_HutTimber"
+  ],
+  "catalog": {
+   "model": "Item_WoodCrate",
+   "label": "Деревянный ящик",
+   "itemKey": "Item_WoodCrate",
+   "massKg": 6.0,
+   "collider": {
+    "center": [
+     -0.0,
+     0.2,
+     -0.0
+    ],
+    "size": [
+     0.62,
+     0.4,
+     0.5
+    ]
+   },
+   "kind": "prop",
+   "clean": false,
+   "tris": 540
+  },
+  "count": 2,
+  "rooms": {
+   "Lager": 2
+  },
+  "guid": "a7beaf4ff1c03dd53b9b14e777e5be7b"
+ },
+ "Item_Wrench": {
+  "bounds": [
+   [
+    -0.126,
+    -0.018,
+    -0.0
+   ],
+   [
+    0.126,
+    0.018,
+    0.01
+   ]
+  ],
+  "tris": 52,
+  "mats": [
+   "M_Steel"
+  ],
+  "catalog": {
+   "model": "Item_Wrench",
+   "label": "Гаечный ключ",
+   "itemKey": "Item_Wrench",
+   "massKg": 0.3,
+   "collider": {
+    "center": [
+     -0.0,
+     0.006,
+     -0.0
+    ],
+    "size": [
+     0.26,
+     0.012,
+     0.04
+    ]
+   },
+   "kind": "tool",
+   "clean": false,
+   "tris": 52
+  },
+  "count": 2,
+  "rooms": {
+   "Garage": 1,
+   "Heizung": 1
+  },
+  "guid": "2da5e28b1b6f022bd3a1a2abdedc158a"
+ }
+}

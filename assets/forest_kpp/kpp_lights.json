@@ -1,0 +1,124 @@
+{
+ "note": "checkpoint lamps. position / forward / up: booth frame (Checkpoint prefab: x toward the road, y toward the back, z up, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. group booth = the fluorescent batten (flickers from the start without power: flicker min / max / speed as Update 3's Light_booth; lens M_Kpp_Lamp_Fluor, glow Glow_Fluor flicker with it); group power = the bulkhead over the door (off until the station power: light, Glow_Bulk_Door shown, Lens_Bulk_Door -> M_Kpp_Lamp_Bulk; the CCTV screen Screen_CCTV -> M_Kpp_Lamp_Crt). Point lights: the IES files describe the shape.",
+ "lights": [
+  {
+   "socket": "LIGHT_Fluor",
+   "lens": "Lens_Fluor",
+   "glow": "Glow_Fluor",
+   "parent": "Lamp_Fluor",
+   "type": "fluor",
+   "unityLight": "Point",
+   "position": [
+    -0.3,
+    0.1,
+    2.56
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "positionUnity": [
+    0.3,
+    2.56,
+    -0.1
+   ],
+   "forwardUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "upUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "intensityURP": 0.45,
+   "peakCandela": 40,
+   "kelvin": 6000,
+   "filterLinear": [
+    0.92,
+    1.0,
+    1.0
+   ],
+   "colorLinear": [
+    0.92,
+    0.8997,
+    0.8761
+   ],
+   "range": 6.5,
+   "group": "booth",
+   "shadows": false,
+   "ies": "IES/fluor.ies",
+   "desc": "fluorescent batten under the rafters (one 36 W tube): flickers from the start, without power (Update 3 Light_booth: Point 0.45, range 6.5, colour 0.86 0.96 1.0, flicker min 0.08 max 1.0 speed 5)",
+   "startsOn": true,
+   "flicker": {
+    "min": 0.08,
+    "max": 1.0,
+    "speed": 5.0
+   }
+  },
+  {
+   "socket": "LIGHT_Bulk_Door",
+   "lens": "Lens_Bulk_Door",
+   "glow": "Glow_Bulk_Door",
+   "parent": "Checkpoint",
+   "type": "bulkhead_kpp",
+   "unityLight": "Point",
+   "position": [
+    0.905,
+    1.718,
+    2.42
+   ],
+   "forward": [
+    0.0,
+    0.6,
+    -0.8
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "positionUnity": [
+    -0.905,
+    2.42,
+    -1.718
+   ],
+   "forwardUnity": [
+    0.0,
+    -0.8,
+    -0.6
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "intensityURP": 1.0,
+   "peakCandela": 60,
+   "kelvin": 2700,
+   "filterLinear": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "colorLinear": [
+    1.0,
+    0.4173,
+    0.1
+   ],
+   "range": 9.0,
+   "group": "power",
+   "shadows": false,
+   "ies": "IES/bulkhead_kpp.ies",
+   "desc": "caged bulkhead over the door (the shed's), 60 W incandescent: on with the station power (Update 3: Point 1.0, range 9, off until power)",
+   "startsOn": false
+  }
+ ]
+}

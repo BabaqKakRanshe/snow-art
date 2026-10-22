@@ -1,0 +1,3283 @@
+{
+ "GenContainer": {
+  "file": "GenContainer.fbx",
+  "objects": [
+   "GenContainer",
+   "IX_Breaker_87",
+   "IX_Breaker_88",
+   "IX_Breaker_89",
+   "IX_ContDoorL_83",
+   "IX_ContDoorR_84",
+   "IX_ContSideDoor_85",
+   "IX_GenFillCap_300",
+   "IX_GenStart_86",
+   "IX_MainSwitch_90",
+   "Window_Glass"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_GCont_Cont",
+   "M_GCont_Diesel",
+   "M_GCont_Genset",
+   "M_GCont_Needle",
+   "M_GCont_Panel",
+   "M_GCont_Props",
+   "M_GlassClear",
+   "M_LEDOff",
+   "M_Lamp_BulbOff"
+  ],
+  "tris": 28209,
+  "remap": [],
+  "bytes": 695932,
+  "aabb": {
+   "GenContainer": [
+    [
+     -3.43,
+     -3.8154,
+     -0.12
+    ],
+    [
+     3.54,
+     1.337,
+     3.612
+    ]
+   ],
+   "IX_Breaker_87": [
+    [
+     1.1285,
+     0.929,
+     1.3457
+    ],
+    [
+     1.1415,
+     0.9519,
+     1.3634
+    ]
+   ],
+   "IX_Breaker_88": [
+    [
+     1.2185,
+     0.929,
+     1.3457
+    ],
+    [
+     1.2315,
+     0.9519,
+     1.3634
+    ]
+   ],
+   "IX_Breaker_89": [
+    [
+     1.3085,
+     0.929,
+     1.3457
+    ],
+    [
+     1.3215,
+     0.9519,
+     1.3634
+    ]
+   ],
+   "IX_ContDoorL_83": [
+    [
+     2.8979,
+     -1.229,
+     0.212
+    ],
+    [
+     3.059,
+     -0.004,
+     2.678
+    ]
+   ],
+   "IX_ContDoorR_84": [
+    [
+     2.8979,
+     0.002,
+     0.212
+    ],
+    [
+     3.085,
+     1.248,
+     2.678
+    ]
+   ],
+   "IX_ContSideDoor_85": [
+    [
+     -3.0808,
+     -2.488,
+     0.318
+    ],
+    [
+     -2.9002,
+     -1.618,
+     2.322
+    ]
+   ],
+   "IX_GenFillCap_300": [
+    [
+     -3.185,
+     -3.126,
+     1.008
+    ],
+    [
+     -3.149,
+     -2.764,
+     1.384
+    ]
+   ],
+   "IX_GenStart_86": [
+    [
+     0.047,
+     -0.408,
+     1.298
+    ],
+    [
+     0.09,
+     -0.402,
+     1.322
+    ]
+   ],
+   "IX_MainSwitch_90": [
+    [
+     1.2291,
+     0.954,
+     1.495
+    ],
+    [
+     1.2709,
+     0.989,
+     1.625
+    ]
+   ],
+   "Window_Glass": [
+    [
+     -0.155,
+     1.1695,
+     1.555
+    ],
+    [
+     0.355,
+     1.1705,
+     1.965
+    ]
+   ]
+  },
+  "pivots": {
+   "GenContainer": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "IX_Breaker_87": [
+    1.135,
+    0.95,
+    1.36
+   ],
+   "IX_Breaker_88": [
+    1.225,
+    0.95,
+    1.36
+   ],
+   "IX_Breaker_89": [
+    1.315,
+    0.95,
+    1.36
+   ],
+   "IX_ContDoorL_83": [
+    3.015,
+    -1.216,
+    1.445
+   ],
+   "IX_ContDoorR_84": [
+    3.015,
+    1.235,
+    1.445
+   ],
+   "IX_ContSideDoor_85": [
+    -3.016,
+    -1.63,
+    1.32
+   ],
+   "IX_GenFillCap_300": [
+    -3.174,
+    -2.945,
+    1.376
+   ],
+   "IX_GenStart_86": [
+    0.043,
+    -0.405,
+    1.31
+   ],
+   "IX_MainSwitch_90": [
+    1.25,
+    1.005,
+    1.56
+   ],
+   "Window_Glass": [
+    0.1,
+    1.17,
+    1.76
+   ]
+  }
+ },
+ "Item_Ashtray": {
+  "file": "Item_Ashtray.fbx",
+  "objects": [
+   "Item_Ashtray"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 458,
+  "remap": [],
+  "bytes": 29276,
+  "aabb": {
+   "Item_Ashtray": [
+    [
+     -0.075,
+     -0.075,
+     0.0
+    ],
+    [
+     0.075,
+     0.075,
+     0.03
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Ashtray": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Backpack": {
+  "file": "Item_Backpack.fbx",
+  "objects": [
+   "Item_Backpack"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 502,
+  "remap": [],
+  "bytes": 30396,
+  "aabb": {
+   "Item_Backpack": [
+    [
+     -0.155,
+     -0.15,
+     0.0
+    ],
+    [
+     0.155,
+     0.158,
+     0.4969
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Backpack": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BinderBlue": {
+  "file": "Item_BinderBlue.fbx",
+  "objects": [
+   "Item_BinderBlue"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 92,
+  "remap": [],
+  "bytes": 23276,
+  "aabb": {
+   "Item_BinderBlue": [
+    [
+     -0.1604,
+     -0.145,
+     -0.0005
+    ],
+    [
+     0.166,
+     0.145,
+     0.0705
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BinderBlue": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BinderRed": {
+  "file": "Item_BinderRed.fbx",
+  "objects": [
+   "Item_BinderRed"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 92,
+  "remap": [],
+  "bytes": 23292,
+  "aabb": {
+   "Item_BinderRed": [
+    [
+     -0.1604,
+     -0.145,
+     -0.0005
+    ],
+    [
+     0.166,
+     0.145,
+     0.0705
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BinderRed": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Book": {
+  "file": "Item_Book.fbx",
+  "objects": [
+   "Item_Book"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 48,
+  "remap": [],
+  "bytes": 22700,
+  "aabb": {
+   "Item_Book": [
+    [
+     -0.0775,
+     -0.11,
+     0.0
+    ],
+    [
+     0.075,
+     0.11,
+     0.03
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Book": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BookOpen": {
+  "file": "Item_BookOpen.fbx",
+  "objects": [
+   "Item_BookOpen"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 76,
+  "remap": [],
+  "bytes": 22892,
+  "aabb": {
+   "Item_BookOpen": [
+    [
+     -0.15,
+     -0.11,
+     0.0
+    ],
+    [
+     0.15,
+     0.11,
+     0.0175
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BookOpen": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BookStack": {
+  "file": "Item_BookStack.fbx",
+  "objects": [
+   "Item_BookStack"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 138,
+  "remap": [],
+  "bytes": 22892,
+  "aabb": {
+   "Item_BookStack": [
+    [
+     -0.1122,
+     -0.1165,
+     0.0
+    ],
+    [
+     0.0782,
+     0.1324,
+     0.094
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BookStack": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Boots": {
+  "file": "Item_Boots.fbx",
+  "objects": [
+   "Item_Boots"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 794,
+  "remap": [],
+  "bytes": 40172,
+  "aabb": {
+   "Item_Boots": [
+    [
+     -0.0561,
+     -0.1242,
+     0.0
+    ],
+    [
+     0.1958,
+     0.1216,
+     0.2627
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Boots": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BottleBeer": {
+  "file": "Item_BottleBeer.fbx",
+  "objects": [
+   "Item_BottleBeer"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 356,
+  "remap": [],
+  "bytes": 29548,
+  "aabb": {
+   "Item_BottleBeer": [
+    [
+     -0.0333,
+     -0.032,
+     0.0
+    ],
+    [
+     0.0333,
+     0.0327,
+     0.255
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BottleBeer": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BottleBeerLying": {
+  "file": "Item_BottleBeerLying.fbx",
+  "objects": [
+   "Item_BottleBeerLying"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 354,
+  "remap": [],
+  "bytes": 29868,
+  "aabb": {
+   "Item_BottleBeerLying": [
+    [
+     -0.12,
+     -0.032,
+     -0.0003
+    ],
+    [
+     0.135,
+     0.0327,
+     0.0663
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BottleBeerLying": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BottleSchnapps": {
+  "file": "Item_BottleSchnapps.fbx",
+  "objects": [
+   "Item_BottleSchnapps"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 256,
+  "remap": [],
+  "bytes": 27068,
+  "aabb": {
+   "Item_BottleSchnapps": [
+    [
+     -0.042,
+     -0.0407,
+     0.0
+    ],
+    [
+     0.042,
+     0.0414,
+     0.265
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BottleSchnapps": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BottleWater": {
+  "file": "Item_BottleWater.fbx",
+  "objects": [
+   "Item_BottleWater"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 272,
+  "remap": [],
+  "bytes": 27180,
+  "aabb": {
+   "Item_BottleWater": [
+    [
+     -0.0313,
+     -0.0305,
+     0.0
+    ],
+    [
+     0.0313,
+     0.0302,
+     0.255
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BottleWater": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BoxLarge": {
+  "file": "Item_BoxLarge.fbx",
+  "objects": [
+   "Item_BoxLarge"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 162,
+  "remap": [],
+  "bytes": 24764,
+  "aabb": {
+   "Item_BoxLarge": [
+    [
+     -0.2755,
+     -0.2005,
+     0.0
+    ],
+    [
+     0.2755,
+     0.2005,
+     0.4
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BoxLarge": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BoxOpen": {
+  "file": "Item_BoxOpen.fbx",
+  "objects": [
+   "Item_BoxOpen"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 188,
+  "remap": [],
+  "bytes": 24828,
+  "aabb": {
+   "Item_BoxOpen": [
+    [
+     -0.229,
+     -0.292,
+     0.0
+    ],
+    [
+     0.229,
+     0.292,
+     0.336
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BoxOpen": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BoxSmall": {
+  "file": "Item_BoxSmall.fbx",
+  "objects": [
+   "Item_BoxSmall"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 162,
+  "remap": [],
+  "bytes": 24780,
+  "aabb": {
+   "Item_BoxSmall": [
+    [
+     -0.1505,
+     -0.1105,
+     0.0
+    ],
+    [
+     0.1505,
+     0.1105,
+     0.2
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BoxSmall": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BreadMouldy": {
+  "file": "Item_BreadMouldy.fbx",
+  "objects": [
+   "Item_BreadMouldy"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 222,
+  "remap": [],
+  "bytes": 23100,
+  "aabb": {
+   "Item_BreadMouldy": [
+    [
+     -0.12,
+     -0.07,
+     0.0017
+    ],
+    [
+     0.12,
+     0.055,
+     0.0902
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BreadMouldy": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Broom": {
+  "file": "Item_Broom.fbx",
+  "objects": [
+   "Item_Broom"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 492,
+  "remap": [],
+  "bytes": 30684,
+  "aabb": {
+   "Item_Broom": [
+    [
+     -0.1521,
+     -0.022,
+     0.0015
+    ],
+    [
+     0.1517,
+     0.022,
+     1.4
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Broom": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Bucket": {
+  "file": "Item_Bucket.fbx",
+  "objects": [
+   "Item_Bucket"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 428,
+  "remap": [],
+  "bytes": 28684,
+  "aabb": {
+   "Item_Bucket": [
+    [
+     -0.154,
+     -0.1497,
+     0.0
+    ],
+    [
+     0.154,
+     0.1497,
+     0.3775
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Bucket": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_BucketWater": {
+  "file": "Item_BucketWater.fbx",
+  "objects": [
+   "Item_BucketWater"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props",
+   "M_Water"
+  ],
+  "tris": 448,
+  "remap": [],
+  "bytes": 30156,
+  "aabb": {
+   "Item_BucketWater": [
+    [
+     -0.154,
+     -0.1497,
+     0.0
+    ],
+    [
+     0.154,
+     0.1497,
+     0.3775
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_BucketWater": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Butts": {
+  "file": "Item_Butts.fbx",
+  "objects": [
+   "Item_Butts"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 269,
+  "remap": [],
+  "bytes": 25548,
+  "aabb": {
+   "Item_Butts": [
+    [
+     -0.0345,
+     -0.05,
+     0.0002
+    ],
+    [
+     0.058,
+     0.0234,
+     0.0078
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Butts": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CableReel": {
+  "file": "Item_CableReel.fbx",
+  "objects": [
+   "Item_CableReel"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 452,
+  "remap": [],
+  "bytes": 28796,
+  "aabb": {
+   "Item_CableReel": [
+    [
+     -0.181,
+     -0.135,
+     -0.002
+    ],
+    [
+     0.1857,
+     0.135,
+     0.372
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CableReel": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CanCrushed": {
+  "file": "Item_CanCrushed.fbx",
+  "objects": [
+   "Item_CanCrushed"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 292,
+  "remap": [],
+  "bytes": 34892,
+  "aabb": {
+   "Item_CanCrushed": [
+    [
+     -0.0381,
+     -0.049,
+     0.0
+    ],
+    [
+     0.0375,
+     -0.0,
+     0.0528
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CanCrushed": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CanGreen": {
+  "file": "Item_CanGreen.fbx",
+  "objects": [
+   "Item_CanGreen"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 256,
+  "remap": [],
+  "bytes": 26860,
+  "aabb": {
+   "Item_CanGreen": [
+    [
+     -0.0313,
+     -0.0313,
+     0.0
+    ],
+    [
+     0.0313,
+     0.0313,
+     0.117
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CanGreen": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CanRed": {
+  "file": "Item_CanRed.fbx",
+  "objects": [
+   "Item_CanRed"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 256,
+  "remap": [],
+  "bytes": 26844,
+  "aabb": {
+   "Item_CanRed": [
+    [
+     -0.0313,
+     -0.0313,
+     0.0
+    ],
+    [
+     0.0313,
+     0.0313,
+     0.117
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CanRed": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CardboardFlat": {
+  "file": "Item_CardboardFlat.fbx",
+  "objects": [
+   "Item_CardboardFlat"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 24,
+  "remap": [],
+  "bytes": 21964,
+  "aabb": {
+   "Item_CardboardFlat": [
+    [
+     -0.275,
+     -0.21,
+     0.0
+    ],
+    [
+     0.275,
+     0.21,
+     0.0112
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CardboardFlat": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Cards": {
+  "file": "Item_Cards.fbx",
+  "objects": [
+   "Item_Cards"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 108,
+  "remap": [],
+  "bytes": 24428,
+  "aabb": {
+   "Item_Cards": [
+    [
+     -0.1758,
+     -0.2224,
+     0.0
+    ],
+    [
+     0.2771,
+     0.2195,
+     0.0146
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Cards": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CigPack": {
+  "file": "Item_CigPack.fbx",
+  "objects": [
+   "Item_CigPack"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 12,
+  "remap": [],
+  "bytes": 21612,
+  "aabb": {
+   "Item_CigPack": [
+    [
+     -0.027,
+     -0.011,
+     0.0
+    ],
+    [
+     0.027,
+     0.011,
+     0.088
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CigPack": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_CigPackCrushed": {
+  "file": "Item_CigPackCrushed.fbx",
+  "objects": [
+   "Item_CigPackCrushed"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 108,
+  "remap": [],
+  "bytes": 24028,
+  "aabb": {
+   "Item_CigPackCrushed": [
+    [
+     -0.0347,
+     -0.024,
+     0.0
+    ],
+    [
+     0.0347,
+     0.024,
+     0.0193
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_CigPackCrushed": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Clipboard": {
+  "file": "Item_Clipboard.fbx",
+  "objects": [
+   "Item_Clipboard"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 236,
+  "remap": [],
+  "bytes": 26316,
+  "aabb": {
+   "Item_Clipboard": [
+    [
+     -0.115,
+     -0.16,
+     0.0
+    ],
+    [
+     0.115,
+     0.16,
+     0.0169
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Clipboard": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Clothes": {
+  "file": "Item_Clothes.fbx",
+  "objects": [
+   "Item_Clothes"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 1012,
+  "remap": [],
+  "bytes": 44076,
+  "aabb": {
+   "Item_Clothes": [
+    [
+     -0.414,
+     -0.349,
+     0.0
+    ],
+    [
+     0.3749,
+     0.2199,
+     0.1299
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Clothes": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Dustpan": {
+  "file": "Item_Dustpan.fbx",
+  "objects": [
+   "Item_Dustpan"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 60,
+  "remap": [],
+  "bytes": 20172,
+  "aabb": {
+   "Item_Dustpan": [
+    [
+     -0.1225,
+     -0.11,
+     0.0
+    ],
+    [
+     0.1225,
+     0.2438,
+     0.11
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Dustpan": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Envelope": {
+  "file": "Item_Envelope.fbx",
+  "objects": [
+   "Item_Envelope"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 136,
+  "remap": [],
+  "bytes": 23820,
+  "aabb": {
+   "Item_Envelope": [
+    [
+     -0.119,
+     -0.076,
+     0.0
+    ],
+    [
+     0.119,
+     0.076,
+     0.004
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Envelope": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Flashlight": {
+  "file": "Item_Flashlight.fbx",
+  "objects": [
+   "Item_Flashlight"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props",
+   "M_TorchLens"
+  ],
+  "tris": 388,
+  "remap": [],
+  "bytes": 28220,
+  "aabb": {
+   "Item_Flashlight": [
+    [
+     -0.118,
+     -0.0278,
+     -0.0285
+    ],
+    [
+     0.1335,
+     0.0278,
+     0.0285
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Flashlight": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Funnel": {
+  "file": "Item_Funnel.fbx",
+  "objects": [
+   "Item_Funnel"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 388,
+  "remap": [],
+  "bytes": 26956,
+  "aabb": {
+   "Item_Funnel": [
+    [
+     -0.117,
+     -0.1152,
+     0.0
+    ],
+    [
+     0.1383,
+     0.1152,
+     0.307
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Funnel": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Hammer": {
+  "file": "Item_Hammer.fbx",
+  "objects": [
+   "Item_Hammer"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 260,
+  "remap": [],
+  "bytes": 24348,
+  "aabb": {
+   "Item_Hammer": [
+    [
+     -0.14,
+     -0.057,
+     0.004
+    ],
+    [
+     0.15,
+     0.055,
+     0.032
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Hammer": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Headphones": {
+  "file": "Item_Headphones.fbx",
+  "objects": [
+   "Item_Headphones"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 408,
+  "remap": [],
+  "bytes": 27644,
+  "aabb": {
+   "Item_Headphones": [
+    [
+     -0.118,
+     -0.04,
+     0.0
+    ],
+    [
+     0.118,
+     0.04,
+     0.109
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Headphones": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Jar": {
+  "file": "Item_Jar.fbx",
+  "objects": [
+   "Item_Jar"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 258,
+  "remap": [],
+  "bytes": 26716,
+  "aabb": {
+   "Item_Jar": [
+    [
+     -0.043,
+     -0.0433,
+     0.0
+    ],
+    [
+     0.043,
+     0.043,
+     0.145
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Jar": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Jerrycan20": {
+  "file": "Item_Jerrycan20.fbx",
+  "objects": [
+   "Item_Jerrycan20"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 502,
+  "remap": [],
+  "bytes": 30876,
+  "aabb": {
+   "Item_Jerrycan20": [
+    [
+     -0.172,
+     -0.085,
+     0.0
+    ],
+    [
+     0.1758,
+     0.085,
+     0.5454
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Jerrycan20": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Kettle": {
+  "file": "Item_Kettle.fbx",
+  "objects": [
+   "Item_Kettle"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 580,
+  "remap": [],
+  "bytes": 32060,
+  "aabb": {
+   "Item_Kettle": [
+    [
+     -0.092,
+     -0.092,
+     0.0
+    ],
+    [
+     0.1604,
+     0.092,
+     0.208
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Kettle": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Key_Garage": {
+  "file": "Item_Key_Garage.fbx",
+  "objects": [
+   "Item_Key_Garage"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 362,
+  "remap": [],
+  "bytes": 29068,
+  "aabb": {
+   "Item_Key_Garage": [
+    [
+     -0.0145,
+     -0.0033,
+     -0.0835
+    ],
+    [
+     0.0145,
+     0.0034,
+     0.0
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Key_Garage": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Key_Generator": {
+  "file": "Item_Key_Generator.fbx",
+  "objects": [
+   "Item_Key_Generator"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 362,
+  "remap": [],
+  "bytes": 29084,
+  "aabb": {
+   "Item_Key_Generator": [
+    [
+     -0.0145,
+     -0.0033,
+     -0.0835
+    ],
+    [
+     0.0145,
+     0.0034,
+     0.0
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Key_Generator": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Key_Hauptgebaeude": {
+  "file": "Item_Key_Hauptgebaeude.fbx",
+  "objects": [
+   "Item_Key_Hauptgebaeude"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 362,
+  "remap": [],
+  "bytes": 29052,
+  "aabb": {
+   "Item_Key_Hauptgebaeude": [
+    [
+     -0.0145,
+     -0.0033,
+     -0.0835
+    ],
+    [
+     0.0145,
+     0.0034,
+     0.0
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Key_Hauptgebaeude": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Key_Schranke": {
+  "file": "Item_Key_Schranke.fbx",
+  "objects": [
+   "Item_Key_Schranke"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 362,
+  "remap": [],
+  "bytes": 29052,
+  "aabb": {
+   "Item_Key_Schranke": [
+    [
+     -0.0145,
+     -0.0033,
+     -0.0835
+    ],
+    [
+     0.0145,
+     0.0034,
+     0.0
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Key_Schranke": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Magazine": {
+  "file": "Item_Magazine.fbx",
+  "objects": [
+   "Item_Magazine"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 88,
+  "remap": [],
+  "bytes": 22892,
+  "aabb": {
+   "Item_Magazine": [
+    [
+     -0.1415,
+     -0.165,
+     0.0
+    ],
+    [
+     0.142,
+     0.165,
+     0.005
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Magazine": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Medicine": {
+  "file": "Item_Medicine.fbx",
+  "objects": [
+   "Item_Medicine"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 12,
+  "remap": [],
+  "bytes": 21596,
+  "aabb": {
+   "Item_Medicine": [
+    [
+     -0.045,
+     -0.02,
+     0.0
+    ],
+    [
+     0.045,
+     0.02,
+     0.04
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Medicine": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Mop": {
+  "file": "Item_Mop.fbx",
+  "objects": [
+   "Item_Mop"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 1064,
+  "remap": [],
+  "bytes": 52876,
+  "aabb": {
+   "Item_Mop": [
+    [
+     -0.1159,
+     -0.122,
+     0.0011
+    ],
+    [
+     0.1195,
+     0.1222,
+     1.355
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Mop": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_MugGreen": {
+  "file": "Item_MugGreen.fbx",
+  "objects": [
+   "Item_MugGreen"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 290,
+  "remap": [],
+  "bytes": 24956,
+  "aabb": {
+   "Item_MugGreen": [
+    [
+     -0.041,
+     -0.041,
+     0.0
+    ],
+    [
+     0.0695,
+     0.041,
+     0.095
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_MugGreen": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_MugTipped": {
+  "file": "Item_MugTipped.fbx",
+  "objects": [
+   "Item_MugTipped"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 290,
+  "remap": [],
+  "bytes": 25468,
+  "aabb": {
+   "Item_MugTipped": [
+    [
+     -0.047,
+     -0.041,
+     0.0
+    ],
+    [
+     0.048,
+     0.041,
+     0.1105
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_MugTipped": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_MugWhite": {
+  "file": "Item_MugWhite.fbx",
+  "objects": [
+   "Item_MugWhite"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 290,
+  "remap": [],
+  "bytes": 24956,
+  "aabb": {
+   "Item_MugWhite": [
+    [
+     -0.041,
+     -0.041,
+     0.0
+    ],
+    [
+     0.0695,
+     0.041,
+     0.095
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_MugWhite": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Newspaper": {
+  "file": "Item_Newspaper.fbx",
+  "objects": [
+   "Item_Newspaper"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 88,
+  "remap": [],
+  "bytes": 22892,
+  "aabb": {
+   "Item_Newspaper": [
+    [
+     -0.153,
+     -0.21,
+     0.0
+    ],
+    [
+     0.15,
+     0.21,
+     0.01
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Newspaper": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_NewspaperOpen": {
+  "file": "Item_NewspaperOpen.fbx",
+  "objects": [
+   "Item_NewspaperOpen"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 360,
+  "remap": [],
+  "bytes": 29164,
+  "aabb": {
+   "Item_NewspaperOpen": [
+    [
+     -0.405,
+     -0.27,
+     0.0
+    ],
+    [
+     0.395,
+     0.27,
+     0.005
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_NewspaperOpen": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Note": {
+  "file": "Item_Note.fbx",
+  "objects": [
+   "Item_Note"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 136,
+  "remap": [],
+  "bytes": 23548,
+  "aabb": {
+   "Item_Note": [
+    [
+     -0.074,
+     -0.105,
+     0.0
+    ],
+    [
+     0.074,
+     0.105,
+     0.0057
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Note": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_NoteForm": {
+  "file": "Item_NoteForm.fbx",
+  "objects": [
+   "Item_NoteForm"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 136,
+  "remap": [],
+  "bytes": 23532,
+  "aabb": {
+   "Item_NoteForm": [
+    [
+     -0.074,
+     -0.105,
+     0.0
+    ],
+    [
+     0.074,
+     0.105,
+     0.0052
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_NoteForm": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_OilCan": {
+  "file": "Item_OilCan.fbx",
+  "objects": [
+   "Item_OilCan"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 248,
+  "remap": [],
+  "bytes": 27068,
+  "aabb": {
+   "Item_OilCan": [
+    [
+     -0.1,
+     -0.0505,
+     0.0
+    ],
+    [
+     0.1,
+     0.05,
+     0.2962
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_OilCan": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Padlock": {
+  "file": "Item_Padlock.fbx",
+  "objects": [
+   "Item_Padlock"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 312,
+  "remap": [],
+  "bytes": 25788,
+  "aabb": {
+   "Item_Padlock": [
+    [
+     -0.025,
+     -0.0133,
+     -0.07
+    ],
+    [
+     0.025,
+     0.0115,
+     0.0105
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Padlock": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PaintCan": {
+  "file": "Item_PaintCan.fbx",
+  "objects": [
+   "Item_PaintCan"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 296,
+  "remap": [],
+  "bytes": 28028,
+  "aabb": {
+   "Item_PaintCan": [
+    [
+     -0.0922,
+     -0.084,
+     0.0
+    ],
+    [
+     0.0922,
+     0.084,
+     0.2951
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PaintCan": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Pan": {
+  "file": "Item_Pan.fbx",
+  "objects": [
+   "Item_Pan"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 422,
+  "remap": [],
+  "bytes": 27788,
+  "aabb": {
+   "Item_Pan": [
+    [
+     -0.1255,
+     -0.1255,
+     0.0
+    ],
+    [
+     0.33,
+     0.1255,
+     0.06
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Pan": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PaperBall": {
+  "file": "Item_PaperBall.fbx",
+  "objects": [
+   "Item_PaperBall"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 80,
+  "remap": [],
+  "bytes": 22060,
+  "aabb": {
+   "Item_PaperBall": [
+    [
+     -0.0354,
+     -0.0376,
+     0.0
+    ],
+    [
+     0.0296,
+     0.0303,
+     0.0534
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PaperBall": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PaperBallB": {
+  "file": "Item_PaperBallB.fbx",
+  "objects": [
+   "Item_PaperBallB"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 80,
+  "remap": [],
+  "bytes": 22092,
+  "aabb": {
+   "Item_PaperBallB": [
+    [
+     -0.0355,
+     -0.0384,
+     0.0
+    ],
+    [
+     0.0344,
+     0.0341,
+     0.0631
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PaperBallB": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PaperStack": {
+  "file": "Item_PaperStack.fbx",
+  "objects": [
+   "Item_PaperStack"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 192,
+  "remap": [],
+  "bytes": 25884,
+  "aabb": {
+   "Item_PaperStack": [
+    [
+     -0.113,
+     -0.153,
+     0.0
+    ],
+    [
+     0.1189,
+     0.1578,
+     0.0212
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PaperStack": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PhotoFrame": {
+  "file": "Item_PhotoFrame.fbx",
+  "objects": [
+   "Item_PhotoFrame"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 520,
+  "remap": [],
+  "bytes": 32764,
+  "aabb": {
+   "Item_PhotoFrame": [
+    [
+     -0.08,
+     -0.0096,
+     0.0011
+    ],
+    [
+     0.08,
+     0.0454,
+     0.1358
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PhotoFrame": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PhotoLoose": {
+  "file": "Item_PhotoLoose.fbx",
+  "objects": [
+   "Item_PhotoLoose"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 60,
+  "remap": [],
+  "bytes": 22604,
+  "aabb": {
+   "Item_PhotoLoose": [
+    [
+     -0.068,
+     -0.068,
+     0.0
+    ],
+    [
+     0.068,
+     0.068,
+     0.002
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PhotoLoose": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Plate": {
+  "file": "Item_Plate.fbx",
+  "objects": [
+   "Item_Plate"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 400,
+  "remap": [],
+  "bytes": 26236,
+  "aabb": {
+   "Item_Plate": [
+    [
+     -0.1235,
+     -0.1235,
+     0.0
+    ],
+    [
+     0.1235,
+     0.1235,
+     0.02
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Plate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_PlateDirty": {
+  "file": "Item_PlateDirty.fbx",
+  "objects": [
+   "Item_PlateDirty"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 524,
+  "remap": [],
+  "bytes": 29660,
+  "aabb": {
+   "Item_PlateDirty": [
+    [
+     -0.1235,
+     -0.1235,
+     0.0
+    ],
+    [
+     0.1235,
+     0.1235,
+     0.0221
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_PlateDirty": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Pot": {
+  "file": "Item_Pot.fbx",
+  "objects": [
+   "Item_Pot"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 488,
+  "remap": [],
+  "bytes": 28940,
+  "aabb": {
+   "Item_Pot": [
+    [
+     -0.14,
+     -0.1113,
+     0.0
+    ],
+    [
+     0.14,
+     0.1113,
+     0.165
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Pot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Radio": {
+  "file": "Item_Radio.fbx",
+  "objects": [
+   "Item_Radio"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 276,
+  "remap": [],
+  "bytes": 27772,
+  "aabb": {
+   "Item_Radio": [
+    [
+     -0.14,
+     -0.06,
+     0.0
+    ],
+    [
+     0.14,
+     0.045,
+     0.5511
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Radio": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_RadioSet": {
+  "file": "Item_RadioSet.fbx",
+  "objects": [
+   "Item_RadioSet"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props",
+   "M_RadioDisplay"
+  ],
+  "tris": 828,
+  "remap": [],
+  "bytes": 45820,
+  "aabb": {
+   "Item_RadioSet": [
+    [
+     -0.162,
+     -0.14,
+     0.0
+    ],
+    [
+     0.196,
+     0.1735,
+     0.1205
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_RadioSet": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Rag": {
+  "file": "Item_Rag.fbx",
+  "objects": [
+   "Item_Rag"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 436,
+  "remap": [],
+  "bytes": 29372,
+  "aabb": {
+   "Item_Rag": [
+    [
+     -0.2618,
+     -0.1567,
+     0.0032
+    ],
+    [
+     0.1617,
+     0.2419,
+     0.0291
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Rag": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_RopeCoil": {
+  "file": "Item_RopeCoil.fbx",
+  "objects": [
+   "Item_RopeCoil"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 1232,
+  "remap": [],
+  "bytes": 56076,
+  "aabb": {
+   "Item_RopeCoil": [
+    [
+     -0.1643,
+     -0.1661,
+     0.0005
+    ],
+    [
+     0.1686,
+     0.1602,
+     0.044
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_RopeCoil": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Rug": {
+  "file": "Item_Rug.fbx",
+  "objects": [
+   "Item_Rug"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 732,
+  "remap": [],
+  "bytes": 35804,
+  "aabb": {
+   "Item_Rug": [
+    [
+     -0.9003,
+     -0.45,
+     0.0
+    ],
+    [
+     0.9003,
+     0.45,
+     0.006
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Rug": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Sack": {
+  "file": "Item_Sack.fbx",
+  "objects": [
+   "Item_Sack"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 316,
+  "remap": [],
+  "bytes": 26076,
+  "aabb": {
+   "Item_Sack": [
+    [
+     -0.236,
+     -0.176,
+     0.0025
+    ],
+    [
+     0.26,
+     0.154,
+     0.3075
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Sack": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Screwdriver": {
+  "file": "Item_Screwdriver.fbx",
+  "objects": [
+   "Item_Screwdriver"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 108,
+  "remap": [],
+  "bytes": 21052,
+  "aabb": {
+   "Item_Screwdriver": [
+    [
+     -0.05,
+     -0.0115,
+     -0.0005
+    ],
+    [
+     0.14,
+     0.0115,
+     0.0225
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Screwdriver": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Soap": {
+  "file": "Item_Soap.fbx",
+  "objects": [
+   "Item_Soap"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 124,
+  "remap": [],
+  "bytes": 21052,
+  "aabb": {
+   "Item_Soap": [
+    [
+     -0.04,
+     -0.025,
+     0.0
+    ],
+    [
+     0.04,
+     0.025,
+     0.024
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Soap": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_StickyNote": {
+  "file": "Item_StickyNote.fbx",
+  "objects": [
+   "Item_StickyNote"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 32,
+  "remap": [],
+  "bytes": 21964,
+  "aabb": {
+   "Item_StickyNote": [
+    [
+     -0.038,
+     -0.038,
+     0.0
+    ],
+    [
+     0.038,
+     0.038,
+     0.0023
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_StickyNote": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Thermos": {
+  "file": "Item_Thermos.fbx",
+  "objects": [
+   "Item_Thermos"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 316,
+  "remap": [],
+  "bytes": 27996,
+  "aabb": {
+   "Item_Thermos": [
+    [
+     -0.0433,
+     -0.0433,
+     0.0
+    ],
+    [
+     0.0433,
+     0.0433,
+     0.32
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Thermos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_TinLying": {
+  "file": "Item_TinLying.fbx",
+  "objects": [
+   "Item_TinLying"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 346,
+  "remap": [],
+  "bytes": 29100,
+  "aabb": {
+   "Item_TinLying": [
+    [
+     -0.037,
+     -0.0423,
+     -0.0003
+    ],
+    [
+     0.0786,
+     0.0423,
+     0.0843
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_TinLying": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_TinOpen": {
+  "file": "Item_TinOpen.fbx",
+  "objects": [
+   "Item_TinOpen"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Panel",
+   "M_Item_Props"
+  ],
+  "tris": 384,
+  "remap": [],
+  "bytes": 29868,
+  "aabb": {
+   "Item_TinOpen": [
+    [
+     -0.0403,
+     -0.0403,
+     0.0
+    ],
+    [
+     0.0469,
+     0.0403,
+     0.1055
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_TinOpen": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_ToiletRolls": {
+  "file": "Item_ToiletRolls.fbx",
+  "objects": [
+   "Item_ToiletRolls"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 372,
+  "remap": [],
+  "bytes": 25260,
+  "aabb": {
+   "Item_ToiletRolls": [
+    [
+     -0.052,
+     -0.0507,
+     0.0
+    ],
+    [
+     0.282,
+     0.0507,
+     0.1
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_ToiletRolls": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Toolbox": {
+  "file": "Item_Toolbox.fbx",
+  "objects": [
+   "Item_Toolbox"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 224,
+  "remap": [],
+  "bytes": 23420,
+  "aabb": {
+   "Item_Toolbox": [
+    [
+     -0.2335,
+     -0.1,
+     0.0
+    ],
+    [
+     0.2335,
+     0.1,
+     0.253
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Toolbox": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_ToothCup": {
+  "file": "Item_ToothCup.fbx",
+  "objects": [
+   "Item_ToothCup"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 202,
+  "remap": [],
+  "bytes": 23804,
+  "aabb": {
+   "Item_ToothCup": [
+    [
+     -0.0374,
+     -0.0341,
+     0.0
+    ],
+    [
+     0.0351,
+     0.0341,
+     0.1795
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_ToothCup": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Towel": {
+  "file": "Item_Towel.fbx",
+  "objects": [
+   "Item_Towel"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 372,
+  "remap": [],
+  "bytes": 26124,
+  "aabb": {
+   "Item_Towel": [
+    [
+     -0.152,
+     -0.105,
+     0.0
+    ],
+    [
+     0.152,
+     0.105,
+     0.0605
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Towel": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_TrashBag": {
+  "file": "Item_TrashBag.fbx",
+  "objects": [
+   "Item_TrashBag"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 314,
+  "remap": [],
+  "bytes": 27644,
+  "aabb": {
+   "Item_TrashBag": [
+    [
+     -0.2089,
+     -0.1904,
+     0.0
+    ],
+    [
+     0.1813,
+     0.2036,
+     0.6
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_TrashBag": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_WoodCrate": {
+  "file": "Item_WoodCrate.fbx",
+  "objects": [
+   "Item_WoodCrate"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 240,
+  "remap": [],
+  "bytes": 23500,
+  "aabb": {
+   "Item_WoodCrate": [
+    [
+     -0.305,
+     -0.255,
+     0.0
+    ],
+    [
+     0.305,
+     0.255,
+     0.4
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_WoodCrate": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Item_Wrench": {
+  "file": "Item_Wrench.fbx",
+  "objects": [
+   "Item_Wrench"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Item_Props"
+  ],
+  "tris": 92,
+  "remap": [],
+  "bytes": 20540,
+  "aabb": {
+   "Item_Wrench": [
+    [
+     -0.126,
+     -0.018,
+     0.0
+    ],
+    [
+     0.126,
+     0.018,
+     0.0085
+    ]
+   ]
+  },
+  "pivots": {
+   "Item_Wrench": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Apparition": {
+  "file": "Apparition.fbx",
+  "objects": [
+   "Apparition_Body"
+  ],
+  "armature": "Apparition_Rig",
+  "bones": [
+   "Root",
+   "Hips",
+   "Spine",
+   "Chest",
+   "Neck",
+   "Head",
+   "Shoulder.L",
+   "UpperArm.L",
+   "ForeArm.L",
+   "Hand.L",
+   "Shoulder.R",
+   "UpperArm.R",
+   "ForeArm.R",
+   "Hand.R",
+   "Thigh.L",
+   "Shin.L",
+   "Foot.L",
+   "Thigh.R",
+   "Shin.R",
+   "Foot.R"
+  ],
+  "clips": {
+   "Stand": [
+    1,
+    2
+   ],
+   "Walk": [
+    1,
+    31
+   ],
+   "Sit": [
+    1,
+    2
+   ],
+   "SitLook": [
+    1,
+    15
+   ]
+  },
+  "fps": 24,
+  "materials": [
+   "M_Apparition"
+  ],
+  "tris": 1084,
+  "aabb": {
+   "Apparition_Body": [
+    [
+     -0.2983,
+     -0.1933,
+     0.0004
+    ],
+    [
+     0.3029,
+     0.205,
+     2.302
+    ]
+   ]
+  },
+  "pivots": {
+   "Apparition_Body": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "bytes": 588396,
+  "skinned": true
+ }
+}

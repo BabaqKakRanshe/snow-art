@@ -1,0 +1,119 @@
+{
+ "note": "forester's hut lamps. position / forward / up: hut frame (TowerHut prefab: x right seen from the door side, y into the hut, z up, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. group lantern = the storm lantern outside (burns at the start; X01 puts it out for good: light off, glow hidden, lens material -> M_Hut_Lamp_Lantern_Off); group hut = the oil lamp inside (off at the start). lens: the glowing object, glow: the halo cards. Point lights: the IES files describe the shape (URP Point lights do not use them).",
+ "lights": [
+  {
+   "socket": "LIGHT_Lantern",
+   "lens": "Lens_Lantern",
+   "glow": "Glow_Lantern",
+   "parent": "Lantern",
+   "type": "stormlantern",
+   "unityLight": "Point",
+   "position": [
+    0.4,
+    -1.46,
+    1.9
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "positionUnity": [
+    -0.4,
+    1.9,
+    1.46
+   ],
+   "forwardUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "upUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "intensityURP": 0.9,
+   "peakCandela": 10,
+   "kelvin": 1900,
+   "filterLinear": [
+    1.0,
+    0.96,
+    0.9
+   ],
+   "colorLinear": [
+    1.0,
+    0.2225,
+    0.0
+   ],
+   "range": 11.0,
+   "group": "lantern",
+   "shadows": true,
+   "ies": "IES/stormlantern.ies",
+   "desc": "storm lantern (kerosene, flat wick) on its hook right of the door; burns at the start, goes out for good at X01; flickers (the U3 lantern's settings: Point, 0.9, range 11)",
+   "startsOn": true
+  },
+  {
+   "socket": "LIGHT_OilLamp",
+   "lens": "Lens_OilLamp",
+   "glow": "",
+   "parent": "Lamp_Oil",
+   "type": "oillamp",
+   "unityLight": "Point",
+   "position": [
+    0.0,
+    0.0,
+    2.38
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "positionUnity": [
+    0.0,
+    2.38,
+    0.0
+   ],
+   "forwardUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "upUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "intensityURP": 0.7,
+   "peakCandela": 12,
+   "kelvin": 2000,
+   "filterLinear": [
+    1.0,
+    0.97,
+    0.92
+   ],
+   "colorLinear": [
+    1.0,
+    0.2486,
+    0.0073
+   ],
+   "range": 7.0,
+   "group": "hut",
+   "shadows": true,
+   "ies": "IES/oillamp.ies",
+   "desc": "kerosene lamp with an enamel shade, hanging under the ridge; off at the start (light it: OPEN)",
+   "startsOn": false
+  }
+ ]
+}

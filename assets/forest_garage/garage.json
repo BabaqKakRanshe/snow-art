@@ -1,0 +1,56 @@
+{
+ "coplanar_moved_mm": {
+  "n": 70,
+  "max": 1.6
+ },
+ "coplanar_separated": 70,
+ "atlases": {
+  "Bld": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 909.11,
+   "uv_fill": 0.57,
+   "colours": 64,
+   "seconds": 219.1
+  },
+  "Parts": {
+   "size": 512,
+   "ppm": 64.0,
+   "area_m2": 31.54,
+   "uv_fill": 0.493,
+   "colours": 63,
+   "seconds": 23.6
+  }
+ },
+ "knock_points": 4,
+ "part_boxes": 2,
+ "ix": {
+  "count": 2,
+  "u3": 2,
+  "missing": [],
+  "extra": []
+ },
+ "contract": {
+  "parts": 3,
+  "sockets": 11,
+  "kinds": {
+   "static": 1,
+   "hinge": 2
+  }
+ },
+ "tris": 21796,
+ "tris_by_object": {
+  "Garage": 20592,
+  "IX_GarageDoor_92": 1008,
+  "IX_GarageSideDoor_93": 196
+ },
+ "objects": 3,
+ "materials": [
+  "M_Gar_Bld",
+  "M_Gar_Panel",
+  "M_Gar_Parts",
+  "M_GlassDirty",
+  "M_Lamp_BulbOff",
+  "M_Lamp_FluorOff"
+ ]
+}

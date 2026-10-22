@@ -1,0 +1,14 @@
+00:00.324  blend            | Read blend: "/home/claude/plane/out/plane_v2_final_final4.blend"
+/home/claude/plane/render_eye.py:67: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+/home/claude/plane/render_eye.py:100: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  gm.use_nodes = True
+/home/claude/plane/render_eye.py:108: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  rm.use_nodes = True
+03:03.564  render           | Saved: 'renders/v4eye_panel.png'
+rendered panel
+05:46.871  render           | Saved: 'renders/v4eye_lpanel.png'
+rendered lpanel
+08:38.118  render           | Saved: 'renders/v4eye_seat.png'
+rendered seat
+done

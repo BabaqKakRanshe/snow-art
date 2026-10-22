@@ -1,0 +1,538 @@
+{
+ "package": "Forest_Update4.unitypackage",
+ "bytes": 25621651,
+ "entries": 86,
+ "files": [
+  {
+   "path": "Assets/Locations",
+   "guid": "8fd0cc986184b4ff32ac708c6e1529c0",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest",
+   "guid": "827abc79a3d02ea4153aa088140cef15",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models",
+   "guid": "7c10d76d05d6b21b64a813f73f55173c",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures",
+   "guid": "1717a890f1c607b4fb17f5d0c38c19f1",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Data",
+   "guid": "ff4e1d6f0d874d42b641e8801beff788",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Barrier.fbx",
+   "guid": "f55084fdcbda07a511f0fc621b76cc2c",
+   "bytes": 38716,
+   "md5": "8aa0ca38559f080ff08a544b8fc60910"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/BaseMain.fbx",
+   "guid": "a1cc47b87dafc62f07839ad356f6aa90",
+   "bytes": 2972060,
+   "md5": "d913270a3b94214d7ed1768cf45f21a1"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/BaseMain_Opening.fbx",
+   "guid": "e7c2e715b602f8ab0aa688e1532386c5",
+   "bytes": 79532,
+   "md5": "42adba2eb4fd6fecd81801a6dc76210a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Bridge30.fbx",
+   "guid": "45fa35f3a014a4d7bff955e4bf81c2ad",
+   "bytes": 357420,
+   "md5": "d7cebe67f661a619bda7cb2e07a6baff"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Checkpoint.fbx",
+   "guid": "98c660fda1a15b5f0c6ed0ec8efbdad0",
+   "bytes": 203484,
+   "md5": "da5bfc670fada2201b4aed0f1ca49337"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dist_03.fbx",
+   "guid": "8e316304a534c7dc448c22b0af8ee163",
+   "bytes": 30028,
+   "md5": "f378f6049c310c03a50b65fcd6966fe5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dist_07.fbx",
+   "guid": "b7b7e69861d3f96c33007eac876441a5",
+   "bytes": 29932,
+   "md5": "2997a453aea64d3ff32da0cfbd1df2e2"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dist_09.fbx",
+   "guid": "ba1c88593f0ef6353863984262011640",
+   "bytes": 29980,
+   "md5": "adb974ace592747958b7380eaae674e8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dist_11.fbx",
+   "guid": "3737e88936b328dbb636852f59934a59",
+   "bytes": 29884,
+   "md5": "fe19dc0f85a9ce0258fe3bbe14ae2902"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Dist_23.fbx",
+   "guid": "85ee3b7cdb3d95c94d907059871bf8d3",
+   "bytes": 30028,
+   "md5": "d49a5f4a89c84b49d6ff5011464bc36b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/EuroPost.fbx",
+   "guid": "47ee0862def446e696f77605525628d5",
+   "bytes": 21196,
+   "md5": "dc5b83d3274d693e1c0ac50bf27b8499"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/FallenTree.fbx",
+   "guid": "ee4e1164bd4e27d5104894280c7bbfd7",
+   "bytes": 220732,
+   "md5": "1281edf03348d45744102a779d40d4ab"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/FuelTanks.fbx",
+   "guid": "d72edc67687dbe70afbec79b98c39565",
+   "bytes": 221724,
+   "md5": "9986230ba5abf76d1993cf63767a60c6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Garage.fbx",
+   "guid": "928543abe595768126e7d100c0a30fc9",
+   "bytes": 424860,
+   "md5": "6b27cdb8eecc6b97331da25aa95d88c7"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Gate.fbx",
+   "guid": "c8ab46f929802fb52f57b133be105c57",
+   "bytes": 57788,
+   "md5": "645500451cdea9740ac76d09204669c9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Hochsitz.fbx",
+   "guid": "4980cc9293158e1af49efb47683b94a8",
+   "bytes": 46060,
+   "md5": "9f69c3beca42c4355e222942737d65c3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/LogCut.fbx",
+   "guid": "1a0d28a5db802f234ea2f37cefe53e59",
+   "bytes": 27548,
+   "md5": "94495bc89e1e1e13ef1a5890227a727d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/OverlookDeck.fbx",
+   "guid": "1ed2145a92b4658e80eb59a8c6ed61cf",
+   "bytes": 93324,
+   "md5": "5a83b4729dd8278146c40702541a6915"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Forsthuette.fbx",
+   "guid": "7b1af5561aaa63185f835b50d9ac2075",
+   "bytes": 28348,
+   "md5": "19370bca09ba763b76b2eba6691f55af"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Lookout.fbx",
+   "guid": "6f2330a85912f1f8583e63d287cf9819",
+   "bytes": 30124,
+   "md5": "c7247b2a717280ec2068e5be707be90c"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Observatory.fbx",
+   "guid": "31cc85c9ebb2edc69e0cdf662c5009dd",
+   "bytes": 29964,
+   "md5": "06b40bd330e96ff7dbcf72a4ad07e307"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Pump.fbx",
+   "guid": "6bc7bb9c9183b20abb00372f2f3485fb",
+   "bytes": 30108,
+   "md5": "498a7fd1affdba2a7a4f8ee795787f78"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Radar.fbx",
+   "guid": "ae8883992217e3d1420c9b64954c0716",
+   "bytes": 30060,
+   "md5": "7a035a544215976e6da3c720b2966020"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Relay.fbx",
+   "guid": "2c9fad1090c3799619491a348c45b940",
+   "bytes": 30140,
+   "md5": "fcabfe17ba5b644fd796dddc78b36c15"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Viewpoint.fbx",
+   "guid": "9814fc9477652917f0991047a7a202d9",
+   "bytes": 29916,
+   "md5": "6cc4c8dcee34eb5765b81dee55332a88"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Weather.fbx",
+   "guid": "007d6356e3f97e37d3369fc19e23be76",
+   "bytes": 30028,
+   "md5": "c1544933034aa3981d1e4b0915257de9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/TowerHut.fbx",
+   "guid": "8633d928a30959784189553661233b18",
+   "bytes": 236396,
+   "md5": "63aa3c006fa346543ec811257284bef6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Trafo.fbx",
+   "guid": "a98fa0a25a6060c97e352fb183bf4af6",
+   "bytes": 209836,
+   "md5": "f12d829dd98d1b1fc7a87e7f17775ad8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ZoneGate.fbx",
+   "guid": "abdd3c67a51d9c0a02615cbb866ccdf8",
+   "bytes": 72300,
+   "md5": "61fee8594b952a76129b3ab5d2a3b20b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Hut_Hut_A_px.png",
+   "guid": "79e1d2427d467105e729958f745aceae",
+   "bytes": 655993,
+   "md5": "88f97376e3cb16a63c0b864d81ab4eb3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Hut_HutProps_A_px.png",
+   "guid": "f4cf5e4b614ffc2c5acd6bc5cfb181bc",
+   "bytes": 26789,
+   "md5": "f565981e8213cf2c7cbf9304189a414d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Hut_Panel_A_px.png",
+   "guid": "6bb79ff230fef157a25c4e1ef0a86386",
+   "bytes": 31725,
+   "md5": "d1e76c2d3f6067c1baca838290608c94"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Hut_Panel_E_px.png",
+   "guid": "a53626bd96252ccd1426edb402648197",
+   "bytes": 2334,
+   "md5": "0d19d9e14b74c83f19635e4a60c9b16f"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_Kpp_A_px.png",
+   "guid": "c5185e57597b23cb9f7f5de6431a1d5e",
+   "bytes": 632050,
+   "md5": "803259b958473f350fc28ca81e71ad51"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_KppYard_A_px.png",
+   "guid": "db5282b2d6b44b629d47207947839049",
+   "bytes": 139757,
+   "md5": "bd2b9873f83ea4d8456e0d5ef32b7ebf"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_KppProps_A_px.png",
+   "guid": "1ba3bd9a1a993a314f99169e5cc5e85f",
+   "bytes": 27491,
+   "md5": "16603f49e0f94e7b6529d560b8390cd7"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_Panel_A_px.png",
+   "guid": "e2ef9e01583a1d58f2eb6611eae19a75",
+   "bytes": 14592,
+   "md5": "5278294e85a205d494633d094f0d59af"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_Panel_E_px.png",
+   "guid": "278b03b29dd6ca53f6568a4bc7e72e99",
+   "bytes": 11319,
+   "md5": "af69acbc7c6da0b9bd789165ee57cabc"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_ChainLink_A_px.png",
+   "guid": "ac5bcfa2d95c69a612edbf4575ebe5e9",
+   "bytes": 6825,
+   "md5": "0c095e108a85c9dd81d2761efd404063"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_Barbed_A_px.png",
+   "guid": "013a7824eeb83fe3a24835d1d91c2756",
+   "bytes": 324,
+   "md5": "a629f3711cfb39438e605f480a165395"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_Tanks_A_px.png",
+   "guid": "3597d0736c88b32db6b223a08cbe1b06",
+   "bytes": 744086,
+   "md5": "34ea541ace154b6fc8b377f06d3eb972"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_Trafo_A_px.png",
+   "guid": "d163fa0c15855c5760692713be8578e9",
+   "bytes": 342978,
+   "md5": "7c192c2e494b555377ec8dac564772e3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_YardProps_A_px.png",
+   "guid": "d9f32b8cb2b4a48ca089398c7318a0c3",
+   "bytes": 20527,
+   "md5": "3434e09ec9d39c82975c3c2746537412"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_Panel_A_px.png",
+   "guid": "9955b3d27a520809def9d3c4e50c6a3d",
+   "bytes": 10394,
+   "md5": "4722d350e007b65f5bb69d676cd80bc8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_ChainLink_A_px.png",
+   "guid": "cd632a2d29bfb27751382ffd77164752",
+   "bytes": 6825,
+   "md5": "0c095e108a85c9dd81d2761efd404063"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_Barbed_A_px.png",
+   "guid": "503d804f6f4071330dfa328a3febbe35",
+   "bytes": 324,
+   "md5": "a629f3711cfb39438e605f480a165395"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Ext_A_px.png",
+   "guid": "29cc3971033b3089817aad74ebe2e8f5",
+   "bytes": 2160514,
+   "md5": "fcbe0162c12e1d5bb3b0c4bbfd0f9c74"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Roof_A_px.png",
+   "guid": "8d26b5020c67a201bb426a832912e526",
+   "bytes": 1072484,
+   "md5": "1af86b44a6f3314d0705706d6b1622fa"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Parts_A_px.png",
+   "guid": "bc47fca655ffa80818a22b5815faa7f8",
+   "bytes": 1216415,
+   "md5": "a25673884de2a1d183e07d14c17b427b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Opening_A_px.png",
+   "guid": "6c83fb1839d94096f99ede6cf29e517f",
+   "bytes": 34881,
+   "md5": "45a1ca4096d6322333432e18614bdff1"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Panel_A_px.png",
+   "guid": "2487fdf54b2026d5322b696f8a806027",
+   "bytes": 49070,
+   "md5": "3dc01ecf652aa66b98f74e9d92265449"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Panel_E_px.png",
+   "guid": "2b2d0a8b4db6ce1d25c6af6c4561c2bd",
+   "bytes": 3986,
+   "md5": "ae65ce5ca8d204765b55642b162eee27"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Flur_EG_A_px.png",
+   "guid": "f6e0a7f7f7b1b3bb9f788463d10206f0",
+   "bytes": 266734,
+   "md5": "68ec16c5d2abbc8a4246d0c7f87483c6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Flur_OG_A_px.png",
+   "guid": "9cf9c2a4e363b34ce526a2013239139d",
+   "bytes": 273864,
+   "md5": "6fbf73ba7306a0b8c31e13b0ace26c56"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Flur_UG_A_px.png",
+   "guid": "eaf66580fd04f939f8cdd5439f4903ff",
+   "bytes": 324398,
+   "md5": "3ce3e924184dfe3a3f8936449012a256"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Garage_A_px.png",
+   "guid": "0e8f659d91233144e249aaf4109d4046",
+   "bytes": 1100319,
+   "md5": "d28be759c494a9b799ec57b996529e08"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Heizung_A_px.png",
+   "guid": "236c4dee63c475446699430c3527fc0f",
+   "bytes": 572527,
+   "md5": "7d0408e24b76b4a4a9555c28bb5c8753"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Kaserne_A_px.png",
+   "guid": "c3786da3d7f7faa0e7aa38452eccb3ec",
+   "bytes": 434584,
+   "md5": "90378742d5e5baba275fe1172fc210de"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Kueche_A_px.png",
+   "guid": "eb3e5d9203a040fa525b9857ee4f41d1",
+   "bytes": 384208,
+   "md5": "f25258481c479bd33df1ac0f7ba05d04"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Lager_A_px.png",
+   "guid": "bdfb09844adb2b6fba29a2704504e0b4",
+   "bytes": 409207,
+   "md5": "694331bb363723ffaa8ffda85c0b02c9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Leitstand_A_px.png",
+   "guid": "cba86548234e2515cdb92300c707c121",
+   "bytes": 565853,
+   "md5": "264ae2ba16b312e8019f5d32e352f292"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Schaltraum_A_px.png",
+   "guid": "a3a68db30463982b687748a0ed228f38",
+   "bytes": 324592,
+   "md5": "c14edbbc10fb2b53a5fae206364e5dce"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Serverraum_A_px.png",
+   "guid": "2127737999d6bd4b3f9b22dc254b57f2",
+   "bytes": 321759,
+   "md5": "56c3a6b4921f024605ad8c2228969c44"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Stationsleiter_A_px.png",
+   "guid": "8ef3669ab1e7c15c8e7351abf3a2ccad",
+   "bytes": 274897,
+   "md5": "a4cc9f5269bca18a72238be15053ea5b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Treppenhaus_A_px.png",
+   "guid": "230997bc35ccb1253de1e261b6385fb3",
+   "bytes": 1563003,
+   "md5": "ea015b48c62e73ea4ee42dad8fb99f92"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Waschraum_A_px.png",
+   "guid": "732351cb35854d7bc76950af056423ed",
+   "bytes": 453041,
+   "md5": "9dca0861cccd104af8f77fde95c82166"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Main_Rm_Windfang_A_px.png",
+   "guid": "0ad0393ddafbfdb1413ab6951d76d541",
+   "bytes": 194671,
+   "md5": "ab1091586695476528b14f0b9de3a9f4"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Gar_Bld_A_px.png",
+   "guid": "2548e4c5a8da6dcd26dc116639889ccc",
+   "bytes": 1680194,
+   "md5": "9e455bd0b7a9c8613289295116515520"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Gar_Parts_A_px.png",
+   "guid": "9d444148dddf75172de300745415e872",
+   "bytes": 196714,
+   "md5": "9b206a25f1181ff82e71c2a8969746c8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Gar_Panel_A_px.png",
+   "guid": "ab8c7849f624ea09ad4274ae7d5d32b3",
+   "bytes": 8775,
+   "md5": "30bccc8197dd1fde2ed9de2bb19cc6ea"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Signs_A_px.png",
+   "guid": "daccc6c2fffa5aac028989e32f08b1f3",
+   "bytes": 114349,
+   "md5": "ac945185e202572b14218dcc1597ef82"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Gate_A_px.png",
+   "guid": "122313f9283fe6aa272dc86b013a18d6",
+   "bytes": 108711,
+   "md5": "ed4e6f6607ffd585ee86b41878c2e19c"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Bridge_A_px.png",
+   "guid": "112d68ba040e484739096d26fbd5c9ba",
+   "bytes": 2743286,
+   "md5": "dd7ad4f69e2acf5daa058664706a6b24"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Deck_A_px.png",
+   "guid": "15b74cb215b9d5a17e4adc664485cdfb",
+   "bytes": 331833,
+   "md5": "7d8febc98467a1d14a2f02b2ac13ce58"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Windfall_A_px.png",
+   "guid": "f79edc3dea182f6f845347e693278648",
+   "bytes": 373774,
+   "md5": "c527df070de9fd1bbbdadf821efc8849"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Panel_A_px.png",
+   "guid": "0c5ddbc6b6c8ba293aa5b58ef9b0fa7c",
+   "bytes": 86782,
+   "md5": "99531f4cdaade398037f5a8ea81677bf"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_ChainLink_A_px.png",
+   "guid": "b6f8173ec2ca5d3702cb126b4bcfaf2d",
+   "bytes": 6825,
+   "md5": "0c095e108a85c9dd81d2761efd404063"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Barbed_A_px.png",
+   "guid": "b622cc7d5c10b24c74064dc8ef9b74bd",
+   "bytes": 335,
+   "md5": "7d0344f1344c0d9c27ec1925a8598e41"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Materials.json",
+   "guid": "2fd4979e6f6a7428958b37f50222ada2",
+   "bytes": 157705,
+   "md5": "167dbadb16644c31f032b583ab0f8cc1"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Layout.json",
+   "guid": "d1e0ae0c88a61aaebb2cb18d445ac415",
+   "bytes": 4567964,
+   "md5": "530be65a8fb3096908c300c70a247933"
+  },
+  {
+   "path": "Assets/Locations/Forest/README.md",
+   "guid": "7570bcddf83da140f4844a61ee40deec",
+   "bytes": 48793,
+   "md5": "373b129593db182855a1aa719d607148"
+  }
+ ],
+ "changes": [
+  "material M_Lantern: albedo=T_Hut_Panel_A_px.png, emissionMap=T_Hut_Panel_E_px.png, color=[1, 1, 1]",
+  "material M_LanternOff: albedo=T_Hut_Panel_A_px.png, color=[1, 1, 1]",
+  "material M_Lamp_FluorFlicker: albedo=T_Kpp_Panel_A_px.png, emissionMap=T_Kpp_Panel_E_px.png, color=[1, 1, 1]",
+  "prefabLights TowerHut lantern: p [-0.33, 2.1, 1.55] -> [-0.4, 1.9, 1.46]",
+  "prefabLights Checkpoint booth: p [0.3, 2.45, -0.1] -> [0.3, 2.56, -0.1]",
+  "prefabLights Checkpoint power: p [-0.9, 2.35, -2.1] -> [-0.905, 2.42, -1.718]",
+  "prefabGlows TowerHut M_Glow_Lantern: p [-0.33, 2.1, 1.3] -> [-0.4, 1.911, 1.46]",
+  "prefabGlows Checkpoint M_Glow_FluorFlicker: p [0.3, 2.77, -0.1] -> [0.3, 2.612, -0.1]",
+  "prefabGlows Checkpoint M_Glow_Bulb: p [-0.9, 2.57, -1.72] -> [-0.905, 2.44, -1.6807]",
+  "interactables IX_Drawer_31: max 0.5 -> 0.2 (the drawer cabinet stands 0.20 m in front)",
+  "interactables IX_Drawer_32: max 0.5 -> 0.2 (the drawer cabinet stands 0.20 m in front)",
+  "interactables IX_Drawer_33: max 0.5 -> 0.2 (the drawer cabinet stands 0.20 m in front)",
+  "interactables IX_Drawer_34: max 0.5 -> 0.2 (the drawer cabinet stands 0.20 m in front)"
+ ]
+}

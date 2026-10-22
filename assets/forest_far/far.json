@@ -1,0 +1,166 @@
+{
+ "coplanar_separated": 468,
+ "coplanar_moved_mm": {
+  "Radome": {
+   "n": 16,
+   "max": 0.8
+  },
+  "RelayMast": {
+   "n": 12,
+   "max": 0.86
+  },
+  "MeteoStation": {
+   "n": 51,
+   "max": 0.8
+  },
+  "LookoutTower": {
+   "n": 112,
+   "max": 3.2
+  },
+  "PumpHouse": {
+   "n": 7,
+   "max": 0.8
+  },
+  "IX_PumpDoor_7": {
+   "n": 1,
+   "max": 0.8
+  },
+  "Chapel": {
+   "n": 181,
+   "max": 1.6
+  },
+  "Cabin": {
+   "n": 84,
+   "max": 2.4
+  },
+  "IX_CabinDoor_9": {
+   "n": 4,
+   "max": 0.8
+  }
+ },
+ "atlases": {
+  "Dish16": {
+   "size": 1024,
+   "ppm": 25.1,
+   "area_m2": 709.76,
+   "uv_fill": 0.425,
+   "colours": 63,
+   "seconds": 156.1
+  },
+  "Dish12": {
+   "size": 1024,
+   "ppm": 30.3,
+   "area_m2": 485.17,
+   "uv_fill": 0.426,
+   "colours": 63,
+   "seconds": 159.3
+  },
+  "Towers": {
+   "size": 2048,
+   "ppm": 45.2,
+   "area_m2": 1108.23,
+   "uv_fill": 0.539,
+   "colours": 63,
+   "seconds": 671.0
+  },
+  "Meteo": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 105.7,
+   "uv_fill": 0.265,
+   "colours": 63,
+   "seconds": 87.0
+  },
+  "Lookout": {
+   "size": 1024,
+   "ppm": 35.6,
+   "area_m2": 443.12,
+   "uv_fill": 0.534,
+   "colours": 64,
+   "seconds": 167.1
+  },
+  "Chapel": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 617.32,
+   "uv_fill": 0.387,
+   "colours": 64,
+   "seconds": 381.3
+  },
+  "Small": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 756.65,
+   "uv_fill": 0.475,
+   "colours": 64,
+   "seconds": 680.1
+  }
+ },
+ "uv_copies": {
+  "Dish_2": "Dish_1",
+  "Dish_5": "Dish_1",
+  "Dish_4": "Dish_3",
+  "IX_CabinetDoor_3": "IX_CabinetDoor_2",
+  "IX_CabinetDoor_6": "IX_CabinetDoor_2",
+  "IX_CabinetDoor_5": "IX_CabinetDoor_4"
+ },
+ "part_boxes": 8,
+ "tris": 72895,
+ "tris_by_object": {
+  "Cabin": 5164,
+  "Campsite": 1475,
+  "Chapel": 3546,
+  "Dish_1": 6144,
+  "Dish_2": 6144,
+  "Dish_3": 6072,
+  "Dish_4": 6072,
+  "Dish_5": 6144,
+  "IX_CabinDoor_9": 96,
+  "IX_CabinetDoor_2": 176,
+  "IX_CabinetDoor_3": 176,
+  "IX_CabinetDoor_4": 176,
+  "IX_CabinetDoor_5": 176,
+  "IX_CabinetDoor_6": 176,
+  "IX_ChapelDoor_8": 416,
+  "IX_PumpDoor_7": 200,
+  "LookoutTower": 6474,
+  "MeteoStation": 5618,
+  "PumpHouse": 1350,
+  "Radome": 5480,
+  "RelayMast": 11620
+ },
+ "objects": 21,
+ "materials": [
+  "M_Base_Barbed",
+  "M_Base_ChainLink",
+  "M_Candle",
+  "M_Far_Chapel",
+  "M_Far_Dish12",
+  "M_Far_Dish16",
+  "M_Far_Lookout",
+  "M_Far_Meteo",
+  "M_Far_Panel",
+  "M_Far_Small",
+  "M_Far_Towers",
+  "M_GlassDirty",
+  "M_Headlight",
+  "M_LEDOff",
+  "M_Lamp_SodiumOff",
+  "M_Light_Red"
+ ],
+ "u3_tris": {
+  "Dish_1": 7698,
+  "Dish_2": 7698,
+  "Dish_3": 7586,
+  "Dish_4": 7586,
+  "Dish_5": 7698,
+  "Radome": 3678,
+  "RelayMast": 9352,
+  "MeteoStation": 8906,
+  "LookoutTower": 14832,
+  "PumpHouse": 614,
+  "Chapel": 4424,
+  "Cabin": 4642,
+  "Campsite": 1816
+ }
+}

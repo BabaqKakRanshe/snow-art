@@ -1,0 +1,12 @@
+00:00.284  blend            | Read blend: "/home/claude/plane/out/plane_v2_final_final4.blend"
+00:00.322  cycles           | WARNING CUEW initialization failed: Error opening the library
+/home/claude/plane/render.py:61: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+/home/claude/plane/render.py:74: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  fm.use_nodes = True
+01:43.456  render           | Saved: 'renders/v4p_hero.png'
+rendered hero
+03:29.691  render           | Saved: 'renders/v4p_rear34.png'
+rendered rear34
+04:43.123  render           | Saved: 'renders/v4p_cargoR.png'
+rendered cargoR

@@ -1,0 +1,794 @@
+{
+ "package": "Forest_Update6.unitypackage",
+ "bytes": 4032536,
+ "md5": "f1271940f4ff800fe7b577fd00dea332",
+ "entries": 106,
+ "over": "Forest_Update5",
+ "guid_source": {
+  "Apparition": "new",
+  "GenContainer": "Update 3",
+  "Item_Ashtray": "Update 3",
+  "Item_Backpack": "Update 3",
+  "Item_BinderBlue": "Update 3",
+  "Item_BinderRed": "Update 3",
+  "Item_Book": "Update 3",
+  "Item_BookOpen": "Update 3",
+  "Item_BookStack": "Update 3",
+  "Item_Boots": "Update 3",
+  "Item_BottleBeer": "Update 3",
+  "Item_BottleBeerLying": "Update 3",
+  "Item_BottleSchnapps": "Update 3",
+  "Item_BottleWater": "Update 3",
+  "Item_BoxLarge": "Update 3",
+  "Item_BoxOpen": "Update 3",
+  "Item_BoxSmall": "Update 3",
+  "Item_BreadMouldy": "Update 3",
+  "Item_Broom": "Update 3",
+  "Item_Bucket": "Update 3",
+  "Item_BucketWater": "Update 3",
+  "Item_Butts": "Update 3",
+  "Item_CableReel": "Update 3",
+  "Item_CanCrushed": "Update 3",
+  "Item_CanGreen": "Update 3",
+  "Item_CanRed": "Update 3",
+  "Item_CardboardFlat": "Update 3",
+  "Item_Cards": "Update 3",
+  "Item_CigPack": "Update 3",
+  "Item_CigPackCrushed": "Update 3",
+  "Item_Clipboard": "Update 3",
+  "Item_Clothes": "Update 3",
+  "Item_Dustpan": "Update 3",
+  "Item_Envelope": "Update 3",
+  "Item_Flashlight": "Update 3",
+  "Item_Funnel": "Update 3",
+  "Item_Hammer": "Update 3",
+  "Item_Headphones": "Update 3",
+  "Item_Jar": "Update 3",
+  "Item_Jerrycan20": "Update 3",
+  "Item_Kettle": "Update 3",
+  "Item_Key_Garage": "Update 3",
+  "Item_Key_Generator": "Update 3",
+  "Item_Key_Hauptgebaeude": "Update 3",
+  "Item_Key_Schranke": "Update 3",
+  "Item_Magazine": "Update 3",
+  "Item_Medicine": "Update 3",
+  "Item_Mop": "Update 3",
+  "Item_MugGreen": "Update 3",
+  "Item_MugTipped": "Update 3",
+  "Item_MugWhite": "Update 3",
+  "Item_Newspaper": "Update 3",
+  "Item_NewspaperOpen": "Update 3",
+  "Item_Note": "Update 3",
+  "Item_NoteForm": "Update 3",
+  "Item_OilCan": "Update 3",
+  "Item_Padlock": "Update 3",
+  "Item_PaintCan": "Update 3",
+  "Item_Pan": "Update 3",
+  "Item_PaperBall": "Update 3",
+  "Item_PaperBallB": "Update 3",
+  "Item_PaperStack": "Update 3",
+  "Item_PhotoFrame": "Update 3",
+  "Item_PhotoLoose": "Update 3",
+  "Item_Plate": "Update 3",
+  "Item_PlateDirty": "Update 3",
+  "Item_Pot": "Update 3",
+  "Item_Radio": "Update 3",
+  "Item_RadioSet": "new",
+  "Item_Rag": "Update 3",
+  "Item_RopeCoil": "Update 3",
+  "Item_Rug": "Update 3",
+  "Item_Sack": "Update 3",
+  "Item_Screwdriver": "Update 3",
+  "Item_Soap": "Update 3",
+  "Item_StickyNote": "Update 3",
+  "Item_Thermos": "Update 3",
+  "Item_TinLying": "Update 3",
+  "Item_TinOpen": "Update 3",
+  "Item_ToiletRolls": "Update 3",
+  "Item_Toolbox": "Update 3",
+  "Item_ToothCup": "Update 3",
+  "Item_Towel": "Update 3",
+  "Item_TrashBag": "Update 3",
+  "Item_WoodCrate": "Update 3",
+  "Item_Wrench": "Update 3"
+ },
+ "base_md5": {
+  "Assets/Locations/Forest/Data/Forest_Materials.json": "76a84cfa1e032c6d3f4cdde2709992ba",
+  "Assets/Locations/Forest/Data/Forest_Layout.json": "3ba2a3448d786cd04ce1c26e71c0ec09",
+  "Assets/Locations/Forest/Data/Forest_Opening.json": "f6b2734f0d615b14a92e9e1818ccdc27",
+  "Assets/Locations/Forest/Data/Forest_Items.json": "a71b7d060cf5638432e4e19bd0dd8a2b",
+  "Assets/Locations/Forest/Data/Forest_Dressing.json": "a36ca992dfcc608e2d2daf26be52fafa",
+  "Assets/Locations/Forest/Data/Forest_Notes.json": "1d46315c90b1521a782612544cecab76",
+  "Assets/Locations/Forest/README.md": "a3e201291196e2ddbf056d633521265e"
+ },
+ "files": [
+  {
+   "path": "Assets/Locations",
+   "guid": "8fd0cc986184b4ff32ac708c6e1529c0",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest",
+   "guid": "827abc79a3d02ea4153aa088140cef15",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models",
+   "guid": "7c10d76d05d6b21b64a813f73f55173c",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures",
+   "guid": "1717a890f1c607b4fb17f5d0c38c19f1",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Data",
+   "guid": "ff4e1d6f0d874d42b641e8801beff788",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Apparition.fbx",
+   "guid": "e22addfc1f793c7c0128d2ec13d6e3f2",
+   "bytes": 588396,
+   "md5": "eb70f9ec9d5043a29f9d5bc5936306c2"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/GenContainer.fbx",
+   "guid": "89d18c94e269e3fe1f088d194e87215a",
+   "bytes": 695932,
+   "md5": "441b5b764bf60caff858ac09be9e878f"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Ashtray.fbx",
+   "guid": "a79bcf30501ac1fb62a4317a7d0e5444",
+   "bytes": 29276,
+   "md5": "254b3d80f5e2e46192a5d283b9c43ff0"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Backpack.fbx",
+   "guid": "92aae93c2b458db50b1b0c46b37bce2c",
+   "bytes": 30396,
+   "md5": "31c5091dfee4ae38edb89be91d2833a0"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BinderBlue.fbx",
+   "guid": "f596e2f2f42fd5cf8a7b5e10f28807b5",
+   "bytes": 23276,
+   "md5": "c25e9248176a1d6b2bf921376f4366a5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BinderRed.fbx",
+   "guid": "1fb233352dd97881e2f5a1cc9696992a",
+   "bytes": 23292,
+   "md5": "6484e7ecbce6a91d06170d326c4cc669"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Book.fbx",
+   "guid": "91f8110088454292e7f03259c098659d",
+   "bytes": 22700,
+   "md5": "374339d8fd1671f73c0e94f44dba2cd9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BookOpen.fbx",
+   "guid": "a63425eefb92c34909113bd7327a93b7",
+   "bytes": 22892,
+   "md5": "fb75b9ffab48b0b9b16421c2d08a2a9a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BookStack.fbx",
+   "guid": "b4a3dccfac8a9c517f9526f466a6228d",
+   "bytes": 22892,
+   "md5": "842b7c1ebdcf42d22f842d3581ee3d3a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Boots.fbx",
+   "guid": "f5c9370b606a233c2712e4b16bfc31e1",
+   "bytes": 40172,
+   "md5": "79c0eca282e808b77aae84fe79acb6f3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BottleBeer.fbx",
+   "guid": "4a81632e5dce14515f8c2ae09576c1e8",
+   "bytes": 29548,
+   "md5": "d77357ac529ad9cbc6118ebd0e1c63ae"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BottleBeerLying.fbx",
+   "guid": "8266becd99e33e83897169b0baa47660",
+   "bytes": 29868,
+   "md5": "5ac66e9d0c1ffe9950f31d56d9bb5dd9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BottleSchnapps.fbx",
+   "guid": "ca8ffdfde37be56742f1dfdf7be9623b",
+   "bytes": 27068,
+   "md5": "2356b214277d5965ecbe15a170a47f18"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BottleWater.fbx",
+   "guid": "c0aa91f0c527f1ffc7f1e3307e5ee1db",
+   "bytes": 27180,
+   "md5": "1ece7057808ec314b5543cb4fadf0c2a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BoxLarge.fbx",
+   "guid": "c569a6b650110fe4ac6199805adcdf09",
+   "bytes": 24764,
+   "md5": "29ac9c43991f6ffe896d2de7542cf4e9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BoxOpen.fbx",
+   "guid": "b90b0073ca61511f41dc23cec8f93c19",
+   "bytes": 24828,
+   "md5": "e2ecbbedf558b87ba519c4fe8a629357"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BoxSmall.fbx",
+   "guid": "0ea494c3de2583151ca3564906788937",
+   "bytes": 24780,
+   "md5": "20f8a97682aabc4f8943d91c305c4dba"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BreadMouldy.fbx",
+   "guid": "60256f72e24f4169d27897f866479607",
+   "bytes": 23100,
+   "md5": "9a90bd58f871a925bc00f9f79199f567"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Broom.fbx",
+   "guid": "64f56affee004f74cca4d2020579492e",
+   "bytes": 30684,
+   "md5": "f72663b188dcda927c5d9d9960e8c22e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Bucket.fbx",
+   "guid": "dab9326d70d3ca86f89c50c5dbf3b85c",
+   "bytes": 28684,
+   "md5": "04fe30dd5e73af06e95bc7bddd1f0d76"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_BucketWater.fbx",
+   "guid": "151a02e1ec3e8b7b9436c717f07ef29e",
+   "bytes": 30156,
+   "md5": "f1544269e01fa69d1fe8ef16bb5077a4"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Butts.fbx",
+   "guid": "432396e0e35e5ec8d7691e384d7c89f5",
+   "bytes": 25548,
+   "md5": "8885b04305873d14ef868f03099dcc9b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CableReel.fbx",
+   "guid": "d514883850c8125528e5b617f9b8be62",
+   "bytes": 28796,
+   "md5": "9ff8054292eb04f64ebdadaaa8542cf5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CanCrushed.fbx",
+   "guid": "d3d99a0c8d54bd00bea35e19d9a16c7d",
+   "bytes": 34892,
+   "md5": "cbe41fda3d0f0d4c26bd1d45d585964d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CanGreen.fbx",
+   "guid": "b0ec8a91e8601650e05e196f8ffaccb4",
+   "bytes": 26860,
+   "md5": "b0d41d12f7a8e69a76c7030a1bcd403b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CanRed.fbx",
+   "guid": "5dc7266307f8c9357fbafa25c958daa8",
+   "bytes": 26844,
+   "md5": "1277f364bd82cacb530f3cfb5dbc4269"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CardboardFlat.fbx",
+   "guid": "038a8d58d0f7d4791f6088ae0ab9c9b7",
+   "bytes": 21964,
+   "md5": "95175e7bdfa565042d6876335288f606"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Cards.fbx",
+   "guid": "d5e2fda91e49c59a690b6fac70169e8d",
+   "bytes": 24428,
+   "md5": "e98dbb6775346863100369e8600e7130"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CigPack.fbx",
+   "guid": "57923f3cf57c783a839fc9af6b1b170a",
+   "bytes": 21612,
+   "md5": "df4abea4f112247dae9580f1034c959d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_CigPackCrushed.fbx",
+   "guid": "37f8069adefe37f1615bccfe5398baa4",
+   "bytes": 24028,
+   "md5": "c18dfb04b8a5f186f0c1279abd19d613"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Clipboard.fbx",
+   "guid": "a60f15f40d29adffed4c4fe25517465c",
+   "bytes": 26316,
+   "md5": "0a8e00a5b86315f443edfbfad41728a3"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Clothes.fbx",
+   "guid": "414c63159a18b3a8d22cc0f2d68b2dfc",
+   "bytes": 44076,
+   "md5": "c211033b7f603561a6f442b16e54eb5a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Dustpan.fbx",
+   "guid": "adcbe2c6b4e23129509ec6dea00f109c",
+   "bytes": 20172,
+   "md5": "68102c38d9e18dae3e0059e0382a5bfd"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Envelope.fbx",
+   "guid": "251bcdb6e454e11b02ce79b1f3d64103",
+   "bytes": 23820,
+   "md5": "e15bcea81288de93d73026ca713b0534"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Flashlight.fbx",
+   "guid": "02fc8da1a162c62ec226662780795182",
+   "bytes": 28220,
+   "md5": "35c5c11928b5a705d5fe3f23efde29f5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Funnel.fbx",
+   "guid": "6f036dbf77df1ba38dadee2f1f510f1a",
+   "bytes": 26956,
+   "md5": "199d3db7a7a1acba322acfa8dd2e3168"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Hammer.fbx",
+   "guid": "f5b1d4c431c0e57de022c69a0d8126a7",
+   "bytes": 24348,
+   "md5": "4bf5787ccabcf0f8f5b89727c283d258"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Headphones.fbx",
+   "guid": "46e133c9b2babfbe114e7f0d79467777",
+   "bytes": 27644,
+   "md5": "ea8ebc76cd95b4957d5b6b5e99471ee6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Jar.fbx",
+   "guid": "0c10f862f39a7e8d9180cc6066caa050",
+   "bytes": 26716,
+   "md5": "745e4a51d0ee3f790e5b52a4a23e17b8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Jerrycan20.fbx",
+   "guid": "30111994ed606c46a76842b266a39ecd",
+   "bytes": 30876,
+   "md5": "1912f0d638ee2dda634231f4fb441cba"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Kettle.fbx",
+   "guid": "edb5cb159c6a68f8be2b76dd55786f97",
+   "bytes": 32060,
+   "md5": "68ac1e3c0a26778121ebf70c607b6931"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Key_Garage.fbx",
+   "guid": "bcf17af2b336a64b72e148f9aacfe699",
+   "bytes": 29068,
+   "md5": "20c10b29851a027db1b06abd3e5934fc"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Key_Generator.fbx",
+   "guid": "d2c9347403f4e3f033282f8995ff08f5",
+   "bytes": 29084,
+   "md5": "0659a141a16ddc0f89428711795b3fa5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Key_Hauptgebaeude.fbx",
+   "guid": "d05d6a667075e82dc384bf9c1e38ccf4",
+   "bytes": 29052,
+   "md5": "26d0c5a08709226f588a374be6897ecf"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Key_Schranke.fbx",
+   "guid": "180c3dd08d96d655cd2908ef8306a9fe",
+   "bytes": 29052,
+   "md5": "387b1bd2431a235d7b69f60944929fac"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Magazine.fbx",
+   "guid": "77e1b56e8b5291aa67e7b82cc05d5744",
+   "bytes": 22892,
+   "md5": "901126dd29e6b1108c09605e16e20b83"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Medicine.fbx",
+   "guid": "cee6406dc64043c8d7774b0b815f9c78",
+   "bytes": 21596,
+   "md5": "7a6c579b4b174b68c17cd6760e90716d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Mop.fbx",
+   "guid": "7ae8cd250b7ec0038b01b536c6366304",
+   "bytes": 52876,
+   "md5": "00edef831cd3d53cff298fbb079cded7"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_MugGreen.fbx",
+   "guid": "8a6ad9a9814dc85ad38713d275e87cab",
+   "bytes": 24956,
+   "md5": "22848d5241bde8a8bf7e39651831a966"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_MugTipped.fbx",
+   "guid": "a2da48ac50d51d33f10fe58d439825c8",
+   "bytes": 25468,
+   "md5": "90ae3bdaa85f139cf3a5048f338d9bd8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_MugWhite.fbx",
+   "guid": "44fbe2555858502ded526bc45d25db15",
+   "bytes": 24956,
+   "md5": "7f99b62bdc2a44d1af47eb2ae992784a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Newspaper.fbx",
+   "guid": "854a9438ed643fe004e174b800a54db4",
+   "bytes": 22892,
+   "md5": "4dcdf8086761e05d2140c38a325d6336"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_NewspaperOpen.fbx",
+   "guid": "f67ca8900c48572c8177ca2c26bbc3a1",
+   "bytes": 29164,
+   "md5": "8287ad5c3b4bd2ab63a0890868291020"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Note.fbx",
+   "guid": "1eadeeb4cc0851a9b5e19c7110e099ec",
+   "bytes": 23548,
+   "md5": "f3c9e3488f21eace4298a877c3dbbd0e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_NoteForm.fbx",
+   "guid": "fa314a0e0916c66349aa5246be4d1b40",
+   "bytes": 23532,
+   "md5": "82815f4e0117572402958d2f62f76481"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_OilCan.fbx",
+   "guid": "354c95c30e12cfa4715e038b166974f8",
+   "bytes": 27068,
+   "md5": "0086c2126f8682bbe6de5a859328faa4"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Padlock.fbx",
+   "guid": "e72b98374835f71183445c7fb97423d9",
+   "bytes": 25788,
+   "md5": "b4ecd65e84f8038cdde5e3f28ce4cf8c"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PaintCan.fbx",
+   "guid": "7bdf36a752ab5a6971c4716caafd9072",
+   "bytes": 28028,
+   "md5": "298403d7494c031c4efa4c40ac2fda5d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Pan.fbx",
+   "guid": "3b7ab0e8e365bcb649b51c3ec0019965",
+   "bytes": 27788,
+   "md5": "eda4f7e483e18c9a1fc3db5f8eaaa28a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PaperBall.fbx",
+   "guid": "30449876b00572591a348669b5a491d0",
+   "bytes": 22060,
+   "md5": "e54f87cfc627166f79cc92dbcbb89394"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PaperBallB.fbx",
+   "guid": "6d633f23604f1a4b9c95c44c91a684ea",
+   "bytes": 22092,
+   "md5": "030a79d156bf156f26810daae56c9a7a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PaperStack.fbx",
+   "guid": "1317bcbc05cf7b4524a781b41f334b11",
+   "bytes": 25884,
+   "md5": "09c2546def303bce17a4271f765ba5a0"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PhotoFrame.fbx",
+   "guid": "7102fb275cf4704fef8c96f2ffe9d091",
+   "bytes": 32764,
+   "md5": "a42f7647ab6163ffb4b281fb661645e2"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PhotoLoose.fbx",
+   "guid": "7b1146a9b2bc3c6590b74fd3a941eca2",
+   "bytes": 22604,
+   "md5": "c3f9c8332e2873c5e4fc30858449aa7f"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Plate.fbx",
+   "guid": "509451ed189298bf8748891af268438f",
+   "bytes": 26236,
+   "md5": "6f208befc0d551d4d047239a9cd08f7b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_PlateDirty.fbx",
+   "guid": "2e837471bead1344e4db4cd83b188407",
+   "bytes": 29660,
+   "md5": "51b533badb88f19ff2281fb8bd2b4f87"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Pot.fbx",
+   "guid": "a81e59d03ed88f9bad792febd8312804",
+   "bytes": 28940,
+   "md5": "4680c45d774e72927078035ad1f383ae"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Radio.fbx",
+   "guid": "bd8d614b27d10509e6cc16d8b699f517",
+   "bytes": 27772,
+   "md5": "4d80ab50d278200b44b253724f347c8b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_RadioSet.fbx",
+   "guid": "700e4e403387173f0ef7cec0591608f5",
+   "bytes": 45820,
+   "md5": "942cb9a9328e4af7434be6c8a54936b9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Rag.fbx",
+   "guid": "5bbb176bf1005b30dda834eca3a1b80c",
+   "bytes": 29372,
+   "md5": "4e5ddae6b3853a2a3ba20ca2d6ec31a6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_RopeCoil.fbx",
+   "guid": "7500a56d0160a41fa3de5573cf0a48a0",
+   "bytes": 56076,
+   "md5": "084f5d628c19f974b1356037e6b433f9"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Rug.fbx",
+   "guid": "81115006a515e7e27dc8905f675bbedb",
+   "bytes": 35804,
+   "md5": "7862dca8e7c3ab3a0796c147519b8716"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Sack.fbx",
+   "guid": "c78a79c5db9c0413d840d71eb6987f24",
+   "bytes": 26076,
+   "md5": "92e5c90628a6f8c6e83101b5a5157c44"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Screwdriver.fbx",
+   "guid": "f4f9c360f3b43f02b659688776be7d15",
+   "bytes": 21052,
+   "md5": "c6c93c3175177a6dadd6e48cd79b643b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Soap.fbx",
+   "guid": "f19cf540825584f28750603f86443d78",
+   "bytes": 21052,
+   "md5": "f8f27e929418261687d9a1cec001aa13"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_StickyNote.fbx",
+   "guid": "9bb5b86269bac5f026ccb190bcd6867d",
+   "bytes": 21964,
+   "md5": "7c300e1e806e194b2d3d3edf56143794"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Thermos.fbx",
+   "guid": "36cdd5c9b4c7f6de164fecafc354275e",
+   "bytes": 27996,
+   "md5": "83024b319fb50fa8ce1505a72f914353"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_TinLying.fbx",
+   "guid": "f2f9abb2cdddee9ceb960db39de21221",
+   "bytes": 29100,
+   "md5": "f2945cc0ece8c564f19d6ba5572a2ce8"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_TinOpen.fbx",
+   "guid": "4b5f8e83504ddebf0447c55e2ea5cd3a",
+   "bytes": 29868,
+   "md5": "16d46fa928a14d3625e5cdcb6185c23e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_ToiletRolls.fbx",
+   "guid": "bb05c0db1278afd458419616f4737c40",
+   "bytes": 25260,
+   "md5": "08448edeabc9b40045ee67edc6a89595"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Toolbox.fbx",
+   "guid": "94769d12f8b056c35c750a65bc142dbc",
+   "bytes": 23420,
+   "md5": "c430dcc43ebe649f43b736e548052807"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_ToothCup.fbx",
+   "guid": "b541e155578b1b950dfaa5fc853959bf",
+   "bytes": 23804,
+   "md5": "c78106affcb119bbed45d7366ecb6fb1"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Towel.fbx",
+   "guid": "fc763fcf4298f1dc750d4b2e14e1c0d4",
+   "bytes": 26124,
+   "md5": "3244e2f91e5571d6527e64c1636c2841"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_TrashBag.fbx",
+   "guid": "846f538372b603284d6989195634c045",
+   "bytes": 27644,
+   "md5": "48bdd42f1f7a489a15859beca1c7406a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_WoodCrate.fbx",
+   "guid": "a7beaf4ff1c03dd53b9b14e777e5be7b",
+   "bytes": 23500,
+   "md5": "7707bf0dd55c74892cc6769c2a96ec2a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Item_Wrench.fbx",
+   "guid": "2da5e28b1b6f022bd3a1a2abdedc158a",
+   "bytes": 20540,
+   "md5": "ed44c256dd6690a89388d86a686b094b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_GCont_Cont_A_px.png",
+   "guid": "cb3951dfa36131af79ed5500919c084e",
+   "bytes": 558005,
+   "md5": "21ea961b8d1da717a56e9c1abe94bd4b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_GCont_Genset_A_px.png",
+   "guid": "4e21d8dd2badc082be4c5e84b60d8aba",
+   "bytes": 193574,
+   "md5": "741dd4d3d74b5067546b806257369867"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_GCont_Props_A_px.png",
+   "guid": "9681f63bb0a99d26d022d1edd56b1201",
+   "bytes": 119739,
+   "md5": "85833c4cf5bbe2b30a46dcd3e1901741"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_GCont_Panel_A_px.png",
+   "guid": "a085eb5cb6dc99a254ff551df15fc91c",
+   "bytes": 18765,
+   "md5": "88105d8fb31382e5900d6d33019c186e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Item_Props_A_px.png",
+   "guid": "6ca279f6634e5255b48278ab99f573df",
+   "bytes": 175140,
+   "md5": "72348b4604aef6adf45d1735b88f303b"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Item_Panel_A_px.png",
+   "guid": "968159d761841d7e8206be5b45efa9e1",
+   "bytes": 87356,
+   "md5": "71e694e670936e457e2e3393e278efcc"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Item_Panel_E_px.png",
+   "guid": "65796957ebc5e025132456c3eefd2c54",
+   "bytes": 927,
+   "md5": "94737edb48a078a316c30ce941adb01e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fig_Figure_A_px.png",
+   "guid": "ec92046bdbb6980dbb3b1fe7c304ad80",
+   "bytes": 23110,
+   "md5": "1d7abe12e4c8f8ccd89fabb43d23f34a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Materials.json",
+   "guid": "2fd4979e6f6a7428958b37f50222ada2",
+   "bytes": 174053,
+   "md5": "61122a42c7306be60719020f48751ba6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Layout.json",
+   "guid": "d1e0ae0c88a61aaebb2cb18d445ac415",
+   "bytes": 4574021,
+   "md5": "f77339cce507c441fe1cc4c1ad39fa9d"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Opening.json",
+   "guid": "9b567ad7d9ce545fe115a6933d902167",
+   "bytes": 34370,
+   "md5": "6de40984f93043b169583e22943391a7"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Items.json",
+   "guid": "e7ef798d7f8c3b33890397062034684a",
+   "bytes": 27259,
+   "md5": "f02978dccb2bb0322fc44638c10ec2ad"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Dressing.json",
+   "guid": "8e1b50fd388550f3cd23197a1bb907eb",
+   "bytes": 102524,
+   "md5": "292438c2139cd08175f5a6d9e054f275"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Notes.json",
+   "guid": "3926a762a01411d72794d35df3508c63",
+   "bytes": 13690,
+   "md5": "1bca351fbf04860af107e21ffb693ee4"
+  },
+  {
+   "path": "Assets/Locations/Forest/README.md",
+   "guid": "7570bcddf83da140f4844a61ee40deec",
+   "bytes": 60490,
+   "md5": "9c8761f3e76eb31af1a59da5f93df819"
+  }
+ ],
+ "radio": {
+  "building": {
+   "origin": [
+    1.146,
+    -5.036,
+    0.745
+   ],
+   "yaw": 180.0,
+   "span_x": [
+    0.95,
+    1.308
+   ],
+   "span_y": [
+    -5.2095,
+    -4.896
+   ]
+  },
+  "unity": {
+   "p": [
+    339.566,
+    17.4893,
+    -354.8535
+   ],
+   "q": [
+    0.0,
+    -0.997564,
+    0.0,
+    0.069756
+   ]
+  }
+ },
+ "changes": [
+  "Forest_Materials.json: 11 new materials at the end: M_GCont_Cont, M_GCont_Genset, M_GCont_Props, M_GCont_Panel, M_GCont_Needle, M_GCont_Diesel, M_Item_Props, M_Item_Panel, M_RadioDisplay, M_RadioDisplayOn, M_Apparition",
+  "Forest_Layout.json prefabLights GenContainer: 2 lights -> 4 (3 bulkhead lamps inside, the barn lamp over the cargo doors; tag power, off at the start, room Exterior)",
+  "Forest_Layout.json prefabGlows GenContainer: 2 halos -> 4 (M_Glow_Bulb at each lamp)",
+  "Forest_Layout.json interactables GenContainer/IX_ContDoorL_83: max 170.0 -> 160.0",
+  "Forest_Layout.json interactables GenContainer/IX_GenStart_86: axis [0.0, -0.0, 1.0] -> [-1.0, 0.0, 0.0], max 60.0 -> 52.0",
+  "Forest_Layout.json interactables GenContainer/IX_Breaker_87: axis [0.0, -0.0, -1.0] -> [-1.0, 0.0, 0.0], max 45.0 -> 60.0",
+  "Forest_Layout.json interactables GenContainer/IX_Breaker_88: axis [0.0, -0.0, -1.0] -> [-1.0, 0.0, 0.0], max 45.0 -> 60.0",
+  "Forest_Layout.json interactables GenContainer/IX_Breaker_89: axis [0.0, -0.0, -1.0] -> [-1.0, 0.0, 0.0], max 45.0 -> 60.0",
+  "Forest_Layout.json interactables GenContainer/IX_MainSwitch_90: axis [1.0, -0.0, 0.0] -> [0.0, 0.0, 1.0], max 90.0 -> 60.0",
+  "Forest_Layout.json interactables GenContainer/IX_GenFillCap_300: axis [1.0, -0.0, 0.0] -> [0.0, 0.0, 1.0]",
+  "Forest_Layout.json viewpoints GenContainer: p [396.4528, 18.25, -336.4071] -> [391.3652, 18.18, -335.4599], target [392.5596, 17.33, -335.2238] -> [394.4473, 17.38, -335.0852], fov 50.534 -> 62.0 (the old camera stands inside the new generator set)",
+  "Forest_Layout.json noColliderPrefixes: + Apparition (the figure walks through things, no import collider)",
+  "Forest_Opening.json interactables Gen_FillNeck: neck [396.079, 17.31, -336.7676] -> [397.4793, 17.5, -332.7898], stand [395.9705, 16.33, -337.54] -> [398.222, 16.33, -332.8942], label \"Tagestank 60 l\" -> \"Tagestank 100 l\", capacityL 60 -> 100 (the fill box on the far end; the new container's day tank holds 100 l; startL, burnLph unchanged)",
+  "Forest_Opening.json items Note_GenProcedure: p [394.8284, 18.222, -335.3912] -> [394.0422, 18.082, -335.1292], q [0.0, -0.656059, 0.0, 0.754709] -> [0.0, 0.104528, 0.0, 0.994522] (on the top of the new generator panel: container-local (0.055, 1.752, 0.15) at yaw 4.0 deg; Update 3's panel top was 0.14 m higher, the form would hang in the air)",
+  "Forest_Opening.json scares: X02_Crossing.figure, X03_BackSeat.figure (Apparition, clips), X08_Radio.radio (the prop, its display materials, the speaker point) - data for the scares when they are built (DEFERRED)",
+  "Forest_Items.json items: tris of 79 models (the new meshes; colliders, origins, masses unchanged)",
+  "Forest_Items.json items: + Item_RadioSet (label \"Рация\", 6 kg, the case as the collider, display off / on, speaker)",
+  "Forest_Dressing.json props: + Leitstand_RadioSet_1 (Item_RadioSet) at p [339.566, 17.4893, -354.8535] q [0.0, -0.997564, 0.0, 0.069756] - the west console's writing shelf, its west end, the front to the operator (at the end of the list: the other props keep their indices)",
+  "Forest_Notes.json gen_procedure: the new generator set - the fill box sign DIESEL (was HEIZÖL), the start key on the generator panel (was a START lever), day tank 100 l for about 28 hours (was 60 l / 17 h; burnLph 3.5 unchanged)"
+ ]
+}

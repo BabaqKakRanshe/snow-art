@@ -1,0 +1,101 @@
+{
+ "note": "v13 sliding cargo doors (Unity prefab space, m). t = cargoDoorL / cargoDoorR (0 closed .. 1 open). Pose: localRotation = AngleAxis(side * yawDeg, up) * rest, localPosition = rest + (side * outRear, 0, -back), side = -1 left / +1 right (outward). p = t / popEnd; outFront = out * S3(p / 0.75), outRear = out * S3((p - 0.25) / 0.75), back = slide * S5((t - slideStart) / (1 - slideStart)); outRear -= tuck * s^2, s = clamp01((back - tuckStart) / (slide - tuckStart)) (the rear follows the tapering side); yawDeg = atan2(outFront - outRear, length) (front swings out first). S3 = smoothstep, S5 = smootherstep. UtilityPlaneRig.SlidingDoorPose gives the same pose (use it for presentation and obstruction tests).",
+ "out": 0.14,
+ "slide": 1.3,
+ "popEnd": 0.25,
+ "slideStart": 0.22,
+ "tuck": 0.068,
+ "tuckStart": 0.57,
+ "doors": {
+  "CargoDoor_L": {
+   "side": -1,
+   "pivot": [
+    -0.752,
+    1.77,
+    -0.45
+   ],
+   "length": 1.294,
+   "frontEdgeZ": 0.844,
+   "rails": {
+    "upper": {
+     "heightY": 2.47,
+     "fromZ": 0.7853,
+     "toZ": -0.5495,
+     "outerX": -0.7455,
+     "rollerClosed": [
+      -0.5958,
+      2.47,
+      0.779
+     ]
+    },
+    "lower": {
+     "heightY": 1.078,
+     "fromZ": 0.7863,
+     "toZ": -0.5485,
+     "outerX": -0.7267,
+     "rollerClosed": [
+      -0.577,
+      1.078,
+      0.779
+     ]
+    },
+    "centre": {
+     "heightY": 1.77,
+     "fromZ": -0.4723,
+     "toZ": -1.8031,
+     "outerX": -0.7056,
+     "rollerClosed": [
+      -0.6218,
+      1.77,
+      -0.475
+     ]
+    }
+   }
+  },
+  "CargoDoor_R": {
+   "side": 1,
+   "pivot": [
+    0.752,
+    1.77,
+    -0.45
+   ],
+   "length": 1.294,
+   "frontEdgeZ": 0.844,
+   "rails": {
+    "upper": {
+     "heightY": 2.47,
+     "fromZ": 0.7853,
+     "toZ": -0.5495,
+     "outerX": 0.7456,
+     "rollerClosed": [
+      0.5959,
+      2.47,
+      0.779
+     ]
+    },
+    "lower": {
+     "heightY": 1.078,
+     "fromZ": 0.7863,
+     "toZ": -0.5485,
+     "outerX": 0.7267,
+     "rollerClosed": [
+      0.577,
+      1.078,
+      0.779
+     ]
+    },
+    "centre": {
+     "heightY": 1.77,
+     "fromZ": -0.4723,
+     "toZ": -1.8031,
+     "outerX": 0.7056,
+     "rollerClosed": [
+      0.6218,
+      1.77,
+      -0.475
+     ]
+    }
+   }
+  }
+ }
+}

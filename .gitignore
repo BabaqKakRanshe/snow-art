@@ -1,0 +1,18 @@
+# snow-art: Blender sources, generator scripts, source textures.
+# Kept out (cloud backup only): junk, references, renders, aggregate scenes, delivery packages.
+/_to_delete/
+/refs/
+/gallery/
+/_all/
+*.zip
+*.unitypackage
+
+# --- Blender / tool leftovers ---
+*.blend1
+*.bak
+*.bak_*
+*.pyc
+__pycache__/
+*.log
+Thumbs.db
+Desktop.ini

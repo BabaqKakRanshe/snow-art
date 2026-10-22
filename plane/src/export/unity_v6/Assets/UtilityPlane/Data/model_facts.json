@@ -1,0 +1,46 @@
+{
+ "note": "Unity prefab space, m. Model frame is level (cabin floor Y 1.07); parked on flat ground the root is pitched nose-up (Euler X = -parkedPitchDeg) and its height over the ground is parkedRootHeight (struts unloaded).",
+ "parkedPitchDeg": 9.982,
+ "parkedRootHeight": -0.3719,
+ "mainWheelCentreL": [
+  -1.25,
+  0.36,
+  2.85
+ ],
+ "mainWheelRadius": 0.484,
+ "tailWheelCentre": [
+  0.0,
+  1.45,
+  -4.47
+ ],
+ "tailWheelRadius": 0.2856,
+ "mainContactY": -0.124,
+ "tailContactY": 1.1644,
+ "wheelbase": 7.32,
+ "track": 2.5,
+ "mainGearArm": {
+  "r": 1.0359,
+  "phi0Deg": 40.301
+ },
+ "tailGearArm": {
+  "r": 0.6512,
+  "phi0Deg": 28.926
+ },
+ "parkedHeights": {
+  "note": "m above flat ground in the parked pose; door sills as [front end, aft end]",
+  "pilotDoorSill": [
+   1.292,
+   1.094
+  ],
+  "cargoDoorSill": [
+   0.859,
+   0.633
+  ],
+  "cargoStepTop": 0.501,
+  "pilotStepTop": 0.554,
+  "pilotEye": 2.203,
+  "propAxis": 2.124,
+  "propTipClearance": 0.823,
+  "propTipClearanceTailUp": 0.503
+ }
+}

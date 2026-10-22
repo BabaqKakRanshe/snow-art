@@ -1,0 +1,563 @@
+{
+ "package": "Forest_Update7.unitypackage",
+ "bytes": 2252530,
+ "md5": "bc7b2a3bbab3241ef3bec95d419def22",
+ "entries": 46,
+ "over": "Forest_Update6",
+ "guid_source": {
+  "Abatis": "new",
+  "Abatis_b": "new",
+  "ChainFence": "new",
+  "ChainFence_Torn": "new",
+  "ConcreteFence": "new",
+  "ConcreteFence_Broken": "new",
+  "ConcreteFence_Plain": "new",
+  "ConcreteFence_Sign": "new",
+  "ConcreteFence_Socket": "new",
+  "ConcreteFence_Wicket": "new",
+  "ConcreteFence_b": "new",
+  "Hedgehog": "new",
+  "RoadBlock_Cube": "new",
+  "RoadBlock_FBS": "new",
+  "RoadBlock_Jersey": "new",
+  "RoadBlock_Jersey_Striped": "new",
+  "Sign_Halt": "new",
+  "Sign_NoEntry": "new",
+  "TankTooth": "new",
+  "TankTooth_b": "new",
+  "WireBarricade": "new",
+  "WireCoil": "new"
+ },
+ "replaced_textures": {
+  "T_Base_ChainLink_A_px.png": "75f2403c3883bad9ac80db0706d7c7f5",
+  "T_Base_Barbed_A_px.png": "8529c4c4cdc91d13918f08b814389090",
+  "T_Base_Rust_A_px.png": "0500de58628a80a0adb4f8daf8fd7c08",
+  "T_Kpp_ChainLink_A_px.png": "ac5bcfa2d95c69a612edbf4575ebe5e9",
+  "T_Kpp_Barbed_A_px.png": "013a7824eeb83fe3a24835d1d91c2756",
+  "T_Yard_ChainLink_A_px.png": "cd632a2d29bfb27751382ffd77164752",
+  "T_Yard_Barbed_A_px.png": "503d804f6f4071330dfa328a3febbe35",
+  "T_Road_ChainLink_A_px.png": "b6f8173ec2ca5d3702cb126b4bcfaf2d",
+  "T_Road_Barbed_A_px.png": "b622cc7d5c10b24c74064dc8ef9b74bd"
+ },
+ "base_md5": {
+  "Assets/Locations/Forest/Textures/T_Base_ChainLink_A_px.png": "0c095e108a85c9dd81d2761efd404063",
+  "Assets/Locations/Forest/Textures/T_Base_Barbed_A_px.png": "b6ee110f8eeee04ee70f586ee4490146",
+  "Assets/Locations/Forest/Textures/T_Base_Rust_A_px.png": "cc4fa592645ec382a581d7e02b2db705",
+  "Assets/Locations/Forest/Textures/T_Kpp_ChainLink_A_px.png": "0c095e108a85c9dd81d2761efd404063",
+  "Assets/Locations/Forest/Textures/T_Kpp_Barbed_A_px.png": "a629f3711cfb39438e605f480a165395",
+  "Assets/Locations/Forest/Textures/T_Yard_ChainLink_A_px.png": "0c095e108a85c9dd81d2761efd404063",
+  "Assets/Locations/Forest/Textures/T_Yard_Barbed_A_px.png": "a629f3711cfb39438e605f480a165395",
+  "Assets/Locations/Forest/Textures/T_Road_ChainLink_A_px.png": "0c095e108a85c9dd81d2761efd404063",
+  "Assets/Locations/Forest/Textures/T_Road_Barbed_A_px.png": "7d0344f1344c0d9c27ec1925a8598e41",
+  "Assets/Locations/Forest/Data/Forest_Materials.json": "61122a42c7306be60719020f48751ba6",
+  "Assets/Locations/Forest/Data/Forest_Layout.json": "f77339cce507c441fe1cc4c1ad39fa9d",
+  "Assets/Locations/Forest/README.md": "9c8761f3e76eb31af1a59da5f93df819"
+ },
+ "files": [
+  {
+   "path": "Assets/Locations",
+   "guid": "8fd0cc986184b4ff32ac708c6e1529c0",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest",
+   "guid": "827abc79a3d02ea4153aa088140cef15",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models",
+   "guid": "7c10d76d05d6b21b64a813f73f55173c",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures",
+   "guid": "1717a890f1c607b4fb17f5d0c38c19f1",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Data",
+   "guid": "ff4e1d6f0d874d42b641e8801beff788",
+   "bytes": null,
+   "md5": null
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Abatis.fbx",
+   "guid": "506604286f19df0dfc3be928a3aa128f",
+   "bytes": 89980,
+   "md5": "66e07dc30157db7a8b5ed590649e6a1e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Abatis_b.fbx",
+   "guid": "d58d0ecd44a24de701cd0836dcb8b2c5",
+   "bytes": 55404,
+   "md5": "227b29a737653a6c83ec4c8e4204aa66"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ChainFence.fbx",
+   "guid": "a7fa03eba68008b0691a6e2a37fc9008",
+   "bytes": 24956,
+   "md5": "596f7832bff5829328ac469a8c5417db"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ChainFence_Torn.fbx",
+   "guid": "c37b4289dc20b951ecedee065ac73029",
+   "bytes": 25164,
+   "md5": "3b24701c67aa248067cd1071a69bd1c5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence.fbx",
+   "guid": "3e406e2979cbf5df23599b3291ae1606",
+   "bytes": 23836,
+   "md5": "4792176fa264c614639e0a82766f0aef"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence_Broken.fbx",
+   "guid": "95e6534aa28281935121be93ba058466",
+   "bytes": 28300,
+   "md5": "e0d2d3012f8265ac7e367c1d6205a6c1"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence_Plain.fbx",
+   "guid": "cbd8995a265831e3d836ddb243f9256e",
+   "bytes": 19452,
+   "md5": "66aec32913de360ff0896b9ef7704c14"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence_Sign.fbx",
+   "guid": "7439cb3a0c6eb0764884b05ce8b041a7",
+   "bytes": 29132,
+   "md5": "2a6836350cc67f8fa1d88b97c545ee78"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence_Socket.fbx",
+   "guid": "97be33afcccb5f77b0c7cfdab87cc2ef",
+   "bytes": 20476,
+   "md5": "2de17efff9f4b901e01acf8950711037"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence_Wicket.fbx",
+   "guid": "872a45fddd317b40ac352b1f1275c4ea",
+   "bytes": 29852,
+   "md5": "2e028a325e87bf4f6def6111a28f8c33"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/ConcreteFence_b.fbx",
+   "guid": "fd145a9808451ad3561d096ceae22fa1",
+   "bytes": 23836,
+   "md5": "959c407d650fe3e5cdeab15fe1157962"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Hedgehog.fbx",
+   "guid": "f475a3f6ba7a92893a965375cec2ba3d",
+   "bytes": 22636,
+   "md5": "9dc23ad0f2dc0f829c8d49c1f54f461a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/RoadBlock_Cube.fbx",
+   "guid": "89aa683c9004f56cc209f814cb3c29e1",
+   "bytes": 20444,
+   "md5": "caaf2ff3b9936cb14e9924c110e58a1f"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/RoadBlock_FBS.fbx",
+   "guid": "89c757f113a63e02df9ae393d58ba159",
+   "bytes": 21468,
+   "md5": "a9d777f6cfdb3538c80f75d30d151a9a"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/RoadBlock_Jersey.fbx",
+   "guid": "b6171f9b8ac877d3023aa693a0af88d1",
+   "bytes": 19132,
+   "md5": "97fc23a313ee4559f3d87eff7d7aa5ab"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/RoadBlock_Jersey_Striped.fbx",
+   "guid": "abad4e1bd4b7e9abd9ca5403ad9141a1",
+   "bytes": 19148,
+   "md5": "b06d90b23ac79193a6c4c70936aff340"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_Halt.fbx",
+   "guid": "d3972522d1e3a112566b0a2949288ca2",
+   "bytes": 26540,
+   "md5": "ad9c51e3b2e8ee920540e502c08031f5"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/Sign_NoEntry.fbx",
+   "guid": "8e4f572b90ea3244f8730af2148a7996",
+   "bytes": 25116,
+   "md5": "b16688e967a57996aaa3c29267114059"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/TankTooth.fbx",
+   "guid": "86e4752c5c593b97635b6f0e62ee91a6",
+   "bytes": 19068,
+   "md5": "38dbf43f217d6dab26369b7ceaf291e0"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/TankTooth_b.fbx",
+   "guid": "3b8fe3a7179dd3d6766a06ebd8bba113",
+   "bytes": 19148,
+   "md5": "75fd72c7124dee679ad5784de735e0db"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/WireBarricade.fbx",
+   "guid": "8caa37b23a62c6ba3e2907df528cb742",
+   "bytes": 27228,
+   "md5": "48b3a3dfd5478d6a5fcbe02e2642c922"
+  },
+  {
+   "path": "Assets/Locations/Forest/Models/WireCoil.fbx",
+   "guid": "1fc3751e93efb571b9a52ce26304a204",
+   "bytes": 35756,
+   "md5": "07dc9707de46043381ea748792df5b35"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_Concrete_A_px.png",
+   "guid": "875eea27decc80061e6705b62d3471df",
+   "bytes": 447754,
+   "md5": "616011cfc01237b1702a23a07d74c4ec"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_Props_A_px.png",
+   "guid": "b82390d1908f9d972cf9f56deb71e796",
+   "bytes": 190114,
+   "md5": "65ee2fb87b816330249226c9b48a4bdf"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_Panel_A_px.png",
+   "guid": "8dc9f206d33316008a77f1aec79d305c",
+   "bytes": 19799,
+   "md5": "71c3d7e109e92e5c040a8f9334d83e9e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_ChainLink_A_px.png",
+   "guid": "fb3ad92051ca8a436b863344210535a8",
+   "bytes": 4627,
+   "md5": "0649c866ce0ca7d4381b430df078ba8e"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_Barbed_A_px.png",
+   "guid": "5a868b8f3035a71963c603d716b90e41",
+   "bytes": 1017,
+   "md5": "58a8760a97176ed8722fe47a35e3ae49"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_ChainBarbed_A_px.png",
+   "guid": "07a57ea3be234add8d41d85d94279969",
+   "bytes": 892,
+   "md5": "858dfc699f3de7616dab92e81dc94765"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Fence_Razor_A_px.png",
+   "guid": "d1414b1eb6c2ac5e4f85d6a9558da1fb",
+   "bytes": 328,
+   "md5": "5f64381090ea5172ec3f09eb714595de"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_ChainLink_A_px.png",
+   "guid": "75f2403c3883bad9ac80db0706d7c7f5",
+   "bytes": 4897,
+   "md5": "ce3f0139b33f4ce2a57bf0a9ead47f66"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Barbed_A_px.png",
+   "guid": "8529c4c4cdc91d13918f08b814389090",
+   "bytes": 932,
+   "md5": "ed0cf96bd723402cbf02c575ebf399d0"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Base_Rust_A_px.png",
+   "guid": "0500de58628a80a0adb4f8daf8fd7c08",
+   "bytes": 463,
+   "md5": "ef9fff7ad6cf8bc426fc0b0365ca2ad6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_ChainLink_A_px.png",
+   "guid": "ac5bcfa2d95c69a612edbf4575ebe5e9",
+   "bytes": 4895,
+   "md5": "5242a3caf754ee2cee0807b6c2f4c8cd"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Kpp_Barbed_A_px.png",
+   "guid": "013a7824eeb83fe3a24835d1d91c2756",
+   "bytes": 869,
+   "md5": "3af8ae5f3ec50c23cb02359483abaf50"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_ChainLink_A_px.png",
+   "guid": "cd632a2d29bfb27751382ffd77164752",
+   "bytes": 4895,
+   "md5": "5242a3caf754ee2cee0807b6c2f4c8cd"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Yard_Barbed_A_px.png",
+   "guid": "503d804f6f4071330dfa328a3febbe35",
+   "bytes": 869,
+   "md5": "3af8ae5f3ec50c23cb02359483abaf50"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_ChainLink_A_px.png",
+   "guid": "b6f8173ec2ca5d3702cb126b4bcfaf2d",
+   "bytes": 4991,
+   "md5": "b53b1255fdb6bf5804782ae0ecc3ca4f"
+  },
+  {
+   "path": "Assets/Locations/Forest/Textures/T_Road_Barbed_A_px.png",
+   "guid": "b622cc7d5c10b24c74064dc8ef9b74bd",
+   "bytes": 896,
+   "md5": "dbb8ebf7e9f7391990a9ef428d52dd18"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Materials.json",
+   "guid": "2fd4979e6f6a7428958b37f50222ada2",
+   "bytes": 178223,
+   "md5": "24db2e69a71a9d516501fb08e6cd21a6"
+  },
+  {
+   "path": "Assets/Locations/Forest/Data/Forest_Layout.json",
+   "guid": "d1e0ae0c88a61aaebb2cb18d445ac415",
+   "bytes": 4646816,
+   "md5": "48810d110477e231028866910df6e4d2"
+  },
+  {
+   "path": "Assets/Locations/Forest/README.md",
+   "guid": "7570bcddf83da140f4844a61ee40deec",
+   "bytes": 65797,
+   "md5": "67e732b56cc361b03e5b21749c35f58e"
+  }
+ ],
+ "records": {
+  "list": "rocks",
+  "first": 5649,
+  "count": 533,
+  "groups": {
+   "perimeter": 191,
+   "kpp": 56,
+   "funnel": 286
+  }
+ },
+ "controls": [
+  {
+   "what": "socket at the NW corner",
+   "index": 5801,
+   "m": "ConcreteFence_Socket",
+   "p": [
+    276.4732,
+    16.3065,
+    -303.9446
+   ],
+   "q": [
+    0.0,
+    -0.656059,
+    0.0,
+    0.75471
+   ]
+  },
+  {
+   "what": "socket at the NE corner",
+   "index": 5664,
+   "m": "ConcreteFence_Socket",
+   "p": [
+    416.5169,
+    16.2282,
+    -323.6265
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ]
+  },
+  {
+   "what": "socket at the SE corner",
+   "index": 5704,
+   "m": "ConcreteFence_Socket",
+   "p": [
+    403.1332,
+    16.248,
+    -418.8562
+   ],
+   "q": [
+    0.0,
+    0.75471,
+    0.0,
+    0.656059
+   ]
+  },
+  {
+   "what": "socket at the SW corner",
+   "index": 5743,
+   "m": "ConcreteFence_Socket",
+   "p": [
+    263.0895,
+    16.2604,
+    -399.1744
+   ],
+   "q": [
+    0.0,
+    -0.997564,
+    0.0,
+    0.069756
+   ]
+  },
+  {
+   "what": "the panel west of the gate (lowered: the leaf passes over its socket)",
+   "index": 5650,
+   "m": "ConcreteFence",
+   "p": [
+    309.1287,
+    15.9785,
+    -308.5341
+   ],
+   "q": [
+    0.0,
+    0.069757,
+    0.0,
+    0.997564
+   ]
+  },
+  {
+   "what": "the run end east of the gate",
+   "index": 5703,
+   "m": "ConcreteFence",
+   "p": [
+    322.2816,
+    16.0185,
+    -310.3826
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ]
+  },
+  {
+   "what": "the wicket by the hatch",
+   "index": 5781,
+   "m": "ConcreteFence_Wicket",
+   "p": [
+    355.2235,
+    16.2457,
+    -412.123
+   ],
+   "q": [
+    0.0,
+    -0.997564,
+    0.0,
+    0.069756
+   ]
+  },
+  {
+   "what": "the wing root at the barrier post",
+   "index": 5852,
+   "m": "ConcreteFence",
+   "p": [
+    144.6753,
+    9.2733,
+    -62.8652
+   ],
+   "q": [
+    0.0,
+    -0.479722,
+    0.0,
+    0.87742
+   ]
+  },
+  {
+   "what": "the wing root at the boom rest",
+   "index": 5853,
+   "m": "ConcreteFence_Socket",
+   "p": [
+    140.1416,
+    9.2733,
+    -69.9366
+   ],
+   "q": [
+    0.0,
+    -0.479722,
+    0.0,
+    0.87742
+   ]
+  },
+  {
+   "what": "the tooth by the NW corner",
+   "index": 6181,
+   "m": "TankTooth",
+   "p": [
+    275.5344,
+    16.3233,
+    -302.6598
+   ],
+   "q": [
+    0.0,
+    -0.873252,
+    0.0,
+    0.487269
+   ]
+  },
+  {
+   "what": "the tooth by the NE corner",
+   "index": 6064,
+   "m": "TankTooth",
+   "p": [
+    415.1353,
+    16.2553,
+    -322.0906
+   ],
+   "q": [
+    0.0,
+    0.406284,
+    0.0,
+    0.913747
+   ]
+  },
+  {
+   "what": "a tooth halfway along the NE line",
+   "index": 5979,
+   "m": "TankTooth",
+   "p": [
+    287.9515,
+    6.915,
+    -180.6962
+   ],
+   "q": [
+    0.0,
+    0.451589,
+    0.0,
+    0.892226
+   ]
+  },
+  {
+   "what": "the HALT board",
+   "index": 5876,
+   "m": "Sign_Halt",
+   "p": [
+    110.5518,
+    9.0141,
+    -56.8001
+   ],
+   "q": [
+    0.0,
+    -0.479722,
+    0.0,
+    0.87742
+   ]
+  }
+ ],
+ "changes": [
+  "Textures: replaced in place (same names and GUIDs): T_Base_Barbed_A_px.png, T_Base_ChainLink_A_px.png, T_Base_Rust_A_px.png, T_Kpp_Barbed_A_px.png, T_Kpp_ChainLink_A_px.png, T_Road_Barbed_A_px.png, T_Road_ChainLink_A_px.png, T_Yard_Barbed_A_px.png, T_Yard_ChainLink_A_px.png - the netting with 2 px wires in 12.5 cm diamonds (was 1 px in 6.25 cm), the barbed and rusty wire 2 px; the same sizes and strand positions, the models' UVs unchanged",
+  "Forest_Materials.json: 7 new materials at the end: M_Fence_Concrete, M_Fence_Props, M_Fence_Panel, M_Fence_ChainLink, M_Fence_Barbed, M_Fence_ChainBarbed, M_Fence_Razor (the cut-outs one-sided: doubleSided false)",
+  "Forest_Materials.json: doubleSided true -> false (in place): M_Base_ChainLink, M_Base_Barbed, M_Base_Rust, M_Kpp_ChainLink, M_Kpp_Barbed, M_Yard_ChainLink, M_Yard_Barbed, M_Road_ChainLink, M_Road_Barbed - their models carry the netting and the wire as two faces back to back (the base and far ones in one plane, the kpp, yard and road ones 1.2 mm apart); drawn two-sided, both faces showed from either side and fought for the depth (the shimmer); one-sided, each face shows from its own side",
+  "Forest_Layout.json rocks: - 213 FenceChain (Update 3's chain-link fence of the base: the PO-2 concrete fence stands on its lines now)",
+  "Forest_Layout.json trees: - 55 (funnel 45, kpp 4, perimeter 6): the strips cleared along the tank-trap lines (trunks within 1.3 m of a line, undergrowth within 1 m), the footprints of the wings, the blocks and the perimeter; listed in u7.removed",
+  "Forest_Layout.json u7.keepClear: 533 strips (segment a-b in plan, distance r) the Terrain bake keeps its own planting off (old yard regrowth, saplings, boulders, clutter, ground cover): one per U7 piece, its footprint's long axis and half depth + 1 m",
+  "Forest_Layout.json rocks: + 533 U7 placements at the end (indices 5649..6181) in the frame of the game as it is now (after ForestYardPlan and ForestRelocation): Abatis 5, Abatis_b 5, ConcreteFence 122, ConcreteFence_Broken 3, ConcreteFence_Sign 9, ConcreteFence_Socket 7, ConcreteFence_Wicket 1, ConcreteFence_b 75, Hedgehog 10, RoadBlock_Cube 2, RoadBlock_FBS 4, RoadBlock_Jersey 2, RoadBlock_Jersey_Striped 2, Sign_Halt 1, Sign_NoEntry 1, TankTooth 242, TankTooth_b 34, WireBarricade 2, WireCoil 6"
+ ]
+}

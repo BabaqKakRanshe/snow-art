@@ -1,0 +1,4 @@
+fuselage faces 1118
+TOTAL TRIS 31172
+Info: Saved as "plane_geo_v2.blend"
+saved

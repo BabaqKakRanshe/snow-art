@@ -1,0 +1,658 @@
+{
+ "SW_Battery": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Battery",
+  "kind": "toggle",
+  "label": "АКБ",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_Avionics": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Avionics",
+  "kind": "toggle",
+  "label": "Авионика",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_FuelPump": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_FuelPump",
+  "kind": "toggle",
+  "label": "Топл. насос",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_Ignition": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Ignition",
+  "kind": "toggle",
+  "label": "Зажигание",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_Starter": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Starter",
+  "kind": "momentary",
+  "label": "Стартер",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_Beacon": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Beacon",
+  "kind": "toggle",
+  "label": "Маяк",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_Strobe": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Strobe",
+  "kind": "toggle",
+  "label": "Стробы",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_NavLights": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_NavLights",
+  "kind": "toggle",
+  "label": "АНО",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_Landing": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_Landing",
+  "kind": "toggle",
+  "label": "Посадочная фара",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "Rheo_Panel": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Rheo_Panel",
+  "kind": "rotary",
+  "label": "Подсветка приборов",
+  "center_cm": [
+   -0.75,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "Rheo_Flood": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Rheo_Flood",
+  "kind": "rotary",
+  "label": "Заливающий свет",
+  "center_cm": [
+   -0.75,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "Pull_CabinHeat": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Pull_CabinHeat",
+  "kind": "pull",
+  "label": "Обогрев кабины",
+  "center_cm": [
+   -0.7,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   1.7,
+   1.5,
+   1.5
+  ]
+ },
+ "Pull_Defrost": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Pull_Defrost",
+  "kind": "pull",
+  "label": "Обдув стекла",
+  "center_cm": [
+   -0.7,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   1.7,
+   1.5,
+   1.5
+  ]
+ },
+ "Pull_ParkBrake": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Pull_ParkBrake",
+  "kind": "pull",
+  "label": "Стояночный тормоз",
+  "center_cm": [
+   -0.75,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   1.75,
+   2.5,
+   1.5
+  ]
+ },
+ "Pull_FuelShutoff": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Pull_FuelShutoff",
+  "kind": "pull",
+  "label": "Перекрывной топливный кран",
+  "center_cm": [
+   -1.05,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   2.05,
+   2.25,
+   1.5
+  ]
+ },
+ "FuelSel_L": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "FuelSel_L",
+  "kind": "selector",
+  "label": "Кран левого бака",
+  "center_cm": [
+   0.0,
+   -0.0,
+   -4.05
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   4.05
+  ]
+ },
+ "FuelSel_R": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "FuelSel_R",
+  "kind": "selector",
+  "label": "Кран правого бака",
+  "center_cm": [
+   0.0,
+   -0.0,
+   -4.05
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   4.05
+  ]
+ },
+ "Visor_P": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Visor_P",
+  "kind": "hinge",
+  "label": "Козырёк",
+  "center_cm": [
+   -7.5,
+   -0.0,
+   -0.32
+  ],
+  "half_extent_cm": [
+   8.0,
+   15.0,
+   1.5
+  ]
+ },
+ "Visor_C": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Visor_C",
+  "kind": "hinge",
+  "label": "Козырёк",
+  "center_cm": [
+   -7.5,
+   -0.0,
+   -0.32
+  ],
+  "half_extent_cm": [
+   8.0,
+   15.0,
+   1.5
+  ]
+ },
+ "Lever_Power": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Lever_Power",
+  "kind": "lever",
+  "label": "РУД (газ)",
+  "center_cm": [
+   2.85,
+   0.0,
+   7.66
+  ],
+  "half_extent_cm": [
+   3.35,
+   3.1,
+   7.84
+  ]
+ },
+ "Lever_Prop": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Lever_Prop",
+  "kind": "lever",
+  "label": "Шаг винта",
+  "center_cm": [
+   2.85,
+   0.0,
+   7.86
+  ],
+  "half_extent_cm": [
+   3.35,
+   1.5,
+   8.04
+  ]
+ },
+ "Lever_Condition": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Lever_Condition",
+  "kind": "lever",
+  "label": "Рычаг останова / малый газ",
+  "center_cm": [
+   3.05,
+   0.0,
+   7.86
+  ],
+  "half_extent_cm": [
+   3.55,
+   1.5,
+   8.04
+  ]
+ },
+ "Lever_Flap": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Lever_Flap",
+  "kind": "lever",
+  "label": "Закрылки",
+  "center_cm": [
+   1.76,
+   1.01,
+   5.33
+  ],
+  "half_extent_cm": [
+   2.24,
+   1.5,
+   5.47
+  ]
+ },
+ "TrimWheel": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "TrimWheel",
+  "kind": "wheel",
+  "label": "Триммер РВ",
+  "center_cm": [
+   0.0,
+   -0.07,
+   0.0
+  ],
+  "half_extent_cm": [
+   7.8,
+   1.5,
+   7.8
+  ]
+ },
+ "SW_CargoDoor_L": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_CargoDoor_L",
+  "kind": "toggle",
+  "label": "Грузовая дверь, левая",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_CargoDoor_R": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_CargoDoor_R",
+  "kind": "toggle",
+  "label": "Грузовая дверь, правая",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_CabinLight": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_CabinLight",
+  "kind": "toggle",
+  "label": "Свет кабины",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "SW_CargoLight": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "SW_CargoLight",
+  "kind": "toggle",
+  "label": "Свет отсека",
+  "center_cm": [
+   -1.03,
+   -0.0,
+   -0.41
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "Btn_AnnunTest": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Btn_AnnunTest",
+  "kind": "momentary",
+  "label": "Проверка табло",
+  "center_cm": [
+   -0.4,
+   -0.0,
+   0.0
+  ],
+  "half_extent_cm": [
+   1.5,
+   1.5,
+   1.5
+  ]
+ },
+ "Socket_Handle_PilotDoor_L_Out": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "PilotDoor_L",
+  "kind": "door",
+  "label": "Дверь пилота",
+  "center_cm": [
+   -78.0,
+   -3.0,
+   10.0
+  ],
+  "half_extent_cm": [
+   4,
+   8,
+   4
+  ]
+ },
+ "Socket_Handle_PilotDoor_L_In": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "PilotDoor_L",
+  "kind": "door",
+  "label": "Дверь пилота",
+  "center_cm": [
+   -80.0,
+   7.0,
+   14.0
+  ],
+  "half_extent_cm": [
+   4,
+   8,
+   4
+  ]
+ },
+ "Socket_Handle_PilotDoor_R_Out": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "PilotDoor_R",
+  "kind": "door",
+  "label": "Правая дверь",
+  "center_cm": [
+   -78.0,
+   3.0,
+   10.0
+  ],
+  "half_extent_cm": [
+   4,
+   8,
+   4
+  ]
+ },
+ "Socket_Handle_PilotDoor_R_In": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "PilotDoor_R",
+  "kind": "door",
+  "label": "Правая дверь",
+  "center_cm": [
+   -80.0,
+   -7.0,
+   14.0
+  ],
+  "half_extent_cm": [
+   4,
+   8,
+   4
+  ]
+ },
+ "Socket_Handle_CargoDoor_L_Out": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "CargoDoor_L",
+  "kind": "door",
+  "label": "Грузовая дверь, левая",
+  "center_cm": [
+   115.0,
+   -2.3,
+   -2.0
+  ],
+  "half_extent_cm": [
+   4,
+   10,
+   5
+  ]
+ },
+ "Socket_Handle_CargoDoor_L_In": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "CargoDoor_L",
+  "kind": "door",
+  "label": "Грузовая дверь, левая",
+  "center_cm": [
+   115.0,
+   7.7,
+   -5.0
+  ],
+  "half_extent_cm": [
+   4,
+   8,
+   4
+  ]
+ },
+ "Socket_Handle_CargoDoor_R_Out": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "CargoDoor_R",
+  "kind": "door",
+  "label": "Грузовая дверь, правая",
+  "center_cm": [
+   115.0,
+   2.3,
+   -2.0
+  ],
+  "half_extent_cm": [
+   4,
+   10,
+   5
+  ]
+ },
+ "Socket_Handle_CargoDoor_R_In": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "CargoDoor_R",
+  "kind": "door",
+  "label": "Грузовая дверь, правая",
+  "center_cm": [
+   115.0,
+   -7.7,
+   -5.0
+  ],
+  "half_extent_cm": [
+   4,
+   8,
+   4
+  ]
+ },
+ "Socket_FuelCap_L": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "FuelCap_L",
+  "kind": "cap",
+  "label": "Крышка левого бака",
+  "center_cm": [
+   4.7,
+   -0.0,
+   -0.5
+  ],
+  "half_extent_cm": [
+   6,
+   6,
+   4
+  ]
+ },
+ "Socket_FuelCap_R": {
+  "mesh": "SK_UtilityPlane",
+  "bone": "FuelCap_R",
+  "kind": "cap",
+  "label": "Крышка правого бака",
+  "center_cm": [
+   4.7,
+   -0.0,
+   -0.5
+  ],
+  "half_extent_cm": [
+   6,
+   6,
+   4
+  ]
+ },
+ "Socket_Belt_P": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Cockpit",
+  "kind": "toggle",
+  "label": "Ремни пилота",
+  "center_cm": [
+   232.5,
+   -33.0,
+   146.5
+  ],
+  "half_extent_cm": [
+   9,
+   12,
+   7
+  ]
+ },
+ "Socket_Belt_C": {
+  "mesh": "SK_UtilityPlane_Cockpit",
+  "bone": "Cockpit",
+  "kind": "toggle",
+  "label": "Ремни пассажира",
+  "center_cm": [
+   232.5,
+   33.0,
+   146.5
+  ],
+  "half_extent_cm": [
+   9,
+   12,
+   7
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "C": {
+  "aol_p92": 0.479,
+  "aol_median": 0.062,
+  "result_median": 0.436
+ },
+ "I": {
+  "aol_p92": 0.146,
+  "aol_median": 0.062,
+  "result_median": 0.69
+ },
+ "F": {
+  "aol_p92": 0.25,
+  "aol_median": 0.042,
+  "result_median": 0.518
+ },
+ "S": {
+  "aol_p92": 0.271,
+  "aol_median": 0.083,
+  "result_median": 0.538
+ }
+}

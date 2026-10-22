@@ -1,0 +1,11 @@
+{
+ "cmp_hatch": {"prefab": "Hatch", "eye": [3.4, -4.2, 2.3], "tgt": [0.4, 0.0, 0.5], "lens": 26},
+ "cmp_helipad": {"prefab": "Helipad", "eye": [-17.0, -18.0, 9.0], "tgt": [1.0, -1.0, 0.0], "lens": 22},
+ "cmp_mast": {"prefab": "RadioMast", "eye": [9.0, -13.0, 5.0], "tgt": [0.0, 0.0, 6.5], "lens": 24},
+ "cmp_crates": {"prefab": "Crates", "eye": [1.6, -3.7, 1.8], "tgt": [0.0, -0.1, 0.5], "lens": 28},
+ "cmp_logs": {"prefab": "LogPile", "eye": [4.6, -3.8, 1.9], "tgt": [0.4, 0.0, 0.5], "lens": 26},
+ "cmp_lightpole": {"prefab": "LightPole", "eye": [4.2, -6.0, 2.6], "tgt": [0.4, 0.0, 3.0], "lens": 24},
+ "cmp_powerpole": {"prefab": "PowerPole", "eye": [5.0, -8.0, 3.0], "tgt": [0.0, 0.0, 4.6], "lens": 22},
+ "cmp_fence": {"prefab": "FenceChain", "eye": [3.2, -4.2, 1.8], "tgt": [0.0, 0.0, 1.2], "lens": 26},
+ "cmp_oldfence": {"prefab": "OldFence", "eye": [2.6, -4.2, 1.4], "tgt": [0.0, 0.0, 0.9], "lens": 26}
+}

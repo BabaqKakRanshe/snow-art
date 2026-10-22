@@ -1,0 +1,1031 @@
+{
+ "rig": {
+  "FuelSel_L": {
+   "pivot": [
+    0.054999999701976776,
+    -2.5199999809265137,
+    2.5442731380462646
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "fuel selector: ON = rest (down), OFF = rotate aft 60 deg"
+  },
+  "FuelSel_R": {
+   "pivot": [
+    -0.054999999701976776,
+    -2.5199999809265137,
+    2.5442731380462646
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "fuel selector: ON = rest (down), OFF = rotate aft 60 deg"
+  },
+  "Compass_Card": {
+   "pivot": [
+    0.0,
+    -2.667,
+    2.52
+   ],
+   "parent": "Cockpit",
+   "axis": "vertical",
+   "note": "magnetic compass card (drum): rest = heading 000; Unity rotation about local Y = -heading (card stays put, the aircraft turns round it); wet-compass order: E shows left of N"
+  },
+  "Knob_ALT_Baro": {
+   "pivot": [
+    0.26723401871576774,
+    -2.985,
+    1.9017659812842322
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "instrument knob: free rotation about its axis"
+  },
+  "Knob_DG_Set": {
+   "pivot": [
+    0.36323401871576777,
+    -2.985,
+    1.8017659812842322
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "instrument knob: free rotation about its axis"
+  },
+  "Knob_HDG_Bug": {
+   "pivot": [
+    0.29676598128423226,
+    -2.985,
+    1.8017659812842322
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "instrument knob: free rotation about its axis"
+  },
+  "ALT_Baro": {
+   "pivot": [
+    0.234,
+    -2.9978,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "Kollsman scale disc: rest = 29.92 inHg under the index; clockwise (negative local Z) for higher settings, 120 deg per inHg"
+  },
+  "Needle_ASI": {
+   "pivot": [
+    0.426,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 10 deg clockwise from 12 (pilot view)"
+  },
+  "ATT_Pitch": {
+   "pivot": [
+    0.33,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "ATT_Roll",
+   "axis": "translate_up",
+   "note": "card offset"
+  },
+  "ATT_Roll": {
+   "pivot": [
+    0.33,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "bank (empty transform)"
+  },
+  "Needle_ALT100": {
+   "pivot": [
+    0.234,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 0 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_ALT1000": {
+   "pivot": [
+    0.234,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 0 deg clockwise from 12 (pilot view)"
+  },
+  "TC_Plane": {
+   "pivot": [
+    0.426,
+    -2.9939999999999998,
+    1.835
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "turn rate"
+  },
+  "TC_Ball": {
+   "pivot": [
+    0.426,
+    -2.9939999999999998,
+    1.8635
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "slip ball (pivot = tube arc centre)"
+  },
+  "HDG_Card": {
+   "pivot": [
+    0.33,
+    -2.9939999999999998,
+    1.835
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "heading card"
+  },
+  "HDG_Bug": {
+   "pivot": [
+    0.33,
+    -2.9939999999999998,
+    1.835
+   ],
+   "parent": "HDG_Card",
+   "axis": "gauge",
+   "note": "heading bug, child of HDG_Card: rest = card heading 0; clockwise (negative local Z) = bug heading"
+  },
+  "Needle_VSI": {
+   "pivot": [
+    0.234,
+    -2.9939999999999998,
+    1.835
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -90 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_TRQ": {
+   "pivot": [
+    0.15,
+    -2.9939999999999998,
+    1.978
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_ITT": {
+   "pivot": [
+    0.084,
+    -2.9939999999999998,
+    1.978
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_PROP": {
+   "pivot": [
+    0.15,
+    -2.9939999999999998,
+    1.91
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_NG": {
+   "pivot": [
+    0.084,
+    -2.9939999999999998,
+    1.91
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_OILP": {
+   "pivot": [
+    0.15,
+    -2.9939999999999998,
+    1.842
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -150 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_OILT": {
+   "pivot": [
+    0.15,
+    -2.9939999999999998,
+    1.842
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 150 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_FF": {
+   "pivot": [
+    0.084,
+    -2.9939999999999998,
+    1.842
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_FUELL": {
+   "pivot": [
+    0.15,
+    -2.9939999999999998,
+    1.774
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -60 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_FUELR": {
+   "pivot": [
+    0.084,
+    -2.9939999999999998,
+    1.774
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -60 deg clockwise from 12 (pilot view)"
+  },
+  "Clock_Hour": {
+   "pivot": [
+    -0.255,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 0 deg clockwise from 12 (pilot view)"
+  },
+  "Clock_Min": {
+   "pivot": [
+    -0.255,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 0 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_AMP": {
+   "pivot": [
+    -0.325,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest 0 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_VOLT": {
+   "pivot": [
+    -0.395,
+    -2.9939999999999998,
+    1.935
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_VAC": {
+   "pivot": [
+    -0.255,
+    -2.9939999999999998,
+    1.835
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -135 deg clockwise from 12 (pilot view)"
+  },
+  "Needle_OAT": {
+   "pivot": [
+    -0.325,
+    -2.9939999999999998,
+    1.835
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "needle rest -75 deg clockwise from 12 (pilot view)"
+  },
+  "Btn_AnnunTest": {
+   "pivot": [
+    0.018,
+    -2.985,
+    1.919
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_fwd",
+   "note": "push-to-test: pressed = 3 mm forward into the panel, all lamps on"
+  },
+  "Knob_Audio_Vol": {
+   "pivot": [
+    -0.151,
+    -2.979,
+    1.914
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "knob: rest index at 7:30 (OFF / minimum), clockwise = up"
+  },
+  "Knob_Com_Outer": {
+   "pivot": [
+    -0.072,
+    -2.979,
+    1.871
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "outer concentric knob (coarse): free rotation"
+  },
+  "Knob_Com_Inner": {
+   "pivot": [
+    -0.072,
+    -2.979,
+    1.871
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "inner concentric knob (fine): free rotation; push/pull = OPEN"
+  },
+  "Knob_Nav_Outer": {
+   "pivot": [
+    -0.146,
+    -2.979,
+    1.871
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "outer concentric knob (coarse): free rotation"
+  },
+  "Knob_Nav_Inner": {
+   "pivot": [
+    -0.146,
+    -2.979,
+    1.871
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "inner concentric knob (fine): free rotation; push/pull = OPEN"
+  },
+  "Knob_NavCom_Vol": {
+   "pivot": [
+    -0.007,
+    -2.979,
+    1.873
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "knob: rest index at 7:30 (OFF / minimum), clockwise = up"
+  },
+  "Knob_GPS_Pwr": {
+   "pivot": [
+    -0.014,
+    -2.979,
+    1.8350000000000002
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "knob: rest index at 7:30 (OFF / minimum), clockwise = up"
+  },
+  "Knob_GPS_Outer": {
+   "pivot": [
+    -0.145,
+    -2.979,
+    1.7915
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "outer concentric knob (coarse): free rotation"
+  },
+  "Knob_GPS_Inner": {
+   "pivot": [
+    -0.145,
+    -2.979,
+    1.7915
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "inner concentric knob (fine): free rotation; push/pull = OPEN"
+  },
+  "Knob_XPDR_Mode": {
+   "pivot": [
+    -0.02,
+    -2.979,
+    1.755
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "mode selector: rest OFF; detents OFF +0, SBY +34, ON +82, ALT +116, TST +150 deg clockwise"
+  },
+  "Knob_AP_Baro": {
+   "pivot": [
+    -0.15,
+    -2.979,
+    1.717
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "knob: rest index at 7:30 (OFF / minimum), clockwise = up"
+  },
+  "Knob_ADF_Vol": {
+   "pivot": [
+    -0.012,
+    -2.979,
+    1.673
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "knob: rest index at 7:30 (OFF / minimum), clockwise = up"
+  },
+  "Knob_ADF_Outer": {
+   "pivot": [
+    -0.145,
+    -2.979,
+    1.6740000000000002
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "outer concentric knob (coarse): free rotation"
+  },
+  "Knob_ADF_Inner": {
+   "pivot": [
+    -0.145,
+    -2.979,
+    1.6740000000000002
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "inner concentric knob (fine): free rotation; push/pull = OPEN"
+  },
+  "SW_CabinDoor_L": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.8519999980926514
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest CLOSE (down), OPEN = lever up 40 deg"
+  },
+  "SW_CabinDoor_R": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.8519999980926514
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest CLOSE (down), OPEN = lever up 40 deg"
+  },
+  "SW_CargoDoor_L": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.7999999523162842
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest CLOSE (down), OPEN = lever up 40 deg"
+  },
+  "SW_CargoDoor_R": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.7999999523162842
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest CLOSE (down), OPEN = lever up 40 deg"
+  },
+  "SW_Battery": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.722000002861023
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_Avionics": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.6759999990463257
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_FuelPump": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.6299999952316284
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_Ignition": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.5839999914169312
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_Starter": {
+   "pivot": [
+    0.6060000061988831,
+    -2.9765000343322754,
+    1.5049999952316284
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "momentary toggle under the flip guard: rest OFF (down), START = lever up 40 deg"
+  },
+  "SW_Beacon": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.722000002861023
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_Strobe": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.6759999990463257
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_NavLights": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.6299999952316284
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_Landing": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.5839999914169312
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_CabinLight": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.5379999876022339
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "SW_CargoLight": {
+   "pivot": [
+    0.5220000147819519,
+    -2.9765000343322754,
+    1.4919999837875366
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "toggle: rest OFF (down), ON = lever up 40 deg"
+  },
+  "Guard_Starter": {
+   "pivot": [
+    0.606,
+    -2.977,
+    1.5259999999999998
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "flip guard over SW_Starter: rest closed; open = +95 deg about local X (free edge swings up, towards the pilot)"
+  },
+  "Rheo_Flood": {
+   "pivot": [
+    0.606,
+    -2.9819999999999998,
+    1.912
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "rheostat: rest OFF (index at 7:30), 0..270 deg clockwise to BRT"
+  },
+  "Rheo_Panel": {
+   "pivot": [
+    0.522,
+    -2.9819999999999998,
+    1.912
+   ],
+   "parent": "Cockpit",
+   "axis": "gauge",
+   "note": "rheostat: rest OFF (index at 7:30), 0..270 deg clockwise to BRT"
+  },
+  "Pull_CabinHeat": {
+   "pivot": [
+    0.14,
+    -2.985,
+    1.64
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_aft",
+   "note": "pull towards the pilot, 0..6 cm"
+  },
+  "Pull_Defrost": {
+   "pivot": [
+    0.075,
+    -2.985,
+    1.64
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_aft",
+   "note": "pull towards the pilot, 0..6 cm"
+  },
+  "Pull_ParkBrake": {
+   "pivot": [
+    0.435,
+    -2.985,
+    1.505
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_aft",
+   "note": "pull towards the pilot, 0..6 cm"
+  },
+  "Glovebox_Lid": {
+   "pivot": [
+    -0.42000000000000004,
+    -2.984,
+    1.4805
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "map case lid, hinge on its bottom edge: rest closed; open = -80 deg about local X (top edge comes towards the pilot and down)"
+  },
+  "Lever_Power": {
+   "pivot": [
+    0.03999999910593033,
+    -2.8399999141693115,
+    1.3949999809265137
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rest = mid travel"
+  },
+  "Lever_Prop": {
+   "pivot": [
+    0.0,
+    -2.8399999141693115,
+    1.3949999809265137
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rest = mid travel"
+  },
+  "Lever_Condition": {
+   "pivot": [
+    -0.03999999910593033,
+    -2.8399999141693115,
+    1.3949999809265137
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rest = mid travel"
+  },
+  "Lever_Flap": {
+   "pivot": [
+    -0.08500000089406967,
+    -2.6600000858306885,
+    1.2999999523162842
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "flap detents"
+  },
+  "TrimWheel": {
+   "pivot": [
+    0.082,
+    -2.72,
+    1.24
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "trim"
+  },
+  "Pull_FuelShutoff": {
+   "pivot": [
+    0.0,
+    -2.549999952316284,
+    1.2699999809265137
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_aft",
+   "note": "pull aft (towards the pilot) = fuel off"
+  },
+  "Yoke_P": {
+   "pivot": [
+    0.33000001311302185,
+    -2.7799999713897705,
+    1.7000000476837158
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_fwd",
+   "note": "pitch: push = forward, travel +-0.08 m"
+  },
+  "Yoke_P_Roll": {
+   "pivot": [
+    0.33000001311302185,
+    -2.7799999713897705,
+    1.7000000476837158
+   ],
+   "parent": "Yoke_P",
+   "axis": "fwd",
+   "note": "roll +-50 deg"
+  },
+  "Yoke_C": {
+   "pivot": [
+    -0.33000001311302185,
+    -2.7799999713897705,
+    1.7000000476837158
+   ],
+   "parent": "Cockpit",
+   "axis": "translate_fwd",
+   "note": "pitch: push = forward, travel +-0.08 m"
+  },
+  "Yoke_C_Roll": {
+   "pivot": [
+    -0.33000001311302185,
+    -2.7799999713897705,
+    1.7000000476837158
+   ],
+   "parent": "Yoke_C",
+   "axis": "fwd",
+   "note": "roll +-50 deg"
+  },
+  "PedalP_L": {
+   "pivot": [
+    0.43000000000000005,
+    -3.12,
+    1.1
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rudder +-12 deg"
+  },
+  "PedalP_R": {
+   "pivot": [
+    0.23,
+    -3.12,
+    1.1
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rudder +-12 deg"
+  },
+  "PedalC_L": {
+   "pivot": [
+    -0.23,
+    -3.12,
+    1.1
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rudder +-12 deg"
+  },
+  "PedalC_R": {
+   "pivot": [
+    -0.43000000000000005,
+    -3.12,
+    1.1
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "rudder +-12 deg"
+  },
+  "Belt_P_On": {
+   "pivot": [
+    0.33000001311302185,
+    -2.299999952316284,
+    1.5049999952316284
+   ],
+   "parent": "Cockpit",
+   "axis": "scale",
+   "note": "harness buckled: scale 1 when buckled, 0 when open"
+  },
+  "Belt_P_Off": {
+   "pivot": [
+    0.11500000208616257,
+    -2.450000047683716,
+    1.399999976158142
+   ],
+   "parent": "Cockpit",
+   "axis": "scale",
+   "note": "harness open: scale 1 when open, 0 when buckled"
+  },
+  "Belt_C_On": {
+   "pivot": [
+    -0.33000001311302185,
+    -2.299999952316284,
+    1.5049999952316284
+   ],
+   "parent": "Cockpit",
+   "axis": "scale",
+   "note": "harness buckled: scale 1 when buckled, 0 when open"
+  },
+  "Belt_C_Off": {
+   "pivot": [
+    -0.11500000208616257,
+    -2.450000047683716,
+    1.399999976158142
+   ],
+   "parent": "Cockpit",
+   "axis": "scale",
+   "note": "harness open: scale 1 when open, 0 when buckled"
+  },
+  "Visor_P": {
+   "pivot": [
+    0.33000001311302185,
+    -2.627000093460083,
+    2.553499937057495
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "visor: rest stowed, deploy = swing down 80 deg"
+  },
+  "Visor_C": {
+   "pivot": [
+    -0.33000001311302185,
+    -2.627000093460083,
+    2.553499937057495
+   ],
+   "parent": "Cockpit",
+   "axis": "lateral",
+   "note": "visor: rest stowed, deploy = swing down 80 deg"
+  }
+ },
+ "static": [
+  "CP_Overhead",
+  "CP_Compass_Vents",
+  "CP_Liner",
+  "CP_Trims",
+  "CP_DoorSeals",
+  "CP_Floor",
+  "CP_Headliner",
+  "CP_CargoLight",
+  "CP_WindshieldFrame",
+  "CP_Bulkheads",
+  "CP_Barrier",
+  "CP_BarrierNets",
+  "CP_BarrierFittings",
+  "CP_PanelFrame",
+  "CP_PanelBack",
+  "CP_Gauges",
+  "Display_Hobbs",
+  "CP_Annunciator",
+  "Display_COM1",
+  "Display_NAV1",
+  "Display_GPS",
+  "Display_XPDR",
+  "Display_AP",
+  "Display_ADF",
+  "CP_Radios",
+  "CP_RadioFaces",
+  "CP_Switchgear",
+  "CP_Pull_CabinHeat_Bezel",
+  "CP_Pull_Defrost_Bezel",
+  "CP_Pull_ParkBrake_Bezel",
+  "CP_Panel",
+  "CP_Glovebox",
+  "CP_YokeBoot_P",
+  "CP_YokeBoot_C",
+  "CP_Glareshield",
+  "CP_Pedestal",
+  "CP_PedalLinkage",
+  "CP_Seat_P",
+  "CP_Seat_C",
+  "CP_VisorMounts",
+  "CP_Headsets",
+  "CP_RearKit",
+  "CP_Placards"
+ ],
+ "sockets": {
+  "Socket_PilotEye": [
+   0.33,
+   -2.24,
+   2.22
+  ],
+  "Socket_CopilotEye": [
+   -0.33,
+   -2.24,
+   2.22
+  ],
+  "Socket_TieDown_01": [
+   0.42,
+   -1.45,
+   1.104
+  ],
+  "Socket_TieDown_02": [
+   0.0,
+   -1.45,
+   1.104
+  ],
+  "Socket_TieDown_03": [
+   -0.42,
+   -1.45,
+   1.104
+  ],
+  "Socket_TieDown_04": [
+   0.42,
+   -0.8,
+   1.104
+  ],
+  "Socket_TieDown_05": [
+   0.0,
+   -0.8,
+   1.104
+  ],
+  "Socket_TieDown_06": [
+   -0.42,
+   -0.8,
+   1.104
+  ],
+  "Socket_TieDown_07": [
+   0.42,
+   -0.15,
+   1.104
+  ],
+  "Socket_TieDown_08": [
+   0.0,
+   -0.15,
+   1.104
+  ],
+  "Socket_TieDown_09": [
+   -0.42,
+   -0.15,
+   1.104
+  ],
+  "Socket_TieDown_10": [
+   0.42,
+   0.5,
+   1.104
+  ],
+  "Socket_TieDown_11": [
+   0.0,
+   0.5,
+   1.104
+  ],
+  "Socket_TieDown_12": [
+   -0.42,
+   0.5,
+   1.104
+  ],
+  "Socket_TieDown_13": [
+   0.42,
+   1.1,
+   1.104
+  ],
+  "Socket_TieDown_14": [
+   0.0,
+   1.1,
+   1.104
+  ],
+  "Socket_TieDown_15": [
+   -0.42,
+   1.1,
+   1.104
+  ],
+  "_dome_z": [
+   0.0,
+   0.0,
+   2.4826
+  ]
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "note": "v13 sliding cargo doors, build frame (x left, y aft, z up, m). Pose at t (0 closed .. 1 open): rotate the door about the vertical axis through its pivot by sign * yaw (front outward), then translate by (sign * out_r, back, 0). out_f = D_OUT * S3(p / 0.75), out_r = D_OUT * S3((p - 0.25) / 0.75), p = t / T_POP; back = D_BACK * S5((t - T_SLIDE0) / (1 - T_SLIDE0)); out_r -= D_TUCK * s^2, s = clamp01((back - B_TUCK0) / (D_BACK - B_TUCK0)) (the rear follows the tapering side); yaw = atan2(out_f - out_r, length). S3 = smoothstep, S5 = smootherstep.",
+ "D_OUT": 0.14,
+ "D_BACK": 1.3,
+ "T_POP": 0.25,
+ "T_SLIDE0": 0.22,
+ "D_TUCK": 0.068,
+ "B_TUCK0": 0.57,
+ "doors": {
+  "L": {
+   "pivot": [
+    0.752,
+    0.45,
+    1.77
+   ],
+   "length": 1.294,
+   "y_front": -0.844,
+   "rails": {
+    "upper": {
+     "z": 2.47,
+     "y_from": -0.7853,
+     "y_to": 0.5495,
+     "x_outer": 0.7455,
+     "tip_closed": [
+      0.5958,
+      -0.779,
+      2.47
+     ]
+    },
+    "lower": {
+     "z": 1.078,
+     "y_from": -0.7863,
+     "y_to": 0.5485,
+     "x_outer": 0.7267,
+     "tip_closed": [
+      0.577,
+      -0.779,
+      1.078
+     ]
+    },
+    "centre": {
+     "z": 1.77,
+     "y_from": 0.4723,
+     "y_to": 1.8031,
+     "x_outer": 0.7056,
+     "tip_closed": [
+      0.6218,
+      0.475,
+      1.77
+     ]
+    }
+   }
+  },
+  "R": {
+   "pivot": [
+    -0.752,
+    0.45,
+    1.77
+   ],
+   "length": 1.294,
+   "y_front": -0.844,
+   "rails": {
+    "upper": {
+     "z": 2.47,
+     "y_from": -0.7853,
+     "y_to": 0.5495,
+     "x_outer": 0.7456,
+     "tip_closed": [
+      -0.5959,
+      -0.779,
+      2.47
+     ]
+    },
+    "lower": {
+     "z": 1.078,
+     "y_from": -0.7863,
+     "y_to": 0.5485,
+     "x_outer": 0.7267,
+     "tip_closed": [
+      -0.577,
+      -0.779,
+      1.078
+     ]
+    },
+    "centre": {
+     "z": 1.77,
+     "y_from": 0.4723,
+     "y_to": 1.8031,
+     "x_outer": 0.7056,
+     "tip_closed": [
+      -0.6218,
+      0.475,
+      1.77
+     ]
+    }
+   }
+  }
+ }
+}

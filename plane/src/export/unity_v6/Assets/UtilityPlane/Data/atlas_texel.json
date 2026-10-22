@@ -1,0 +1,62 @@
+[
+ {
+  "atlas": "Airframe",
+  "material": "M_Airframe",
+  "metresPerUV": 15.6289,
+  "pxPerMetre": 262.1,
+  "areaM2": 127.6,
+  "detail": "",
+  "detailTiling": 0.0,
+  "detailNormalScale": 0.0
+ },
+ {
+  "atlas": "Cockpit",
+  "material": "M_Cockpit",
+  "metresPerUV": 3.8729,
+  "pxPerMetre": 1057.6,
+  "areaM2": 5.55,
+  "detail": "Grain",
+  "detailTiling": 64.55,
+  "detailNormalScale": 0.4
+ },
+ {
+  "atlas": "Interior",
+  "material": "M_Interior",
+  "metresPerUV": 6.0006,
+  "pxPerMetre": 682.6,
+  "areaM2": 17.77,
+  "detail": "Grain",
+  "detailTiling": 100.01,
+  "detailNormalScale": 0.6
+ },
+ {
+  "atlas": "Floor",
+  "material": "M_Floor",
+  "metresPerUV": 6.711,
+  "pxPerMetre": 610.3,
+  "areaM2": 17.69,
+  "detail": "Grain",
+  "detailTiling": 111.85,
+  "detailNormalScale": 0.3
+ },
+ {
+  "atlas": "Seats",
+  "material": "M_Seats",
+  "metresPerUV": 3.3212,
+  "pxPerMetre": 1233.3,
+  "areaM2": 6.19,
+  "detail": "Leather",
+  "detailTiling": 41.52,
+  "detailNormalScale": 0.8
+ },
+ {
+  "atlas": "Details",
+  "material": "M_Details",
+  "metresPerUV": 7.632,
+  "pxPerMetre": 268.3,
+  "areaM2": 23.93,
+  "detail": "",
+  "detailTiling": 0.0,
+  "detailNormalScale": 0.0
+ }
+]

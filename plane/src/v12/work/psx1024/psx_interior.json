@@ -1,0 +1,52 @@
+[
+ {
+  "atlas": "Cockpit",
+  "size": 1024,
+  "source": 4096,
+  "block": 4,
+  "colours": 64,
+  "islands": 7410,
+  "covered": 0.4779,
+  "shade_median": 0.681
+ },
+ {
+  "atlas": "Interior",
+  "size": 1024,
+  "source": 4096,
+  "block": 4,
+  "colours": 64,
+  "islands": 477,
+  "covered": 0.5618,
+  "shade_median": 0.868
+ },
+ {
+  "atlas": "Floor",
+  "size": 1024,
+  "source": 4096,
+  "block": 4,
+  "colours": 64,
+  "islands": 1728,
+  "covered": 0.4622,
+  "shade_median": 0.747
+ },
+ {
+  "atlas": "Seats",
+  "size": 1024,
+  "source": 4096,
+  "block": 4,
+  "colours": 64,
+  "islands": 768,
+  "covered": 0.5856,
+  "shade_median": 0.678
+ },
+ {
+  "atlas": "Fittings",
+  "size": 512,
+  "source": 2048,
+  "block": 4,
+  "colours": 64,
+  "islands": 384,
+  "covered": 0.526,
+  "shade_median": 0.738
+ }
+]

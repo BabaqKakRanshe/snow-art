@@ -1,0 +1,789 @@
+{
+ "ConcreteFence": {
+  "file": "ConcreteFence.fbx",
+  "objects": [
+   "ConcreteFence"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Concrete"
+  ],
+  "tris": 120,
+  "remap": [],
+  "bytes": 23836,
+  "aabb": {
+   "ConcreteFence": [
+    [
+     -1.25,
+     -0.375,
+     -0.45
+    ],
+    [
+     1.725,
+     0.375,
+     3.1912
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ConcreteFence_b": {
+  "file": "ConcreteFence_b.fbx",
+  "objects": [
+   "ConcreteFence_b"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Concrete"
+  ],
+  "tris": 120,
+  "remap": [],
+  "bytes": 23836,
+  "aabb": {
+   "ConcreteFence_b": [
+    [
+     -1.25,
+     -0.375,
+     -0.45
+    ],
+    [
+     1.725,
+     0.375,
+     3.1912
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence_b": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ConcreteFence_Broken": {
+  "file": "ConcreteFence_Broken.fbx",
+  "objects": [
+   "ConcreteFence_Broken"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Concrete"
+  ],
+  "tris": 240,
+  "remap": [],
+  "bytes": 28300,
+  "aabb": {
+   "ConcreteFence_Broken": [
+    [
+     -1.2995,
+     -0.375,
+     -0.45
+    ],
+    [
+     1.725,
+     0.375,
+     3.1912
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence_Broken": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ConcreteFence_Sign": {
+  "file": "ConcreteFence_Sign.fbx",
+  "objects": [
+   "ConcreteFence_Sign"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Concrete",
+   "M_Fence_Panel"
+  ],
+  "tris": 244,
+  "remap": [],
+  "bytes": 29132,
+  "aabb": {
+   "ConcreteFence_Sign": [
+    [
+     -1.25,
+     -0.375,
+     -0.45
+    ],
+    [
+     1.725,
+     0.375,
+     3.1912
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence_Sign": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ConcreteFence_Plain": {
+  "file": "ConcreteFence_Plain.fbx",
+  "objects": [
+   "ConcreteFence_Plain"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 32,
+  "remap": [],
+  "bytes": 19452,
+  "aabb": {
+   "ConcreteFence_Plain": [
+    [
+     -1.24,
+     -0.375,
+     -0.45
+    ],
+    [
+     1.725,
+     0.375,
+     2.6
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence_Plain": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ConcreteFence_Socket": {
+  "file": "ConcreteFence_Socket.fbx",
+  "objects": [
+   "ConcreteFence_Socket"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 68,
+  "remap": [],
+  "bytes": 20476,
+  "aabb": {
+   "ConcreteFence_Socket": [
+    [
+     -0.475,
+     -0.375,
+     -0.45
+    ],
+    [
+     0.475,
+     0.375,
+     3.1912
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence_Socket": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ConcreteFence_Wicket": {
+  "file": "ConcreteFence_Wicket.fbx",
+  "objects": [
+   "ConcreteFence_Wicket"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_ChainLink",
+   "M_Fence_Concrete"
+  ],
+  "tris": 270,
+  "remap": [],
+  "bytes": 29852,
+  "aabb": {
+   "ConcreteFence_Wicket": [
+    [
+     -1.25,
+     -1.0985,
+     -0.45
+    ],
+    [
+     1.725,
+     0.375,
+     3.1912
+    ]
+   ]
+  },
+  "pivots": {
+   "ConcreteFence_Wicket": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ChainFence": {
+  "file": "ChainFence.fbx",
+  "objects": [
+   "ChainFence"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_ChainBarbed",
+   "M_Fence_ChainLink",
+   "M_Fence_Props"
+  ],
+  "tris": 68,
+  "remap": [],
+  "bytes": 24956,
+  "aabb": {
+   "ChainFence": [
+    [
+     -1.5,
+     -0.3712,
+     -0.4
+    ],
+    [
+     1.536,
+     0.0312,
+     2.65
+    ]
+   ]
+  },
+  "pivots": {
+   "ChainFence": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "ChainFence_Torn": {
+  "file": "ChainFence_Torn.fbx",
+  "objects": [
+   "ChainFence_Torn"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_ChainBarbed",
+   "M_Fence_ChainLink",
+   "M_Fence_Props"
+  ],
+  "tris": 80,
+  "remap": [],
+  "bytes": 25164,
+  "aabb": {
+   "ChainFence_Torn": [
+    [
+     -1.5,
+     -0.3712,
+     -0.4
+    ],
+    [
+     1.536,
+     0.0312,
+     2.65
+    ]
+   ]
+  },
+  "pivots": {
+   "ChainFence_Torn": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "WireCoil": {
+  "file": "WireCoil.fbx",
+  "objects": [
+   "WireCoil"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Props",
+   "M_Fence_Razor"
+  ],
+  "tris": 632,
+  "remap": [],
+  "bytes": 35756,
+  "aabb": {
+   "WireCoil": [
+    [
+     -2.53,
+     -0.4399,
+     -0.3008
+    ],
+    [
+     2.53,
+     0.4399,
+     0.9312
+    ]
+   ]
+  },
+  "pivots": {
+   "WireCoil": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "RoadBlock_FBS": {
+  "file": "RoadBlock_FBS.fbx",
+  "objects": [
+   "RoadBlock_FBS"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 122,
+  "remap": [],
+  "bytes": 21468,
+  "aabb": {
+   "RoadBlock_FBS": [
+    [
+     -1.19,
+     -0.2,
+     0.0
+    ],
+    [
+     1.19,
+     0.2,
+     0.6214
+    ]
+   ]
+  },
+  "pivots": {
+   "RoadBlock_FBS": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "RoadBlock_Jersey": {
+  "file": "RoadBlock_Jersey.fbx",
+  "objects": [
+   "RoadBlock_Jersey"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 26,
+  "remap": [],
+  "bytes": 19132,
+  "aabb": {
+   "RoadBlock_Jersey": [
+    [
+     -1.0,
+     -0.305,
+     0.0
+    ],
+    [
+     1.0,
+     0.305,
+     0.81
+    ]
+   ]
+  },
+  "pivots": {
+   "RoadBlock_Jersey": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "RoadBlock_Jersey_Striped": {
+  "file": "RoadBlock_Jersey_Striped.fbx",
+  "objects": [
+   "RoadBlock_Jersey_Striped"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 26,
+  "remap": [],
+  "bytes": 19148,
+  "aabb": {
+   "RoadBlock_Jersey_Striped": [
+    [
+     -1.0,
+     -0.305,
+     0.0
+    ],
+    [
+     1.0,
+     0.305,
+     0.81
+    ]
+   ]
+  },
+  "pivots": {
+   "RoadBlock_Jersey_Striped": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "RoadBlock_Cube": {
+  "file": "RoadBlock_Cube.fbx",
+  "objects": [
+   "RoadBlock_Cube"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 74,
+  "remap": [],
+  "bytes": 20444,
+  "aabb": {
+   "RoadBlock_Cube": [
+    [
+     -0.5,
+     -0.5,
+     -0.05
+    ],
+    [
+     0.5,
+     0.5,
+     1.058
+    ]
+   ]
+  },
+  "pivots": {
+   "RoadBlock_Cube": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "TankTooth": {
+  "file": "TankTooth.fbx",
+  "objects": [
+   "TankTooth"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 12,
+  "remap": [],
+  "bytes": 19068,
+  "aabb": {
+   "TankTooth": [
+    [
+     -0.5727,
+     -0.5727,
+     -0.25
+    ],
+    [
+     0.5727,
+     0.5727,
+     1.16
+    ]
+   ]
+  },
+  "pivots": {
+   "TankTooth": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "TankTooth_b": {
+  "file": "TankTooth_b.fbx",
+  "objects": [
+   "TankTooth_b"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Concrete"
+  ],
+  "tris": 12,
+  "remap": [],
+  "bytes": 19148,
+  "aabb": {
+   "TankTooth_b": [
+    [
+     -0.5727,
+     -0.5727,
+     -0.25
+    ],
+    [
+     0.5727,
+     0.5727,
+     1.16
+    ]
+   ]
+  },
+  "pivots": {
+   "TankTooth_b": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Hedgehog": {
+  "file": "Hedgehog.fbx",
+  "objects": [
+   "Hedgehog"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Props"
+  ],
+  "tris": 108,
+  "remap": [],
+  "bytes": 22636,
+  "aabb": {
+   "Hedgehog": [
+    [
+     -0.6827,
+     -0.61,
+     -0.0215
+    ],
+    [
+     0.6827,
+     0.61,
+     0.9852
+    ]
+   ]
+  },
+  "pivots": {
+   "Hedgehog": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "WireBarricade": {
+  "file": "WireBarricade.fbx",
+  "objects": [
+   "WireBarricade"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Props"
+  ],
+  "tris": 196,
+  "remap": [],
+  "bytes": 27228,
+  "aabb": {
+   "WireBarricade": [
+    [
+     -1.5,
+     -0.535,
+     0.0845
+    ],
+    [
+     1.5,
+     0.5345,
+     1.5391
+    ]
+   ]
+  },
+  "pivots": {
+   "WireBarricade": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Abatis": {
+  "file": "Abatis.fbx",
+  "objects": [
+   "Abatis"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Props"
+  ],
+  "tris": 1868,
+  "remap": [],
+  "bytes": 89980,
+  "aabb": {
+   "Abatis": [
+    [
+     -3.9131,
+     -1.9517,
+     -0.0979
+    ],
+    [
+     3.7593,
+     0.5474,
+     1.7534
+    ]
+   ]
+  },
+  "pivots": {
+   "Abatis": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Abatis_b": {
+  "file": "Abatis_b.fbx",
+  "objects": [
+   "Abatis_b"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Barbed",
+   "M_Fence_Props"
+  ],
+  "tris": 932,
+  "remap": [],
+  "bytes": 55404,
+  "aabb": {
+   "Abatis_b": [
+    [
+     -3.3196,
+     -1.7304,
+     0.0062
+    ],
+    [
+     3.7587,
+     0.6355,
+     2.1113
+    ]
+   ]
+  },
+  "pivots": {
+   "Abatis_b": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_Halt": {
+  "file": "Sign_Halt.fbx",
+  "objects": [
+   "Sign_Halt"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Panel",
+   "M_Fence_Props"
+  ],
+  "tris": 232,
+  "remap": [],
+  "bytes": 26540,
+  "aabb": {
+   "Sign_Halt": [
+    [
+     -0.6,
+     -0.04,
+     -0.4
+    ],
+    [
+     0.6,
+     0.065,
+     2.03
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_Halt": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Sign_NoEntry": {
+  "file": "Sign_NoEntry.fbx",
+  "objects": [
+   "Sign_NoEntry"
+  ],
+  "skipped": [],
+  "joined": [],
+  "materials": [
+   "M_Fence_Panel",
+   "M_Fence_Props"
+  ],
+  "tris": 148,
+  "remap": [],
+  "bytes": 25116,
+  "aabb": {
+   "Sign_NoEntry": [
+    [
+     -0.275,
+     -0.038,
+     -0.4
+    ],
+    [
+     0.275,
+     0.06,
+     2.165
+    ]
+   ]
+  },
+  "pivots": {
+   "Sign_NoEntry": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

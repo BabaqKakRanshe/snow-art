@@ -1,0 +1,40 @@
+base_build.py                            Base prefabs build (base_kit + base_paint): the shaft hatch, the helipad, the radio mast, the crates, the log pile, the
+base_kit.py                              The Forest base's remaining prefabs in the generator shed's style (Update 3's names, pivots, sizes, places, lights):
+base_paint.py                            Painters for the Forest base prefabs' atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n]).
+base_render.py                           Renders of the base prefabs (out/base[_draft|_test].blend): each prefab on its own ground (Update 3's terrain under it,
+base_spec.py                             The Forest base's remaining prefabs (the shaft hatch, the helipad, the radio mast, the crates, the log pile, the yard
+base_tex.py                              Panel atlas of the base prefabs (256 x 256, pixel art, point-filtered, 160 px/m on the faces as the road's signs), in
+bld_common.py                            Shared build steps for the station's buildings (lifted from main_build.py so the garage and the next locations use the
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+hut_kit.py                               Forester's hut (FORSTHÜTTE) in the generator shed's style, for the Forest map's prologue (Forest_Opening.json S2):
+hut_paint.py                             Painters for the forester's hut atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n] or None).
+hut_tex.py                               Panel atlas of the forester's hut (512 x 512, pixel art, point-filtered), on the explicit-UV objects:
+kpp_tex.py                               Panel atlas of the checkpoint (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the chain-link tile:
+main_spec.py                             Main building (BaseMain) — the layout, measured off the Update 3 model on the Forest map (Models/BaseMain.fbx, the
+main_tex.py                              Panel atlas of the main building (1024 x 1024, pixel art, point-filtered): every sign, label, plan, dial and paper of
+make_base_doc.py                         Russian reference for the base prefabs: out/base_contract.json + out/base.json (+ the checks' json) ->
+make_sheets_base.py                      Sheets for the base prefabs: A the shaft hatch, the crates and the log pile; B the helipad and the radio mast; C the yard
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
+make_sheets_road.py                      Sheets for the road prefabs: A the signs and the gate, B the bridge and the overlook, C the windfall and the road on
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_base.py                             Package the base prefabs: the .blend with relative texture paths, the textures, the contract (JSON + Russian reference),
+post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+road_build.py                            Road prefabs build (road_kit + road_paint): the twelve signs, the delineator post, the zone gate, the bridge, the overlook
+road_kit.py                              The Forest map's road prefabs in the generator shed's style (Update 3's names, pivots, sizes and places; the map's
+road_paint.py                            Painters for the road prefabs' atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n] or None).
+road_spec.py                             The Forest map's road prefabs (the prologue road from the SPERRGEBIET gate to the observatory) - Update 3's data and the
+road_tex.py                              Panel atlas of the road prefabs (512 x 512, pixel art, point-filtered): the sign faces at a reading density (160 px/m;
+unwrap_fast.py                           psxlib.unwrap_group with Blender's box packing instead of the concave one (lifted from road_build.py so later builds
+uvpack.py                                Shelf packing of UV islands by their bounding boxes (the main building's walls, strips and boxes are rectangles:
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+yard_tex.py                              Panel atlas of the station yard (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the alpha tiles:
+checks/base_checks.py                    Checks of the base prefabs (out/base.blend + base_contract.json), each prefab moved to the origin (its own frame):
+checks/chk_common.py                     Shared checks for the base and far batches (bpy as a module; a blend already open).
+checks/render_u3.py                      Update 3's models (FBX, flat material colours) from the same cameras as base_render.py / far_render.py's cmp_* views.

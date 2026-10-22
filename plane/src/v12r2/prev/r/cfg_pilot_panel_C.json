@@ -1,0 +1,20 @@
+{
+ "cam": {
+  "pos": [
+   -0.33,
+   2.22,
+   2.24
+  ],
+  "look": [
+   -0.12,
+   1.8,
+   2.985
+  ],
+  "fov": 60
+ },
+ "figures": [],
+ "out": "/home/claude/plane/v12r2/prev/r/pilot_panel_C",
+ "W": 1920,
+ "H": 1080,
+ "tex": "/home/claude/plane/v12r2/work/tex_prevC"
+}

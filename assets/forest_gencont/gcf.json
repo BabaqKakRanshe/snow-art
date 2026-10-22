@@ -1,0 +1,708 @@
+{
+ "atlases": {
+  "Cont": {
+   "size": 1024,
+   "ppm": 44.3,
+   "area_m2": 275.12,
+   "uv_fill": 0.515,
+   "colours": 64
+  },
+  "Genset": {
+   "size": 512,
+   "ppm": 64.6,
+   "area_m2": 25.81,
+   "uv_fill": 0.411,
+   "colours": 64
+  },
+  "Props": {
+   "size": 512,
+   "ppm": 61.6,
+   "area_m2": 25.3,
+   "uv_fill": 0.366,
+   "colours": 64
+  }
+ },
+ "knock_points": 21,
+ "joined": {
+  "GenContainer": [
+   "BLamp_GEN",
+   "BLamp_LINE",
+   "BLamp_OVERLOAD",
+   "Battery",
+   "Battery_ClampNeg",
+   "Battery_ClampPos",
+   "Board_Brk_Gen",
+   "Board_Brk_Line",
+   "Board_Door",
+   "Board_Door_Signs",
+   "Board_Face",
+   "Board_Latch",
+   "Board_MCB_4",
+   "Board_MCB_5",
+   "Board_MCB_6",
+   "Board_MCB_7",
+   "Board_MCB_8",
+   "BungWrench",
+   "Cont_Signs",
+   "Coolant",
+   "Coolant_Cap",
+   "DayTank",
+   "DayTank_Cap",
+   "DayTank_Decals",
+   "DayTank_Drain",
+   "DayTank_Glass",
+   "DayTank_Level",
+   "DayTank_Valve",
+   "DrumPump",
+   "DrumPump_Crank",
+   "DrumPump_Nozzle",
+   "Drum_1",
+   "Drum_1_Stencil",
+   "Drum_1_Vent",
+   "Drum_2",
+   "Drum_2_Bung",
+   "Drum_2_Stencil",
+   "Drum_2_Vent",
+   "Drum_3",
+   "Drum_3_Bung",
+   "Drum_3_Stencil",
+   "Drum_3_Vent",
+   "EngineOil",
+   "EngineOil_Cap",
+   "Engine_AirFilterLid",
+   "Engine_Belt",
+   "Engine_BleedScrew",
+   "Engine_Dipstick",
+   "Engine_Fan",
+   "Engine_FuelFilter",
+   "Engine_GovernorLever",
+   "Engine_OilCap",
+   "Engine_PrimerLever",
+   "Engine_StopLever",
+   "Engine_WaterDrain",
+   "Exhaust_Flap",
+   "Extinguisher",
+   "FuelFilter_Spare",
+   "GLamp_CHG",
+   "GLamp_GLOW",
+   "GLamp_OIL",
+   "GLamp_RUN",
+   "GLamp_TEMP",
+   "GPanel_Face",
+   "GenContainer_FillSign",
+   "GenContainer_In",
+   "Gen_Breaker",
+   "Gen_EStop",
+   "Gen_GlowButton",
+   "Gen_StopButton",
+   "Gen_VAdj",
+   "Genset",
+   "Genset_Plates",
+   "JumperCables",
+   "Lens_Bulk_Board",
+   "Lens_Bulk_Ceiling",
+   "Lens_Bulk_Genset",
+   "Lens_Ext_Door",
+   "Light_Switch",
+   "Logbook",
+   "Logbook_Page",
+   "Louvre_Blade_1",
+   "Louvre_Blade_2",
+   "Louvre_Blade_3",
+   "Louvre_Blade_4",
+   "Louvre_Blade_5",
+   "Louvre_Blade_6",
+   "Louvre_Lever",
+   "Mat",
+   "Needle_Batt",
+   "Needle_BoardA",
+   "Needle_BoardHz",
+   "Needle_BoardV",
+   "Needle_GenA",
+   "Needle_GenHz",
+   "Needle_GenV",
+   "Needle_Oil",
+   "Needle_Temp",
+   "Pallet",
+   "Radiator_Cap",
+   "Radiator_Drain",
+   "Shelf",
+   "Switchboard",
+   "Toolbox",
+   "Window_Latch",
+   "Window_Shutter"
+  ],
+  "IX_ContDoorR_84": [
+   "Door_Bolt",
+   "Door_R_Bar_1",
+   "Door_R_Bar_2",
+   "Door_R_Sign"
+  ],
+  "IX_ContDoorL_83": [
+   "Door_L_Bar_1",
+   "Door_L_Bar_2",
+   "Door_L_Sign"
+  ],
+  "IX_ContSideDoor_85": [
+   "IX_ContSideDoor_85_Sign"
+  ],
+  "IX_GenFillCap_300": [
+   "IX_GenFillCap_300_Sign"
+  ]
+ },
+ "data": {
+  "prefabLights": {
+   "model": "GenContainer",
+   "lights": [
+    {
+     "t": "point",
+     "p": [
+      -0.78,
+      2.467,
+      0.22
+     ],
+     "d": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "c": [
+      1.0,
+      0.76,
+      0.5
+     ],
+     "i": 0.35,
+     "r": 5.5,
+     "a": 0.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      0.78,
+      2.467,
+      2.32
+     ],
+     "d": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "c": [
+      1.0,
+      0.76,
+      0.5
+     ],
+     "i": 0.35,
+     "r": 5.5,
+     "a": 0.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "point",
+     "p": [
+      -1.45,
+      2.43,
+      -1.037
+     ],
+     "d": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "c": [
+      1.0,
+      0.76,
+      0.5
+     ],
+     "i": 0.35,
+     "r": 5.5,
+     "a": 0.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    },
+    {
+     "t": "spot",
+     "p": [
+      -3.37,
+      2.69,
+      0.0
+     ],
+     "d": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "c": [
+      1.0,
+      0.72,
+      0.42
+     ],
+     "i": 1.0,
+     "r": 10.0,
+     "a": 140.0,
+     "sh": false,
+     "tag": "power",
+     "off": true,
+     "room": "Exterior"
+    }
+   ]
+  },
+  "prefabGlows": {
+   "model": "GenContainer",
+   "glows": [
+    {
+     "p": [
+      -0.78,
+      2.467,
+      0.22
+     ],
+     "m": "M_Glow_Bulb",
+     "s": 0.4,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      0.78,
+      2.467,
+      2.32
+     ],
+     "m": "M_Glow_Bulb",
+     "s": 0.4,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -1.45,
+      2.43,
+      -1.037
+     ],
+     "m": "M_Glow_Bulb",
+     "s": 0.4,
+     "tag": "power",
+     "off": true
+    },
+    {
+     "p": [
+      -3.37,
+      2.69,
+      0.0
+     ],
+     "m": "M_Glow_Bulb",
+     "s": 0.6,
+     "tag": "power",
+     "off": true
+    }
+   ]
+  },
+  "interactables": [
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_ContDoorL_83",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 160.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_ContDoorL_83",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 170.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_ContDoorR_84",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 170.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_ContDoorR_84",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 170.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_ContSideDoor_85",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 100.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_ContSideDoor_85",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 100.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_GenStart_86",
+     "kind": "hinge",
+     "axis": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 52.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_GenStart_86",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "min": 0.0,
+     "max": 60.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_Breaker_87",
+     "kind": "hinge",
+     "axis": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 60.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_Breaker_87",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "min": 0.0,
+     "max": 45.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_Breaker_88",
+     "kind": "hinge",
+     "axis": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 60.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_Breaker_88",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "min": 0.0,
+     "max": 45.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_Breaker_89",
+     "kind": "hinge",
+     "axis": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 60.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_Breaker_89",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "min": 0.0,
+     "max": 45.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_MainSwitch_90",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "min": 0.0,
+     "max": 60.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_MainSwitch_90",
+     "kind": "hinge",
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 90.0,
+     "locked": false
+    }
+   },
+   {
+    "new": {
+     "model": "GenContainer",
+     "child": "IX_GenFillCap_300",
+     "kind": "hinge",
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "min": 0.0,
+     "max": 110.0,
+     "locked": false
+    },
+    "old": {
+     "model": "GenContainer",
+     "child": "IX_GenFillCap_300",
+     "kind": "hinge",
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "min": 0.0,
+     "max": 110.0,
+     "locked": false
+    }
+   }
+  ],
+  "viewpoint": {
+   "name": "GenContainer",
+   "p": [
+    391.3652,
+    18.18,
+    -335.4599
+   ],
+   "target": [
+    394.4473,
+    17.38,
+    -335.0852
+   ],
+   "fov": 62.0,
+   "preview": "Forest_GenContainer.jpg"
+  },
+  "viewpoint_u3": {
+   "name": "GenContainer",
+   "p": [
+    396.4528,
+    18.25,
+    -336.4071
+   ],
+   "target": [
+    392.5596,
+    17.33,
+    -335.2238
+   ],
+   "fov": 50.534,
+   "preview": "Forest_GenContainer.jpg"
+  },
+  "fill": {
+   "neck": [
+    397.4793,
+    17.5,
+    -332.7898
+   ],
+   "stand": [
+    398.222,
+    16.33,
+    -332.8942
+   ],
+   "label": "Tagestank 100 l",
+   "capacityL": 100
+  },
+  "fill_u3": {
+   "neck": [
+    396.079,
+    17.31,
+    -336.7676
+   ],
+   "stand": [
+    395.9705,
+    16.33,
+    -337.54
+   ],
+   "label": "Tagestank 60 l",
+   "capacityL": 60
+  },
+  "placement": {
+   "m": "GenContainer",
+   "p": [
+    393.9669,
+    16.33,
+    -335.2701
+   ],
+   "q": [
+    0.0,
+    0.069756,
+    0.0,
+    0.997564
+   ]
+  }
+ },
+ "tris": 28209,
+ "tris_by_object": {
+  "GenContainer": 26163,
+  "IX_Breaker_87": 12,
+  "IX_Breaker_88": 12,
+  "IX_Breaker_89": 12,
+  "IX_ContDoorL_83": 710,
+  "IX_ContDoorR_84": 760,
+  "IX_ContSideDoor_85": 394,
+  "IX_GenFillCap_300": 62,
+  "IX_GenStart_86": 32,
+  "IX_MainSwitch_90": 48,
+  "Window_Glass": 4
+ },
+ "materials": {
+  "GenContainer": [
+   "M_GCont_Cont",
+   "M_GCont_Genset",
+   "M_GCont_Panel",
+   "M_GCont_Needle",
+   "M_LEDOff",
+   "M_GCont_Props",
+   "M_GlassClear",
+   "M_GCont_Diesel",
+   "M_Lamp_BulbOff"
+  ],
+  "IX_Breaker_87": [
+   "M_GCont_Props"
+  ],
+  "IX_Breaker_88": [
+   "M_GCont_Props"
+  ],
+  "IX_Breaker_89": [
+   "M_GCont_Props"
+  ],
+  "IX_ContDoorL_83": [
+   "M_GCont_Cont",
+   "M_GCont_Panel"
+  ],
+  "IX_ContDoorR_84": [
+   "M_GCont_Cont",
+   "M_GCont_Panel"
+  ],
+  "IX_ContSideDoor_85": [
+   "M_GCont_Cont",
+   "M_GCont_Panel"
+  ],
+  "IX_GenFillCap_300": [
+   "M_GCont_Cont",
+   "M_GCont_Panel"
+  ],
+  "IX_GenStart_86": [
+   "M_GCont_Genset"
+  ],
+  "IX_MainSwitch_90": [
+   "M_GCont_Props"
+  ],
+  "Window_Glass": [
+   "M_GlassClear"
+  ]
+ },
+ "bbox": [
+  [
+   -3.43,
+   -3.815,
+   -0.12
+  ],
+  [
+   3.54,
+   1.337,
+   3.612
+  ]
+ ]
+}

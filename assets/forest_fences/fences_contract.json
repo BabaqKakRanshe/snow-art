@@ -1,0 +1,629 @@
+{
+ "parts": {
+  "ConcreteFence": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 2.5 m PO-2 panel (weathered grey), its FO-2 socket at x +1.25, the Y outrigger on the joint; relief on -y (outside)",
+   "root": "ConcreteFence",
+   "object": "ConcreteFence",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete",
+    "M_Fence_Barbed"
+   ]
+  },
+  "ConcreteFence_b": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 2.5 m PO-2 panel (darker, moss and water streaks), its FO-2 socket at x +1.25, the Y outrigger on the joint; relief on -y (outside)",
+   "root": "ConcreteFence_b",
+   "object": "ConcreteFence_b",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete",
+    "M_Fence_Barbed"
+   ]
+  },
+  "ConcreteFence_Broken": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 2.5 m PO-2 panel (weathered grey, the corner knocked off), its FO-2 socket at x +1.25, the Y outrigger on the joint; relief on -y (outside)",
+   "root": "ConcreteFence_Broken",
+   "object": "ConcreteFence_Broken",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete",
+    "M_Fence_Barbed"
+   ]
+  },
+  "ConcreteFence_Sign": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 2.5 m PO-2 panel (weathered grey, the restricted-area plate), its FO-2 socket at x +1.25, the Y outrigger on the joint; relief on -y (outside)",
+   "root": "ConcreteFence_Sign",
+   "object": "ConcreteFence_Sign",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete",
+    "M_Fence_Barbed",
+    "M_Fence_Panel"
+   ]
+  },
+  "ConcreteFence_Plain": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 2.5 m PO-2 panel (darker, moss and water streaks), its FO-2 socket at x +1.25; relief on -y (outside)",
+   "root": "ConcreteFence_Plain",
+   "object": "ConcreteFence_Plain",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "ConcreteFence_Socket": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the socket that starts a run, with its outrigger post (the run's first panel stands with its -x end in it; the bands belong to the panels)",
+   "root": "ConcreteFence_Socket",
+   "object": "ConcreteFence_Socket",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "ConcreteFence_Wicket": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 1.2 m panel and a walk-through: steel door frame, the door standing open (people pass, cars do not); socket at +1.25, outrigger on the joint",
+   "root": "ConcreteFence_Wicket",
+   "object": "ConcreteFence_Wicket",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete",
+    "M_Fence_Barbed",
+    "M_Fence_ChainLink"
+   ]
+  },
+  "ChainFence": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 3 m chain-link section (post at x +1.5, as FenceChain)",
+   "root": "ChainFence",
+   "object": "ChainFence",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_ChainLink",
+    "M_Fence_ChainBarbed"
+   ]
+  },
+  "ChainFence_Torn": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 3 m chain-link section (post at x +1.5, as FenceChain); a hole cut at the bottom, the flap bent out",
+   "root": "ChainFence_Torn",
+   "object": "ChainFence_Torn",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_ChainLink",
+    "M_Fence_ChainBarbed"
+   ]
+  },
+  "WireCoil": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "5 m of concertina razor wire on three stakes (the tape: M_Fence_Razor, cut-out)",
+   "root": "WireCoil",
+   "object": "WireCoil",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_Razor"
+   ]
+  },
+  "RoadBlock_FBS": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "FBS 24.4.6 foundation block 2.38 x 0.40 x 0.58 m, two lifting loops, end grooves",
+   "root": "RoadBlock_FBS",
+   "object": "RoadBlock_FBS",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "RoadBlock_Jersey": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "New Jersey concrete barrier 2.0 x 0.61 x 0.81 m",
+   "root": "RoadBlock_Jersey",
+   "object": "RoadBlock_Jersey",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "RoadBlock_Jersey_Striped": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "New Jersey concrete barrier 2.0 x 0.61 x 0.81 m painted red and white",
+   "root": "RoadBlock_Jersey_Striped",
+   "object": "RoadBlock_Jersey_Striped",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "RoadBlock_Cube": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 1 m concrete cube with a lifting loop",
+   "root": "RoadBlock_Cube",
+   "object": "RoadBlock_Cube",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "TankTooth": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "dragon's tooth: a concrete truncated pyramid 1.0 m square, 1.1 m tall",
+   "root": "TankTooth",
+   "object": "TankTooth",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "TankTooth_b": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "dragon's tooth: a concrete truncated pyramid 1.0 m square, 1.1 m tall (a corner knocked off)",
+   "root": "TankTooth_b",
+   "object": "TankTooth_b",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Concrete"
+   ]
+  },
+  "Hedgehog": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Czech hedgehog: three steel I-beams 1.6 m crossed, standing on three ends",
+   "root": "Hedgehog",
+   "object": "Hedgehog",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props"
+   ]
+  },
+  "WireBarricade": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "cheval de frise: a 3 m pole on three X-shaped sharpened stakes, barbed wire wound over the X",
+   "root": "WireBarricade",
+   "object": "WireBarricade",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_Barbed"
+   ]
+  },
+  "Abatis": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "abatis: two felled spruces (7.2 and 6.0 m) laid head to tail, the crowns overlapping, butts sawn, the crowns' branches sharpened, those to the inside cut back; barbed wire strung through",
+   "root": "Abatis",
+   "object": "Abatis",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_Barbed"
+   ]
+  },
+  "Abatis_b": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "abatis: one felled spruce 6.6 m, the butt sawn, the crown's branches sharpened, those to the inside cut back; barbed wire strung through the crown",
+   "root": "Abatis_b",
+   "object": "Abatis_b",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_Barbed"
+   ]
+  },
+  "Sign_Halt": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "HALT! KONTROLLPUNKT / STOP! CHECKPOINT board 1.2 x 0.8 m on two posts",
+   "root": "Sign_Halt",
+   "object": "Sign_Halt",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_Panel"
+   ]
+  },
+  "Sign_NoEntry": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the round no-entry sign (Zeichen 267) on a post",
+   "root": "Sign_NoEntry",
+   "object": "Sign_NoEntry",
+   "lightMask": 2,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Fence_Props",
+    "M_Fence_Panel"
+   ]
+  }
+ },
+ "sockets": {},
+ "meta": {
+  "units": "metres, degrees",
+  "frames": "each prefab its own frame: x along the fence / block, y across (-y = the outside: the relief, the signs, the barbed outriggers' outer arm, the abatis' spikes), z up, origin = the pivot on the ground in the middle",
+  "unity": "position (x, y, z) -> Unity prefab-local (-x, z, -y) (pivotUnity given)",
+  "blend": "the prefabs stand in a row along x (showroom), each in its own collection; for an FBX of one prefab put its root at (0, 0, 0) with no rotation",
+  "row": {
+   "ConcreteFence": 1.85,
+   "ConcreteFence_b": 6.025,
+   "ConcreteFence_Broken": 10.25,
+   "ConcreteFence_Sign": 14.425,
+   "ConcreteFence_Plain": 18.59,
+   "ConcreteFence_Socket": 21.99,
+   "ConcreteFence_Wicket": 24.915,
+   "ChainFence": 29.34,
+   "ChainFence_Torn": 33.576,
+   "WireCoil": 38.842,
+   "RoadBlock_FBS": 43.762,
+   "RoadBlock_Jersey": 47.152,
+   "RoadBlock_Jersey_Striped": 50.352,
+   "RoadBlock_Cube": 53.052,
+   "TankTooth": 55.324,
+   "TankTooth_b": 57.67,
+   "Hedgehog": 60.125,
+   "WireBarricade": 63.508,
+   "Abatis": 70.121,
+   "Abatis_b": 78.4,
+   "Sign_Halt": 83.959,
+   "Sign_NoEntry": 86.034
+  },
+  "hierarchy": "every prefab is one mesh object (the sign faces and the cut-outs joined in as extra materials)",
+  "materials": "M_Fence_Concrete / Props: baked PSX atlases (point filter); M_Fence_Panel: the sign faces, lit, emission = albedo at 0.06; M_Fence_ChainLink / Barbed / ChainBarbed / Razor: alpha cut-out 0.5, tiled 0.5 m, ONE-SIDED (every cut-out quad is two faces 2.4 mm apart, each facing out) - mip maps with Preserve Coverage",
+  "replacements": "T_Base / Kpp / Yard / Road _ChainLink and _Barbed, T_Base_Rust: the same files, sizes, tilings and strand heights as Updates 4-5, drawn anew (2 px wires, 16 px diamonds, RGB under the holes = the wire colour); their materials become one-sided",
+  "model": "fences.blend",
+  "textures": "tex/fence"
+ }
+}
