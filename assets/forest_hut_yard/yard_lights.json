@@ -1,0 +1,56 @@
+{
+ "note": "hut yard lamps. position / forward / up: the root own frame (Blender: z up, the front -y, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. The lens (Lens_*) switches M_Yard_Lamp_<Kind> (lit) / _Off, the halo card (Glow_*) is shown with it. group trail: the pointer lantern; all start off in the file.",
+ "lights": [
+  {
+   "socket": "LIGHT_Lant",
+   "root": "HutSign",
+   "lens": "Lens_Lant",
+   "glow": "Glow_Lant",
+   "parent": "Lamp_Lant",
+   "type": "lantern",
+   "unityLight": "Point",
+   "position": [
+    0.0,
+    -0.3,
+    1.97
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "positionUnity": [
+    0.0,
+    1.97,
+    0.3
+   ],
+   "forwardUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "upUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "intensityURP": 0.9,
+   "kelvin": 2400,
+   "colorLinear": [
+    1.0,
+    0.7,
+    0.3
+   ],
+   "range": 7.0,
+   "group": "trail",
+   "shadows": false,
+   "desc": "the battery lantern with yellow glass on the trail-head pointer (forest_gear decision: battery, yellow); group trail: lit at the start, goes out at X01 with the hut lantern",
+   "startsOn": false
+  }
+ ]
+}

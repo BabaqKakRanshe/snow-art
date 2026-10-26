@@ -1,0 +1,95 @@
+{
+ "atlases": {
+  "YardWood": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 150.69,
+   "uv_fill": 0.378,
+   "colours": 64
+  },
+  "YardProps": {
+   "size": 256,
+   "ppm": 64.0,
+   "area_m2": 1.61,
+   "uv_fill": 0.101,
+   "colours": 64
+  }
+ },
+ "lamps": 1,
+ "tris": 2210,
+ "tris_by_root": {
+  "HutSign": 354,
+  "HutFeeder": 432,
+  "HutMap": 6,
+  "HutOuthouse": 456,
+  "HutPolter": 620,
+  "HutPorch": 342
+ },
+ "objects": {
+  "HutOuthouse": [
+   "HutOuthouse",
+   "IX_Door"
+  ],
+  "HutFeeder": [
+   "HutFeeder"
+  ],
+  "HutPolter": [
+   "HutPolter"
+  ],
+  "HutSign": [
+   "Glow_Lant",
+   "HutSign",
+   "LIGHT_Lant",
+   "Lamp_Lant",
+   "Lens_Lant",
+   "Sign_Board"
+  ],
+  "HutPorch": [
+   "HutPorch"
+  ],
+  "HutMap": [
+   "HutMap"
+  ]
+ },
+ "display_offset": {
+  "HutOuthouse": [
+   -5.5,
+   0.0,
+   0.0
+  ],
+  "HutFeeder": [
+   -2.6,
+   0.0,
+   0.0
+  ],
+  "HutPolter": [
+   6.6,
+   0.0,
+   0.0
+  ],
+  "HutSign": [
+   -8.0,
+   0.0,
+   0.0
+  ],
+  "HutPorch": [
+   1.0,
+   0.8,
+   0.0
+  ],
+  "HutMap": [
+   10.0,
+   0.0,
+   0.0
+  ]
+ },
+ "contract": {
+  "parts": 11,
+  "sockets": 7,
+  "colliders": 22,
+  "kinds": {
+   "static": 10,
+   "hinge": 1
+  }
+ }
+}

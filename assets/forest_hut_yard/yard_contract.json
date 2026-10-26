@@ -1,0 +1,1136 @@
+{
+ "parts": {
+  "HutOuthouse": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the outhouse (root): origin = the middle of its footprint on the ground; it stands on four stones, the floor at 0.16",
+   "object": "HutOuthouse",
+   "root": "HutOuthouse",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_Door": {
+   "kind": "hinge",
+   "pivot": [
+    -0.36,
+    -0.652,
+    1.05
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "HutOuthouse",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "the outhouse door on the front, hung outside on strap hinges at its left (-x) edge; opens outward (+) to 100 deg; the heart cut in it is painted (dark, the vent)",
+   "object": "IX_Door",
+   "root": "HutOuthouse",
+   "box": {
+    "center": [
+     0.35,
+     0.027,
+     0.006
+    ],
+    "size": [
+     0.72,
+     0.102,
+     1.768
+    ]
+   },
+   "pivotUnity": [
+    0.36,
+    1.05,
+    0.652
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "HutFeeder": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the game feeder (root): origin = the middle between its posts on the ground",
+   "object": "HutFeeder",
+   "root": "HutFeeder",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "HutPolter": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the timber stack (root): origin = its middle on the ground; logs along x, the road end (-x) carries the sprayed number 317",
+   "object": "HutPolter",
+   "root": "HutPolter",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Sign_Board": {
+   "kind": "static",
+   "pivot": [
+    0.38,
+    -0.085,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "HutSign",
+   "states": [],
+   "note": "FORSTHÜTTE 100 m / FORESTER'S HUT on the arrow board (panel atlas; German first, English under it)",
+   "object": "Sign_Board",
+   "root": "HutSign",
+   "pivotUnity": [
+    -0.38,
+    1.71,
+    0.085
+   ]
+  },
+  "Lamp_Lant": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.3,
+    1.98
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "HutSign",
+   "states": [],
+   "note": "the battery lantern on its hook (yellow glass): its own part; the lens and the halo are its children; the light LIGHT_Lant",
+   "object": "Lamp_Lant",
+   "root": "HutSign",
+   "pivotUnity": [
+    0.0,
+    1.98,
+    0.3
+   ]
+  },
+  "Lens_Lant": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.3,
+    1.98
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Lant",
+   "states": [],
+   "note": "the yellow glass globe: M_Yard_Lamp_Lant (lit) / M_Yard_Lamp_Lant_Off",
+   "object": "Lens_Lant",
+   "root": "HutSign",
+   "pivotUnity": [
+    0.0,
+    1.98,
+    0.3
+   ]
+  },
+  "Glow_Lant": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.3,
+    1.98
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Lant",
+   "states": [],
+   "note": "halo cards: additive, unlit; shown when the lantern is on",
+   "object": "Glow_Lant",
+   "root": "HutSign",
+   "pivotUnity": [
+    0.0,
+    1.98,
+    0.3
+   ]
+  },
+  "HutSign": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the trail-head pointer (root): origin = the post's foot on the ground (sunk 0.30); the arrow points +x (to the trail), the text faces -y (the road)",
+   "object": "HutSign",
+   "root": "HutSign",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "HutPorch": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the lean-to porch (root): origin = the middle of the hut's front on the ground; its back (+y, y = 0) goes against the facade; deck at 0.32 (the hut floor), the step at the door (x -0.38), a bench on the right",
+   "object": "HutPorch",
+   "root": "HutPorch",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "HutMap": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the forester's map (root, panel atlas): origin = its middle on the table top; antenna No. 1 circled, a place in the woods crossed out (the cave hook)",
+   "object": "HutMap",
+   "root": "HutMap",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Slot_OutBench": {
+   "pos": [
+    0.3,
+    0.305,
+    0.46
+   ],
+   "kind": "slot",
+   "parent": "HutOuthouse",
+   "note": "the bench top beside the hole",
+   "root": "HutOuthouse",
+   "posUnity": [
+    -0.3,
+    0.46,
+    -0.305
+   ]
+  },
+  "Spot_Hole": {
+   "pos": [
+    0.0,
+    0.305,
+    0.46
+   ],
+   "kind": "item_slot",
+   "parent": "HutOuthouse",
+   "note": "the hole (dark, painted)",
+   "root": "HutOuthouse",
+   "posUnity": [
+    0.0,
+    0.46,
+    -0.305
+   ]
+  },
+  "Hand_Door_Out": {
+   "pos": [
+    0.28,
+    -0.726,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "IX_Door",
+   "note": "turn button outside",
+   "root": "HutOuthouse",
+   "posUnity": [
+    -0.28,
+    1.0,
+    0.726
+   ]
+  },
+  "Hand_Door_In": {
+   "pos": [
+    0.28,
+    -0.544,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "IX_Door",
+   "note": "hook and eye inside",
+   "root": "HutOuthouse",
+   "posUnity": [
+    -0.28,
+    1.0,
+    0.544
+   ]
+  },
+  "Slot_Trough": {
+   "pos": [
+    0.0,
+    0.0,
+    0.62
+   ],
+   "kind": "slot",
+   "parent": "HutFeeder",
+   "note": "the trough floor (salt, maize)",
+   "root": "HutFeeder",
+   "posUnity": [
+    0.0,
+    0.62,
+    0.0
+   ]
+  },
+  "Slot_PorchBench": {
+   "pos": [
+    0.95,
+    -0.625,
+    0.78
+   ],
+   "kind": "slot",
+   "parent": "HutPorch",
+   "note": "the bench top (a player waits here)",
+   "root": "HutPorch",
+   "posUnity": [
+    -0.95,
+    0.78,
+    0.625
+   ]
+  },
+  "LIGHT_Lant": {
+   "pos": [
+    0.0,
+    -0.3,
+    1.97
+   ],
+   "kind": "light",
+   "parent": "Lamp_Lant",
+   "root": "HutSign",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "note": "Point light (lantern): yard_lights.json",
+   "posUnity": [
+    0.0,
+    1.97,
+    0.3
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Out_Front_L",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    -0.465,
+    -0.5775,
+    1.1
+   ],
+   "size": [
+    0.27,
+    0.045,
+    2.04
+   ],
+   "center_root": [
+    -0.465,
+    -0.5775,
+    1.1
+   ],
+   "centerUnity": [
+    0.465,
+    1.1,
+    0.5775
+   ],
+   "sizeUnity": [
+    0.27,
+    2.04,
+    0.045
+   ]
+  },
+  {
+   "name": "COL_Out_Front_R",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.465,
+    -0.5775,
+    1.1
+   ],
+   "size": [
+    0.27,
+    0.045,
+    2.04
+   ],
+   "center_root": [
+    0.465,
+    -0.5775,
+    1.1
+   ],
+   "centerUnity": [
+    -0.465,
+    1.1,
+    0.5775
+   ],
+   "sizeUnity": [
+    0.27,
+    2.04,
+    0.045
+   ]
+  },
+  {
+   "name": "COL_Out_Front_Top",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.5775,
+    2.02
+   ],
+   "size": [
+    0.66,
+    0.045,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    -0.5775,
+    2.02
+   ],
+   "centerUnity": [
+    0.0,
+    2.02,
+    0.5775
+   ],
+   "sizeUnity": [
+    0.66,
+    0.2,
+    0.045
+   ]
+  },
+  {
+   "name": "COL_Out_Back",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.0,
+    0.5775,
+    0.9982
+   ],
+   "size": [
+    1.2,
+    0.045,
+    1.8363
+   ],
+   "center_root": [
+    0.0,
+    0.5775,
+    0.9982
+   ],
+   "centerUnity": [
+    0.0,
+    0.9982,
+    -0.5775
+   ],
+   "sizeUnity": [
+    1.2,
+    1.8363,
+    0.045
+   ]
+  },
+  {
+   "name": "COL_Out_Left",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    -0.5775,
+    0.0,
+    0.9982
+   ],
+   "size": [
+    0.045,
+    1.11,
+    1.8363
+   ],
+   "center_root": [
+    -0.5775,
+    0.0,
+    0.9982
+   ],
+   "centerUnity": [
+    0.5775,
+    0.9982,
+    0.0
+   ],
+   "sizeUnity": [
+    0.045,
+    1.8363,
+    1.11
+   ]
+  },
+  {
+   "name": "COL_Out_Right",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.5775,
+    0.0,
+    0.9982
+   ],
+   "size": [
+    0.045,
+    1.11,
+    1.8363
+   ],
+   "center_root": [
+    0.5775,
+    0.0,
+    0.9982
+   ],
+   "centerUnity": [
+    -0.5775,
+    0.9982,
+    0.0
+   ],
+   "sizeUnity": [
+    0.045,
+    1.8363,
+    1.11
+   ]
+  },
+  {
+   "name": "COL_Out_Roof",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.03,
+    2.0802
+   ],
+   "size": [
+    1.44,
+    1.58,
+    0.172
+   ],
+   "center_root": [
+    0.0,
+    -0.03,
+    2.0802
+   ],
+   "centerUnity": [
+    0.0,
+    2.0802,
+    0.03
+   ],
+   "sizeUnity": [
+    1.44,
+    0.172,
+    1.58
+   ],
+   "rotation": [
+    10.0,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    10.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Out_Floor",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.03
+   ],
+   "size": [
+    1.2,
+    1.2,
+    0.26
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.03
+   ],
+   "centerUnity": [
+    0.0,
+    0.03,
+    0.0
+   ],
+   "sizeUnity": [
+    1.2,
+    0.26,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Out_Bench",
+   "parent": "HutOuthouse",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.0,
+    0.305,
+    0.31
+   ],
+   "size": [
+    1.11,
+    0.5,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.305,
+    0.31
+   ],
+   "centerUnity": [
+    0.0,
+    0.31,
+    -0.305
+   ],
+   "sizeUnity": [
+    1.11,
+    0.3,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Out_Door",
+   "parent": "IX_Door",
+   "root": "HutOuthouse",
+   "type": "box",
+   "center": [
+    0.36,
+    0.027,
+    0.006
+   ],
+   "size": [
+    0.7,
+    0.042,
+    1.768
+   ],
+   "center_root": [
+    0.0,
+    -0.625,
+    1.056
+   ],
+   "centerUnity": [
+    -0.36,
+    0.006,
+    -0.027
+   ],
+   "sizeUnity": [
+    0.7,
+    1.768,
+    0.042
+   ]
+  },
+  {
+   "name": "COL_Feeder_Body",
+   "parent": "HutFeeder",
+   "root": "HutFeeder",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.775
+   ],
+   "size": [
+    1.72,
+    0.96,
+    1.55
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.775
+   ],
+   "centerUnity": [
+    0.0,
+    0.775,
+    0.0
+   ],
+   "sizeUnity": [
+    1.72,
+    1.55,
+    0.96
+   ]
+  },
+  {
+   "name": "COL_Feeder_Roof",
+   "parent": "HutFeeder",
+   "root": "HutFeeder",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.805
+   ],
+   "size": [
+    1.9,
+    1.2,
+    0.53
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.805
+   ],
+   "centerUnity": [
+    0.0,
+    1.805,
+    0.0
+   ],
+   "sizeUnity": [
+    1.9,
+    0.53,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Polter",
+   "parent": "HutPolter",
+   "root": "HutPolter",
+   "type": "box",
+   "center": [
+    -0.03,
+    0.0,
+    0.675
+   ],
+   "size": [
+    4.18,
+    2.4,
+    1.35
+   ],
+   "center_root": [
+    -0.03,
+    0.0,
+    0.675
+   ],
+   "centerUnity": [
+    0.03,
+    0.675,
+    0.0
+   ],
+   "sizeUnity": [
+    4.18,
+    1.35,
+    2.4
+   ]
+  },
+  {
+   "name": "COL_Sign_Post",
+   "parent": "HutSign",
+   "root": "HutSign",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.28
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "centerUnity": [
+    0.0,
+    1.14,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.28,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Sign_Board",
+   "parent": "HutSign",
+   "root": "HutSign",
+   "type": "box",
+   "center": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "size": [
+    1.08,
+    0.03,
+    0.22
+   ],
+   "center_root": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "centerUnity": [
+    -0.44,
+    1.71,
+    0.07
+   ],
+   "sizeUnity": [
+    1.08,
+    0.22,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_Porch_Deck",
+   "parent": "HutPorch",
+   "root": "HutPorch",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.625,
+    0.16
+   ],
+   "size": [
+    2.4,
+    1.25,
+    0.32
+   ],
+   "center_root": [
+    0.0,
+    -0.625,
+    0.16
+   ],
+   "centerUnity": [
+    0.0,
+    0.16,
+    0.625
+   ],
+   "sizeUnity": [
+    2.4,
+    0.32,
+    1.25
+   ]
+  },
+  {
+   "name": "COL_Porch_Step",
+   "parent": "HutPorch",
+   "root": "HutPorch",
+   "type": "box",
+   "center": [
+    -0.38,
+    -1.39,
+    0.08
+   ],
+   "size": [
+    1.0,
+    0.28,
+    0.16
+   ],
+   "center_root": [
+    -0.38,
+    -1.39,
+    0.08
+   ],
+   "centerUnity": [
+    0.38,
+    0.08,
+    1.39
+   ],
+   "sizeUnity": [
+    1.0,
+    0.16,
+    0.28
+   ]
+  },
+  {
+   "name": "COL_Porch_Post_L",
+   "parent": "HutPorch",
+   "root": "HutPorch",
+   "type": "box",
+   "center": [
+    -1.14,
+    -1.19,
+    1.22
+   ],
+   "size": [
+    0.1,
+    0.1,
+    1.8
+   ],
+   "center_root": [
+    -1.14,
+    -1.19,
+    1.22
+   ],
+   "centerUnity": [
+    1.14,
+    1.22,
+    1.19
+   ],
+   "sizeUnity": [
+    0.1,
+    1.8,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Porch_Post_R",
+   "parent": "HutPorch",
+   "root": "HutPorch",
+   "type": "box",
+   "center": [
+    1.14,
+    -1.19,
+    1.22
+   ],
+   "size": [
+    0.1,
+    0.1,
+    1.8
+   ],
+   "center_root": [
+    1.14,
+    -1.19,
+    1.22
+   ],
+   "centerUnity": [
+    -1.14,
+    1.22,
+    1.19
+   ],
+   "sizeUnity": [
+    0.1,
+    1.8,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Porch_Bench",
+   "parent": "HutPorch",
+   "root": "HutPorch",
+   "type": "box",
+   "center": [
+    0.95,
+    -0.625,
+    0.55
+   ],
+   "size": [
+    0.34,
+    0.85,
+    0.46
+   ],
+   "center_root": [
+    0.95,
+    -0.625,
+    0.55
+   ],
+   "centerUnity": [
+    -0.95,
+    0.55,
+    0.625
+   ],
+   "sizeUnity": [
+    0.34,
+    0.46,
+    0.85
+   ]
+  },
+  {
+   "name": "COL_Porch_Roof",
+   "parent": "HutPorch",
+   "root": "HutPorch",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.775,
+    2.445
+   ],
+   "size": [
+    2.7,
+    1.55,
+    0.45
+   ],
+   "center_root": [
+    0.0,
+    -0.775,
+    2.445
+   ],
+   "centerUnity": [
+    0.0,
+    2.445,
+    0.775
+   ],
+   "sizeUnity": [
+    2.7,
+    0.45,
+    1.55
+   ]
+  },
+  {
+   "name": "COL_Map",
+   "parent": "HutMap",
+   "root": "HutMap",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.004
+   ],
+   "size": [
+    0.42,
+    0.3,
+    0.008
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.004
+   ],
+   "centerUnity": [
+    0.0,
+    0.004,
+    0.0
+   ],
+   "sizeUnity": [
+    0.42,
+    0.008,
+    0.3
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 26.10.2026",
+  "frame": "each root (HutOuthouse, HutFeeder, HutPolter, HutSign, HutPorch, HutMap) in its own frame: z up, the front -y; origin on the ground (z = 0) - outhouse, feeder, polter: the middle of the footprint; the sign: the post foot; the porch: the middle of the hut front (its back +y against the facade, the step at the door); the map: its middle on the table top. In yard.blend the roots stand apart (display_offset); FBX with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "display_offset": {
+   "HutOuthouse": [
+    -5.5,
+    0.0,
+    0.0
+   ],
+   "HutFeeder": [
+    -2.6,
+    0.0,
+    0.0
+   ],
+   "HutPolter": [
+    6.6,
+    0.0,
+    0.0
+   ],
+   "HutSign": [
+    -8.0,
+    0.0,
+    0.0
+   ],
+   "HutPorch": [
+    1.0,
+    0.8,
+    0.0
+   ],
+   "HutMap": [
+    10.0,
+    0.0,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame; rotation = Blender XYZ euler (the outhouse roof), rotationUnity the Unity euler. COL_ objects are reference only, not in the FBX",
+  "lamps": "yard_lights.json",
+  "model": "yard.blend",
+  "textures": "tex",
+  "materials": "M_Yard_YardWood (outhouse, feeder, polter, porch) / M_Yard_YardProps (the pointer, the lantern): baked PSX atlases (point filter); M_Yard_Panel: the arrow board, the map, the lens tile; M_Yard_Lamp_Lant / _Off; M_Yard_Glow: additive halo",
+  "ix": "IX_Door (the outhouse door) - name without a number: Unity gives it its IX number on placement"
+ }
+}
