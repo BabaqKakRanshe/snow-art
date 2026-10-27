@@ -1,9 +1,9 @@
 {
  "coplanar_moved_mm": {
-  "n": 1254,
+  "n": 1278,
   "max": 3.2
  },
- "coplanar_separated": 1254,
+ "coplanar_separated": 1278,
  "atlases": {
   "Ext": {
    "size": 2048,
@@ -11,7 +11,7 @@
    "area_m2": 788.76,
    "uv_fill": 0.495,
    "colours": 59,
-   "seconds": 199.7
+   "seconds": 318.8
   },
   "Roof": {
    "size": 1024,
@@ -19,7 +19,7 @@
    "area_m2": 341.06,
    "uv_fill": 0.671,
    "colours": 62,
-   "seconds": 48.1
+   "seconds": 64.3
   },
   "Rm_Flur_EG": {
    "size": 1024,
@@ -27,7 +27,7 @@
    "area_m2": 153.66,
    "uv_fill": 0.386,
    "colours": 64,
-   "seconds": 42.2
+   "seconds": 56.8
   },
   "Rm_Flur_OG": {
    "size": 1024,
@@ -35,7 +35,7 @@
    "area_m2": 161.93,
    "uv_fill": 0.406,
    "colours": 64,
-   "seconds": 44.5
+   "seconds": 58.2
   },
   "Rm_Flur_UG": {
    "size": 1024,
@@ -43,7 +43,7 @@
    "area_m2": 110.76,
    "uv_fill": 0.278,
    "colours": 64,
-   "seconds": 36.3
+   "seconds": 46.7
   },
   "Rm_Garage": {
    "size": 2048,
@@ -51,7 +51,7 @@
    "area_m2": 399.51,
    "uv_fill": 0.251,
    "colours": 64,
-   "seconds": 131.9
+   "seconds": 169.9
   },
   "Rm_Heizung": {
    "size": 1024,
@@ -59,7 +59,7 @@
    "area_m2": 258.59,
    "uv_fill": 0.581,
    "colours": 64,
-   "seconds": 70.3
+   "seconds": 91.3
   },
   "Rm_Kaserne": {
    "size": 1024,
@@ -67,7 +67,7 @@
    "area_m2": 234.06,
    "uv_fill": 0.587,
    "colours": 64,
-   "seconds": 53.7
+   "seconds": 73.3
   },
   "Rm_Kueche": {
    "size": 1024,
@@ -75,7 +75,7 @@
    "area_m2": 244.71,
    "uv_fill": 0.613,
    "colours": 64,
-   "seconds": 57.6
+   "seconds": 79.7
   },
   "Rm_Lager": {
    "size": 1024,
@@ -83,15 +83,15 @@
    "area_m2": 204.12,
    "uv_fill": 0.512,
    "colours": 64,
-   "seconds": 52.4
+   "seconds": 68.2
   },
   "Rm_Leitstand": {
    "size": 2048,
    "ppm": 51.3,
-   "area_m2": 340.84,
-   "uv_fill": 0.214,
+   "area_m2": 340.26,
+   "uv_fill": 0.213,
    "colours": 64,
-   "seconds": 123.2
+   "seconds": 152.4
   },
   "Rm_Schaltraum": {
    "size": 1024,
@@ -99,7 +99,7 @@
    "area_m2": 140.24,
    "uv_fill": 0.352,
    "colours": 64,
-   "seconds": 44.5
+   "seconds": 55.4
   },
   "Rm_Serverraum": {
    "size": 1024,
@@ -107,7 +107,7 @@
    "area_m2": 180.76,
    "uv_fill": 0.454,
    "colours": 63,
-   "seconds": 53.6
+   "seconds": 67.3
   },
   "Rm_Stationsleiter": {
    "size": 1024,
@@ -115,7 +115,7 @@
    "area_m2": 175.9,
    "uv_fill": 0.441,
    "colours": 64,
-   "seconds": 44.1
+   "seconds": 55.5
   },
   "Rm_Treppenhaus": {
    "size": 2048,
@@ -123,7 +123,7 @@
    "area_m2": 427.35,
    "uv_fill": 0.268,
    "colours": 63,
-   "seconds": 125.9
+   "seconds": 154.0
   },
   "Rm_Waschraum": {
    "size": 1024,
@@ -131,7 +131,7 @@
    "area_m2": 155.69,
    "uv_fill": 0.391,
    "colours": 64,
-   "seconds": 43.6
+   "seconds": 51.9
   },
   "Rm_Windfang": {
    "size": 1024,
@@ -139,7 +139,7 @@
    "area_m2": 89.43,
    "uv_fill": 0.224,
    "colours": 64,
-   "seconds": 37.4
+   "seconds": 45.4
   },
   "Parts": {
    "size": 2048,
@@ -147,7 +147,7 @@
    "area_m2": 370.31,
    "uv_fill": 0.362,
    "colours": 64,
-   "seconds": 147.5
+   "seconds": 185.8
   },
   "Opening": {
    "size": 256,
@@ -155,7 +155,7 @@
    "area_m2": 2.34,
    "uv_fill": 0.329,
    "colours": 64,
-   "seconds": 6.9
+   "seconds": 8.2
   }
  },
  "knock_points": 28,
@@ -179,6 +179,13 @@
   "u3": 63,
   "fixture_missing": []
  },
+ "kit_instances": {
+  "Kit_Monitor_CRT": 2,
+  "Kit_Console_2": 1,
+  "Kit_Console_Button": 2,
+  "Kit_Console_Label_Schranke": 1,
+  "Kit_Console_Label_Tor": 1
+ },
  "contract": {
   "parts": 220,
   "sockets": 71,
@@ -189,18 +196,18 @@
    "static": 81
   }
  },
- "tris": 120308,
+ "tris": 120132,
  "tris_by_root": {
-  "BaseMain": 118794,
+  "BaseMain": 118618,
   "BaseMain_Opening": 1514
  },
  "tris_big": [
   [
-   13288,
+   13016,
    "R_Leitstand"
   ],
   [
-   9878,
+   9862,
    "R_Kaserne"
   ],
   [
@@ -208,11 +215,11 @@
    "BaseMain"
   ],
   [
-   7604,
+   7572,
    "R_Kueche"
   ],
   [
-   7472,
+   7440,
    "R_Garage"
   ],
   [
@@ -220,11 +227,11 @@
    "R_Heizung"
   ],
   [
-   5718,
+   5698,
    "R_Stationsleiter"
   ],
   [
-   5062,
+   5054,
    "R_Waschraum"
   ],
   [
@@ -232,19 +239,19 @@
    "R_Windfang"
   ],
   [
-   4292,
+   4268,
    "R_Treppenhaus"
   ],
   [
-   3548,
+   3540,
    "R_Serverraum"
   ],
   [
-   3222,
+   3210,
    "R_Lager"
   ],
   [
-   2528,
+   2520,
    "R_Flur_OG"
   ],
   [
@@ -314,7 +321,7 @@
   "M_ScreenOff"
  ],
  "glass_dupes_removed": {
-  "faces": 132,
-  "tris": 264
+  "faces": 0,
+  "tris": 0
  }
 }

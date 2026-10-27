@@ -3,26 +3,28 @@ gen_lights.py                            Generator shed lighting (the plane v11 
 gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
 gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
 ies_lm63.py                              Minimal IES LM-63-2002 writer (type C photometry, absolute candela, metres).
-kpp_build.py                             Checkpoint build (kpp_kit): one object per part with its pivot as the origin; PSX atlases baked with psxbake + kpp_paint:
-kpp_kit.py                               Checkpoint (KPP) at the station gate, Forest map prologue (Forest_Opening.json S6, X05): the Update 3 guard booth, barrier
+kit_preview.py                           Previews only (the Blender renders of the KPP and the main building): a monitor instance of the snow kit shows its own
+kpp2_frame.py                            KPP v2: the package frames and the game (Forest, Unity world after ForestYardPlan and ForestRelocation).
+kpp2_game.py                             KPP v2 as it would stand in the game: the Update 7 game scene (fence/game/u7_game.blend: Update 3's location with the
+kpp2_ground.py                           Ground height for KPP v2 placements: the game terrain (tile 1_1, levelled along the v2 walls: walls_v2/terrain_levelled_1_1.npy)
+kpp2_plan.py                             The plan of the KPP v2 package (the booth frame, as in kpp.blend: the gate stands next to the booth here, in the game it is at
+kpp2_quick.py                            quick workbench views of the KPP v2 (draft or final): python3 -I kpp2_quick.py -- <blend> <out_dir> [views]
+kpp_build.py                             Checkpoint v2 build (kpp_kit): one object per part with its pivot as the origin; the snow_kit instances (KIT_INST) as
+kpp_kit.py                               Checkpoint (KPP) v2 at the station road, Forest map prologue (Forest_Opening.json S6, X05; QUESTIONS_KPP.md «Решено»):
 kpp_paint.py                             Painters for the checkpoint atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n] or None).
-kpp_render.py                            Preview renders of the checkpoint (out/kpp.blend posed from out/kpp_contract.json) in its Update 3 surroundings: the
 kpp_tex.py                               Panel atlas of the checkpoint (512 x 512, pixel art, point-filtered) on the explicit-UV objects, and the chain-link tile:
-make_kpp_doc.py                          Russian reference for the checkpoint: out/kpp_contract.json + out/kpp_lights.json + out/kpp.json -> docs/KPP_CONTRACT.md.
-make_sheets_kpp.py                       Sheets for the checkpoint: A outside (from the road by day and at night, the booth, the back, the walkway side, the power
+make_kpp_doc.py                          Russian reference for the checkpoint v2: out/kpp_contract.json + out/kpp_lights.json + out/kpp.json + the kit contract +
+make_sheets_kpp.py                       Sheets of the checkpoint v2: A outside in the game, B inside and the power, C the base gate, D v1 -> v2 (the Update 7 game
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
 noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
-pack_kpp.py                              Package the checkpoint: the .blend with relative texture paths, textures and IES, the interaction contract (JSON +
+pack_kpp.py                              Package the checkpoint v2: kpp.blend with relative texture paths and the snow kit linked from ../snow_kit/snow_kit.blend,
 post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
 psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
 psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
 pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+snowkit_kit.py                           Snow kit geometry (snowkit_spec.ITEMS): every model in its own frame at the origin (z up, front -y; origins as the spec
+snowkit_spec.py                          Snow kit (snow_kit): shared small models that every building places as instances instead of modelling its own.
 van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
 van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
 van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
 van_lights.py                            Van v2 lighting, single source of truth (the Utility Plane v11 method):
-checks/coplanar.py                       coplanar same-facing overlapping faces in out/hut.blend (or the .blend given last) (z-fighting and black AO patches in the bake)
-checks/inverted.py                       islands with a negative signed volume (faces pointing inwards) in out/hut.blend (or the .blend given last)
-checks/probe_kpp.py                      KPP-specific checks on out/kpp.blend: the map placement of the three roots vs Update 3 (Forest_Layout.json prefabs), the
-checks/sweep.py                          Sweep every moving part through its range and report new interpenetrations (BVH triangle overlap) vs rest.
-checks/verify_kpp_pkg.py                 open the packaged checkpoint from a clean unzip: every image resolves inside the package, the contract and lamps
-checks/walk.py                           Walkability round the checkpoint with the contract colliders and the map's fence (FenceChain at y 0, x <= -4.47 and

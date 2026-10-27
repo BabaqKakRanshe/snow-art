@@ -1,0 +1,334 @@
+{
+ "lights": [
+  {
+   "name": "Light_HangarDoor",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "point",
+   "pos": [
+    -8.8,
+    2.2,
+    3.6
+   ],
+   "posUnity": [
+    8.8,
+    3.6,
+    -2.2
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 6.0,
+   "behaviour": "steady",
+   "default": "off"
+  },
+  {
+   "name": "Light_Hangar_1",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "spot",
+   "pos": [
+    -4.5,
+    5.3,
+    5.28
+   ],
+   "posUnity": [
+    4.5,
+    5.28,
+    -5.3
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 16.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 110
+  },
+  {
+   "name": "Light_Hangar_2",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "spot",
+   "pos": [
+    4.5,
+    5.3,
+    5.28
+   ],
+   "posUnity": [
+    -4.5,
+    5.28,
+    -5.3
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 16.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 110
+  },
+  {
+   "name": "Light_Hangar_3",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "spot",
+   "pos": [
+    -4.5,
+    8.3,
+    5.28
+   ],
+   "posUnity": [
+    4.5,
+    5.28,
+    -8.3
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 16.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 110
+  },
+  {
+   "name": "Light_Hangar_4",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "spot",
+   "pos": [
+    4.5,
+    8.3,
+    5.28
+   ],
+   "posUnity": [
+    -4.5,
+    5.28,
+    -8.3
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 16.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 110
+  },
+  {
+   "name": "Light_Hangar_5",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "spot",
+   "pos": [
+    -4.5,
+    11.3,
+    5.28
+   ],
+   "posUnity": [
+    4.5,
+    5.28,
+    -11.3
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 16.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 110
+  },
+  {
+   "name": "Light_Hangar_6",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "spot",
+   "pos": [
+    4.5,
+    11.3,
+    5.28
+   ],
+   "posUnity": [
+    -4.5,
+    5.28,
+    -11.3
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 16.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 110
+  },
+  {
+   "name": "Light_HangarBack",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "point",
+   "pos": [
+    0.0,
+    15.6,
+    4.92
+   ],
+   "posUnity": [
+    0.0,
+    4.92,
+    -15.6
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 7.0,
+   "behaviour": "steady",
+   "default": "off"
+  },
+  {
+   "name": "Light_Vestibule_1",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "point",
+   "pos": [
+    2.25,
+    4.8,
+    3.3
+   ],
+   "posUnity": [
+    -2.25,
+    3.3,
+    -4.8
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 8.0,
+   "behaviour": "steady",
+   "default": "off"
+  },
+  {
+   "name": "Light_Vestibule_2",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "point",
+   "pos": [
+    -2.25,
+    1.6,
+    3.3
+   ],
+   "posUnity": [
+    2.25,
+    3.3,
+    -1.6
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 8.0,
+   "behaviour": "steady",
+   "default": "off"
+  },
+  {
+   "name": "Light_Entrance",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "point",
+   "pos": [
+    0.0,
+    7.35,
+    -0.86
+   ],
+   "posUnity": [
+    0.0,
+    -0.86,
+    -7.35
+   ],
+   "color_linear": [
+    1.0,
+    0.78,
+    0.52
+   ],
+   "range": 6.0,
+   "behaviour": "steady",
+   "default": "off"
+  }
+ ]
+}

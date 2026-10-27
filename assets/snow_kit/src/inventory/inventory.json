@@ -1,0 +1,2197 @@
+{
+ "items": [
+  {
+   "kit": "K1",
+   "category": "CCTV camera",
+   "package": "forest_kpp",
+   "object": "CCTV camera (kpp_kit.props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "снаружи КПП, под передним свесом у угла со стороны дороги; смотрит на шлагбаум",
+   "source": "kpp_kit.py:558-567; forest_kpp/kpp_contract.json:parts.Kpp_Props.note",
+   "note_ru": "Настенный кронштейн: пластина на стене, полоса-кронштейн, корпус и козырёк. Красного светодиода нет. Картинку с неё показывает Screen_CCTV. Других камер в семи пакетах нет, варианта на столбе тоже."
+  },
+  {
+   "kit": "K2",
+   "category": "monitor / CRT",
+   "package": "forest_kpp",
+   "object": "CCTV monitor (kpp_kit.props) + Screen_CCTV",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "будка КПП, передний стол, левая часть",
+   "source": "kpp_kit.py:526-530, 669-674; forest_kpp/kpp_contract.json:parts.Screen_CCTV; forest_kpp/kpp_lights.json:note",
+   "note_ru": "Бежевый ЭЛТ на столе. Корпус в Kpp_Props, экран уже отдельный объект Screen_CCTV (M_Kpp_Lamp_Crt с током / M_Kpp_Lamp_Crt_Off без) — как задумано в K2."
+  },
+  {
+   "kit": "K2",
+   "category": "monitor / CRT",
+   "package": "forest_main",
+   "object": "crt() x3 (+ keyboard(), pc_tower())",
+   "merged_into": "R_Leitstand",
+   "count": 3,
+   "where": "Leitstand, три рабочих места у коридорной стены",
+   "source": "main_rooms.py:31-38, 102-109; main_build.py:105-113",
+   "note_ru": "Бежевые ЭЛТ с клавиатурой и системным блоком. Экран — грани Z_SCREENP: при сборке отделяются в __screen (M_ScreenOff -> M_ScreenOn) и вливаются обратно в R_Leitstand; отдельного объекта экрана нет."
+  },
+  {
+   "kit": "K3",
+   "category": "console / push buttons",
+   "package": "forest_main",
+   "object": "console() x2",
+   "merged_into": "R_Leitstand",
+   "count": 2,
+   "where": "Leitstand, под ленточным окном",
+   "source": "main_rooms.py:27-29, 68-99",
+   "note_ru": "Пульт 70-х с наклонной панелью: на каждом 2 встроенных монитора (M_ScreenOff) и 45 кнопок/ключей, из них 21 — светодиоды (M_LEDOff). Всё влито в меш комнаты, IX_ деталей нет."
+  },
+  {
+   "kit": "K3",
+   "category": "console / push buttons",
+   "package": "forest_gencont",
+   "object": "GPanel_Face, GLamp_GLOW/CHG/OIL/TEMP/RUN, Gen_GlowButton, Gen_StopButton, Gen_EStop, Gen_VAdj, Needle_Oil/Temp/Batt/GenV/GenA/GenHz + IX_GenStart_86",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "панель на раме над генератором (Genset)",
+   "source": "gen_set.py:425-514; forest_gencont/gcf_contract.json:parts.*.object; gcf_build.py:255-257",
+   "note_ru": "6 приборов, счётчик часов, 5 ламп, кнопки GLOW и STOP, аварийный стоп, ключ. В Forest всё, кроме ключа IX_GenStart_86, влито в GenContainer и не двигается (в контракте кнопки — slide). Лампа RUN — M_LEDOff. Панель — часть генератора; заменять ли её K3 — под вопросом."
+  },
+  {
+   "kit": "K3",
+   "category": "console / push buttons",
+   "package": "forest_main",
+   "object": "шкаф-регулятор отопления + лицевая BaseMain_Opening: IX_HeatPump_304, IX_HeatBurner_305, IX_HeatThermostat_306, BaseMain_Opening__fault",
+   "merged_into": "R_Heizung, BaseMain_Opening",
+   "count": 1,
+   "where": "Heizung, у двери",
+   "source": "main_rooms2.py:522-524, 629-674; main_signs.py:152-153; forest_main/main_contract.json:parts.IX_HeatPump_304",
+   "note_ru": "Корпус 0,5 x 1,5 м в R_Heizung; лицевая панель — второй префаб BaseMain_Opening: две клавиши (насос/горелка), ручка термостата, лампа STÖRUNG (M_HeatFault). IX_ детали с осями обновления 3 сохранить. Корпус ближе к K5, панель к K3 — уточнить."
+  },
+  {
+   "kit": "K4",
+   "category": "telephone",
+   "package": "forest_kpp",
+   "object": "Phone, Phone_Receiver, Phone_Dial",
+   "merged_into": "",
+   "count": 1,
+   "where": "будка КПП, стол со стороны дороги, у окна выдачи",
+   "source": "kpp_kit.py:586-611; forest_kpp/kpp_contract.json:parts.Phone, parts.Phone_Receiver, parts.Phone_Dial",
+   "note_ru": "Дисковый 70-х, оранжевый. Уже разбит как K4: корпус, трубка (socket Hand_Phone_Receiver), диск (атлас панели). Сценарий X05 (звонит дважды, Audio_Phone, зона Phone_KPP) — сохранить имена."
+  },
+  {
+   "kit": "K4",
+   "category": "telephone",
+   "package": "forest_main",
+   "object": "red_phone()",
+   "merged_into": "R_Stationsleiter",
+   "count": 1,
+   "where": "Stationsleiter, на столе",
+   "source": "main_rooms2.py:426, 479-487",
+   "note_ru": "Красный: диск на скошенном фасаде, трубка на рычаге. По данным обновления 3 на нём лежит коробка лекарств."
+  },
+  {
+   "kit": "K4",
+   "category": "telephone",
+   "package": "forest_main",
+   "object": "phone_desk()",
+   "merged_into": "R_Leitstand",
+   "count": 1,
+   "where": "Leitstand, стол среднего рабочего места",
+   "source": "main_rooms.py:40, 132-134",
+   "note_ru": "Упрощённый настольный: корпус-коробка и трубка-цилиндр, диска нет."
+  },
+  {
+   "kit": "K4",
+   "category": "telephone",
+   "package": "forest_main",
+   "object": "phone() x2",
+   "merged_into": "R_Flur_EG, R_Garage",
+   "count": 2,
+   "where": "Flur_EG и Garage, северные стены",
+   "source": "main_rooms.py:258, 482, 542-549",
+   "note_ru": "Настенный бежевый 70-х: корпус, трубка, витой шнур; диска нет. Для замены нужен настенный вариант K4."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_gencont",
+   "object": "Switchboard, Board_Face, Board_Door, Board_Latch, Board_Door_Signs, BLamp_LINE/GEN/OVERLOAD, Needle_BoardV/A/Hz, Board_Brk_Gen, Board_Brk_Line, Board_MCB_4..8 + IX_Breaker_87..89, IX_MainSwitch_90",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "длинная стена южного бокса",
+   "source": "gen_room.py:56-142; gcf_build.py:255-293; forest_gencont/gcf_contract.json:parts.Switchboard; forest_gencont/GENCONT_FOREST_CONTRACT.md:8-9",
+   "note_ru": "Главный щит: дверца с защёлкой (в Forest стоит открытой на 165° и неподвижна), 3 прибора, 3 лампы (GEN — M_LEDOff), счётчик, 2 вводных и 8 групповых автоматов, рубильник LINE/OFF/GEN. Отдельно двигаются только IX_Breaker_87..89 и IX_MainSwitch_90 — K5 должен их сохранить. На дверце знак с молнией."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_main",
+   "object": "ГРЩ HV-UG (schaltraum()) + IX_Breaker_69..74, IX_MainSwitch_75",
+   "merged_into": "R_Schaltraum",
+   "count": 1,
+   "where": "Schaltraum, северная стена",
+   "source": "main_rooms2.py:776-811; forest_main/main_contract.json:parts.IX_MainSwitch_75",
+   "note_ru": "Кремовые панели 1,6 x 1,6 м, 6 рычажных рубильников и главный выключатель здания (сценарий S7 «Питание»). Двери нет. Рычаги — отдельные IX_ с ходами обновления 3."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_main",
+   "object": "шкаф с дверцей IX_PanelDoor_83",
+   "merged_into": "R_Schaltraum",
+   "count": 1,
+   "where": "Schaltraum, восточная стена",
+   "source": "main_rooms2.py:815-825",
+   "note_ru": "Шкаф 0,8 x 1,0 x 0,23 м, внутри монтажная панель и 30 автоматов (в меше); дверца — отдельная IX_PanelDoor_83 (hinge)."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_main",
+   "object": "dist_board() + IX_Breaker_45..50, IX_Isolator_51",
+   "merged_into": "R_Serverraum",
+   "count": 1,
+   "where": "Serverraum, восточная стена",
+   "source": "main_rooms.py:367-368, 423-460",
+   "note_ru": "Настенный щит 0,8 x 1,1 м: ряд автоматов и поворотный рубильник (IX_). В докстринге упомянута дверца, но она не строится."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_main",
+   "object": "dist_board() + IX_Breaker_76..81, IX_Isolator_82",
+   "merged_into": "R_Schaltraum",
+   "count": 1,
+   "where": "Schaltraum, восточная стена",
+   "source": "main_rooms2.py:812-814",
+   "note_ru": "Такой же щит, как в Serverraum. IX_ детали сохранить."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_main",
+   "object": "dist_sub() UV-OG",
+   "merged_into": "R_Flur_OG",
+   "count": 1,
+   "where": "Flur_OG, северная стена",
+   "source": "main_rooms2.py:289, 299-305; main_signs.py:89",
+   "note_ru": "Серый шкаф 0,46 x 0,80 x 0,14 с окошком и ручкой, 4 трубки к потолку, табличка UV-OG. Меньше K5 — нужен малый вариант."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_garage",
+   "object": "щиток GARAGE DB (wall_kit)",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "восточная стена изнутри, севернее боковой двери",
+   "source": "gar_kit.py:790-807",
+   "note_ru": "Ящик 0,40 x 0,50 x 0,14 с ручкой и табличкой db_lbl, под ним розетки, вверх трубки к светильникам. Малый вариант K5."
+  },
+  {
+   "kit": "K5",
+   "category": "electrical cabinet / switchboard",
+   "package": "forest_yard",
+   "object": "шкаф НН (yard_kit.cabinet)",
+   "merged_into": "Trafo",
+   "count": 1,
+   "where": "угол трансформаторной площадки за забором",
+   "source": "yard_kit.py:694-701, 820, 829; forest_yard/YARD_CONTRACT.md:41",
+   "note_ru": "Серый стеклопластиковый напольный шкаф 0,75 x 0,36 x 1,1 на цоколе, дверь — только щель. Замок в Trafo_Props, наклейка LV DISTRIBUTION со стрелкой-молнией в Trafo_Signs. Уличный, без внутренностей."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_main",
+   "object": "junction_box() x3",
+   "merged_into": "R_Lager",
+   "count": 3,
+   "where": "Lager, стена у двери в коридор",
+   "source": "main_rooms.py:301, 303-306; main_furn.py:566-576",
+   "note_ru": "Серые коробки 8 x 8 см на трубках. Нижняя (1,05 м) — подложка под клавишу IX_LightSwitch_Lager_88."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_main",
+   "object": "junction_box() x4",
+   "merged_into": "R_Garage",
+   "count": 4,
+   "where": "Garage (зал главного корпуса), северная и восточная стены",
+   "source": "main_rooms.py:488-497",
+   "note_ru": "Две над розетками (2,42 м), две на стояке у IX_LightSwitch_Garage_87 (нижняя — его подложка)."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_main",
+   "object": "junction_box() x3",
+   "merged_into": "R_Treppenhaus",
+   "count": 3,
+   "where": "лестница, у дверей площадок трёх этажей",
+   "source": "main_rooms.py:592-596",
+   "note_ru": "Подложки под клавиши IX_LightSwitch_Treppenhaus_90/91/92, трубка вверх."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_main",
+   "object": "junction_box() x3",
+   "merged_into": "R_Heizung",
+   "count": 3,
+   "where": "Heizung, коридорная стена",
+   "source": "main_rooms2.py:528-533",
+   "note_ru": "Одна — подложка IX_LightSwitch_Heizung_99, две на 2,52 м на трубках."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_main",
+   "object": "junction_box() x3",
+   "merged_into": "R_Flur_UG",
+   "count": 3,
+   "where": "Flur_UG, северная стена",
+   "source": "main_rooms2.py:757-762",
+   "note_ru": "Одна — подложка IX_LightSwitch_Flur_UG_100, две на 2,52 м на трубках."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_main",
+   "object": "junction_box() x3",
+   "merged_into": "R_Schaltraum",
+   "count": 3,
+   "where": "Schaltraum, у двери и на западной стене",
+   "source": "main_rooms2.py:838-843",
+   "note_ru": "Одна — подложка IX_LightSwitch_Schaltraum_101, две на 2,52 м на трубках."
+  },
+  {
+   "kit": "K6",
+   "category": "junction box",
+   "package": "forest_gencont",
+   "object": "T-box (services)",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "внутри, на ригеле над грузовыми дверями",
+   "source": "gcf_kit.py:342; cont_kit.py:707",
+   "note_ru": "Оцинкованная коробка 6 x 6 см; отвод трубки к фонарю над дверями. Была в GenContainer_In, влита в корень."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x4",
+   "merged_into": "R_Lager",
+   "count": 4,
+   "where": "Lager, от коробок к потолку",
+   "source": "main_rooms.py:303-306; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x2",
+   "merged_into": "R_Serverraum",
+   "count": 2,
+   "where": "Serverraum, от розеток CEE вверх",
+   "source": "main_rooms.py:375-376; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x7",
+   "merged_into": "R_Garage",
+   "count": 7,
+   "where": "Garage (зал), стояки от розеток и выключателя",
+   "source": "main_rooms.py:487-497; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x3",
+   "merged_into": "R_Treppenhaus",
+   "count": 3,
+   "where": "лестница, от выключателей вверх",
+   "source": "main_rooms.py:596; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x4",
+   "merged_into": "R_Flur_OG",
+   "count": 4,
+   "where": "Flur_OG, от щита UV-OG к потолку",
+   "source": "main_rooms2.py:304-305; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x8",
+   "merged_into": "R_Heizung",
+   "count": 8,
+   "where": "Heizung, от шкафа регулятора, стояки и трасса под потолком",
+   "source": "main_rooms2.py:525-535; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x4",
+   "merged_into": "R_Flur_UG",
+   "count": 4,
+   "where": "Flur_UG, стояки от выключателя и розетки",
+   "source": "main_rooms2.py:759-762; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_main",
+   "object": "conduit_run() x4",
+   "merged_into": "R_Schaltraum",
+   "count": 4,
+   "where": "Schaltraum, стояки от выключателя и розетки",
+   "source": "main_rooms2.py:840-843; main_furn.py:562-563; gen_kit.py:253-265",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_garage",
+   "object": "conduit_run() x7",
+   "merged_into": "Garage",
+   "count": 7,
+   "where": "от щитка у боковой двери: к розеткам, вверх и по потолку к светильникам, к лампе над воротами",
+   "source": "gar_kit.py:803-813",
+   "note_ru": "Трубка r 1 см по ломаной (gen_kit.conduit, хомуты через 0,5 м). Изгиб — острый стык колец, отдельных колен и вводов в коробку нет."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_gencont",
+   "object": "conduit() x8 + 4 седловые скобы",
+   "merged_into": "GenContainer",
+   "count": 8,
+   "where": "внутри: от щита к вводу, к плафонам под балками, по ригелю к выключателю и розетке, в канал пола",
+   "source": "gcf_kit.py:327-343, 356; cont_kit.py:689-708",
+   "note_ru": "Как в генераторной: трубка с хомутами через 0,6 м; на балках 4 отдельные скобы. Было в GenContainer_In, влито в корень."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_gencont",
+   "object": "кабельный ввод: LB-фитинг + стояк в землю",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "снаружи на длинной стене у щита",
+   "source": "gcf_kit.py:311-326",
+   "note_ru": "В Forest вместо сервисной мачты cont_kit — подземный ввод: оцинкованный стояк, 3 хомута, коробка LB (ввод в стену). Подходит к K7: прямая, хомут, ввод."
+  },
+  {
+   "kit": "K7",
+   "category": "conduit",
+   "package": "forest_base",
+   "object": "Forest_Wires: спуски кабеля x2",
+   "merged_into": "Forest_Wires",
+   "count": 2,
+   "where": "по опорам 2 и 4 линии",
+   "source": "base_kit.py:780-803; base_spec.py:145-147",
+   "note_ru": "С изоляторов — перемычки к трём кабельным муфтам (M_Enamel) на кронштейне, кабель вниз по опоре, оцинкованная защитная труба у земли, 7 хомутов. Трубу и хомуты — K7; муфт нет ни в одной модели набора."
+  },
+  {
+   "kit": "K8",
+   "category": "power pole / insulators",
+   "package": "forest_base",
+   "object": "PowerPole",
+   "merged_into": "",
+   "count": 4,
+   "where": "линия от трансформатора: опоры 1-4 (4 размещения одного префаба)",
+   "source": "base_kit.py:435-469; forest_base/base_contract.json:parts.PowerPole, meta.map_placement.PowerPole",
+   "note_ru": "Пропитанная опора 9 м, деревянная траверса с двумя подкосами, 3 штыревых изолятора (верх 8,72 м — сюда приходят провода), провод заземления со скобами, табличка номера и знак опасности (нарисован в атласе). Простой вариант K8."
+  },
+  {
+   "kit": "K8",
+   "category": "power pole / insulators",
+   "package": "forest_yard",
+   "object": "опора (yard_kit.pole)",
+   "merged_into": "Trafo",
+   "count": 1,
+   "where": "трансформаторная, за забором",
+   "source": "yard_kit.py:759-804, 814-817; forest_yard/YARD_CONTRACT.md:41",
+   "note_ru": "Та же опора и траверса с 3 изоляторами (верх 8,40), плюс нижняя траверса с тремя предохранителями, разрядники, перемычки к вводам трансформатора, заземление, табличка-молния и POLE 14. Трансформатор стоит на площадке, не «бочкой» на опоре — такого варианта в K8 нет."
+  },
+  {
+   "kit": "K9",
+   "category": "overhead wire",
+   "package": "forest_base",
+   "object": "Forest_Wires: провода x12",
+   "merged_into": "Forest_Wires",
+   "count": 12,
+   "where": "4 пролёта: трансформатор -> 1 -> 2, трансформатор -> 3 -> 4, по 3 провода",
+   "source": "base_kit.py:764-779; base_spec.py:141-147",
+   "note_ru": "Цепная линия, провис = 0,0024 x пролёт² (около 0,8 м на 18 м), материал M_Cable; концы точно на верхах изоляторов. Мировая модель в кадре карты, не префаб. Стоек на крыше в пакетах нет."
+  },
+  {
+   "kit": "NEW:fire extinguisher",
+   "category": "fire extinguisher",
+   "package": "forest_kpp",
+   "object": "extinguisher (kpp_kit.props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "будка КПП, задняя стена справа от двери",
+   "source": "kpp_kit.py:501, 519-525; forest_kpp/kpp_contract.json:parts.Kpp_Props.note",
+   "note_ru": "Корпус, головка, шланг; кронштейн — в меше Checkpoint."
+  },
+  {
+   "kit": "NEW:fire extinguisher",
+   "category": "fire extinguisher",
+   "package": "forest_main",
+   "object": "extinguisher() x7",
+   "merged_into": "R_Windfang, R_Flur_EG, R_Serverraum, R_Garage, R_Flur_OG, R_Heizung, R_Schaltraum",
+   "count": 7,
+   "where": "по одному: Windfang, Flur_EG, Serverraum, Garage, Flur_OG, Heizung, Schaltraum",
+   "source": "main_rooms.py:197, 257, 377, 481; main_rooms2.py:288, 538, 836; main_furn.py:512-523; main_signs.py:82-141",
+   "note_ru": "6 кг на кронштейне; над шестью — знак F001 (pic_ext) из панели, у Serverraum знака нет."
+  },
+  {
+   "kit": "NEW:fire extinguisher",
+   "category": "fire extinguisher",
+   "package": "forest_garage",
+   "object": "extinguisher() (wall_kit)",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "восточная стена изнутри, южнее боковой двери",
+   "source": "gar_kit.py:814-816",
+   "note_ru": "Функция главного корпуса (main_furn.extinguisher) + знак F001."
+  },
+  {
+   "kit": "NEW:fire extinguisher",
+   "category": "fire extinguisher",
+   "package": "forest_gencont",
+   "object": "Extinguisher",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "стена северного бокса у проёма",
+   "source": "gen_room.py:439-451; cont_kit.py:726-729; forest_gencont/gcf_contract.json:parts.Extinguisher.object",
+   "note_ru": "В контракте — предмет (kind item, VFX_Extinguisher), но в Forest влит в GenContainer: снять нельзя."
+  },
+  {
+   "kit": "NEW:fire extinguisher",
+   "category": "fire extinguisher",
+   "package": "forest_yard",
+   "object": "extinguisher post (board_and_extinguisher)",
+   "merged_into": "FuelTanks_Props",
+   "count": 1,
+   "where": "у обваловки баков, справа от щита",
+   "source": "yard_kit.py:488-502",
+   "note_ru": "Огнетушитель в FuelTanks_Props; стойка с козырьком и табличка — в FuelTanks; знак plate_ext — в FuelTanks_Signs."
+  },
+  {
+   "kit": "NEW:fire extinguisher",
+   "category": "fire extinguisher",
+   "package": "forest_base",
+   "object": "extinguisher box (helipad)",
+   "merged_into": "Helipad",
+   "count": 1,
+   "where": "у вертолётной площадки",
+   "source": "base_kit.py:605-611",
+   "note_ru": "Красный ящик для огнетушителя на стойке с наклейкой; самого огнетушителя не видно."
+  },
+  {
+   "kit": "NEW:first-aid box",
+   "category": "first-aid box",
+   "package": "forest_kpp",
+   "object": "first-aid box (kpp_kit.props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "будка КПП, задняя стена под часами",
+   "source": "kpp_kit.py:552-555, 702",
+   "note_ru": "Ящик в Kpp_Props, надпись ERSTE HILFE / FIRST AID — в Kpp_Panel."
+  },
+  {
+   "kit": "NEW:first-aid box",
+   "category": "first-aid box",
+   "package": "forest_main",
+   "object": "first_aid() x2",
+   "merged_into": "R_Garage, R_Kueche",
+   "count": 2,
+   "where": "Garage (восточная стена), Kueche (восточная стена)",
+   "source": "main_rooms.py:483; main_rooms2.py:142; main_furn.py:558-559; main_signs.py:109-110, 127-128",
+   "note_ru": "Зелёный ящик 0,30 x 0,22 x 0,12; знак E003 (pic_aid) над ним и на крышке — из панели."
+  },
+  {
+   "kit": "NEW:wall clock",
+   "category": "wall clock",
+   "package": "forest_kpp",
+   "object": "wall clock (kpp_kit.props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "будка КПП, задняя стена между ключницей и дверью",
+   "source": "kpp_kit.py:556-557, 701",
+   "note_ru": "Обод в Kpp_Props, циферблат (стоят на 2:40) — в Kpp_Panel."
+  },
+  {
+   "kit": "NEW:wall clock",
+   "category": "wall clock",
+   "package": "forest_main",
+   "object": "clock() x3",
+   "merged_into": "R_Leitstand, R_Kueche, R_Stationsleiter",
+   "count": 3,
+   "where": "Leitstand, Kueche, Stationsleiter — над дверью / на коридорной стене",
+   "source": "main_rooms.py:52; main_rooms2.py:140, 425; main_furn.py:552-555; main_signs.py:125, 130, 143; main_tex.py:9",
+   "note_ru": "Корпус в меше комнаты, циферблат из панели влит туда же; по main_tex — тоже стоят на 2:40, как в КПП."
+  },
+  {
+   "kit": "NEW:bulkhead lamp",
+   "category": "lamp: bulkhead",
+   "package": "forest_kpp",
+   "object": "bulkhead над дверью + Lens_Bulk_Door, Glow_Bulk_Door",
+   "merged_into": "Checkpoint",
+   "count": 1,
+   "where": "снаружи КПП над дверью",
+   "source": "kpp_kit.py:649-668; forest_kpp/kpp_lights.json:lights[1]",
+   "note_ru": "Круглый с решёткой «как в генераторной», 60 Вт, группа power. Корпус и решётка в меше Checkpoint; линза и ореол — отдельные объекты."
+  },
+  {
+   "kit": "NEW:bulkhead lamp",
+   "category": "lamp: bulkhead",
+   "package": "forest_main",
+   "object": "FX_Bulkhead_21, 22, 23, 24, 39, 40, 41",
+   "merged_into": "",
+   "count": 7,
+   "where": "Treppenhaus (4), Heizung (1), Flur_UG (2), на стенах",
+   "source": "main_fx.py:65-90; main_fx_u3.py; forest_main/main_contract.json:parts.FX_Bulkhead_21",
+   "note_ru": "Овальный литой алюминий 27 x 16 см, стеклянный колпак, решётка. Каждый — отдельный объект FX_, линза __lit влита вторым материалом (M_FX_Globe)."
+  },
+  {
+   "kit": "NEW:bulkhead lamp",
+   "category": "lamp: bulkhead",
+   "package": "forest_main",
+   "object": "FX_Bulkhead_59, 61, 63",
+   "merged_into": "",
+   "count": 3,
+   "where": "снаружи: над входом, над запасным выходом, у выхода на крышу",
+   "source": "main_fx.py:65-90; main_fx_u3.py",
+   "note_ru": "Тот же овальный светильник, слой Exterior."
+  },
+  {
+   "kit": "NEW:bulkhead lamp",
+   "category": "lamp: bulkhead",
+   "package": "forest_main",
+   "object": "FX_BulkheadCeiling_1, 34",
+   "merged_into": "",
+   "count": 2,
+   "where": "потолок: Windfang, Waschraum",
+   "source": "main_fx.py:93-94",
+   "note_ru": "Тот же овальный, потолочный."
+  },
+  {
+   "kit": "NEW:bulkhead lamp",
+   "category": "lamp: bulkhead",
+   "package": "forest_garage",
+   "object": "bulkhead над воротами (fittings)",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "снаружи над воротами",
+   "source": "gar_kit.py:871-895; forest_garage/GARAGE_CONTRACT.md:30",
+   "note_ru": "Геометрия FX_Bulkhead главного корпуса («бочка» с решёткой); линза M_Lamp_BulbOff влита в Garage."
+  },
+  {
+   "kit": "NEW:bulkhead lamp",
+   "category": "lamp: bulkhead",
+   "package": "forest_gencont",
+   "object": "Lens_Bulk_Genset, Lens_Bulk_Ceiling, Lens_Bulk_Board",
+   "merged_into": "GenContainer",
+   "count": 3,
+   "where": "две под балками (южный и северный боксы), одна на стене над щитом",
+   "source": "cont_kit.py:733-757; forest_gencont/gcf_contract.json:parts.Lens_Bulk_Genset",
+   "note_ru": "Круглые с решёткой, как в КПП; линзы M_Lamp_BulbOff. Всё влито в GenContainer."
+  },
+  {
+   "kit": "NEW:fluorescent batten",
+   "category": "lamp: fluorescent batten",
+   "package": "forest_kpp",
+   "object": "Lamp_Fluor + Lens_Fluor, Glow_Fluor",
+   "merged_into": "",
+   "count": 1,
+   "where": "будка КПП, под стропилами",
+   "source": "kpp_kit.py:623-648; forest_kpp/kpp_lights.json:lights[0]",
+   "note_ru": "Светильник на одну трубку 1,26 м, корпус, трубка и ореол — отдельные объекты. Мигает с начала без тока (flicker 0.08-1.0, 5)."
+  },
+  {
+   "kit": "NEW:fluorescent batten",
+   "category": "lamp: fluorescent batten",
+   "package": "forest_main",
+   "object": "FX_FluorBatten_12, 13, 20, 29, 31, 32, 33, 37, 38, 42",
+   "merged_into": "",
+   "count": 10,
+   "where": "Lager (2), Garage (1), Kueche (1), Flur_OG (2), Waschraum (1), Heizung (2), Schaltraum (1)",
+   "source": "main_fx.py:131-169; main_fx_u3.py",
+   "note_ru": "Опаловый рассеиватель (M_FX_Diffuser влит в объект)."
+  },
+  {
+   "kit": "NEW:fluorescent batten",
+   "category": "lamp: fluorescent batten",
+   "package": "forest_main",
+   "object": "FX_FluorBatten2_25, 26, 27, 28",
+   "merged_into": "",
+   "count": 4,
+   "where": "Kaserne (2), Kueche (2)",
+   "source": "main_fx.py:172-173",
+   "note_ru": "Широкий вариант того же светильника."
+  },
+  {
+   "kit": "NEW:square ceiling luminaire",
+   "category": "lamp: ceiling luminaire",
+   "package": "forest_main",
+   "object": "FX_Raster_2-5, 8-11, 14, 15",
+   "merged_into": "",
+   "count": 10,
+   "where": "Leitstand (4), Flur_EG (4), Serverraum (2)",
+   "source": "main_fx.py:97-127; main_fx_u3.py",
+   "note_ru": "Растровый 62 x 62 см, 2 трубки. У FX_Raster_14 трубок нет и света нет."
+  },
+  {
+   "kit": "NEW:square ceiling luminaire",
+   "category": "lamp: ceiling luminaire",
+   "package": "forest_garage",
+   "object": "2 потолочных светильника (fittings)",
+   "merged_into": "Garage",
+   "count": 2,
+   "where": "под потолком зала, x ±3",
+   "source": "gar_kit.py:857-870",
+   "note_ru": "Квадратные 0,64 м с призматическим рассеивателем (M_Lamp_FluorOff), влиты в Garage."
+  },
+  {
+   "kit": "NEW:aviation obstruction light",
+   "category": "lamp / beacon",
+   "package": "forest_main",
+   "object": "FX_Obstruction_64",
+   "merged_into": "",
+   "count": 1,
+   "where": "верх решётчатой мачты на крыше (18,5 м)",
+   "source": "main_fx.py:294-301; main_fx_u3.py",
+   "note_ru": "Красный заградительный огонь без выключателя (M_FX_Red). Не оранжевый и не вращается — не K11."
+  },
+  {
+   "kit": "NEW:aviation obstruction light",
+   "category": "lamp / beacon",
+   "package": "forest_base",
+   "object": "огни RadioMast x5 (RadioMast_Lens)",
+   "merged_into": "RadioMast",
+   "count": 5,
+   "where": "мачта 60 м: по два на 20 и 40 м, один на верху",
+   "source": "base_kit.py:669-687; forest_base/base_contract.json:meta.lights",
+   "note_ru": "Красные (M_Light_Red, горят всегда), линзы влиты в RadioMast. Не K11."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_gencont",
+   "object": "Door_L_Sign (csign_danger)",
+   "merged_into": "IX_ContDoorL_83",
+   "count": 1,
+   "where": "левая створка грузовых дверей, снаружи",
+   "source": "cont_kit.py:790-798; cont_tex.py:79-90",
+   "note_ru": "Жёлтый треугольник с молнией, VORSICHT 400 V / DANGER 400 V; под ним ZUTRITT VERBOTEN. Влит в створку."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_gencont",
+   "object": "Board_Door_Signs (sign_danger)",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "дверца главного щита, снаружи",
+   "source": "gen_room.py:138-141; gen_tex.py:192-205",
+   "note_ru": "Треугольник с молнией, DANGER 400 VOLTS; изнутри дверцы — карточка цепей."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_yard",
+   "object": "IX_TrafoGate_91_Sign (sign_hv)",
+   "merged_into": "",
+   "count": 1,
+   "where": "калитка трансформаторной",
+   "source": "yard_kit.py:746-756; yard_tex.py:4, 169-177",
+   "note_ru": "Жёлтый треугольник с молнией + HOCHSPANNUNG — LEBENSGEFAHR. Отдельный объект, дочерний к IX_TrafoGate_91."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_yard",
+   "object": "plate_bolt + plate_pole (Trafo_Signs)",
+   "merged_into": "Trafo_Signs",
+   "count": 1,
+   "where": "на опоре, 2,3-2,6 м",
+   "source": "yard_kit.py:814-817; yard_tex.py:233-238",
+   "note_ru": "Белая эмалированная табличка с красной стрелкой-молнией и номер POLE 14; подложки — в Trafo."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_yard",
+   "object": "plate_cab (Trafo_Signs)",
+   "merged_into": "Trafo_Signs",
+   "count": 1,
+   "where": "дверь шкафа НН",
+   "source": "yard_kit.py:820; yard_tex.py:227-232",
+   "note_ru": "Серая наклейка LV DISTRIBUTION с чёрной стрелкой-молнией."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_base",
+   "object": "знак опасности на PowerPole",
+   "merged_into": "PowerPole",
+   "count": 4,
+   "where": "на каждой из 4 опор, 3,1 м",
+   "source": "base_kit.py:465-467; base_paint.py:469-481",
+   "note_ru": "Жёлтая пластина с чёрным треугольником и молнией нарисована в атласе M_Base_Poles (не отдельная наклейка)."
+  },
+  {
+   "kit": "NEW:HV warning sign",
+   "category": "warning sign (lightning)",
+   "package": "forest_main",
+   "object": "табличка 'hoch'",
+   "merged_into": "R_Flur_UG",
+   "count": 1,
+   "where": "Flur_UG, северная стена (у электрощитовой)",
+   "source": "main_signs.py:95; main_tex.py:121",
+   "note_ru": "Жёлтая HOCHSPANNUNG / HIGH VOLTAGE — только текст, молнии нет. Подложка в R_Flur_UG, надпись из панели."
+  },
+  {
+   "kit": "NEW:light switch",
+   "category": "switch",
+   "package": "forest_main",
+   "object": "IX_LightSwitch_84..102 (19 шт.)",
+   "merged_into": "",
+   "count": 19,
+   "where": "во всех 15 комнатах и снаружи (Exterior_102 в Windfang)",
+   "source": "main_furn.py:427-453; forest_main/main_contract.json:parts.IX_LightSwitch_*; lighting.rooms",
+   "note_ru": "Клавиши — отдельные IX_ (hinge) с осями обновления 3, по ним игра включает свет комнаты. Накладная пластина или серая коробка — в меше комнаты. Сохранить имена и оси."
+  },
+  {
+   "kit": "NEW:light switch",
+   "category": "switch",
+   "package": "forest_main",
+   "object": "IX_ShutterSwitch_Leitstand_128, Kueche_129, Stationsleiter_130",
+   "merged_into": "",
+   "count": 3,
+   "where": "Leitstand, Kueche, Stationsleiter — над выключателем света, общая рамка",
+   "source": "main_rooms.py:64-65; main_rooms2.py:147-148, 433-436",
+   "note_ru": "Выключатели электрожалюзи (нужна сеть), отдельные IX_."
+  },
+  {
+   "kit": "NEW:light switch",
+   "category": "switch",
+   "package": "forest_main",
+   "object": "IX_HeatingStop_131",
+   "merged_into": "R_Flur_UG",
+   "count": 1,
+   "where": "Flur_UG, у двери котельной",
+   "source": "main_rooms2.py:750-754; main_signs.py:97",
+   "note_ru": "Аварийный выключатель отопления: красная коробка в R_Flur_UG + клавиша IX_ (hinge, -10..10°), табличка HEIZUNG NOTSCHALTER."
+  },
+  {
+   "kit": "NEW:light switch",
+   "category": "switch",
+   "package": "forest_gencont",
+   "object": "Light_Switch",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "стена северного бокса у проёма, 1,61 м",
+   "source": "gcf_kit.py:344-350; forest_gencont/gcf_contract.json:parts.Light_Switch",
+   "note_ru": "Тумблер на оцинкованной коробке. В контракте hinge, на карте неподвижен (свет следует за сетью)."
+  },
+  {
+   "kit": "NEW:socket outlet",
+   "category": "socket",
+   "package": "forest_main",
+   "object": "socket_outlet() flush x15",
+   "merged_into": "R_Leitstand, R_Flur_EG, R_Kaserne, R_Kueche, R_Flur_OG, R_Stationsleiter",
+   "count": 15,
+   "where": "Leitstand 5, Flur_EG 2, Kaserne 2, Kueche 3, Flur_OG 1, Stationsleiter 2",
+   "source": "main_rooms.py:59-62, 269-270; main_rooms2.py:57-58, 144-146, 296, 431-432; main_furn.py:489-496",
+   "note_ru": "Скрытая пластина 8 x 8 см."
+  },
+  {
+   "kit": "NEW:socket outlet",
+   "category": "socket",
+   "package": "forest_main",
+   "object": "socket_outlet() surface x7",
+   "merged_into": "R_Lager, R_Garage, R_Waschraum, R_Heizung, R_Flur_UG, R_Schaltraum",
+   "count": 7,
+   "where": "Lager 1, Garage 2, Waschraum 1, Heizung 1, Flur_UG 1, Schaltraum 1",
+   "source": "main_rooms.py:302, 489; main_rooms2.py:321, 529, 758, 839",
+   "note_ru": "Серая брызгозащищённая накладная коробка, к ней трубка."
+  },
+  {
+   "kit": "NEW:socket outlet",
+   "category": "socket",
+   "package": "forest_garage",
+   "object": "socket_outlet() surface",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "под щитком у боковой двери",
+   "source": "gar_kit.py:804",
+   "note_ru": "Функция главного корпуса."
+  },
+  {
+   "kit": "NEW:socket outlet",
+   "category": "socket",
+   "package": "forest_gencont",
+   "object": "коробка розетки (Outlet_Wall)",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "под выключателем, 0,66 м",
+   "source": "gcf_kit.py:351-353",
+   "note_ru": "Оцинкованная коробка; точка Outlet_Wall — розетка 230 В на цепи CONTAINER."
+  },
+  {
+   "kit": "NEW:CEE socket",
+   "category": "socket",
+   "package": "forest_main",
+   "object": "socket_outlet() cee_blue x2, cee_red x1",
+   "merged_into": "R_Serverraum, R_Garage",
+   "count": 3,
+   "where": "Serverraum (2 синих), Garage (1 красная)",
+   "source": "main_rooms.py:372-373, 486; main_furn.py:500-503",
+   "note_ru": "Коробка + цилиндр розетки CEE."
+  },
+  {
+   "kit": "NEW:CEE socket",
+   "category": "socket",
+   "package": "forest_main",
+   "object": "ввод генератора NOTSTROM-EINSPEISUNG",
+   "merged_into": "BaseMain",
+   "count": 1,
+   "where": "снаружи у двери гаража",
+   "source": "main_rooms2.py:887-890; main_signs.py:71",
+   "note_ru": "Стальной ящик с красным вводом CEE и колпачком, табличка из панели."
+  },
+  {
+   "kit": "NEW:CEE socket",
+   "category": "socket",
+   "package": "forest_garage",
+   "object": "socket_outlet() cee_red",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "под щитком у боковой двери",
+   "source": "gar_kit.py:805",
+   "note_ru": "Функция главного корпуса."
+  },
+  {
+   "kit": "NEW:wall bell",
+   "category": "bell",
+   "package": "forest_kpp",
+   "object": "Phone_Bell",
+   "merged_into": "",
+   "count": 1,
+   "where": "снаружи на стене со стороны дороги, под свесом",
+   "source": "kpp_kit.py:612-618; forest_kpp/kpp_contract.json:parts.Phone_Bell",
+   "note_ru": "Звонок телефона (X05), отдельный объект, звук Audio_PhoneBell."
+  },
+  {
+   "kit": "NEW:wall bell",
+   "category": "bell",
+   "package": "forest_main",
+   "object": "alarm_bell() x3",
+   "merged_into": "R_Flur_EG, R_Flur_OG, R_Flur_UG",
+   "count": 3,
+   "where": "коридоры трёх этажей, у потолка",
+   "source": "main_rooms.py:259; main_rooms2.py:290, 747; main_furn.py:530-533",
+   "note_ru": "Красный пожарный звонок: коробка + чаша."
+  },
+  {
+   "kit": "NEW:cable tray",
+   "category": "cable tray",
+   "package": "forest_main",
+   "object": "лоток над стойками + кабели x7",
+   "merged_into": "R_Serverraum",
+   "count": 1,
+   "where": "Serverraum, над стойками 19″",
+   "source": "main_rooms.py:359-366",
+   "note_ru": "Лоток на подвесах, кабели спускаются в стойки."
+  },
+  {
+   "kit": "NEW:cable tray",
+   "category": "cable tray",
+   "package": "forest_main",
+   "object": "лоток + 2 кабеля",
+   "merged_into": "R_Flur_UG",
+   "count": 1,
+   "where": "Flur_UG, под потолком у южной стены",
+   "source": "main_rooms2.py:743-745",
+   "note_ru": "Рядом с магистралями отопления."
+  },
+  {
+   "kit": "NEW:cable tray",
+   "category": "cable tray",
+   "package": "forest_main",
+   "object": "лотки x2 с кабелями",
+   "merged_into": "R_Schaltraum",
+   "count": 2,
+   "where": "Schaltraum, под потолком",
+   "source": "main_rooms2.py:830-835",
+   "note_ru": "По 3 кабеля в лотке."
+  },
+  {
+   "kit": "NEW:cable tray",
+   "category": "cable tray",
+   "package": "forest_main",
+   "object": "лотки x2",
+   "merged_into": "BaseMain",
+   "count": 2,
+   "where": "крыша: от мачты и антенны к лестничной башне",
+   "source": "main_rooms2.py:1029-1031",
+   "note_ru": "Простые полосы без кабелей."
+  },
+  {
+   "kit": "NEW:cable tray",
+   "category": "cable tray",
+   "package": "forest_base",
+   "object": "лоток с 3 фидерами",
+   "merged_into": "RadioMast",
+   "count": 1,
+   "where": "грань мачты 0,6-57,5 м и в землю",
+   "source": "base_kit.py:700-712",
+   "note_ru": "Кронштейны каждые 6 м."
+  },
+  {
+   "kit": "NEW:padlock",
+   "category": "door lock / padlock",
+   "package": "forest_base",
+   "object": "навесной замок люка",
+   "merged_into": "Hatch",
+   "count": 1,
+   "where": "люк шахты, на скобе",
+   "source": "base_kit.py:199-208; forest_base/BASE_CONTRACT.md:128",
+   "note_ru": "Заперт (IX_HatchLid_94 locked). В справочнике: если люк когда-нибудь откроют, замок надо вынести в отдельную деталь."
+  },
+  {
+   "kit": "NEW:padlock",
+   "category": "door lock / padlock",
+   "package": "forest_yard",
+   "object": "замок сливного крана + открытый замок на калитке",
+   "merged_into": "FuelTanks_Props, Trafo_Props",
+   "count": 2,
+   "where": "сливной кран обваловки; скоба калитки трансформаторной",
+   "source": "yard_kit.py:532-537, 829-833",
+   "note_ru": "Плюс замок двери шкафа НН (Trafo_Props). Замок шлагбаума КПП (Padlock_Barrier) — предмет игры, в пакете не моделирован; в контейнере замок спрятан в кожух (gcf_kit.py:170-177)."
+  },
+  {
+   "kit": "NEW:office swivel chair",
+   "category": "chair",
+   "package": "forest_kpp",
+   "object": "Kpp_Chair",
+   "merged_into": "",
+   "count": 1,
+   "where": "будка КПП, у стола со стороны дороги",
+   "source": "kpp_kit.py:571-585; forest_kpp/kpp_contract.json:parts.Kpp_Chair",
+   "note_ru": "Отдельный объект с точкой Seat_Chair (сесть: окно и телефон под рукой)."
+  },
+  {
+   "kit": "NEW:office swivel chair",
+   "category": "chair",
+   "package": "forest_main",
+   "object": "office_chair() x6",
+   "merged_into": "R_Leitstand, R_Stationsleiter",
+   "count": 6,
+   "where": "Leitstand 5, Stationsleiter 1",
+   "source": "main_rooms.py:39, 41-42; main_rooms2.py:418; main_furn.py:234-247",
+   "note_ru": "Пятилучевое кресло. Ещё есть деревянные стулья (3), кухонные (4), кресло, диван, лавки — только в главном корпусе."
+  },
+  {
+   "kit": "NEW:office desk",
+   "category": "desk",
+   "package": "forest_kpp",
+   "object": "Г-образный стол + IX_Drawer_75..77",
+   "merged_into": "Checkpoint",
+   "count": 1,
+   "where": "будка КПП, у переднего и дорожного окон",
+   "source": "kpp_kit.py:414-447",
+   "note_ru": "Ящики тумбы — отдельные IX_ (slide 0,38 м)."
+  },
+  {
+   "kit": "NEW:office desk",
+   "category": "desk",
+   "package": "forest_main",
+   "object": "desk() x4 + тумбы IX_Drawer_22..30, 59..61",
+   "merged_into": "R_Leitstand, R_Stationsleiter",
+   "count": 4,
+   "where": "Leitstand 3, Stationsleiter 1",
+   "source": "main_rooms.py:33-35; main_rooms2.py:416-417; main_furn.py:170-188, 224-230",
+   "note_ru": "Стол 70-х на стальных рамах; ящики — отдельные IX_ (оси и ходы обновления 3)."
+  },
+  {
+   "kit": "NEW:filing cabinet",
+   "category": "filing cabinet",
+   "package": "forest_kpp",
+   "object": "картотека + IX_Drawer_78..80",
+   "merged_into": "Checkpoint",
+   "count": 1,
+   "where": "будка КПП, задний левый угол",
+   "source": "kpp_kit.py:448-468",
+   "note_ru": "Серый корпус в меше, 3 ящика — IX_ (slide 0,45 м)."
+  },
+  {
+   "kit": "NEW:filing cabinet",
+   "category": "filing cabinet",
+   "package": "forest_main",
+   "object": "pedestal() x4 + IX_Drawer_31..37, 62..68",
+   "merged_into": "R_Leitstand, R_Stationsleiter",
+   "count": 4,
+   "where": "Leitstand 2, Stationsleiter 2",
+   "source": "main_rooms.py:47-50; main_rooms2.py:420-422",
+   "note_ru": "Высота 1,32 м; на одной в Leitstand стоят 5 папок. Ящики — отдельные IX_."
+  },
+  {
+   "kit": "NEW:wall heater",
+   "category": "heater",
+   "package": "forest_kpp",
+   "object": "конвектор",
+   "merged_into": "Checkpoint",
+   "count": 1,
+   "where": "будка КПП, левая стена",
+   "source": "kpp_kit.py:502-506",
+   "note_ru": "Конвектор на двух кронштейнах."
+  },
+  {
+   "kit": "NEW:wall heater",
+   "category": "heater",
+   "package": "forest_main",
+   "object": "radiator() x7",
+   "merged_into": "R_Leitstand, R_Kaserne, R_Kueche, R_Stationsleiter",
+   "count": 7,
+   "where": "Leitstand 3, Kaserne 2, Kueche 1, Stationsleiter 1",
+   "source": "main_rooms.py:54-56; main_rooms2.py:54-55, 139, 424; main_furn.py:377-413",
+   "note_ru": "Панельный радиатор 70-х с термоголовкой и трубами. (В избушке — чугунная печь, другой тип.)"
+  },
+  {
+   "kit": "NEW:notice board",
+   "category": "notice board",
+   "package": "forest_kpp",
+   "object": "пробковая доска + бумаги (Kpp_Panel)",
+   "merged_into": "Checkpoint",
+   "count": 1,
+   "where": "будка КПП, задняя стена слева",
+   "source": "kpp_kit.py:497, 695-697",
+   "note_ru": "График дежурств, список телефонов, октябрьский календарь — из панели."
+  },
+  {
+   "kit": "NEW:notice board",
+   "category": "notice board",
+   "package": "forest_main",
+   "object": "доска объявлений (Kaserne) + whiteboard() (Leitstand)",
+   "merged_into": "R_Kaserne, R_Leitstand",
+   "count": 2,
+   "where": "Kaserne, коридорная стена; Leitstand, коридорная стена",
+   "source": "main_rooms2.py:52-53; main_rooms.py:53, 178-184; main_signs.py:131, 147-148",
+   "note_ru": "Деревянная доска с графиком; маркерная доска 1,68 x 1,08."
+  },
+  {
+   "kit": "NEW:steel shelving",
+   "category": "shelving",
+   "package": "forest_main",
+   "object": "shelving() x6",
+   "merged_into": "R_Lager, R_Garage, R_Heizung",
+   "count": 6,
+   "where": "Lager 3, Garage 2, Heizung 1",
+   "source": "main_rooms.py:289-290, 310-328, 465-466; main_rooms2.py:537",
+   "note_ru": "Стальные стойки, оцинкованные полки, коробки на полках."
+  },
+  {
+   "kit": "NEW:steel shelving",
+   "category": "shelving",
+   "package": "forest_garage",
+   "object": "shelving()",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "западная стена",
+   "source": "gar_kit.py:588-612",
+   "note_ru": "Перфорированный уголок, 4 полки, 18 коробок обновления 3."
+  },
+  {
+   "kit": "NEW:200 l drum",
+   "category": "drum",
+   "package": "forest_main",
+   "object": "drum() x3",
+   "merged_into": "R_Garage",
+   "count": 3,
+   "where": "Garage (зал), у западной стены",
+   "source": "main_rooms.py:469-471, 539-543",
+   "note_ru": "2 синих, 1 красная."
+  },
+  {
+   "kit": "NEW:200 l drum",
+   "category": "drum",
+   "package": "forest_garage",
+   "object": "drum() x3 + поддон-ванна",
+   "merged_into": "Garage",
+   "count": 3,
+   "where": "юго-восточный угол",
+   "source": "gar_kit.py:729-761",
+   "note_ru": "На жёлтом поддоне с решёткой, в четвёртом гнезде — 2 канистры."
+  },
+  {
+   "kit": "NEW:200 l drum",
+   "category": "drum",
+   "package": "forest_gencont",
+   "object": "Drum_1, Drum_2, Drum_3 + Pallet",
+   "merged_into": "GenContainer",
+   "count": 3,
+   "where": "у северной стены и у генератора",
+   "source": "gen_room.py:233-299",
+   "note_ru": "Пробки (twist) и насос в контракте, но в Forest всё влито в GenContainer."
+  },
+  {
+   "kit": "NEW:jerrycan",
+   "category": "jerrycan",
+   "package": "forest_main",
+   "object": "jerrycan() x2",
+   "merged_into": "R_Garage",
+   "count": 2,
+   "where": "Garage (зал), у бочек",
+   "source": "main_rooms.py:472-473, 546-550",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:jerrycan",
+   "category": "jerrycan",
+   "package": "forest_garage",
+   "object": "jerrycan() x2",
+   "merged_into": "Garage",
+   "count": 2,
+   "where": "на поддоне с бочками",
+   "source": "gar_kit.py:746-747",
+   "note_ru": "Функция главного корпуса. Канистры Jerrycan_Yard / Jerrycan_Hut — предметы игры, не в пакетах."
+  },
+  {
+   "kit": "NEW:crates",
+   "category": "crates",
+   "package": "forest_main",
+   "object": "crate_yaw() x9 + cardboard()",
+   "merged_into": "R_Lager, R_Garage",
+   "count": 10,
+   "where": "Lager 5 + картон, Garage 4",
+   "source": "main_rooms.py:293-299, 474-478",
+   "note_ru": "Армейские ящики и поддоны на местах обновления 3."
+  },
+  {
+   "kit": "NEW:crates",
+   "category": "crates",
+   "package": "forest_garage",
+   "object": "crates() x5 + 18 коробок на стеллаже",
+   "merged_into": "Garage",
+   "count": 23,
+   "where": "у западной стены",
+   "source": "gar_kit.py:607-619",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:crates",
+   "category": "crates",
+   "package": "forest_base",
+   "object": "Crates + паллета под брезентом",
+   "merged_into": "Crates, Helipad",
+   "count": 2,
+   "where": "отдельный префаб; у вертолётной площадки",
+   "source": "base_kit.py:362-372, 612-628",
+   "note_ru": "Оливковый сундук, два кейса, два сосновых ящика."
+  },
+  {
+   "kit": "NEW:workbench",
+   "category": "workbench",
+   "package": "forest_main",
+   "object": "workbench()",
+   "merged_into": "R_Garage",
+   "count": 1,
+   "where": "Garage (зал), северная стена",
+   "source": "main_rooms.py:522-536",
+   "note_ru": "Буковая столешница, тиски, перфорированная доска с инструментом."
+  },
+  {
+   "kit": "NEW:workbench",
+   "category": "workbench",
+   "package": "forest_garage",
+   "object": "workbench() + tools()",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "северная стена",
+   "source": "gar_kit.py:622-726",
+   "note_ru": "Своя версия: тиски, ящичек, маслёнка, на полке ящик с инструментом и аккумулятор."
+  },
+  {
+   "kit": "NEW:quad and tyres",
+   "category": "quad / tyres",
+   "package": "forest_main",
+   "object": "quad_bike() + tyre() x4",
+   "merged_into": "R_Garage",
+   "count": 5,
+   "where": "Garage (зал)",
+   "source": "main_rooms.py:467, 479-480, 501-519, 553-558",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:quad and tyres",
+   "category": "quad / tyres",
+   "package": "forest_garage",
+   "object": "quad() + spare_tyres() x4",
+   "merged_into": "Garage",
+   "count": 5,
+   "where": "середина зала; у стеллажа",
+   "source": "gar_kit.py:764-787",
+   "note_ru": "Квадроцикл — та же функция main_rooms.quad_bike, развёрнут."
+  },
+  {
+   "kit": "NEW:shovel and broom",
+   "category": "tools",
+   "package": "forest_main",
+   "object": "shovel() + broom()",
+   "merged_into": "R_Windfang",
+   "count": 2,
+   "where": "Windfang, у двери",
+   "source": "main_rooms.py:193-194, 237-252",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:shovel and broom",
+   "category": "tools",
+   "package": "forest_garage",
+   "object": "shovel() + broom()",
+   "merged_into": "Garage",
+   "count": 2,
+   "where": "у боковой двери",
+   "source": "gar_kit.py:827-835",
+   "note_ru": "Лопата — функция главного корпуса."
+  },
+  {
+   "kit": "NEW:toolbox",
+   "category": "toolbox",
+   "package": "forest_garage",
+   "object": "ящик с инструментом (workbench)",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "нижняя полка верстака",
+   "source": "gar_kit.py:638-639",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:toolbox",
+   "category": "toolbox",
+   "package": "forest_gencont",
+   "object": "Toolbox",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "полка у западной стены",
+   "source": "gen_room.py:408-413",
+   "note_ru": "В контракте — предмет (item), в Forest влит в GenContainer."
+  },
+  {
+   "kit": "NEW:mug",
+   "category": "dressing",
+   "package": "forest_kpp",
+   "object": "кружка (props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "передний стол",
+   "source": "kpp_kit.py:537-540",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:mug",
+   "category": "dressing",
+   "package": "forest_main",
+   "object": "mug() x7",
+   "merged_into": "R_Leitstand, R_Kueche, R_Stationsleiter",
+   "count": 7,
+   "where": "Leitstand 1, Kueche 4, Stationsleiter 2",
+   "source": "main_rooms.py:127-129, 156; main_rooms2.py:130-131, 428-429",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:mug",
+   "category": "dressing",
+   "package": "forest_hut",
+   "object": "кружка (Hut_Props)",
+   "merged_into": "Hut_Props",
+   "count": 1,
+   "where": "стол у окна",
+   "source": "hut_kit.py:464-466",
+   "note_ru": "Эмалированная."
+  },
+  {
+   "kit": "NEW:binders",
+   "category": "dressing",
+   "package": "forest_kpp",
+   "object": "папки x3 (props)",
+   "merged_into": "Kpp_Props",
+   "count": 3,
+   "where": "конец переднего стола у левой стены",
+   "source": "kpp_kit.py:531-533",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:binders",
+   "category": "dressing",
+   "package": "forest_main",
+   "object": "binders() x5",
+   "merged_into": "R_Leitstand",
+   "count": 5,
+   "where": "Leitstand, на картотеке",
+   "source": "main_rooms.py:48, 137-143",
+   "note_ru": "Ещё папки как коробки на стеллажах."
+  },
+  {
+   "kit": "NEW:thermos",
+   "category": "dressing",
+   "package": "forest_kpp",
+   "object": "термос (props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "передний стол",
+   "source": "kpp_kit.py:535-536",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:thermos",
+   "category": "dressing",
+   "package": "forest_main",
+   "object": "термос-кувшин",
+   "merged_into": "R_Kaserne",
+   "count": 1,
+   "where": "Kaserne, стол на козлах",
+   "source": "main_rooms2.py:41-42",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:wall calendar",
+   "category": "dressing (decal)",
+   "package": "forest_kpp",
+   "object": "calendar (Kpp_Panel)",
+   "merged_into": "Kpp_Panel",
+   "count": 1,
+   "where": "пробковая доска",
+   "source": "kpp_kit.py:697",
+   "note_ru": "Октябрь."
+  },
+  {
+   "kit": "NEW:wall calendar",
+   "category": "dressing (decal)",
+   "package": "forest_main",
+   "object": "calendar",
+   "merged_into": "R_Kueche",
+   "count": 1,
+   "where": "Kueche",
+   "source": "main_signs.py:126; main_tex.py:12",
+   "note_ru": "Октябрь 2026, 1-16 зачёркнуты."
+  },
+  {
+   "kit": "NEW:wall calendar",
+   "category": "dressing (decal)",
+   "package": "forest_garage",
+   "object": "calendar",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "слева от перфорированной доски",
+   "source": "gar_kit.py:824-826",
+   "note_ru": "Октябрь 2026."
+  },
+  {
+   "kit": "NEW:wall calendar",
+   "category": "dressing (decal)",
+   "package": "forest_hut",
+   "object": "calendar (Hut_Panel)",
+   "merged_into": "Hut_Panel",
+   "count": 1,
+   "where": "задняя стена",
+   "source": "hut_kit.py:498-504",
+   "note_ru": "Дни до 16-го зачёркнуты."
+  },
+  {
+   "kit": "NEW:coat hooks with clothes",
+   "category": "dressing",
+   "package": "forest_kpp",
+   "object": "крючки + 2 жилета",
+   "merged_into": "Checkpoint, Kpp_Props",
+   "count": 2,
+   "where": "левая стена",
+   "source": "kpp_kit.py:498-500, 512-518",
+   "note_ru": "Сигнальные жилеты."
+  },
+  {
+   "kit": "NEW:coat hooks with clothes",
+   "category": "dressing",
+   "package": "forest_main",
+   "object": "coat_rack() + 2 куртки",
+   "merged_into": "R_Windfang",
+   "count": 1,
+   "where": "Windfang, западная стена",
+   "source": "main_rooms.py:190, 203-227",
+   "note_ru": "Ещё рабочие куртки в шкафчиках (uniform)."
+  },
+  {
+   "kit": "NEW:coat hooks with clothes",
+   "category": "dressing",
+   "package": "forest_hut",
+   "object": "3 крючка + куртка и шапка",
+   "merged_into": "TowerHut, Hut_Props",
+   "count": 1,
+   "where": "передняя стена справа от двери",
+   "source": "hut_kit.py:439-442, 467-478",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:boots",
+   "category": "dressing",
+   "package": "forest_main",
+   "object": "boots() x8 пар",
+   "merged_into": "R_Windfang, R_Kaserne, R_Waschraum",
+   "count": 8,
+   "where": "Windfang 3, Kaserne 2, Waschraum 3",
+   "source": "main_rooms.py:191-192, 230-234; main_rooms2.py:35-36, 319-320",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:boots",
+   "category": "dressing",
+   "package": "forest_hut",
+   "object": "сапоги (Hut_Props)",
+   "merged_into": "Hut_Props",
+   "count": 1,
+   "where": "у двери",
+   "source": "hut_kit.py:479-481",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:bunk",
+   "category": "furniture",
+   "package": "forest_main",
+   "object": "bunk() x2",
+   "merged_into": "R_Kaserne",
+   "count": 2,
+   "where": "Kaserne",
+   "source": "main_rooms2.py:33-34, 62-84",
+   "note_ru": "Двухъярусные; на матрасах зоны сна обновления 3."
+  },
+  {
+   "kit": "NEW:bunk",
+   "category": "furniture",
+   "package": "forest_hut",
+   "object": "нары",
+   "merged_into": "TowerHut",
+   "count": 1,
+   "where": "у задней стены",
+   "source": "hut_kit.py:394-410",
+   "note_ru": "Одноярусные."
+  },
+  {
+   "kit": "NEW:kettle",
+   "category": "dressing",
+   "package": "forest_main",
+   "object": "чайник (kitchen_block)",
+   "merged_into": "R_Kueche",
+   "count": 1,
+   "where": "Kueche, на плите",
+   "source": "main_rooms2.py:188-191",
+   "note_ru": "Хромированный."
+  },
+  {
+   "kit": "NEW:kettle",
+   "category": "dressing",
+   "package": "forest_hut",
+   "object": "Kettle",
+   "merged_into": "",
+   "count": 1,
+   "where": "на печи",
+   "source": "hut_kit.py:483-492",
+   "note_ru": "Эмалированный, предмет (item)."
+  },
+  {
+   "kit": "NEW:signboard on posts",
+   "category": "sign",
+   "package": "forest_yard",
+   "object": "щит DIESELKRAFTSTOFF на двух стойках",
+   "merged_into": "FuelTanks",
+   "count": 1,
+   "where": "перед обваловкой",
+   "source": "yard_kit.py:478-487",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:signboard on posts",
+   "category": "sign",
+   "package": "forest_hut",
+   "object": "Sign_Forsthuette + Sign_Forsthuette_Text",
+   "merged_into": "",
+   "count": 1,
+   "where": "у тропы",
+   "source": "hut_kit.py:644-661",
+   "note_ru": "Отдельный корень."
+  },
+  {
+   "kit": "NEW:signboard on posts",
+   "category": "sign",
+   "package": "forest_base",
+   "object": "таблички на двух стойках (Hatch, Helipad)",
+   "merged_into": "Hatch, Helipad",
+   "count": 2,
+   "where": "у люка; у площадки",
+   "source": "base_kit.py:142-152, 217-220, 601-604",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:chain-link fence",
+   "category": "fence",
+   "package": "forest_kpp",
+   "object": "Gate_Fence_Mesh/Barbed, IX_Gate_81_Mesh/Barbed",
+   "merged_into": "",
+   "count": 1,
+   "where": "ворота у КПП",
+   "source": "kpp_kit.py:765-868",
+   "note_ru": "Сетка и колючка — тайловые альфа-материалы."
+  },
+  {
+   "kit": "NEW:chain-link fence",
+   "category": "fence",
+   "package": "forest_yard",
+   "object": "Trafo_Fence_Mesh/Barbed, IX_TrafoGate_91_Mesh/Barbed",
+   "merged_into": "",
+   "count": 1,
+   "where": "забор трансформаторной",
+   "source": "yard_kit.py:704-756",
+   "note_ru": ""
+  },
+  {
+   "kit": "NEW:chain-link fence",
+   "category": "fence",
+   "package": "forest_base",
+   "object": "FenceChain",
+   "merged_into": "",
+   "count": 213,
+   "where": "забор базы (213 размещений на карте)",
+   "source": "base_kit.py:473-498",
+   "note_ru": "Есть отдельный пакет forest_fences — вне этого списка."
+  },
+  {
+   "kit": "NEW:clipboard",
+   "category": "dressing",
+   "package": "forest_gencont",
+   "object": "Logbook + Logbook_Page",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "на гвозде у щита",
+   "source": "gen_room.py:457-466",
+   "note_ru": "В контракте — предмет, влит."
+  },
+  {
+   "kit": "NEW:clipboard",
+   "category": "dressing",
+   "package": "forest_garage",
+   "object": "планшет с бумагой (workbench)",
+   "merged_into": "Garage",
+   "count": 1,
+   "where": "на перфорированной доске",
+   "source": "gar_kit.py:668-674",
+   "note_ru": ""
+  },
+  {
+   "kit": null,
+   "category": "monitor / screen",
+   "package": "forest_main",
+   "object": "terminal_rack() — встроенный экран",
+   "merged_into": "R_Serverraum",
+   "count": 1,
+   "where": "Serverraum, низкая стойка у двери",
+   "source": "main_rooms.py:374, 381-392",
+   "note_ru": "Экран в фасаде стойки (M_ScreenOff) + светодиоды; K2 не подходит."
+  },
+  {
+   "kit": null,
+   "category": "monitor / screen",
+   "package": "forest_main",
+   "object": "tv_set()",
+   "merged_into": "R_Kueche",
+   "count": 1,
+   "where": "Kueche, тумба напротив дивана",
+   "source": "main_rooms2.py:136, 261-271",
+   "note_ru": "ЭЛТ-телевизор (M_ScreenOff); не монитор, только в главном корпусе."
+  },
+  {
+   "kit": null,
+   "category": "monitor / screen",
+   "package": "forest_main",
+   "object": "wall_display()",
+   "merged_into": "R_Leitstand",
+   "count": 1,
+   "where": "Leitstand, перегородка у тамбура",
+   "source": "main_rooms.py:51, 172-175; main_signs.py:135",
+   "note_ru": "Табло антенного поля 2,5 x 1,4 в раме; не ЭЛТ, от тока не загорается."
+  },
+  {
+   "kit": null,
+   "category": "radio",
+   "package": "forest_kpp",
+   "object": "radio + hand mic (kpp_kit.props)",
+   "merged_into": "Kpp_Props",
+   "count": 1,
+   "where": "будка КПП, передний стол",
+   "source": "kpp_kit.py:542-551, 700; forest_kpp/kpp_contract.json:sockets.Audio_Radio",
+   "note_ru": "Рация с двумя ручками, ручкой для переноски и микрофоном на шнуре; лицевая — Kpp_Panel. Единственная рация во всех пакетах."
+  },
+  {
+   "kit": null,
+   "category": "push button",
+   "package": "forest_main",
+   "object": "IX_BurnerReset_308 (колпачок __lit влит в него)",
+   "merged_into": "",
+   "count": 1,
+   "where": "Heizung, на корпусе горелки",
+   "source": "main_rooms2.py:697-708",
+   "note_ru": "Кнопка сброса (slide 6 мм), колпачок светится при аварии (M_HeatFault). Можно взять кнопку из K3."
+  },
+  {
+   "kit": null,
+   "category": "push button",
+   "package": "forest_main",
+   "object": "call_point() x6",
+   "merged_into": "R_Windfang, R_Flur_EG, R_Garage, R_Flur_OG, R_Flur_UG",
+   "count": 6,
+   "where": "Windfang 1, Flur_EG 2, Garage 1, Flur_OG 1, Flur_UG 1",
+   "source": "main_rooms.py:196, 261-262, 484; main_rooms2.py:291, 748; main_furn.py:526-527",
+   "note_ru": "Красные ручные пожарные извещатели; только главный корпус."
+  },
+  {
+   "kit": null,
+   "category": "indicator lamps",
+   "package": "forest_main",
+   "object": "мнемосхема + 6 ламп",
+   "merged_into": "R_Schaltraum",
+   "count": 1,
+   "where": "Schaltraum, западная стена",
+   "source": "main_rooms2.py:826-829; main_signs.py:137",
+   "note_ru": "Рама, схема из панели, 6 чёрных цилиндров-ламп. Можно собрать из ламп K3."
+  },
+  {
+   "kit": null,
+   "category": "electrical cabinet",
+   "package": "forest_main",
+   "object": "шкаф ИБП",
+   "merged_into": "R_Serverraum",
+   "count": 1,
+   "where": "Serverraum, стена башни",
+   "source": "main_rooms.py:369-371",
+   "note_ru": "Чёрный шкаф с фасадом, не распределительный."
+  },
+  {
+   "kit": null,
+   "category": "cable run",
+   "package": "forest_yard",
+   "object": "кабель НН трансформатора",
+   "merged_into": "Trafo",
+   "count": 1,
+   "where": "с вводов НН по баку в кабельный канал",
+   "source": "yard_kit.py:685-691",
+   "note_ru": "Жгут r 3,4 см с хомутами на баке; не трубка — K7 не подходит."
+  },
+  {
+   "kit": null,
+   "category": "conduit (fuel)",
+   "package": "forest_gencont",
+   "object": "заливная труба (conduit helper)",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "от короба горловины по стенам в бак",
+   "source": "gcf_kit.py:296-303",
+   "note_ru": "Топливная труба 2″ сделана той же функцией conduit; не электрика."
+  },
+  {
+   "kit": null,
+   "category": "door lock / keypad",
+   "package": "forest_main",
+   "object": "звонок и домофон у входа",
+   "merged_into": "BaseMain",
+   "count": 1,
+   "where": "снаружи у входной двери",
+   "source": "main_rooms2.py:864-865; main_signs.py:70",
+   "note_ru": "Пластина с кнопкой, табличка BITTE KLINGELN. Электрозамков и кодовых панелей в пакетах нет."
+  },
+  {
+   "kit": null,
+   "category": "door lock / keypad",
+   "package": "forest_garage",
+   "object": "цилиндры замков ворот и боковой двери",
+   "merged_into": "IX_GarageDoor_92, IX_GarageSideDoor_93",
+   "count": 2,
+   "where": "ворота и боковая дверь",
+   "source": "gar_kit.py:444-458, 506-515; forest_garage/garage_contract.json:locks",
+   "note_ru": "Механические, ключ Garage — не K10."
+  },
+  {
+   "kit": null,
+   "category": "door lock / keypad",
+   "package": "forest_gencont",
+   "object": "цилиндр замка боковой двери, кожух замка грузовой створки",
+   "merged_into": "IX_ContSideDoor_85, IX_ContDoorR_84",
+   "count": 2,
+   "where": "боковая дверь, правая грузовая створка",
+   "source": "gcf_kit.py:170-177, 243-247",
+   "note_ru": "Механические, ключ Generator — не K10."
+  },
+  {
+   "kit": null,
+   "category": "key cabinet",
+   "package": "forest_kpp",
+   "object": "ключница + IX_KeyBoxDoor_303 + IX_KeyBoxDoor_303_Label",
+   "merged_into": "Checkpoint",
+   "count": 1,
+   "where": "будка КПП, задняя стена",
+   "source": "kpp_kit.py:469-495",
+   "note_ru": "Пять крючков с точками Key_Hook_*. Только в КПП (в контейнере крючок убран — gcf_kit.py:10-11)."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_main",
+   "object": "FX_Pendant_16..19, 30, 35",
+   "merged_into": "",
+   "count": 6,
+   "where": "Garage 4, Kueche 1, Stationsleiter 1",
+   "source": "main_fx.py:177-196; main_fx_u3.py",
+   "note_ru": "Эмалированный подвес, зелёный. Только главный корпус."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_main",
+   "object": "FX_DeskLamp_6, 7, 36",
+   "merged_into": "",
+   "count": 3,
+   "where": "Leitstand 2, Stationsleiter 1",
+   "source": "main_fx.py:200-221; main_fx_u3.py",
+   "note_ru": "Настольная, зелёная эмаль. Только главный корпус."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_main",
+   "object": "FX_ExitSign_43..46",
+   "merged_into": "",
+   "count": 4,
+   "where": "Windfang, Flur_EG 2, Garage",
+   "source": "main_fx.py:225-239; main_fx_u3.py",
+   "note_ru": "Табло выхода, горит всегда. Только главный корпус."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_main",
+   "object": "FX_EmergencyLight_47..58",
+   "merged_into": "",
+   "count": 12,
+   "where": "по коридорам и комнатам",
+   "source": "main_fx.py:242-259; main_fx_u3.py",
+   "note_ru": "Аварийный светильник с LED. Только главный корпус."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_main",
+   "object": "FX_WallFlood_60, 62",
+   "merged_into": "",
+   "count": 2,
+   "where": "снаружи: козырёк входа, фасад гаража",
+   "source": "main_fx.py:270-291; main_fx_u3.py",
+   "note_ru": "Галогенный прожектор. Только главный корпус."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_gencont",
+   "object": "фонарь над дверями (Lens_Ext_Door)",
+   "merged_into": "GenContainer",
+   "count": 1,
+   "where": "снаружи над грузовыми дверями",
+   "source": "cont_kit.py:758-774",
+   "note_ru": "Эмалированный абажур на кронштейне, spot 140°."
+  },
+  {
+   "kit": null,
+   "category": "lamp: yard lamp",
+   "package": "forest_base",
+   "object": "LightPole",
+   "merged_into": "",
+   "count": 6,
+   "where": "двор базы (6 размещений)",
+   "source": "base_kit.py:393-431",
+   "note_ru": "Оцинкованная опора 6 м с консолью, натриевая линза M_Lamp_SodiumOff влита. Единственный дворовый фонарь."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_base",
+   "object": "огни площадки (Helipad_Lens)",
+   "merged_into": "Helipad",
+   "count": 8,
+   "where": "по кругу вертолётной площадки",
+   "source": "base_kit.py:557-567",
+   "note_ru": "M_Lamp_WarmOff, влиты в Helipad."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_hut",
+   "object": "Lantern + Lens_Lantern, Glow_Lantern",
+   "merged_into": "",
+   "count": 1,
+   "where": "снаружи справа от двери",
+   "source": "hut_kit.py:511-549",
+   "note_ru": "Керосиновая «летучая мышь», гаснет в X01."
+  },
+  {
+   "kit": null,
+   "category": "lamp",
+   "package": "forest_hut",
+   "object": "Lamp_Oil + Lens_OilLamp",
+   "merged_into": "",
+   "count": 1,
+   "where": "под коньком",
+   "source": "hut_kit.py:550-565",
+   "note_ru": "Керосиновая лампа с абажуром."
+  }
+ ],
+ "candidates": [
+  {
+   "name": "fire extinguisher",
+   "packages": [
+    "forest_kpp",
+    "forest_main",
+    "forest_garage",
+    "forest_gencont",
+    "forest_yard",
+    "forest_base"
+   ],
+   "note_ru": "Самый частый предмет: 6 пакетов, в 2 случаях это предмет игры или ящик. Знак F001 — в комплект."
+  },
+  {
+   "name": "first-aid box",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Ящик + наклейка ERSTE HILFE / E003."
+  },
+  {
+   "name": "wall clock",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Везде стоят на 2:40 — циферблат общий."
+  },
+  {
+   "name": "bulkhead lamp",
+   "packages": [
+    "forest_kpp",
+    "forest_main",
+    "forest_garage",
+    "forest_gencont"
+   ],
+   "note_ru": "Два вида: круглый с решёткой (КПП, контейнер) и овальный литой (главный корпус, гараж)."
+  },
+  {
+   "name": "fluorescent batten",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Корпус + трубка/рассеиватель отдельным материалом (вкл./выкл.)."
+  },
+  {
+   "name": "square ceiling luminaire",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Растровый (главный корпус) и призматический (гараж) — 60-65 см."
+  },
+  {
+   "name": "aviation obstruction light",
+   "packages": [
+    "forest_main",
+    "forest_base"
+   ],
+   "note_ru": "Красный заградительный огонь; K11 (оранжевый маяк) не заменяет."
+  },
+  {
+   "name": "HV warning sign",
+   "packages": [
+    "forest_gencont",
+    "forest_yard",
+    "forest_base",
+    "forest_main"
+   ],
+   "note_ru": "Треугольник с молнией в 3 пакетах, в главном корпусе — только текст."
+  },
+  {
+   "name": "light switch",
+   "packages": [
+    "forest_main",
+    "forest_gencont"
+   ],
+   "note_ru": "В главном корпусе это IX_ детали со светом комнат — менять только с сохранением имён и осей."
+  },
+  {
+   "name": "socket outlet",
+   "packages": [
+    "forest_main",
+    "forest_garage",
+    "forest_gencont"
+   ],
+   "note_ru": "Скрытая и накладная."
+  },
+  {
+   "name": "CEE socket",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Синяя/красная розетка и ввод генератора."
+  },
+  {
+   "name": "wall bell",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Звонок телефона КПП и пожарные звонки главного корпуса похожи по форме."
+  },
+  {
+   "name": "cable tray",
+   "packages": [
+    "forest_main",
+    "forest_base"
+   ],
+   "note_ru": "Лоток с кабелями."
+  },
+  {
+   "name": "padlock",
+   "packages": [
+    "forest_base",
+    "forest_yard"
+   ],
+   "note_ru": "Навесной замок; в базе и во дворе влит в меш."
+  },
+  {
+   "name": "office swivel chair",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Кресло КПП — отдельный объект с точкой сидения."
+  },
+  {
+   "name": "office desk",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Ящики — IX_ детали."
+  },
+  {
+   "name": "filing cabinet",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Ящики — IX_ детали."
+  },
+  {
+   "name": "wall heater",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Конвектор КПП и радиаторы главного корпуса."
+  },
+  {
+   "name": "notice board",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Доска + бумаги из атласа панели."
+  },
+  {
+   "name": "steel shelving",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Стальной стеллаж с коробками."
+  },
+  {
+   "name": "200 l drum",
+   "packages": [
+    "forest_main",
+    "forest_garage",
+    "forest_gencont"
+   ],
+   "note_ru": "Бочка 200 л; в контейнере — с пробками и насосом (в Forest неподвижны)."
+  },
+  {
+   "name": "jerrycan",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Канистра."
+  },
+  {
+   "name": "crates",
+   "packages": [
+    "forest_main",
+    "forest_garage",
+    "forest_base"
+   ],
+   "note_ru": "Ящики, поддоны, коробки."
+  },
+  {
+   "name": "workbench",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Верстак с доской для инструмента."
+  },
+  {
+   "name": "quad and tyres",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Уже общая функция main_rooms.quad_bike."
+  },
+  {
+   "name": "shovel and broom",
+   "packages": [
+    "forest_main",
+    "forest_garage"
+   ],
+   "note_ru": "Лопата и метла у двери."
+  },
+  {
+   "name": "toolbox",
+   "packages": [
+    "forest_garage",
+    "forest_gencont"
+   ],
+   "note_ru": "Ящик для инструмента."
+  },
+  {
+   "name": "mug",
+   "packages": [
+    "forest_kpp",
+    "forest_main",
+    "forest_hut"
+   ],
+   "note_ru": "Мелочь."
+  },
+  {
+   "name": "binders",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Мелочь."
+  },
+  {
+   "name": "thermos",
+   "packages": [
+    "forest_kpp",
+    "forest_main"
+   ],
+   "note_ru": "Мелочь."
+  },
+  {
+   "name": "wall calendar",
+   "packages": [
+    "forest_kpp",
+    "forest_main",
+    "forest_garage",
+    "forest_hut"
+   ],
+   "note_ru": "Наклейка: октябрь 2026."
+  },
+  {
+   "name": "coat hooks with clothes",
+   "packages": [
+    "forest_kpp",
+    "forest_main",
+    "forest_hut"
+   ],
+   "note_ru": "Крючки и одежда."
+  },
+  {
+   "name": "boots",
+   "packages": [
+    "forest_main",
+    "forest_hut"
+   ],
+   "note_ru": "Мелочь."
+  },
+  {
+   "name": "bunk",
+   "packages": [
+    "forest_main",
+    "forest_hut"
+   ],
+   "note_ru": "Койка."
+  },
+  {
+   "name": "kettle",
+   "packages": [
+    "forest_main",
+    "forest_hut"
+   ],
+   "note_ru": "Мелочь."
+  },
+  {
+   "name": "signboard on posts",
+   "packages": [
+    "forest_yard",
+    "forest_hut",
+    "forest_base"
+   ],
+   "note_ru": "Табличка на двух стойках."
+  },
+  {
+   "name": "chain-link fence",
+   "packages": [
+    "forest_kpp",
+    "forest_yard",
+    "forest_base"
+   ],
+   "note_ru": "Сетка-рабица и колючка; есть пакет forest_fences."
+  },
+  {
+   "name": "clipboard",
+   "packages": [
+    "forest_gencont",
+    "forest_garage"
+   ],
+   "note_ru": "Планшет с листом."
+  }
+ ]
+}

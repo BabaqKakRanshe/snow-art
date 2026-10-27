@@ -6,6 +6,9 @@ density, baked with each prefab in its own frame and the ground under it for the
 its UVs copied loop by loop onto Dish_2 and Dish_5: they are built by the same calls at their own elevations), Dish12
 (Dish_3 -> Dish_4), Towers (radome, relay mast), Meteo, Lookout, Chapel, Small (pump house, cabin, campsite); far_tex's
 sign panel, the base's chain-link and barbed wire, Update 3's materials on the lenses, glass and flames; the contract.
+1.1: the forest_devices models at their mounts - MeteoScreen on the weather station (Mount_MeteoScreen; the station lost
+its own screen), TapeDeck in every dish cabinet (Mount_TapeDeck_n) - empties showing their collections linked from
+../forest_devices/devices.blend (contract: devices_instances).
 python3 -I far_build.py [--draft] [--only Dish16,Towers,...] -> out/far.blend, out/far.json, out/far_contract.json
 --draft: no bakes (flat zone colours) -> out/far_draft.blend"""
 import sys, os, math, json, time
@@ -24,6 +27,7 @@ HERE = P.HERE
 TEX = os.path.join(HERE, 'tex', 'far')
 BASE_TEX = os.path.join(HERE, 'tex', 'base')
 OUT = os.path.join(HERE, 'out')
+DEV_BLEND = os.path.join(HERE, 'forest_devices', 'devices.blend')     # -> ../forest_devices/devices.blend from the package's far.blend
 os.makedirs(TEX, exist_ok=True)
 os.makedirs(OUT, exist_ok=True)
 T0 = time.time()
@@ -282,6 +286,14 @@ K.socket('Audio_RelayWind', (0.0, 0.0, 30.0), 'audio', parent='RelayMast', root=
                                                                                                   'the feeders knock')
 K.socket('Audio_MeteoCups', (3.0, 2.0, 7.9), 'audio', parent='MeteoStation', root='MeteoStation',
          note='the anemometer\'s cups whirr, the vane creaks')
+K.socket('Mount_MeteoScreen', (0.0, 0.0, 0.0), 'mount', parent='MeteoStation', root='MeteoStation', dir=(0.0, 1.0, 0.0),
+         note='forest_devices MeteoScreen (the Stevenson screen): its origin here, turned 180 deg about z - its door (its -y) '
+              'to the north (+y); the logger\'s cable ends at its leg')
+_cx0, _cx1, _cy0, _cy1, _cz0, _cz1 = S.DISH['cab']
+for d in S.DISHES:
+    K.socket('Mount_TapeDeck_' + d[-1], ((_cx0 + _cx1) / 2, _cy1 - 0.04, 1.30), 'mount', parent=d, root=d, dir=(0.0, 1.0, 0.0),
+             note='forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the '
+                  'cabinet\'s third module, turned 180 deg about z - it faces the cabinet door (' + S.DISHES[d]['door'] + ')')
 K.socket('Audio_LookoutCab', (0.0, 0.0, 23.0), 'audio', parent='LookoutTower', root='LookoutTower',
          note='the cab\'s windows rattle, the tower creaks in the wind')
 K.socket('Audio_PumpHum', (0.9, 0.3, 0.7), 'audio', parent='PumpHouse', root='PumpHouse', note='the pump (silent unless '
@@ -297,11 +309,43 @@ for k_, p in C['parts'].items():
     if o is not None:
         p['materials'] = [m.name for m in o.data.materials if m]
         p['object'] = k_
+# ------------------------------------------------------------------ 5b. the forest_devices instances (collections linked from the package)
+DEV = [('MeteoScreen', 'MeteoScreen', 'MeteoStation', 'Mount_MeteoScreen')] + \
+      [('TapeDeck_' + d[-1], 'TapeDeck', d, 'Mount_TapeDeck_' + d[-1]) for d in S.DISHES]
+with bpy.data.libraries.load(DEV_BLEND, link=True) as (src_, dst_):
+    dst_.collections = sorted({it for _, it, _, _ in DEV})
+dcoll = {c_.name: c_ for c_ in dst_.collections}
+assert set(dcoll) == {it for _, it, _, _ in DEV}, dcoll
+inst_coll = bpy.data.collections.new('Devices_Instances')
+bpy.context.scene.collection.children.link(inst_coll)
+C['devices_instances'] = {}
+R180 = Matrix.Rotation(math.pi, 4, 'Z')
+for name_, item, par, sock in DEV:
+    sp_ = Vector(C['sockets'][sock]['pos'])
+    e = bpy.data.objects.new(name_, None)
+    inst_coll.objects.link(e)
+    e.instance_type = 'COLLECTION'
+    e.instance_collection = dcoll[item]
+    e.empty_display_type, e.empty_display_size = 'PLAIN_AXES', 0.1
+    bpy.context.view_layer.update()
+    e.matrix_world = objs[par].matrix_world @ Matrix.Translation(sp_) @ R180
+    e.parent = objs[par]
+    e.matrix_parent_inverse = objs[par].matrix_world.inverted()
+    e['devices_item'] = item
+    e['package'] = 'forest_devices'
+    C['devices_instances'][name_] = dict(item=item, package='forest_devices', parent=par, root=par, socket=sock,
+                                         pos=[round(float(v), 4) + 0.0 for v in sp_], rot_quat_wxyz=[0.0, 0.0, 0.0, 1.0],
+                                         scale=[1.0, 1.0, 1.0], posUnity=BC.to_unity(sp_), rotUnity_xyzw=[0.0, -1.0, 0.0, 0.0],
+                                         scaleUnity=[1.0, 1.0, 1.0],
+                                         note=C['sockets'][sock]['note'])
+INFO['devices_instances'] = sorted(C['devices_instances'])
+log('devices instances', INFO['devices_instances'])
 pl = {}
 for n in ROOTS:
     es = U3['prefabs'][n]
     pl[n] = dict(list='prefabs', count=len(es), placements=[dict(p=e['p'], q=e['q']) for e in es])
 C['meta'] = dict(
+    version='1.1',
     units='metres, degrees',
     frames='each prefab its own frame - the frame of its Update 3 FBX after import: x / y / z, z up, origin = the prefab\'s '
            'pivot (Update 3\'s)',
@@ -314,7 +358,9 @@ C['meta'] = dict(
     map_placement=pl,
     hierarchy='every prefab is one mesh object, as Update 3 (sign faces, lenses, glass, flames and the chain-link joined in '
               'as extra materials); the doors IX_CabinetDoor_2..6, IX_PumpDoor_7, IX_ChapelDoor_8, IX_CabinDoor_9 are '
-              'children (Update 3\'s interactables: names, pivots, axes and ranges unchanged)',
+              'children (Update 3\'s interactables: names, pivots, axes and ranges unchanged); 1.1: the forest_devices '
+              'instances (devices_instances) are empties under their parent showing the collections linked from '
+              '../forest_devices/devices.blend (props devices_item, package)',
     dishes='the reflector, the feed and the beacon stand where Update 3 has them (each dish at its own elevation: 38 / 42 / '
            '45 / 40 / 36 deg); Dish_2 and Dish_5 share Dish_1\'s atlas (T_Far_Dish16), Dish_4 Dish_3\'s (T_Far_Dish12)',
     lookout='Update 3\'s treads and landings unchanged (decorative, as in Update 3: steep flights, 47..66 deg, stacked one '
@@ -328,12 +374,16 @@ C['meta'] = dict(
               'cut-outs (the relay compound); Update 3\'s M_Light_Red, M_Lamp_SodiumOff, M_LEDOff, M_GlassDirty, M_Candle, '
               'M_Headlight',
     sockets='audio: the dishes\' drives, the radome\'s air conditioner, the relay mast\'s wind, the anemometer, the lookout\'s '
-            'cab, the pump, the chapel\'s bell, the cabin\'s stove, the tent',
+            'cab, the pump, the chapel\'s bell, the cabin\'s stove, the tent; mount (1.1): Mount_MeteoScreen (the weather '
+            'station), Mount_TapeDeck_1..5 (the dish cabinets) - where the forest_devices models go',
+    devices_instances='forest_devices models placed on the mounts (1.1): MeteoScreen on MeteoStation, TapeDeck_1..5 in the '
+                      'dish cabinets; in Unity put forest_devices\' prefab (MeteoScreen / TapeDeck) under the parent at pos / '
+                      'rot (the parent\'s frame) or posUnity / rotUnity_xyzw; DEVICES_CONTRACT.md has their parts and sockets',
     model='far.blend', textures='tex/far')
 BC.psx_uv_only()
 sfx = '_draft' if DRAFT else ('_test' if ONLY else '')
 json.dump(BC.nz(C), open(os.path.join(OUT, f'far_contract{sfx}.json'), 'w'), indent=1, ensure_ascii=False)
-meshes = [o for o in bpy.data.objects if o.type == 'MESH']
+meshes = [o for o in bpy.data.objects if o.type == 'MESH' and o.library is None]     # not the linked forest_devices
 INFO['tris'] = sum(P.tri_count(o) for o in meshes)
 INFO['tris_by_object'] = {o.name: P.tri_count(o) for o in meshes}
 INFO['objects'] = len(meshes)

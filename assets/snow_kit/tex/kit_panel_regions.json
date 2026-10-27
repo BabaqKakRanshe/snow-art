@@ -1,0 +1,359 @@
+{
+ "size": 512,
+ "regions": {
+  "btn_schranke": {
+   "rect": [
+    0,
+    0,
+    80,
+    28
+   ],
+   "size_m": [
+    0.07,
+    0.0245
+   ],
+   "note": "SCHRANKE over BARRIER, white on black"
+  },
+  "btn_tor": {
+   "rect": [
+    80,
+    0,
+    160,
+    28
+   ],
+   "size_m": [
+    0.07,
+    0.0245
+   ],
+   "note": "TOR over GATE"
+  },
+  "btn_licht": {
+   "rect": [
+    160,
+    0,
+    240,
+    28
+   ],
+   "size_m": [
+    0.07,
+    0.0245
+   ],
+   "note": "LICHT over LIGHTS"
+  },
+  "btn_blank": {
+   "rect": [
+    240,
+    0,
+    320,
+    28
+   ],
+   "size_m": [
+    0.07,
+    0.0245
+   ],
+   "note": "blank black label (worn)"
+  },
+  "lbl_console": {
+   "rect": [
+    320,
+    0,
+    448,
+    16
+   ],
+   "size_m": [
+    0.24,
+    0.03
+   ],
+   "note": "strip on the console top: TORSTEUERUNG / GATE CONTROL"
+  },
+  "sign_notstrom": {
+   "rect": [
+    0,
+    32,
+    120,
+    112
+   ],
+   "size_m": [
+    0.24,
+    0.16
+   ],
+   "note": "cabinet door plate: yellow triangle with the black lightning, NOTSTROM 12V over EMERGENCY 12V"
+  },
+  "lbl_switch": {
+   "rect": [
+    120,
+    32,
+    184,
+    96
+   ],
+   "size_m": [
+    0.08,
+    0.08
+   ],
+   "note": "switch dial plate: NETZ (left, 0) and BATTERIE (right, 90), MAINS / BATTERY small under them"
+  },
+  "sign_volt": {
+   "rect": [
+    184,
+    32,
+    232,
+    74
+   ],
+   "size_m": [
+    0.1,
+    0.0875
+   ],
+   "note": "yellow warning triangle with the black lightning (sticker)"
+  },
+  "sign_danger": {
+   "rect": [
+    232,
+    32,
+    296,
+    112
+   ],
+   "size_m": [
+    0.2,
+    0.25
+   ],
+   "note": "pole plate: lightning symbol, LEBENSGEFAHR over DANGER"
+  },
+  "phone_dial": {
+   "rect": [
+    296,
+    32,
+    344,
+    80
+   ],
+   "size_m": [
+    0.09,
+    0.09
+   ],
+   "note": "rotary dial: cream face, ten finger holes, the finger stop"
+  },
+  "lbl_monitor": {
+   "rect": [
+    344,
+    32,
+    472,
+    48
+   ],
+   "size_m": [
+    0.3,
+    0.0375
+   ],
+   "note": "monitor front strip under the screen: CCTV MONITOR, POWER, BRIGHT, CONTRAST"
+  },
+  "lbl_cabinet_in": {
+   "rect": [
+    0,
+    112,
+    96,
+    160
+   ],
+   "size_m": [
+    0.24,
+    0.12
+   ],
+   "note": "inside the cabinet: the circuit card (hand-drawn diagram, BATTERIE 12V -> SCHRANKE / TOR / LICHT)"
+  },
+  "lbl_trafo": {
+   "rect": [
+    96,
+    112,
+    160,
+    144
+   ],
+   "size_m": [
+    0.16,
+    0.08
+   ],
+   "note": "transformer rating plate (20 kV / 0.4 kV, 50 kVA, 1974)"
+  },
+  "lbl_pole": {
+   "rect": [
+    160,
+    112,
+    192,
+    144
+   ],
+   "size_m": [
+    0.06,
+    0.06
+   ],
+   "note": "pole number plate (enamel, white on blue: a number)"
+  },
+  "l_red": {
+   "rect": [
+    0,
+    192,
+    32,
+    224
+   ],
+   "size_m": [
+    0.02,
+    0.02
+   ],
+   "note": "red indicator dome"
+  },
+  "l_green": {
+   "rect": [
+    32,
+    192,
+    64,
+    224
+   ],
+   "size_m": [
+    0.02,
+    0.02
+   ],
+   "note": "green indicator dome"
+  },
+  "l_amber": {
+   "rect": [
+    64,
+    192,
+    96,
+    224
+   ],
+   "size_m": [
+    0.02,
+    0.02
+   ],
+   "note": "amber indicator dome"
+  },
+  "l_beacon": {
+   "rect": [
+    96,
+    192,
+    160,
+    256
+   ],
+   "size_m": [
+    0.4,
+    0.13
+   ],
+   "note": "beacon dome, cylindrical UV (u round, v up): orange fresnel ribs, the reflector behind"
+  },
+  "l_cam": {
+   "rect": [
+    160,
+    192,
+    192,
+    224
+   ],
+   "size_m": [
+    0.06,
+    0.06
+   ],
+   "note": "camera front glass: dark, the lens and a reflection"
+  },
+  "glow_red": {
+   "rect": [
+    192,
+    192,
+    224,
+    224
+   ],
+   "size_m": [
+    0.1,
+    0.1
+   ],
+   "note": "halo tile"
+  },
+  "glow_green": {
+   "rect": [
+    224,
+    192,
+    256,
+    224
+   ],
+   "size_m": [
+    0.1,
+    0.1
+   ],
+   "note": "halo tile"
+  },
+  "glow_amber": {
+   "rect": [
+    256,
+    192,
+    288,
+    224
+   ],
+   "size_m": [
+    0.1,
+    0.1
+   ],
+   "note": "halo tile"
+  },
+  "glow_orange": {
+   "rect": [
+    288,
+    192,
+    352,
+    256
+   ],
+   "size_m": [
+    0.1,
+    0.1
+   ],
+   "note": "halo tile (beacon)"
+  },
+  "l_flood": {
+   "rect": [
+    0,
+    264,
+    64,
+    308
+   ],
+   "size_m": [
+    0.26,
+    0.18
+   ],
+   "note": "floodlight front glass: prismatic ribs, the reflector and the halogen tube behind"
+  },
+  "l_street": {
+   "rect": [
+    64,
+    264,
+    144,
+    296
+   ],
+   "size_m": [
+    0.5,
+    0.2
+   ],
+   "note": "street lamp bowl (opal acrylic) seen from below: the lamp a soft glow in the middle"
+  },
+  "glow_white": {
+   "rect": [
+    144,
+    256,
+    208,
+    320
+   ],
+   "size_m": [
+    0.1,
+    0.1
+   ],
+   "note": "halo tile (floodlight, street lamp)"
+  }
+ },
+ "screens": {
+  "size": [
+   128,
+   96
+  ],
+  "off": "T_Kit_Screen_Off.png",
+  "on": "T_Kit_Screen_On.png",
+  "on_gate": "T_Kit_Screen_On_Gate.png",
+  "note": "the CRT screen object has its own UV 0..1 over the whole glass; Unity puts the camera picture there (render texture) in M_Kit_Screen_On; T_Kit_Screen_On (CAM 1, the barrier) and T_Kit_Screen_On_Gate (CAM 2, the gate) are stand-in CCTV pictures for the previews"
+ },
+ "notes": {
+  "lbl_switch": "NETZ mark at -45 deg (10:30), BATTERIE at +45 deg (1:30) from 12 o'clock about the plate point (0.5, 38/64 from the top); the handle turns 90 clockwise",
+  "lbl_monitor": "knob centres at u 0.410 (CONTRAST), 0.676 (BRIGHT), 0.895 (POWER) of the strip, label row v 0.72, index marks v 0.38",
+  "phone_dial": "holes at radius 16.6 / 24 of the half width, digit d at 60 - (d - 1) * 30 deg clockwise from 12 o'clock (1 at 2 o'clock, 0 at 5 o'clock); the stop at ~110 deg",
+  "l_beacon": "cylindrical: u round the dome, v up from the rim; the mirror band at u 0.5"
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "atlases": {
+  "SkyMachines": {
+   "size": 1024,
+   "ppm": 47.7,
+   "area_m2": 223.51,
+   "uv_fill": 0.486,
+   "colours": 64
+  },
+  "SkyStructures": {
+   "size": 1024,
+   "ppm": 35.9,
+   "area_m2": 309.62,
+   "uv_fill": 0.38,
+   "colours": 64
+  },
+  "SkyWalk": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 45.29,
+   "uv_fill": 0.114,
+   "colours": 64
+  }
+ },
+ "tris": 13768,
+ "tris_by_root": {
+  "SkyBallast": 1244,
+  "SkyChiller": 4562,
+  "SkySprayer": 1604,
+  "SkyAltimeter": 2936,
+  "SkyWalk_Anchor": 264,
+  "SkyWalk_Cable": 20,
+  "SkyWalk_Ladder": 524,
+  "SkyWalk_Lamp": 254,
+  "SkyWalk_Landing": 812,
+  "SkyWalk_Stair": 728,
+  "SkyWalk_Straight": 556,
+  "SkyWalk_Turn": 264
+ },
+ "objects": {
+  "SkyChiller": [
+   "IX_SkyChillerGuard",
+   "IX_SkyChillerStart",
+   "IX_SkyChillerValve",
+   "SkyChiller",
+   "SkyChiller_Beacon",
+   "SkyChiller_Belt",
+   "SkyChiller_Fan",
+   "SkyChiller_LampFault",
+   "SkyChiller_LampRun"
+  ],
+  "SkySprayer": [
+   "IX_SkySprayerFeed",
+   "IX_SkySprayerLid",
+   "SkySprayer",
+   "SkySprayer_Grating",
+   "SkySprayer_Nozzle"
+  ],
+  "SkyBallast": [
+   "IX_SkyBallastDeck",
+   "IX_SkyBallastLever",
+   "SkyBallast",
+   "SkyBallast_Beacon",
+   "SkyBallast_Block_1",
+   "SkyBallast_Block_2",
+   "SkyBallast_Block_3",
+   "SkyBallast_Ram_L",
+   "SkyBallast_Ram_R"
+  ],
+  "SkyAltimeter": [
+   "SkyAltimeter",
+   "SkyAltimeter_Glow",
+   "SkyAltimeter_Lamps",
+   "SkyAltimeter_Marker",
+   "SkyAltimeter_Obstruction"
+  ],
+  "SkyWalk_Straight": [
+   "SkyWalk_Straight",
+   "SkyWalk_Straight_Grating"
+  ],
+  "SkyWalk_Stair": [
+   "SkyWalk_Stair",
+   "SkyWalk_Stair_Grating"
+  ],
+  "SkyWalk_Landing": [
+   "SkyWalk_Landing",
+   "SkyWalk_Landing_Grating"
+  ],
+  "SkyWalk_Turn": [
+   "SkyWalk_Turn",
+   "SkyWalk_Turn_Grating"
+  ],
+  "SkyWalk_Ladder": [
+   "SkyWalk_Ladder"
+  ],
+  "SkyWalk_Cable": [
+   "SkyWalk_Cable"
+  ],
+  "SkyWalk_Anchor": [
+   "SkyWalk_Anchor"
+  ],
+  "SkyWalk_Lamp": [
+   "SkyWalk_Lamp",
+   "SkyWalk_Lamp_Glow"
+  ]
+ },
+ "display_offset": {
+  "SkyChiller": [
+   -13.0,
+   0.0,
+   0.0
+  ],
+  "SkySprayer": [
+   -4.0,
+   0.0,
+   0.0
+  ],
+  "SkyBallast": [
+   6.0,
+   -2.0,
+   0.0
+  ],
+  "SkyAltimeter": [
+   17.0,
+   0.0,
+   0.0
+  ],
+  "SkyWalk_Straight": [
+   -13.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Stair": [
+   -8.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Landing": [
+   -2.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Turn": [
+   3.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Ladder": [
+   7.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Cable": [
+   10.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Anchor": [
+   12.0,
+   16.0,
+   0.0
+  ],
+  "SkyWalk_Lamp": [
+   14.0,
+   16.0,
+   0.0
+  ]
+ },
+ "mass_kg": {
+  "IX_SkyBallastDeck": 6000.0
+ },
+ "contract": {
+  "parts": 41,
+  "sockets": 23,
+  "colliders": 36,
+  "kinds": {
+   "static": 26,
+   "hinge": 5,
+   "spin": 2,
+   "twist": 2,
+   "aim": 2,
+   "item": 3,
+   "slide": 1
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "van, barrier closed, gate closed (the wicket open, as built)": {
+  "outside, on the road 40 m before the barrier": "reachable from outside",
+  "the road 15 m behind the barrier (in the funnel)": "closed off",
+  "in front of the base gate (in the funnel)": "closed off",
+  "inside the base": "closed off"
+ },
+ "van, barrier open, gate closed": {
+  "outside, on the road 40 m before the barrier": "reachable from outside",
+  "the road 15 m behind the barrier (in the funnel)": "reachable from outside",
+  "in front of the base gate (in the funnel)": "reachable from outside",
+  "inside the base": "closed off"
+ },
+ "van, barrier open, gate open": {
+  "outside, on the road 40 m before the barrier": "reachable from outside",
+  "the road 15 m behind the barrier (in the funnel)": "reachable from outside",
+  "in front of the base gate (in the funnel)": "reachable from outside",
+  "inside the base": "reachable from outside"
+ },
+ "walker, barrier closed, gate closed (wicket open)": {
+  "outside, on the road 40 m before the barrier": "reachable from outside",
+  "the road 15 m behind the barrier (in the funnel)": "reachable from outside",
+  "in front of the base gate (in the funnel)": "reachable from outside",
+  "inside the base": "reachable from outside"
+ },
+ "walker, the wicket shut too": {
+  "outside, on the road 40 m before the barrier": "reachable from outside",
+  "the road 15 m behind the barrier (in the funnel)": "reachable from outside",
+  "in front of the base gate (in the funnel)": "reachable from outside",
+  "inside the base": "closed off"
+ }
+}

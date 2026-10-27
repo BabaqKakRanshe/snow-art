@@ -14,6 +14,7 @@
   lookout   the capsule on every tread and landing of Update 3's stairs, on the ship ladder's treads and in the cab:
             nothing above the step height (0.35) inside it - the head room of the climb
   coplanar  overlapping coplanar faces left in one mesh;  uv  the atlas UVs inside 0..1;  the textures
+(1.1: the linked forest_devices instances are not far's - left out of extra / images / tris)
 python3 -I far_checks.py [--draft|--test] -> far_checks.json, prints a summary"""
 import bpy, sys, os, json, math
 import numpy as np
@@ -64,7 +65,7 @@ for m, d in U3['u3_models'].items():
         if ob['parent']:
             loc = [round(v, 4) for v in CC.rel_matrix(o).translation]
             u3['pivots'][ob['name']] = dict(ours=loc, u3=ob['loc'], ok=bool(np.allclose(loc, ob['loc'], atol=1e-3)))
-u3['extra'] = [o.name for o in bpy.data.objects if o.type == 'MESH' and o.name not in want]
+u3['extra'] = [o.name for o in bpy.data.objects if o.type == 'MESH' and o.library is None and o.name not in want]
 for n in ROOTS:
     o = bpy.data.objects[n]
     pts = [CC.mesh_world(ob, np.array(CC.rel_matrix(ob)) if ob is not o else None)[0]
@@ -286,9 +287,9 @@ for n in ROOTS:
         uvr[ob.name] = CC.uv_range(ob.data, ATLAS)
 RES['coplanar_pairs'] = cop
 RES['uv_bad'] = {k: {m: r for m, r in v.items() if not r['ok']} for k, v in uvr.items() if any(not r['ok'] for r in v.values())}
-RES['images'] = CC.images()
+RES['images'] = {k: v for k, v in CC.images().items() if bpy.data.materials[k].library is None}   # not the linked devices
 RES['tris'] = {o.name: sum(len(p.vertices) - 2 for p in o.data.polygons) for o in bpy.data.objects
-               if o.type == 'MESH' and not o.name.startswith(('Terrain', 'Forest_Road', 'Forest_BasePaved'))}
+               if o.type == 'MESH' and o.library is None and not o.name.startswith(('Terrain', 'Forest_Road', 'Forest_BasePaved'))}
 
 json.dump(RES, open(os.path.join(OUTD, f'far_checks{SFX}.json'), 'w'), indent=1, default=str)
 print('u3 missing', u3['missing'], 'extra', u3['extra'], 'parents', u3['parents'])

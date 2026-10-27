@@ -1,0 +1,26 @@
+gen_kit.py                               Generator shed kit, part 1: the registry shared by all gen_* modules (one KB per object + the atlas it bakes into),
+gen_lights.py                            Generator shed lighting (the plane v11 / van method): an emission diagram per lamp type gives the IES profile
+gen_paint.py                             Painters for the generator shed atlases (psxbake.make_atlas): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear, groove).
+gen_tex.py                               Pixel-art panel atlas for the generator shed (the van's gauge language):
+ies_lm63.py                              Minimal IES LM-63-2002 writer (type C photometry, absolute candela, metres).
+make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
+make_sheets_snowkit.py                   Sheets of the snow kit: A all models, B details, C at work (lit lamps and screens, the cabinet with the battery, the line at
+make_snowkit_doc.py                      Russian reference of the snow kit: out/snow_kit_contract.json + out/snow_kit.json + out/snow_kit_lights.json +
+noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
+pack_snowkit.py                          Package the snow kit: snow_kit.blend with relative texture paths, the atlas, the panel, the screens and the beacon's IES,
+post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
+psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
+psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,
+pxfont.py                                Pixel fonts and pixel-art primitives for the v12 PSX text atlas (T_Gauges_*, T_Displays_Emission).
+snowkit_build.py                         Snow kit build (snowkit_kit): one object per part with its pivot as the origin, parented under its item's root; every item
+snowkit_detail.py                        detail views of kit items (workbench): python3 -I snowkit_detail.py -- <blend> <out_dir> [tex]
+snowkit_kit.py                           Snow kit geometry (snowkit_spec.ITEMS): every model in its own frame at the origin (z up, front -y; origins as the spec
+snowkit_paint.py                         Painter for the Snow kit atlas (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear [n, 3] float32, groove [n] or None).
+snowkit_render.py                        The kit at work (Cycles): lit lamps and screens, the cabinet open with the van's battery on its shelf (a stand-in box),
+snowkit_sheet.py                         Per-item renders of the kit (workbench, studio light, cavity; texture colours when baked):
+snowkit_spec.py                          Snow kit (snow_kit): shared small models that every building places as instances instead of modelling its own.
+snowkit_tex.py                           Panel atlas of the Snow kit (T_Kit_Panel, 512 x 512, pixel art, point-filtered) and the CRT screen textures.
+van2_kit.py                              Geometry kit for the van v2 (built on the reassembled tiunov.se body, before the final lift):
+van2_tex.py                              Pixel-art atlases for the van, drawn the way the Utility Plane's v12/v13 atlases were:
+van3_mech.py                             Van v3 mechanics (phase 1): everything a real van has becomes its own part that opens, moves or comes off.
+van_lights.py                            Van v2 lighting, single source of truth (the Utility Plane v11 method):

@@ -12996,6 +12996,360 @@
    "root": "BaseMain"
   }
  },
+ "kit_instances": {
+  "Leit_Monitor_Barrier": {
+   "item": "Kit_Monitor_CRT",
+   "parent": "R_Leitstand",
+   "note": "CCTV monitor (lower): the KPP barrier camera - CAM_Barrier of kpp_contract.json, with the station's power",
+   "ix_ids": {},
+   "pos": [
+    3.15,
+    -1.42,
+    0.75
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -3.15,
+    0.75,
+    1.42
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    3.15,
+    -1.42,
+    0.75
+   ],
+   "lightMask": 16,
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_MonitorLED",
+     "Kit_Monitor_Screen"
+    ],
+    "note": "the station's power (the base mains: after S7)"
+   },
+   "camera": {
+    "socket": "CAM_Barrier",
+    "contract": "kpp_contract.json (forest_kpp)",
+    "note": "shows this KPP camera (render texture into Kit_Monitor_Screen, M_Kit_Screen_On) while the station has power"
+   }
+  },
+  "Leit_Monitor_Gate": {
+   "item": "Kit_Monitor_CRT",
+   "parent": "R_Leitstand",
+   "note": "CCTV monitor (upper, on the stand's shelf): the gate camera - CAM_Gate of kpp_contract.json",
+   "ix_ids": {},
+   "pos": [
+    3.15,
+    -1.42,
+    1.1
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -3.15,
+    1.1,
+    1.42
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    3.15,
+    -1.42,
+    1.1
+   ],
+   "lightMask": 16,
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_MonitorLED",
+     "Kit_Monitor_Screen"
+    ],
+    "note": "the station's power (the base mains: after S7)"
+   },
+   "camera": {
+    "socket": "CAM_Gate",
+    "contract": "kpp_contract.json (forest_kpp)",
+    "note": "shows this KPP camera (render texture into Kit_Monitor_Screen, M_Kit_Screen_On) while the station has power"
+   }
+  },
+  "Leit_Console": {
+   "item": "Kit_Console_2",
+   "parent": "R_Leitstand",
+   "note": "the base's gate console: SCHRANKE / BARRIER (left), TOR / GATE (right); the same as the KPP's",
+   "ix_ids": {},
+   "pos": [
+    2.42,
+    -1.8,
+    0.75
+   ],
+   "rot_quat_wxyz": [
+    0.994522,
+    0.0,
+    0.0,
+    0.104528
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.42,
+    0.75,
+    1.8
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.104528,
+    0.0,
+    0.994522
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    2.42,
+    -1.8,
+    0.75
+   ],
+   "lightMask": 16
+  },
+  "Leit_Btn_Schranke": {
+   "item": "Kit_Console_Button",
+   "parent": "Leit_Console",
+   "note": "raises / lowers the barrier like the KPP's button (station power)",
+   "ix_ids": {
+    "IX_ConsoleButton": 319
+   },
+   "pos": [
+    -0.05,
+    -0.0144,
+    0.0728
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.05,
+    0.0728,
+    0.0144
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    2.3741,
+    -1.8245,
+    0.8228
+   ],
+   "lightMask": 16,
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_ConsoleButton"
+    ],
+    "note": "the station's power (the base mains: after S7)"
+   }
+  },
+  "Leit_Lbl_Schranke": {
+   "item": "Kit_Console_Label_Schranke",
+   "parent": "Leit_Console",
+   "note": "its label",
+   "ix_ids": {},
+   "pos": [
+    -0.05,
+    -0.0524,
+    0.0605
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.05,
+    0.0605,
+    0.0524
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    2.382,
+    -1.8617,
+    0.8105
+   ],
+   "lightMask": 16
+  },
+  "Leit_Btn_Tor": {
+   "item": "Kit_Console_Button",
+   "parent": "Leit_Console",
+   "note": "opens / closes the gate like the KPP's button (station power)",
+   "ix_ids": {
+    "IX_ConsoleButton": 320
+   },
+   "pos": [
+    0.05,
+    -0.0144,
+    0.0728
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.05,
+    0.0728,
+    0.0144
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    2.4719,
+    -1.8037,
+    0.8228
+   ],
+   "lightMask": 16,
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_ConsoleButton"
+    ],
+    "note": "the station's power (the base mains: after S7)"
+   }
+  },
+  "Leit_Lbl_Tor": {
+   "item": "Kit_Console_Label_Tor",
+   "parent": "Leit_Console",
+   "note": "its label",
+   "ix_ids": {},
+   "pos": [
+    0.05,
+    -0.0524,
+    0.0605
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.05,
+    0.0605,
+    0.0524
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_building": [
+    2.4798,
+    -1.8409,
+    0.8105
+   ],
+   "lightMask": 16
+  }
+ },
  "lighting": {
   "exteriorLayer": 1,
   "defaultMask": 2,
@@ -15691,6 +16045,7 @@
   "materials": "M_Main_Ext / M_Main_Roof (on BaseMain) / M_Main_Rm_<Room> / M_Main_Parts (+ the fixtures) / M_Main_Opening: baked PSX atlases (point filter, no mips); M_Main_Panel: signs, labels, papers, dials (+ emission map: the exit pictogram, the lenses); named materials kept from Update 3 (the game swaps or knows them): M_ScreenOff (screens, -> M_ScreenOn with power), M_LEDOff (-> M_LEDOn), M_HeatFault (the STOERUNG lamp and the reset button, -> M_HeatFaultOn), the fixtures' M_FX_Tube / Globe / Diffuser / Bulb / Exit / EmergencyLens / Halogen / Red and M_LEDOn, M_GlassClear, M_GlassDark - their definitions stay those of Forest_Materials.json",
   "sockets": "knock: a point on the outside of each shutter / window / exterior door (scares X06 / X07); hand: door handles on both faces; audio: plant noises",
   "model": "main.blend",
-  "textures": "tex/main"
+  "textures": "tex/main",
+  "kit_instances": "KPP v2.1: the Leitstand's right workstation is the base's gate station - empties Leit_* instancing snow_kit collections linked from ../snow_kit/snow_kit.blend (props kit_item, ix_ids: the IX_ part of that instance gets the number, IX_ConsoleButton -> IX_ConsoleButton_319); in the FBX only the empties - the Unity builder puts the kit prefab (Assets/Kit/Prefabs/<kit_item>) on each with its transform (pos / rot_quat_wxyz / scale in the parent's frame, *Unity in Unity axes) and the room's lightMask; the monitors show the KPP's cameras (camera.socket in kpp_contract.json)"
  }
 }

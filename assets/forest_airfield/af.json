@@ -1,0 +1,142 @@
+{
+ "atlases": {
+  "Runway": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 984.0,
+   "uv_fill": 0.617,
+   "colours": 58
+  },
+  "AFProps": {
+   "size": 256,
+   "ppm": 64.0,
+   "area_m2": 3.33,
+   "uv_fill": 0.208,
+   "colours": 64
+  },
+  "AFPlug": {
+   "size": 512,
+   "ppm": 51.3,
+   "area_m2": 25.77,
+   "uv_fill": 0.259,
+   "colours": 47
+  }
+ },
+ "lamps": 2,
+ "tris": 1478,
+ "tris_by_root": {
+  "AF_EdgeLight": 536,
+  "AF_EdgeMarker": 90,
+  "AF_HangarPlug": 134,
+  "AF_Sign": 82,
+  "AF_ThresholdLight": 536,
+  "RWY_Num17": 20,
+  "RWY_Num35": 20,
+  "RWY_Slab": 20,
+  "RWY_SlabWorn": 20,
+  "RWY_Threshold": 20
+ },
+ "objects": {
+  "RWY_Slab": [
+   "RWY_Slab"
+  ],
+  "RWY_SlabWorn": [
+   "RWY_SlabWorn"
+  ],
+  "RWY_Threshold": [
+   "RWY_Threshold"
+  ],
+  "RWY_Num17": [
+   "RWY_Num17"
+  ],
+  "RWY_Num35": [
+   "RWY_Num35"
+  ],
+  "AF_EdgeLight": [
+   "AF_EdgeLight",
+   "Glow_Edge",
+   "LIGHT_Edge",
+   "Lamp_Edge",
+   "Lens_Edge"
+  ],
+  "AF_ThresholdLight": [
+   "AF_ThresholdLight",
+   "Glow_Thr",
+   "LIGHT_Thr",
+   "Lamp_Thr",
+   "Lens_Thr"
+  ],
+  "AF_EdgeMarker": [
+   "AF_EdgeMarker"
+  ],
+  "AF_Sign": [
+   "AF_Sign",
+   "AF_Sign_Board"
+  ],
+  "AF_HangarPlug": [
+   "AF_HangarPlug",
+   "Plug_Door",
+   "Plug_Plate"
+  ]
+ },
+ "display_offset": {
+  "RWY_Slab": [
+   -44.0,
+   14.0,
+   0.0
+  ],
+  "RWY_SlabWorn": [
+   -22.0,
+   14.0,
+   0.0
+  ],
+  "RWY_Threshold": [
+   0.0,
+   14.0,
+   0.0
+  ],
+  "RWY_Num17": [
+   22.0,
+   14.0,
+   0.0
+  ],
+  "RWY_Num35": [
+   44.0,
+   14.0,
+   0.0
+  ],
+  "AF_EdgeLight": [
+   -8.0,
+   -6.0,
+   0.0
+  ],
+  "AF_ThresholdLight": [
+   -6.0,
+   -6.0,
+   0.0
+  ],
+  "AF_EdgeMarker": [
+   -4.0,
+   -6.0,
+   0.0
+  ],
+  "AF_Sign": [
+   -1.5,
+   -6.0,
+   0.0
+  ],
+  "AF_HangarPlug": [
+   8.0,
+   -4.0,
+   0.0
+  ]
+ },
+ "contract": {
+  "parts": 19,
+  "sockets": 7,
+  "colliders": 13,
+  "kinds": {
+   "static": 19
+  }
+ }
+}

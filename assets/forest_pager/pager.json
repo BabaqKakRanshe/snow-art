@@ -1,0 +1,55 @@
+{
+ "atlases": {
+  "Small": {
+   "size": 128,
+   "ppm": 512.0,
+   "area_m2": 0.01,
+   "uv_fill": 0.179,
+   "colours": 46
+  }
+ },
+ "tris": 306,
+ "tris_by_root": {
+  "Item_Pager": 306
+ },
+ "objects": {
+  "Item_Pager": [
+   "Item_Pager",
+   "Pager_Key_Down",
+   "Pager_Key_Read",
+   "Pager_Key_Up",
+   "Pager_LCD",
+   "Pager_LED",
+   "Pager_Switch"
+  ]
+ },
+ "display_offset": {
+  "Item_Pager": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "mass_kg": {
+  "Item_Pager": 0.11
+ },
+ "asset_tag": "4471",
+ "lcd": {
+  "cols": 20,
+  "rows": 4,
+  "px": [
+   124,
+   40
+  ]
+ },
+ "contract": {
+  "parts": 7,
+  "sockets": 5,
+  "colliders": 1,
+  "kinds": {
+   "static": 2,
+   "slide": 4,
+   "item": 1
+  }
+ }
+}

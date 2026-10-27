@@ -1,0 +1,506 @@
+{
+ "models": {
+  "ForestStone_1": {
+   "kind": "stone",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 78,
+   "heightAboveGround": 0.27,
+   "bury": 0.08,
+   "size": [
+    0.469,
+    0.423,
+    0.35
+   ],
+   "sizeUnity": [
+    0.469,
+    0.35,
+    0.423
+   ],
+   "boundsUnity": {
+    "min": [
+     -0.227,
+     -0.08,
+     -0.211
+    ],
+    "max": [
+     0.242,
+     0.27,
+     0.212
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    0.242,
+    0.0,
+    0.0
+   ],
+   "note": "обкатанный булыжник"
+  },
+  "ForestStone_2": {
+   "kind": "stone",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 52,
+   "heightAboveGround": 0.283,
+   "bury": 0.1,
+   "size": [
+    0.465,
+    0.335,
+    0.383
+   ],
+   "sizeUnity": [
+    0.465,
+    0.383,
+    0.335
+   ],
+   "boundsUnity": {
+    "min": [
+     -0.119,
+     -0.1,
+     -0.098
+    ],
+    "max": [
+     0.346,
+     0.283,
+     0.237
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    1.315,
+    0.0,
+    0.0
+   ],
+   "note": "угловатый обломок с плоскими сколами"
+  },
+  "ForestStone_3": {
+   "kind": "stone",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 74,
+   "heightAboveGround": 0.233,
+   "bury": 0.1,
+   "size": [
+    0.866,
+    0.747,
+    0.333
+   ],
+   "sizeUnity": [
+    0.866,
+    0.333,
+    0.747
+   ],
+   "boundsUnity": {
+    "min": [
+     -0.435,
+     -0.1,
+     -0.336
+    ],
+    "max": [
+     0.431,
+     0.233,
+     0.411
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    2.365,
+    0.0,
+    0.0
+   ],
+   "note": "плоская плита"
+  },
+  "ForestStone_4": {
+   "kind": "stone",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 64,
+   "heightAboveGround": 0.714,
+   "bury": 0.14,
+   "size": [
+    0.506,
+    0.466,
+    0.854
+   ],
+   "sizeUnity": [
+    0.506,
+    0.854,
+    0.466
+   ],
+   "boundsUnity": {
+    "min": [
+     -0.286,
+     -0.14,
+     -0.257
+    ],
+    "max": [
+     0.22,
+     0.714,
+     0.209
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    3.52,
+    0.0,
+    0.0
+   ],
+   "note": "стоячий клин"
+  },
+  "ForestStone_5": {
+   "kind": "stone",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 218,
+   "heightAboveGround": 0.194,
+   "bury": 0.07,
+   "size": [
+    0.737,
+    0.518,
+    0.264
+   ],
+   "sizeUnity": [
+    0.737,
+    0.264,
+    0.518
+   ],
+   "boundsUnity": {
+    "min": [
+     -0.435,
+     -0.07,
+     -0.38
+    ],
+    "max": [
+     0.302,
+     0.194,
+     0.138
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    4.608,
+    0.0,
+    0.0
+   ],
+   "note": "три камня кучкой"
+  },
+  "ForestStone_6": {
+   "kind": "stone",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 76,
+   "heightAboveGround": 0.444,
+   "bury": 0.4,
+   "size": [
+    1.349,
+    1.131,
+    0.844
+   ],
+   "sizeUnity": [
+    1.349,
+    0.844,
+    1.131
+   ],
+   "boundsUnity": {
+    "min": [
+     -0.677,
+     -0.4,
+     -0.558
+    ],
+    "max": [
+     0.672,
+     0.444,
+     0.573
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    6.216,
+    0.0,
+    0.0
+   ],
+   "note": "большой камень, ушедший в землю, во мху"
+  },
+  "ForestBoulder_1": {
+   "kind": "boulder",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 272,
+   "heightAboveGround": 1.521,
+   "bury": 0.3,
+   "size": [
+    2.535,
+    1.998,
+    1.821
+   ],
+   "sizeUnity": [
+    2.535,
+    1.821,
+    1.998
+   ],
+   "boundsUnity": {
+    "min": [
+     -1.264,
+     -0.3,
+     -0.99
+    ],
+    "max": [
+     1.271,
+     1.521,
+     1.008
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    1.271,
+    -5.0,
+    0.0
+   ],
+   "note": "круглый гранитный «мешок»"
+  },
+  "ForestBoulder_2": {
+   "kind": "boulder",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 394,
+   "heightAboveGround": 1.886,
+   "bury": 0.32,
+   "size": [
+    2.774,
+    2.789,
+    2.206
+   ],
+   "sizeUnity": [
+    2.774,
+    2.206,
+    2.789
+   ],
+   "boundsUnity": {
+    "min": [
+     -1.595,
+     -0.32,
+     -1.376
+    ],
+    "max": [
+     1.179,
+     1.886,
+     1.413
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    4.914,
+    -5.0,
+    0.0
+   ],
+   "note": "расколотый валун: две половины с трещиной"
+  },
+  "ForestBoulder_3": {
+   "kind": "boulder",
+   "atlas": "Rocks",
+   "material": "M_Rocks_Rocks",
+   "tris": 216,
+   "heightAboveGround": 1.12,
+   "bury": 0.28,
+   "size": [
+    3.267,
+    2.646,
+    1.4
+   ],
+   "sizeUnity": [
+    3.267,
+    1.4,
+    2.646
+   ],
+   "boundsUnity": {
+    "min": [
+     -1.712,
+     -0.28,
+     -1.319
+    ],
+    "max": [
+     1.555,
+     1.12,
+     1.327
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": true,
+    "mesh": "render"
+   },
+   "display_offset": [
+    9.264,
+    -5.0,
+    0.0
+   ],
+   "note": "плоская глыба"
+  },
+  "ForestCliff_1": {
+   "kind": "cliff",
+   "atlas": "Cliff1",
+   "material": "M_Rocks_Cliff1",
+   "tris": 1500,
+   "heightAboveGround": 4.535,
+   "bury": 0.45,
+   "size": [
+    10.434,
+    3.925,
+    4.985
+   ],
+   "sizeUnity": [
+    10.434,
+    4.985,
+    3.925
+   ],
+   "boundsUnity": {
+    "min": [
+     -5.078,
+     -0.45,
+     -1.997
+    ],
+    "max": [
+     5.356,
+     4.535,
+     1.928
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": false,
+    "mesh": "render"
+   },
+   "display_offset": [
+    5.356,
+    -16.0,
+    0.0
+   ],
+   "note": "скальная стенка: три яруса сросшихся гранитных блоков"
+  },
+  "ForestCliff_2": {
+   "kind": "cliff",
+   "atlas": "Cliff2",
+   "material": "M_Rocks_Cliff2",
+   "tris": 1498,
+   "heightAboveGround": 6.307,
+   "bury": 0.45,
+   "size": [
+    6.638,
+    5.269,
+    6.757
+   ],
+   "sizeUnity": [
+    6.638,
+    6.757,
+    5.269
+   ],
+   "boundsUnity": {
+    "min": [
+     -3.189,
+     -0.45,
+     -2.92
+    ],
+    "max": [
+     3.449,
+     6.307,
+     2.349
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": false,
+    "mesh": "render"
+   },
+   "display_offset": [
+    16.883,
+    -16.0,
+    0.0
+   ],
+   "note": "останец (Klippe): столб из пяти блоков с боковыми глыбами"
+  },
+  "ForestCliff_3": {
+   "kind": "cliff",
+   "atlas": "Cliff3",
+   "material": "M_Rocks_Cliff3",
+   "tris": 1500,
+   "heightAboveGround": 3.419,
+   "bury": 0.45,
+   "size": [
+    7.89,
+    5.527,
+    3.869
+   ],
+   "sizeUnity": [
+    7.89,
+    3.869,
+    5.527
+   ],
+   "boundsUnity": {
+    "min": [
+     -4.222,
+     -0.45,
+     -3.004
+    ],
+    "max": [
+     3.668,
+     3.419,
+     2.523
+    ]
+   },
+   "collider": {
+    "type": "MeshCollider",
+    "convex": false,
+    "mesh": "render"
+   },
+   "display_offset": [
+    26.74,
+    -16.0,
+    0.0
+   ],
+   "note": "уступ с нависающей плитой"
+  }
+ },
+ "meta": {
+  "version": "1.0",
+  "units": "metres",
+  "frame": "each model in its own frame: z up, front -y; origin on the ground line (z = 0); below it the foot goes into the ground down to -bury (flat underside, not seen). In rocks.blend the models stand apart in rows (display_offset)",
+  "unity": "(x, y, z) -> Unity (-x, z, -y); the front (-y) is the prefab's +Z",
+  "colliders": "MeshCollider on the render mesh: convex for the stones and boulders (Unity cooks the hull), not convex for the cliffs (static)",
+  "materials": "M_Rocks_Rocks (6 stones + 3 boulders), M_Rocks_Cliff1..3 (one per cliff): baked PSX atlases, point filter",
+  "textures": "tex",
+  "model": "rocks.blend"
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "atlases": {
+  "Devices": {
+   "size": 512,
+   "ppm": 255.2,
+   "area_m2": 2.0,
+   "uv_fill": 0.497,
+   "colours": 64
+  },
+  "Outdoor": {
+   "size": 512,
+   "ppm": 99.9,
+   "area_m2": 13.67,
+   "uv_fill": 0.521,
+   "colours": 64
+  }
+ },
+ "tris": 3280,
+ "tris_by_root": {
+  "Cassette": 12,
+  "CassetteBox": 44,
+  "DropBox": 246,
+  "Fax": 826,
+  "FaxPaper": 32,
+  "Laptop": 246,
+  "MeteoScreen": 1328,
+  "TapeDeck": 202,
+  "ObjectPC": 344
+ },
+ "objects": {
+  "Fax": [
+   "Fax",
+   "Fax_Btn_Start",
+   "Fax_Btn_Stop",
+   "Fax_Handset",
+   "Fax_LCD",
+   "Fax_LED_Error",
+   "Fax_LED_Ready"
+  ],
+  "FaxPaper": [
+   "FaxPaper"
+  ],
+  "Cassette": [
+   "Cassette"
+  ],
+  "CassetteBox": [
+   "CassetteBox"
+  ],
+  "DropBox": [
+   "DropBox",
+   "DropBox_Flap"
+  ],
+  "ObjectPC": [
+   "ObjectPC",
+   "ObjectPC_LED",
+   "ObjectPC_Power",
+   "PC_Keyboard",
+   "PC_Mouse"
+  ],
+  "Laptop": [
+   "IX_LaptopLid",
+   "Laptop",
+   "Laptop_LED",
+   "Laptop_Screen"
+  ],
+  "TapeDeck": [
+   "IX_TapeDoor",
+   "TapeDeck",
+   "TapeDeck_Key_FF",
+   "TapeDeck_Key_Play",
+   "TapeDeck_Key_Rec",
+   "TapeDeck_Key_Rew",
+   "TapeDeck_Key_Stop",
+   "TapeDeck_LED_Power",
+   "TapeDeck_LED_Rec",
+   "TapeDeck_Window"
+  ],
+  "MeteoScreen": [
+   "IX_ScreenDoor",
+   "MeteoScreen"
+  ]
+ },
+ "display_offset": {
+  "Fax": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "FaxPaper": [
+   0.45,
+   0.0,
+   0.0
+  ],
+  "Cassette": [
+   0.85,
+   -0.05,
+   0.0
+  ],
+  "CassetteBox": [
+   0.85,
+   0.15,
+   0.0
+  ],
+  "DropBox": [
+   2.2,
+   0.0,
+   0.0
+  ],
+  "ObjectPC": [
+   -1.0,
+   0.0,
+   0.0
+  ],
+  "Laptop": [
+   -2.0,
+   0.0,
+   0.0
+  ],
+  "TapeDeck": [
+   0.0,
+   1.0,
+   0.3
+  ],
+  "MeteoScreen": [
+   2.2,
+   1.6,
+   0.0
+  ]
+ },
+ "contract": {
+  "parts": 33,
+  "sockets": 13,
+  "colliders": 23,
+  "kit_instances": 1,
+  "placements": {
+   "TapeDeck": 5,
+   "MeteoScreen": 1
+  },
+  "kinds": {
+   "static": 17,
+   "slide": 8,
+   "item": 4,
+   "hinge": 4
+  }
+ }
+}

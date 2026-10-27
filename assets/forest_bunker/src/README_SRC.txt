@@ -1,0 +1,7 @@
+Исходники пакета forest_bunker 1.0: бункер под озером — ангар в берегу с воротами на лёд, брезент на законсервированный самолёт, тамбур с круглой дверью вниз, вход у кисти: бетонный спуск и люк подо льдом. Пакет — папка выше, справочник — docs/gdd/BUNKER_CONTRACT.md.
+
+- Модели целиком строятся скриптами. bunker_spec.py — размеры и стоянка самолёта; bunker_kit.py — ангар, тамбур с дверью, вход, брезент; bunker_tex.py — панель (таблички, пульт двери), мокрые следы (подошва X11 из T_BVDecal_Cut_px проекта), лёд; bunker_paint.py — покраска атласов; bunker_tarp_sim.py — брезент: своя ткань (Verlet) по 2,5D-оболочке самолёта UtilityPlane v13 с зимним комплектом, стоящего на Slot_Plane.
+- Порядок: python3.11 bunker_tarp_sim.py <UtilityPlane_v13.blend> out/bunker_work/tarp.npz; bunker_build.py → out/bunker.blend, bunker.json, bunker_contract.json, bunker_lights.json, tex/bunker (--draft — цвета зон); bunker_quick.py -- <blend> <папка> [виды] — рабочие виды; bunker_render.py <виды|all> [spp] → rend/bunker/*.png (самолёт — из UtilityPlane_v13.blend); bunker_sheet.py → лист; pack_bunker.py → out/forest_bunker/.
+- Библиотека: gear_tex.py, gen_kit.py, gen_paint.py, gen_tex.py, noise.py, psxbake.py, psxlib.py, pxfont.py, van2_kit.py, van2_tex.py, van3_mech.py, world_tex.py.
+- Blender 5.0.1 (bpy как модуль Python 3.11). Пути в скриптах абсолютные (HERE = '/home/claude/uaz'; самолёт и
+  T_BVDecal_Cut_px — из /mnt/user-data/uploads/snow/...) — заменить на свои; скрипты пишут в out/, tex/, rend/.

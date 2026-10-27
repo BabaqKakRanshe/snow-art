@@ -286,10 +286,11 @@ def area3d(objs):
     return a
 
 
-def unwrap_group(objs, uv_name='PSX', margin=0.003, angle=60, zone_scale=None):
+def unwrap_group(objs, uv_name='PSX', margin=0.003, angle=60, zone_scale=None, custom=None):
     """new unique UV map on all objects of one atlas, packed together; the old map stays the render map so the
     source textures keep sampling through it while the bake writes through the new one.  zone_scale {zone: f}: the
-    faces of those zones (whole islands, e.g. an underside nobody sees) get f times the texel density of the rest"""
+    faces of those zones (whole islands, e.g. an underside nobody sees) get f times the texel density of the rest.
+    custom(objs, uv_name): called in object mode after the smart projection, before the packing (own unwraps)"""
     for o in objs:
         me = o.data
         old = me.uv_layers.active
@@ -317,6 +318,11 @@ def unwrap_group(objs, uv_name='PSX', margin=0.003, angle=60, zone_scale=None):
                 if f:
                     for li in p.loop_indices:
                         uvl[li].uv = uvl[li].uv * f
+        bpy.ops.object.mode_set(mode='EDIT')
+        bpy.ops.mesh.select_all(action='SELECT')
+    if custom is not None:                       # custom(objs, uv_name): re-unwrap some faces (same metric scale) before packing
+        bpy.ops.object.mode_set(mode='OBJECT')
+        custom(objs, uv_name)
         bpy.ops.object.mode_set(mode='EDIT')
         bpy.ops.mesh.select_all(action='SELECT')
     bpy.ops.uv.select_all(action='SELECT')

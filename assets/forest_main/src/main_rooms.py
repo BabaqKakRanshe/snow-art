@@ -22,6 +22,35 @@ def R(name):
 
 
 # ================================================================ ground floor
+# ---------------------------------------------------------------- snow_kit instances (KPP v2.1: the base's gate station)
+KIT_INST = {}       # name -> dict(item, parent, pos, yaw, slot (parent instance, kit socket) or None, ids, note); main_build
+#                     places them as empties instancing the kit's collections (../snow_kit/snow_kit.blend)
+LEIT_CCTV = Vector((3.15, -1.42, 0.75))         # the right workstation: a stand with two CCTV monitors (the KPP's cameras)
+LEIT_SHELF = 1.10                                # the stand's shelf top (the upper monitor stands on it)
+LEIT_CONSOLE = (Vector((2.42, -1.80, 0.75)), 12.0)   # the gate console at the left, turned a little toward the chair
+
+
+def kit_inst(name, item, parent, pos=None, yaw=0.0, slot=None, ids=None, note=''):
+    assert name not in KIT_INST, name
+    KIT_INST[name] = dict(item=item, parent=parent, pos=tuple(pos) if pos is not None else None, yaw=yaw, slot=slot,
+                          ids=ids or {}, note=note)
+
+
+def cctv_stand(k, base, shelf_z):
+    """a steel stand for two CCTV monitors (kit Kit_Monitor_CRT, 0.34 x 0.45 x 0.31) on a desk: two side frames, the
+    shelf for the upper monitor, a back rail"""
+    x, y, z = base
+    y0, y1 = y - 0.225, y + 0.255
+    for sx in (-1, 1):
+        xa, xb = sorted((x + sx * 0.194, x + sx * 0.206))
+        B(k, (xa, y0, z), (xb, y0 + 0.03, shelf_z - 0.012), F.Z_STEELF)       # the posts, front and back
+        B(k, (xa, y1 - 0.03, z), (xb, y1, shelf_z - 0.012), F.Z_STEELF)
+        B(k, (xa, y0, z), (xb, y1, z + 0.025), F.Z_STEELF)                     # the foot rail
+        B(k, (xa, y0, shelf_z - 0.045), (xb, y1, shelf_z - 0.012), F.Z_STEELF)  # the rail under the shelf
+    B(k, (x - 0.212, y0, shelf_z - 0.012), (x + 0.212, y1, shelf_z), F.Z_STEELF)  # the shelf
+    B(k, (x - 0.194, y1 - 0.03, z + 0.20), (x + 0.194, y1 - 0.012, z + 0.23), F.Z_STEELF)   # the back rail
+
+
 def leitstand():
     k = R('Leitstand')
     # two control consoles under the window band: plinth, operator shelf, the sloped instrument panel, a flat top
@@ -33,10 +62,27 @@ def leitstand():
     for (x0, x1), px in zip(((-1.80, -0.20), (0.20, 1.80), (2.20, 3.80)), (-1.55, 0.45, 2.45)):
         desk(k, x0, x1, -1.95, -1.15, top_z=0.75, front='-y', pedestal_x=px)
         pedestal(k, peds[px], NY, (px - 0.20, -1.88, 0.0), (px + 0.20, -1.25, 0.72))
-        crt(k, Vector((x0 + 0.90, -1.42, 0.75)), yaw=0)
-        keyboard(k, Vector((x0 + 0.90, -1.78, 0.75)))
+        if x0 == 2.20:            # KPP v2.1: the right one is the gate station (kit instances below), not a terminal
+            cctv_stand(k, LEIT_CCTV, LEIT_SHELF)
+        else:
+            crt(k, Vector((x0 + 0.90, -1.42, 0.75)), yaw=0)
+            keyboard(k, Vector((x0 + 0.90, -1.78, 0.75)))
         pc_tower(k, Vector((x0 + 1.35, -1.55, 0.0)))
         office_chair(k, ((x0 + x1) / 2 - 0.10, -2.30, 0.0), yaw=180)
+    # the base's gate station (KPP v2.1, QUESTIONS_KPP 9): the KPP's two cameras on the stand (the barrier below, the gate
+    # above) and the second SCHRANKE / TOR console; all of it on the station's power (after S7)
+    kit_inst('Leit_Monitor_Barrier', 'Kit_Monitor_CRT', 'R_Leitstand', LEIT_CCTV,
+             note='CCTV monitor (lower): the KPP barrier camera - CAM_Barrier of kpp_contract.json, with the station\'s power')
+    kit_inst('Leit_Monitor_Gate', 'Kit_Monitor_CRT', 'R_Leitstand', (LEIT_CCTV.x, LEIT_CCTV.y, LEIT_SHELF),
+             note='CCTV monitor (upper, on the stand\'s shelf): the gate camera - CAM_Gate of kpp_contract.json')
+    kit_inst('Leit_Console', 'Kit_Console_2', 'R_Leitstand', LEIT_CONSOLE[0], LEIT_CONSOLE[1],
+             note='the base\'s gate console: SCHRANKE / BARRIER (left), TOR / GATE (right); the same as the KPP\'s')
+    for i, (lab, num_, what) in enumerate((('Schranke', 319, 'the barrier'), ('Tor', 320, 'the gate'))):
+        kit_inst(f'Leit_Btn_{lab}', 'Kit_Console_Button', 'Leit_Console', slot=('Leit_Console', f'Slot_Button_{i + 1}'),
+                 ids={'IX_ConsoleButton': num_}, note=f'raises / lowers {what} like the KPP\'s button (station power)' if i == 0 else
+                 f'opens / closes {what} like the KPP\'s button (station power)')
+        kit_inst(f'Leit_Lbl_{lab}', f'Kit_Console_Label_{lab}', 'Leit_Console', slot=('Leit_Console', f'Slot_Label_{i + 1}'),
+                 note='its label')
     phone_desk(k, Vector((1.35, -1.40, 0.75)))
     for c in ((2.60, -4.21), (5.80, -4.21)):
         office_chair(k, c + (0.0,), yaw=0)

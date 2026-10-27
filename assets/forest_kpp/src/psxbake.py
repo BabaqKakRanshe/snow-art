@@ -137,7 +137,7 @@ def psx_step(col_hi, ao_hi, cov_hi, groove_hi, f, ncol=64, ao_min=0.25, dither=1
     return (q * 255 + 0.5).astype(np.uint8), cov
 
 
-def prepare_atlas(objs, size=None, ppm=50.0, oversample=2, angle=62, zone_scale=None, ppm_cap=None, margin_px=None):
+def prepare_atlas(objs, size=None, ppm=50.0, oversample=2, angle=62, zone_scale=None, ppm_cap=None, margin_px=None, custom_uv=None):
     """unwrap a group and bake its world position / normal / zone where the objects stand now; finish_atlas() bakes
     the AO and paints later, after the objects may have been moved (painters then still see these positions).
     ppm_cap: the project's pixel size - if the atlas would come out finer, the islands are shrunk to that density and
@@ -145,7 +145,7 @@ def prepare_atlas(objs, size=None, ppm=50.0, oversample=2, angle=62, zone_scale=
     margin = max(0.002, (2.2 if ppm_cap else 1.5) / (size or 512))        # ~2 texels apart (also after a ppm_cap shrink)
     if margin_px is not None:                                           # many thin islands (rails, wires): a tighter margin
         margin = margin_px / (size or 512)
-    P.unwrap_group(objs, margin=margin, angle=angle, zone_scale=zone_scale)
+    P.unwrap_group(objs, margin=margin, angle=angle, zone_scale=zone_scale, custom=custom_uv)
     A = P.area3d(objs)
     fill = max(P.uv_fill(objs), 1e-6)
     if size is None:
@@ -159,8 +159,14 @@ def prepare_atlas(objs, size=None, ppm=50.0, oversample=2, angle=62, zone_scale=
                 l.uv = l.uv * k
         fill = max(P.uv_fill(objs), 1e-6)
     hi = size * oversample
-    return dict(size=size, hi=hi, oversample=oversample, A=A, fill=fill, pos=bake_pass(objs, 'pos', hi),
-                nor=bake_pass(objs, 'nor', hi), zon=bake_pass(objs, 'zone', hi), cov=P.coverage_mask(objs, hi))
+    pos, nor, zon = bake_pass(objs, 'pos', hi), bake_pass(objs, 'nor', hi), bake_pass(objs, 'zone', hi)
+    cov = P.coverage_mask(objs, hi)
+    # paint only the sub-samples the bake reached: PIL's outline overshoots oblique island edges by up to a sub-sample, and
+    # those carry no position / normal / AO (black, AO 0) - dark teeth along slanted borders (the tanks' dished heads).
+    # A baked normal is a unit vector; an unbaked texel decodes to (-1, -1, -1).
+    baked = np.abs(np.linalg.norm(nor[..., :3] * 2 - 1, axis=-1) - 1) < 0.1
+    cov &= baked
+    return dict(size=size, hi=hi, oversample=oversample, A=A, fill=fill, pos=pos, nor=nor, zon=zon, cov=cov)
 
 
 def finish_atlas(name, objs, prep, painter, tex_dir, prefix='T_Gen_', mat_prefix='M_Gen_', ao_min=0.25, ao_dist=0.35,

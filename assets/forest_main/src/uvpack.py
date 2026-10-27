@@ -94,9 +94,14 @@ def repack(objs, size, margin_px=2.2, uv_name='PSX'):
     pos = _shelf(sb, s, m)
     place = {order[j]: pos[j] for j in range(len(order))}
     new = [uv.copy() for (_, uv, _, _) in data]
+    groups = []                                                 # the loops of each island, found once (not a scan per island)
+    for (o, uv, n, lab) in data:
+        srt = np.argsort(lab, kind='stable')
+        groups.append((srt, np.searchsorted(lab[srt], np.arange(n + 1))))
     for j, (oi, i, lo, hi, rot) in enumerate(isl):
         o, uv, n, lab = data[oi]
-        msk = lab == i
+        srt, bnd = groups[oi]
+        msk = srt[bnd[i]:bnd[i + 1]]
         q = uv[msk] - lo
         if rot:                                                 # a quarter turn: (u, v) -> (v, w - u)
             q = np.stack([q[:, 1], (hi - lo)[0] - q[:, 0]], 1)

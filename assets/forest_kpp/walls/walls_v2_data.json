@@ -1,0 +1,262 @@
+{
+ "gate": {
+  "P": [
+   313.23465,
+   -309.11115
+  ],
+  "X": [
+   -0.990267921640645,
+   0.13917414763352173
+  ],
+  "Y": [
+   -0.13917414763352173,
+   -0.990267921640645
+  ],
+  "H": 16.018454,
+  "runW0": 0.45,
+  "runE0": -7.45,
+  "sW2": 2.448080896609486,
+  "sE2": 2.5360170661887507,
+  "w_joint": 15.138485379656915,
+  "e_joint": -25.202119463321253,
+  "clear": [
+   {
+    "what": "east post",
+    "nearest": "5703 ConcreteFence",
+    "gap": 0.028
+   },
+   {
+    "what": "west post",
+    "nearest": "6182 ConcreteFence",
+    "gap": -0.016
+   },
+   {
+    "what": "rail strip",
+    "nearest": "5650 ConcreteFence socket",
+    "gap": 0.025
+   },
+   {
+    "what": "leaf (parked)",
+    "nearest": "5650 ConcreteFence socket",
+    "gap": 0.085
+   },
+   {
+    "what": "leaf (shut)",
+    "nearest": "5703 ConcreteFence socket",
+    "gap": 0.085
+   },
+   {
+    "what": "drive cabinet",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 0.265
+   },
+   {
+    "what": "guide rollers, outer stand",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 0.035
+   },
+   {
+    "what": "guide rollers, inner stand",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 0.215
+   },
+   {
+    "what": "pole (0.5 m round it)",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 1.325
+   },
+   {
+    "what": "camera mast footing (v2.1)",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 0.825
+   },
+   {
+    "what": "camera cable (v2.1, down to y 0.80)",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 0.409
+   },
+   {
+    "what": "camera cable (v2.1, y 0.80 to the drive)",
+    "nearest": "5649 ConcreteFence_Socket",
+    "gap": 0.409
+   }
+  ],
+  "ends": {
+   "west": 0.43400998168104943,
+   "east": -7.477998459743068
+  }
+ },
+ "barrier": {
+  "P": [
+   143.51488,
+   -64.67514
+  ],
+  "X": [
+   -0.5397327266691276,
+   -0.8418364352784387
+  ],
+  "Y": [
+   0.8418364352784384,
+   -0.539732726669128
+  ],
+  "H": 9.27351,
+  "clear": [
+   {
+    "what": "pad",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.025
+   },
+   {
+    "what": "cabinet",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.245
+   },
+   {
+    "what": "rest pad",
+    "nearest": "5853 ConcreteFence_Socket",
+    "gap": 0.025
+   },
+   {
+    "what": "conduit to the booth (out of the pad, +y)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.205
+   },
+   {
+    "what": "conduit to the booth (across, y 1.10)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.705
+   },
+   {
+    "what": "conduit to the booth (to its pad, x -1.10)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.705
+   },
+   {
+    "what": "conduit to the wall box (out of the pad, -y)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.105
+   },
+   {
+    "what": "conduit to the wall box (on the ground, y -0.62)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.225
+   },
+   {
+    "what": "conduit to the wall box (to the panel, x -1.55)",
+    "nearest": "5852 ConcreteFence",
+    "gap": 0.044
+   },
+   {
+    "what": "wall box (on the panel face)",
+    "nearest": "5852 ConcreteFence",
+    "gap": 0.02
+   },
+   {
+    "what": "camera mast footing (v2.1)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 0.875
+   },
+   {
+    "what": "camera cable to the booth (v2.1, x -1.60)",
+    "nearest": "5852 ConcreteFence socket",
+    "gap": 1.375
+   }
+  ]
+ },
+ "ramps": {
+  "gate ramp_start": [
+   7.5,
+   0.093,
+   "ok"
+  ],
+  "gate ramp_end": [
+   7.5,
+   0.078,
+   "ok"
+  ],
+  "barrier ramp_start": [
+   2.5,
+   0.086,
+   "ok"
+  ],
+  "barrier ramp_end": [
+   12.5,
+   0.162,
+   "ok"
+  ]
+ },
+ "strips": [
+  {
+   "name": "gate",
+   "line": [
+    [
+     335.6802,
+     -312.2657
+    ],
+    [
+     298.2435,
+     -307.0043
+    ]
+   ],
+   "height": 16.018454,
+   "half_width": 2.0,
+   "falloff": 3.0,
+   "ramp_start": 7.5,
+   "ramp_end": 7.5,
+   "local": [
+    -22.666,
+    15.138
+   ],
+   "local_frame": "gate"
+  },
+  {
+   "name": "barrier",
+   "line": [
+    [
+     152.0966,
+     -51.2899
+    ],
+    [
+     132.0456,
+     -82.5642
+    ]
+   ],
+   "height": 9.27351,
+   "half_width": 2.0,
+   "falloff": 3.0,
+   "ramp_start": 2.5,
+   "ramp_end": 12.5,
+   "local": [
+    -15.9,
+    21.25
+   ],
+   "local_frame": "barrier"
+  }
+ ],
+ "in_strips": {
+  "gate": {
+   "trees": 16,
+   "trees_max_dz": 0.276,
+   "tree_models": [
+    "Weeds"
+   ],
+   "rocks": 0,
+   "rock_models": [],
+   "rocks_max_dz": 0.0
+  },
+  "barrier": {
+   "trees": 15,
+   "trees_max_dz": 0.44,
+   "tree_models": [
+    "Dead",
+    "Fern",
+    "Spruce",
+    "SpruceHC",
+    "Weeds"
+   ],
+   "rocks": 0,
+   "rock_models": [],
+   "rocks_max_dz": 0.0
+  }
+ }
+}

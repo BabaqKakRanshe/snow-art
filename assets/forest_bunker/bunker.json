@@ -1,0 +1,122 @@
+{
+ "atlases": {
+  "Hangar": {
+   "size": 2048,
+   "ppm": 33.1,
+   "area_m2": 2545.4,
+   "uv_fill": 0.666,
+   "colours": 64
+  },
+  "HangarParts": {
+   "size": 2048,
+   "ppm": 51.3,
+   "area_m2": 591.1,
+   "uv_fill": 0.371,
+   "colours": 64
+  },
+  "BlastDoor": {
+   "size": 1024,
+   "ppm": 39.1,
+   "area_m2": 434.85,
+   "uv_fill": 0.635,
+   "colours": 64
+  },
+  "Entrance": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 157.46,
+   "uv_fill": 0.395,
+   "colours": 63
+  },
+  "Tarp": {
+   "size": 512,
+   "ppm": 51.3,
+   "area_m2": 28.83,
+   "uv_fill": 0.289,
+   "colours": 64
+  }
+ },
+ "tris": 14400,
+ "tris_by_root": {
+  "BlastDoor": 3884,
+  "BunkerEntrance": 2314,
+  "BunkerHangar": 7102,
+  "PlaneTarp": 1100
+ },
+ "objects": {
+  "BunkerHangar": [
+   "BunkerHangar",
+   "BunkerHangar_Glow",
+   "BunkerHangar_Parts",
+   "IX_HangarGate_L",
+   "IX_HangarGate_R",
+   "IX_HangarSideDoor"
+  ],
+  "BlastDoor": [
+   "BlastDoor",
+   "BlastDoor_Glow",
+   "BlastDoor_Prints",
+   "IX_BlastDoor",
+   "IX_BlastDoor_Bolt_1",
+   "IX_BlastDoor_Bolt_2",
+   "IX_BlastDoor_Bolt_3",
+   "IX_BlastDoor_Bolt_4",
+   "IX_BlastDoor_Bolt_5",
+   "IX_BlastDoor_Bolt_6",
+   "IX_BlastDoor_Wheel"
+  ],
+  "BunkerEntrance": [
+   "BunkerEntrance",
+   "BunkerEntrance_Glow",
+   "BunkerEntrance_Ice",
+   "IX_BunkerHatch",
+   "IX_BunkerHatch_Wheel",
+   "Ice_Hatch_1",
+   "Ice_Hatch_2",
+   "Ice_Hatch_3"
+  ],
+  "PlaneTarp": [
+   "PlaneTarp"
+  ]
+ },
+ "display_offset": {
+  "BunkerHangar": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "BlastDoor": [
+   0.0,
+   16.4,
+   0.0
+  ],
+  "BunkerEntrance": [
+   -32.0,
+   -6.0,
+   0.0
+  ],
+  "PlaneTarp": [
+   26.0,
+   6.0,
+   0.0
+  ]
+ },
+ "mass_kg": {
+  "IX_HangarGate_L": 2400.0,
+  "IX_HangarGate_R": 2400.0,
+  "IX_HangarSideDoor": 160.0,
+  "IX_BlastDoor": 9000.0,
+  "IX_BunkerHatch": 140.0
+ },
+ "contract": {
+  "parts": 26,
+  "sockets": 12,
+  "colliders": 72,
+  "kinds": {
+   "hinge": 3,
+   "slide": 8,
+   "static": 13,
+   "twist": 2
+  }
+ }
+}

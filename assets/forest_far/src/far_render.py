@@ -19,14 +19,14 @@ bpy.ops.wm.open_mainfile(filepath=os.path.join(P.HERE, 'out', f'far{sfx}.blend')
 sc = bpy.context.scene
 import far_spec as S
 
-for m in bpy.data.materials:                                         # point filter everywhere (PSX)
-    if m.use_nodes:
+for m in bpy.data.materials:                                         # point filter everywhere (PSX; the linked devices have it)
+    if m.use_nodes and m.library is None:
         for n in m.node_tree.nodes:
             if n.type == 'TEX_IMAGE':
                 n.interpolation = 'Closest'
 ROOTS = [c.name for c in sc.collection.children if c.name in bpy.data.objects]
 MAPM = {n: bpy.data.objects[n].matrix_world.copy() for n in ROOTS}
-DOORS = {o.name: o.matrix_local.copy() for o in bpy.data.objects if o.name.startswith('IX_')}
+DOORS = {o.name: o.matrix_local.copy() for o in bpy.data.objects if o.name.startswith('IX_') and o.library is None}
 
 
 def ground_mat(name, rgb):
@@ -120,7 +120,7 @@ VIEWS = {
     'relay_gate': dict(roots=['RelayMast'], eye=(-12.0, -3.0, 1.8), tgt=(-6.0, 0.0, 1.3), lens=24),
     'relay_yard': dict(roots=['RelayMast'], eye=(12.0, -9.0, 4.0), tgt=(3.0, 0.0, 1.5), lens=22),
     'meteo': dict(roots=['MeteoStation'], eye=(-9.0, -11.0, 4.5), tgt=(0.0, 0.0, 1.0), lens=24),
-    'meteo_screen': dict(roots=['MeteoStation'], eye=(1.6, -2.6, 1.8), tgt=(0.0, 0.0, 1.4), lens=28),
+    'meteo_screen': dict(roots=['MeteoStation'], eye=(1.5, 2.7, 1.8), tgt=(0.0, 0.0, 1.45), lens=28),   # 1.1: the door side
     'meteo_mast': dict(roots=['MeteoStation'], eye=(0.5, -1.5, 7.0), tgt=(3.0, 2.0, 7.9), lens=28),
     'meteo_gate': dict(roots=['MeteoStation'], eye=(0.6, -9.0, 1.4), tgt=(0.0, -6.0, 0.7), lens=26),
     'lookout': dict(roots=['LookoutTower'], eye=(-18.0, -22.0, 9.0), tgt=(0.0, 0.0, 12.0), lens=22),
@@ -314,7 +314,8 @@ for v in want:
         bpy.ops.render.render(write_still=True)
     else:
         for m in bpy.data.materials:                                  # the signs' glow (game values)
-            pb = next((n for n in m.node_tree.nodes if n.type == 'BSDF_PRINCIPLED'), None) if m.use_nodes else None
+            pb = next((n for n in m.node_tree.nodes if n.type == 'BSDF_PRINCIPLED'), None) if m.use_nodes and m.library is None \
+                else None
             if pb is not None and 'night_emit' in m:
                 pb.inputs['Emission Strength'].default_value = float(m['night_emit']) * 8.0
         if hasattr(ims, 'media_type'):
@@ -329,7 +330,8 @@ for v in want:
                         '0.25', str(c.get('exp', 1.0))], check=True)
         os.remove(exr)
         for m in bpy.data.materials:
-            pb = next((n for n in m.node_tree.nodes if n.type == 'BSDF_PRINCIPLED'), None) if m.use_nodes else None
+            pb = next((n for n in m.node_tree.nodes if n.type == 'BSDF_PRINCIPLED'), None) if m.use_nodes and m.library is None \
+                else None
             if pb is not None and 'night_emit' in m:
                 pb.inputs['Emission Strength'].default_value = 0.0
     print('view', v, f'{time.time() - T0:.1f}s', flush=True)

@@ -446,7 +446,7 @@
    "rest": 0.0,
    "parent": null,
    "states": [],
-   "note": "weather station: picket enclosure and gate, screen, wind mast, rain gauge, logger and solar panel, snow stake",
+   "note": "weather station: picket enclosure and gate, wind mast, rain gauge, logger and solar panel, snow stake; the Stevenson screen is forest_devices' MeteoScreen on Mount_MeteoScreen (1.1)",
    "root": "MeteoStation",
    "object": "MeteoStation",
    "lightMask": 2,
@@ -823,6 +823,102 @@
    "note": "the anemometer's cups whirr, the vane creaks",
    "root": "MeteoStation"
   },
+  "Mount_MeteoScreen": {
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "kind": "mount",
+   "parent": "MeteoStation",
+   "note": "forest_devices MeteoScreen (the Stevenson screen): its origin here, turned 180 deg about z - its door (its -y) to the north (+y); the logger's cable ends at its leg",
+   "root": "MeteoStation",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mount_TapeDeck_1": {
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "kind": "mount",
+   "parent": "Dish_1",
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_2)",
+   "root": "Dish_1",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mount_TapeDeck_2": {
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "kind": "mount",
+   "parent": "Dish_2",
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_3)",
+   "root": "Dish_2",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mount_TapeDeck_3": {
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "kind": "mount",
+   "parent": "Dish_3",
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_4)",
+   "root": "Dish_3",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mount_TapeDeck_4": {
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "kind": "mount",
+   "parent": "Dish_4",
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_5)",
+   "root": "Dish_4",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mount_TapeDeck_5": {
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "kind": "mount",
+   "parent": "Dish_5",
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_6)",
+   "root": "Dish_5",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
   "Audio_LookoutCab": {
    "pos": [
     0.0,
@@ -879,7 +975,250 @@
    "root": "Campsite"
   }
  },
+ "devices_instances": {
+  "MeteoScreen": {
+   "item": "MeteoScreen",
+   "package": "forest_devices",
+   "parent": "MeteoStation",
+   "root": "MeteoStation",
+   "socket": "Mount_MeteoScreen",
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "note": "forest_devices MeteoScreen (the Stevenson screen): its origin here, turned 180 deg about z - its door (its -y) to the north (+y); the logger's cable ends at its leg"
+  },
+  "TapeDeck_1": {
+   "item": "TapeDeck",
+   "package": "forest_devices",
+   "parent": "Dish_1",
+   "root": "Dish_1",
+   "socket": "Mount_TapeDeck_1",
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -4.2,
+    1.3,
+    2.94
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_2)"
+  },
+  "TapeDeck_2": {
+   "item": "TapeDeck",
+   "package": "forest_devices",
+   "parent": "Dish_2",
+   "root": "Dish_2",
+   "socket": "Mount_TapeDeck_2",
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -4.2,
+    1.3,
+    2.94
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_3)"
+  },
+  "TapeDeck_3": {
+   "item": "TapeDeck",
+   "package": "forest_devices",
+   "parent": "Dish_3",
+   "root": "Dish_3",
+   "socket": "Mount_TapeDeck_3",
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -4.2,
+    1.3,
+    2.94
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_4)"
+  },
+  "TapeDeck_4": {
+   "item": "TapeDeck",
+   "package": "forest_devices",
+   "parent": "Dish_4",
+   "root": "Dish_4",
+   "socket": "Mount_TapeDeck_4",
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -4.2,
+    1.3,
+    2.94
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_5)"
+  },
+  "TapeDeck_5": {
+   "item": "TapeDeck",
+   "package": "forest_devices",
+   "parent": "Dish_5",
+   "root": "Dish_5",
+   "socket": "Mount_TapeDeck_5",
+   "pos": [
+    4.2,
+    -2.94,
+    1.3
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -4.2,
+    1.3,
+    2.94
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "note": "forest_devices TapeDeck (the telemetry recorder): its origin (the middle of its back) on the front of the cabinet's third module, turned 180 deg about z - it faces the cabinet door (IX_CabinetDoor_6)"
+  }
+ },
  "meta": {
+  "version": "1.1",
   "units": "metres, degrees",
   "frames": "each prefab its own frame - the frame of its Update 3 FBX after import: x / y / z, z up, origin = the prefab's pivot (Update 3's)",
   "unity": "position (x, y, z) -> Unity prefab-local (-x, z, -y) (pivotUnity given); the placements are Update 3's (Forest_Layout.json) and stay as they are",
@@ -1134,12 +1473,13 @@
     ]
    }
   },
-  "hierarchy": "every prefab is one mesh object, as Update 3 (sign faces, lenses, glass, flames and the chain-link joined in as extra materials); the doors IX_CabinetDoor_2..6, IX_PumpDoor_7, IX_ChapelDoor_8, IX_CabinDoor_9 are children (Update 3's interactables: names, pivots, axes and ranges unchanged)",
+  "hierarchy": "every prefab is one mesh object, as Update 3 (sign faces, lenses, glass, flames and the chain-link joined in as extra materials); the doors IX_CabinetDoor_2..6, IX_PumpDoor_7, IX_ChapelDoor_8, IX_CabinDoor_9 are children (Update 3's interactables: names, pivots, axes and ranges unchanged); 1.1: the forest_devices instances (devices_instances) are empties under their parent showing the collections linked from ../forest_devices/devices.blend (props devices_item, package)",
   "dishes": "the reflector, the feed and the beacon stand where Update 3 has them (each dish at its own elevation: 38 / 42 / 45 / 40 / 36 deg); Dish_2 and Dish_5 share Dish_1's atlas (T_Far_Dish16), Dish_4 Dish_3's (T_Far_Dish12)",
   "lookout": "Update 3's treads and landings unchanged (decorative, as in Update 3: steep flights, 47..66 deg, stacked one over another - a CharacterController does not climb them); new: a stairwell in the cab floor over the last flight and the top landing (the floor is 0.88 m over that landing: Update 3's cab had no opening and the last flight hit it), a ship ladder of three treads from the landing up to the floor, rails round the well",
   "lights": "unchanged: Update 3's lights and halos sit in the new lenses (dish beacons and yard lights, the radome's and the relay mast's beacons, the chapel's candles, the campsite's torch)",
   "materials": "M_Far_Dish16 / Dish12 / Towers / Meteo / Lookout / Chapel / Small: baked PSX atlases (point filter, no mips); M_Far_Panel: the signs, lit, emission = albedo at 0.06; M_Base_ChainLink / M_Base_Barbed: the base's cut-outs (the relay compound); Update 3's M_Light_Red, M_Lamp_SodiumOff, M_LEDOff, M_GlassDirty, M_Candle, M_Headlight",
-  "sockets": "audio: the dishes' drives, the radome's air conditioner, the relay mast's wind, the anemometer, the lookout's cab, the pump, the chapel's bell, the cabin's stove, the tent",
+  "sockets": "audio: the dishes' drives, the radome's air conditioner, the relay mast's wind, the anemometer, the lookout's cab, the pump, the chapel's bell, the cabin's stove, the tent; mount (1.1): Mount_MeteoScreen (the weather station), Mount_TapeDeck_1..5 (the dish cabinets) - where the forest_devices models go",
+  "devices_instances": "forest_devices models placed on the mounts (1.1): MeteoScreen on MeteoStation, TapeDeck_1..5 in the dish cabinets; in Unity put forest_devices' prefab (MeteoScreen / TapeDeck) under the parent at pos / rot (the parent's frame) or posUnity / rotUnity_xyzw; DEVICES_CONTRACT.md has their parts and sockets",
   "model": "far.blend",
   "textures": "tex/far"
  }

@@ -143,8 +143,10 @@ FACES6 = {'-x': ((0, 1, 3, 2), (-1, 0, 0)), '+x': ((4, 6, 7, 5), (1, 0, 0)), '-y
 
 
 def box6(k, lo, hi, zones, skip=()):
-    """axis-aligned box lo..hi; zones = {'-x': z, ..., '*': default}; faces in skip are left out"""
+    """axis-aligned box lo..hi; zones = {'-x': z, ..., '*': default}; faces in skip are left out (lo / hi are sorted per
+    axis: corners given the other way round would otherwise turn the box inside out)"""
     lo, hi = Vector(lo), Vector(hi)
+    lo, hi = Vector([min(a, b) for a, b in zip(lo, hi)]), Vector([max(a, b) for a, b in zip(lo, hi)])
     if isinstance(zones, (int, float)):
         zones = {'*': zones}
     c = [Vector((x, y, z)) for x in (lo.x, hi.x) for y in (lo.y, hi.y) for z in (lo.z, hi.z)]

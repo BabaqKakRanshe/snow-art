@@ -1,0 +1,1983 @@
+{
+ "_doc": "Update 3 data for the road prefabs (from Forest_Layout.json / Forest_Materials.json / the FBX files): placements (Unity p, q xyzw), the EuroPost scatter, viewpoints along the road, the materials these models used",
+ "prefabs": {
+  "ZoneGate": [
+   {
+    "p": [
+     -511.5175,
+     29.2782,
+     554.2235
+    ],
+    "q": [
+     0.0,
+     -0.361118,
+     0.0,
+     0.93252
+    ]
+   }
+  ],
+  "Sign_Observatory": [
+   {
+    "p": [
+     -508.5606,
+     28.3271,
+     544.7421
+    ],
+    "q": [
+     0.0,
+     -0.361118,
+     0.0,
+     0.93252
+    ]
+   }
+  ],
+  "Sign_Viewpoint": [
+   {
+    "p": [
+     -198.251,
+     10.59,
+     182.1285
+    ],
+    "q": [
+     0.0,
+     -0.484455,
+     0.0,
+     0.874816
+    ]
+   }
+  ],
+  "Sign_Weather": [
+   {
+    "p": [
+     217.0,
+     13.2859,
+     -292.0
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  ],
+  "Sign_Lookout": [
+   {
+    "p": [
+     -267.0,
+     35.4572,
+     -74.0
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  ],
+  "Sign_Radar": [
+   {
+    "p": [
+     110.0,
+     30.3635,
+     -416.0
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  ],
+  "Sign_Relay": [
+   {
+    "p": [
+     -320.0,
+     48.5558,
+     -319.0
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  ],
+  "Sign_Pump": [
+   {
+    "p": [
+     515.0,
+     1.395,
+     -226.0
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  ],
+  "Dist_11": [
+   {
+    "p": [
+     -422.2246,
+     24.6143,
+     435.614
+    ],
+    "q": [
+     0.0,
+     -0.28129,
+     0.0,
+     0.959623
+    ]
+   }
+  ],
+  "Dist_09": [
+   {
+    "p": [
+     -293.3188,
+     15.5809,
+     282.7472
+    ],
+    "q": [
+     0.0,
+     -0.337471,
+     0.0,
+     0.941336
+    ]
+   }
+  ],
+  "Dist_07": [
+   {
+    "p": [
+     -145.0892,
+     10.4013,
+     154.503
+    ],
+    "q": [
+     0.0,
+     -0.634344,
+     0.0,
+     0.773051
+    ]
+   }
+  ],
+  "Dist_23": [
+   {
+    "p": [
+     18.3598,
+     6.8164,
+     65.7846
+    ],
+    "q": [
+     0.0,
+     -0.193294,
+     0.0,
+     0.981141
+    ]
+   }
+  ],
+  "Dist_03": [
+   {
+    "p": [
+     149.1061,
+     9.323,
+     -76.2688
+    ],
+    "q": [
+     0.0,
+     -0.498426,
+     0.0,
+     0.866932
+    ]
+   }
+  ],
+  "Bridge30": [
+   {
+    "p": [
+     -331.3327,
+     19.46,
+     331.6444
+    ],
+    "q": [
+     0.027617,
+     0.927355,
+     -0.011108,
+     -0.372997
+    ]
+   }
+  ],
+  "FallenTree": [
+   {
+    "p": [
+     -249.6192,
+     13.8313,
+     258.5371
+    ],
+    "q": [
+     0.002271,
+     -0.292269,
+     -0.007432,
+     0.956305
+    ]
+   }
+  ],
+  "LogCut": [
+   {
+    "p": [
+     -265.3021,
+     13.8253,
+     244.9482
+    ],
+    "q": [
+     0.0,
+     0.913506,
+     0.0,
+     -0.406826
+    ]
+   }
+  ],
+  "OverlookDeck": [
+   {
+    "p": [
+     -185.3,
+     10.2859,
+     148.0
+    ],
+    "q": [
+     0.0,
+     -0.396186,
+     0.0,
+     0.91817
+    ]
+   }
+  ]
+ },
+ "europosts": [
+  {
+   "p": [
+    -529.5743,
+    30.6816,
+    580.7496
+   ],
+   "q": [
+    0.0,
+    -0.333513,
+    0.0,
+    0.942745
+   ]
+  },
+  {
+   "p": [
+    -535.1725,
+    30.7794,
+    576.222
+   ],
+   "q": [
+    0.0,
+    -0.333513,
+    0.0,
+    0.942745
+   ]
+  },
+  {
+   "p": [
+    -496.7074,
+    27.4794,
+    543.3523
+   ],
+   "q": [
+    0.0,
+    -0.359762,
+    0.0,
+    0.933044
+   ]
+  },
+  {
+   "p": [
+    -502.0437,
+    27.5197,
+    538.5186
+   ],
+   "q": [
+    0.0,
+    -0.359762,
+    0.0,
+    0.933044
+   ]
+  },
+  {
+   "p": [
+    -464.7713,
+    23.064,
+    504.5372
+   ],
+   "q": [
+    0.0,
+    -0.322882,
+    0.0,
+    0.946439
+   ]
+  },
+  {
+   "p": [
+    -470.4701,
+    23.0706,
+    500.1367
+   ],
+   "q": [
+    0.0,
+    -0.322882,
+    0.0,
+    0.946439
+   ]
+  },
+  {
+   "p": [
+    -433.3951,
+    23.3468,
+    465.6076
+   ],
+   "q": [
+    0.0,
+    -0.3222,
+    0.0,
+    0.946672
+   ]
+  },
+  {
+   "p": [
+    -439.1002,
+    23.3652,
+    461.2154
+   ],
+   "q": [
+    0.0,
+    -0.3222,
+    0.0,
+    0.946672
+   ]
+  },
+  {
+   "p": [
+    -405.3511,
+    24.2629,
+    423.8723
+   ],
+   "q": [
+    0.0,
+    -0.282214,
+    0.0,
+    0.959352
+   ]
+  },
+  {
+   "p": [
+    -411.4042,
+    24.2388,
+    419.9736
+   ],
+   "q": [
+    0.0,
+    -0.282214,
+    0.0,
+    0.959352
+   ]
+  },
+  {
+   "p": [
+    -376.0704,
+    22.2784,
+    383.9977
+   ],
+   "q": [
+    0.0,
+    -0.345765,
+    0.0,
+    0.938321
+   ]
+  },
+  {
+   "p": [
+    -381.5488,
+    22.2725,
+    379.3258
+   ],
+   "q": [
+    0.0,
+    -0.345765,
+    0.0,
+    0.938321
+   ]
+  },
+  {
+   "p": [
+    -307.3674,
+    17.1913,
+    311.4752
+   ],
+   "q": [
+    0.0,
+    -0.352532,
+    0.0,
+    0.9358
+   ]
+  },
+  {
+   "p": [
+    -312.7778,
+    17.2096,
+    306.7247
+   ],
+   "q": [
+    0.0,
+    -0.352532,
+    0.0,
+    0.9358
+   ]
+  },
+  {
+   "p": [
+    -275.2567,
+    15.0942,
+    272.8977
+   ],
+   "q": [
+    0.0,
+    -0.326562,
+    0.0,
+    0.945176
+   ]
+  },
+  {
+   "p": [
+    -280.9211,
+    15.0788,
+    268.4531
+   ],
+   "q": [
+    0.0,
+    -0.326562,
+    0.0,
+    0.945176
+   ]
+  },
+  {
+   "p": [
+    -246.4689,
+    12.7238,
+    231.8185
+   ],
+   "q": [
+    0.0,
+    -0.303467,
+    0.0,
+    0.952842
+   ]
+  },
+  {
+   "p": [
+    -252.3428,
+    12.6862,
+    227.6546
+   ],
+   "q": [
+    0.0,
+    -0.303467,
+    0.0,
+    0.952842
+   ]
+  },
+  {
+   "p": [
+    -214.0067,
+    11.2292,
+    194.8357
+   ],
+   "q": [
+    0.0,
+    -0.396482,
+    0.0,
+    0.918043
+   ]
+  },
+  {
+   "p": [
+    -218.9431,
+    11.2159,
+    189.5943
+   ],
+   "q": [
+    0.0,
+    -0.396482,
+    0.0,
+    0.918043
+   ]
+  },
+  {
+   "p": [
+    -173.2345,
+    10.8411,
+    169.7192
+   ],
+   "q": [
+    0.0,
+    -0.592642,
+    0.0,
+    0.805466
+   ]
+  },
+  {
+   "p": [
+    -175.3768,
+    10.7946,
+    162.8453
+   ],
+   "q": [
+    0.0,
+    -0.592642,
+    0.0,
+    0.805466
+   ]
+  },
+  {
+   "p": [
+    -125.005,
+    9.9593,
+    159.3992
+   ],
+   "q": [
+    0.0,
+    -0.659391,
+    0.0,
+    0.7518
+   ]
+  },
+  {
+   "p": [
+    -125.9439,
+    10.0104,
+    152.2607
+   ],
+   "q": [
+    0.0,
+    -0.659391,
+    0.0,
+    0.7518
+   ]
+  },
+  {
+   "p": [
+    -75.6118,
+    10.1278,
+    149.5474
+   ],
+   "q": [
+    0.0,
+    -0.613938,
+    0.0,
+    0.789354
+   ]
+  },
+  {
+   "p": [
+    -77.3841,
+    10.0883,
+    142.569
+   ],
+   "q": [
+    0.0,
+    -0.613938,
+    0.0,
+    0.789354
+   ]
+  },
+  {
+   "p": [
+    -28.1142,
+    9.7917,
+    131.0696
+   ],
+   "q": [
+    0.0,
+    -0.471689,
+    0.0,
+    0.881765
+   ]
+  },
+  {
+   "p": [
+    -32.1103,
+    9.7928,
+    125.0804
+   ],
+   "q": [
+    0.0,
+    -0.471689,
+    0.0,
+    0.881765
+   ]
+  },
+  {
+   "p": [
+    8.5452,
+    8.4236,
+    95.7
+   ],
+   "q": [
+    0.0,
+    -0.327237,
+    0.0,
+    0.944942
+   ]
+  },
+  {
+   "p": [
+    2.8872,
+    8.3631,
+    91.2473
+   ],
+   "q": [
+    0.0,
+    -0.327237,
+    0.0,
+    0.944942
+   ]
+  },
+  {
+   "p": [
+    31.1695,
+    6.5019,
+    49.9975
+   ],
+   "q": [
+    0.0,
+    -0.111511,
+    0.0,
+    0.993763
+   ]
+  },
+  {
+   "p": [
+    24.1486,
+    6.446,
+    48.4018
+   ],
+   "q": [
+    0.0,
+    -0.111511,
+    0.0,
+    0.993763
+   ]
+  },
+  {
+   "p": [
+    50.2432,
+    7.7029,
+    5.9204
+   ],
+   "q": [
+    0.0,
+    -0.307314,
+    0.0,
+    0.951608
+   ]
+  },
+  {
+   "p": [
+    44.4031,
+    7.682,
+    1.7092
+   ],
+   "q": [
+    0.0,
+    -0.307314,
+    0.0,
+    0.951608
+   ]
+  },
+  {
+   "p": [
+    83.1059,
+    8.2592,
+    -30.5235
+   ],
+   "q": [
+    0.0,
+    -0.414304,
+    0.0,
+    0.910138
+   ]
+  },
+  {
+   "p": [
+    78.3777,
+    8.288,
+    -35.9534
+   ],
+   "q": [
+    0.0,
+    -0.414304,
+    0.0,
+    0.910138
+   ]
+  },
+  {
+   "p": [
+    125.4691,
+    8.9699,
+    -54.6293
+   ],
+   "q": [
+    0.0,
+    -0.540552,
+    0.0,
+    0.841311
+   ]
+  },
+  {
+   "p": [
+    122.4768,
+    8.9741,
+    -61.178
+   ],
+   "q": [
+    0.0,
+    -0.540552,
+    0.0,
+    0.841311
+   ]
+  },
+  {
+   "p": [
+    169.4819,
+    8.5259,
+    -79.2514
+   ],
+   "q": [
+    0.0,
+    -0.484931,
+    0.0,
+    0.874552
+   ]
+  },
+  {
+   "p": [
+    165.6682,
+    8.4754,
+    -85.3584
+   ],
+   "q": [
+    0.0,
+    -0.484931,
+    0.0,
+    0.874552
+   ]
+  },
+  {
+   "p": [
+    209.1919,
+    6.9909,
+    -110.7879
+   ],
+   "q": [
+    0.0,
+    -0.37836,
+    0.0,
+    0.925659
+   ]
+  },
+  {
+   "p": [
+    204.0534,
+    7.0263,
+    -115.8312
+   ],
+   "q": [
+    0.0,
+    -0.37836,
+    0.0,
+    0.925659
+   ]
+  },
+  {
+   "p": [
+    243.9536,
+    6.631,
+    -146.4957
+   ],
+   "q": [
+    0.0,
+    -0.398063,
+    0.0,
+    0.917358
+   ]
+  },
+  {
+   "p": [
+    239.0353,
+    6.6559,
+    -151.7541
+   ],
+   "q": [
+    0.0,
+    -0.398063,
+    0.0,
+    0.917358
+   ]
+  },
+  {
+   "p": [
+    279.1346,
+    7.6241,
+    -182.9074
+   ],
+   "q": [
+    0.0,
+    -0.3038,
+    0.0,
+    0.952736
+   ]
+  },
+  {
+   "p": [
+    273.2637,
+    7.652,
+    -187.0753
+   ],
+   "q": [
+    0.0,
+    -0.3038,
+    0.0,
+    0.952736
+   ]
+  },
+  {
+   "p": [
+    301.606,
+    12.0766,
+    -228.4893
+   ],
+   "q": [
+    0.0,
+    -0.174942,
+    0.0,
+    0.984579
+   ]
+  },
+  {
+   "p": [
+    294.8468,
+    12.0058,
+    -230.9696
+   ],
+   "q": [
+    0.0,
+    -0.174942,
+    0.0,
+    0.984579
+   ]
+  }
+ ],
+ "viewpoints": {
+  "Start": {
+   "name": "Start",
+   "p": [
+    -466.3921,
+    24.6194,
+    502.0262
+   ],
+   "target": [
+    -441.817,
+    24.1194,
+    470.4657
+   ],
+   "fov": 42.996,
+   "preview": "Forest_Start.jpg"
+  },
+  "Hut": {
+   "name": "Hut",
+   "p": [
+    -463.4461,
+    30.0617,
+    414.9842
+   ],
+   "target": [
+    -474.0,
+    29.9763,
+    404.0
+   ],
+   "fov": 41.555,
+   "preview": "Forest_Hut.jpg"
+  },
+  "Bridge": {
+   "name": "Bridge",
+   "p": [
+    -351.551,
+    22.6415,
+    352.3982
+   ],
+   "target": [
+    -324.2865,
+    20.6415,
+    323.1296
+   ],
+   "fov": 42.996,
+   "preview": "Forest_Bridge.jpg"
+  },
+  "Windfall": {
+   "name": "Windfall",
+   "p": [
+    -270.4216,
+    16.4037,
+    257.7362
+   ],
+   "target": [
+    -261.7694,
+    14.6043,
+    247.933
+   ],
+   "fov": 42.996,
+   "preview": "Forest_Windfall.jpg"
+  },
+  "Overlook": {
+   "name": "Overlook",
+   "p": [
+    -184.1359,
+    12.7359,
+    146.9023
+   ],
+   "target": [
+    13.0,
+    40.0,
+    -39.0
+   ],
+   "fov": 37.349,
+   "preview": "Forest_Overlook.jpg"
+  },
+  "UnderHand": {
+   "name": "UnderHand",
+   "p": [
+    39.1121,
+    9.055,
+    15.1849
+   ],
+   "target": [
+    13.0,
+    34.0,
+    -39.0
+   ],
+   "fov": 46.692,
+   "preview": "Forest_UnderHand.jpg"
+  },
+  "Dish1": {
+   "name": "Dish1",
+   "p": [
+    -424.3373,
+    26.1613,
+    444.936
+   ],
+   "target": [
+    -470.0,
+    37.0689,
+    380.0
+   ],
+   "fov": 40.134,
+   "preview": "Forest_Dish1.jpg"
+  }
+ },
+ "anchors": [
+  {
+   "name": "Car_Start",
+   "p": [
+    -463.1961,
+    22.8694,
+    495.643
+   ],
+   "q": [
+    0.022677,
+    0.898151,
+    -0.011083,
+    -0.438962
+   ]
+  },
+  {
+   "name": "Car_Parked",
+   "p": [
+    323.2564,
+    16.3794,
+    -335.4306
+   ],
+   "q": [
+    0.0,
+    -0.688355,
+    0.0,
+    0.725374
+   ]
+  }
+ ],
+ "spawn": {
+  "p": [
+   -462.3023,
+   22.8894,
+   497.0994
+  ],
+  "yaw": 142.09
+ },
+ "interactables": [],
+ "prefabLights": [],
+ "prefabGlows": [],
+ "noColliderPrefixes": [
+  "Forest_Wires",
+  "Forest_Water",
+  "Forest_Mist",
+  "Mist_",
+  "Weeds_",
+  "Fern_",
+  "OldFence",
+  "Branches_",
+  "Pebbles_",
+  "Item_"
+ ],
+ "u3_models": {
+  "ZoneGate": {
+   "bb": [
+    [
+     -4.45,
+     -0.2,
+     -0.0
+    ],
+    [
+     4.45,
+     0.2,
+     2.81
+    ]
+   ],
+   "tris": 560,
+   "mats": [
+    "M_Concrete",
+    "M_Galvanized",
+    "M_ChainLink",
+    "M_Rust",
+    "M_Steel",
+    "M_PaintGreyMetal",
+    "M_ObsSigns",
+    "M_PaintWhite"
+   ]
+  },
+  "Sign_Observatory": {
+   "bb": [
+    [
+     -1.215,
+     -0.024,
+     -0.4
+    ],
+    [
+     1.215,
+     0.06,
+     2.177
+    ]
+   ],
+   "tris": 118,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Forsthuette": {
+   "bb": [
+    [
+     -0.565,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.565,
+     0.06,
+     1.804
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Viewpoint": {
+   "bb": [
+    [
+     -0.615,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.615,
+     0.06,
+     1.773
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Dist_11": {
+   "bb": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.06,
+     1.731
+    ]
+   ],
+   "tris": 118,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Hochsitz": {
+   "bb": [
+    [
+     -1.286,
+     -2.629,
+     -0.405
+    ],
+    [
+     1.286,
+     1.289,
+     6.043
+    ]
+   ],
+   "tris": 1500,
+   "mats": [
+    "M_WoodPole",
+    "M_Boards",
+    "M_BoardsDark",
+    "M_RoofTar"
+   ]
+  },
+  "Bridge30": {
+   "bb": [
+    [
+     -16.053,
+     -2.6,
+     -10.6
+    ],
+    [
+     16.07,
+     2.6,
+     1.061
+    ]
+   ],
+   "tris": 5804,
+   "mats": [
+    "M_WoodPlanks",
+    "M_BoardsDark",
+    "M_Bark",
+    "M_DeadWood"
+   ]
+  },
+  "OverlookDeck": {
+   "bb": [
+    [
+     -2.545,
+     -0.95,
+     -3.15
+    ],
+    [
+     2.545,
+     3.645,
+     1.995
+    ]
+   ],
+   "tris": 1488,
+   "mats": [
+    "M_WoodPlanks",
+    "M_DeadWood",
+    "M_Rust",
+    "M_StoveIron"
+   ]
+  },
+  "Dist_09": {
+   "bb": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.06,
+     1.731
+    ]
+   ],
+   "tris": 118,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Dist_07": {
+   "bb": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.06,
+     1.731
+    ]
+   ],
+   "tris": 118,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Dist_23": {
+   "bb": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.06,
+     1.731
+    ]
+   ],
+   "tris": 118,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Dist_03": {
+   "bb": [
+    [
+     -0.765,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.765,
+     0.06,
+     1.731
+    ]
+   ],
+   "tris": 118,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Weather": {
+   "bb": [
+    [
+     -0.665,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.665,
+     0.06,
+     1.798
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Lookout": {
+   "bb": [
+    [
+     -0.665,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.665,
+     0.06,
+     1.783
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Pump": {
+   "bb": [
+    [
+     -0.565,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.565,
+     0.06,
+     1.823
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Radar": {
+   "bb": [
+    [
+     -0.465,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.465,
+     0.06,
+     1.822
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  },
+  "Sign_Relay": {
+   "bb": [
+    [
+     -0.665,
+     -0.024,
+     -0.4
+    ],
+    [
+     0.665,
+     0.06,
+     1.811
+    ]
+   ],
+   "tris": 134,
+   "mats": [
+    "M_Galvanized",
+    "M_ObsSigns",
+    "M_MetalGrey"
+   ]
+  }
+ },
+ "materials": {
+  "M_ObsSigns": {
+   "name": "M_ObsSigns",
+   "type": "lit",
+   "albedo": "T_ObsSigns_A_px.png",
+   "normal": "",
+   "mask": "T_ObsSigns_M_px.png",
+   "emissionMap": "T_ObsSigns_A_px.png",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "emissionIntensity": 0.06,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Reflector": {
+   "name": "M_Reflector",
+   "type": "emissive",
+   "albedo": "",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.8,
+    0.33,
+    0.02
+   ],
+   "emission": [
+    1.0,
+    0.42,
+    0.06
+   ],
+   "emissionIntensity": 0.8,
+   "smoothness": 0.5,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Galvanized": {
+   "name": "M_Galvanized",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.62,
+    0.63,
+    0.63
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.45,
+   "metallic": 0.6,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_MetalGrey": {
+   "name": "M_MetalGrey",
+   "type": "lit",
+   "albedo": "T_BVPaintMetal_A_px.png",
+   "normal": "",
+   "mask": "T_BVPaintMetal_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.409,
+    0.4231,
+    0.4369
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Concrete": {
+   "name": "M_Concrete",
+   "type": "lit",
+   "albedo": "T_Concrete_A_px.png",
+   "normal": "",
+   "mask": "T_Concrete_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.25,
+    0.25
+   ],
+   "color": [
+    0.6504,
+    0.631,
+    0.5942
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 1.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_ChainLink": {
+   "name": "M_ChainLink",
+   "type": "cutout",
+   "albedo": "T_ChainLink_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3333333333333333,
+   "metallic": 0.0,
+   "cutoff": 0.45,
+   "normalScale": 1.0,
+   "doubleSided": true,
+   "instancing": true,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Rust": {
+   "name": "M_Rust",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.3,
+    0.14,
+    0.07
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.25,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Steel": {
+   "name": "M_Steel",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintGreyMetal": {
+   "name": "M_PaintGreyMetal",
+   "type": "lit",
+   "albedo": "T_PaintWhite_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.42,
+    0.43,
+    0.43
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_PaintWhite": {
+   "name": "M_PaintWhite",
+   "type": "lit",
+   "albedo": "T_PaintWhite_A_px.png",
+   "normal": "",
+   "mask": "T_Paint_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_WoodPlanks": {
+   "name": "M_WoodPlanks",
+   "type": "lit",
+   "albedo": "T_WoodSiding_A_px.png",
+   "normal": "",
+   "mask": "T_WoodSiding_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.3,
+    0.26,
+    0.21
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_BoardsDark": {
+   "name": "M_BoardsDark",
+   "type": "lit",
+   "albedo": "T_WoodSiding_A_px.png",
+   "normal": "",
+   "mask": "T_WoodSiding_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    0.5,
+    0.5
+   ],
+   "color": [
+    0.34,
+    0.3,
+    0.26
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.4,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_Bark": {
+   "name": "M_Bark",
+   "type": "lit",
+   "albedo": "T_Bark_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    0.5
+   ],
+   "color": [
+    1,
+    1,
+    1
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_DeadWood": {
+   "name": "M_DeadWood",
+   "type": "lit",
+   "albedo": "T_Bark_A_px.png",
+   "normal": "",
+   "mask": "",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    0.5
+   ],
+   "color": [
+    0.95,
+    0.93,
+    0.9
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.0,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  },
+  "M_StoveIron": {
+   "name": "M_StoveIron",
+   "type": "lit",
+   "albedo": "T_Steel_A_px.png",
+   "normal": "",
+   "mask": "T_Steel_M_px.png",
+   "emissionMap": "",
+   "tiling": [
+    1,
+    1
+   ],
+   "color": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "emission": [
+    0,
+    0,
+    0
+   ],
+   "emissionIntensity": 0.0,
+   "smoothness": 0.3,
+   "metallic": 0.0,
+   "cutoff": 0.5,
+   "normalScale": 1.0,
+   "doubleSided": false,
+   "instancing": false,
+   "softness": 2.6,
+   "detail": {
+    "albedo": "",
+    "normal": "",
+    "tiling": [
+     1,
+     1
+    ],
+    "normalScale": 1.0
+   }
+  }
+ }
+}

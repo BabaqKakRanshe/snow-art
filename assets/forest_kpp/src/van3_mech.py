@@ -57,7 +57,13 @@ def rbox(kb, c, size, zone, r=0.01, ch=0.006, axis='z', caps=True):
 
 
 def obox(kb, c, size, zone, R):
-    """oriented plain box (R columns = local axes)"""
+    """oriented plain box (R columns = local axes); a left-handed R would turn the box inside out (its faces' winding
+    follows the frame), so its third axis is flipped - the box is symmetric, only the normals change"""
+    R = Matrix(R)
+    if R.determinant() < 0:
+        R = R.copy()
+        for i in range(3):
+            R[i][2] = -R[i][2]
     kb.box_m(Vector(c), size, zone, R)
 
 

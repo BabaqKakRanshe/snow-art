@@ -66,10 +66,10 @@
   "Meteo": {
    "size": 1024,
    "ppm": 51.3,
-   "area_m2": 105.7,
-   "uv_fill": 0.265,
-   "colours": 63,
-   "seconds": 87.0
+   "area_m2": 94.9,
+   "uv_fill": 0.238,
+   "colours": 64,
+   "seconds": 33.2
   },
   "Lookout": {
    "size": 1024,
@@ -105,7 +105,7 @@
   "IX_CabinetDoor_5": "IX_CabinetDoor_4"
  },
  "part_boxes": 8,
- "tris": 72895,
+ "tris": 72211,
  "tris_by_object": {
   "Cabin": 5164,
   "Campsite": 1475,
@@ -124,7 +124,7 @@
   "IX_ChapelDoor_8": 416,
   "IX_PumpDoor_7": 200,
   "LookoutTower": 6474,
-  "MeteoStation": 5618,
+  "MeteoStation": 4934,
   "PumpHouse": 1350,
   "Radome": 5480,
   "RelayMast": 11620
@@ -162,5 +162,14 @@
   "Chapel": 4424,
   "Cabin": 4642,
   "Campsite": 1816
- }
+ },
+ "devices_instances": [
+  "MeteoScreen",
+  "TapeDeck_1",
+  "TapeDeck_2",
+  "TapeDeck_3",
+  "TapeDeck_4",
+  "TapeDeck_5"
+ ],
+ "version": "1.1"
 }

@@ -3,7 +3,7 @@ IESNA:LM-63-2002
 [TESTLAB] Generator shed (Snow)
 [MANUFAC] Generator shed (Snow)
 [LUMCAT] fluor
-[LUMINAIRE] fluorescent batten under the rafters (one 36 W tube): flickers from the start, without power (Update 3 Light_booth: Point 0.45, range 6.5, colour 0.86 0.96 1.0, flicker min 0.08 max 1.0 speed 5)
+[LUMINAIRE] fluorescent batten under the rafters (one 36 W tube): v2 - on with the booth's power only, flickering a few seconds as it strikes (flicker min / max / speed as Update 3's Light_booth); Point 0.45, range 6.5
 [LAMP] incandescent, 6000 K
 [OTHER] nadir (0 deg) = beam axis; C0 = light -Y, C90 = light -X, C180 = light +Y, C270 = light +X
 TILT=NONE

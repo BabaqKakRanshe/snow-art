@@ -3,6 +3,8 @@ import bpy, sys, math
 import numpy as np
 from mathutils import Vector
 bpy.ops.wm.open_mainfile(filepath=sys.argv[-1] if sys.argv[-1].endswith('.blend') else '/home/claude/uaz/out/main.blend')
+for _lib in list(bpy.data.libraries):                 # 1.2: the snow_kit instances (linked) are not the building's
+    bpy.data.libraries.remove(_lib)                  # geometry: checked as in 1.1, the station has main_leit_check.py
 meshes = [o for o in bpy.data.objects if o.type == 'MESH' and not o.name.startswith('COL_')]
 buckets = {}
 F = []

@@ -1,0 +1,454 @@
+{
+ "parts": {
+  "Pager_LCD": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.0112,
+    0.0405
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Pager",
+   "states": [],
+   "note": "the LCD, 20 x 4 characters of 5 x 7 dots: M_Pager_LCD (lit: green backlight, a sample list) / M_Pager_LCD_Off (in the file); its own texture 124 x 40, UV 0..1 (u right, v up) - the game draws its own list into it (cells 6 x 9 px from (2, 2))",
+   "size": [
+    0.058,
+    0.019
+   ],
+   "object": "Pager_LCD",
+   "root": "Item_Pager",
+   "pivotUnity": [
+    0.0,
+    0.0405,
+    0.0112
+   ]
+  },
+  "Pager_Key_Up": {
+   "kind": "slide",
+   "pivot": [
+    -0.017,
+    -0.011,
+    0.013
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.0012
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_Pager",
+   "states": [],
+   "note": "up: the previous message (the game: arrow up / wheel); pushes in 1.2 mm",
+   "object": "Pager_Key_Up",
+   "root": "Item_Pager",
+   "box": {
+    "center": [
+     0.0,
+     -0.0008,
+     0.0
+    ],
+    "size": [
+     0.014,
+     0.002,
+     0.01
+    ]
+   },
+   "pivotUnity": [
+    0.017,
+    0.013,
+    0.011
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Pager_Key_Read": {
+   "kind": "slide",
+   "pivot": [
+    0.0,
+    -0.011,
+    0.013
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.0012
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_Pager",
+   "states": [],
+   "note": "read: open the picked message on the screen / back (the game: E); pushes in 1.2 mm",
+   "object": "Pager_Key_Read",
+   "root": "Item_Pager",
+   "box": {
+    "center": [
+     0.0,
+     -0.0008,
+     0.0
+    ],
+    "size": [
+     0.014,
+     0.002,
+     0.01
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.013,
+    0.011
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Pager_Key_Down": {
+   "kind": "slide",
+   "pivot": [
+    0.017,
+    -0.011,
+    0.013
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.0012
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_Pager",
+   "states": [],
+   "note": "down: the next message (the game: arrow down / wheel); pushes in 1.2 mm",
+   "object": "Pager_Key_Down",
+   "root": "Item_Pager",
+   "box": {
+    "center": [
+     0.0,
+     -0.0008,
+     0.0
+    ],
+    "size": [
+     0.014,
+     0.002,
+     0.01
+    ]
+   },
+   "pivotUnity": [
+    -0.017,
+    0.013,
+    0.011
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Pager_LED": {
+   "kind": "static",
+   "pivot": [
+    0.027,
+    -0.0113,
+    0.025
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Pager",
+   "states": [],
+   "note": "the message LED: M_Pager_LEDR (blinks while a message is unread) / M_Pager_LED_Off (in the file)",
+   "object": "Pager_LED",
+   "root": "Item_Pager",
+   "pivotUnity": [
+    -0.027,
+    0.025,
+    0.0113
+   ]
+  },
+  "Pager_Switch": {
+   "kind": "slide",
+   "pivot": [
+    -0.0065,
+    0.0,
+    0.056
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.003
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_Pager",
+   "states": [],
+   "note": "the alert switch on the top: 0 = BEEP (left), 0.003 = VIB (right); silent is in the pager's menu",
+   "object": "Pager_Switch",
+   "root": "Item_Pager",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0006
+    ],
+    "size": [
+     0.004,
+     0.003,
+     0.002
+    ]
+   },
+   "pivotUnity": [
+    0.0065,
+    0.056,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Pager": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the worker's pager (root): standing on its bottom, origin under its middle; the front (LCD, keys) to -y, the belt clip on the left side (-x); raised in the LEFT hand to pick a message, the message itself is printed on the screen by the game",
+   "object": "Item_Pager",
+   "root": "Item_Pager",
+   "mass_kg": 0.11,
+   "box": {
+    "center": [
+     -0.0016,
+     -0.0009,
+     0.028
+    ],
+    "size": [
+     0.0812,
+     0.0238,
+     0.056
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Hand_Pager": {
+   "pos": [
+    0.0,
+    0.004,
+    0.022
+   ],
+   "kind": "hand",
+   "parent": "Item_Pager",
+   "note": "the left hand's grip: the lower body, the thumb on the keys",
+   "root": "Item_Pager",
+   "posUnity": [
+    0.0,
+    0.022,
+    -0.004
+   ]
+  },
+  "Screen": {
+   "pos": [
+    0.0,
+    -0.0112,
+    0.0405
+   ],
+   "kind": "point",
+   "parent": "Item_Pager",
+   "note": "the LCD centre, its normal and up: where the game aims the raised pager at the eye",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Pager",
+   "posUnity": [
+    0.0,
+    0.0405,
+    0.0112
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "LED": {
+   "pos": [
+    0.027,
+    -0.0113,
+    0.025
+   ],
+   "kind": "light",
+   "parent": "Item_Pager",
+   "note": "a tiny red point light while the LED blinks (optional)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "color": [
+    1.0,
+    0.12,
+    0.06
+   ],
+   "range": 0.15,
+   "root": "Item_Pager",
+   "posUnity": [
+    -0.027,
+    0.025,
+    0.0113
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Beeper": {
+   "pos": [
+    0.02,
+    0.0,
+    0.056
+   ],
+   "kind": "audio",
+   "parent": "Item_Pager",
+   "note": "the beeper (alert sound)",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Pager",
+   "posUnity": [
+    -0.02,
+    0.056,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Belt": {
+   "pos": [
+    -0.0412,
+    0.001,
+    0.03
+   ],
+   "kind": "attach",
+   "parent": "Item_Pager",
+   "note": "the clip on the belt: worn at the hip when lowered",
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "root": "Item_Pager",
+   "posUnity": [
+    0.0412,
+    0.03,
+    -0.001
+   ],
+   "dirUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Pager",
+   "parent": "Item_Pager",
+   "root": "Item_Pager",
+   "type": "box",
+   "center": [
+    -0.0015,
+    -0.0009,
+    0.0288
+   ],
+   "size": [
+    0.081,
+    0.0238,
+    0.0576
+   ],
+   "center_root": [
+    -0.0015,
+    -0.0009,
+    0.0288
+   ],
+   "centerUnity": [
+    0.0015,
+    0.0288,
+    0.0009
+   ],
+   "sizeUnity": [
+    0.081,
+    0.0576,
+    0.0238
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees, kg",
+  "frame": "the root in its own frame: z up, the front (LCD, keys) -y; origin on the surface it stands on (z = 0) under its middle. Every pivot / pos here is in the root's frame; FBX with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root's front (-y) is the prefab's +Z",
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent's own frame, centerUnity / sizeUnity the same in Unity axes. The COL_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "mass": "mass_kg on the root: a suggestion for the rigidbody",
+  "model": "pager.blend",
+  "textures": "tex",
+  "materials": "M_Pager_Small: the baked PSX atlas (point filter) of the body, keys, switch, clip; M_Pager_Panel: the printed faces (the front with the bezel, key signs and maker line, the side's inventory sticker, the top's BEEP / VIB) - another material on the body; M_Pager_LCD / M_Pager_LCD_Off: the screen lit (green backlight, a sample list) / off - lit in the file; own texture, UV 0..1, the game replaces it with its list; M_Pager_LEDR / M_Pager_LED_Off: the message LED (off in the file)",
+  "names": "the root is Item_Pager as forest_items' / forest_gear's items; parts and sockets start with Pager_"
+ }
+}

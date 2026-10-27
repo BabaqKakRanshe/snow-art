@@ -1,0 +1,288 @@
+{
+ "ies": [
+  "beacon",
+  "flood",
+  "street"
+ ],
+ "atlases": {
+  "Kit": {
+   "size": 1024,
+   "ppm": 64.0,
+   "area_m2": 38.77,
+   "uv_fill": 0.151,
+   "colours": 64
+  }
+ },
+ "items": {
+  "Kit_Camera_Head": {
+   "tris": 408,
+   "size": [
+    0.121,
+    0.3459,
+    0.1285
+   ]
+  },
+  "Kit_Camera_BracketWall": {
+   "tris": 251,
+   "size": [
+    0.1,
+    0.2609,
+    0.145
+   ]
+  },
+  "Kit_Camera_BracketPole": {
+   "tris": 422,
+   "size": [
+    0.264,
+    0.6646,
+    0.255
+   ]
+  },
+  "Kit_Monitor_CRT": {
+   "tris": 422,
+   "size": [
+    0.34,
+    0.4502,
+    0.31
+   ]
+  },
+  "Kit_Console_2": {
+   "tris": 150,
+   "size": [
+    0.3,
+    0.3224,
+    0.1178
+   ]
+  },
+  "Kit_Console_4": {
+   "tris": 150,
+   "size": [
+    0.5,
+    0.3224,
+    0.1178
+   ]
+  },
+  "Kit_Console_Button": {
+   "tris": 352,
+   "size": [
+    0.04,
+    0.077,
+    0.0158
+   ]
+  },
+  "Kit_Console_Label_Schranke": {
+   "tris": 2,
+   "size": [
+    0.07,
+    0.0245,
+    0.0
+   ]
+  },
+  "Kit_Console_Label_Tor": {
+   "tris": 2,
+   "size": [
+    0.07,
+    0.0245,
+    0.0
+   ]
+  },
+  "Kit_Console_Label_Licht": {
+   "tris": 2,
+   "size": [
+    0.07,
+    0.0245,
+    0.0
+   ]
+  },
+  "Kit_Console_Label_Blank": {
+   "tris": 2,
+   "size": [
+    0.07,
+    0.0245,
+    0.0
+   ]
+  },
+  "Kit_Phone": {
+   "tris": 925,
+   "size": [
+    0.2658,
+    0.3259,
+    0.1639
+   ]
+  },
+  "Kit_Cabinet_Power": {
+   "tris": 1098,
+   "size": [
+    0.66,
+    0.342,
+    0.812
+   ]
+  },
+  "Kit_JunctionBox": {
+   "tris": 474,
+   "size": [
+    0.172,
+    0.091,
+    0.172
+   ]
+  },
+  "Kit_Conduit_Straight": {
+   "tris": 16,
+   "size": [
+    1.0,
+    0.032,
+    0.032
+   ]
+  },
+  "Kit_Conduit_Elbow": {
+   "tris": 172,
+   "size": [
+    0.139,
+    0.038,
+    0.139
+   ]
+  },
+  "Kit_Conduit_Clamp": {
+   "tris": 132,
+   "size": [
+    0.008,
+    0.079,
+    0.0498
+   ]
+  },
+  "Kit_Conduit_Entry": {
+   "tris": 80,
+   "size": [
+    0.053,
+    0.0416,
+    0.048
+   ]
+  },
+  "Kit_Pole": {
+   "tris": 1216,
+   "size": [
+    1.6,
+    0.359,
+    8.68
+   ]
+  },
+  "Kit_Pole_Trafo": {
+   "tris": 2828,
+   "size": [
+    1.6,
+    1.03,
+    8.68
+   ]
+  },
+  "Kit_RoofStand": {
+   "tris": 1051,
+   "size": [
+    0.6,
+    0.2058,
+    2.25
+   ]
+  },
+  "Kit_Wire_Bare": {
+   "tris": 270,
+   "size": [
+    40.0011,
+    0.0086,
+    1.6059
+   ]
+  },
+  "Kit_Wire_Drop": {
+   "tris": 70,
+   "size": [
+    10.0004,
+    0.0133,
+    0.1106
+   ]
+  },
+  "Kit_DoorLock": {
+   "tris": 235,
+   "size": [
+    0.081,
+    0.0365,
+    0.16
+   ]
+  },
+  "Kit_DoorLock_Strike": {
+   "tris": 266,
+   "size": [
+    0.036,
+    0.0414,
+    0.2067
+   ]
+  },
+  "Kit_Beacon": {
+   "tris": 351,
+   "size": [
+    0.3464,
+    0.4,
+    0.26
+   ]
+  },
+  "Kit_Mast": {
+   "tris": 503,
+   "size": [
+    0.5,
+    0.5,
+    4.642
+   ]
+  },
+  "Kit_Mast_Flood": {
+   "tris": 728,
+   "size": [
+    0.8,
+    0.8036,
+    0.485
+   ]
+  },
+  "Kit_Mast_Horn": {
+   "tris": 950,
+   "size": [
+    0.3354,
+    0.8403,
+    0.3567
+   ]
+  },
+  "Kit_Mast_Yagi": {
+   "tris": 580,
+   "size": [
+    0.264,
+    1.8687,
+    0.96
+   ]
+  },
+  "Kit_Mast_Lamp": {
+   "tris": 354,
+   "size": [
+    0.9,
+    1.994,
+    0.72
+   ]
+  },
+  "Kit_Mast_Antenna": {
+   "tris": 322,
+   "size": [
+    0.7295,
+    0.7295,
+    2.296
+   ]
+  },
+  "Kit_Mast_Siren": {
+   "tris": 602,
+   "size": [
+    0.52,
+    0.52,
+    1.08
+   ]
+  }
+ },
+ "tris": 15386,
+ "contract": {
+  "parts": 65,
+  "sockets": 70,
+  "colliders": 37
+ }
+}

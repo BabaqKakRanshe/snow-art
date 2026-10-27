@@ -3,7 +3,7 @@ IESNA:LM-63-2002
 [TESTLAB] Generator shed (Snow)
 [MANUFAC] Generator shed (Snow)
 [LUMCAT] bulkhead_kpp
-[LUMINAIRE] caged bulkhead over the door (the shed's), 60 W incandescent: on with the station power (Update 3: Point 1.0, range 9, off until power)
+[LUMINAIRE] caged bulkhead over the door (the shed's), 60 W incandescent: on with the booth's power (Update 3: Point 1.0, range 9, off until power)
 [LAMP] incandescent, 2700 K
 [OTHER] nadir (0 deg) = beam axis; C0 = light -Y, C90 = light -X, C180 = light +Y, C270 = light +X
 TILT=NONE

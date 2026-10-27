@@ -1,0 +1,2506 @@
+{
+ "parts": {
+  "DosingPump_Waybill": {
+   "kind": "item",
+   "pivot": [
+    -0.2,
+    -0.16,
+    0.365
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [],
+   "note": "the waybill (LIEFERSCHEIN, dated 03.11.1991 - signed back-dated): taped on the tank, the player takes it off and reads it; M_Parts_Waybill, UV 0..1 (u across, v up the page)",
+   "object": "DosingPump_Waybill",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     0.0,
+     0.0073,
+     0.0
+    ],
+    "size": [
+     0.1441,
+     0.0163,
+     0.21
+    ]
+   },
+   "pivotUnity": [
+    0.2,
+    0.365,
+    0.16
+   ]
+  },
+  "DosingPump_Stroke": {
+   "kind": "twist",
+   "pivot": [
+    0.16,
+    0.02,
+    0.225
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0.0,
+    270.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [],
+   "note": "the stroke knob: 0..270 deg clockwise seen from above = 0..100 % (the dose)",
+   "removable": false,
+   "object": "DosingPump_Stroke",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0147
+    ],
+    "size": [
+     0.04,
+     0.04,
+     0.0295
+    ]
+   },
+   "pivotUnity": [
+    -0.16,
+    0.225,
+    -0.02
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "DosingPump_Switch": {
+   "kind": "twist",
+   "pivot": [
+    0.3,
+    -0.022,
+    0.227
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    90.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [],
+   "note": "the motor switch on the terminal box: 0 = OFF (the lever across), 90 deg clockwise seen from the front = ON",
+   "removable": false,
+   "object": "DosingPump_Switch",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.03,
+     0.02,
+     0.024
+    ]
+   },
+   "pivotUnity": [
+    -0.3,
+    0.227,
+    0.022
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "DosingPump_V1": {
+   "kind": "hinge",
+   "pivot": [
+    0.035,
+    -0.06,
+    0.136
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "V1, suction (tank -> pump): the lever across the pipe = closed; 90 deg = open (along the pipe) (turns counter-clockwise seen from above)",
+   "object": "DosingPump_V1",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     0.0,
+     -0.038,
+     0.0
+    ],
+    "size": [
+     0.016,
+     0.076,
+     0.009
+    ]
+   },
+   "pivotUnity": [
+    -0.035,
+    0.136,
+    0.06
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "DosingPump_V2": {
+   "kind": "hinge",
+   "pivot": [
+    0.06,
+    -0.095,
+    0.341
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "V2, bleed (back into the tank): open to prime - run the motor until no air comes, then close (turns counter-clockwise seen from above)",
+   "object": "DosingPump_V2",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     0.0,
+     -0.038,
+     0.0
+    ],
+    "size": [
+     0.016,
+     0.076,
+     0.009
+    ]
+   },
+   "pivotUnity": [
+    -0.06,
+    0.341,
+    0.095
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "DosingPump_V3": {
+   "kind": "hinge",
+   "pivot": [
+    0.3,
+    -0.095,
+    0.341
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "V3, discharge (pump -> outlet / hose): open last (turns counter-clockwise seen from above)",
+   "object": "DosingPump_V3",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     0.0,
+     -0.038,
+     0.0
+    ],
+    "size": [
+     0.016,
+     0.076,
+     0.009
+    ]
+   },
+   "pivotUnity": [
+    -0.3,
+    0.341,
+    0.095
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "DosingPump_Needle": {
+   "kind": "hinge",
+   "pivot": [
+    0.215,
+    -0.1108,
+    0.395
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    270.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [],
+   "note": "the gauge needle: 0 at 0 bar, +270 deg (clockwise seen from the front) at 10 bar; 27 deg per bar",
+   "object": "DosingPump_Needle",
+   "root": "Item_DosingPump",
+   "box": {
+    "center": [
+     -0.0064,
+     -0.0002,
+     -0.0064
+    ],
+    "size": [
+     0.0181,
+     0.002,
+     0.0181
+    ]
+   },
+   "pivotUnity": [
+    -0.215,
+    0.395,
+    0.1108
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "DosingPump_Hose": {
+   "kind": "static",
+   "pivot": [
+    0.415,
+    -0.095,
+    0.31
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_DosingPump",
+   "states": [],
+   "note": "the discharge hose from the outlet to the injection fitting on the pump house pipe - it fits the placement in forest_far PumpHouse only: hide it until the pump is installed (C08), show it then",
+   "object": "DosingPump_Hose",
+   "root": "Item_DosingPump",
+   "pivotUnity": [
+    -0.415,
+    0.31,
+    0.095
+   ]
+  },
+  "Item_DosingPump": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the dosing pump (root): a skid 0.80 x 0.46 m, origin on the floor under its middle; the valves and the gauge to the front (-y); two carry it",
+   "object": "Item_DosingPump",
+   "root": "Item_DosingPump",
+   "mass_kg": 45.0,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.32
+    ],
+    "size": [
+     0.9465,
+     0.46,
+     0.64
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SodiumLamp_ArcTube": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.176
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_SodiumLamp",
+   "states": [],
+   "note": "the ceramic arc tube: M_Parts_ArcTube_Off (in the file) / M_Parts_ArcTube (lit: orange, it warms up from a dim red in about a minute) - the searchlight's light comes from here",
+   "object": "SodiumLamp_ArcTube",
+   "root": "Item_SodiumLamp",
+   "pivotUnity": [
+    0.0,
+    0.176,
+    0.0
+   ]
+  },
+  "Item_SodiumLamp": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 400 W high-pressure sodium lamp, E40, tubular clear (root): standing on its cap, origin under the contact; the glass M_Parts_LampGlass",
+   "object": "Item_SodiumLamp",
+   "root": "Item_SodiumLamp",
+   "mass_kg": 0.18,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.145
+    ],
+    "size": [
+     0.048,
+     0.048,
+     0.29
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_SodiumLampBox": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the sodium lamp's carton (root): standing, origin under its middle; it does not open (the game hands out Item_SodiumLamp)",
+   "object": "Item_SodiumLampBox",
+   "root": "Item_SodiumLampBox",
+   "mass_kg": 0.3,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.15
+    ],
+    "size": [
+     0.072,
+     0.072,
+     0.3
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "RadarCRT_Face": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.004
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RadarCRT",
+   "states": [],
+   "note": "the face (down while it stands on it): M_Parts_CRTFace dark (in the file); UV 0..1 - the game draws the sweep (u right, v up seen from in front of the face, the lugs A / B left / right)",
+   "object": "RadarCRT_Face",
+   "root": "Item_RadarCRT",
+   "pivotUnity": [
+    0.0,
+    0.004,
+    0.0
+   ]
+  },
+  "Item_RadarCRT": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the radar display tube (root): standing on its face, origin at the face's middle (the lowest point); the neck up; two carry it by the lugs",
+   "object": "Item_RadarCRT",
+   "root": "Item_RadarCRT",
+   "mass_kg": 14.0,
+   "box": {
+    "center": [
+     0.0,
+     -0.0002,
+     0.2915
+    ],
+    "size": [
+     0.424,
+     0.4245,
+     0.567
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "RelayUnit_Needle": {
+   "kind": "hinge",
+   "pivot": [
+    -0.1167,
+    -0.1612,
+    0.0404
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    100.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [],
+   "note": "the RF LEVEL needle: 0 = left (no signal), +100 deg clockwise seen from the front = full scale; the red zone from 80",
+   "object": "RelayUnit_Needle",
+   "root": "Item_RelayUnit",
+   "box": {
+    "center": [
+     -0.0153,
+     0.0,
+     0.0129
+    ],
+    "size": [
+     0.0314,
+     0.002,
+     0.0266
+    ]
+   },
+   "pivotUnity": [
+    0.1167,
+    0.0404,
+    0.1612
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "RelayUnit_LED_PWR": {
+   "kind": "static",
+   "pivot": [
+    -0.0322,
+    -0.1608,
+    0.0728
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [],
+   "note": "PWR LED: M_Parts_LEDG (lit) / M_Parts_LED_Off (in the file)",
+   "lamp_kind": "g",
+   "object": "RelayUnit_LED_PWR",
+   "root": "Item_RelayUnit",
+   "pivotUnity": [
+    0.0322,
+    0.0728,
+    0.1608
+   ]
+  },
+  "RelayUnit_LED_TX": {
+   "kind": "static",
+   "pivot": [
+    -0.004,
+    -0.1608,
+    0.0728
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [],
+   "note": "TX LED: M_Parts_LEDA (lit) / M_Parts_LED_Off (in the file)",
+   "lamp_kind": "a",
+   "object": "RelayUnit_LED_TX",
+   "root": "Item_RelayUnit",
+   "pivotUnity": [
+    0.004,
+    0.0728,
+    0.1608
+   ]
+  },
+  "RelayUnit_LED_RX": {
+   "kind": "static",
+   "pivot": [
+    0.0242,
+    -0.1608,
+    0.0728
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [],
+   "note": "RX LED: M_Parts_LEDG (lit) / M_Parts_LED_Off (in the file)",
+   "lamp_kind": "g",
+   "object": "RelayUnit_LED_RX",
+   "root": "Item_RelayUnit",
+   "pivotUnity": [
+    -0.0242,
+    0.0728,
+    0.1608
+   ]
+  },
+  "RelayUnit_LED_ALM": {
+   "kind": "static",
+   "pivot": [
+    0.0523,
+    -0.1608,
+    0.0728
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [],
+   "note": "ALM LED: M_Parts_LEDR (lit) / M_Parts_LED_Off (in the file)",
+   "lamp_kind": "r",
+   "object": "RelayUnit_LED_ALM",
+   "root": "Item_RelayUnit",
+   "pivotUnity": [
+    -0.0523,
+    0.0728,
+    0.1608
+   ]
+  },
+  "RelayUnit_FuseCap": {
+   "kind": "twist",
+   "pivot": [
+    0.1046,
+    -0.164,
+    0.0667
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    300.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [],
+   "note": "the fuse holder's cap: unscrews counter-clockwise (seen from the front) and comes off with the fuse",
+   "removable": "end",
+   "object": "RelayUnit_FuseCap",
+   "root": "Item_RelayUnit",
+   "box": {
+    "center": [
+     0.0001,
+     -0.007,
+     0.0
+    ],
+    "size": [
+     0.0143,
+     0.014,
+     0.015
+    ]
+   },
+   "pivotUnity": [
+    -0.1046,
+    0.0667,
+    0.164
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "RelayUnit_Fuse": {
+   "kind": "static",
+   "pivot": [
+    0.1046,
+    -0.152,
+    0.0667
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "RelayUnit_FuseCap",
+   "states": [],
+   "note": "the glass fuse 5 x 20 mm, 2 A slow (in the cap): M_Parts_FuseOK (in the file) / M_Parts_FuseBurnt (C07: a burnt fuse is one of the causes)",
+   "object": "RelayUnit_Fuse",
+   "root": "Item_RelayUnit",
+   "pivotUnity": [
+    -0.1046,
+    0.0667,
+    0.152
+   ]
+  },
+  "RelayUnit_Power": {
+   "kind": "hinge",
+   "pivot": [
+    0.169,
+    -0.16,
+    0.0667
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    40
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_RelayUnit",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "the power toggle: down = O (in the model), 40 deg up = I",
+   "object": "RelayUnit_Power",
+   "root": "Item_RelayUnit",
+   "box": {
+    "center": [
+     0.0,
+     -0.0096,
+     -0.0038
+    ],
+    "size": [
+     0.0059,
+     0.0208,
+     0.0124
+    ]
+   },
+   "pivotUnity": [
+    -0.169,
+    0.0667,
+    0.16
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_RelayUnit": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the relay transceiver RT-7 (root): a 19\" 3U unit, origin under its middle on the shelf; the front panel to -y (its face at y -0.16)",
+   "object": "Item_RelayUnit",
+   "root": "Item_RelayUnit",
+   "mass_kg": 9.0,
+   "box": {
+    "center": [
+     0.0,
+     -0.008,
+     0.0667
+    ],
+    "size": [
+     0.483,
+     0.3759,
+     0.1334
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Gen_FuelCap": {
+   "kind": "twist",
+   "pivot": [
+    0.11,
+    0.05,
+    0.457
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0.0,
+    540.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_BackupGenerator",
+   "states": [],
+   "note": "the tank cap: one and a half turns counter-clockwise (seen from above), then it comes off",
+   "removable": "end",
+   "object": "Gen_FuelCap",
+   "root": "Item_BackupGenerator",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.016
+    ],
+    "size": [
+     0.072,
+     0.072,
+     0.032
+    ]
+   },
+   "pivotUnity": [
+    -0.11,
+    0.457,
+    -0.05
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Gen_Switch": {
+   "kind": "hinge",
+   "pivot": [
+    0.25,
+    -0.1905,
+    0.225
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    30
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_BackupGenerator",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "ON / OFF: the rocker tips 30 deg (top in = ON); the engine stops when it goes off",
+   "object": "Gen_Switch",
+   "root": "Item_BackupGenerator",
+   "box": {
+    "center": [
+     0.0,
+     -0.007,
+     0.002
+    ],
+    "size": [
+     0.012,
+     0.0157,
+     0.0186
+    ]
+   },
+   "pivotUnity": [
+    -0.25,
+    0.225,
+    0.1905
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Gen_Choke": {
+   "kind": "slide",
+   "pivot": [
+    -0.06,
+    -0.15,
+    0.17
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.025
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_BackupGenerator",
+   "states": [],
+   "note": "the choke lever on the carburettor: 25 mm to +x = choke closed (a cold start), back once it runs",
+   "object": "Gen_Choke",
+   "root": "Item_BackupGenerator",
+   "box": {
+    "center": [
+     0.0,
+     -0.0035,
+     0.0
+    ],
+    "size": [
+     0.02,
+     0.037,
+     0.018
+    ]
+   },
+   "pivotUnity": [
+    0.06,
+    0.17,
+    0.15
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Gen_StartGrip": {
+   "kind": "slide",
+   "pivot": [
+    -0.17,
+    -0.088,
+    0.205
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.6
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_BackupGenerator",
+   "states": [],
+   "note": "the recoil starter's grip: pulled out up to 0.6 m to the front and back (the game draws the cord from the housing to the grip); a few pulls start a warm engine, the choke for a cold one",
+   "object": "Gen_StartGrip",
+   "root": "Item_BackupGenerator",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     0.0
+    ],
+    "size": [
+     0.02,
+     0.024,
+     0.07
+    ]
+   },
+   "pivotUnity": [
+    0.17,
+    0.205,
+    0.088
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Item_BackupGenerator": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a portable petrol generator 2.8 kVA (root): a tube frame 0.62 x 0.46 m, origin on the ground under its middle; the panel and the starter to the front (-y); two carry it by the end bars",
+   "object": "Item_BackupGenerator",
+   "root": "Item_BackupGenerator",
+   "mass_kg": 46.0,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.2375
+    ],
+    "size": [
+     0.648,
+     0.504,
+     0.475
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "LakeSensor_Lid": {
+   "kind": "hinge",
+   "pivot": [
+    -0.12,
+    -0.145,
+    0.95
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    120
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "LakeSensor",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the box's lid: hinged on the left (vertical), opens out to the front up to 120 deg; two latches on the right",
+   "object": "LakeSensor_Lid",
+   "root": "LakeSensor",
+   "box": {
+    "center": [
+     0.124,
+     0.004,
+     0.15
+    ],
+    "size": [
+     0.248,
+     0.016,
+     0.3
+    ]
+   },
+   "pivotUnity": [
+    0.12,
+    0.95,
+    0.145
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "LakeSensor_LED": {
+   "kind": "static",
+   "pivot": [
+    0.085,
+    -0.1456,
+    1.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "LakeSensor_Lid",
+   "states": [],
+   "note": "the status LED on the lid: M_Parts_LEDG blinking = OK, M_Parts_LEDR = the battery is low, M_Parts_LED_Off = dead (in the file)",
+   "lamp_kind": "status",
+   "object": "LakeSensor_LED",
+   "root": "LakeSensor",
+   "pivotUnity": [
+    -0.085,
+    1.0,
+    0.1456
+   ]
+  },
+  "LakeSensor": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the lake sensor (root): the post on the shore, origin on the ground at the post (it goes 0.4 m in); the box to the front (-y) - the cable runs on to the probe in the water 1.8 m in front: put the prefab with -y to the lake",
+   "object": "LakeSensor",
+   "root": "LakeSensor",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Hand_Pump_A": {
+   "pos": [
+    -0.46,
+    0.0,
+    0.105
+   ],
+   "kind": "hand",
+   "parent": "Item_DosingPump",
+   "note": "a lifting handle (one player each end)",
+   "root": "Item_DosingPump",
+   "posUnity": [
+    0.46,
+    0.105,
+    0.0
+   ]
+  },
+  "Hand_Pump_B": {
+   "pos": [
+    0.46,
+    0.0,
+    0.105
+   ],
+   "kind": "hand",
+   "parent": "Item_DosingPump",
+   "note": "a lifting handle (one player each end)",
+   "root": "Item_DosingPump",
+   "posUnity": [
+    -0.46,
+    0.105,
+    0.0
+   ]
+  },
+  "Port_Discharge": {
+   "pos": [
+    0.415,
+    -0.095,
+    0.31
+   ],
+   "kind": "port",
+   "parent": "Item_DosingPump",
+   "note": "the outlet's quick coupling (the hose starts here)",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "root": "Item_DosingPump",
+   "posUnity": [
+    -0.415,
+    0.31,
+    0.095
+   ],
+   "dirUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Fill_Tank": {
+   "pos": [
+    -0.2,
+    0.0,
+    0.572
+   ],
+   "kind": "fill",
+   "parent": "Item_DosingPump",
+   "note": "the tank's filler under the cap",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "Item_DosingPump",
+   "posUnity": [
+    0.2,
+    0.572,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Cable_Power": {
+   "pos": [
+    0.34,
+    0.058,
+    0.227
+   ],
+   "kind": "cable",
+   "parent": "Item_DosingPump",
+   "note": "the motor's cable out of the terminal box (to the pump house switch box)",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "Item_DosingPump",
+   "posUnity": [
+    -0.34,
+    0.227,
+    -0.058
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Audio_Pump": {
+   "pos": [
+    0.3,
+    0.02,
+    0.145
+   ],
+   "kind": "audio",
+   "parent": "Item_DosingPump",
+   "note": "the motor and the diaphragm's tick",
+   "root": "Item_DosingPump",
+   "posUnity": [
+    -0.3,
+    0.145,
+    -0.02
+   ]
+  },
+  "Screw_E40": {
+   "pos": [
+    0.0,
+    0.0,
+    0.025
+   ],
+   "kind": "screw",
+   "parent": "Item_SodiumLamp",
+   "note": "screws into the searchlight's E40 holder cap first (-z), clockwise seen from the glass",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "Item_SodiumLamp",
+   "posUnity": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Mount_Face": {
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "kind": "mount",
+   "parent": "Item_RadarCRT",
+   "note": "installed: this point on the console's screen opening, dir towards the operator; lug A to the operator's left",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "Item_RadarCRT",
+   "posUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Hand_CRT_A": {
+   "pos": [
+    -0.1683,
+    0.1683,
+    0.036
+   ],
+   "kind": "hand",
+   "parent": "Item_RadarCRT",
+   "note": "a mounting lug: one player each side",
+   "root": "Item_RadarCRT",
+   "posUnity": [
+    0.1683,
+    0.036,
+    -0.1683
+   ]
+  },
+  "Hand_CRT_B": {
+   "pos": [
+    0.1683,
+    -0.1683,
+    0.036
+   ],
+   "kind": "hand",
+   "parent": "Item_RadarCRT",
+   "note": "a mounting lug: one player each side",
+   "root": "Item_RadarCRT",
+   "posUnity": [
+    -0.1683,
+    0.036,
+    0.1683
+   ]
+  },
+  "Socket_Neck": {
+   "pos": [
+    0.0,
+    0.0,
+    0.573
+   ],
+   "kind": "plug",
+   "parent": "Item_RadarCRT",
+   "note": "the base's pins: the console's tube socket goes on here",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_RadarCRT",
+   "posUnity": [
+    0.0,
+    0.573,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Anode_Cap": {
+   "pos": [
+    0.0,
+    0.147,
+    0.212
+   ],
+   "kind": "plug",
+   "parent": "Item_RadarCRT",
+   "note": "the high-voltage lead clips on",
+   "root": "Item_RadarCRT",
+   "posUnity": [
+    0.0,
+    0.212,
+    -0.147
+   ]
+  },
+  "Mount_Rack": {
+   "pos": [
+    0.0,
+    -0.157,
+    0.0667
+   ],
+   "kind": "mount",
+   "parent": "Item_RelayUnit",
+   "note": "the panel's back face middle: on the rack rails (the ears' holes 465 mm apart)",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "Item_RelayUnit",
+   "posUnity": [
+    0.0,
+    0.0667,
+    0.157
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Hand_Relay_L": {
+   "pos": [
+    -0.2013,
+    -0.192,
+    0.067
+   ],
+   "kind": "hand",
+   "parent": "Item_RelayUnit",
+   "note": "a front handle",
+   "root": "Item_RelayUnit",
+   "posUnity": [
+    0.2013,
+    0.067,
+    0.192
+   ]
+  },
+  "Hand_Relay_R": {
+   "pos": [
+    0.2012,
+    -0.192,
+    0.067
+   ],
+   "kind": "hand",
+   "parent": "Item_RelayUnit",
+   "note": "a front handle",
+   "root": "Item_RelayUnit",
+   "posUnity": [
+    -0.2012,
+    0.067,
+    0.192
+   ]
+  },
+  "Plug_AntA": {
+   "pos": [
+    -0.0239,
+    0.18,
+    0.072
+   ],
+   "kind": "plug",
+   "parent": "Item_RelayUnit",
+   "note": "an N connector at the back: the antenna feeder",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "Item_RelayUnit",
+   "posUnity": [
+    0.0239,
+    0.072,
+    -0.18
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Plug_AntB": {
+   "pos": [
+    0.0399,
+    0.18,
+    0.072
+   ],
+   "kind": "plug",
+   "parent": "Item_RelayUnit",
+   "note": "an N connector at the back: the antenna feeder",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "Item_RelayUnit",
+   "posUnity": [
+    -0.0399,
+    0.072,
+    -0.18
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Plug_Mains": {
+   "pos": [
+    0.1257,
+    0.162,
+    0.071
+   ],
+   "kind": "plug",
+   "parent": "Item_RelayUnit",
+   "note": "the mains inlet at the back",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "Item_RelayUnit",
+   "posUnity": [
+    -0.1257,
+    0.071,
+    -0.162
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Hand_Gen_A": {
+   "pos": [
+    -0.2604,
+    0.0,
+    0.456
+   ],
+   "kind": "hand",
+   "parent": "Item_BackupGenerator",
+   "note": "a carrying bar with its grip (one player each end)",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    0.2604,
+    0.456,
+    0.0
+   ]
+  },
+  "Hand_Gen_B": {
+   "pos": [
+    0.2604,
+    0.0,
+    0.456
+   ],
+   "kind": "hand",
+   "parent": "Item_BackupGenerator",
+   "note": "a carrying bar with its grip (one player each end)",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.2604,
+    0.456,
+    0.0
+   ]
+  },
+  "Fill_Fuel": {
+   "pos": [
+    0.11,
+    0.05,
+    0.457
+   ],
+   "kind": "fill",
+   "parent": "Item_BackupGenerator",
+   "note": "the tank's filler under the cap (the canister's spout)",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.11,
+    0.457,
+    -0.05
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Exhaust": {
+   "pos": [
+    0.215,
+    0.2,
+    0.272
+   ],
+   "kind": "fx",
+   "parent": "Item_BackupGenerator",
+   "note": "the exhaust's end: smoke while it runs",
+   "dir": [
+    0.3,
+    1.0,
+    -0.3
+   ],
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.215,
+    0.272,
+    -0.2
+   ],
+   "dirUnity": [
+    -0.3,
+    -0.3,
+    -1.0
+   ]
+  },
+  "Outlet_1": {
+   "pos": [
+    0.1,
+    -0.1985,
+    0.175
+   ],
+   "kind": "plug",
+   "parent": "Item_BackupGenerator",
+   "note": "Schuko outlet 1: a plug goes in along +y (the cable to the relay station)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.1,
+    0.175,
+    0.1985
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Outlet_2": {
+   "pos": [
+    0.19,
+    -0.1985,
+    0.175
+   ],
+   "kind": "plug",
+   "parent": "Item_BackupGenerator",
+   "note": "Schuko outlet 2: a plug goes in along +y (the cable to the relay station)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.19,
+    0.175,
+    0.1985
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Tie_1": {
+   "pos": [
+    -0.29,
+    -0.23,
+    0.13
+   ],
+   "kind": "tie",
+   "parent": "Item_BackupGenerator",
+   "note": "a strap point on the frame (lashed in the van)",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    0.29,
+    0.13,
+    0.23
+   ]
+  },
+  "Tie_2": {
+   "pos": [
+    0.29,
+    -0.23,
+    0.13
+   ],
+   "kind": "tie",
+   "parent": "Item_BackupGenerator",
+   "note": "a strap point on the frame (lashed in the van)",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.29,
+    0.13,
+    0.23
+   ]
+  },
+  "Tie_3": {
+   "pos": [
+    0.29,
+    0.23,
+    0.13
+   ],
+   "kind": "tie",
+   "parent": "Item_BackupGenerator",
+   "note": "a strap point on the frame (lashed in the van)",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    -0.29,
+    0.13,
+    -0.23
+   ]
+  },
+  "Tie_4": {
+   "pos": [
+    -0.29,
+    0.23,
+    0.13
+   ],
+   "kind": "tie",
+   "parent": "Item_BackupGenerator",
+   "note": "a strap point on the frame (lashed in the van)",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    0.29,
+    0.13,
+    -0.23
+   ]
+  },
+  "Audio_Engine": {
+   "pos": [
+    0.0,
+    0.0,
+    0.22
+   ],
+   "kind": "audio",
+   "parent": "Item_BackupGenerator",
+   "note": "the engine",
+   "root": "Item_BackupGenerator",
+   "posUnity": [
+    0.0,
+    0.22,
+    0.0
+   ]
+  },
+  "Slot_Battery": {
+   "pos": [
+    0.06,
+    -0.088,
+    0.958
+   ],
+   "kind": "slot",
+   "parent": "LakeSensor",
+   "note": "forest_gear's Item_Battery6V: its origin here, upright, + to the left (-x); the leads' clips sit over its springs; the lid open",
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "forward": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "LakeSensor",
+   "posUnity": [
+    -0.06,
+    0.958,
+    0.088
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "forwardUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "View_Sensor": {
+   "pos": [
+    0.0,
+    -0.75,
+    1.55
+   ],
+   "kind": "view",
+   "parent": "LakeSensor",
+   "note": "where the player stands to change the battery (eye height), the lid open",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "LakeSensor",
+   "posUnity": [
+    0.0,
+    1.55,
+    0.75
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Probe": {
+   "pos": [
+    0.0,
+    -1.856,
+    0.02
+   ],
+   "kind": "point",
+   "parent": "LakeSensor",
+   "note": "the probe's tip: in the water",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "LakeSensor",
+   "posUnity": [
+    0.0,
+    0.02,
+    1.856
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ },
+ "placements": {
+  "Item_DosingPump": [
+   {
+    "parent": "PumpHouse",
+    "package": "forest_far",
+    "note": "installed (C08): on the pump house floor left of the house pump, the valves to the door; DosingPump_Hose then runs to the fitting on the house pipe",
+    "pos": [
+     -0.85,
+     -0.3,
+     0.205
+    ],
+    "yaw": 0.0,
+    "rot_quat_wxyz": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "posUnity": [
+     0.85,
+     0.205,
+     0.3
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  ]
+ },
+ "colliders": [
+  {
+   "name": "COL_Pump_Skid",
+   "parent": "Item_DosingPump",
+   "root": "Item_DosingPump",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.06
+   ],
+   "size": [
+    0.94,
+    0.46,
+    0.12
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.06
+   ],
+   "centerUnity": [
+    0.0,
+    0.06,
+    0.0
+   ],
+   "sizeUnity": [
+    0.94,
+    0.12,
+    0.46
+   ]
+  },
+  {
+   "name": "COL_Pump_Tank",
+   "parent": "Item_DosingPump",
+   "root": "Item_DosingPump",
+   "type": "box",
+   "center": [
+    -0.2,
+    0.0,
+    0.315
+   ],
+   "size": [
+    0.32,
+    0.32,
+    0.51
+   ],
+   "center_root": [
+    -0.2,
+    0.0,
+    0.315
+   ],
+   "centerUnity": [
+    0.2,
+    0.315,
+    0.0
+   ],
+   "sizeUnity": [
+    0.32,
+    0.51,
+    0.32
+   ]
+  },
+  {
+   "name": "COL_Pump_Drive",
+   "parent": "Item_DosingPump",
+   "root": "Item_DosingPump",
+   "type": "box",
+   "center": [
+    0.25,
+    -0.01,
+    0.155
+   ],
+   "size": [
+    0.3,
+    0.2,
+    0.19
+   ],
+   "center_root": [
+    0.25,
+    -0.01,
+    0.155
+   ],
+   "centerUnity": [
+    -0.25,
+    0.155,
+    0.01
+   ],
+   "sizeUnity": [
+    0.3,
+    0.19,
+    0.2
+   ]
+  },
+  {
+   "name": "COL_Pump_Pipes",
+   "parent": "Item_DosingPump",
+   "root": "Item_DosingPump",
+   "type": "box",
+   "center": [
+    0.19,
+    -0.0875,
+    0.345
+   ],
+   "size": [
+    0.46,
+    0.095,
+    0.17
+   ],
+   "center_root": [
+    0.19,
+    -0.0875,
+    0.345
+   ],
+   "centerUnity": [
+    -0.19,
+    0.345,
+    0.0875
+   ],
+   "sizeUnity": [
+    0.46,
+    0.17,
+    0.095
+   ]
+  },
+  {
+   "name": "COL_Pump_Plate",
+   "parent": "Item_DosingPump",
+   "root": "Item_DosingPump",
+   "type": "box",
+   "center": [
+    0.155,
+    0.19,
+    0.35
+   ],
+   "size": [
+    0.35,
+    0.02,
+    0.58
+   ],
+   "center_root": [
+    0.155,
+    0.19,
+    0.35
+   ],
+   "centerUnity": [
+    -0.155,
+    0.35,
+    -0.19
+   ],
+   "sizeUnity": [
+    0.35,
+    0.58,
+    0.02
+   ]
+  },
+  {
+   "name": "COL_SodiumLamp",
+   "parent": "Item_SodiumLamp",
+   "root": "Item_SodiumLamp",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.145
+   ],
+   "size": [
+    0.048,
+    0.048,
+    0.29
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.145
+   ],
+   "centerUnity": [
+    0.0,
+    0.145,
+    0.0
+   ],
+   "sizeUnity": [
+    0.048,
+    0.29,
+    0.048
+   ]
+  },
+  {
+   "name": "COL_SodiumLampBox",
+   "parent": "Item_SodiumLampBox",
+   "root": "Item_SodiumLampBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.15
+   ],
+   "size": [
+    0.072,
+    0.072,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.15
+   ],
+   "centerUnity": [
+    0.0,
+    0.15,
+    0.0
+   ],
+   "sizeUnity": [
+    0.072,
+    0.3,
+    0.072
+   ]
+  },
+  {
+   "name": "COL_CRT_Face",
+   "parent": "Item_RadarCRT",
+   "root": "Item_RadarCRT",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.031
+   ],
+   "size": [
+    0.424,
+    0.424,
+    0.062
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.031
+   ],
+   "centerUnity": [
+    0.0,
+    0.031,
+    0.0
+   ],
+   "sizeUnity": [
+    0.424,
+    0.062,
+    0.424
+   ]
+  },
+  {
+   "name": "COL_CRT_Funnel",
+   "parent": "Item_RadarCRT",
+   "root": "Item_RadarCRT",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.131
+   ],
+   "size": [
+    0.36,
+    0.36,
+    0.138
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.131
+   ],
+   "centerUnity": [
+    0.0,
+    0.131,
+    0.0
+   ],
+   "sizeUnity": [
+    0.36,
+    0.138,
+    0.36
+   ]
+  },
+  {
+   "name": "COL_CRT_Cone",
+   "parent": "Item_RadarCRT",
+   "root": "Item_RadarCRT",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.2925
+   ],
+   "size": [
+    0.2,
+    0.2,
+    0.185
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.2925
+   ],
+   "centerUnity": [
+    0.0,
+    0.2925,
+    0.0
+   ],
+   "sizeUnity": [
+    0.2,
+    0.185,
+    0.2
+   ]
+  },
+  {
+   "name": "COL_CRT_Neck",
+   "parent": "Item_RadarCRT",
+   "root": "Item_RadarCRT",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.479
+   ],
+   "size": [
+    0.06,
+    0.06,
+    0.188
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.479
+   ],
+   "centerUnity": [
+    0.0,
+    0.479,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    0.188,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Relay_Body",
+   "parent": "Item_RelayUnit",
+   "root": "Item_RelayUnit",
+   "type": "box",
+   "center": [
+    0.0,
+    0.01,
+    0.0667
+   ],
+   "size": [
+    0.431,
+    0.34,
+    0.1334
+   ],
+   "center_root": [
+    0.0,
+    0.01,
+    0.0667
+   ],
+   "centerUnity": [
+    0.0,
+    0.0667,
+    -0.01
+   ],
+   "sizeUnity": [
+    0.431,
+    0.1334,
+    0.34
+   ]
+  },
+  {
+   "name": "COL_Relay_Panel",
+   "parent": "Item_RelayUnit",
+   "root": "Item_RelayUnit",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.1755,
+    0.0667
+   ],
+   "size": [
+    0.483,
+    0.037,
+    0.1334
+   ],
+   "center_root": [
+    0.0,
+    -0.1755,
+    0.0667
+   ],
+   "centerUnity": [
+    0.0,
+    0.0667,
+    0.1755
+   ],
+   "sizeUnity": [
+    0.483,
+    0.1334,
+    0.037
+   ]
+  },
+  {
+   "name": "COL_Generator",
+   "parent": "Item_BackupGenerator",
+   "root": "Item_BackupGenerator",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.245
+   ],
+   "size": [
+    0.648,
+    0.488,
+    0.49
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.245
+   ],
+   "centerUnity": [
+    0.0,
+    0.245,
+    0.0
+   ],
+   "sizeUnity": [
+    0.648,
+    0.49,
+    0.488
+   ]
+  },
+  {
+   "name": "COL_Sensor_Post",
+   "parent": "LakeSensor",
+   "root": "LakeSensor",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.531
+   ],
+   "size": [
+    0.06,
+    0.06,
+    1.862
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.531
+   ],
+   "centerUnity": [
+    0.0,
+    0.531,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.862,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Sensor_Box",
+   "parent": "LakeSensor",
+   "root": "LakeSensor",
+   "type": "box",
+   "center": [
+    -0.005,
+    -0.084,
+    1.1
+   ],
+   "size": [
+    0.25,
+    0.098,
+    0.3
+   ],
+   "center_root": [
+    -0.005,
+    -0.084,
+    1.1
+   ],
+   "centerUnity": [
+    0.005,
+    1.1,
+    0.084
+   ],
+   "sizeUnity": [
+    0.25,
+    0.3,
+    0.098
+   ]
+  },
+  {
+   "name": "COL_Sensor_Sign",
+   "parent": "LakeSensor",
+   "root": "LakeSensor",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.036,
+    0.7
+   ],
+   "size": [
+    0.26,
+    0.012,
+    0.16
+   ],
+   "center_root": [
+    0.0,
+    -0.036,
+    0.7
+   ],
+   "centerUnity": [
+    0.0,
+    0.7,
+    0.036
+   ],
+   "sizeUnity": [
+    0.26,
+    0.16,
+    0.012
+   ]
+  },
+  {
+   "name": "COL_Sensor_Probe",
+   "parent": "LakeSensor",
+   "root": "LakeSensor",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.718,
+    0.02
+   ],
+   "size": [
+    0.04,
+    0.276,
+    0.04
+   ],
+   "center_root": [
+    0.0,
+    -1.718,
+    0.02
+   ],
+   "centerUnity": [
+    0.0,
+    0.02,
+    1.718
+   ],
+   "sizeUnity": [
+    0.04,
+    0.04,
+    0.276
+   ]
+  },
+  {
+   "name": "COL_Sensor_Lid",
+   "parent": "LakeSensor_Lid",
+   "root": "LakeSensor",
+   "type": "box",
+   "center": [
+    0.124,
+    0.004,
+    0.15
+   ],
+   "size": [
+    0.248,
+    0.016,
+    0.3
+   ],
+   "center_root": [
+    0.004,
+    -0.141,
+    1.1
+   ],
+   "centerUnity": [
+    -0.124,
+    0.15,
+    -0.004
+   ],
+   "sizeUnity": [
+    0.248,
+    0.3,
+    0.016
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees, kg",
+  "frame": "each root in its own frame: z up, the front -y; origin on the surface it stands on (z = 0) under its middle - the radar tube: the middle of its face (it stands on it), the lake sensor: the post on the ground. Every pivot / pos here is in its root's frame. In parts.blend the roots stand apart (display_offset); their FBX is exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "Item_DosingPump": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Item_SodiumLamp": [
+    1.2,
+    -1.1,
+    0.0
+   ],
+   "Item_SodiumLampBox": [
+    1.35,
+    -1.1,
+    0.0
+   ],
+   "Item_RadarCRT": [
+    -1.2,
+    -1.0,
+    0.0
+   ],
+   "Item_RelayUnit": [
+    -1.2,
+    0.0,
+    0.0
+   ],
+   "Item_BackupGenerator": [
+    0.3,
+    -1.1,
+    0.0
+   ],
+   "LakeSensor": [
+    2.6,
+    0.9,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent's own frame (its pivot, no rotation), centerUnity / sizeUnity the same in Unity axes; center_root: in the root's frame. The COL_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "mass": "mass_kg on each carried root: a suggestion for the rigidbody (two players carry the pump, the tube and the generator)",
+  "placements": "where a forest_far prefab takes a model: under the parent (a forest_far root) at pos / yaw (the parent's frame) or posUnity / rotUnity_xyzw - the installed dosing pump in the pump house",
+  "model": "parts.blend",
+  "textures": "tex",
+  "materials": "M_Parts_Parts / M_Parts_Sensor: baked PSX atlases (point filter); M_Parts_Panel: the printed faces (another material on those bodies; the lamp carton is all panel); M_Parts_LEDG / LEDR / LEDA / LED_Off: the relay unit's and the lake sensor's LEDs (off in the file); M_Parts_Waybill: the pump's waybill (UV 0..1); M_Parts_CRTFace: the radar tube's face, dark (UV 0..1, the game draws the sweep); M_Parts_LampGlass: the sodium lamp's clear glass; M_Parts_ArcTube_Off / M_Parts_ArcTube: its arc tube off / lit (off in the file); M_Parts_FuseOK / M_Parts_FuseBurnt: the relay unit's fuse",
+  "names": "the carried things are Item_* (catalogue keys), the lake sensor is a fixture (LakeSensor); parts and sockets start with the item's name without Item_"
+ }
+}

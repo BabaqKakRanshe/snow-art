@@ -1,5 +1,5 @@
 {
- "note": "checkpoint lamps. position / forward / up: booth frame (Checkpoint prefab: x toward the road, y toward the back, z up, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. group booth = the fluorescent batten (flickers from the start without power: flicker min / max / speed as Update 3's Light_booth; lens M_Kpp_Lamp_Fluor, glow Glow_Fluor flicker with it); group power = the bulkhead over the door (off until the station power: light, Glow_Bulk_Door shown, Lens_Bulk_Door -> M_Kpp_Lamp_Bulk; the CCTV screen Screen_CCTV -> M_Kpp_Lamp_Crt). Point lights: the IES files describe the shape.",
+ "note": "checkpoint lamps (v2). position / forward / up: booth frame (Checkpoint prefab: x toward the road, y toward the back, z up, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. group power = only with the booth's power (the battery in the cabinet, both clamps on, the switch at BATTERIE): the fluorescent batten (flickers a few seconds as it strikes; lens M_Kpp_Lamp_Fluor, glow Glow_Fluor with it) and the bulkhead over the door (Glow_Bulk_Door shown, Lens_Bulk_Door -> M_Kpp_Lamp_Bulk). With the power the kit instances light too: the monitors' screens (M_Kit_Screen_On), the lamps (M_Kit_Lamp_*), the door lock's lamp, the cabinet's lamp; the barrier's beacon (Kit_Beacon: its own light, snow_kit_lights.json) turns while the boom moves. Point lights: the IES files describe the shape.",
  "lights": [
   {
    "socket": "LIGHT_Fluor",
@@ -52,11 +52,11 @@
     0.8761
    ],
    "range": 6.5,
-   "group": "booth",
+   "group": "power",
    "shadows": false,
    "ies": "IES/fluor.ies",
-   "desc": "fluorescent batten under the rafters (one 36 W tube): flickers from the start, without power (Update 3 Light_booth: Point 0.45, range 6.5, colour 0.86 0.96 1.0, flicker min 0.08 max 1.0 speed 5)",
-   "startsOn": true,
+   "desc": "fluorescent batten under the rafters (one 36 W tube): v2 - on with the booth's power only, flickering a few seconds as it strikes (flicker min / max / speed as Update 3's Light_booth); Point 0.45, range 6.5",
+   "startsOn": false,
    "flicker": {
     "min": 0.08,
     "max": 1.0,
@@ -117,7 +117,7 @@
    "group": "power",
    "shadows": false,
    "ies": "IES/bulkhead_kpp.ies",
-   "desc": "caged bulkhead over the door (the shed's), 60 W incandescent: on with the station power (Update 3: Point 1.0, range 9, off until power)",
+   "desc": "caged bulkhead over the door (the shed's), 60 W incandescent: on with the booth's power (Update 3: Point 1.0, range 9, off until power)",
    "startsOn": false
   }
  ]

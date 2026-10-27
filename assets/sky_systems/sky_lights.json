@@ -1,0 +1,181 @@
+{
+ "lights": [
+  {
+   "name": "Light_SkyChiller_Beacon",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "point",
+   "pos": [
+    -2.6,
+    -1.65,
+    2.2
+   ],
+   "posUnity": [
+    2.6,
+    2.2,
+    1.65
+   ],
+   "color_linear": [
+    1.0,
+    0.55,
+    0.12
+   ],
+   "range": 8.0,
+   "behaviour": "rotate",
+   "default": "off"
+  },
+  {
+   "name": "Light_SkyBallast_Beacon",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "point",
+   "pos": [
+    3.9,
+    6.08,
+    2.8
+   ],
+   "posUnity": [
+    -3.9,
+    2.8,
+    -6.08
+   ],
+   "color_linear": [
+    1.0,
+    0.55,
+    0.12
+   ],
+   "range": 10.0,
+   "behaviour": "rotate",
+   "default": "off"
+  },
+  {
+   "name": "Light_SkyAltimeter_1",
+   "parent": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "type": "spot",
+   "pos": [
+    -1.0,
+    -1.19,
+    10.24
+   ],
+   "posUnity": [
+    1.0,
+    10.24,
+    1.19
+   ],
+   "color_linear": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "range": 9.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.55,
+    -0.83
+   ],
+   "dirUnity": [
+    0.0,
+    -0.83,
+    -0.55
+   ],
+   "spot_angle": 100
+  },
+  {
+   "name": "Light_SkyAltimeter_2",
+   "parent": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "type": "spot",
+   "pos": [
+    1.0,
+    -1.19,
+    10.24
+   ],
+   "posUnity": [
+    -1.0,
+    10.24,
+    1.19
+   ],
+   "color_linear": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "range": 9.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.55,
+    -0.83
+   ],
+   "dirUnity": [
+    0.0,
+    -0.83,
+    -0.55
+   ],
+   "spot_angle": 100
+  },
+  {
+   "name": "Light_SkyAltimeter_Obstruction",
+   "parent": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "type": "point",
+   "pos": [
+    0.0,
+    -0.225,
+    10.65
+   ],
+   "posUnity": [
+    0.0,
+    10.65,
+    0.225
+   ],
+   "color_linear": [
+    1.0,
+    0.08,
+    0.03
+   ],
+   "range": 6.0,
+   "behaviour": "blink",
+   "default": "off"
+  },
+  {
+   "name": "Light_SkyWalk_Lamp",
+   "parent": "SkyWalk_Lamp",
+   "root": "SkyWalk_Lamp",
+   "type": "spot",
+   "pos": [
+    0.0,
+    0.27,
+    0.62
+   ],
+   "posUnity": [
+    0.0,
+    0.62,
+    -0.27
+   ],
+   "color_linear": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "range": 7.0,
+   "behaviour": "steady",
+   "default": "off",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "spot_angle": 100
+  }
+ ]
+}

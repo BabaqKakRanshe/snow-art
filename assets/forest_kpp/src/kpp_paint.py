@@ -30,7 +30,8 @@ DRAFT_COL = {   # sRGB, roughly the painters' base colours (kpp_build --draft)
     KK.Z_PHONE: (196, 96, 42), KK.Z_VEST: (230, 110, 30), KK.Z_EXTP: (180, 30, 24), KK.Z_CRT: (196, 186, 160),
     KK.Z_CHAIR: (60, 66, 80), KK.Z_BLACKP: (32, 32, 34), KK.Z_BELLP: (170, 30, 26), KK.Z_PAPERP: (226, 222, 204),
     KK.Z_MUGP: (226, 224, 214), KK.Z_FLASK: (60, 100, 70), KK.Z_BINDER: (60, 80, 140), KK.Z_RADIO: (88, 96, 68),
-    KK.Z_CAMP: (200, 200, 196), KK.Z_CHROMEP: (170, 172, 176), KK.Z_FAID: (226, 226, 220)}
+    KK.Z_CAMP: (200, 200, 196), KK.Z_CHROMEP: (170, 172, 176), KK.Z_FAID: (226, 226, 220),
+    KK.Z_BARCAB: (200, 204, 198), KK.Z_GATEP: (84, 100, 78)}
 
 
 # ---------------------------------------------------------------- the shed's rules (as hut_paint has them)
@@ -173,7 +174,7 @@ def paint_kpp(Pp, Nn, Z, ao, aa):
     m = M(K.Z_SLAB)
     c = T(CONCRETE, 0.16, 0.22)
     c = mixc(c, lin(86, 82, 76), ss(0.0, -0.12, z) * 0.6 + cav * 0.4)
-    c = mixc(c, EARTH, ss(-0.08, -0.20, z) * 0.75)
+    c = mixc(c, EARTH, ss(-0.22, -0.40, z) * 0.75)
     top = (Nn[:, 2] > 0.8).astype(np.float32)
     c = mixc(c, lin(98, 96, 90), top * np.exp(-((y - KK.YB) / 0.09) ** 2) * (np.abs(x) < KK.XS) * 0.6)
     c = mixc(c, lin(108, 100, 88), top * (np.exp(-((y - 2.0) / 0.35) ** 2) * ss(-3.2, -2.0, x) * ss(1.3, 0.6, x)
@@ -286,6 +287,32 @@ def paint_kpp(Pp, Nn, Z, ao, aa):
     m = M(KK.Z_BARBED)
     c = T(lin(100, 100, 96), 0.12, 0.2)
     col[m] = mixc(c, RUST, ss(0.5, 0.8, fbm(Pp, 12.0, 2, seed=639)) * 0.7)[m]
+    # ---- v2: the motor cabinets (the barrier's, the gate drive): light grey powder coat, chips with rust at the edges,
+    # splash and earth at the foot, dust on the top, grime runs under the black cover
+    m = M(KK.Z_BARCAB)
+    if m.any():
+        zl = z - GROUND
+        c = T(lin(200, 204, 198), 0.06, 0.08)
+        c = mixc(c, lin(168, 170, 162), ss(0.35, 0.75, n_lo) * 0.35)
+        c = mixc(c, lin(120, 118, 108), streak * 0.30 * (np.abs(Nn[:, 2]) < 0.5))
+        c = mixc(c, RUST, np.clip(edge * 0.55 + ss(0.86, 0.95, fbm(Pp, 30.0, 2, seed=641)) * 0.6, 0, 0.8) * 0.6)
+        c = mixc(c, lin(92, 84, 72), ss(0.30, 0.05, zl) * 0.65)
+        c = mixc(c, DUST, up * 0.35)
+        col[m] = c[m]
+    # ---- the gate leaf: the station's green on steel, a pressed rib every 0.2 m on the outer sheet, rust runs from the top
+    # rail and the barbed arms, chipped edges, the splash at the foot, the outer face weathered most
+    m = M(KK.Z_GATEP)
+    if m.any():
+        zl = z - GROUND
+        outer = (Nn[:, 1] < -0.5).astype(np.float32)
+        rib = 0.5 + 0.5 * np.cos(2 * np.pi * x / 0.20)
+        c = lin(84, 100, 78) * (0.90 + 0.10 * rib * outer + 0.12 * (n_lo - 0.5))[:, None]
+        c = mixc(c, lin(120, 132, 108), outer * ss(0.40, 0.80, n_lo) * 0.40)
+        runs = ss(0.55, 0.80, fbm(Pp * np.array([3.0, 3.0, 0.12], np.float32), 8.0, 3, seed=642)) * ss(1.0, 2.3, zl)
+        c = mixc(c, RUST, np.clip(runs * 0.65 + edge * 0.5 + ss(0.86, 0.95, fbm(Pp, 25.0, 2, seed=643)) * 0.5, 0, 0.85))
+        c = mixc(c, lin(70, 62, 50), ss(0.45, 0.12, zl) * 0.6)
+        col[m] = c[m]
+        gr = np.where(m, gline(dist_periodic(x, 0.20, 0.10), 0.004, aa) * 0.35 * outer, gr)
     return col, gr
 
 

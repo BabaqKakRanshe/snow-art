@@ -77,7 +77,7 @@
     "shut",
     "open"
    ],
-   "note": "booth door in the back wall, hung outside on strap hinges at its +x edge; opens outward (+) to 100; lever handles both sides; not locked (Update 3: same name, hinge side and travel)",
+   "note": "booth door in the back wall, hung outside on strap hinges at its +x edge; opens outward (+) to 100; lever handles both sides; v2: held shut by the electric lock (DoorLock on the leaf, DoorLockStrike on the trim) until the booth has power, then it clicks open (Update 3: same name, hinge side and travel)",
    "object": "IX_BoothDoor_74",
    "box": {
     "center": [
@@ -375,7 +375,7 @@
     "shut",
     "open"
    ],
-   "note": "key cabinet door: hinged at its left edge, opens into the room (+) to 120; inside the hooks Schranke, Hauptgebäude, Garage, Generator with their keys and the empty Stationsleiter hook (Update 3: same name, pivot and travel)",
+   "note": "key cabinet door: hinged at its left edge, opens into the room (+) to 120; inside the hooks Hauptgebäude, Garage, Generator with their keys and the empty Stationsleiter hook; v2: no Schranke hook (the barrier has no padlock) (Update 3: same name, pivot and travel)",
    "object": "IX_KeyBoxDoor_303",
    "box": {
     "center": [
@@ -419,7 +419,7 @@
    "rest": 0.0,
    "parent": "Checkpoint",
    "states": [],
-   "note": "small things: vests, extinguisher, CCTV monitor, binders, thermos, mug, papers, the radio and its mic, the wall clock, the first-aid box, the CCTV camera under the front eave",
+   "note": "small things not in the kit yet: vests, extinguisher, binders, thermos, mug, papers, the radio and its mic, the wall clock, the first-aid box (v1 had the CCTV monitor and camera here: now Kit_Monitor_CRT / Kit_Camera_* instances)",
    "object": "Kpp_Props"
   },
   "Kpp_Chair": {
@@ -437,54 +437,6 @@
    "states": [],
    "note": "the guard's swivel chair at the road-side desk",
    "object": "Kpp_Chair"
-  },
-  "Phone": {
-   "kind": "static",
-   "pivot": [
-    1.67,
-    -0.55,
-    0.9
-   ],
-   "axis": null,
-   "range": null,
-   "unit": "deg",
-   "rest": 0.0,
-   "parent": "Checkpoint",
-   "states": [],
-   "note": "rotary desk phone (70s, orange) by the pass window: X05 rings it twice; zone Phone_KPP (Update 3) is round the receiver",
-   "object": "Phone"
-  },
-  "Phone_Receiver": {
-   "kind": "static",
-   "pivot": [
-    1.72,
-    -0.55,
-    1.025
-   ],
-   "axis": null,
-   "range": null,
-   "unit": "deg",
-   "rest": 0.0,
-   "parent": "Phone",
-   "states": [],
-   "note": "the receiver on its cradle: hide / animate it while it is picked up (X05: silence, then breathing)",
-   "object": "Phone_Receiver"
-  },
-  "Phone_Dial": {
-   "kind": "static",
-   "pivot": [
-    1.625,
-    -0.55,
-    0.966
-   ],
-   "axis": null,
-   "range": null,
-   "unit": "deg",
-   "rest": 0.0,
-   "parent": "Phone",
-   "states": [],
-   "note": "dial face (panel atlas)",
-   "object": "Phone_Dial"
   },
   "Phone_Bell": {
    "kind": "static",
@@ -515,7 +467,7 @@
    "rest": 0.0,
    "parent": "Checkpoint",
    "states": [],
-   "note": "fluorescent batten under the rafters: flickers from the start although there is no power (Update 3: Light_booth, M_Lamp_FluorFlicker)",
+   "note": "fluorescent batten under the rafters: v2 - dark without power, lights with the booth's power (flickers a few seconds as it strikes); v1 / Update 3 flickered from the start (Light_booth, M_Lamp_FluorFlicker)",
    "object": "Lamp_Fluor"
   },
   "Lens_Fluor": {
@@ -531,7 +483,7 @@
    "rest": 0.0,
    "parent": "Lamp_Fluor",
    "states": [],
-   "note": "the tube: M_Kpp_Lamp_Fluor (lit, flickering) / M_Kpp_Lamp_Fluor_Off",
+   "note": "the tube: M_Kpp_Lamp_Fluor (lit) / M_Kpp_Lamp_Fluor_Off",
    "object": "Lens_Fluor"
   },
   "Glow_Fluor": {
@@ -563,7 +515,7 @@
    "rest": 0.0,
    "parent": "Checkpoint",
    "states": [],
-   "note": "frosted dome of the bulkhead over the door: lit with the station power (M_Kpp_Lamp_Bulk / _Off)",
+   "note": "frosted dome of the bulkhead over the door: lit with the booth's power (M_Kpp_Lamp_Bulk / _Off)",
    "object": "Lens_Bulk_Door"
   },
   "Glow_Bulk_Door": {
@@ -581,22 +533,6 @@
    "states": [],
    "note": "halo cards of the bulkhead: shown with the power",
    "object": "Glow_Bulk_Door"
-  },
-  "Screen_CCTV": {
-   "kind": "static",
-   "pivot": [
-    -1.05,
-    -1.097,
-    1.075
-   ],
-   "axis": null,
-   "range": null,
-   "unit": "deg",
-   "rest": 0.0,
-   "parent": "Checkpoint",
-   "states": [],
-   "note": "the CCTV monitor's screen: the gate camera with the power (M_Kpp_Lamp_Crt), dark glass without (_Off)",
-   "object": "Screen_CCTV"
   },
   "Kpp_Signs": {
    "kind": "static",
@@ -662,6 +598,22 @@
    "note": "the fixed panes (glass material)",
    "object": "Window_Glass"
   },
+  "Barrier_Sticker": {
+   "kind": "static",
+   "pivot": [
+    3.1,
+    -6.94,
+    0.3333
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Barrier",
+   "states": [],
+   "note": "lightning sticker on the motor cabinet (panel atlas)",
+   "object": "Barrier_Sticker"
+  },
   "IX_BarrierArm_82": {
    "kind": "hinge",
    "pivot": [
@@ -685,18 +637,18 @@
     "down",
     "up"
    ],
-   "note": "barrier boom: lift by hand (+, up to 80) once Padlock_Barrier is off; the counterweight swings down beside the post (Update 3: same name, pivot and travel)",
+   "note": "barrier boom, v2 electric: the motor lifts it (+, to 80) in about 4 s when the console's SCHRANKE button is pressed with the booth powered, and lowers it the same way; no padlock, not by hand (same name, pivot, axis and travel as v1 / Update 3)",
    "object": "IX_BarrierArm_82",
    "box": {
     "center": [
-     2.715,
+     2.88,
      0.0,
-     -0.034
+     0.0
     ],
     "size": [
-     6.57,
-     0.14,
-     0.258
+     6.24,
+     0.12,
+     0.16
     ]
    }
   },
@@ -713,32 +665,71 @@
    "rest": 0.0,
    "parent": null,
    "states": [],
-   "note": "barrier 7 m out on the road in front of the booth (separate root: the map's Barrier prefab, same place)",
+   "note": "electric barrier 7 m out on the road in front of the booth (separate root: the map's Barrier prefab, same place); the motor cabinet with the beacon, the boom, the rest post; its cable in conduit to the booth",
    "yaw": 0.0,
    "object": "Barrier"
   },
-  "Gate_Fence_Barbed": {
-   "kind": "static",
+  "IX_BarrierArm_Manual_318": {
+   "kind": "hinge",
    "pivot": [
-    12.3,
-    0.0,
-    1.8428
+    3.1,
+    -14.0,
+    0.7833
    ],
-   "axis": null,
-   "range": null,
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    80
+   ],
    "unit": "deg",
    "rest": 0.0,
-   "parent": "Gate",
-   "states": [],
-   "note": "barbed wire over the fixed panel: alpha band M_Kpp_Barbed (three strands)",
-   "object": "Gate_Fence_Barbed"
+   "parent": "Barrier_Manual",
+   "states": [
+    "down",
+    "up"
+   ],
+   "note": "barrier boom: lift by hand (+, up to 80) once Padlock_Barrier is off; the counterweight swings down beside the post (Update 3: same name, pivot and travel)",
+   "object": "IX_BarrierArm_Manual_318",
+   "box": {
+    "center": [
+     2.715,
+     0.0,
+     -0.034
+    ],
+    "size": [
+     6.57,
+     0.14,
+     0.258
+    ]
+   }
   },
-  "Gate_Fence_Mesh": {
+  "Barrier_Manual": {
    "kind": "static",
    "pivot": [
-    12.3,
-    0.0,
-    0.6228
+    3.1,
+    -14.0,
+    -0.3867
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the v1 hand barrier (padlock, counterweight), kept as its own prefab Barrier_Manual: not on the map; here 7 m further out than the electric one so they do not overlap",
+   "yaw": 0.0,
+   "object": "Barrier_Manual"
+  },
+  "Gate_Sticker": {
+   "kind": "static",
+   "pivot": [
+    10.83,
+    0.9,
+    -0.1172
    ],
    "axis": null,
    "range": null,
@@ -746,8 +737,8 @@
    "rest": 0.0,
    "parent": "Gate",
    "states": [],
-   "note": "chain-link of the fixed panel (M_Kpp_ChainLink)",
-   "object": "Gate_Fence_Mesh"
+   "note": "lightning sticker on the drive (panel atlas)",
+   "object": "Gate_Sticker"
   },
   "IX_Gate_81": {
    "kind": "slide",
@@ -772,18 +763,18 @@
     "shut",
     "open"
    ],
-   "note": "sliding gate leaf on a ground rail, 0.22 m inside the fence line: slides behind the fixed panel (+x), 6.6 m; heavy: two players push faster (Update 3: same name, origin, axis and travel)",
+   "note": "sliding gate leaf, v2: solid painted sheet on a frame, on the ground rail 0.50 m inside the wall line; the drive moves it 6.6 m (+x, behind the wall) in about 12 s by one press of TOR on the KPP console (same name, origin, axis and travel as v1 / Update 3)",
    "object": "IX_Gate_81",
    "box": {
     "center": [
      3.5,
-     0.216,
-     1.2325
+     0.5125,
+     1.4325
     ],
     "size": [
      7.0,
-     0.076,
-     2.375
+     0.105,
+     2.775
     ]
    }
   },
@@ -791,8 +782,8 @@
    "kind": "static",
    "pivot": [
     7.5,
-    0.22,
-    1.8628
+    0.5,
+    2.2428
    ],
    "axis": null,
    "range": null,
@@ -803,28 +794,12 @@
    "note": "barbed wire on the leaf's upright arms: alpha band M_Kpp_Barbed (three strands)",
    "object": "IX_Gate_81_Barbed"
   },
-  "IX_Gate_81_Mesh": {
-   "kind": "static",
-   "pivot": [
-    7.5,
-    0.22,
-    0.7028
-   ],
-   "axis": null,
-   "range": null,
-   "unit": "deg",
-   "rest": 0.0,
-   "parent": "IX_Gate_81",
-   "states": [],
-   "note": "chain-link infill: tiled alpha-cutout material M_Kpp_ChainLink (0.5 m per tile)",
-   "object": "IX_Gate_81_Mesh"
-  },
   "IX_Gate_81_Sign": {
    "kind": "static",
    "pivot": [
     7.5,
-    0.18,
-    0.9228
+    0.46,
+    1.0728
    ],
    "axis": null,
    "range": null,
@@ -832,7 +807,7 @@
    "rest": 0.0,
    "parent": "IX_Gate_81",
    "states": [],
-   "note": "SPERRGEBIET / RESTRICTED AREA, ZUTRITT VERBOTEN / NO ENTRY on the outer face (panel atlas)",
+   "note": "SPERRGEBIET / RESTRICTED AREA, ZUTRITT VERBOTEN / NO ENTRY, VIDEOÜBERWACHT / CCTV on the outer face (panel atlas)",
    "object": "IX_Gate_81_Sign"
   },
   "Gate": {
@@ -848,7 +823,7 @@
    "rest": 0.0,
    "parent": null,
    "states": [],
-   "note": "sliding gate beside the booth (separate root: the map's Gate prefab, same place)",
+   "note": "sliding gate (separate root: the map's Gate prefab; beside the booth in this file, at the yard in the game, where the Update 7 walls run to its end posts)",
    "yaw": 0.0,
    "object": "Gate"
   }
@@ -944,16 +919,6 @@
    "parent": "IX_Drawer_80",
    "note": ""
   },
-  "Key_Hook_Schranke": {
-   "pos": [
-    -0.7,
-    1.473,
-    1.95
-   ],
-   "kind": "item_slot",
-   "parent": "Checkpoint",
-   "note": "Key_Schranke hangs here (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
-  },
   "Key_Hook_Hauptgebaeude": {
    "pos": [
     -0.6,
@@ -1023,16 +988,6 @@
     0.0,
     0.0
    ]
-  },
-  "Hand_Phone_Receiver": {
-   "pos": [
-    1.72,
-    -0.55,
-    1.055
-   ],
-   "kind": "hand",
-   "parent": "Phone_Receiver",
-   "note": ""
   },
   "Spot_KPPLog": {
    "pos": [
@@ -1140,26 +1095,6 @@
     0.0
    ]
   },
-  "Spot_Padlock": {
-   "pos": [
-    8.95,
-    -7.0,
-    0.6283
-   ],
-   "kind": "item_slot",
-   "parent": "Barrier",
-   "note": "Padlock_Barrier hangs here through the post eye and the boom eye (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
-  },
-  "Hand_BarrierArm": {
-   "pos": [
-    8.5,
-    -7.0,
-    0.8533
-   ],
-   "kind": "hand",
-   "parent": "IX_BarrierArm_82",
-   "note": "lift it here"
-  },
   "Audio_Barrier": {
    "pos": [
     3.1,
@@ -1168,47 +1103,121 @@
    ],
    "kind": "audio",
    "parent": "Barrier",
+   "note": "boom: the springs creak, it thuds on the rest's rubber"
+  },
+  "Audio_BarrierMotor": {
+   "pos": [
+    3.1,
+    -6.78,
+    0.4633
+   ],
+   "kind": "audio",
+   "parent": "Barrier",
+   "note": "the motor whirs while the boom moves, a clunk at each end"
+  },
+  "Spot_Padlock_Manual": {
+   "pos": [
+    8.95,
+    -14.0,
+    0.6283
+   ],
+   "kind": "item_slot",
+   "parent": "Barrier_Manual",
+   "note": "Padlock_Barrier hangs here through the post eye and the boom eye (its origin is the hanging point; Forest_Opening.json, same place as Update 3)"
+  },
+  "Hand_BarrierArm_Manual": {
+   "pos": [
+    8.5,
+    -14.0,
+    0.8533
+   ],
+   "kind": "hand",
+   "parent": "IX_BarrierArm_Manual_318",
+   "note": "lift it here"
+  },
+  "Audio_Barrier_Manual": {
+   "pos": [
+    3.1,
+    -14.0,
+    0.7833
+   ],
+   "kind": "audio",
+   "parent": "Barrier_Manual",
    "note": "boom: the bearing creaks, the counterweight thuds at the top"
-  },
-  "Hand_Gate": {
-   "pos": [
-    4.25,
-    0.12,
-    0.7228
-   ],
-   "kind": "hand",
-   "parent": "IX_Gate_81",
-   "note": "push / pull here (the free end), outside"
-  },
-  "Hand_Gate_2": {
-   "pos": [
-    4.25,
-    0.32,
-    0.7228
-   ],
-   "kind": "hand",
-   "parent": "IX_Gate_81",
-   "note": "the second player, inside"
   },
   "Audio_Gate": {
    "pos": [
     7.5,
-    0.22,
+    0.5,
     -0.2772
    ],
    "kind": "audio",
    "parent": "IX_Gate_81",
-   "note": "wheels grinding on the rail, the chain-link rattles"
+   "note": "wheels rumble on the rail, the sheet booms"
   },
   "Audio_GateCatch": {
    "pos": [
     3.9,
-    0.22,
+    0.5,
     0.6228
    ],
    "kind": "audio",
    "parent": "Gate",
    "note": "the catch clanks when the leaf closes"
+  },
+  "Audio_GateMotor": {
+   "pos": [
+    10.83,
+    0.77,
+    -0.1272
+   ],
+   "kind": "audio",
+   "parent": "Gate",
+   "note": "the drive hums, the pinion rattles on the rack, a clunk at each end"
+  },
+  "CAM_Barrier": {
+   "pos": [
+    2.0468,
+    -5.986,
+    3.609
+   ],
+   "kind": "camera",
+   "parent": "Checkpoint",
+   "dir": [
+    0.6344,
+    -0.5639,
+    -0.5287
+   ],
+   "monitor": "Monitor_Barrier",
+   "fov": 55.0,
+   "pos_game": [
+    144.937,
+    13.269,
+    -64.336
+   ],
+   "note": "Cam_Barrier's view: Unity puts the camera for Monitor_Barrier here (render texture into its Kit_Monitor_Screen, material M_Kit_Screen_On) while the booth has power"
+  },
+  "CAM_Gate": {
+   "pos": [
+    11.3586,
+    1.0214,
+    3.6118
+   ],
+   "kind": "camera",
+   "parent": "Gate",
+   "dir": [
+    -0.6752,
+    -0.4893,
+    -0.552
+   ],
+   "monitor": "Monitor_Gate",
+   "fov": 55.0,
+   "pos_game": [
+    312.737,
+    20.007,
+    -310.073
+   ],
+   "note": "Cam_Gate's view: Unity puts the camera for Monitor_Gate here (render texture into its Kit_Monitor_Screen, material M_Kit_Screen_On) while the booth has power"
   },
   "Knock_Front_1": {
    "pos": [
@@ -1242,7 +1251,7 @@
   },
   "Knock_Back_1": {
    "pos": [
-    -1.2,
+    -1.75,
     1.605,
     1.4
    ],
@@ -1288,7 +1297,7 @@
   "Knock_Road_1": {
    "pos": [
     2.105,
-    -1.3,
+    -0.75,
     0.55
    ],
    "kind": "knock",
@@ -1436,6 +1445,4970 @@
    "note": "something knocks / scratches here from outside (sound, frost-print decal)"
   }
  },
+ "kit_instances": {
+  "DoorLock": {
+   "item": "Kit_DoorLock",
+   "parent": "IX_BoothDoor_74",
+   "root": "Checkpoint",
+   "note": "electric rim lock on the leaf's outer face by the latch edge (moves with the door)",
+   "ix_ids": {},
+   "pos": [
+    -0.87,
+    -0.006,
+    0.02
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.87,
+    0.02,
+    0.006
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    0.505,
+    1.654,
+    1.22
+   ],
+   "pos_game": [
+    152.201,
+    10.88,
+    -67.161
+   ]
+  },
+  "DoorLockStrike": {
+   "item": "Kit_DoorLock_Strike",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "its strike on the white door trim; the lamp shows the power (green: released)",
+   "ix_ids": {},
+   "pos": [
+    0.36,
+    1.625,
+    1.22
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.36,
+    1.22,
+    -1.625
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    0.36,
+    1.625,
+    1.22
+   ],
+   "pos_game": [
+    152.255,
+    10.88,
+    -67.024
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_DoorLock"
+    ]
+   }
+  },
+  "Phone": {
+   "item": "Kit_Phone",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "rotary phone (Kit_Phone) by the pass window, the dial toward the guard: X05 rings it twice; zone Phone_KPP (Update 3) is round its Phone_Receiver (the names Phone / Phone_Receiver / Phone_Dial are v1's)",
+   "ix_ids": {},
+   "pos": [
+    1.67,
+    -0.55,
+    0.9
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.67,
+    0.9,
+    0.55
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.67,
+    -0.55,
+    0.9
+   ],
+   "pos_game": [
+    149.717,
+    10.56,
+    -66.953
+   ]
+  },
+  "Monitor_Barrier": {
+   "item": "Kit_Monitor_CRT",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "CRT monitor: the barrier camera (Cam_Barrier) with the power",
+   "ix_ids": {},
+   "pos": [
+    1.19,
+    -1.245,
+    0.9
+   ],
+   "rot_quat_wxyz": [
+    0.104529,
+    0.0,
+    0.0,
+    -0.994522
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.19,
+    0.9,
+    1.245
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.994522,
+    0.0,
+    0.104529
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.19,
+    -1.245,
+    0.9
+   ],
+   "pos_game": [
+    149.391,
+    10.56,
+    -66.173
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_MonitorLED",
+     "Kit_Monitor_Screen"
+    ]
+   }
+  },
+  "Monitor_Gate": {
+   "item": "Kit_Monitor_CRT",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "CRT monitor: the gate camera (Cam_Gate) with the power",
+   "ix_ids": {},
+   "pos": [
+    1.62,
+    -1.245,
+    0.9
+   ],
+   "rot_quat_wxyz": [
+    0.173648,
+    0.0,
+    0.0,
+    -0.984808
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.62,
+    0.9,
+    1.245
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.984808,
+    0.0,
+    0.173648
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.62,
+    -1.245,
+    0.9
+   ],
+   "pos_game": [
+    149.158,
+    10.56,
+    -66.535
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_MonitorLED",
+     "Kit_Monitor_Screen"
+    ]
+   }
+  },
+  "Console": {
+   "item": "Kit_Console_2",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the console under the pass window: SCHRANKE / BARRIER (left), TOR / GATE (right)",
+   "ix_ids": {},
+   "pos": [
+    1.66,
+    -0.825,
+    0.9
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.66,
+    0.9,
+    0.825
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.66,
+    -0.825,
+    0.9
+   ],
+   "pos_game": [
+    149.49,
+    10.56,
+    -66.796
+   ]
+  },
+  "Btn_Schranke": {
+   "item": "Kit_Console_Button",
+   "parent": "Console",
+   "root": "Checkpoint",
+   "note": "raises / lowers the barrier (needs the power)",
+   "ix_ids": {
+    "IX_ConsoleButton": 312
+   },
+   "pos": [
+    -0.05,
+    -0.0144,
+    0.0728
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.05,
+    0.0728,
+    0.0144
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.6456,
+    -0.775,
+    0.9728
+   ],
+   "pos_game": [
+    149.54,
+    10.633,
+    -66.811
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_ConsoleButton"
+    ]
+   }
+  },
+  "Lbl_Schranke": {
+   "item": "Kit_Console_Label_Schranke",
+   "parent": "Console",
+   "root": "Checkpoint",
+   "note": "its label",
+   "ix_ids": {},
+   "pos": [
+    -0.05,
+    -0.0524,
+    0.0605
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.05,
+    0.0605,
+    0.0524
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.6076,
+    -0.775,
+    0.9605
+   ],
+   "pos_game": [
+    149.561,
+    10.621,
+    -66.779
+   ]
+  },
+  "Btn_Tor": {
+   "item": "Kit_Console_Button",
+   "parent": "Console",
+   "root": "Checkpoint",
+   "note": "opens / closes the base gate (needs the power)",
+   "ix_ids": {
+    "IX_ConsoleButton": 313
+   },
+   "pos": [
+    0.05,
+    -0.0144,
+    0.0728
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.05,
+    0.0728,
+    0.0144
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.6456,
+    -0.875,
+    0.9728
+   ],
+   "pos_game": [
+    149.456,
+    10.633,
+    -66.757
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_ConsoleButton"
+    ]
+   }
+  },
+  "Lbl_Tor": {
+   "item": "Kit_Console_Label_Tor",
+   "parent": "Console",
+   "root": "Checkpoint",
+   "note": "its label",
+   "ix_ids": {},
+   "pos": [
+    0.05,
+    -0.0524,
+    0.0605
+   ],
+   "rot_quat_wxyz": [
+    0.987681,
+    0.156482,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.05,
+    0.0605,
+    0.0524
+   ],
+   "rotUnity_xyzw": [
+    0.156482,
+    0.0,
+    0.0,
+    0.987681
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.6076,
+    -0.875,
+    0.9605
+   ],
+   "pos_game": [
+    149.477,
+    10.621,
+    -66.725
+   ]
+  },
+  "PowerCabinet": {
+   "item": "Kit_Cabinet_Power",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the distribution cabinet on the back wall: the van's battery on its shelf, both clamps on and the switch at BATTERIE give the booth power (the line from the base is dead)",
+   "ix_ids": {
+    "IX_CabinetDoor": 314,
+    "IX_CabinetSwitch": 315,
+    "IX_CabinetClamp_Pos": 316,
+    "IX_CabinetClamp_Neg": 317
+   },
+   "pos": [
+    -1.2,
+    1.6,
+    0.85
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.2,
+    0.85,
+    -1.6
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.2,
+    1.6,
+    0.85
+   ],
+   "pos_game": [
+    153.076,
+    10.51,
+    -65.697
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_CabinetPower"
+    ]
+   }
+  },
+  "RoofStand": {
+   "item": "Kit_RoofStand",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the roof stand through the back eave: the service drop from the transformer pole ends on its spools",
+   "ix_ids": {},
+   "pos": [
+    -1.2,
+    1.6,
+    1.55
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.2,
+    1.55,
+    -1.6
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.2,
+    1.6,
+    1.55
+   ],
+   "pos_game": [
+    153.076,
+    11.21,
+    -65.697
+   ]
+  },
+  "Cond_Cab_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "conduit from the cabinet up to the roof stand",
+   "ix_ids": {},
+   "pos": [
+    -1.2,
+    1.72,
+    1.302
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    0.248,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.2,
+    1.302,
+    -1.72
+   ],
+   "rotUnity_xyzw": [
+    0.707107,
+    -0.707107,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    0.248,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.2,
+    1.72,
+    1.302
+   ],
+   "pos_game": [
+    153.177,
+    10.962,
+    -65.762
+   ]
+  },
+  "Cond_Cab_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    -1.2,
+    1.72,
+    1.262
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.2,
+    1.262,
+    -1.72
+   ],
+   "rotUnity_xyzw": [
+    0.707107,
+    -0.707107,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.2,
+    1.72,
+    1.262
+   ],
+   "pos_game": [
+    153.177,
+    10.922,
+    -65.762
+   ]
+  },
+  "JunctionBox": {
+   "item": "Kit_JunctionBox",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the barrier's cable comes in here",
+   "ix_ids": {},
+   "pos": [
+    2.1,
+    -1.3,
+    0.55
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.1,
+    0.55,
+    1.3
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.1,
+    -1.3,
+    0.55
+   ],
+   "pos_game": [
+    148.853,
+    10.21,
+    -66.91
+   ]
+  },
+  "Cond_Bar_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the barrier's cable on the ground, into the booth pad's front",
+   "ix_ids": {},
+   "pos": [
+    2.9,
+    -6.46,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    0.46,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.9,
+    -0.3707,
+    6.46
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    0.46,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.9,
+    -6.46,
+    -0.3707
+   ],
+   "pos_game": [
+    144.077,
+    9.29,
+    -64.798
+   ]
+  },
+  "Cond_Bar_C1": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    2.9,
+    -6.23,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.9,
+    -0.3707,
+    6.23
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.9,
+    -6.23,
+    -0.3707
+   ],
+   "pos_game": [
+    144.271,
+    9.29,
+    -64.922
+   ]
+  },
+  "Cond_Bar_E1": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    2.9,
+    -6.0,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.5,
+    -0.5,
+    -0.5,
+    0.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.9,
+    -0.3707,
+    6.0
+   ],
+   "rotUnity_xyzw": [
+    -0.5,
+    -0.5,
+    -0.5,
+    0.5
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.9,
+    -6.0,
+    -0.3707
+   ],
+   "pos_game": [
+    144.465,
+    9.29,
+    -65.047
+   ]
+  },
+  "Cond_Bar_S2": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the barrier's cable on the ground, into the booth pad's front",
+   "ix_ids": {},
+   "pos": [
+    2.8,
+    -5.9,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    0.7,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.8,
+    -0.3707,
+    5.9
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    0.7,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.8,
+    -5.9,
+    -0.3707
+   ],
+   "pos_game": [
+    144.603,
+    9.29,
+    -65.016
+   ]
+  },
+  "Cond_Bar_C2": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    2.45,
+    -5.9,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.45,
+    -0.3707,
+    5.9
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.45,
+    -5.9,
+    -0.3707
+   ],
+   "pos_game": [
+    144.792,
+    9.29,
+    -64.722
+   ]
+  },
+  "Cond_Bar_E2": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    2.1,
+    -5.9,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    -0.707107,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.1,
+    -0.3707,
+    5.9
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    -0.707107,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.1,
+    -5.9,
+    -0.3707
+   ],
+   "pos_game": [
+    144.981,
+    9.29,
+    -64.427
+   ]
+  },
+  "Cond_Bar_S3": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the barrier's cable on the ground, into the booth pad's front",
+   "ix_ids": {},
+   "pos": [
+    2.0,
+    -5.8,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    3.25,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.0,
+    -0.3707,
+    5.8
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    3.25,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.0,
+    -5.8,
+    -0.3707
+   ],
+   "pos_game": [
+    145.119,
+    9.29,
+    -64.397
+   ]
+  },
+  "Cond_Bar_C3": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    2.0,
+    -5.2583,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.0,
+    -0.3707,
+    5.2583
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.0,
+    -5.2583,
+    -0.3707
+   ],
+   "pos_game": [
+    145.575,
+    9.29,
+    -64.689
+   ]
+  },
+  "Cond_Bar_C4": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    2.0,
+    -4.175,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.0,
+    -0.3707,
+    4.175
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.0,
+    -4.175,
+    -0.3707
+   ],
+   "pos_game": [
+    146.487,
+    9.29,
+    -65.274
+   ]
+  },
+  "Cond_Bar_C5": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    2.0,
+    -3.0917,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.0,
+    -0.3707,
+    3.0917
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.0,
+    -3.0917,
+    -0.3707
+   ],
+   "pos_game": [
+    147.399,
+    9.29,
+    -65.859
+   ]
+  },
+  "Cond_Bar_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    2.9,
+    -6.5,
+    -0.3707
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.9,
+    -0.3707,
+    6.5
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.9,
+    -6.5,
+    -0.3707
+   ],
+   "pos_game": [
+    144.044,
+    9.29,
+    -64.777
+   ]
+  },
+  "Cond_JB_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "up from the pad into the junction box",
+   "ix_ids": {},
+   "pos": [
+    2.14,
+    -1.3,
+    0.15
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    0.274,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.14,
+    0.15,
+    1.3
+   ],
+   "rotUnity_xyzw": [
+    0.707107,
+    -0.707107,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    0.274,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.14,
+    -1.3,
+    0.15
+   ],
+   "pos_game": [
+    148.831,
+    9.81,
+    -66.943
+   ]
+  },
+  "Cond_JB_Out": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    2.14,
+    -1.3,
+    0.464
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -2.14,
+    0.464,
+    1.3
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.14,
+    -1.3,
+    0.464
+   ],
+   "pos_game": [
+    148.831,
+    10.124,
+    -66.943
+   ]
+  },
+  "CamPole_Barrier": {
+   "item": "Kit_Mast",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the barrier camera's mast (4.2 m, concrete footing) between the booth and the barrier",
+   "ix_ids": {},
+   "pos": [
+    1.5,
+    -5.5,
+    -0.386
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.5,
+    -0.386,
+    5.5
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -5.5,
+    -0.386
+   ],
+   "pos_game": [
+    145.641,
+    9.274,
+    -64.138
+   ]
+  },
+  "CamBracket_Barrier": {
+   "item": "Kit_Camera_BracketPole",
+   "parent": "CamPole_Barrier",
+   "root": "Checkpoint",
+   "note": "camera bracket on the pole: turned about the pole's axis toward where the camera looks",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    0.0,
+    3.95
+   ],
+   "rot_quat_wxyz": [
+    0.91224,
+    0.0,
+    0.0,
+    0.409656
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    3.95,
+    0.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.409656,
+    0.0,
+    0.91224
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -5.5,
+    3.564
+   ],
+   "pos_game": [
+    145.641,
+    13.224,
+    -64.138
+   ]
+  },
+  "Cam_Barrier": {
+   "item": "Kit_Camera_Head",
+   "parent": "CamBracket_Barrier",
+   "root": "Checkpoint",
+   "note": "the barrier camera: Monitor_Barrier shows it (CAM_Barrier)",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    -0.515,
+    0.085
+   ],
+   "rot_quat_wxyz": [
+    0.961467,
+    0.274921,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    0.085,
+    0.515
+   ],
+   "rotUnity_xyzw": [
+    0.274921,
+    0.0,
+    0.0,
+    0.961467
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.8849,
+    -5.8421,
+    3.649
+   ],
+   "pos_game": [
+    145.145,
+    13.309,
+    -64.277
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_CameraLED"
+    ]
+   }
+  },
+  "Flood_Barrier": {
+   "item": "Kit_Mast_Flood",
+   "parent": "CamPole_Barrier",
+   "root": "Checkpoint",
+   "note": "floodlight under the camera: lights the boom and the road in front of it while the booth has power",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    0.0,
+    3.35
+   ],
+   "rot_quat_wxyz": [
+    0.889168,
+    0.0,
+    0.0,
+    0.457582
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    3.35,
+    0.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.457582,
+    0.0,
+    0.889168
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -5.5,
+    2.964
+   ],
+   "pos_game": [
+    145.641,
+    12.624,
+    -64.138
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_Flood"
+    ]
+   }
+  },
+  "Cond_CamBar_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "the barrier camera's cable out of its pole's footing along the ground into the booth pad's front",
+   "ix_ids": {},
+   "pos": [
+    1.5,
+    -5.21,
+    -0.37
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    2.66,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.5,
+    -0.37,
+    5.21
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    2.66,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -5.21,
+    -0.37
+   ],
+   "pos_game": [
+    145.885,
+    9.29,
+    -64.294
+   ]
+  },
+  "Cond_CamBar_C1": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.5,
+    -4.545,
+    -0.37
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.5,
+    -0.37,
+    4.545
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -4.545,
+    -0.37
+   ],
+   "pos_game": [
+    146.445,
+    9.29,
+    -64.653
+   ]
+  },
+  "Cond_CamBar_C2": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.5,
+    -3.215,
+    -0.37
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.5,
+    -0.37,
+    3.215
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -3.215,
+    -0.37
+   ],
+   "pos_game": [
+    147.565,
+    9.29,
+    -65.371
+   ]
+  },
+  "Cond_CamBar_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    1.5,
+    -5.25,
+    -0.37
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.5,
+    -0.37,
+    5.25
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.5,
+    -5.25,
+    -0.37
+   ],
+   "pos_game": [
+    145.852,
+    9.29,
+    -64.273
+   ]
+  },
+  "Pole_1": {
+   "item": "Kit_Pole_Trafo",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "transformer pole: the 20 kV line from the base ends here; its 0.4 kV drop goes to the roof stand",
+   "ix_ids": {},
+   "pos": [
+    -1.5,
+    9.0,
+    -0.107
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.5,
+    -0.107,
+    -9.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.5,
+    9.0,
+    -0.107
+   ],
+   "pos_game": [
+    159.467,
+    9.553,
+    -69.438
+   ]
+  },
+  "Pole_2": {
+   "item": "Kit_Pole",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "line pole up the road; the line goes on toward the base (Unity places the rest of the poles)",
+   "ix_ids": {},
+   "pos": [
+    -0.5,
+    45.0,
+    -2.035
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.5,
+    -2.035,
+    -45.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -0.5,
+    45.0,
+    -2.035
+   ],
+   "pos_game": [
+    189.233,
+    7.625,
+    -89.711
+   ]
+  },
+  "Wire_Drop_1": {
+   "item": "Kit_Wire_Drop",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_4_T -> RoofStand Wire_4_R: 7.44 m (x scale 0.744)",
+   "ix_ids": {},
+   "pos": [
+    -1.25,
+    8.85,
+    5.733
+   ],
+   "rot_quat_wxyz": [
+    0.69186,
+    0.102846,
+    0.100564,
+    -0.707559
+   ],
+   "scale": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.25,
+    5.733,
+    -8.85
+   ],
+   "rotUnity_xyzw": [
+    0.102846,
+    0.707559,
+    0.100564,
+    0.69186
+   ],
+   "scaleUnity": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.25,
+    8.85,
+    5.733
+   ],
+   "pos_game": [
+    159.206,
+    15.393,
+    -69.568
+   ]
+  },
+  "Wire_Drop_2": {
+   "item": "Kit_Wire_Drop",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_5_T -> RoofStand Wire_3_R: 7.44 m (x scale 0.744)",
+   "ix_ids": {},
+   "pos": [
+    -1.1,
+    8.85,
+    5.733
+   ],
+   "rot_quat_wxyz": [
+    0.691364,
+    0.102913,
+    0.100489,
+    -0.708044
+   ],
+   "scale": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.1,
+    5.733,
+    -8.85
+   ],
+   "rotUnity_xyzw": [
+    0.102913,
+    0.708044,
+    0.100489,
+    0.691364
+   ],
+   "scaleUnity": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.1,
+    8.85,
+    5.733
+   ],
+   "pos_game": [
+    159.125,
+    15.393,
+    -69.694
+   ]
+  },
+  "Wire_Drop_3": {
+   "item": "Kit_Wire_Drop",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_6_T -> RoofStand Wire_2_R: 7.44 m (x scale 0.744)",
+   "ix_ids": {},
+   "pos": [
+    -0.95,
+    8.85,
+    5.733
+   ],
+   "rot_quat_wxyz": [
+    0.690868,
+    0.10298,
+    0.100413,
+    -0.708529
+   ],
+   "scale": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.95,
+    5.733,
+    -8.85
+   ],
+   "rotUnity_xyzw": [
+    0.10298,
+    0.708529,
+    0.100413,
+    0.690868
+   ],
+   "scaleUnity": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -0.95,
+    8.85,
+    5.733
+   ],
+   "pos_game": [
+    159.044,
+    15.393,
+    -69.82
+   ]
+  },
+  "Wire_Drop_4": {
+   "item": "Kit_Wire_Drop",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_7_T -> RoofStand Wire_1_R: 7.44 m (x scale 0.744)",
+   "ix_ids": {},
+   "pos": [
+    -0.8,
+    8.85,
+    5.733
+   ],
+   "rot_quat_wxyz": [
+    0.690372,
+    0.103047,
+    0.100338,
+    -0.709014
+   ],
+   "scale": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.8,
+    5.733,
+    -8.85
+   ],
+   "rotUnity_xyzw": [
+    0.103047,
+    0.709014,
+    0.100338,
+    0.690372
+   ],
+   "scaleUnity": [
+    0.744,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -0.8,
+    8.85,
+    5.733
+   ],
+   "pos_game": [
+    158.963,
+    15.393,
+    -69.947
+   ]
+  },
+  "Wire_Line_1": {
+   "item": "Kit_Wire_Bare",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_1_T -> Pole_2 Wire_1: 36.07 m (x scale 0.902)",
+   "ix_ids": {},
+   "pos": [
+    -2.2,
+    8.86,
+    8.211
+   ],
+   "rot_quat_wxyz": [
+    0.7166,
+    -0.018643,
+    0.019168,
+    0.696971
+   ],
+   "scale": [
+    0.9016,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    2.2,
+    8.211,
+    -8.86
+   ],
+   "rotUnity_xyzw": [
+    -0.018643,
+    -0.696971,
+    0.019168,
+    0.7166
+   ],
+   "scaleUnity": [
+    0.9016,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -2.2,
+    8.86,
+    8.211
+   ],
+   "pos_game": [
+    159.727,
+    17.871,
+    -68.774
+   ]
+  },
+  "Wire_Line_2": {
+   "item": "Kit_Wire_Bare",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_2_T -> Pole_2 Wire_2: 36.07 m (x scale 0.902)",
+   "ix_ids": {},
+   "pos": [
+    -1.5,
+    8.86,
+    8.211
+   ],
+   "rot_quat_wxyz": [
+    0.7166,
+    -0.018643,
+    0.019168,
+    0.696971
+   ],
+   "scale": [
+    0.9016,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.5,
+    8.211,
+    -8.86
+   ],
+   "rotUnity_xyzw": [
+    -0.018643,
+    -0.696971,
+    0.019168,
+    0.7166
+   ],
+   "scaleUnity": [
+    0.9016,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -1.5,
+    8.86,
+    8.211
+   ],
+   "pos_game": [
+    159.349,
+    17.871,
+    -69.363
+   ]
+  },
+  "Wire_Line_3": {
+   "item": "Kit_Wire_Bare",
+   "parent": "Checkpoint",
+   "root": "Checkpoint",
+   "note": "overhead wire Pole_1 Wire_3_T -> Pole_2 Wire_3: 36.07 m (x scale 0.902)",
+   "ix_ids": {},
+   "pos": [
+    -0.8,
+    8.86,
+    8.211
+   ],
+   "rot_quat_wxyz": [
+    0.7166,
+    -0.018643,
+    0.019168,
+    0.696971
+   ],
+   "scale": [
+    0.9016,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.8,
+    8.211,
+    -8.86
+   ],
+   "rotUnity_xyzw": [
+    -0.018643,
+    -0.696971,
+    0.019168,
+    0.7166
+   ],
+   "scaleUnity": [
+    0.9016,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    -0.8,
+    8.86,
+    8.211
+   ],
+   "pos_game": [
+    158.971,
+    17.871,
+    -69.952
+   ]
+  },
+  "Beacon_Barrier": {
+   "item": "Kit_Beacon",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "the beacon on the cabinet: turns while the boom moves (with the power)",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    0.22,
+    1.355
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    1.355,
+    -0.22
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    3.1,
+    -6.78,
+    0.9683
+   ],
+   "pos_game": [
+    143.7,
+    10.629,
+    -64.794
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_Beacon"
+    ]
+   }
+  },
+  "JunctionBox_Wall": {
+   "item": "Kit_JunctionBox",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "the barrier's box on the wall's end panel (street side), as in the concept",
+   "ix_ids": {},
+   "pos": [
+    -1.55,
+    -0.095,
+    0.95
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.55,
+    0.95,
+    0.095
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.55,
+    -7.095,
+    0.5633
+   ],
+   "pos_game": [
+    144.271,
+    10.224,
+    -63.319
+   ]
+  },
+  "Cond_BarWall_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "from the cabinet along the ground and up the wall panel into its box",
+   "ix_ids": {},
+   "pos": [
+    -0.3,
+    -0.44,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    0.08,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.3,
+    0.016,
+    0.44
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    0.08,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.8,
+    -7.44,
+    -0.3707
+   ],
+   "pos_game": [
+    143.306,
+    9.29,
+    -64.185
+   ]
+  },
+  "Cond_BarWall_C1": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    -0.3,
+    -0.48,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.3,
+    0.016,
+    0.48
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.8,
+    -7.48,
+    -0.3707
+   ],
+   "pos_game": [
+    143.273,
+    9.29,
+    -64.164
+   ]
+  },
+  "Cond_BarWall_E1": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    -0.3,
+    -0.52,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.5,
+    0.5,
+    -0.5,
+    -0.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.3,
+    0.016,
+    0.52
+   ],
+   "rotUnity_xyzw": [
+    0.5,
+    0.5,
+    -0.5,
+    0.5
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.8,
+    -7.52,
+    -0.3707
+   ],
+   "pos_game": [
+    143.239,
+    9.29,
+    -64.142
+   ]
+  },
+  "Cond_BarWall_S2": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "from the cabinet along the ground and up the wall panel into its box",
+   "ix_ids": {},
+   "pos": [
+    -0.4,
+    -0.62,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    1.05,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.4,
+    0.016,
+    0.62
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.05,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.7,
+    -7.62,
+    -0.3707
+   ],
+   "pos_game": [
+    143.209,
+    9.29,
+    -64.004
+   ]
+  },
+  "Cond_BarWall_C2": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    -0.925,
+    -0.62,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.925,
+    0.016,
+    0.62
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.175,
+    -7.62,
+    -0.3707
+   ],
+   "pos_game": [
+    143.492,
+    9.29,
+    -63.562
+   ]
+  },
+  "Cond_BarWall_E2": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    -1.45,
+    -0.62,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    -0.707107,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.45,
+    0.016,
+    0.62
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    -0.707107,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.65,
+    -7.62,
+    -0.3707
+   ],
+   "pos_game": [
+    143.776,
+    9.29,
+    -63.12
+   ]
+  },
+  "Cond_BarWall_S3": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "from the cabinet along the ground and up the wall panel into its box",
+   "ix_ids": {},
+   "pos": [
+    -1.55,
+    -0.52,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    0.285,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.55,
+    0.016,
+    0.52
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    0.285,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.55,
+    -7.52,
+    -0.3707
+   ],
+   "pos_game": [
+    143.914,
+    9.29,
+    -63.09
+   ]
+  },
+  "Cond_BarWall_C3": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    -1.55,
+    -0.3775,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.55,
+    0.016,
+    0.3775
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.55,
+    -7.3775,
+    -0.3707
+   ],
+   "pos_game": [
+    144.034,
+    9.29,
+    -63.167
+   ]
+  },
+  "Cond_BarWall_E3": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    -1.55,
+    -0.235,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.55,
+    0.016,
+    0.235
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.55,
+    -7.235,
+    -0.3707
+   ],
+   "pos_game": [
+    144.154,
+    9.29,
+    -63.243
+   ]
+  },
+  "Cond_BarWall_S4": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "from the cabinet along the ground and up the wall panel into its box",
+   "ix_ids": {},
+   "pos": [
+    -1.55,
+    -0.135,
+    0.116
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    0.708,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.55,
+    0.116,
+    0.135
+   ],
+   "rotUnity_xyzw": [
+    0.707107,
+    -0.707107,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    0.708,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.55,
+    -7.135,
+    -0.2707
+   ],
+   "pos_game": [
+    144.238,
+    9.39,
+    -63.297
+   ]
+  },
+  "Cond_BarWall_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    -0.3,
+    -0.4,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.3,
+    0.016,
+    0.4
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    2.8,
+    -7.4,
+    -0.3707
+   ],
+   "pos_game": [
+    143.34,
+    9.29,
+    -64.207
+   ]
+  },
+  "Cond_BarWall_Out": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Barrier",
+   "root": "Barrier",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    -1.55,
+    -0.135,
+    0.864
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    1.55,
+    0.864,
+    0.135
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    1.55,
+    -7.135,
+    0.4773
+   ],
+   "pos_game": [
+    144.238,
+    10.138,
+    -63.297
+   ]
+  },
+  "Pole_Gate": {
+   "item": "Kit_Pole",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "line pole inside the wall: the drive's cable goes up it to the line; Unity continues the line from here to the KPP",
+   "ix_ids": {},
+   "pos": [
+    1.6,
+    2.2,
+    0.0
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.6,
+    0.0,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.6,
+    2.2,
+    -0.3772
+   ],
+   "pos_game": [
+    311.344,
+    16.018,
+    -311.067
+   ]
+  },
+  "JunctionBox_Gate": {
+   "item": "Kit_JunctionBox",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "junction box on the pole",
+   "ix_ids": {},
+   "pos": [
+    1.47,
+    2.2,
+    3.0
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.47,
+    3.0,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.47,
+    2.2,
+    2.6228
+   ],
+   "pos_game": [
+    311.473,
+    19.018,
+    -311.085
+   ]
+  },
+  "Cond_Gate_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "the drive's cable along the ground and up the pole",
+   "ix_ids": {},
+   "pos": [
+    -0.17,
+    0.98,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.12,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.17,
+    0.016,
+    -0.98
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.12,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    10.83,
+    0.98,
+    -0.3612
+   ],
+   "pos_game": [
+    313.267,
+    16.034,
+    -310.105
+   ]
+  },
+  "Cond_Gate_C1": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    -0.17,
+    1.54,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.17,
+    0.016,
+    -1.54
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    10.83,
+    1.54,
+    -0.3612
+   ],
+   "pos_game": [
+    313.189,
+    16.034,
+    -310.66
+   ]
+  },
+  "Cond_Gate_E1": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    -0.17,
+    2.1,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.17,
+    0.016,
+    -2.1
+   ],
+   "rotUnity_xyzw": [
+    0.5,
+    -0.5,
+    0.5,
+    0.5
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    10.83,
+    2.1,
+    -0.3612
+   ],
+   "pos_game": [
+    313.111,
+    16.034,
+    -311.214
+   ]
+  },
+  "Cond_Gate_S2": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "the drive's cable along the ground and up the pole",
+   "ix_ids": {},
+   "pos": [
+    -0.07,
+    2.2,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.4,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.07,
+    0.016,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.4,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    10.93,
+    2.2,
+    -0.3612
+   ],
+   "pos_game": [
+    312.998,
+    16.034,
+    -311.299
+   ]
+  },
+  "Cond_Gate_C2": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    0.63,
+    2.2,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.63,
+    0.016,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.63,
+    2.2,
+    -0.3612
+   ],
+   "pos_game": [
+    312.305,
+    16.034,
+    -311.202
+   ]
+  },
+  "Cond_Gate_E2": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    1.33,
+    2.2,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.33,
+    0.016,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.33,
+    2.2,
+    -0.3612
+   ],
+   "pos_game": [
+    311.611,
+    16.034,
+    -311.105
+   ]
+  },
+  "Cond_Gate_S3": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "the drive's cable along the ground and up the pole",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    0.116
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    2.758,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    0.116,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    2.758,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    -0.2612
+   ],
+   "pos_game": [
+    311.512,
+    16.134,
+    -311.091
+   ]
+  },
+  "Cond_Gate_C3": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    0.8055
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    0.8055,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    0.4283
+   ],
+   "pos_game": [
+    311.512,
+    16.824,
+    -311.091
+   ]
+  },
+  "Cond_Gate_C4": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    2.1845
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    2.1845,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    1.8073
+   ],
+   "pos_game": [
+    311.512,
+    18.203,
+    -311.091
+   ]
+  },
+  "Cond_Gate_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    -0.17,
+    0.94,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.17,
+    0.016,
+    -0.94
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    10.83,
+    0.94,
+    -0.3612
+   ],
+   "pos_game": [
+    313.272,
+    16.034,
+    -310.066
+   ]
+  },
+  "Cond_Gate_Out": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    2.914
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    2.914,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    2.5368
+   ],
+   "pos_game": [
+    311.512,
+    18.932,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "up the pole to the line",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    3.126
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    4.224,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    3.126,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    4.224,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    2.7488
+   ],
+   "pos_game": [
+    311.512,
+    19.144,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_C1": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    3.654
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    3.654,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    3.2768
+   ],
+   "pos_game": [
+    311.512,
+    19.672,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_C2": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    4.71
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    4.71,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    4.3328
+   ],
+   "pos_game": [
+    311.512,
+    20.728,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_C3": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    5.766
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    5.766,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    5.3888
+   ],
+   "pos_game": [
+    311.512,
+    21.784,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_C4": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    6.822
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    6.822,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    6.4448
+   ],
+   "pos_game": [
+    311.512,
+    22.84,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_E1": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    7.35
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    -0.707107,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    7.35,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    -0.707107,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    6.9728
+   ],
+   "pos_game": [
+    311.512,
+    23.368,
+    -311.091
+   ]
+  },
+  "Cond_GateUp_S2": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "up the pole to the line",
+   "ix_ids": {},
+   "pos": [
+    1.33,
+    2.2,
+    7.45
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    0.15,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.33,
+    7.45,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    0.15,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.33,
+    2.2,
+    7.0728
+   ],
+   "pos_game": [
+    311.611,
+    23.468,
+    -311.105
+   ]
+  },
+  "Cond_GateUp_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    1.43,
+    2.2,
+    3.086
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -1.43,
+    3.086,
+    -2.2
+   ],
+   "rotUnity_xyzw": [
+    0.707107,
+    -0.707107,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    12.43,
+    2.2,
+    2.7088
+   ],
+   "pos_game": [
+    311.512,
+    19.104,
+    -311.091
+   ]
+  },
+  "CamPole_Gate": {
+   "item": "Kit_Mast",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "the gate camera's mast (4.2 m, concrete footing) inside the wall, west of the opening",
+   "ix_ids": {},
+   "pos": [
+    0.95,
+    1.45,
+    0.0
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.95,
+    0.0,
+    -1.45
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    1.45,
+    -0.3772
+   ],
+   "pos_game": [
+    312.092,
+    16.018,
+    -310.415
+   ]
+  },
+  "CamBracket_Gate": {
+   "item": "Kit_Camera_BracketPole",
+   "parent": "CamPole_Gate",
+   "root": "Gate",
+   "note": "camera bracket on the pole: turned about the pole's axis toward where the camera looks",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    0.0,
+    3.95
+   ],
+   "rot_quat_wxyz": [
+    0.454507,
+    0.0,
+    0.0,
+    0.890743
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    3.95,
+    0.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.890743,
+    0.0,
+    0.454508
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    1.45,
+    3.5728
+   ],
+   "pos_game": [
+    312.092,
+    19.968,
+    -310.415
+   ]
+  },
+  "Cam_Gate": {
+   "item": "Kit_Camera_Head",
+   "parent": "CamBracket_Gate",
+   "root": "Gate",
+   "note": "the gate camera: Monitor_Gate shows it (CAM_Gate)",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    -0.515,
+    0.085
+   ],
+   "rot_quat_wxyz": [
+    0.957559,
+    0.288238,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    0.085,
+    0.515
+   ],
+   "rotUnity_xyzw": [
+    0.288238,
+    0.0,
+    0.0,
+    0.957559
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.533,
+    1.1478,
+    3.6578
+   ],
+   "pos_game": [
+    312.547,
+    20.053,
+    -310.174
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_CameraLED"
+    ]
+   }
+  },
+  "Flood_Gate": {
+   "item": "Kit_Mast_Flood",
+   "parent": "CamPole_Gate",
+   "root": "Gate",
+   "note": "floodlight under the camera: lights the opening and the road outside while there is power",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    0.0,
+    3.35
+   ],
+   "rot_quat_wxyz": [
+    0.508775,
+    0.0,
+    0.0,
+    0.8609
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    3.35,
+    0.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    -0.8609,
+    0.0,
+    0.508775
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    1.45,
+    2.9728
+   ],
+   "pos_game": [
+    312.092,
+    19.368,
+    -310.415
+   ],
+   "power": {
+    "group": "power",
+    "parts": [
+     "Lens_Flood"
+    ]
+   }
+  },
+  "Cond_CamGate_S1": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "the gate camera's cable out of its pole's footing along the ground into the drive's base",
+   "ix_ids": {},
+   "pos": [
+    0.95,
+    1.16,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    0.26,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.95,
+    0.016,
+    -1.16
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    0.26,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    1.16,
+    -0.3612
+   ],
+   "pos_game": [
+    312.132,
+    16.034,
+    -310.128
+   ]
+  },
+  "Cond_CamGate_C1": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    0.95,
+    1.03,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.95,
+    0.016,
+    -1.03
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    1.03,
+    -0.3612
+   ],
+   "pos_game": [
+    312.151,
+    16.034,
+    -309.999
+   ]
+  },
+  "Cond_CamGate_E1": {
+   "item": "Kit_Conduit_Elbow",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "elbow",
+   "ix_ids": {},
+   "pos": [
+    0.95,
+    0.9,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.5,
+    0.5,
+    -0.5,
+    -0.5
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.95,
+    0.016,
+    -0.9
+   ],
+   "rotUnity_xyzw": [
+    0.5,
+    0.5,
+    -0.5,
+    0.5
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    0.9,
+    -0.3612
+   ],
+   "pos_game": [
+    312.169,
+    16.034,
+    -309.87
+   ]
+  },
+  "Cond_CamGate_S2": {
+   "item": "Kit_Conduit_Straight",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "the gate camera's cable out of its pole's footing along the ground into the drive's base",
+   "ix_ids": {},
+   "pos": [
+    0.85,
+    0.8,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    0.79,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.85,
+    0.016,
+    -0.8
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    0.79,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.85,
+    0.8,
+    -0.3612
+   ],
+   "pos_game": [
+    312.282,
+    16.034,
+    -309.785
+   ]
+  },
+  "Cond_CamGate_C2": {
+   "item": "Kit_Conduit_Clamp",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "clamp",
+   "ix_ids": {},
+   "pos": [
+    0.455,
+    0.8,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.455,
+    0.016,
+    -0.8
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.455,
+    0.8,
+    -0.3612
+   ],
+   "pos_game": [
+    312.673,
+    16.034,
+    -309.84
+   ]
+  },
+  "Cond_CamGate_In": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    0.95,
+    1.2,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    0.707107,
+    0.0,
+    0.0,
+    -0.707107
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.95,
+    0.016,
+    -1.2
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.95,
+    1.2,
+    -0.3612
+   ],
+   "pos_game": [
+    312.127,
+    16.034,
+    -310.167
+   ]
+  },
+  "Cond_CamGate_Out": {
+   "item": "Kit_Conduit_Entry",
+   "parent": "Gate",
+   "root": "Gate",
+   "note": "gland into the box",
+   "ix_ids": {},
+   "pos": [
+    0.02,
+    0.8,
+    0.016
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    -0.02,
+    0.016,
+    -0.8
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_kpp": [
+    11.02,
+    0.8,
+    -0.3612
+   ],
+   "pos_game": [
+    313.104,
+    16.034,
+    -309.901
+   ]
+  }
+ },
+ "wires": {
+  "rule": {
+   "sag_k": 0.001,
+   "sag_min": 0.05,
+   "seg_len": 1.5,
+   "seg_min": 6,
+   "r_lv": 0.007,
+   "r_bare": 0.0045,
+   "sides": 5,
+   "note": "parabola through the two attach points: p(t) = A + (B - A) t - up * 4 sag t (1 - t), t = 0..1; sag = max(sag_min, sag_k * L^2), L = the horizontal span; segments = max(seg_min, ceil(L / seg_len)); a tube of `sides` sides and radius r_lv (service drop, black, M_Kit_Wire) or r_bare (line wires, M_Kit_WireBare)"
+  },
+  "spans": [
+   {
+    "instance": "Wire_Drop_1",
+    "item": "Kit_Wire_Drop",
+    "group": "drop",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_4_T",
+     "pos": [
+      -1.25,
+      8.85,
+      5.733
+     ],
+     "pos_game": [
+      159.206,
+      15.393,
+      -69.568
+     ]
+    },
+    "b": {
+     "instance": "RoofStand",
+     "socket": "Wire_4_R",
+     "pos": [
+      -1.41,
+      1.72,
+      3.615
+     ],
+     "pos_game": [
+      153.29,
+      13.275,
+      -65.585
+     ]
+    },
+    "span": 7.44,
+    "scale_x": 0.744,
+    "sag_model": 0.1,
+    "sag_rule": 0.051
+   },
+   {
+    "instance": "Wire_Drop_2",
+    "item": "Kit_Wire_Drop",
+    "group": "drop",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_5_T",
+     "pos": [
+      -1.1,
+      8.85,
+      5.733
+     ],
+     "pos_game": [
+      159.125,
+      15.393,
+      -69.694
+     ]
+    },
+    "b": {
+     "instance": "RoofStand",
+     "socket": "Wire_3_R",
+     "pos": [
+      -1.27,
+      1.72,
+      3.615
+     ],
+     "pos_game": [
+      153.214,
+      13.275,
+      -65.703
+     ]
+    },
+    "span": 7.44,
+    "scale_x": 0.744,
+    "sag_model": 0.1,
+    "sag_rule": 0.051
+   },
+   {
+    "instance": "Wire_Drop_3",
+    "item": "Kit_Wire_Drop",
+    "group": "drop",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_6_T",
+     "pos": [
+      -0.95,
+      8.85,
+      5.733
+     ],
+     "pos_game": [
+      159.044,
+      15.393,
+      -69.82
+     ]
+    },
+    "b": {
+     "instance": "RoofStand",
+     "socket": "Wire_2_R",
+     "pos": [
+      -1.13,
+      1.72,
+      3.615
+     ],
+     "pos_game": [
+      153.139,
+      13.275,
+      -65.821
+     ]
+    },
+    "span": 7.44,
+    "scale_x": 0.744,
+    "sag_model": 0.1,
+    "sag_rule": 0.051
+   },
+   {
+    "instance": "Wire_Drop_4",
+    "item": "Kit_Wire_Drop",
+    "group": "drop",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_7_T",
+     "pos": [
+      -0.8,
+      8.85,
+      5.733
+     ],
+     "pos_game": [
+      158.963,
+      15.393,
+      -69.947
+     ]
+    },
+    "b": {
+     "instance": "RoofStand",
+     "socket": "Wire_1_R",
+     "pos": [
+      -0.99,
+      1.72,
+      3.615
+     ],
+     "pos_game": [
+      153.063,
+      13.275,
+      -65.939
+     ]
+    },
+    "span": 7.44,
+    "scale_x": 0.744,
+    "sag_model": 0.1,
+    "sag_rule": 0.051
+   },
+   {
+    "instance": "Wire_Line_1",
+    "item": "Kit_Wire_Bare",
+    "group": "line",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_1_T",
+     "pos": [
+      -2.2,
+      8.86,
+      8.211
+     ],
+     "pos_game": [
+      159.727,
+      17.871,
+      -68.774
+     ]
+    },
+    "b": {
+     "instance": "Pole_2",
+     "socket": "Wire_1",
+     "pos": [
+      -1.2,
+      44.86,
+      6.283
+     ],
+     "pos_game": [
+      189.493,
+      15.943,
+      -89.046
+     ]
+    },
+    "span": 36.065,
+    "scale_x": 0.9016,
+    "sag_model": 1.6,
+    "sag_rule": 1.297
+   },
+   {
+    "instance": "Wire_Line_2",
+    "item": "Kit_Wire_Bare",
+    "group": "line",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_2_T",
+     "pos": [
+      -1.5,
+      8.86,
+      8.211
+     ],
+     "pos_game": [
+      159.349,
+      17.871,
+      -69.363
+     ]
+    },
+    "b": {
+     "instance": "Pole_2",
+     "socket": "Wire_2",
+     "pos": [
+      -0.5,
+      44.86,
+      6.283
+     ],
+     "pos_game": [
+      189.116,
+      15.943,
+      -89.635
+     ]
+    },
+    "span": 36.065,
+    "scale_x": 0.9016,
+    "sag_model": 1.6,
+    "sag_rule": 1.297
+   },
+   {
+    "instance": "Wire_Line_3",
+    "item": "Kit_Wire_Bare",
+    "group": "line",
+    "a": {
+     "instance": "Pole_1",
+     "socket": "Wire_3_T",
+     "pos": [
+      -0.8,
+      8.86,
+      8.211
+     ],
+     "pos_game": [
+      158.971,
+      17.871,
+      -69.952
+     ]
+    },
+    "b": {
+     "instance": "Pole_2",
+     "socket": "Wire_3",
+     "pos": [
+      0.2,
+      44.86,
+      6.283
+     ],
+     "pos_game": [
+      188.738,
+      15.943,
+      -90.224
+     ]
+    },
+    "span": 36.065,
+    "scale_x": 0.9016,
+    "sag_model": 1.6,
+    "sag_rule": 1.297
+   }
+  ],
+  "onward": [
+   {
+    "instance": "Pole_2",
+    "socket": "Wire_1",
+    "pos": [
+     -1.2,
+     44.86,
+     6.283
+    ],
+    "pos_game": [
+     189.493,
+     15.943,
+     -89.046
+    ],
+    "toward": "the base"
+   },
+   {
+    "instance": "Pole_2",
+    "socket": "Wire_2",
+    "pos": [
+     -0.5,
+     44.86,
+     6.283
+    ],
+    "pos_game": [
+     189.116,
+     15.943,
+     -89.635
+    ],
+    "toward": "the base"
+   },
+   {
+    "instance": "Pole_2",
+    "socket": "Wire_3",
+    "pos": [
+     0.2,
+     44.86,
+     6.283
+    ],
+    "pos_game": [
+     188.738,
+     15.943,
+     -90.224
+    ],
+    "toward": "the base"
+   },
+   {
+    "instance": "Pole_Gate",
+    "socket": "Wire_1",
+    "pos": [
+     11.9,
+     2.06,
+     7.9408
+    ],
+    "pos_game": [
+     312.057,
+     24.336,
+     -311.026
+    ],
+    "toward": "the KPP"
+   },
+   {
+    "instance": "Pole_Gate",
+    "socket": "Wire_2",
+    "pos": [
+     12.6,
+     2.06,
+     7.9408
+    ],
+    "pos_game": [
+     311.364,
+     24.336,
+     -310.928
+    ],
+    "toward": "the KPP"
+   },
+   {
+    "instance": "Pole_Gate",
+    "socket": "Wire_3",
+    "pos": [
+     13.3,
+     2.06,
+     7.9408
+    ],
+    "pos_game": [
+     310.67,
+     24.336,
+     -310.831
+    ],
+    "toward": "the KPP"
+   }
+  ],
+  "note": "v2.1: the wires are kit models - the drop Wire_Drop_1..4 (Kit_Wire_Drop, black service cable) and the line Wire_Line_1..3 (Kit_Wire_Bare) - instances in kit_instances, each turned from its socket a to b and scaled in x (scale_x); the line goes on from Pole_2 toward the base and ends at Pole_Gate: Unity places Kit_Pole about every 40 m along the road and a Kit_Wire_Bare between each pair of Wire_1..3 (onward: the ends here), or builds the spans by the rule"
+ },
+ "keep_clear": [
+  {
+   "kind": "circle",
+   "c": [
+    159.467,
+    -69.438
+   ],
+   "r": 1.5,
+   "why": "Pole_1"
+  },
+  {
+   "kind": "circle",
+   "c": [
+    189.233,
+    -89.711
+   ],
+   "r": 2.0,
+   "why": "Pole_2"
+  },
+  {
+   "kind": "circle",
+   "c": [
+    311.344,
+    -311.067
+   ],
+   "r": 1.5,
+   "why": "Pole_Gate"
+  },
+  {
+   "kind": "circle",
+   "c": [
+    145.641,
+    -64.138
+   ],
+   "r": 1.0,
+   "why": "CamPole_Barrier"
+  },
+  {
+   "kind": "circle",
+   "c": [
+    312.092,
+    -310.415
+   ],
+   "r": 1.0,
+   "why": "CamPole_Gate"
+  },
+  {
+   "kind": "strip",
+   "a": [
+    159.467,
+    -69.438
+   ],
+   "b": [
+    189.233,
+    -89.711
+   ],
+   "r": 2.5,
+   "why": "under the line Pole_1 - Pole_2"
+  }
+ ],
  "colliders": [
   {
    "name": "COL_Pad",
@@ -1444,26 +6417,26 @@
    "center": [
     0.0,
     0.0,
-    -0.05
+    -0.15
    ],
    "size": [
     6.1,
     5.1,
-    0.4
+    0.6
    ],
    "center_kpp": [
     0.0,
     0.0,
-    -0.05
+    -0.15
    ],
    "centerUnity": [
     0.0,
-    -0.05,
+    -0.15,
     0.0
    ],
    "sizeUnity": [
     6.1,
-    0.4,
+    0.6,
     5.1
    ]
   },
@@ -2468,63 +7441,93 @@
    ]
   },
   {
-   "name": "COL_Barrier_Foot",
+   "name": "COL_Barrier_Pad",
    "parent": "Barrier",
    "type": "box",
    "center": [
     0.0,
-    0.0,
+    0.05,
     -0.13
    ],
    "size": [
-    0.75,
-    0.75,
+    0.8,
+    0.9,
     0.56
    ],
    "center_kpp": [
     3.1,
-    -7.0,
+    -6.95,
     -0.5167
    ],
    "centerUnity": [
     0.0,
     -0.13,
-    0.0
+    -0.05
    ],
    "sizeUnity": [
-    0.75,
+    0.8,
     0.56,
-    0.75
+    0.9
    ]
   },
   {
-   "name": "COL_Barrier_Post",
+   "name": "COL_Barrier_Cabinet",
    "parent": "Barrier",
    "type": "box",
    "center": [
     0.0,
-    0.2,
-    0.74
+    0.22,
+    0.7525
    ],
    "size": [
-    0.24,
-    0.24,
-    1.18
+    0.36,
+    0.32,
+    1.205
    ],
    "center_kpp": [
     3.1,
-    -6.8,
-    0.3533
+    -6.78,
+    0.3658
    ],
    "centerUnity": [
     0.0,
-    0.74,
-    -0.2
+    0.7525,
+    -0.22
    ],
    "sizeUnity": [
-    0.24,
-    1.18,
-    0.24
+    0.36,
+    1.205,
+    0.32
+   ]
+  },
+  {
+   "name": "COL_Barrier_RestFoot",
+   "parent": "Barrier",
+   "type": "box",
+   "center": [
+    5.575,
+    0.0,
+    -0.145
+   ],
+   "size": [
+    0.35,
+    0.4,
+    0.53
+   ],
+   "center_kpp": [
+    8.675,
+    -7.0,
+    -0.5317
+   ],
+   "centerUnity": [
+    -5.575,
+    -0.145,
+    0.0
+   ],
+   "sizeUnity": [
+    0.35,
+    0.53,
+    0.4
    ]
   },
   {
@@ -2562,6 +7565,366 @@
    "parent": "IX_BarrierArm_82",
    "type": "box",
    "center": [
+    2.88,
+    0.0,
+    0.0
+   ],
+   "size": [
+    6.24,
+    0.12,
+    0.16
+   ],
+   "center_kpp": [
+    5.98,
+    -7.0,
+    0.7833
+   ],
+   "centerUnity": [
+    -2.88,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    6.24,
+    0.16,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_Gate_PostE",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -7.3,
+    0.0,
+    1.245
+   ],
+   "size": [
+    0.3,
+    0.3,
+    3.09
+   ],
+   "center_kpp": [
+    3.7,
+    0.0,
+    0.8678
+   ],
+   "centerUnity": [
+    7.3,
+    1.245,
+    0.0
+   ],
+   "sizeUnity": [
+    0.3,
+    3.09,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_Gate_PostW",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    0.3,
+    0.0,
+    1.245
+   ],
+   "size": [
+    0.3,
+    0.3,
+    3.09
+   ],
+   "center_kpp": [
+    11.3,
+    0.0,
+    0.8678
+   ],
+   "centerUnity": [
+    -0.3,
+    1.245,
+    0.0
+   ],
+   "sizeUnity": [
+    0.3,
+    3.09,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_Gate_Receiver",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -7.175,
+    0.5,
+    0.925
+   ],
+   "size": [
+    0.45,
+    0.46,
+    3.05
+   ],
+   "center_kpp": [
+    3.825,
+    0.5,
+    0.5478
+   ],
+   "centerUnity": [
+    7.175,
+    0.925,
+    -0.5
+   ],
+   "sizeUnity": [
+    0.45,
+    3.05,
+    0.46
+   ]
+  },
+  {
+   "name": "COL_Gate_Guide_Out",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -0.1,
+    0.37,
+    1.275
+   ],
+   "size": [
+    0.08,
+    0.08,
+    2.55
+   ],
+   "center_kpp": [
+    10.9,
+    0.37,
+    0.8978
+   ],
+   "centerUnity": [
+    0.1,
+    1.275,
+    -0.37
+   ],
+   "sizeUnity": [
+    0.08,
+    2.55,
+    0.08
+   ]
+  },
+  {
+   "name": "COL_Gate_Guide_In",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    0.04,
+    0.63,
+    1.275
+   ],
+   "size": [
+    0.08,
+    0.08,
+    2.55
+   ],
+   "center_kpp": [
+    11.04,
+    0.63,
+    0.8978
+   ],
+   "centerUnity": [
+    -0.04,
+    1.275,
+    -0.63
+   ],
+   "sizeUnity": [
+    0.08,
+    2.55,
+    0.08
+   ]
+  },
+  {
+   "name": "COL_Gate_Stop",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    6.69,
+    0.5,
+    0.3
+   ],
+   "size": [
+    0.14,
+    0.08,
+    0.6
+   ],
+   "center_kpp": [
+    17.69,
+    0.5,
+    -0.0772
+   ],
+   "centerUnity": [
+    -6.69,
+    0.3,
+    -0.5
+   ],
+   "sizeUnity": [
+    0.14,
+    0.6,
+    0.08
+   ]
+  },
+  {
+   "name": "COL_Gate_Drive",
+   "parent": "Gate",
+   "type": "box",
+   "center": [
+    -0.17,
+    0.77,
+    0.175
+   ],
+   "size": [
+    0.3,
+    0.26,
+    0.55
+   ],
+   "center_kpp": [
+    10.83,
+    0.77,
+    -0.2022
+   ],
+   "centerUnity": [
+    0.17,
+    0.175,
+    -0.77
+   ],
+   "sizeUnity": [
+    0.3,
+    0.55,
+    0.26
+   ]
+  },
+  {
+   "name": "COL_Gate_Leaf",
+   "parent": "IX_Gate_81",
+   "type": "box",
+   "center": [
+    3.5,
+    0.5125,
+    1.435
+   ],
+   "size": [
+    7.0,
+    0.115,
+    2.77
+   ],
+   "center_kpp": [
+    7.5,
+    0.5125,
+    1.0578
+   ],
+   "centerUnity": [
+    -3.5,
+    1.435,
+    -0.5125
+   ],
+   "sizeUnity": [
+    7.0,
+    2.77,
+    0.115
+   ]
+  },
+  {
+   "name": "COL_Manual_Foot",
+   "parent": "Barrier_Manual",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.13
+   ],
+   "size": [
+    0.75,
+    0.75,
+    0.56
+   ],
+   "center_kpp": [
+    3.1,
+    -14.0,
+    -0.5167
+   ],
+   "centerUnity": [
+    0.0,
+    -0.13,
+    0.0
+   ],
+   "sizeUnity": [
+    0.75,
+    0.56,
+    0.75
+   ]
+  },
+  {
+   "name": "COL_Manual_Post",
+   "parent": "Barrier_Manual",
+   "type": "box",
+   "center": [
+    0.0,
+    0.2,
+    0.74
+   ],
+   "size": [
+    0.24,
+    0.24,
+    1.18
+   ],
+   "center_kpp": [
+    3.1,
+    -13.8,
+    0.3533
+   ],
+   "centerUnity": [
+    0.0,
+    0.74,
+    -0.2
+   ],
+   "sizeUnity": [
+    0.24,
+    1.18,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Manual_Rest",
+   "parent": "Barrier_Manual",
+   "type": "box",
+   "center": [
+    5.6,
+    0.0,
+    0.55
+   ],
+   "size": [
+    0.24,
+    0.15,
+    0.86
+   ],
+   "center_kpp": [
+    8.7,
+    -14.0,
+    0.1633
+   ],
+   "centerUnity": [
+    -5.6,
+    0.55,
+    0.0
+   ],
+   "sizeUnity": [
+    0.24,
+    0.86,
+    0.15
+   ]
+  },
+  {
+   "name": "COL_Manual_Boom",
+   "parent": "IX_BarrierArm_Manual_318",
+   "type": "box",
+   "center": [
     2.715,
     0.0,
     0.0
@@ -2573,7 +7936,7 @@
    ],
    "center_kpp": [
     5.815,
-    -7.0,
+    -14.0,
     0.7833
    ],
    "centerUnity": [
@@ -2586,193 +7949,14 @@
     0.19,
     0.14
    ]
-  },
-  {
-   "name": "COL_Gate_Receiver",
-   "parent": "Gate",
-   "type": "box",
-   "center": [
-    -7.175,
-    0.22,
-    0.85
-   ],
-   "size": [
-    0.45,
-    0.46,
-    2.9
-   ],
-   "center_kpp": [
-    3.825,
-    0.22,
-    0.4728
-   ],
-   "centerUnity": [
-    7.175,
-    0.85,
-    -0.22
-   ],
-   "sizeUnity": [
-    0.45,
-    2.9,
-    0.46
-   ]
-  },
-  {
-   "name": "COL_Gate_Guide_Out",
-   "parent": "Gate",
-   "type": "box",
-   "center": [
-    -0.16,
-    0.09,
-    1.075
-   ],
-   "size": [
-    0.16,
-    0.16,
-    2.15
-   ],
-   "center_kpp": [
-    10.84,
-    0.09,
-    0.6978
-   ],
-   "centerUnity": [
-    0.16,
-    1.075,
-    -0.09
-   ],
-   "sizeUnity": [
-    0.16,
-    2.15,
-    0.16
-   ]
-  },
-  {
-   "name": "COL_Gate_Guide_In",
-   "parent": "Gate",
-   "type": "box",
-   "center": [
-    -0.16,
-    0.35,
-    1.075
-   ],
-   "size": [
-    0.16,
-    0.16,
-    2.15
-   ],
-   "center_kpp": [
-    10.84,
-    0.35,
-    0.6978
-   ],
-   "centerUnity": [
-    0.16,
-    1.075,
-    -0.35
-   ],
-   "sizeUnity": [
-    0.16,
-    2.15,
-    0.16
-   ]
-  },
-  {
-   "name": "COL_Gate_Stop",
-   "parent": "Gate",
-   "type": "box",
-   "center": [
-    6.69,
-    0.22,
-    0.3
-   ],
-   "size": [
-    0.14,
-    0.08,
-    0.6
-   ],
-   "center_kpp": [
-    17.69,
-    0.22,
-    -0.0772
-   ],
-   "centerUnity": [
-    -6.69,
-    0.3,
-    -0.22
-   ],
-   "sizeUnity": [
-    0.14,
-    0.6,
-    0.08
-   ]
-  },
-  {
-   "name": "COL_Gate_Fence",
-   "parent": "Gate",
-   "type": "box",
-   "center": [
-    1.3,
-    0.0,
-    1.19
-   ],
-   "size": [
-    2.26,
-    0.06,
-    2.38
-   ],
-   "center_kpp": [
-    12.3,
-    0.0,
-    0.8128
-   ],
-   "centerUnity": [
-    -1.3,
-    1.19,
-    0.0
-   ],
-   "sizeUnity": [
-    2.26,
-    2.38,
-    0.06
-   ]
-  },
-  {
-   "name": "COL_Gate_Leaf",
-   "parent": "IX_Gate_81",
-   "type": "box",
-   "center": [
-    3.5,
-    0.22,
-    1.225
-   ],
-   "size": [
-    7.0,
-    0.07,
-    2.35
-   ],
-   "center_kpp": [
-    7.5,
-    0.22,
-    0.8478
-   ],
-   "centerUnity": [
-    -3.5,
-    1.225,
-    -0.22
-   ],
-   "sizeUnity": [
-    7.0,
-    2.35,
-    0.07
-   ]
   }
  ],
  "meta": {
+  "version": "2.0",
   "units": "metres, degrees",
   "frame": "booth frame (the Checkpoint prefab's): x toward the road, y toward the back (the door, the station side), z up; origin = the middle of the pad on the ground; floor z = 0.15; the road at the barrier and the gate is 0.38 lower",
-  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the Checkpoint prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy)",
-  "roots": "three roots, each its own prefab at its Update 3 place, with the booth's axes (yaw 0 between them): Checkpoint (the booth), Barrier (7 m out on the road), Gate (beside the booth on the fence line). Barrier and Gate parts and sockets are given in the booth frame; map_placement: Forest (Unity world) p / q of each root",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the Checkpoint prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy); a rotation R -> A R A^T, A = the axis map (rotUnity_xyzw); a scale (sx, sy, sz) -> (sx, sz, sy)",
+  "roots": "three roots on the map, each its own prefab, with the booth's axes in this file (yaw 0 between them): Checkpoint (the booth), Barrier (7 m out on the road), Gate (beside the booth here); and Barrier_Manual (the v1 hand barrier, a prefab not on the map, 7 m further out here). Barrier and Gate parts and sockets are given in the booth frame; map_placement: the Update 3 places (Forest_Layout.json); game_placement: where they stand in the game now (ForestRelocation moves the booth and the barrier together, ForestYardPlan leaves the gate at the yard, ~300 m away)",
   "map_placement": {
    "Checkpoint": {
     "p": [
@@ -2817,11 +8001,56 @@
     "yawUnity": 8.0
    }
   },
-  "colliders": "colliders: BoxCollider per entry on its parent: center / size in the parent's own frame (Blender), centerUnity / sizeUnity the same in Unity axes; rotation = Blender XYZ euler of the box (the roof sheet), rotationUnity = Unity euler; center_kpp: the box centre in the booth frame. part.box: the grab / hit box of a moving part in its own frame",
-  "lamps": "kpp_lights.json",
+  "game_placement": {
+   "Checkpoint": {
+    "p": [
+     151.081,
+     9.66,
+     -65.844
+    ],
+    "q": [
+     0.0,
+     -0.479722,
+     0.0,
+     0.877421
+    ],
+    "yawUnity": -57.3345
+   },
+   "Barrier": {
+    "p": [
+     143.515,
+     9.274,
+     -64.675
+    ],
+    "q": [
+     0.0,
+     -0.479722,
+     0.0,
+     0.877421
+    ],
+    "yawUnity": -57.3345
+   },
+   "Gate": {
+    "p": [
+     313.23465,
+     16.018454,
+     -309.11115
+    ],
+    "q": [
+     0.0,
+     0.069756,
+     0.0,
+     0.997564
+    ],
+    "yawUnity": 8.0
+   }
+  },
+  "kit": "snow_kit instances (kit_instances): an empty per instance with the kit item's collection linked from ../snow_kit/snow_kit.blend; props kit_item, ix_ids (the IX_ parts of that instance get these numbers: IX_ConsoleButton -> IX_ConsoleButton_312 ...); Unity: the builder puts the item's prefab (Assets/Kit/) on the empty with its transform (the conduits are scaled in x); pos / rot / scale are in the parent's frame, pos_kpp in this file's world, pos_game in the game",
+  "colliders": "colliders: BoxCollider per entry on its parent: center / size in the parent's own frame (Blender), centerUnity / sizeUnity the same in Unity axes; rotation = Blender XYZ euler of the box (the roof sheet), rotationUnity = Unity euler; center_kpp: the box centre in the booth frame. part.box: the grab / hit box of a moving part in its own frame. The kit instances bring their own colliders (SNOW_KIT_CONTRACT.md)",
+  "lamps": "kpp_lights.json (+ the beacon in snow_kit_lights.json)",
   "model": "kpp.blend",
   "textures": "tex",
-  "materials": "M_Kpp_Kpp (the booth) / M_Kpp_KppYard (the barrier, the gate) / M_Kpp_KppProps: baked PSX atlases (point filter); M_Kpp_Panel: signs, papers, labels, the clock, the radio, the dial; M_Kpp_Lamp_Fluor / _Off, M_Kpp_Lamp_Bulk / _Off, M_Kpp_Lamp_Crt / _Off: lit / off (base + emission textures, night_emit = emission strength); M_Kpp_Glow: additive halo (emission texture only); M_Kpp_Glass; M_Kpp_ChainLink, M_Kpp_Barbed: alpha cut-out 0.5, tiled 0.5 m",
-  "prologue": "S6 / X05 (FOREST_OPENING.md): the keys hang on the Key_Hook_ sockets in the key cabinet (IX_KeyBoxDoor_303), Note_KPPLog lies on Spot_KPPLog, Padlock_Barrier on Spot_Padlock locks the boom (IX_BarrierArm_82) until Key_Schranke opens it; IX_Gate_81 slides 6.6 m. X05: the phone (Phone, Phone_Receiver, zone Phone_KPP) and Phone_Bell ring; the batten flickers from the start"
+  "materials": "M_Kpp_Kpp (the booth) / M_Kpp_KppYard (the barrier, the gate) / M_Kpp_KppProps: baked PSX atlases (point filter); M_Kpp_Panel: signs, papers, labels, the clock, the radio; M_Kpp_Lamp_Fluor / _Off, M_Kpp_Lamp_Bulk / _Off: lit / off; M_Kpp_Glow: additive halo; M_Kpp_Glass; M_Kpp_Barbed: alpha cut-out 0.5, tiled 0.5 m (Update 7's texture, one-sided). The kit instances use the kit's M_Kit_* materials",
+  "prologue": "S6 / X05 v2 (QUESTIONS_KPP.md «Решено»): no power at first; the players bring the van's Battery to PowerCabinet (Slot_Battery), put both clamps on, turn IX_CabinetSwitch to BATTERIE: the door lock releases IX_BoothDoor_74, the lamps light, the monitors show CAM_Barrier and CAM_Gate; Btn_Schranke raises / lowers IX_BarrierArm_82, Btn_Tor sends IX_Gate_81 along (one press, it runs to the end). The keys hang on the Key_Hook_ sockets (no Schranke), Note_KPPLog on Spot_KPPLog. X05: Phone / Phone_Receiver (zone Phone_KPP) and Phone_Bell ring"
  }
 }

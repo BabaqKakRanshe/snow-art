@@ -1,5 +1,6 @@
-"""Package the far prefabs: the .blend with relative texture paths, the textures, the contract (JSON + Russian reference),
-the sheets, the full source (self-contained) with the checks.
+"""Package the far prefabs: the .blend with relative texture paths (1.1: the forest_devices instances linked from
+../forest_devices/devices.blend), the textures, the contract (JSON; the Russian reference stays in docs/gdd), the sheets, the
+full source (self-contained) with the checks.
 python3 -I pack_far.py [checks_dir] -> out/forest_far_package.zip (folder forest_far/ inside)"""
 import os, sys, shutil, zipfile, glob, ast
 sys.path.insert(0, '/home/claude/uaz')
@@ -16,8 +17,8 @@ for f in glob.glob(os.path.join(src_tex, '*.json')):
     shutil.copy2(f, os.path.join(PK, 'tex'))
 bpy.ops.wm.open_mainfile(filepath=os.path.join(HERE, 'out', 'far.blend'))
 missing = []
-for im in bpy.data.images:                                # only the textures the models use
-    if im.source != 'FILE' or not im.filepath:
+for im in bpy.data.images:                                # only the textures the models use (not the linked devices')
+    if im.source != 'FILE' or not im.filepath or im.library is not None:
         continue
     name = os.path.basename(bpy.path.abspath(im.filepath))
     for d_ in (src_tex, os.path.join(HERE, 'tex', 'base')):          # the relay's chain-link and barbed wire: the base's
@@ -27,10 +28,11 @@ for im in bpy.data.images:                                # only the textures th
             break
     else:
         missing.append(im.filepath)
+for lib in bpy.data.libraries:                            # 1.1: forest_devices next to forest_far
+    lib.filepath = '//../forest_devices/devices.blend'
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(PK, 'far.blend'), relative_remap=False)
 for f in ('far_contract.json', 'far.json'):
     shutil.copy2(os.path.join(HERE, 'out', f), PK)
-shutil.copy2(os.path.join(HERE, 'docs', 'FAR_CONTRACT.md'), PK)
 for f in sorted(glob.glob(os.path.join(HERE, 'sheets', 'far_*.jpg'))):
     shutil.copy2(f, PK)
 SRC = ['far_spec.py', 'far_kit.py', 'far_tex.py', 'far_paint.py', 'far_build.py', 'far_render.py', 'bld_common.py',
@@ -41,7 +43,9 @@ SRC = ['far_spec.py', 'far_kit.py', 'far_tex.py', 'far_paint.py', 'far_build.py'
        'hut_paint.py', 'hut_kit.py', 'hut_tex.py', 'gen_paint.py', 'yard_tex.py', 'kpp_tex.py', 'main_tex.py', 'main_spec.py',
        'road_kit.py', 'road_tex.py', 'road_spec.py', 'road_paint.py', 'road_build.py',
        'uvpack.py', 'gen_kit.py', 'gen_tex.py', 'psxbake.py', 'psxlib.py', 'noise.py', 'pxfont.py', 'van2_kit.py',
-       'van2_tex.py', 'van3_mech.py', 'post_bloom.py']
+       'van2_tex.py', 'van3_mech.py', 'post_bloom.py',
+       # 1.1: the weather station re-baked alone and put into 1.0 (compose_far11), sheet F's one tile, the road's data
+       'compose_far11.py', 'patch_sheet_f11.py', 'road_u3_data.json', 'road_ground.json']
 os.makedirs(os.path.join(PK, 'src'))
 for f in SRC:
     shutil.copy2(os.path.join(HERE, f), os.path.join(PK, 'src', f))
@@ -79,6 +83,12 @@ open(os.path.join(PK, 'src', 'README_SRC.txt'), 'w', encoding='utf-8').write(
     '  far_render.py <виды | all | map | cmp> [spp] → rend/far (map — места обновления 3 на его рельефе: нужен terrain.blend\n'
     '  из Forest_Terrain.fbx); make_far_doc.py → docs/FAR_CONTRACT.md; make_sheets_far.py → sheets/far_A…G.jpg;\n'
     '  pack_far.py → out/forest_far_package.zip.\n'
+    '- Версия 1.1 (метеостанция без старой будки, модели forest_devices на точках крепления) собрана без пересборки\n'
+    '  остального: far_build.py --only Meteo → out/far_test.blend; compose_far11.py — 1.0 (out/far_v10.blend и её json) +\n'
+    '  новая метеостанция + экземпляры forest_devices → out/far.blend, far.json, far_contract.json; far_render.py\n'
+    '  meteo,meteo_screen,meteo_gate,dish1_cab,cmp_meteo и map_meteo; make_sheets_far.py --only A,C,G; patch_sheet_f11.py —\n'
+    '  одна плитка листа F. far.blend ссылается на ../forest_devices/devices.blend (папки рядом), для сборки рядом нужны\n'
+    '  forest_devices и snow_kit.\n'
     "- Blender 5.0.1 (bpy как модуль Python 3.11). Пути в скриптах абсолютные (HERE = '/home/claude/uaz') — заменить на\n"
     '  путь к этой папке.\n'
     '- checks/ — проверки (far_checks.py → far_checks.json): префабы, пивоты и оси дверей, коробки против обновления 3,\n'

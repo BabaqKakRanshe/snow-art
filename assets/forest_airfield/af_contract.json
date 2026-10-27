@@ -1,0 +1,1027 @@
+{
+ "parts": {
+  "RWY_Slab": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "runway module 18 x 10 m (root): origin = the middle of its top (z = 0), +y along the runway, the skirt 0.30 m down; plain slabs, a faded centre-line dash on the -y half (dash 5 m, gap 5 m along the runway)",
+   "object": "RWY_Slab",
+   "root": "RWY_Slab",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "RWY_SlabWorn": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "runway module 18 x 10 m (root): origin = the middle of its top (z = 0), +y along the runway, the skirt 0.30 m down; the same, worn: cracks, weeds and old snow in the joints, a dark asphalt patch",
+   "object": "RWY_SlabWorn",
+   "root": "RWY_SlabWorn",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "RWY_Threshold": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "runway module 18 x 10 m (root): origin = the middle of its top (z = 0), +y along the runway, the skirt 0.30 m down; the runway end: end bar on the -y edge, eight stripes; the -y edge is the end of the paving",
+   "object": "RWY_Threshold",
+   "root": "RWY_Threshold",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "RWY_Num17": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "runway module 18 x 10 m (root): origin = the middle of its top (z = 0), +y along the runway, the skirt 0.30 m down; designator 17 (heading 175), readable from the -y side; goes right after the threshold",
+   "object": "RWY_Num17",
+   "root": "RWY_Num17",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "RWY_Num35": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "runway module 18 x 10 m (root): origin = the middle of its top (z = 0), +y along the runway, the skirt 0.30 m down; designator 35 for the other end; the module is turned 180 deg there",
+   "object": "RWY_Num35",
+   "root": "RWY_Num35",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Lamp_Edge": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.27
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "AF_EdgeLight",
+   "states": [],
+   "note": "the lamp body on the stand; the dome and the halo are its children; the light LIGHT_Edge",
+   "object": "Lamp_Edge",
+   "root": "AF_EdgeLight",
+   "pivotUnity": [
+    0.0,
+    0.27,
+    0.0
+   ]
+  },
+  "Lens_Edge": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.298
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Edge",
+   "states": [],
+   "note": "the ribbed glass dome: M_AF_Lamp_Edge (lit) / M_AF_Lamp_Edge_Off",
+   "object": "Lens_Edge",
+   "root": "AF_EdgeLight",
+   "pivotUnity": [
+    0.0,
+    0.298,
+    0.0
+   ]
+  },
+  "Glow_Edge": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.343
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Edge",
+   "states": [],
+   "note": "halo cards: additive, unlit; shown when the light is on",
+   "object": "Glow_Edge",
+   "root": "AF_EdgeLight",
+   "pivotUnity": [
+    0.0,
+    0.343,
+    0.0
+   ]
+  },
+  "AF_EdgeLight": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "elevated runway light (root), amber: along both runway edges every 60 m: origin = the middle of the pad on the ground; the pad is set 0.12 m into the ground, the dome top at 0.39 m",
+   "object": "AF_EdgeLight",
+   "root": "AF_EdgeLight",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Lamp_Thr": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.27
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "AF_ThresholdLight",
+   "states": [],
+   "note": "the lamp body on the stand; the dome and the halo are its children; the light LIGHT_Thr",
+   "object": "Lamp_Thr",
+   "root": "AF_ThresholdLight",
+   "pivotUnity": [
+    0.0,
+    0.27,
+    0.0
+   ]
+  },
+  "Lens_Thr": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.298
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Thr",
+   "states": [],
+   "note": "the ribbed glass dome: M_AF_Lamp_Thr (lit) / M_AF_Lamp_Thr_Off",
+   "object": "Lens_Thr",
+   "root": "AF_ThresholdLight",
+   "pivotUnity": [
+    0.0,
+    0.298,
+    0.0
+   ]
+  },
+  "Glow_Thr": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.343
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Lamp_Thr",
+   "states": [],
+   "note": "halo cards: additive, unlit; shown when the light is on",
+   "object": "Glow_Thr",
+   "root": "AF_ThresholdLight",
+   "pivotUnity": [
+    0.0,
+    0.343,
+    0.0
+   ]
+  },
+  "AF_ThresholdLight": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "elevated runway light (root), green: a row across the threshold, at its -y edge: origin = the middle of the pad on the ground; the pad is set 0.12 m into the ground, the dome top at 0.39 m",
+   "object": "AF_ThresholdLight",
+   "root": "AF_ThresholdLight",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "AF_EdgeMarker": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "marker post (root), red-white-red bands: origin = the middle of the foot on the ground; along the clearing edge and at the taxi link",
+   "object": "AF_EdgeMarker",
+   "root": "AF_EdgeMarker",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "AF_Sign_Board": {
+   "kind": "static",
+   "pivot": [
+    0.38,
+    -0.085,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "AF_Sign",
+   "states": [],
+   "note": "FLUGPLATZ / AIRFIELD on the arrow board (panel atlas; German first, English under it)",
+   "object": "AF_Sign_Board",
+   "root": "AF_Sign",
+   "pivotUnity": [
+    -0.38,
+    1.71,
+    0.085
+   ]
+  },
+  "AF_Sign": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the pointer at the turn-off (root): origin = the foot of the post on the ground (sunk 0.30); the arrow points +x (into the track to the hangar), the text faces -y (the road)",
+   "object": "AF_Sign",
+   "root": "AF_Sign",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Plug_Door": {
+   "kind": "static",
+   "pivot": [
+    1.05,
+    -0.36,
+    1.025
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "AF_HangarPlug",
+   "states": [],
+   "note": "the locked steel door in the block wall (static: it does not open; a hook for later)",
+   "object": "Plug_Door",
+   "root": "AF_HangarPlug",
+   "pivotUnity": [
+    -1.05,
+    1.025,
+    0.36
+   ]
+  },
+  "Plug_Plate": {
+   "kind": "static",
+   "pivot": [
+    1.05,
+    -0.382,
+    1.55
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Plug_Door",
+   "states": [],
+   "note": "KEIN ZUTRITT / NO ENTRY enamel plate on the door (panel atlas)",
+   "object": "Plug_Plate",
+   "root": "AF_HangarPlug",
+   "pivotUnity": [
+    -1.05,
+    1.55,
+    0.382
+   ]
+  },
+  "AF_HangarPlug": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the bricked-up back opening of BunkerHangar (root): origin = the hangar's Link_BlastDoor (the back wall's outer face, floor level, middle), no rotation; the block face 0.18 m behind the hall's back wall, the door at its right",
+   "object": "AF_HangarPlug",
+   "root": "AF_HangarPlug",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Snap_RWY_Slab_N": {
+   "pos": [
+    0.0,
+    5.0,
+    0.0
+   ],
+   "kind": "snap",
+   "parent": "RWY_Slab",
+   "note": "the +y edge: the next module's -y edge goes here",
+   "root": "RWY_Slab",
+   "posUnity": [
+    0.0,
+    0.0,
+    -5.0
+   ]
+  },
+  "Snap_RWY_SlabWorn_N": {
+   "pos": [
+    0.0,
+    5.0,
+    0.0
+   ],
+   "kind": "snap",
+   "parent": "RWY_SlabWorn",
+   "note": "the +y edge: the next module's -y edge goes here",
+   "root": "RWY_SlabWorn",
+   "posUnity": [
+    0.0,
+    0.0,
+    -5.0
+   ]
+  },
+  "Snap_RWY_Threshold_N": {
+   "pos": [
+    0.0,
+    5.0,
+    0.0
+   ],
+   "kind": "snap",
+   "parent": "RWY_Threshold",
+   "note": "the +y edge: the next module's -y edge goes here",
+   "root": "RWY_Threshold",
+   "posUnity": [
+    0.0,
+    0.0,
+    -5.0
+   ]
+  },
+  "Snap_RWY_Num17_N": {
+   "pos": [
+    0.0,
+    5.0,
+    0.0
+   ],
+   "kind": "snap",
+   "parent": "RWY_Num17",
+   "note": "the +y edge: the next module's -y edge goes here",
+   "root": "RWY_Num17",
+   "posUnity": [
+    0.0,
+    0.0,
+    -5.0
+   ]
+  },
+  "Snap_RWY_Num35_N": {
+   "pos": [
+    0.0,
+    5.0,
+    0.0
+   ],
+   "kind": "snap",
+   "parent": "RWY_Num35",
+   "note": "the +y edge: the next module's -y edge goes here",
+   "root": "RWY_Num35",
+   "posUnity": [
+    0.0,
+    0.0,
+    -5.0
+   ]
+  },
+  "LIGHT_Edge": {
+   "pos": [
+    0.0,
+    0.0,
+    0.343
+   ],
+   "kind": "light",
+   "parent": "Lamp_Edge",
+   "root": "AF_EdgeLight",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "Point light (edge): af_lights.json",
+   "posUnity": [
+    0.0,
+    0.343,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "LIGHT_Thr": {
+   "pos": [
+    0.0,
+    0.0,
+    0.343
+   ],
+   "kind": "light",
+   "parent": "Lamp_Thr",
+   "root": "AF_ThresholdLight",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "note": "Point light (thr): af_lights.json",
+   "posUnity": [
+    0.0,
+    0.343,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_RWY_Slab_Top",
+   "parent": "RWY_Slab",
+   "root": "RWY_Slab",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "size": [
+    18.0,
+    10.0,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "centerUnity": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "sizeUnity": [
+    18.0,
+    0.3,
+    10.0
+   ]
+  },
+  {
+   "name": "COL_RWY_SlabWorn_Top",
+   "parent": "RWY_SlabWorn",
+   "root": "RWY_SlabWorn",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "size": [
+    18.0,
+    10.0,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "centerUnity": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "sizeUnity": [
+    18.0,
+    0.3,
+    10.0
+   ]
+  },
+  {
+   "name": "COL_RWY_Threshold_Top",
+   "parent": "RWY_Threshold",
+   "root": "RWY_Threshold",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "size": [
+    18.0,
+    10.0,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "centerUnity": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "sizeUnity": [
+    18.0,
+    0.3,
+    10.0
+   ]
+  },
+  {
+   "name": "COL_RWY_Num17_Top",
+   "parent": "RWY_Num17",
+   "root": "RWY_Num17",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "size": [
+    18.0,
+    10.0,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "centerUnity": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "sizeUnity": [
+    18.0,
+    0.3,
+    10.0
+   ]
+  },
+  {
+   "name": "COL_RWY_Num35_Top",
+   "parent": "RWY_Num35",
+   "root": "RWY_Num35",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "size": [
+    18.0,
+    10.0,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "centerUnity": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "sizeUnity": [
+    18.0,
+    0.3,
+    10.0
+   ]
+  },
+  {
+   "name": "COL_Edge_Pad",
+   "parent": "AF_EdgeLight",
+   "root": "AF_EdgeLight",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.045
+   ],
+   "size": [
+    0.4,
+    0.4,
+    0.15
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.045
+   ],
+   "centerUnity": [
+    0.0,
+    -0.045,
+    0.0
+   ],
+   "sizeUnity": [
+    0.4,
+    0.15,
+    0.4
+   ]
+  },
+  {
+   "name": "COL_Edge_Head",
+   "parent": "AF_EdgeLight",
+   "root": "AF_EdgeLight",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.21
+   ],
+   "size": [
+    0.16,
+    0.16,
+    0.36
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.21
+   ],
+   "centerUnity": [
+    0.0,
+    0.21,
+    0.0
+   ],
+   "sizeUnity": [
+    0.16,
+    0.36,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_Thr_Pad",
+   "parent": "AF_ThresholdLight",
+   "root": "AF_ThresholdLight",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.045
+   ],
+   "size": [
+    0.4,
+    0.4,
+    0.15
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.045
+   ],
+   "centerUnity": [
+    0.0,
+    -0.045,
+    0.0
+   ],
+   "sizeUnity": [
+    0.4,
+    0.15,
+    0.4
+   ]
+  },
+  {
+   "name": "COL_Thr_Head",
+   "parent": "AF_ThresholdLight",
+   "root": "AF_ThresholdLight",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.21
+   ],
+   "size": [
+    0.16,
+    0.16,
+    0.36
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.21
+   ],
+   "centerUnity": [
+    0.0,
+    0.21,
+    0.0
+   ],
+   "sizeUnity": [
+    0.16,
+    0.36,
+    0.16
+   ]
+  },
+  {
+   "name": "COL_Marker",
+   "parent": "AF_EdgeMarker",
+   "root": "AF_EdgeMarker",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.51
+   ],
+   "size": [
+    0.1,
+    0.1,
+    1.02
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.51
+   ],
+   "centerUnity": [
+    0.0,
+    0.51,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    1.02,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Sign_Post",
+   "parent": "AF_Sign",
+   "root": "AF_Sign",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.28
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "centerUnity": [
+    0.0,
+    1.14,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.28,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Sign_BoardBox",
+   "parent": "AF_Sign",
+   "root": "AF_Sign",
+   "type": "box",
+   "center": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "size": [
+    1.08,
+    0.03,
+    0.22
+   ],
+   "center_root": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "centerUnity": [
+    -0.44,
+    1.71,
+    0.07
+   ],
+   "sizeUnity": [
+    1.08,
+    0.22,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_Plug_Wall",
+   "parent": "AF_HangarPlug",
+   "root": "AF_HangarPlug",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.21,
+    2.3
+   ],
+   "size": [
+    5.0,
+    0.42,
+    4.6
+   ],
+   "center_root": [
+    0.0,
+    -0.21,
+    2.3
+   ],
+   "centerUnity": [
+    0.0,
+    2.3,
+    0.21
+   ],
+   "sizeUnity": [
+    5.0,
+    4.6,
+    0.42
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 27.10.2026",
+  "frame": "each root in its own frame: z up, the front -y; runway modules: the middle of the top (z = 0), +y along the runway; lights, marker: the middle of the pad on the ground; the pointer: the post foot; the plug: BunkerHangar's Link_BlastDoor. In af.blend the roots stand apart (display_offset); FBX with the root at the origin",
+  "assembly": "runway: RWY_Threshold at each end (-y edge = the end of the paving; turned 180 deg at the far end), then RWY_Num17 / RWY_Num35, then RWY_Slab / RWY_SlabWorn mixed, each module snapped at Snap_*_N, some turned 180 deg against repeats; AF_EdgeLight every 60 m 1.5 m outside both edges, AF_ThresholdLight in a row across the end; AF_HangarPlug into BunkerHangar Link_BlastDoor instead of BlastDoor (the airfield hangar has no way down); AF_Sign at the turn-off from the east road",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "display_offset": {
+   "RWY_Slab": [
+    -44.0,
+    14.0,
+    0.0
+   ],
+   "RWY_SlabWorn": [
+    -22.0,
+    14.0,
+    0.0
+   ],
+   "RWY_Threshold": [
+    0.0,
+    14.0,
+    0.0
+   ],
+   "RWY_Num17": [
+    22.0,
+    14.0,
+    0.0
+   ],
+   "RWY_Num35": [
+    44.0,
+    14.0,
+    0.0
+   ],
+   "AF_EdgeLight": [
+    -8.0,
+    -6.0,
+    0.0
+   ],
+   "AF_ThresholdLight": [
+    -6.0,
+    -6.0,
+    0.0
+   ],
+   "AF_EdgeMarker": [
+    -4.0,
+    -6.0,
+    0.0
+   ],
+   "AF_Sign": [
+    -1.5,
+    -6.0,
+    0.0
+   ],
+   "AF_HangarPlug": [
+    8.0,
+    -4.0,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame. COL_ objects are reference only, not in the FBX",
+  "lamps": "af_lights.json",
+  "model": "af.blend",
+  "textures": "tex",
+  "materials": "M_AF_Runway (the five modules, one 2048 atlas) / M_AF_AFProps (lights, marker, pointer) / M_AF_AFPlug: baked PSX atlases (point filter); M_AF_Panel: the arrow board, the door plate, the dome tiles; M_AF_Lamp_Edge / _Off, M_AF_Lamp_Thr / _Off; M_AF_Glow: additive halo",
+  "ix": "none: nothing opens (the plug door is static)"
+ }
+}

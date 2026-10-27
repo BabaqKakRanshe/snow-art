@@ -1,0 +1,2400 @@
+{
+ "parts": {
+  "Fax_LCD": {
+   "kind": "static",
+   "pivot": [
+    -0.005,
+    -0.0151,
+    0.0836
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Fax",
+   "states": [],
+   "note": "the LCD: M_Dev_FaxLCD (lit: READY 07:30) / M_Dev_FaxLCD_Off; its own texture, full 0..1 UVs (u right, v up the panel) - the game may draw its own text",
+   "object": "Fax_LCD",
+   "root": "Fax",
+   "pivotUnity": [
+    0.005,
+    0.0836,
+    0.0151
+   ]
+  },
+  "Fax_Btn_Start": {
+   "kind": "slide",
+   "pivot": [
+    0.076,
+    -0.0538,
+    0.0777
+   ],
+   "axis": [
+    0.0,
+    0.2095,
+    -0.9778
+   ],
+   "range": [
+    0.0,
+    0.003
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Fax",
+   "states": [],
+   "note": "START (green): pushes in 3 mm - send / receive / copy",
+   "object": "Fax_Btn_Start",
+   "root": "Fax",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.02,
+     0.012,
+     0.0082
+    ]
+   },
+   "pivotUnity": [
+    -0.076,
+    0.0777,
+    0.0538
+   ],
+   "axisUnity": [
+    0.0,
+    -0.9778,
+    -0.2095
+   ]
+  },
+  "Fax_Btn_Stop": {
+   "kind": "slide",
+   "pivot": [
+    0.116,
+    -0.0538,
+    0.0777
+   ],
+   "axis": [
+    0.0,
+    0.2095,
+    -0.9778
+   ],
+   "range": [
+    0.0,
+    0.003
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Fax",
+   "states": [],
+   "note": "STOP (red): pushes in 3 mm",
+   "object": "Fax_Btn_Stop",
+   "root": "Fax",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.02,
+     0.012,
+     0.0082
+    ]
+   },
+   "pivotUnity": [
+    -0.116,
+    0.0777,
+    0.0538
+   ],
+   "axisUnity": [
+    0.0,
+    -0.9778,
+    -0.2095
+   ]
+  },
+  "Fax_LED_Ready": {
+   "kind": "static",
+   "pivot": [
+    0.075,
+    -0.0103,
+    0.0847
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Fax",
+   "states": [],
+   "note": "READY (green) LED: M_Dev_LEDG (lit) / M_Dev_LEDG_Off",
+   "object": "Fax_LED_Ready",
+   "root": "Fax",
+   "pivotUnity": [
+    -0.075,
+    0.0847,
+    0.0103
+   ]
+  },
+  "Fax_LED_Error": {
+   "kind": "static",
+   "pivot": [
+    0.075,
+    -0.022,
+    0.0822
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Fax",
+   "states": [],
+   "note": "ERROR (red) LED: M_Dev_LEDR (lit) / M_Dev_LEDR_Off",
+   "object": "Fax_LED_Error",
+   "root": "Fax",
+   "pivotUnity": [
+    -0.075,
+    0.0822,
+    0.022
+   ]
+  },
+  "Fax_Handset": {
+   "kind": "item",
+   "pivot": [
+    -0.13,
+    0.0,
+    0.087
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Fax",
+   "states": [],
+   "note": "the handset: lifted / put back by the game (Hand_Handset); its coiled cord stays on the body - hide or stretch it while lifted",
+   "object": "Fax_Handset",
+   "root": "Fax",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0005
+    ],
+    "size": [
+     0.05,
+     0.2156,
+     0.037
+    ]
+   },
+   "pivotUnity": [
+    0.13,
+    0.087,
+    0.0
+   ]
+  },
+  "Fax": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the fax (root): origin on the desk under its middle; the handset bay on the left, the panel sloping to the front, the feeder at the back",
+   "object": "Fax",
+   "root": "Fax",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "FaxPaper": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a received fax: A4 thermal paper, the far end curls up; M_Dev_FaxPaper (its own texture): the face has full 0..1 UVs (u across, v from the leading edge = the top of the page) - the game prints the text; the back maps to the corner u, v 0.006..0.03 (keep it blank)",
+   "object": "FaxPaper",
+   "root": "FaxPaper",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0155
+    ],
+    "size": [
+     0.21,
+     0.297,
+     0.0302
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Cassette": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.006
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the telemetry tape (compact cassette, C-60), label on both faces; pivot at its middle, the tape edge (head openings) to -y",
+   "object": "Cassette",
+   "root": "Cassette",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.1003,
+     0.0638,
+     0.012
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.006,
+    0.0
+   ]
+  },
+  "CassetteBox": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the day-2 delivery: a taped carton of ten telemetry tapes; origin under its middle (it does not open - the game hands out Cassette items)",
+   "object": "CassetteBox",
+   "root": "CassetteBox",
+   "box": {
+    "center": [
+     0.0,
+     -0.0002,
+     0.0381
+    ],
+    "size": [
+     0.1824,
+     0.1155,
+     0.0762
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "DropBox_Flap": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.1525,
+    1.334
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    70
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "DropBox",
+   "states": [],
+   "note": "the slot's flap: hinge along its top edge, swings in (into the box) up to 70 deg when a tape goes in",
+   "object": "DropBox_Flap",
+   "root": "DropBox",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.018
+    ],
+    "size": [
+     0.176,
+     0.004,
+     0.036
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    1.334,
+    0.1525
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "DropBox": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the tape drop box (root): origin on the ground at the post (the footing goes 0.30 in); the slot faces the front (-y)",
+   "object": "DropBox",
+   "root": "DropBox",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ObjectPC_Power": {
+   "kind": "slide",
+   "pivot": [
+    -0.0342,
+    -0.2045,
+    0.0474
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.004
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "ObjectPC",
+   "states": [],
+   "note": "POWER: pushes in 4 mm (on / off)",
+   "object": "ObjectPC_Power",
+   "root": "ObjectPC",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.02,
+     0.008,
+     0.012
+    ]
+   },
+   "pivotUnity": [
+    0.0342,
+    0.0474,
+    0.2045
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "ObjectPC_LED": {
+   "kind": "static",
+   "pivot": [
+    -0.0683,
+    -0.2008,
+    0.0452
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ObjectPC",
+   "states": [],
+   "note": "the power LED: M_Dev_LEDG (lit) / M_Dev_LEDG_Off",
+   "object": "ObjectPC_LED",
+   "root": "ObjectPC",
+   "pivotUnity": [
+    0.0683,
+    0.0452,
+    0.2008
+   ]
+  },
+  "PC_Keyboard": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.4,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ObjectPC",
+   "states": [],
+   "note": "the keyboard: its own object (move it with the desk); the cable runs round the left of the case into the back",
+   "object": "PC_Keyboard",
+   "root": "ObjectPC",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.4
+   ]
+  },
+  "PC_Mouse": {
+   "kind": "static",
+   "pivot": [
+    0.33,
+    -0.4,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ObjectPC",
+   "states": [],
+   "note": "the mouse (two buttons): its own object; the cable runs round the right of the case into the back",
+   "object": "PC_Mouse",
+   "root": "ObjectPC",
+   "pivotUnity": [
+    -0.33,
+    0.0,
+    0.4
+   ]
+  },
+  "ObjectPC": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the object computer (root): the case, origin on the desk under its middle; the monitor: a snow_kit Kit_Monitor_CRT at Kit_Monitor_CRT (kit_instances)",
+   "object": "ObjectPC",
+   "root": "ObjectPC",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Laptop_LED": {
+   "kind": "static",
+   "pivot": [
+    0.1,
+    -0.1156,
+    0.022
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Laptop",
+   "states": [],
+   "note": "the power LED: M_Dev_LEDG (lit) / M_Dev_LEDG_Off",
+   "object": "Laptop_LED",
+   "root": "Laptop",
+   "pivotUnity": [
+    -0.1,
+    0.022,
+    0.1156
+   ]
+  },
+  "IX_LaptopLid": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.108,
+    0.0415
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    115
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Laptop",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the lid, closed in the model: hinge along the back edge, opens up to 115 deg (on a desk ~105)",
+   "object": "IX_LaptopLid",
+   "root": "Laptop",
+   "box": {
+    "center": [
+     0.0,
+     -0.1068,
+     0.0
+    ],
+    "size": [
+     0.3,
+     0.2245,
+     0.011
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0415,
+    -0.108
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Laptop_Screen": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.004,
+    0.0355
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_LaptopLid",
+   "states": [],
+   "note": "the screen: M_Dev_ScreenOff (its own texture); full 0..1 UVs (u left-right, v bottom-top as seen with the lid open) - the game's picture",
+   "object": "Laptop_Screen",
+   "root": "Laptop",
+   "pivotUnity": [
+    0.0,
+    0.0355,
+    0.004
+   ]
+  },
+  "Laptop": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the notebook (root): origin on the desk under its middle",
+   "object": "Laptop",
+   "root": "Laptop",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "TapeDeck_Key_Rec": {
+   "kind": "slide",
+   "pivot": [
+    -0.2272,
+    -0.027,
+    0.0039
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.004
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "REC (red): record - with PLAY held in, as on any deck",
+   "object": "TapeDeck_Key_Rec",
+   "root": "TapeDeck",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.045,
+     0.006,
+     0.0289
+    ]
+   },
+   "pivotUnity": [
+    0.2272,
+    0.0039,
+    0.027
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "TapeDeck_Key_Play": {
+   "kind": "slide",
+   "pivot": [
+    -0.1684,
+    -0.027,
+    0.0039
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.004
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "PLAY",
+   "object": "TapeDeck_Key_Play",
+   "root": "TapeDeck",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.045,
+     0.006,
+     0.0289
+    ]
+   },
+   "pivotUnity": [
+    0.1684,
+    0.0039,
+    0.027
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "TapeDeck_Key_Rew": {
+   "kind": "slide",
+   "pivot": [
+    -0.1097,
+    -0.027,
+    0.0039
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.004
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "REW: rewind",
+   "object": "TapeDeck_Key_Rew",
+   "root": "TapeDeck",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.045,
+     0.006,
+     0.0289
+    ]
+   },
+   "pivotUnity": [
+    0.1097,
+    0.0039,
+    0.027
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "TapeDeck_Key_FF": {
+   "kind": "slide",
+   "pivot": [
+    -0.0509,
+    -0.027,
+    0.0039
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.004
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "FF: fast forward",
+   "object": "TapeDeck_Key_FF",
+   "root": "TapeDeck",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.045,
+     0.006,
+     0.0289
+    ]
+   },
+   "pivotUnity": [
+    0.0509,
+    0.0039,
+    0.027
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "TapeDeck_Key_Stop": {
+   "kind": "slide",
+   "pivot": [
+    0.0078,
+    -0.027,
+    0.0039
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.004
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "STOP / EJECT: stops; pressed again it opens the door (IX_TapeDoor)",
+   "object": "TapeDeck_Key_Stop",
+   "root": "TapeDeck",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.045,
+     0.006,
+     0.0289
+    ]
+   },
+   "pivotUnity": [
+    -0.0078,
+    0.0039,
+    0.027
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "TapeDeck_LED_Rec": {
+   "kind": "static",
+   "pivot": [
+    -0.2272,
+    -0.0248,
+    0.0386
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "REC (red): lit while recording LED: M_Dev_LEDR (lit) / M_Dev_LEDR_Off",
+   "object": "TapeDeck_LED_Rec",
+   "root": "TapeDeck",
+   "pivotUnity": [
+    0.2272,
+    0.0386,
+    0.0248
+   ]
+  },
+  "TapeDeck_LED_Power": {
+   "kind": "static",
+   "pivot": [
+    0.3995,
+    -0.0248,
+    -0.0193
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [],
+   "note": "POWER (green) LED: M_Dev_LEDG (lit) / M_Dev_LEDG_Off",
+   "object": "TapeDeck_LED_Power",
+   "root": "TapeDeck",
+   "pivotUnity": [
+    -0.3995,
+    -0.0193,
+    0.0248
+   ]
+  },
+  "IX_TapeDoor": {
+   "kind": "hinge",
+   "pivot": [
+    -0.3505,
+    -0.0215,
+    -0.0187
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    30
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "TapeDeck",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the cassette door: hinge along its bottom edge, tilts out (to the front) up to 30 deg - STOP / EJECT opens it",
+   "object": "IX_TapeDoor",
+   "root": "TapeDeck",
+   "box": {
+    "center": [
+     0.0,
+     -0.0015,
+     0.038
+    ],
+    "size": [
+     0.1124,
+     0.008,
+     0.0759
+    ]
+   },
+   "pivotUnity": [
+    0.3505,
+    -0.0187,
+    0.0215
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "TapeDeck_Window": {
+   "kind": "static",
+   "pivot": [
+    -0.3505,
+    -0.0215,
+    0.0193
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_TapeDoor",
+   "states": [],
+   "note": "the door's smoked window (M_Dev_Glass)",
+   "object": "TapeDeck_Window",
+   "root": "TapeDeck",
+   "pivotUnity": [
+    0.3505,
+    0.0193,
+    0.0215
+   ]
+  },
+  "TapeDeck": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the telemetry recorder (root): a rack faceplate for the dish cabinets; origin in the middle of its back face (on the module it is fixed to), the front -y",
+   "object": "TapeDeck",
+   "root": "TapeDeck",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_ScreenDoor": {
+   "kind": "hinge",
+   "pivot": [
+    -0.345,
+    -0.3,
+    1.24
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "MeteoScreen",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the screen's door: hinge on the left (vertical), opens out to the front up to 110 deg; held shut by the turn button on the right post",
+   "object": "IX_ScreenDoor",
+   "root": "MeteoScreen",
+   "box": {
+    "center": [
+     0.345,
+     0.0005,
+     0.31
+    ],
+    "size": [
+     0.69,
+     0.065,
+     0.62
+    ]
+   },
+   "pivotUnity": [
+    0.345,
+    1.24,
+    0.3
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "MeteoScreen": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the Stevenson screen (root): origin on the ground under its middle; the door to the front (-y) - on the station it faces north",
+   "object": "MeteoScreen",
+   "root": "MeteoScreen",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Hand_Handset": {
+   "pos": [
+    -0.13,
+    0.0,
+    0.106
+   ],
+   "kind": "hand",
+   "parent": "Fax_Handset",
+   "note": "grip the handset (the bar)",
+   "root": "Fax",
+   "posUnity": [
+    0.13,
+    0.106,
+    0.0
+   ]
+  },
+  "Slot_DocIn": {
+   "pos": [
+    0.045,
+    0.041,
+    0.108
+   ],
+   "kind": "slot",
+   "parent": "Fax",
+   "note": "the document feeder: a form laid face down on the guide slides down into the slit",
+   "dir": [
+    0.0,
+    -0.8087,
+    -0.5882
+   ],
+   "root": "Fax",
+   "posUnity": [
+    -0.045,
+    0.108,
+    -0.041
+   ],
+   "dirUnity": [
+    0.0,
+    -0.5882,
+    0.8087
+   ]
+  },
+  "Slot_PaperOut": {
+   "pos": [
+    0.045,
+    -0.125,
+    0.04
+   ],
+   "kind": "slot",
+   "parent": "Fax",
+   "note": "the exit slot: a received fax (FaxPaper) comes out here onto the tray",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Fax",
+   "posUnity": [
+    -0.045,
+    0.04,
+    0.125
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Slot_Cassette": {
+   "pos": [
+    0.0,
+    -0.154,
+    1.316
+   ],
+   "kind": "slot",
+   "parent": "DropBox",
+   "note": "push a tape in here (the flap swings); the courier empties the box overnight",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "DropBox",
+   "posUnity": [
+    0.0,
+    1.316,
+    0.154
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Kit_Monitor_CRT": {
+   "pos": [
+    0.0,
+    0.0,
+    0.14
+   ],
+   "kind": "kit",
+   "parent": "ObjectPC",
+   "note": "an instance of snow_kit Kit_Monitor_CRT: its origin (the middle of its bottom) here, facing the front (-y); the game shows the picture on its screen object (Kit_Monitor_Screen)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "ObjectPC",
+   "posUnity": [
+    0.0,
+    0.14,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Slot_Floppy": {
+   "pos": [
+    0.0879,
+    -0.202,
+    0.0607
+   ],
+   "kind": "slot",
+   "parent": "ObjectPC",
+   "note": "the 3.5\" floppy drive slot",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "ObjectPC",
+   "posUnity": [
+    -0.0879,
+    0.0607,
+    0.202
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Slot_Tape": {
+   "pos": [
+    -0.3505,
+    -0.0125,
+    0.0193
+   ],
+   "kind": "slot",
+   "parent": "TapeDeck",
+   "note": "a Cassette goes here: its origin (its middle) on this point, its +z (the label) to the front (-y), its tape edge (its -y) down (-z); seen through the window when the door is shut",
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "forward": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "TapeDeck",
+   "posUnity": [
+    0.3505,
+    0.0193,
+    0.0125
+   ]
+  },
+  "View_Instruments": {
+   "pos": [
+    0.0,
+    -0.65,
+    1.55
+   ],
+   "kind": "view",
+   "parent": "MeteoScreen",
+   "note": "where the player stands to read the instruments (eye height), the door open",
+   "dir": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "root": "MeteoScreen",
+   "posUnity": [
+    0.0,
+    1.55,
+    0.65
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Read_Dry": {
+   "pos": [
+    -0.05,
+    0.089,
+    1.475
+   ],
+   "kind": "read",
+   "parent": "MeteoScreen",
+   "note": "the dry bulb thermometer (the air temperature)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "MeteoScreen",
+   "posUnity": [
+    0.05,
+    1.475,
+    -0.089
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Read_Wet": {
+   "pos": [
+    0.05,
+    0.089,
+    1.475
+   ],
+   "kind": "read",
+   "parent": "MeteoScreen",
+   "note": "the wet bulb thermometer (with the dry one: the humidity)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "MeteoScreen",
+   "posUnity": [
+    -0.05,
+    1.475,
+    -0.089
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Read_Max": {
+   "pos": [
+    0.0,
+    0.089,
+    1.685
+   ],
+   "kind": "read",
+   "parent": "MeteoScreen",
+   "note": "the maximum thermometer (since the last reading)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "MeteoScreen",
+   "posUnity": [
+    0.0,
+    1.685,
+    -0.089
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Read_Min": {
+   "pos": [
+    0.0,
+    0.089,
+    1.718
+   ],
+   "kind": "read",
+   "parent": "MeteoScreen",
+   "note": "the minimum thermometer (since the last reading)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "MeteoScreen",
+   "posUnity": [
+    0.0,
+    1.718,
+    -0.089
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Read_Chart": {
+   "pos": [
+    -0.255,
+    -0.196,
+    1.295
+   ],
+   "kind": "read",
+   "parent": "MeteoScreen",
+   "note": "the thermohygrograph's weekly chart",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "MeteoScreen",
+   "posUnity": [
+    0.255,
+    1.295,
+    0.196
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ },
+ "kit_instances": {
+  "Monitor_PC": {
+   "item": "Kit_Monitor_CRT",
+   "parent": "ObjectPC",
+   "root": "ObjectPC",
+   "note": "the object computer's monitor (snow_kit K2) on the case",
+   "ix_ids": {},
+   "pos": [
+    0.0,
+    0.0,
+    0.14
+   ],
+   "rot_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "posUnity": [
+    0.0,
+    0.14,
+    0.0
+   ],
+   "rotUnity_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "scaleUnity": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pos_root": [
+    0.0,
+    0.0,
+    0.14
+   ]
+  }
+ },
+ "placements": {
+  "TapeDeck": [
+   {
+    "parent": "Dish_1",
+    "package": "forest_far",
+    "note": "in Dish_1's equipment cabinet (behind IX_CabinetDoor_2), on the third module from the bottom; faces the cabinet door (+y of the dish)",
+    "pos": [
+     4.2,
+     -2.94,
+     1.3
+    ],
+    "yaw": 180.0,
+    "rot_quat_wxyz": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "posUnity": [
+     -4.2,
+     1.3,
+     2.94
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "parent": "Dish_2",
+    "package": "forest_far",
+    "note": "in Dish_2's equipment cabinet (behind IX_CabinetDoor_3), on the third module from the bottom; faces the cabinet door (+y of the dish)",
+    "pos": [
+     4.2,
+     -2.94,
+     1.3
+    ],
+    "yaw": 180.0,
+    "rot_quat_wxyz": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "posUnity": [
+     -4.2,
+     1.3,
+     2.94
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "parent": "Dish_3",
+    "package": "forest_far",
+    "note": "in Dish_3's equipment cabinet (behind IX_CabinetDoor_4), on the third module from the bottom; faces the cabinet door (+y of the dish)",
+    "pos": [
+     4.2,
+     -2.94,
+     1.3
+    ],
+    "yaw": 180.0,
+    "rot_quat_wxyz": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "posUnity": [
+     -4.2,
+     1.3,
+     2.94
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "parent": "Dish_4",
+    "package": "forest_far",
+    "note": "in Dish_4's equipment cabinet (behind IX_CabinetDoor_5), on the third module from the bottom; faces the cabinet door (+y of the dish)",
+    "pos": [
+     4.2,
+     -2.94,
+     1.3
+    ],
+    "yaw": 180.0,
+    "rot_quat_wxyz": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "posUnity": [
+     -4.2,
+     1.3,
+     2.94
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "parent": "Dish_5",
+    "package": "forest_far",
+    "note": "in Dish_5's equipment cabinet (behind IX_CabinetDoor_6), on the third module from the bottom; faces the cabinet door (+y of the dish)",
+    "pos": [
+     4.2,
+     -2.94,
+     1.3
+    ],
+    "yaw": 180.0,
+    "rot_quat_wxyz": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "posUnity": [
+     -4.2,
+     1.3,
+     2.94
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   }
+  ],
+  "MeteoScreen": [
+   {
+    "parent": "MeteoStation",
+    "package": "forest_far",
+    "note": "on the weather station's Mount_MeteoScreen (forest_far 1.1: the station without its old screen): the door to the north (+y of the station)",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "yaw": 180.0,
+    "rot_quat_wxyz": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "posUnity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotUnity_xyzw": [
+     0.0,
+     -1.0,
+     0.0,
+     0.0
+    ]
+   }
+  ]
+ },
+ "colliders": [
+  {
+   "name": "COL_Fax_Body",
+   "parent": "Fax",
+   "root": "Fax",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0525
+   ],
+   "size": [
+    0.34,
+    0.24,
+    0.105
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0525
+   ],
+   "centerUnity": [
+    0.0,
+    0.0525,
+    0.0
+   ],
+   "sizeUnity": [
+    0.34,
+    0.105,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_Fax_Handset",
+   "parent": "Fax_Handset",
+   "root": "Fax",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.001
+   ],
+   "size": [
+    0.05,
+    0.22,
+    0.036
+   ],
+   "center_root": [
+    -0.13,
+    0.0,
+    0.088
+   ],
+   "centerUnity": [
+    0.0,
+    0.001,
+    0.0
+   ],
+   "sizeUnity": [
+    0.05,
+    0.036,
+    0.22
+   ]
+  },
+  {
+   "name": "COL_FaxPaper",
+   "parent": "FaxPaper",
+   "root": "FaxPaper",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.005
+   ],
+   "size": [
+    0.21,
+    0.297,
+    0.01
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.005
+   ],
+   "centerUnity": [
+    0.0,
+    0.005,
+    0.0
+   ],
+   "sizeUnity": [
+    0.21,
+    0.01,
+    0.297
+   ]
+  },
+  {
+   "name": "COL_Cassette",
+   "parent": "Cassette",
+   "root": "Cassette",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.1003,
+    0.0638,
+    0.012
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.006
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1003,
+    0.012,
+    0.0638
+   ]
+  },
+  {
+   "name": "COL_CassetteBox",
+   "parent": "CassetteBox",
+   "root": "CassetteBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0375
+   ],
+   "size": [
+    0.18,
+    0.115,
+    0.075
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0375
+   ],
+   "centerUnity": [
+    0.0,
+    0.0375,
+    0.0
+   ],
+   "sizeUnity": [
+    0.18,
+    0.075,
+    0.115
+   ]
+  },
+  {
+   "name": "COL_DropBox_Box",
+   "parent": "DropBox",
+   "root": "DropBox",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.005,
+    1.24
+   ],
+   "size": [
+    0.45,
+    0.36,
+    0.48
+   ],
+   "center_root": [
+    0.0,
+    -0.005,
+    1.24
+   ],
+   "centerUnity": [
+    0.0,
+    1.24,
+    0.005
+   ],
+   "sizeUnity": [
+    0.45,
+    0.48,
+    0.36
+   ]
+  },
+  {
+   "name": "COL_DropBox_Post",
+   "parent": "DropBox",
+   "root": "DropBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "size": [
+    0.06,
+    0.06,
+    1.0
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "centerUnity": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.0,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_DropBox_Footing",
+   "parent": "DropBox",
+   "root": "DropBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.125
+   ],
+   "size": [
+    0.36,
+    0.36,
+    0.35
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.125
+   ],
+   "centerUnity": [
+    0.0,
+    -0.125,
+    0.0
+   ],
+   "sizeUnity": [
+    0.36,
+    0.35,
+    0.36
+   ]
+  },
+  {
+   "name": "COL_ObjectPC_Case",
+   "parent": "ObjectPC",
+   "root": "ObjectPC",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.07
+   ],
+   "size": [
+    0.42,
+    0.4,
+    0.14
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.07
+   ],
+   "centerUnity": [
+    0.0,
+    0.07,
+    0.0
+   ],
+   "sizeUnity": [
+    0.42,
+    0.14,
+    0.4
+   ]
+  },
+  {
+   "name": "COL_PC_Keyboard",
+   "parent": "PC_Keyboard",
+   "root": "ObjectPC",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.02
+   ],
+   "size": [
+    0.46,
+    0.19,
+    0.04
+   ],
+   "center_root": [
+    0.0,
+    -0.4,
+    0.02
+   ],
+   "centerUnity": [
+    0.0,
+    0.02,
+    0.0
+   ],
+   "sizeUnity": [
+    0.46,
+    0.04,
+    0.19
+   ]
+  },
+  {
+   "name": "COL_PC_Mouse",
+   "parent": "PC_Mouse",
+   "root": "ObjectPC",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.016
+   ],
+   "size": [
+    0.062,
+    0.112,
+    0.032
+   ],
+   "center_root": [
+    0.33,
+    -0.4,
+    0.016
+   ],
+   "centerUnity": [
+    0.0,
+    0.016,
+    0.0
+   ],
+   "sizeUnity": [
+    0.062,
+    0.032,
+    0.112
+   ]
+  },
+  {
+   "name": "COL_Laptop_Base",
+   "parent": "Laptop",
+   "root": "Laptop",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.017
+   ],
+   "size": [
+    0.3,
+    0.23,
+    0.034
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.017
+   ],
+   "centerUnity": [
+    0.0,
+    0.017,
+    0.0
+   ],
+   "sizeUnity": [
+    0.3,
+    0.034,
+    0.23
+   ]
+  },
+  {
+   "name": "COL_Laptop_Lid",
+   "parent": "IX_LaptopLid",
+   "root": "Laptop",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.1065,
+    0.0
+   ],
+   "size": [
+    0.3,
+    0.225,
+    0.011
+   ],
+   "center_root": [
+    0.0,
+    0.0015,
+    0.0415
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.1065
+   ],
+   "sizeUnity": [
+    0.3,
+    0.011,
+    0.225
+   ]
+  },
+  {
+   "name": "COL_TapeDeck",
+   "parent": "TapeDeck",
+   "root": "TapeDeck",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.012,
+    0.0
+   ],
+   "size": [
+    0.94,
+    0.024,
+    0.27
+   ],
+   "center_root": [
+    0.0,
+    -0.012,
+    0.0
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.012
+   ],
+   "sizeUnity": [
+    0.94,
+    0.27,
+    0.024
+   ]
+  },
+  {
+   "name": "COL_TapeDoor",
+   "parent": "IX_TapeDoor",
+   "root": "TapeDeck",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.0015,
+    0.038
+   ],
+   "size": [
+    0.1124,
+    0.008,
+    0.0759
+   ],
+   "center_root": [
+    -0.3505,
+    -0.023,
+    0.0193
+   ],
+   "centerUnity": [
+    0.0,
+    0.038,
+    0.0015
+   ],
+   "sizeUnity": [
+    0.1124,
+    0.0759,
+    0.008
+   ]
+  },
+  {
+   "name": "COL_Screen_Legs",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.6
+   ],
+   "size": [
+    0.66,
+    0.56,
+    1.2
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.6
+   ],
+   "centerUnity": [
+    0.0,
+    0.6,
+    0.0
+   ],
+   "sizeUnity": [
+    0.66,
+    1.2,
+    0.56
+   ]
+  },
+  {
+   "name": "COL_Screen_Floor",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.22
+   ],
+   "size": [
+    0.75,
+    0.6,
+    0.04
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.22
+   ],
+   "centerUnity": [
+    0.0,
+    1.22,
+    0.0
+   ],
+   "sizeUnity": [
+    0.75,
+    0.04,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Screen_Back",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.0,
+    0.285,
+    1.55
+   ],
+   "size": [
+    0.75,
+    0.03,
+    0.7
+   ],
+   "center_root": [
+    0.0,
+    0.285,
+    1.55
+   ],
+   "centerUnity": [
+    0.0,
+    1.55,
+    -0.285
+   ],
+   "sizeUnity": [
+    0.75,
+    0.7,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_Screen_Left",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    -0.36,
+    0.0,
+    1.55
+   ],
+   "size": [
+    0.03,
+    0.6,
+    0.7
+   ],
+   "center_root": [
+    -0.36,
+    0.0,
+    1.55
+   ],
+   "centerUnity": [
+    0.36,
+    1.55,
+    0.0
+   ],
+   "sizeUnity": [
+    0.03,
+    0.7,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Screen_Right",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.36,
+    0.0,
+    1.55
+   ],
+   "size": [
+    0.03,
+    0.6,
+    0.7
+   ],
+   "center_root": [
+    0.36,
+    0.0,
+    1.55
+   ],
+   "centerUnity": [
+    -0.36,
+    1.55,
+    0.0
+   ],
+   "sizeUnity": [
+    0.03,
+    0.7,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Screen_Roof",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.9475
+   ],
+   "size": [
+    0.91,
+    0.76,
+    0.175
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.9475
+   ],
+   "centerUnity": [
+    0.0,
+    1.9475,
+    0.0
+   ],
+   "sizeUnity": [
+    0.91,
+    0.175,
+    0.76
+   ]
+  },
+  {
+   "name": "COL_Screen_Step",
+   "parent": "MeteoScreen",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.7,
+    0.15
+   ],
+   "size": [
+    0.5,
+    0.3,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    -0.7,
+    0.15
+   ],
+   "centerUnity": [
+    0.0,
+    0.15,
+    0.7
+   ],
+   "sizeUnity": [
+    0.5,
+    0.3,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_ScreenDoor",
+   "parent": "IX_ScreenDoor",
+   "root": "MeteoScreen",
+   "type": "box",
+   "center": [
+    0.345,
+    0.0125,
+    0.31
+   ],
+   "size": [
+    0.69,
+    0.025,
+    0.62
+   ],
+   "center_root": [
+    0.0,
+    -0.2875,
+    1.55
+   ],
+   "centerUnity": [
+    -0.345,
+    0.31,
+    -0.0125
+   ],
+   "sizeUnity": [
+    0.69,
+    0.62,
+    0.025
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees",
+  "frame": "each root (Fax, FaxPaper, Cassette, CassetteBox, DropBox, ObjectPC, Laptop, TapeDeck, MeteoScreen) in its own frame: z up, the front -y; origin on the surface it stands on (z = 0) under its middle - the drop box: the post on the ground; the cassette: its middle; the tape recorder: the middle of its back face. Every pivot / pos here is in its root's frame. In devices.blend the roots stand apart (display_offset); their FBX is exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "Fax": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "FaxPaper": [
+    0.45,
+    0.0,
+    0.0
+   ],
+   "Cassette": [
+    0.85,
+    -0.05,
+    0.0
+   ],
+   "CassetteBox": [
+    0.85,
+    0.15,
+    0.0
+   ],
+   "DropBox": [
+    2.2,
+    0.0,
+    0.0
+   ],
+   "ObjectPC": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "Laptop": [
+    -2.0,
+    0.0,
+    0.0
+   ],
+   "TapeDeck": [
+    0.0,
+    1.0,
+    0.3
+   ],
+   "MeteoScreen": [
+    2.2,
+    1.6,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent's own frame (its pivot, no rotation), centerUnity / sizeUnity the same in Unity axes; center_root: in the root's frame. The COL_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "kit_instances": "snow_kit models placed as instances (the computer's monitor): in devices.blend an empty showing the collection linked from ../snow_kit/snow_kit.blend (props kit_item); in Unity put the kit's prefab (Assets/Kit/Prefabs/<item>) under the parent with pos / rot (prefab frame) or posUnity / rotUnity_xyzw",
+  "placements": "where forest_far's prefabs take a model: under the parent (a forest_far root) at pos / yaw (the parent's frame) or posUnity / rotUnity_xyzw - the tape recorder in each dish cabinet, the weather screen on the weather station (forest_far 1.1)",
+  "model": "devices.blend",
+  "textures": "tex",
+  "materials": "M_Dev_Devices (the desk things, the recorder) / M_Dev_Outdoor (the drop box, the screen): baked PSX atlases (point filter); M_Dev_Panel: the labels, key fields, the fax panel, the recorder's faceplate, the plate, the thermometer scales and the chart (second material on those bodies; the keys and buttons are panel objects); M_Dev_LEDG / _Off, M_Dev_LEDR / _Off: lit / off; M_Dev_FaxLCD / _Off: the fax display lit / off; M_Dev_ScreenOff: the laptop screen dark (the game puts its picture there); M_Dev_FaxPaper: the received fax (the game prints on it); M_Dev_Glass: the recorder's window",
+  "ix": "IX_LaptopLid, IX_TapeDoor, IX_ScreenDoor - names without numbers: Unity numbers them when the prefab goes on the map"
+ }
+}

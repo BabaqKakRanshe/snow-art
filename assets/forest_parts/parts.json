@@ -1,0 +1,136 @@
+{
+ "atlases": {
+  "Parts": {
+   "size": 1024,
+   "ppm": 256.0,
+   "area_m2": 5.99,
+   "uv_fill": 0.374,
+   "colours": 64
+  },
+  "Sensor": {
+   "size": 512,
+   "ppm": 256.0,
+   "area_m2": 1.12,
+   "uv_fill": 0.28,
+   "colours": 64
+  }
+ },
+ "tris": 6356,
+ "tris_by_root": {
+  "Item_DosingPump": 1866,
+  "Item_BackupGenerator": 1522,
+  "Item_RadarCRT": 986,
+  "Item_RelayUnit": 424,
+  "Item_SodiumLamp": 800,
+  "Item_SodiumLampBox": 12,
+  "LakeSensor": 746
+ },
+ "objects": {
+  "Item_DosingPump": [
+   "DosingPump_Hose",
+   "DosingPump_Needle",
+   "DosingPump_Stroke",
+   "DosingPump_Switch",
+   "DosingPump_V1",
+   "DosingPump_V2",
+   "DosingPump_V3",
+   "DosingPump_Waybill",
+   "Item_DosingPump"
+  ],
+  "Item_SodiumLamp": [
+   "Item_SodiumLamp",
+   "SodiumLamp_ArcTube"
+  ],
+  "Item_SodiumLampBox": [
+   "Item_SodiumLampBox"
+  ],
+  "Item_RadarCRT": [
+   "Item_RadarCRT",
+   "RadarCRT_Face"
+  ],
+  "Item_RelayUnit": [
+   "Item_RelayUnit",
+   "RelayUnit_Fuse",
+   "RelayUnit_FuseCap",
+   "RelayUnit_LED_ALM",
+   "RelayUnit_LED_PWR",
+   "RelayUnit_LED_RX",
+   "RelayUnit_LED_TX",
+   "RelayUnit_Needle",
+   "RelayUnit_Power"
+  ],
+  "Item_BackupGenerator": [
+   "Gen_Choke",
+   "Gen_FuelCap",
+   "Gen_StartGrip",
+   "Gen_Switch",
+   "Item_BackupGenerator"
+  ],
+  "LakeSensor": [
+   "LakeSensor",
+   "LakeSensor_LED",
+   "LakeSensor_Lid"
+  ]
+ },
+ "display_offset": {
+  "Item_DosingPump": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "Item_SodiumLamp": [
+   1.2,
+   -1.1,
+   0.0
+  ],
+  "Item_SodiumLampBox": [
+   1.35,
+   -1.1,
+   0.0
+  ],
+  "Item_RadarCRT": [
+   -1.2,
+   -1.0,
+   0.0
+  ],
+  "Item_RelayUnit": [
+   -1.2,
+   0.0,
+   0.0
+  ],
+  "Item_BackupGenerator": [
+   0.3,
+   -1.1,
+   0.0
+  ],
+  "LakeSensor": [
+   2.6,
+   0.9,
+   0.0
+  ]
+ },
+ "mass_kg": {
+  "Item_DosingPump": 45.0,
+  "Item_SodiumLamp": 0.18,
+  "Item_SodiumLampBox": 0.3,
+  "Item_RadarCRT": 14.0,
+  "Item_RelayUnit": 9.0,
+  "Item_BackupGenerator": 46.0
+ },
+ "waybill_date": "03.11.1991",
+ "contract": {
+  "parts": 31,
+  "sockets": 32,
+  "colliders": 19,
+  "placements": {
+   "Item_DosingPump": 1
+  },
+  "kinds": {
+   "item": 7,
+   "twist": 4,
+   "hinge": 8,
+   "static": 10,
+   "slide": 2
+  }
+ }
+}

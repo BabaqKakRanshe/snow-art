@@ -1,0 +1,3546 @@
+{
+ "parts": {
+  "IX_HangarSideDoor": {
+   "kind": "hinge",
+   "pivot": [
+    -8.94,
+    1.61,
+    1.2
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    95
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerHangar",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the side door up on the landing (NOTAUSGANG): to the underground part and the entrance shaft (Link_SideDoor); opens into the hall, hinge on its front edge",
+   "object": "IX_HangarSideDoor",
+   "root": "BunkerHangar",
+   "mass_kg": 160.0,
+   "box": {
+    "center": [
+     -0.0125,
+     0.574,
+     1.05
+    ],
+    "size": [
+     0.135,
+     1.208,
+     2.076
+    ]
+   },
+   "pivotUnity": [
+    8.94,
+    1.2,
+    -1.61
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "IX_HangarGate_L": {
+   "kind": "slide",
+   "pivot": [
+    -4.15,
+    -0.45,
+    0.05
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    8.3
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "BunkerHangar",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "gate leaf L: rolls on the floor rail under the top guide, out in front of the facade; open = slid 8.3 m aside (the opening 16 m: the plane taxis out onto the ice)",
+   "object": "IX_HangarGate_L",
+   "root": "BunkerHangar",
+   "mass_kg": 2400.0,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     2.75
+    ],
+    "size": [
+     8.3,
+     0.604,
+     5.6
+    ]
+   },
+   "pivotUnity": [
+    4.15,
+    0.05,
+    0.45
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_HangarGate_R": {
+   "kind": "slide",
+   "pivot": [
+    4.15,
+    -0.45,
+    0.05
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    8.3
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "BunkerHangar",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "gate leaf R: rolls on the floor rail under the top guide, out in front of the facade; open = slid 8.3 m aside (the opening 16 m: the plane taxis out onto the ice)",
+   "object": "IX_HangarGate_R",
+   "root": "BunkerHangar",
+   "mass_kg": 2400.0,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     2.75
+    ],
+    "size": [
+     8.3,
+     0.604,
+     5.6
+    ]
+   },
+   "pivotUnity": [
+    -4.15,
+    0.05,
+    0.45
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "BunkerHangar": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the hangar (root): origin on the floor in the middle of the gate line (the facade's front face); the gate faces -y (Unity +Z): set it into the shore so the apron meets the lake ice; the hall runs 16.4 m into the bank, its roof 7.3 m up (the terrain over it), the wing walls hold the bank",
+   "object": "BunkerHangar",
+   "root": "BunkerHangar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "BunkerHangar_Parts": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerHangar",
+   "states": [],
+   "note": "steel and fittings: beams, lamp bodies, railings, the side door frame, the gate rail and top guide, vents, signs (panel)",
+   "object": "BunkerHangar_Parts",
+   "root": "BunkerHangar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "BunkerHangar_Glow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerHangar",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "the lamps' bulbs and glasses: M_Bunker_Lamp_Off / M_Bunker_Lamp (with the lights in bunker_lights.json)",
+   "object": "BunkerHangar_Glow",
+   "root": "BunkerHangar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Bolt_1": {
+   "kind": "slide",
+   "pivot": [
+    0.0,
+    7.72,
+    3.43
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    0.16
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "locking bolt 1: out over the ring = locked; slides 0.16 m in (to the hub) before the leaf can swing (act 3)",
+   "locked": true,
+   "object": "IX_BlastDoor_Bolt_1",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.24,
+     0.14,
+     0.46
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    3.43,
+    -7.72
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Bolt_2": {
+   "kind": "slide",
+   "pivot": [
+    -1.2731,
+    7.72,
+    2.695
+   ],
+   "axis": [
+    0.866,
+    0.0,
+    -0.5
+   ],
+   "range": [
+    0,
+    0.16
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "locking bolt 2: out over the ring = locked; slides 0.16 m in (to the hub) before the leaf can swing (act 3)",
+   "locked": true,
+   "object": "IX_BlastDoor_Bolt_2",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.5184,
+     0.14,
+     0.4378
+    ]
+   },
+   "pivotUnity": [
+    1.2731,
+    2.695,
+    -7.72
+   ],
+   "axisUnity": [
+    -0.866,
+    -0.5,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Bolt_3": {
+   "kind": "slide",
+   "pivot": [
+    -1.2731,
+    7.72,
+    1.225
+   ],
+   "axis": [
+    0.866,
+    0.0,
+    0.5
+   ],
+   "range": [
+    0,
+    0.16
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "locking bolt 3: out over the ring = locked; slides 0.16 m in (to the hub) before the leaf can swing (act 3)",
+   "locked": true,
+   "object": "IX_BlastDoor_Bolt_3",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.5184,
+     0.14,
+     0.4378
+    ]
+   },
+   "pivotUnity": [
+    1.2731,
+    1.225,
+    -7.72
+   ],
+   "axisUnity": [
+    -0.866,
+    0.5,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Bolt_4": {
+   "kind": "slide",
+   "pivot": [
+    0.0,
+    7.72,
+    0.49
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    0.16
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "locking bolt 4: out over the ring = locked; slides 0.16 m in (to the hub) before the leaf can swing (act 3)",
+   "locked": true,
+   "object": "IX_BlastDoor_Bolt_4",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.24,
+     0.14,
+     0.46
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.49,
+    -7.72
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Bolt_5": {
+   "kind": "slide",
+   "pivot": [
+    1.2731,
+    7.72,
+    1.225
+   ],
+   "axis": [
+    -0.866,
+    0.0,
+    0.5
+   ],
+   "range": [
+    0,
+    0.16
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "locking bolt 5: out over the ring = locked; slides 0.16 m in (to the hub) before the leaf can swing (act 3)",
+   "locked": true,
+   "object": "IX_BlastDoor_Bolt_5",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.5184,
+     0.14,
+     0.4378
+    ]
+   },
+   "pivotUnity": [
+    -1.2731,
+    1.225,
+    -7.72
+   ],
+   "axisUnity": [
+    0.866,
+    0.5,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Bolt_6": {
+   "kind": "slide",
+   "pivot": [
+    1.2731,
+    7.72,
+    2.695
+   ],
+   "axis": [
+    -0.866,
+    0.0,
+    -0.5
+   ],
+   "range": [
+    0,
+    0.16
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "locking bolt 6: out over the ring = locked; slides 0.16 m in (to the hub) before the leaf can swing (act 3)",
+   "locked": true,
+   "object": "IX_BlastDoor_Bolt_6",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.5184,
+     0.14,
+     0.4378
+    ]
+   },
+   "pivotUnity": [
+    -1.2731,
+    2.695,
+    -7.72
+   ],
+   "axisUnity": [
+    0.866,
+    -0.5,
+    0.0
+   ]
+  },
+  "IX_BlastDoor": {
+   "kind": "hinge",
+   "pivot": [
+    -2.12,
+    7.64,
+    1.96
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BlastDoor",
+   "states": [
+    "locked",
+    "open"
+   ],
+   "note": "the round blast door (\"die Tür nach unten\"): seen on day 8, opened only in act 3; first the wheel turns and the six bolts slide in, then the leaf swings out into the vestibule about the hinge on its left",
+   "locked": true,
+   "object": "IX_BlastDoor",
+   "root": "BlastDoor",
+   "mass_kg": 9000.0,
+   "box": {
+    "center": [
+     1.795,
+     0.25,
+     0.0
+    ],
+    "size": [
+     3.81,
+     0.72,
+     3.16
+    ]
+   },
+   "pivotUnity": [
+    2.12,
+    1.96,
+    -7.64
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "IX_BlastDoor_Wheel": {
+   "kind": "twist",
+   "pivot": [
+    0.0,
+    7.5,
+    1.96
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0,
+    720
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_BlastDoor",
+   "states": [
+    "locked",
+    "unlocked"
+   ],
+   "note": "the handwheel: two turns draw the bolts in (with power and the console's key in act 3; until then it does not move)",
+   "locked": true,
+   "object": "IX_BlastDoor_Wheel",
+   "root": "BlastDoor",
+   "box": {
+    "center": [
+     -0.0002,
+     -0.01,
+     0.0
+    ],
+    "size": [
+     0.8516,
+     0.1,
+     0.8391
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    1.96,
+    -7.5
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "BlastDoor": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the vestibule with the round door (root): origin on the floor in the middle of its open end; goes on the hangar's Link_BlastDoor (no rotation); 5.0 x 4.6 m inside, the door at the far end (8 m)",
+   "object": "BlastDoor",
+   "root": "BlastDoor",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "BlastDoor_Glow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BlastDoor",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "the two wall lamps' glasses: M_Bunker_Lamp_Off / M_Bunker_Lamp",
+   "object": "BlastDoor_Glow",
+   "root": "BlastDoor",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "BlastDoor_Prints": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BlastDoor",
+   "states": [
+    "shown",
+    "hidden"
+   ],
+   "note": "wet boot prints from the hangar to the door (M_Bunker_Prints, cut-out): the sole of X11 / the old shift's boots - someone went to this door; 8 strides of 0.9 m",
+   "object": "BlastDoor_Prints",
+   "root": "BlastDoor",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_BunkerHatch": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    7.19,
+    -3.005
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerEntrance",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the steel hatch in the landing floor: under the ice until Ice_Hatch_1..3 are knocked off; then the wheel, then it lifts toward the back wall (hinge on its +y edge); the ladder goes down the shaft's -y wall",
+   "object": "IX_BunkerHatch",
+   "root": "BunkerEntrance",
+   "mass_kg": 140.0,
+   "box": {
+    "center": [
+     0.0,
+     -0.564,
+     0.024
+    ],
+    "size": [
+     1.12,
+     1.172,
+     0.092
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    -3.005,
+    -7.19
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_BunkerHatch_Wheel": {
+   "kind": "twist",
+   "pivot": [
+    0.0,
+    6.6,
+    -2.93
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    540
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_BunkerHatch",
+   "states": [
+    "dogged",
+    "free"
+   ],
+   "note": "the hatch's handwheel: one and a half turns free the dogs; frozen while iced",
+   "object": "IX_BunkerHatch_Wheel",
+   "root": "BunkerEntrance",
+   "box": {
+    "center": [
+     -0.0002,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.3639,
+     0.3551,
+     0.028
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    -2.93,
+    -6.6
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Ice_Hatch_1": {
+   "kind": "static",
+   "pivot": [
+    -0.455,
+    6.6,
+    -2.9341
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerEntrance",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "ice chunk 1 of 3 over the hatch: knocked off (forest_gear Item_IceAxe, a crowbar) - hide it, drop a few chunks; the hatch opens when all three are gone; hit box in the contract",
+   "object": "Ice_Hatch_1",
+   "root": "BunkerEntrance",
+   "pivotUnity": [
+    0.455,
+    -2.9341,
+    -6.6
+   ]
+  },
+  "Ice_Hatch_2": {
+   "kind": "static",
+   "pivot": [
+    0.05,
+    6.6,
+    -2.9341
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerEntrance",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "ice chunk 2 of 3 over the hatch: knocked off (forest_gear Item_IceAxe, a crowbar) - hide it, drop a few chunks; the hatch opens when all three are gone; hit box in the contract",
+   "object": "Ice_Hatch_2",
+   "root": "BunkerEntrance",
+   "pivotUnity": [
+    -0.05,
+    -2.9341,
+    -6.6
+   ]
+  },
+  "Ice_Hatch_3": {
+   "kind": "static",
+   "pivot": [
+    0.505,
+    6.6,
+    -2.9356
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerEntrance",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "ice chunk 3 of 3 over the hatch: knocked off (forest_gear Item_IceAxe, a crowbar) - hide it, drop a few chunks; the hatch opens when all three are gone; hit box in the contract",
+   "object": "Ice_Hatch_3",
+   "root": "BunkerEntrance",
+   "pivotUnity": [
+    -0.505,
+    -2.9356,
+    -6.6
+   ]
+  },
+  "BunkerEntrance_Ice": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    5.975,
+    -3.04
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerEntrance",
+   "states": [
+    "iced",
+    "thawed"
+   ],
+   "note": "the frozen melt water on the landing (clear ice, M_Bunker_IceClear: the hatch shows through)",
+   "object": "BunkerEntrance_Ice",
+   "root": "BunkerEntrance",
+   "pivotUnity": [
+    0.0,
+    -3.04,
+    -5.975
+   ]
+  },
+  "BunkerEntrance": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the way in by the hand (root): origin on the ground at the top step's edge; the trench goes down to +y (16 risers, 3.04 m) under the portal canopy; set the ground (terrain) to z 0 round the wall tops",
+   "object": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "BunkerEntrance_Glow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "BunkerEntrance",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "the portal lamp's glass: M_Bunker_Lamp_Off / M_Bunker_Lamp",
+   "object": "BunkerEntrance_Glow",
+   "root": "BunkerEntrance",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "PlaneTarp": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "on",
+    "off"
+   ],
+   "note": "the canvas over the parked plane (root): in forest UtilityPlane's own frame - parent it to the plane root at (0, 0, 0), no rotation (draped with the plane at Slot_Plane: nose-up, the WinterKit covers on); one sheet, seen from both sides: material Render Face Both; pulled off first (then the kit covers)",
+   "object": "PlaneTarp",
+   "root": "PlaneTarp",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Slot_Plane": {
+   "pos": [
+    0.0,
+    8.3776,
+    -0.3765
+   ],
+   "kind": "plane",
+   "parent": "BunkerHangar",
+   "note": "forest UtilityPlane (v13, the WinterKit installed) parked: its root here, rotated (Euler XYZ, deg) nose-up so the tail wheel rests on the floor; the nose to the gate; PlaneTarp goes on it (its child)",
+   "euler": [
+    -9.9946,
+    0.0,
+    0.0
+   ],
+   "root": "BunkerHangar",
+   "posUnity": [
+    0.0,
+    -0.3765,
+    -8.3776
+   ],
+   "eulerUnity": [
+    -9.9946,
+    0.0,
+    0.0
+   ]
+  },
+  "Slot_Dressing_1": {
+   "pos": [
+    7.6,
+    4.6,
+    0.0
+   ],
+   "kind": "dressing",
+   "parent": "BunkerHangar",
+   "note": "a place on the floor for the plane package's cargo cases / stepladder / kit bags, or crates",
+   "yaw": 90,
+   "root": "BunkerHangar",
+   "posUnity": [
+    -7.6,
+    0.0,
+    -4.6
+   ],
+   "yawUnity": -90.0
+  },
+  "Slot_Dressing_2": {
+   "pos": [
+    7.6,
+    6.2,
+    0.0
+   ],
+   "kind": "dressing",
+   "parent": "BunkerHangar",
+   "note": "a place on the floor for the plane package's cargo cases / stepladder / kit bags, or crates",
+   "yaw": 90,
+   "root": "BunkerHangar",
+   "posUnity": [
+    -7.6,
+    0.0,
+    -6.2
+   ],
+   "yawUnity": -90.0
+  },
+  "Slot_Dressing_3": {
+   "pos": [
+    7.4,
+    13.8,
+    0.0
+   ],
+   "kind": "dressing",
+   "parent": "BunkerHangar",
+   "note": "a place on the floor for the plane package's cargo cases / stepladder / kit bags, or crates",
+   "yaw": 90,
+   "root": "BunkerHangar",
+   "posUnity": [
+    -7.4,
+    0.0,
+    -13.8
+   ],
+   "yawUnity": -90.0
+  },
+  "Slot_Dressing_4": {
+   "pos": [
+    -7.4,
+    13.8,
+    0.0
+   ],
+   "kind": "dressing",
+   "parent": "BunkerHangar",
+   "note": "a place on the floor for the plane package's cargo cases / stepladder / kit bags, or crates",
+   "yaw": -90,
+   "root": "BunkerHangar",
+   "posUnity": [
+    7.4,
+    0.0,
+    -13.8
+   ],
+   "yawUnity": 90.0
+  },
+  "Slot_Dressing_5": {
+   "pos": [
+    -7.6,
+    5.4,
+    0.0
+   ],
+   "kind": "dressing",
+   "parent": "BunkerHangar",
+   "note": "a place on the floor for the plane package's cargo cases / stepladder / kit bags, or crates",
+   "yaw": -90,
+   "root": "BunkerHangar",
+   "posUnity": [
+    7.6,
+    0.0,
+    -5.4
+   ],
+   "yawUnity": 90.0
+  },
+  "Link_BlastDoor": {
+   "pos": [
+    0.0,
+    16.4,
+    0.0
+   ],
+   "kind": "link",
+   "parent": "BunkerHangar",
+   "note": "the back opening (5.0 x 4.6 m): BlastDoor's origin goes here, no rotation",
+   "root": "BunkerHangar",
+   "posUnity": [
+    0.0,
+    0.0,
+    -16.4
+   ]
+  },
+  "Link_SideDoor": {
+   "pos": [
+    -11.1,
+    2.2,
+    1.2
+   ],
+   "kind": "link",
+   "parent": "BunkerHangar",
+   "note": "the end of the corridor stub behind the side door (1.2 x 2.1 m, floor 1.2 m up): the underground part to the entrance shaft continues here, along -x",
+   "root": "BunkerHangar",
+   "posUnity": [
+    11.1,
+    1.2,
+    -2.2
+   ]
+  },
+  "Link_Down": {
+   "pos": [
+    0.0,
+    11.1,
+    -0.45
+   ],
+   "kind": "link",
+   "parent": "BlastDoor",
+   "note": "behind the door: the end of the first steps down (1.4 m wide) - act 3 (the metro, the megastructures) continues here, along +y",
+   "root": "BlastDoor",
+   "posUnity": [
+    0.0,
+    -0.45,
+    -11.1
+   ]
+  },
+  "View_BlastDoor": {
+   "pos": [
+    0.0,
+    1.5,
+    1.65
+   ],
+   "kind": "view",
+   "parent": "BlastDoor",
+   "note": "the day-8 look at the door from the vestibule's mouth",
+   "dir": [
+    0.0,
+    1.0,
+    0.05
+   ],
+   "root": "BlastDoor",
+   "posUnity": [
+    0.0,
+    1.65,
+    -1.5
+   ],
+   "dirUnity": [
+    0.0,
+    0.05,
+    -1.0
+   ]
+  },
+  "Link_Shaft": {
+   "pos": [
+    0.0,
+    8.1,
+    -7.04
+   ],
+   "kind": "link",
+   "parent": "BunkerEntrance",
+   "note": "the end of the passage at the shaft's foot (0.9 x 2.0 m): the underground part to the hangar's side door (Link_SideDoor) continues here, along +y",
+   "root": "BunkerEntrance",
+   "posUnity": [
+    0.0,
+    -7.04,
+    -8.1
+   ]
+  },
+  "Grab_Tarp": {
+   "pos": [
+    1.7022,
+    -2.8703,
+    0.9216
+   ],
+   "kind": "grab",
+   "parent": "PlaneTarp",
+   "note": "where it is pulled off: the lowest hanging corner of the canvas (by a cabin door)",
+   "root": "PlaneTarp",
+   "posUnity": [
+    -1.7022,
+    0.9216,
+    2.8703
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Hangar_Floor",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    8.2,
+    -0.2
+   ],
+   "size": [
+    19.2,
+    16.4,
+    0.4
+   ],
+   "center_root": [
+    0.0,
+    8.2,
+    -0.2
+   ],
+   "centerUnity": [
+    0.0,
+    -0.2,
+    -8.2
+   ],
+   "sizeUnity": [
+    19.2,
+    0.4,
+    16.4
+   ]
+  },
+  {
+   "name": "COL_Hangar_Apron",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    -3.0,
+    -0.35
+   ],
+   "size": [
+    40.4,
+    6.0,
+    0.5
+   ],
+   "center_root": [
+    0.0,
+    -3.0,
+    -0.35
+   ],
+   "centerUnity": [
+    0.0,
+    -0.35,
+    3.0
+   ],
+   "sizeUnity": [
+    40.4,
+    0.5,
+    6.0
+   ],
+   "rotation": [
+    1.9091524329963763,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    1.9091524329963763,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Hangar_FrontL",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -12.45,
+    0.4,
+    3.85
+   ],
+   "size": [
+    8.9,
+    0.8,
+    8.3
+   ],
+   "center_root": [
+    -12.45,
+    0.4,
+    3.85
+   ],
+   "centerUnity": [
+    12.45,
+    3.85,
+    -0.4
+   ],
+   "sizeUnity": [
+    8.9,
+    8.3,
+    0.8
+   ]
+  },
+  {
+   "name": "COL_Hangar_FrontR",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    12.45,
+    0.4,
+    3.85
+   ],
+   "size": [
+    8.9,
+    0.8,
+    8.3
+   ],
+   "center_root": [
+    12.45,
+    0.4,
+    3.85
+   ],
+   "centerUnity": [
+    -12.45,
+    3.85,
+    -0.4
+   ],
+   "sizeUnity": [
+    8.9,
+    8.3,
+    0.8
+   ]
+  },
+  {
+   "name": "COL_Hangar_Lintel",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    0.4,
+    6.6
+   ],
+   "size": [
+    16.0,
+    0.8,
+    2.8
+   ],
+   "center_root": [
+    0.0,
+    0.4,
+    6.6
+   ],
+   "centerUnity": [
+    0.0,
+    6.6,
+    -0.4
+   ],
+   "sizeUnity": [
+    16.0,
+    2.8,
+    0.8
+   ]
+  },
+  {
+   "name": "COL_Hangar_WallR",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    9.3,
+    8.6,
+    3.65
+   ],
+   "size": [
+    0.6,
+    15.6,
+    7.3
+   ],
+   "center_root": [
+    9.3,
+    8.6,
+    3.65
+   ],
+   "centerUnity": [
+    -9.3,
+    3.65,
+    -8.6
+   ],
+   "sizeUnity": [
+    0.6,
+    7.3,
+    15.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_WallL_Front",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -9.3,
+    1.2,
+    3.65
+   ],
+   "size": [
+    0.6,
+    0.8,
+    7.3
+   ],
+   "center_root": [
+    -9.3,
+    1.2,
+    3.65
+   ],
+   "centerUnity": [
+    9.3,
+    3.65,
+    -1.2
+   ],
+   "sizeUnity": [
+    0.6,
+    7.3,
+    0.8
+   ]
+  },
+  {
+   "name": "COL_Hangar_WallL_Back",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -9.3,
+    9.6,
+    3.65
+   ],
+   "size": [
+    0.6,
+    13.6,
+    7.3
+   ],
+   "center_root": [
+    -9.3,
+    9.6,
+    3.65
+   ],
+   "centerUnity": [
+    9.3,
+    3.65,
+    -9.6
+   ],
+   "sizeUnity": [
+    0.6,
+    7.3,
+    13.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_WallL_Sill",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -9.3,
+    2.2,
+    0.6
+   ],
+   "size": [
+    0.6,
+    1.2,
+    1.2
+   ],
+   "center_root": [
+    -9.3,
+    2.2,
+    0.6
+   ],
+   "centerUnity": [
+    9.3,
+    0.6,
+    -2.2
+   ],
+   "sizeUnity": [
+    0.6,
+    1.2,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Hangar_WallL_Head",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -9.3,
+    2.2,
+    5.3
+   ],
+   "size": [
+    0.6,
+    1.2,
+    4.0
+   ],
+   "center_root": [
+    -9.3,
+    2.2,
+    5.3
+   ],
+   "centerUnity": [
+    9.3,
+    5.3,
+    -2.2
+   ],
+   "sizeUnity": [
+    0.6,
+    4.0,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Hangar_BackL",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -6.05,
+    16.1,
+    3.65
+   ],
+   "size": [
+    7.1,
+    0.6,
+    7.3
+   ],
+   "center_root": [
+    -6.05,
+    16.1,
+    3.65
+   ],
+   "centerUnity": [
+    6.05,
+    3.65,
+    -16.1
+   ],
+   "sizeUnity": [
+    7.1,
+    7.3,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_BackR",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    6.05,
+    16.1,
+    3.65
+   ],
+   "size": [
+    7.1,
+    0.6,
+    7.3
+   ],
+   "center_root": [
+    6.05,
+    16.1,
+    3.65
+   ],
+   "centerUnity": [
+    -6.05,
+    3.65,
+    -16.1
+   ],
+   "sizeUnity": [
+    7.1,
+    7.3,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_BackLintel",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    16.1,
+    5.95
+   ],
+   "size": [
+    5.0,
+    0.6,
+    2.7
+   ],
+   "center_root": [
+    0.0,
+    16.1,
+    5.95
+   ],
+   "centerUnity": [
+    0.0,
+    5.95,
+    -16.1
+   ],
+   "sizeUnity": [
+    5.0,
+    2.7,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_Roof",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    8.6,
+    6.9
+   ],
+   "size": [
+    19.2,
+    15.6,
+    0.8
+   ],
+   "center_root": [
+    0.0,
+    8.6,
+    6.9
+   ],
+   "centerUnity": [
+    0.0,
+    6.9,
+    -8.6
+   ],
+   "sizeUnity": [
+    19.2,
+    0.8,
+    15.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_1L",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -8.85,
+    3.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    -8.85,
+    3.8,
+    3.25
+   ],
+   "centerUnity": [
+    8.85,
+    3.25,
+    -3.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_1R",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    8.85,
+    3.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    8.85,
+    3.8,
+    3.25
+   ],
+   "centerUnity": [
+    -8.85,
+    3.25,
+    -3.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_2L",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -8.85,
+    6.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    -8.85,
+    6.8,
+    3.25
+   ],
+   "centerUnity": [
+    8.85,
+    3.25,
+    -6.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_2R",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    8.85,
+    6.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    8.85,
+    6.8,
+    3.25
+   ],
+   "centerUnity": [
+    -8.85,
+    3.25,
+    -6.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_3L",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -8.85,
+    9.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    -8.85,
+    9.8,
+    3.25
+   ],
+   "centerUnity": [
+    8.85,
+    3.25,
+    -9.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_3R",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    8.85,
+    9.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    8.85,
+    9.8,
+    3.25
+   ],
+   "centerUnity": [
+    -8.85,
+    3.25,
+    -9.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_4L",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -8.85,
+    12.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    -8.85,
+    12.8,
+    3.25
+   ],
+   "centerUnity": [
+    8.85,
+    3.25,
+    -12.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_Pilaster_4R",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    8.85,
+    12.8,
+    3.25
+   ],
+   "size": [
+    0.3,
+    0.5,
+    6.5
+   ],
+   "center_root": [
+    8.85,
+    12.8,
+    3.25
+   ],
+   "centerUnity": [
+    -8.85,
+    3.25,
+    -12.8
+   ],
+   "sizeUnity": [
+    0.3,
+    6.5,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Hangar_WingL",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -18.5415,
+    -2.3432,
+    3.85
+   ],
+   "size": [
+    0.5,
+    6.3,
+    8.3
+   ],
+   "center_root": [
+    -18.5415,
+    -2.3432,
+    3.85
+   ],
+   "centerUnity": [
+    18.5415,
+    3.85,
+    2.3432
+   ],
+   "sizeUnity": [
+    0.5,
+    8.3,
+    6.3
+   ],
+   "rotation": [
+    0.0,
+    0.0,
+    -30.0
+   ],
+   "rotationUnity": [
+    0.0,
+    30.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Hangar_WingR",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    18.5415,
+    -2.3432,
+    3.85
+   ],
+   "size": [
+    0.5,
+    6.3,
+    8.3
+   ],
+   "center_root": [
+    18.5415,
+    -2.3432,
+    3.85
+   ],
+   "centerUnity": [
+    -18.5415,
+    3.85,
+    2.3432
+   ],
+   "sizeUnity": [
+    0.5,
+    8.3,
+    6.3
+   ],
+   "rotation": [
+    0.0,
+    0.0,
+    30.0
+   ],
+   "rotationUnity": [
+    0.0,
+    -30.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Hangar_Landing",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -8.45,
+    2.2,
+    0.6
+   ],
+   "size": [
+    1.1,
+    1.6,
+    1.2
+   ],
+   "center_root": [
+    -8.45,
+    2.2,
+    0.6
+   ],
+   "centerUnity": [
+    8.45,
+    0.6,
+    -2.2
+   ],
+   "sizeUnity": [
+    1.1,
+    1.2,
+    1.6
+   ]
+  },
+  {
+   "name": "COL_Hangar_Steps",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -7.06,
+    2.2,
+    0.525
+   ],
+   "size": [
+    2.0646,
+    1.2,
+    0.15
+   ],
+   "center_root": [
+    -7.06,
+    2.2,
+    0.525
+   ],
+   "centerUnity": [
+    7.06,
+    0.525,
+    -2.2
+   ],
+   "sizeUnity": [
+    2.0646,
+    0.15,
+    1.2
+   ],
+   "rotation": [
+    0.0,
+    35.537677791974374,
+    0.0
+   ],
+   "rotationUnity": [
+    0.0,
+    0.0,
+    35.537677791974374
+   ]
+  },
+  {
+   "name": "COL_Hangar_StairRail_A",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -7.65,
+    1.43,
+    1.1
+   ],
+   "size": [
+    2.7,
+    0.06,
+    2.2
+   ],
+   "center_root": [
+    -7.65,
+    1.43,
+    1.1
+   ],
+   "centerUnity": [
+    7.65,
+    1.1,
+    -1.43
+   ],
+   "sizeUnity": [
+    2.7,
+    2.2,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Hangar_StairRail_B",
+   "parent": "BunkerHangar",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -7.65,
+    2.97,
+    1.1
+   ],
+   "size": [
+    2.7,
+    0.06,
+    2.2
+   ],
+   "center_root": [
+    -7.65,
+    2.97,
+    1.1
+   ],
+   "centerUnity": [
+    7.65,
+    1.1,
+    -2.97
+   ],
+   "sizeUnity": [
+    2.7,
+    2.2,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_HangarGate_L",
+   "parent": "IX_HangarGate_L",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    2.675
+   ],
+   "size": [
+    8.3,
+    0.36,
+    5.45
+   ],
+   "center_root": [
+    -4.15,
+    -0.45,
+    2.725
+   ],
+   "centerUnity": [
+    0.0,
+    2.675,
+    0.0
+   ],
+   "sizeUnity": [
+    8.3,
+    5.45,
+    0.36
+   ]
+  },
+  {
+   "name": "COL_HangarGate_R",
+   "parent": "IX_HangarGate_R",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    2.675
+   ],
+   "size": [
+    8.3,
+    0.36,
+    5.45
+   ],
+   "center_root": [
+    4.15,
+    -0.45,
+    2.725
+   ],
+   "centerUnity": [
+    0.0,
+    2.675,
+    0.0
+   ],
+   "sizeUnity": [
+    8.3,
+    5.45,
+    0.36
+   ]
+  },
+  {
+   "name": "COL_HangarSideDoor",
+   "parent": "IX_HangarSideDoor",
+   "root": "BunkerHangar",
+   "type": "box",
+   "center": [
+    -0.03,
+    0.59,
+    1.05
+   ],
+   "size": [
+    0.1,
+    1.2,
+    2.1
+   ],
+   "center_root": [
+    -8.97,
+    2.2,
+    2.25
+   ],
+   "centerUnity": [
+    0.03,
+    1.05,
+    -0.59
+   ],
+   "sizeUnity": [
+    0.1,
+    2.1,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Vest_Floor",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    -0.3,
+    4.0,
+    -0.15
+   ],
+   "size": [
+    4.4,
+    8.0,
+    0.3
+   ],
+   "center_root": [
+    -0.3,
+    4.0,
+    -0.15
+   ],
+   "centerUnity": [
+    0.3,
+    -0.15,
+    -4.0
+   ],
+   "sizeUnity": [
+    4.4,
+    0.3,
+    8.0
+   ]
+  },
+  {
+   "name": "COL_Vest_Channel",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    2.2,
+    4.0,
+    -0.55
+   ],
+   "size": [
+    0.6,
+    8.0,
+    0.3
+   ],
+   "center_root": [
+    2.2,
+    4.0,
+    -0.55
+   ],
+   "centerUnity": [
+    -2.2,
+    -0.55,
+    -4.0
+   ],
+   "sizeUnity": [
+    0.6,
+    0.3,
+    8.0
+   ]
+  },
+  {
+   "name": "COL_Vest_WallL",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    -2.75,
+    4.0,
+    2.15
+   ],
+   "size": [
+    0.5,
+    8.0,
+    4.9
+   ],
+   "center_root": [
+    -2.75,
+    4.0,
+    2.15
+   ],
+   "centerUnity": [
+    2.75,
+    2.15,
+    -4.0
+   ],
+   "sizeUnity": [
+    0.5,
+    4.9,
+    8.0
+   ]
+  },
+  {
+   "name": "COL_Vest_WallR",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    2.75,
+    4.0,
+    1.95
+   ],
+   "size": [
+    0.5,
+    8.0,
+    5.3
+   ],
+   "center_root": [
+    2.75,
+    4.0,
+    1.95
+   ],
+   "centerUnity": [
+    -2.75,
+    1.95,
+    -4.0
+   ],
+   "sizeUnity": [
+    0.5,
+    5.3,
+    8.0
+   ]
+  },
+  {
+   "name": "COL_Vest_Ceiling",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    4.25,
+    4.85
+   ],
+   "size": [
+    6.0,
+    8.5,
+    0.5
+   ],
+   "center_root": [
+    0.0,
+    4.25,
+    4.85
+   ],
+   "centerUnity": [
+    0.0,
+    4.85,
+    -4.25
+   ],
+   "sizeUnity": [
+    6.0,
+    0.5,
+    8.5
+   ]
+  },
+  {
+   "name": "COL_Vest_EndL",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    -2.22,
+    8.17,
+    2.3
+   ],
+   "size": [
+    0.56,
+    0.66,
+    4.6
+   ],
+   "center_root": [
+    -2.22,
+    8.17,
+    2.3
+   ],
+   "centerUnity": [
+    2.22,
+    2.3,
+    -8.17
+   ],
+   "sizeUnity": [
+    0.56,
+    4.6,
+    0.66
+   ]
+  },
+  {
+   "name": "COL_Vest_EndR",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    2.22,
+    8.17,
+    2.3
+   ],
+   "size": [
+    0.56,
+    0.66,
+    4.6
+   ],
+   "center_root": [
+    2.22,
+    8.17,
+    2.3
+   ],
+   "centerUnity": [
+    -2.22,
+    2.3,
+    -8.17
+   ],
+   "sizeUnity": [
+    0.56,
+    4.6,
+    0.66
+   ]
+  },
+  {
+   "name": "COL_Vest_EndTop",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    8.17,
+    4.225
+   ],
+   "size": [
+    3.88,
+    0.66,
+    0.75
+   ],
+   "center_root": [
+    0.0,
+    8.17,
+    4.225
+   ],
+   "centerUnity": [
+    0.0,
+    4.225,
+    -8.17
+   ],
+   "sizeUnity": [
+    3.88,
+    0.75,
+    0.66
+   ]
+  },
+  {
+   "name": "COL_Vest_Sill",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    8.17,
+    0.19
+   ],
+   "size": [
+    3.88,
+    0.66,
+    0.38
+   ],
+   "center_root": [
+    0.0,
+    8.17,
+    0.19
+   ],
+   "centerUnity": [
+    0.0,
+    0.19,
+    -8.17
+   ],
+   "sizeUnity": [
+    3.88,
+    0.38,
+    0.66
+   ]
+  },
+  {
+   "name": "COL_Vest_Step",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    7.46,
+    0.135
+   ],
+   "size": [
+    1.3,
+    0.56,
+    0.27
+   ],
+   "center_root": [
+    0.0,
+    7.46,
+    0.135
+   ],
+   "centerUnity": [
+    0.0,
+    0.135,
+    -7.46
+   ],
+   "sizeUnity": [
+    1.3,
+    0.27,
+    0.56
+   ]
+  },
+  {
+   "name": "COL_Vest_Rail",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    1.85,
+    4.025,
+    0.51
+   ],
+   "size": [
+    0.06,
+    7.45,
+    1.02
+   ],
+   "center_root": [
+    1.85,
+    4.025,
+    0.51
+   ],
+   "centerUnity": [
+    -1.85,
+    0.51,
+    -4.025
+   ],
+   "sizeUnity": [
+    0.06,
+    1.02,
+    7.45
+   ]
+  },
+  {
+   "name": "COL_Vest_Console",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    -2.225,
+    2.8,
+    0.925
+   ],
+   "size": [
+    0.55,
+    1.0,
+    1.85
+   ],
+   "center_root": [
+    -2.225,
+    2.8,
+    0.925
+   ],
+   "centerUnity": [
+    2.225,
+    0.925,
+    -2.8
+   ],
+   "sizeUnity": [
+    0.55,
+    1.85,
+    1.0
+   ]
+  },
+  {
+   "name": "COL_Tunnel_Floor",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    8.725,
+    0.4
+   ],
+   "size": [
+    1.5125,
+    0.95,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    8.725,
+    0.4
+   ],
+   "centerUnity": [
+    0.0,
+    0.4,
+    -8.725
+   ],
+   "sizeUnity": [
+    1.5125,
+    0.3,
+    0.95
+   ]
+  },
+  {
+   "name": "COL_Passage_WallL",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    -0.85,
+    10.0,
+    1.25
+   ],
+   "size": [
+    0.3,
+    2.2,
+    3.4
+   ],
+   "center_root": [
+    -0.85,
+    10.0,
+    1.25
+   ],
+   "centerUnity": [
+    0.85,
+    1.25,
+    -10.0
+   ],
+   "sizeUnity": [
+    0.3,
+    3.4,
+    2.2
+   ]
+  },
+  {
+   "name": "COL_Passage_WallR",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.85,
+    10.0,
+    1.25
+   ],
+   "size": [
+    0.3,
+    2.2,
+    3.4
+   ],
+   "center_root": [
+    0.85,
+    10.0,
+    1.25
+   ],
+   "centerUnity": [
+    -0.85,
+    1.25,
+    -10.0
+   ],
+   "sizeUnity": [
+    0.3,
+    3.4,
+    2.2
+   ]
+  },
+  {
+   "name": "COL_Passage_End",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    11.25,
+    1.25
+   ],
+   "size": [
+    1.4,
+    0.3,
+    3.4
+   ],
+   "center_root": [
+    0.0,
+    11.25,
+    1.25
+   ],
+   "centerUnity": [
+    0.0,
+    1.25,
+    -11.25
+   ],
+   "sizeUnity": [
+    1.4,
+    3.4,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_Passage_Steps",
+   "parent": "BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    0.0,
+    9.95,
+    -0.05
+   ],
+   "size": [
+    1.4,
+    1.8028,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    9.95,
+    -0.05
+   ],
+   "centerUnity": [
+    0.0,
+    -0.05,
+    -9.95
+   ],
+   "sizeUnity": [
+    1.4,
+    0.2,
+    1.8028
+   ],
+   "rotation": [
+    -33.690067525979714,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    -33.690067525979714,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_BlastDoor_Leaf",
+   "parent": "IX_BlastDoor",
+   "root": "BlastDoor",
+   "type": "box",
+   "center": [
+    2.12,
+    0.245,
+    0.0
+   ],
+   "size": [
+    3.16,
+    0.73,
+    3.16
+   ],
+   "center_root": [
+    0.0,
+    7.885,
+    1.96
+   ],
+   "centerUnity": [
+    -2.12,
+    0.0,
+    -0.245
+   ],
+   "sizeUnity": [
+    3.16,
+    3.16,
+    0.73
+   ]
+  },
+  {
+   "name": "COL_Entr_Steps",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    2.175,
+    -1.645
+   ],
+   "size": [
+    2.0,
+    5.307,
+    0.25
+   ],
+   "center_root": [
+    0.0,
+    2.175,
+    -1.645
+   ],
+   "centerUnity": [
+    0.0,
+    -1.645,
+    -2.175
+   ],
+   "sizeUnity": [
+    2.0,
+    0.25,
+    5.307
+   ],
+   "rotation": [
+    -34.947796851742325,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    -34.947796851742325,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Entr_WallL",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    -1.15,
+    3.8,
+    -1.545
+   ],
+   "size": [
+    0.3,
+    8.2,
+    3.59
+   ],
+   "center_root": [
+    -1.15,
+    3.8,
+    -1.545
+   ],
+   "centerUnity": [
+    1.15,
+    -1.545,
+    -3.8
+   ],
+   "sizeUnity": [
+    0.3,
+    3.59,
+    8.2
+   ]
+  },
+  {
+   "name": "COL_Entr_WallR",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    1.15,
+    3.8,
+    -1.545
+   ],
+   "size": [
+    0.3,
+    8.2,
+    3.59
+   ],
+   "center_root": [
+    1.15,
+    3.8,
+    -1.545
+   ],
+   "centerUnity": [
+    -1.15,
+    -1.545,
+    -3.8
+   ],
+   "sizeUnity": [
+    0.3,
+    3.59,
+    8.2
+   ]
+  },
+  {
+   "name": "COL_Entr_Canopy",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    6.65,
+    -0.145
+   ],
+   "size": [
+    2.6,
+    2.5,
+    0.79
+   ],
+   "center_root": [
+    0.0,
+    6.65,
+    -0.145
+   ],
+   "centerUnity": [
+    0.0,
+    -0.145,
+    -6.65
+   ],
+   "sizeUnity": [
+    2.6,
+    0.79,
+    2.5
+   ]
+  },
+  {
+   "name": "COL_Entr_Back",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    7.75,
+    -1.79
+   ],
+   "size": [
+    2.0,
+    0.3,
+    2.5
+   ],
+   "center_root": [
+    0.0,
+    7.75,
+    -1.79
+   ],
+   "centerUnity": [
+    0.0,
+    -1.79,
+    -7.75
+   ],
+   "sizeUnity": [
+    2.0,
+    2.5,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_Entr_LandFront",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    5.19,
+    -3.19
+   ],
+   "size": [
+    2.0,
+    1.68,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    5.19,
+    -3.19
+   ],
+   "centerUnity": [
+    0.0,
+    -3.19,
+    -5.19
+   ],
+   "sizeUnity": [
+    2.0,
+    0.3,
+    1.68
+   ]
+  },
+  {
+   "name": "COL_Entr_LandBack",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    7.385,
+    -3.19
+   ],
+   "size": [
+    2.0,
+    0.43,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    7.385,
+    -3.19
+   ],
+   "centerUnity": [
+    0.0,
+    -3.19,
+    -7.385
+   ],
+   "sizeUnity": [
+    2.0,
+    0.3,
+    0.43
+   ]
+  },
+  {
+   "name": "COL_Entr_LandL",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    -0.785,
+    6.6,
+    -3.19
+   ],
+   "size": [
+    0.43,
+    1.14,
+    0.3
+   ],
+   "center_root": [
+    -0.785,
+    6.6,
+    -3.19
+   ],
+   "centerUnity": [
+    0.785,
+    -3.19,
+    -6.6
+   ],
+   "sizeUnity": [
+    0.43,
+    0.3,
+    1.14
+   ]
+  },
+  {
+   "name": "COL_Entr_LandR",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.785,
+    6.6,
+    -3.19
+   ],
+   "size": [
+    0.43,
+    1.14,
+    0.3
+   ],
+   "center_root": [
+    0.785,
+    6.6,
+    -3.19
+   ],
+   "centerUnity": [
+    -0.785,
+    -3.19,
+    -6.6
+   ],
+   "sizeUnity": [
+    0.43,
+    0.3,
+    1.14
+   ]
+  },
+  {
+   "name": "COL_Entr_RailL",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    -1.15,
+    2.55,
+    0.76
+   ],
+   "size": [
+    0.3,
+    5.7,
+    1.02
+   ],
+   "center_root": [
+    -1.15,
+    2.55,
+    0.76
+   ],
+   "centerUnity": [
+    1.15,
+    0.76,
+    -2.55
+   ],
+   "sizeUnity": [
+    0.3,
+    1.02,
+    5.7
+   ]
+  },
+  {
+   "name": "COL_Entr_RailR",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    1.15,
+    2.55,
+    0.76
+   ],
+   "size": [
+    0.3,
+    5.7,
+    1.02
+   ],
+   "center_root": [
+    1.15,
+    2.55,
+    0.76
+   ],
+   "centerUnity": [
+    -1.15,
+    0.76,
+    -2.55
+   ],
+   "sizeUnity": [
+    0.3,
+    1.02,
+    5.7
+   ]
+  },
+  {
+   "name": "COL_Entr_Shaft_S",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    5.95,
+    -5.04
+   ],
+   "size": [
+    1.6,
+    0.3,
+    4.0
+   ],
+   "center_root": [
+    0.0,
+    5.95,
+    -5.04
+   ],
+   "centerUnity": [
+    0.0,
+    -5.04,
+    -5.95
+   ],
+   "sizeUnity": [
+    1.6,
+    4.0,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_Entr_Shaft_W",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    -0.65,
+    6.6,
+    -5.04
+   ],
+   "size": [
+    0.3,
+    1.0,
+    4.0
+   ],
+   "center_root": [
+    -0.65,
+    6.6,
+    -5.04
+   ],
+   "centerUnity": [
+    0.65,
+    -5.04,
+    -6.6
+   ],
+   "sizeUnity": [
+    0.3,
+    4.0,
+    1.0
+   ]
+  },
+  {
+   "name": "COL_Entr_Shaft_E",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.65,
+    6.6,
+    -5.04
+   ],
+   "size": [
+    0.3,
+    1.0,
+    4.0
+   ],
+   "center_root": [
+    0.65,
+    6.6,
+    -5.04
+   ],
+   "centerUnity": [
+    -0.65,
+    -5.04,
+    -6.6
+   ],
+   "sizeUnity": [
+    0.3,
+    4.0,
+    1.0
+   ]
+  },
+  {
+   "name": "COL_Entr_Shaft_N",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    7.25,
+    -4.04
+   ],
+   "size": [
+    1.6,
+    0.3,
+    2.0
+   ],
+   "center_root": [
+    0.0,
+    7.25,
+    -4.04
+   ],
+   "centerUnity": [
+    0.0,
+    -4.04,
+    -7.25
+   ],
+   "sizeUnity": [
+    1.6,
+    2.0,
+    0.3
+   ]
+  },
+  {
+   "name": "COL_Entr_ShaftFloor",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    7.1,
+    -7.19
+   ],
+   "size": [
+    1.0,
+    2.0,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    7.1,
+    -7.19
+   ],
+   "centerUnity": [
+    0.0,
+    -7.19,
+    -7.1
+   ],
+   "sizeUnity": [
+    1.0,
+    0.3,
+    2.0
+   ]
+  },
+  {
+   "name": "COL_Entr_PassL",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    -0.6,
+    7.6,
+    -6.04
+   ],
+   "size": [
+    0.3,
+    1.0,
+    2.0
+   ],
+   "center_root": [
+    -0.6,
+    7.6,
+    -6.04
+   ],
+   "centerUnity": [
+    0.6,
+    -6.04,
+    -7.6
+   ],
+   "sizeUnity": [
+    0.3,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "name": "COL_Entr_PassR",
+   "parent": "BunkerEntrance",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.6,
+    7.6,
+    -6.04
+   ],
+   "size": [
+    0.3,
+    1.0,
+    2.0
+   ],
+   "center_root": [
+    0.6,
+    7.6,
+    -6.04
+   ],
+   "centerUnity": [
+    -0.6,
+    -6.04,
+    -7.6
+   ],
+   "sizeUnity": [
+    0.3,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "name": "COL_Entr_Ice",
+   "parent": "BunkerEntrance_Ice",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.068
+   ],
+   "size": [
+    2.0,
+    3.25,
+    0.136
+   ],
+   "center_root": [
+    0.0,
+    5.975,
+    -2.972
+   ],
+   "centerUnity": [
+    0.0,
+    0.068,
+    0.0
+   ],
+   "sizeUnity": [
+    2.0,
+    0.136,
+    3.25
+   ]
+  },
+  {
+   "name": "COL_BunkerHatch",
+   "parent": "IX_BunkerHatch",
+   "root": "BunkerEntrance",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.59,
+    0.032
+   ],
+   "size": [
+    1.12,
+    1.12,
+    0.106
+   ],
+   "center_root": [
+    0.0,
+    6.6,
+    -2.973
+   ],
+   "centerUnity": [
+    0.0,
+    0.032,
+    0.59
+   ],
+   "sizeUnity": [
+    1.12,
+    0.106,
+    1.12
+   ]
+  },
+  {
+   "name": "HIT_Ice_Hatch_1",
+   "parent": "Ice_Hatch_1",
+   "root": "BunkerEntrance",
+   "type": "hit",
+   "center": [
+    0.0141,
+    0.0,
+    0.005
+   ],
+   "size": [
+    0.6382,
+    1.52,
+    0.1117
+   ],
+   "center_root": [
+    -0.4409,
+    6.6,
+    -2.9291
+   ],
+   "centerUnity": [
+    -0.0141,
+    0.005,
+    0.0
+   ],
+   "sizeUnity": [
+    0.6382,
+    0.1117,
+    1.52
+   ],
+   "note": "trigger / hit box of a removable ice chunk (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Hatch_2",
+   "parent": "Ice_Hatch_2",
+   "root": "BunkerEntrance",
+   "type": "hit",
+   "center": [
+    0.0047,
+    0.0,
+    0.005
+   ],
+   "size": [
+    0.5248,
+    1.52,
+    0.1118
+   ],
+   "center_root": [
+    0.0547,
+    6.6,
+    -2.9291
+   ],
+   "centerUnity": [
+    -0.0047,
+    0.005,
+    0.0
+   ],
+   "sizeUnity": [
+    0.5248,
+    0.1118,
+    1.52
+   ],
+   "note": "trigger / hit box of a removable ice chunk (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Hatch_3",
+   "parent": "Ice_Hatch_3",
+   "root": "BunkerEntrance",
+   "type": "hit",
+   "center": [
+    -0.0093,
+    0.0,
+    0.005
+   ],
+   "size": [
+    0.5287,
+    1.52,
+    0.1087
+   ],
+   "center_root": [
+    0.4957,
+    6.6,
+    -2.9306
+   ],
+   "centerUnity": [
+    0.0093,
+    0.005,
+    0.0
+   ],
+   "sizeUnity": [
+    0.5287,
+    0.1087,
+    1.52
+   ],
+   "note": "trigger / hit box of a removable ice chunk (not a solid collider)"
+  }
+ ],
+ "removable": [
+  "Ice_Hatch_1",
+  "Ice_Hatch_2",
+  "Ice_Hatch_3"
+ ],
+ "plane": {
+  "model": "forest UtilityPlane v13 (source/plane/UtilityPlane_Unity_v13), the WinterKit 1.2 installed",
+  "slot": "Slot_Plane",
+  "pitch_deg": 9.995,
+  "main_wheels_y": 5.55,
+  "root": [
+   0.0,
+   8.3776,
+   -0.3765
+  ],
+  "rootUnity": [
+   0.0,
+   -0.3765,
+   -8.3776
+  ],
+  "tarp": "PlaneTarp: child of the plane root at (0, 0, 0), no rotation",
+  "note": "the plane itself is not part of this package; the tarp was draped with the plane in this pose"
+ },
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees, kg",
+  "frame": "each root in its own frame: z up, the front -y; BunkerHangar: origin on the floor in the middle of the gate line; BlastDoor: the floor in the middle of its open end; BunkerEntrance: the ground at the top step's edge; PlaneTarp: forest UtilityPlane's own frame. Every pivot / pos here is in its root's frame. In bunker.blend the roots stand apart (display_offset; the vestibule at its link behind the hangar); their FBX is exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); Euler XYZ (x, y, z) -> Unity (x, -z, y); the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "BunkerHangar": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "BlastDoor": [
+    0.0,
+    16.4,
+    0.0
+   ],
+   "BunkerEntrance": [
+    -32.0,
+    -6.0,
+    0.0
+   ],
+   "PlaneTarp": [
+    26.0,
+    6.0,
+    0.0
+   ]
+  },
+  "assembly": "BlastDoor on BunkerHangar Link_BlastDoor (no rotation); the plane on Slot_Plane, PlaneTarp under the plane root; BunkerEntrance by the hand on the lake, joined to the hangar's Link_SideDoor by the underground part (not in this package) from its Link_Shaft",
+  "colliders": "BoxCollider per type box entry on its parent (center / size in the parent's own frame, optional rotation); type hit: a trigger box of a removable ice chunk. The COL_ / HIT_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "lights": "bunker_lights.json: the hangar's six pendant lamps (spots), its door and back lamps, the vestibule's two, the portal's one (all off in the file: the bunker has no power until the players bring it)",
+  "model": "bunker.blend",
+  "textures": "tex",
+  "materials": "M_Bunker_Hangar / _HangarParts / _BlastDoor / _Entrance / _Tarp: baked PSX atlases (point filter; M_Bunker_Tarp: Render Face Both); M_Bunker_Panel: signs and the door console; M_Bunker_Lamp_Off / M_Bunker_Lamp: the lamps' glasses off / lit (lit kept by a fake user); M_Bunker_Prints: wet boot prints, alpha cut-out; M_Bunker_IceClear: the ice on the entrance landing, box-mapped (UV 1 = 1 m, the tile repeats), opacity 0.35 (one layer: no underside)",
+  "names": "the doors IX_* without numbers - Unity numbers them when it places them"
+ }
+}

@@ -13,6 +13,8 @@ ARGS = sys.argv[:sys.argv.index('--')] if '--' in sys.argv else sys.argv
 SUF = '_test' if '--test' in ARGS else ''
 TOL = 0.003
 bpy.ops.wm.open_mainfile(filepath=f'/home/claude/uaz/out/main{SUF}.blend')
+for _lib in list(bpy.data.libraries):                 # 1.2: the snow_kit instances (linked) are not the building's
+    bpy.data.libraries.remove(_lib)                  # geometry: checked as in 1.1, the station has main_leit_check.py
 C = json.load(open(f'/home/claude/uaz/out/main_contract{SUF}.json'))
 P = C['parts']
 objs = {o.name: o for o in bpy.data.objects if o.type == 'MESH' and not o.name.startswith(('COL_', 'LIGHT_'))}

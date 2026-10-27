@@ -5,7 +5,13 @@
 - Данные обновления 3, с которых снята планировка: main_spec.py (размеры, комнаты, двери, окна), main_ix_u3.py
   (139 деталей: точки, оси, ходы), main_fx_u3.py (64 светильника и их свет), main_u3_data.json (из Forest_Layout.json:
   маски света, источники, ореолы, детали), main_u3_materials.json (материалы, которые игра знает по имени).
-- Порядок: main_build.py → out/main.blend, main.json, main_contract.json, tex/main
+- 1.2: main.blend берёт модели набора snow_kit по ссылке ../snow_kit/snow_kit.blend (пункт управления КПП в пультовой:
+  экземпляры — KIT_INST в main_rooms.py, раздел 1b в main_build.py; пакет набора — source/assets/snow_kit).
+- kit_preview.py — только для превью: монитор камеры ворот показывает свою заглушку (CAM 2, T_Kit_Screen_On_Gate набора);
+  в Unity на экранах — картинки камер КПП.
+- Порядок: main_build.py → out/main.blend, main.json, main_contract.json, tex/main; затем fix_glass_dupes.py out/main.blend
+  (стекло — по одной грани на сторону); main_leit_check.py → out/main_leit_check.json (зазоры пункта управления до
+  предметов Forest_Dressing и настольной лампы на том же столе)
   (main_build.py --only Rm_Windfang,MainParts — запечь только эти атласы, остальное — плоские цвета → main_test.blend);
   main_draft.py — черновик геометрии с цветами зон; main_render.py <виды через запятую | all> [spp] → rend/main;
   make_main_doc.py → docs/MAIN_CONTRACT.md; make_sheets_main.py → sheets/main_A…F.jpg; pack_main.py → out/forest_main_package.zip.

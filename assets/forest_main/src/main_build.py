@@ -274,6 +274,48 @@ def root_of(name):
 for name, p in C['parts'].items():
     p['root'] = root_of(name)
 
+# ------------------------------------------------------------------ 1b. snow_kit instances (the Leitstand's gate station, KPP
+# v2.1): empties instancing the kit's collections linked from ../snow_kit/snow_kit.blend (props kit_item, ix_ids); they are
+# in the scene before the bakes (their contact shadow on the desk)
+KIT_BLEND = os.path.join(HERE, 'snow_kit', 'snow_kit.blend')          # -> ../snow_kit/snow_kit.blend from the package's main.blend
+KC = json.load(open(os.path.join(OUT, 'snow_kit_contract.json')))
+with bpy.data.libraries.load(KIT_BLEND, link=True) as (src_, dst_):
+    dst_.collections = sorted({ki['item'] for ki in MR.KIT_INST.values()})
+kcoll = {c.name: c for c in dst_.collections}
+inst_coll = bpy.data.collections.new('Kit_Instances')
+bpy.context.scene.collection.children.link(inst_coll)
+inst = {}
+
+
+def kit_M(ki):
+    if ki['slot'] is None:
+        return Matrix.Translation(Vector(ki['pos'])) @ Matrix.Rotation(math.radians(ki['yaw']), 4, 'Z')
+    par, sock = ki['slot']
+    s_ = KC['sockets'][sock]
+    assert s_['item'] == MR.KIT_INST[par]['item'], (sock, par)
+    z_, y_ = Vector(s_['dir']).normalized(), Vector(s_['up']).normalized()
+    x_ = y_.cross(z_).normalized()
+    return kit_M(MR.KIT_INST[par]) @ Matrix.Translation(Vector(s_['pos'])) @ Matrix((x_, y_, z_)).transposed().to_4x4()
+
+
+for name, ki in MR.KIT_INST.items():
+    assert ki['item'] in KC['items'] and name not in objs, name
+    e = bpy.data.objects.new(name, None)
+    inst_coll.objects.link(e)
+    e.instance_type = 'COLLECTION'
+    e.instance_collection = kcoll[ki['item']]
+    e.empty_display_type, e.empty_display_size = 'PLAIN_AXES', 0.04
+    e.matrix_world = kit_M(ki)
+    e['kit_item'] = ki['item']
+    if ki['ids']:
+        e['ix_ids'] = json.dumps(ki['ids'])
+    e['note'] = ki['note']
+    inst[name] = e
+for name, ki in MR.KIT_INST.items():
+    attach(inst[name], inst.get(ki['parent']) or objs[ki['parent']])
+bpy.context.view_layer.update()
+log('kit instances', len(inst), sorted({ki['item'] for ki in MR.KIT_INST.values()}))
+
 
 # ------------------------------------------------------------------ 2. atlases
 groups = {}
@@ -642,6 +684,37 @@ fx_names = {n for n in C['parts'] if n.startswith('FX_')}
 fx_lights = [L for pl in U3['prefabLights'] for L in pl['lights']]
 INFO['lights'] = dict(u3=len(fx_lights), fixture_missing=sorted({L.get('fx') for L in fx_lights if L.get('fx') and
                                                                 L['fx'] not in fx_names}))
+A_U = Matrix(((-1, 0, 0), (0, 0, 1), (0, -1, 0)))           # building axes -> Unity axes
+
+
+def rot_unity(R3):
+    q = (A_U @ R3 @ A_U.transposed()).to_quaternion()
+    return [round(q.x, 6) + 0.0, round(q.y, 6) + 0.0, round(q.z, 6) + 0.0, round(q.w, 6) + 0.0]
+
+
+KCAM = {'Leit_Monitor_Barrier': 'CAM_Barrier', 'Leit_Monitor_Gate': 'CAM_Gate'}
+KI = {}
+for name, ki in MR.KIT_INST.items():
+    e = inst[name]
+    Ml = e.parent.matrix_world.inverted() @ e.matrix_world
+    loc, rq, sca = Ml.decompose()
+    lw = e.matrix_world.translation
+    room_part = ki['parent'] if ki['parent'] in C['parts'] else 'R_Leitstand'
+    KI[name] = dict(item=ki['item'], parent=ki['parent'], note=ki['note'], ix_ids=ki['ids'], pos=r4(loc),
+                    rot_quat_wxyz=[round(a, 6) + 0.0 for a in rq], scale=r4(sca), posUnity=to_unity(loc),
+                    rotUnity_xyzw=rot_unity(rq.to_matrix()), scaleUnity=r4((sca.x, sca.z, sca.y)), pos_building=r4(lw),
+                    lightMask=C['parts'][room_part]['lightMask'])
+    pw = KC['items'][ki['item']].get('power_parts') or []
+    if pw:                                     # its screen / LED / button lamp light only with the station's power
+        KI[name]['power'] = dict(group='power', parts=pw, note='the station\'s power (the base mains: after S7)')
+    if name in KCAM:
+        KI[name]['camera'] = dict(socket=KCAM[name], contract='kpp_contract.json (forest_kpp)',
+                                  note='shows this KPP camera (render texture into Kit_Monitor_Screen, M_Kit_Screen_On) while '
+                                       'the station has power')
+C['kit_instances'] = KI
+INFO['kit_instances'] = {}
+for v in KI.values():
+    INFO['kit_instances'][v['item']] = INFO['kit_instances'].get(v['item'], 0) + 1
 C['lighting'] = dict(U3['lighting'], assign='every part carries lightMask (Update 3 assign where the node existed)')
 C['prefabLights'] = U3['prefabLights']
 C['prefabGlows'] = U3['prefabGlows']
@@ -673,8 +746,14 @@ C['meta'] = dict(
               'M_GlassClear, M_GlassDark - their definitions stay those of Forest_Materials.json',
     sockets='knock: a point on the outside of each shutter / window / exterior door (scares X06 / X07); hand: door '
             'handles on both faces; audio: plant noises',
-    model='main.blend', textures='tex/main')
-for o in [o for o in bpy.data.objects if o.type == 'MESH']:
+    model='main.blend', textures='tex/main',
+    kit_instances='KPP v2.1: the Leitstand\'s right workstation is the base\'s gate station - empties Leit_* instancing '
+                  'snow_kit collections linked from ../snow_kit/snow_kit.blend (props kit_item, ix_ids: the IX_ part of that '
+                  'instance gets the number, IX_ConsoleButton -> IX_ConsoleButton_319); in the FBX only the empties - the Unity '
+                  'builder puts the kit prefab (Assets/Kit/Prefabs/<kit_item>) on each with its transform (pos / '
+                  'rot_quat_wxyz / scale in the parent\'s frame, *Unity in Unity axes) and the room\'s lightMask; the '
+                  'monitors show the KPP\'s cameras (camera.socket in kpp_contract.json)')
+for o in [o for o in bpy.data.objects if o.type == 'MESH' and o.library is None]:
     uvs = o.data.uv_layers
     if 'PSX' in uvs:
         for u in [u for u in uvs if u.name != 'PSX']:
@@ -687,7 +766,7 @@ kinds = {}
 for p in C['parts'].values():
     kinds[p['kind']] = kinds.get(p['kind'], 0) + 1
 INFO['contract'] = dict(parts=len(C['parts']), sockets=len(C['sockets']), kinds=kinds)
-meshes = [o for o in bpy.data.objects if o.type == 'MESH']
+meshes = [o for o in bpy.data.objects if o.type == 'MESH' and o.library is None]     # (the kit's linked models: their own)
 INFO['tris'] = sum(P.tri_count(o) for o in meshes)
 INFO['tris_by_root'] = {}
 INFO['tris_big'] = sorted(((P.tri_count(o), o.name) for o in meshes), reverse=True)[:20]
@@ -697,6 +776,8 @@ for o in meshes:
 INFO['objects'] = len(meshes)
 INFO['materials'] = sorted({m.name for o in meshes for m in o.data.materials if m})
 log('contract', INFO['contract'], 'tris', INFO['tris'], INFO['tris_by_root'], 'objects', len(meshes))
-bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT, f'main{sfx}.blend'))
+for lib in bpy.data.libraries:                       # the kit is linked as ../snow_kit/snow_kit.blend (the package layout)
+    lib.filepath = '//../snow_kit/snow_kit.blend'
+bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT, f'main{sfx}.blend'), relative_remap=False)
 json.dump(INFO, open(os.path.join(OUT, f'main{sfx}.json'), 'w'), indent=1)
 log('saved main' + sfx)

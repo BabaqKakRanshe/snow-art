@@ -1,0 +1,88 @@
+{
+ "atlases": {
+  "Trash": {
+   "size": 512,
+   "ppm": 64.0,
+   "area_m2": 14.52,
+   "uv_fill": 0.227,
+   "colours": 64
+  }
+ },
+ "tris": {
+  "TrashPile_Paper": 692,
+  "TrashClump_Paper": 198,
+  "TrashPile_Plastic": 988,
+  "TrashClump_Plastic": 480,
+  "TrashPile_Metal": 828,
+  "TrashClump_Metal": 404,
+  "TrashPile_Wood": 438,
+  "TrashClump_Wood": 206,
+  "TrashPile_Glass": 772,
+  "TrashClump_Glass": 506,
+  "TrashPile_Mixed": 752,
+  "TrashClump_Mixed": 406
+ },
+ "tris_total": 6670,
+ "display_offset": {
+  "TrashPile_Paper": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "TrashClump_Paper": [
+   0.0,
+   -2.0,
+   0.17
+  ],
+  "TrashPile_Plastic": [
+   1.7,
+   0.0,
+   0.0
+  ],
+  "TrashClump_Plastic": [
+   1.7,
+   -2.0,
+   0.179
+  ],
+  "TrashPile_Metal": [
+   3.4,
+   0.0,
+   0.0
+  ],
+  "TrashClump_Metal": [
+   3.4,
+   -2.0,
+   0.151
+  ],
+  "TrashPile_Wood": [
+   5.1,
+   0.0,
+   0.0
+  ],
+  "TrashClump_Wood": [
+   5.1,
+   -2.0,
+   0.15
+  ],
+  "TrashPile_Glass": [
+   6.8,
+   0.0,
+   0.0
+  ],
+  "TrashClump_Glass": [
+   6.8,
+   -2.0,
+   0.155
+  ],
+  "TrashPile_Mixed": [
+   8.5,
+   0.0,
+   0.0
+  ],
+  "TrashClump_Mixed": [
+   8.5,
+   -2.0,
+   0.182
+  ]
+ }
+}

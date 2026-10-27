@@ -1,0 +1,109 @@
+{
+ "atlases": {
+  "Rocks": {
+   "size": 1024,
+   "ppm": 64.0,
+   "area_m2": 77.03,
+   "uv_fill": 0.301,
+   "colours": 64
+  },
+  "Cliff1": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 167.3,
+   "uv_fill": 0.42,
+   "colours": 64
+  },
+  "Cliff2": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 131.49,
+   "uv_fill": 0.33,
+   "colours": 64
+  },
+  "Cliff3": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 137.22,
+   "uv_fill": 0.344,
+   "colours": 64
+  }
+ },
+ "tris": {
+  "ForestStone_1": 78,
+  "ForestStone_2": 52,
+  "ForestStone_3": 74,
+  "ForestStone_4": 64,
+  "ForestStone_5": 218,
+  "ForestStone_6": 76,
+  "ForestBoulder_1": 272,
+  "ForestBoulder_2": 394,
+  "ForestBoulder_3": 216,
+  "ForestCliff_1": 1500,
+  "ForestCliff_2": 1498,
+  "ForestCliff_3": 1500
+ },
+ "tris_total": 5942,
+ "display_offset": {
+  "ForestStone_1": [
+   0.242,
+   0.0,
+   0.0
+  ],
+  "ForestStone_2": [
+   1.315,
+   0.0,
+   0.0
+  ],
+  "ForestStone_3": [
+   2.365,
+   0.0,
+   0.0
+  ],
+  "ForestStone_4": [
+   3.52,
+   0.0,
+   0.0
+  ],
+  "ForestStone_5": [
+   4.608,
+   0.0,
+   0.0
+  ],
+  "ForestStone_6": [
+   6.216,
+   0.0,
+   0.0
+  ],
+  "ForestBoulder_1": [
+   1.271,
+   -5.0,
+   0.0
+  ],
+  "ForestBoulder_2": [
+   4.914,
+   -5.0,
+   0.0
+  ],
+  "ForestBoulder_3": [
+   9.264,
+   -5.0,
+   0.0
+  ],
+  "ForestCliff_1": [
+   5.356,
+   -16.0,
+   0.0
+  ],
+  "ForestCliff_2": [
+   16.883,
+   -16.0,
+   0.0
+  ],
+  "ForestCliff_3": [
+   26.74,
+   -16.0,
+   0.0
+  ]
+ }
+}

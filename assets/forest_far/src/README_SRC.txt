@@ -11,6 +11,12 @@
   far_render.py <виды | all | map | cmp> [spp] → rend/far (map — места обновления 3 на его рельефе: нужен terrain.blend
   из Forest_Terrain.fbx); make_far_doc.py → docs/FAR_CONTRACT.md; make_sheets_far.py → sheets/far_A…G.jpg;
   pack_far.py → out/forest_far_package.zip.
+- Версия 1.1 (метеостанция без старой будки, модели forest_devices на точках крепления) собрана без пересборки
+  остального: far_build.py --only Meteo → out/far_test.blend; compose_far11.py — 1.0 (out/far_v10.blend и её json) +
+  новая метеостанция + экземпляры forest_devices → out/far.blend, far.json, far_contract.json; far_render.py
+  meteo,meteo_screen,meteo_gate,dish1_cab,cmp_meteo и map_meteo; make_sheets_far.py --only A,C,G; patch_sheet_f11.py —
+  одна плитка листа F. far.blend ссылается на ../forest_devices/devices.blend (папки рядом), для сборки рядом нужны
+  forest_devices и snow_kit.
 - Blender 5.0.1 (bpy как модуль Python 3.11). Пути в скриптах абсолютные (HERE = '/home/claude/uaz') — заменить на
   путь к этой папке.
 - checks/ — проверки (far_checks.py → far_checks.json): префабы, пивоты и оси дверей, коробки против обновления 3,

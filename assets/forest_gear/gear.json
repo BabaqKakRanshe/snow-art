@@ -1,0 +1,210 @@
+{
+ "atlases": {
+  "Small": {
+   "size": 512,
+   "ppm": 417.8,
+   "area_m2": 0.58,
+   "uv_fill": 0.384,
+   "colours": 64
+  },
+  "Haul": {
+   "size": 512,
+   "ppm": 128.4,
+   "area_m2": 5.51,
+   "uv_fill": 0.346,
+   "colours": 64
+  }
+ },
+ "tris": 9760,
+ "tris_by_root": {
+  "Item_Cart": 2172,
+  "Item_Doll": 1516,
+  "Item_Headlamp": 700,
+  "Item_Battery": 170,
+  "Item_Battery6V": 408,
+  "Item_BatteryPack": 552,
+  "Item_Bulb": 778,
+  "Item_BulbBox": 12,
+  "Item_IceAxe": 286,
+  "Item_Key_Stationsleiter": 362,
+  "Item_Lantern": 534,
+  "Item_Postcard": 96,
+  "Item_Sled": 1530,
+  "Item_Walkie": 420,
+  "Item_WorkerTag": 224
+ },
+ "objects": {
+  "Item_Battery": [
+   "Item_Battery"
+  ],
+  "Item_BatteryPack": [
+   "Item_BatteryPack"
+  ],
+  "Item_Battery6V": [
+   "Item_Battery6V"
+  ],
+  "Item_Walkie": [
+   "Item_Walkie",
+   "Walkie_Knob_Channel",
+   "Walkie_Knob_Volume",
+   "Walkie_LCD",
+   "Walkie_LED",
+   "Walkie_PTT"
+  ],
+  "Item_Lantern": [
+   "Item_Lantern",
+   "Lantern_Door",
+   "Lantern_Lens",
+   "Lantern_Switch"
+  ],
+  "Item_Headlamp": [
+   "Headlamp_Bezel",
+   "Headlamp_Lamp",
+   "Headlamp_Lens",
+   "Item_Headlamp"
+  ],
+  "Item_Cart": [
+   "Cart_Caster_BL",
+   "Cart_Caster_BR",
+   "Cart_Wheel_BL",
+   "Cart_Wheel_BR",
+   "Cart_Wheel_FL",
+   "Cart_Wheel_FR",
+   "Item_Cart"
+  ],
+  "Item_Sled": [
+   "Item_Sled",
+   "Sled_Tow"
+  ],
+  "Item_Doll": [
+   "Doll_Head",
+   "Item_Doll"
+  ],
+  "Item_Postcard": [
+   "Item_Postcard"
+  ],
+  "Item_Bulb": [
+   "Item_Bulb"
+  ],
+  "Item_BulbBox": [
+   "Item_BulbBox"
+  ],
+  "Item_WorkerTag": [
+   "Item_WorkerTag"
+  ],
+  "Item_Key_Stationsleiter": [
+   "Item_Key_Stationsleiter"
+  ],
+  "Item_IceAxe": [
+   "Item_IceAxe"
+  ]
+ },
+ "display_offset": {
+  "Item_Battery": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "Item_BatteryPack": [
+   0.1,
+   0.0,
+   0.0
+  ],
+  "Item_Battery6V": [
+   0.22,
+   0.0,
+   0.0
+  ],
+  "Item_Walkie": [
+   0.38,
+   0.0,
+   0.0
+  ],
+  "Item_Lantern": [
+   0.56,
+   0.0,
+   0.0
+  ],
+  "Item_Headlamp": [
+   0.82,
+   0.0,
+   0.0
+  ],
+  "Item_Cart": [
+   -0.75,
+   0.25,
+   0.0
+  ],
+  "Item_Sled": [
+   -1.75,
+   0.6,
+   0.0
+  ],
+  "Item_Doll": [
+   1.75,
+   0.0,
+   0.0
+  ],
+  "Item_Postcard": [
+   1.48,
+   0.0,
+   0.0
+  ],
+  "Item_Bulb": [
+   1.03,
+   0.0,
+   0.0
+  ],
+  "Item_BulbBox": [
+   1.13,
+   0.0,
+   0.0
+  ],
+  "Item_WorkerTag": [
+   1.24,
+   0.0,
+   0.12
+  ],
+  "Item_Key_Stationsleiter": [
+   1.31,
+   0.0,
+   0.12
+  ],
+  "Item_IceAxe": [
+   2.05,
+   0.0,
+   0.0
+  ]
+ },
+ "mass_kg": {
+  "Item_Battery": 0.14,
+  "Item_BatteryPack": 0.58,
+  "Item_Battery6V": 0.55,
+  "Item_Walkie": 0.38,
+  "Item_Lantern": 0.45,
+  "Item_Headlamp": 0.22,
+  "Item_Cart": 22.0,
+  "Item_Sled": 5.5,
+  "Item_Doll": 0.45,
+  "Item_Postcard": 0.005,
+  "Item_Bulb": 0.03,
+  "Item_BulbBox": 0.06,
+  "Item_WorkerTag": 0.012,
+  "Item_Key_Stationsleiter": 0.02,
+  "Item_IceAxe": 0.75
+ },
+ "tag_number": "3817",
+ "contract": {
+  "parts": 34,
+  "sockets": 24,
+  "colliders": 30,
+  "kinds": {
+   "item": 13,
+   "twist": 4,
+   "static": 7,
+   "slide": 2,
+   "hinge": 2,
+   "spin": 6
+  }
+ }
+}

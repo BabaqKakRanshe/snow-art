@@ -9,6 +9,10 @@
   clock       the wall clock's face, stopped at 2:40 (the guard book's last line)
   radio       the radio's front: frequency window, CHANNEL / VOLUME (equipment labels in English)
   phone_dial  the rotary dial;  crt  the CCTV picture of the barrier (emission, with the power), dark glass (base)
+  sign_sperr2 (v2) the solid gate leaf's plate (0.90 x 0.70 m): SPERRGEBIET / RESTRICTED AREA, ZUTRITT VERBOTEN / NO ENTRY,
+              the CCTV camera pictogram with VIDEOÜBERWACHT / CCTV
+  sign_volt   (v2) the yellow warning triangle with the black lightning (0.10 x 0.0875 m): the barrier cabinet, the gate drive
+  keytags     (v2) the SCHRANKE tag is gone (its hook was removed): a bare slot with a pencil outline, the other four as before
   l_fluor     the fluorescent tube (cylinder UVs: v along the tube), l_bulk the bulkhead dome (the shed's)
   glow_cold / glow_warm  halo tiles for the glow cards (emission only);  firstaid  ERSTE HILFE / FIRST AID box front
 German first, English under it on the wall signs (the project's rule); the guards' own papers in German.
@@ -38,9 +42,11 @@ REG = {'sign_kpp': (0, 0, 288, 48), 'sign_halt': (288, 0, 480, 52), 'sign_sperr'
        'roster': (0, 144, 64, 234), 'phonelist': (64, 144, 128, 229), 'calendar': (128, 144, 200, 244),
        'clock': (200, 144, 264, 208), 'radio': (264, 144, 360, 176), 'phone_dial': (360, 144, 392, 176),
        'crt': (392, 144, 456, 192), 'l_fluor': (456, 144, 488, 160), 'l_bulk': (456, 160, 488, 192),
-       'glow_cold': (0, 256, 64, 320), 'glow_warm': (64, 256, 128, 320), 'firstaid': (200, 208, 248, 246)}
+       'glow_cold': (0, 256, 64, 320), 'glow_warm': (64, 256, 128, 320), 'firstaid': (200, 208, 248, 246),
+       'sign_sperr2': (0, 320, 144, 432), 'sign_volt': (144, 320, 192, 362)}                 # v2
+REG_SIZE_M = {'sign_sperr2': (0.90, 0.70), 'sign_volt': (0.10, 0.0875)}                    # v2: the quads' sizes
 INK, WHITE, PAPER = (26, 24, 22), (236, 232, 220), (224, 218, 196)
-RED, RED_D = (196, 36, 26), (130, 24, 18)
+RED, RED_D, YELLOW = (196, 36, 26), (130, 24, 18), (238, 190, 30)
 PENCIL, BLUE_PEN = (84, 80, 92), (40, 52, 120)
 CHAIN_N = 64
 BARB_W, BARB_H = 64, 46                                  # barbed wire band: 0.5 m x 0.36 m
@@ -64,6 +70,62 @@ def _age(img, r, seed, spots=18, amount=0.18, col=(120, 100, 70)):
     for _ in range(spots):
         fx, fy = rng.integers(x0 + 1, x1 - 1), rng.integers(y0 + 1, y1 - 1)
         img[fy, fx] = (img[fy, fx] * (1 - amount) + np.array(col) * amount).astype(np.uint8)
+
+
+def _poly_mask(H, W, pts):
+    """pixels whose centres lie inside the polygon pts [(x, y)] (pixel units)"""
+    yy, xx = np.mgrid[0:H, 0:W]
+    px, py = xx + 0.5, yy + 0.5
+    inside = np.zeros((H, W), bool)
+    n = len(pts)
+    for i in range(n):
+        (xa, ya), (xb, yb) = pts[i], pts[(i + 1) % n]
+        cond = (ya > py) != (yb > py)
+        xint = xa + (py - ya) * (xb - xa) / np.where(yb - ya == 0, 1e-9, yb - ya)
+        inside ^= cond & (px < xint)
+    return inside
+
+
+def fill_poly(img, pts, col):
+    H, W = img.shape[:2]
+    img[_poly_mask(H, W, pts)] = col
+
+
+def bolt(img, cx, cy, h, col):
+    """zigzag lightning arrow pointing down, height h centred at cx, cy (as yard_tex)"""
+    pts = [(cx + 0.10 * h, cy - 0.50 * h), (cx - 0.16 * h, cy + 0.04 * h), (cx + 0.02 * h, cy + 0.02 * h),
+           (cx - 0.12 * h, cy + 0.38 * h), (cx - 0.20 * h, cy + 0.30 * h), (cx - 0.12 * h, cy + 0.52 * h),
+           (cx + 0.10 * h, cy + 0.28 * h), (cx + 0.02 * h, cy + 0.30 * h), (cx + 0.18 * h, cy - 0.08 * h),
+           (cx + 0.00 * h, cy - 0.06 * h), (cx + 0.22 * h, cy - 0.50 * h)]
+    fill_poly(img, pts, col)
+
+
+def bolt_triangle(img, cx, cy, s):
+    """W012 warning triangle: yellow, black border, the black lightning arrow (height s, width 1.12 s)"""
+    h, w = s, s * 1.12
+    fill_poly(img, [(cx, cy - h / 2), (cx + w / 2, cy + h / 2), (cx - w / 2, cy + h / 2)], INK)
+    k = max(2.0, s * 0.12)
+    fill_poly(img, [(cx, cy - h / 2 + k * 1.6), (cx + w / 2 - k * 1.25, cy + h / 2 - k * 0.7),
+                    (cx - w / 2 + k * 1.25, cy + h / 2 - k * 0.7)], YELLOW)
+    bolt(img, cx, cy + h * 0.10, h * 0.56, INK)
+
+
+def cctv_icon(img, cx, cy, s, col=INK):
+    """CCTV pictogram: the camera body tilted down to the left, its hood and lens, the arm to a wall plate (size ~s)"""
+    k = s / 32.0
+    a = math.radians(-18)                                       # the body's axis: down toward the front (left)
+    ca, sa = math.cos(a), math.sin(a)
+
+    def P(u, v):                                                # body frame: u along the camera (front = -u), v down
+        return (cx + (u * ca - v * sa) * k, cy + (u * sa + v * ca) * k)
+    fill_poly(img, [P(-12, -5), P(10, -5), P(10, 5), P(-12, 5)], col)                     # the body
+    fill_poly(img, [P(-16, -7), P(-11, -7), P(-11, 5), P(-16, 5)], col)                   # the hood
+    fill_poly(img, [P(-14, -1), P(-12, -1), P(-12, 2), P(-14, 2)], WHITE)                 # the lens' glint
+    fill_poly(img, [P(-11, -8), P(9, -8), P(9, -6), P(-11, -6)], col)                     # the sunshield
+    x0, y0 = P(6, 5)
+    F.line(img, x0, y0, x0 + 3 * k, y0 + 7 * k, col, 2)                                   # the arm down
+    F.line(img, x0 + 3 * k, y0 + 7 * k, x0 + 12 * k, y0 + 7 * k, col, 2)                 # ... and to the wall
+    F.rect(img, x0 + 12 * k, y0 + 2 * k, x0 + 14 * k, y0 + 12 * k, col)                  # the wall plate
 
 
 # ---------------------------------------------------------------- signs
@@ -111,17 +173,53 @@ def draw_signs(img):
     x0, y0, x1, y1 = r
     F.text(img, (x0 + x1) / 2, y0 + 9, 'SCHLÜSSEL', F.F57, INK)
     F.text(img, (x0 + x1) / 2, y0 + 19, 'KEYS', F.F35, (90, 86, 80))
+    draw_signs_v2(img)
+
+
+def draw_signs_v2(img):
+    r = REG['sign_sperr2']                                    # the solid gate leaf: white enamel, red border
+    _plate(img, r, WHITE, RED, 2)
+    x0, y0, x1, y1 = r
+    cx = (x0 + x1) / 2
+    F.text(img, cx, y0 + 15, 'SPERRGEBIET', F.F57, RED, scale=2)
+    F.text(img, cx, y0 + 29, 'RESTRICTED AREA', F.F57, INK)
+    F.rect(img, x0 + 12, y0 + 37, x1 - 13, y0 + 37, (150, 146, 138))
+    F.text(img, cx, y0 + 46, 'ZUTRITT VERBOTEN', F.F57, INK)
+    F.text(img, cx, y0 + 56, 'NO ENTRY', F.F57, (90, 86, 80))
+    F.rect(img, x0 + 12, y0 + 65, x1 - 13, y0 + 65, (150, 146, 138))
+    F.rect(img, x0 + 8, y0 + 71, x0 + 44, y0 + 104, (236, 232, 220))
+    F.frame(img, x0 + 8, y0 + 71, x0 + 44, y0 + 104, INK)
+    cctv_icon(img, x0 + 25, y0 + 85, 30)
+    tx = x0 + 52 + (x1 - x0 - 58) / 2
+    F.text(img, tx, y0 + 80, 'VIDEOÜBERWACHT', F.F57, RED_D)
+    F.text(img, tx, y0 + 92, 'CCTV', F.F57, INK)
+    F.text(img, tx, y0 + 101, 'IN OPERATION', F.F35, (90, 86, 80))
+    for sx in (x0 + 6, x1 - 7):
+        for sy in (y0 + 6, y1 - 7):
+            F.disc(img, sx + 0.5, sy + 0.5, 1.6, (150, 146, 138))
+    _age(img, r, 35, 70, 0.3, (110, 70, 40))
+    r = REG['sign_volt']                                      # the triangle on a white label (the sticker's backing)
+    x0, y0, x1, y1 = r
+    F.rect(img, x0, y0, x1 - 1, y1 - 1, (232, 228, 214))
+    F.frame(img, x0, y0, x1 - 1, y1 - 1, (176, 172, 160))
+    bolt_triangle(img, (x0 + x1) / 2, (y0 + y1) / 2 + 0.5, 36)
+    _age(img, r, 36, 12, 0.25)
 
 
 def draw_keytags(img):
     r = REG['keytags']
     x0, y0, x1, y1 = r
     F.rect(img, x0, y0, x1 - 1, y1 - 1, (196, 188, 158))
-    cells = [('SCHRANKE', 'BARRIER'), ('HAUPTGEB.', 'MAIN BLDG'), ('GARAGE', 'GARAGE'), ('GENERATOR', 'GENERATOR'),
-             ('LEITER', 'DIRECTOR')]
+    cells = [(None, None), ('HAUPTGEB.', 'MAIN BLDG'), ('GARAGE', 'GARAGE'), ('GENERATOR', 'GENERATOR'),
+             ('LEITER', 'DIRECTOR')]                         # v2: the SCHRANKE hook and its tag are gone
     w = (x1 - x0) / len(cells)
     for i, (de, en) in enumerate(cells):
         a = x0 + i * w
+        if de is None:                                        # a bare slot: the pencil outline the tag left, two pin holes
+            F.frame(img, a + 2, y0 + 2, a + w - 3, y1 - 3, (172, 164, 136))
+            for px_ in (a + 4, a + w - 5):
+                F.rect(img, px_, y0 + 4, px_, y0 + 4, (120, 112, 92))
+            continue
         F.rect(img, a + 1, y0 + 1, a + w - 2, y1 - 2, (238, 234, 220))
         F.frame(img, a + 1, y0 + 1, a + w - 2, y1 - 2, (120, 112, 96))
         F.text(img, a + w / 2, y0 + 6, de, F.F35, INK)
@@ -397,7 +495,7 @@ def build(out):
     Image.fromarray(emi).save(pe)
     pc = chainlink(os.path.join(out, 'T_Kpp_ChainLink.png'))
     pw = barbed(os.path.join(out, 'T_Kpp_Barbed.png'))
-    json.dump(dict(size=N, regions=REG, chainlink=dict(size=CHAIN_N, metres_per_tile=0.5),
+    json.dump(dict(size=N, regions=REG, sizes_m=REG_SIZE_M, chainlink=dict(size=CHAIN_N, metres_per_tile=0.5),
                    barbed=dict(size=[BARB_W, BARB_H], metres_per_tile=[0.5, 0.36], strands_above_foot=[0.06, 0.18, 0.30])),
               open(os.path.join(out, 'kpp_panel_regions.json'), 'w'), indent=1)
     return pb, pe, pc, pw

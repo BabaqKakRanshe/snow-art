@@ -1,0 +1,199 @@
+{
+ "tris": 982,
+ "flee_stride_m": 3.0,
+ "shuffle_speed_mps": 0.6,
+ "back_bend_deg": 30.0,
+ "k": 1.087,
+ "stand_top": 0,
+ "root_drop": -0.023,
+ "extents": {
+  "Stand": [
+   [
+    -0.414,
+    -0.697,
+    -0.0
+   ],
+   [
+    0.414,
+    0.21,
+    2.592
+   ]
+  ],
+  "NeckReach_end": [
+   [
+    -0.414,
+    -3.744,
+    -0.0
+   ],
+   [
+    0.414,
+    0.21,
+    2.436
+   ]
+  ],
+  "Grab_reach": [
+   [
+    -0.383,
+    -1.69,
+    -0.0
+   ],
+   [
+    0.414,
+    0.21,
+    2.396
+   ]
+  ],
+  "Cower_end": [
+   [
+    -0.376,
+    -0.766,
+    -0.0
+   ],
+   [
+    0.42,
+    0.258,
+    3.093
+   ]
+  ],
+  "Flee_up": [
+   [
+    -0.346,
+    -1.854,
+    0.754
+   ],
+   [
+    0.571,
+    1.137,
+    2.575
+   ]
+  ],
+  "Flee_down": [
+   [
+    -0.492,
+    -0.798,
+    0.003
+   ],
+   [
+    0.492,
+    0.21,
+    2.355
+   ]
+  ],
+  "Sleep": [
+   [
+    -0.923,
+    -1.177,
+    0.02
+   ],
+   [
+    0.923,
+    0.21,
+    0.817
+   ]
+  ]
+ },
+ "head": {
+  "Stand": [
+   0.0,
+   -0.615,
+   2.327
+  ],
+  "NeckReach_end": [
+   0.0,
+   -3.642,
+   1.396
+  ],
+  "NeckReachUp_end": [
+   0.0,
+   -2.955,
+   4.631
+  ]
+ },
+ "neck_stretch": 6.0,
+ "neck_length_m": {
+  "Stand": 0.587,
+  "NeckReach_end": 3.522
+ },
+ "clips": {
+  "Stand": [
+   1,
+   2
+  ],
+  "NeckReach": [
+   1,
+   25
+  ],
+  "Shuffle": [
+   1,
+   49
+  ],
+  "Grab": [
+   1,
+   25
+  ],
+  "Carry": [
+   1,
+   2
+  ],
+  "Cower": [
+   1,
+   10
+  ],
+  "Flee": [
+   1,
+   25
+  ],
+  "NeckReachUp": [
+   1,
+   25
+  ],
+  "Sleep": [
+   1,
+   2
+  ]
+ },
+ "fps": 24,
+ "bones": [
+  "Root",
+  "Hips",
+  "Spine",
+  "Chest",
+  "Neck1",
+  "Neck2",
+  "Neck3",
+  "Neck4",
+  "Neck5",
+  "Neck6",
+  "Head",
+  "Shoulder.L",
+  "UpperArm.L",
+  "ForeArm.L",
+  "Hand.L",
+  "Finger1.L",
+  "Finger2.L",
+  "Finger3.L",
+  "Finger4.L",
+  "Thigh.L",
+  "Shin.L",
+  "Foot.L",
+  "Shoulder.R",
+  "UpperArm.R",
+  "ForeArm.R",
+  "Hand.R",
+  "Finger1.R",
+  "Finger2.R",
+  "Finger3.R",
+  "Finger4.R",
+  "Thigh.R",
+  "Shin.R",
+  "Foot.R"
+ ],
+ "materials": [
+  "M_Lesnik_Skin",
+  "M_Lesnik_Parka",
+  "M_Lesnik_Cap",
+  "M_Lesnik_Eye",
+  "M_Lesnik_Mouth"
+ ],
+ "height_straight": 3.353
+}

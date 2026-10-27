@@ -1,0 +1,30 @@
+{
+ "size": 256,
+ "regions": {
+  "paper": [
+   0,
+   0,
+   96,
+   128
+  ],
+  "shift_door": [
+   98,
+   0,
+   210,
+   40
+  ]
+ },
+ "paper_date": "12. NOVEMBER 1991",
+ "fire": {
+  "frames": 8,
+  "frame_px": [
+   32,
+   64
+  ],
+  "layout": "frames left to right, u = frame / 8"
+ },
+ "ice": {
+  "tile_px": 64,
+  "px_per_m": 64
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "note": "start post lamps. position / forward / up: the root's own frame (Blender: z up, the front -y, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. The lens (Lens_*) switches M_Start_Lamp_<Kind> (lit) / _Off, the halo card (Glow_*) is shown with it. group post: the booth lamp; group battery: the tripod light (blinks, goes out when the battery is flat) - the game decides; all start off.",
+ "lights": [
+  {
+   "socket": "LIGHT_Booth",
+   "root": "StartBooth",
+   "lens": "Lens_Booth",
+   "glow": "Glow_Booth",
+   "parent": "Lamp_Booth",
+   "type": "bulkhead",
+   "unityLight": "Point",
+   "position": [
+    1.12,
+    0.1,
+    2.1
+   ],
+   "forward": [
+    0.6,
+    0.0,
+    -0.8
+   ],
+   "up": [
+    0.8,
+    0.0,
+    0.6
+   ],
+   "positionUnity": [
+    -1.12,
+    2.1,
+    -0.1
+   ],
+   "forwardUnity": [
+    -0.6,
+    -0.8,
+    0.0
+   ],
+   "upUnity": [
+    -0.8,
+    0.6,
+    0.0
+   ],
+   "intensityURP": 1.0,
+   "kelvin": 2700,
+   "colorLinear": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "range": 8.0,
+   "group": "post",
+   "shadows": false,
+   "desc": "the caged bulkhead over the booth door (the shed's), 60 W incandescent; group post: the game switches it (on / off / flicker)",
+   "startsOn": false
+  },
+  {
+   "socket": "LIGHT_Flood",
+   "root": "StartLamp",
+   "lens": "Lens_Flood",
+   "glow": "Glow_Flood",
+   "parent": "Lamp_Flood",
+   "type": "flood",
+   "unityLight": "Spot",
+   "position": [
+    0.0,
+    -0.1575,
+    2.0815
+   ],
+   "forward": [
+    0.0,
+    -0.9063,
+    -0.4226
+   ],
+   "up": [
+    0.0,
+    -0.4226,
+    0.9063
+   ],
+   "positionUnity": [
+    0.0,
+    2.0815,
+    0.1575
+   ],
+   "forwardUnity": [
+    0.0,
+    -0.4226,
+    0.9063
+   ],
+   "upUnity": [
+    0.0,
+    0.9063,
+    0.4226
+   ],
+   "intensityURP": 6.0,
+   "kelvin": 3200,
+   "colorLinear": [
+    1.0,
+    0.86,
+    0.66
+   ],
+   "range": 18.0,
+   "group": "battery",
+   "shadows": false,
+   "desc": "the tripod work light, 500 W halogen on its battery; group battery: the game blinks it and lets it go out",
+   "startsOn": false,
+   "spotAngle": 100.0
+  }
+ ]
+}

@@ -1,10 +1,12 @@
-"""Checkpoint build (kpp_kit): one object per part with its pivot as the origin; PSX atlases baked with psxbake + kpp_paint:
+"""Checkpoint v2 build (kpp_kit): one object per part with its pivot as the origin; the snow_kit instances (KIT_INST) as
+empties that instance the kit's collections linked from ../snow_kit/snow_kit.blend (props: kit_item, ix_ids); PSX atlases baked with psxbake + kpp_paint:
 Kpp (the booth) and KppYard (the barrier and the gate) at the generator shed's pixel density (positions baked with
 POS_SCALE 40: the barrier 7 m out and the gate's parking end 18 m away bake where they stand), KppProps (the small things);
 the panel atlas
-(kpp_tex) on the signs, papers, labels, the clock, the radio, the dial; the lenses (the fluorescent tube, the bulkhead
-dome, the CCTV screen: lit and off), the glow cards, glass, the chain-link (alpha cut-out); the lamp json, the interaction
-contract (parts, sockets, colliders, meta, the map placement of the three roots), the hierarchy.
+(kpp_tex) on the signs, papers, labels, the clock, the radio; the lenses (the fluorescent tube, the bulkhead dome: lit
+and off), the glow cards, glass, the barbed wire (alpha band, Update 7's T_Kpp_Barbed_A_px); the wire previews (the K9 rule);
+the lamp json, the interaction contract (parts, sockets, colliders, kit_instances, wires, keep_clear, meta: the map and game
+placement of the three roots), the hierarchy.
 python3 -I kpp_build.py [--draft]  -> out/kpp.blend, out/kpp.json, out/kpp_contract.json, out/kpp_lights.json, tex/kpp/*
 --draft: no bakes, flat zone colours (layout preview) -> out/kpp_draft.blend"""
 import sys, os, math, json, time
@@ -19,6 +21,8 @@ import gen_lights as GL
 import van_lights as VL
 import gen_kit as K
 import kpp_kit as KK
+import snowkit_spec as SKS
+import snowkit_kit as SKK
 
 DRAFT = '--draft' in sys.argv
 HERE = P.HERE
@@ -71,13 +75,13 @@ def em_fluor(l):
 
 GL.TYPES.clear()
 GL.TYPES.update({
-    'fluor': dict(em=em_fluor, I=0.45, cd=40, cct=6000, filt=(0.92, 1.0, 1.0), unity='Point', rng=6.5, group='booth',
+    'fluor': dict(em=em_fluor, I=0.45, cd=40, cct=6000, filt=(0.92, 1.0, 1.0), unity='Point', rng=6.5, group='power',
                   shadows=False, res=128, lens_floor=0.10,
-                  desc='fluorescent batten under the rafters (one 36 W tube): flickers from the start, without power (Update 3 '
-                       'Light_booth: Point 0.45, range 6.5, colour 0.86 0.96 1.0, flicker min 0.08 max 1.0 speed 5)'),
+                  desc='fluorescent batten under the rafters (one 36 W tube): v2 - on with the booth\'s power only, flickering a '
+                       'few seconds as it strikes (flicker min / max / speed as Update 3\'s Light_booth); Point 0.45, range 6.5'),
     'bulkhead_kpp': dict(em=GL.em_bulkhead, I=1.0, cd=60, cct=2700, filt=(1.0, 1.0, 1.0), unity='Point', rng=9.0, group='power',
                          shadows=False, res=128, lens_floor=0.2,
-                         desc='caged bulkhead over the door (the shed\'s), 60 W incandescent: on with the station power (Update 3: '
+                         desc='caged bulkhead over the door (the shed\'s), 60 W incandescent: on with the booth\'s power (Update 3: '
                               'Point 1.0, range 9, off until power)'),
 })
 FLICKER = {'fluor': dict(min=0.08, max=1.0, speed=5.0)}
@@ -86,6 +90,8 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 for c in list(bpy.data.collections):
     bpy.data.collections.remove(c)
 PB_BASE, PB_EMI, PB_CHAIN, PB_BARB = KT.build(TEX)
+PB_BARB = os.path.join(OUT, 'forest_fences', 'tex', 'replacements', 'T_Kpp_Barbed_A_px.png')   # Update 7's (in the project)
+KIT_BLEND = os.path.join(HERE, 'snow_kit', 'snow_kit.blend')        # -> ../snow_kit/snow_kit.blend from the package's kpp.blend
 if not DRAFT:
     INFO['ies'] = GL.write_ies_all(os.path.join(TEX, 'IES'))
 
@@ -123,6 +129,7 @@ if DRAFT:
             c = PB.lin(*KP.DRAFT_COL.get(z, (128, 128, 128)))
             pb.inputs['Base Color'].default_value = (float(c[0]), float(c[1]), float(c[2]), 1)
             pb.inputs['Roughness'].default_value = 0.75
+            m.diffuse_color = (float(c[0]), float(c[1]), float(c[2]), 1)
             cache[z] = m
         return cache[z]
 
@@ -178,7 +185,7 @@ else:
 # ------------------------------------------------------------------ 3. explicit materials
 m_panel = PB.tex_mat('M_Kpp_Panel', PB_BASE, PB_EMI, 0.0, rough=0.6)
 lens_mats = {}
-for kname, night in (('fluor', 3.0), ('bulk', 3.0), ('crt', 1.6)):
+for kname, night in (('fluor', 3.0), ('bulk', 3.0)):
     for sfx, ne in (('', night), ('_Off', 0.0)):
         m = PB.tex_mat('M_Kpp_Lamp_' + kname.capitalize() + sfx, PB_BASE, PB_EMI, ne, rough=0.2)
         m['lamp_kind'] = kname
@@ -240,7 +247,6 @@ def cutout_mat(name, path, tile):
     return m
 
 
-m_chain = cutout_mat('M_Kpp_ChainLink', PB_CHAIN, 0.5)
 m_barb = cutout_mat('M_Kpp_Barbed', PB_BARB, 0.5)
 for name, o in objs.items():
     a = K.ATLAS[name]
@@ -257,8 +263,6 @@ for name, o in objs.items():
         o.visible_shadow = False
     elif a == 'glass':
         o.data.materials.append(m_glass)
-    elif a == 'chainlink':
-        o.data.materials.append(m_chain)
     elif a == 'barbed':
         o.data.materials.append(m_barb)
     else:
@@ -280,6 +284,129 @@ for name, p in C['parts'].items():
     if name in objs and p.get('parent') and p['parent'] in objs:
         attach(objs[name], objs[p['parent']])
     p['object'] = name if name in objs else None
+
+# ------------------------------------------------------------------ 4b. the snow_kit instances (collections linked from the kit)
+import kpp2_frame as KF
+KC = KK.KIT_CONTRACT
+with bpy.data.libraries.load(KIT_BLEND, link=True) as (src, dst):
+    dst.collections = [c for c in src.collections if c in KC['items']]
+kcoll = {c.name: c for c in dst.collections}
+assert set(kcoll) == set(KC['items']), set(KC['items']) - set(kcoll)
+inst_coll = bpy.data.collections.new('Kit_Instances')
+bpy.context.scene.collection.children.link(inst_coll)
+inst = {}
+for name, ki in KK.KIT_INST.items():
+    e = bpy.data.objects.new(name, None)
+    inst_coll.objects.link(e)
+    e.instance_type = 'COLLECTION'
+    e.instance_collection = kcoll[ki['item']]
+    e.empty_display_type, e.empty_display_size = 'PLAIN_AXES', 0.04
+    e.matrix_world = ki['M']
+    e['kit_item'] = ki['item']
+    if ki['ids']:
+        e['ix_ids'] = json.dumps(ki['ids'])
+    e['note'] = ki['note']
+    inst[name] = e
+for name, ki in KK.KIT_INST.items():
+    attach(inst[name], inst.get(ki['parent']) or objs[ki['parent']])
+bpy.context.view_layer.update()
+A_U = Matrix(((-1, 0, 0), (0, 0, 1), (0, -1, 0)))           # Blender -> Unity axes
+
+
+def rot_unity(R3):
+    q = (A_U @ R3 @ A_U.transposed()).to_quaternion()
+    return [round(q.x, 6) + 0.0, round(q.y, 6) + 0.0, round(q.z, 6) + 0.0, round(q.w, 6) + 0.0]
+
+
+def root_part(name):
+    while name in KK.KIT_INST:
+        name = KK.KIT_INST[name]['parent']
+    while C['parts'][name].get('parent'):
+        name = C['parts'][name]['parent']
+    return name
+
+
+def to_game(p, root):
+    if root in ('Checkpoint', 'Barrier'):
+        return [round(float(a), 3) + 0.0 for a in KF.booth_to_game(p)]
+    if root == 'Gate':
+        return [round(float(a), 3) + 0.0 for a in KF.gate_to_game(Vector(p) - KK.GATE_PLACE[0])]
+    return None
+
+
+KI = {}
+for name, ki in KK.KIT_INST.items():
+    e = inst[name]
+    Ml = e.parent.matrix_world.inverted() @ e.matrix_world
+    loc, rq, sca = Ml.decompose()
+    lw, _, _ = e.matrix_world.decompose()
+    rt = root_part(name)
+    KI[name] = dict(item=ki['item'], parent=ki['parent'], root=rt, note=ki['note'], ix_ids=ki['ids'],
+                    pos=r4(loc), rot_quat_wxyz=[round(a, 6) + 0.0 for a in rq], scale=r4(sca),
+                    posUnity=to_unity(loc), rotUnity_xyzw=rot_unity(rq.to_matrix()), scaleUnity=r4((sca.x, sca.z, sca.y)),
+                    pos_kpp=r4(lw), pos_game=to_game(lw, rt))
+    pw = KK.KIT_CONTRACT['items'][ki['item']].get('power_parts') or []
+    if pw:                                     # its lenses / screen light up only with the booth's power (group power)
+        KI[name]['power'] = dict(group='power', parts=pw)
+C['kit_instances'] = KI
+INFO['kit_instances'] = {}
+for v in KI.values():
+    INFO['kit_instances'][v['item']] = INFO['kit_instances'].get(v['item'], 0) + 1
+log('kit instances', len(KI), INFO['kit_instances'])
+
+
+def ksock_world(name, sock, key=None):
+    s = KC['sockets'][sock]
+    M = inst[name].matrix_world
+    if key:
+        return (M.to_3x3() @ Vector(s[key])).normalized()
+    return M @ Vector(s['pos'])
+
+
+# the two cameras (the monitors show them): their view points as sockets of their roots
+for cam, mon, root in (('Cam_Barrier', 'Monitor_Barrier', 'Checkpoint'), ('Cam_Gate', 'Monitor_Gate', 'Gate')):
+    pos = ksock_world(cam, 'CAM_View')
+    d = ksock_world(cam, 'CAM_View', 'dir')
+    sname = 'CAM_' + cam.split('_')[1]
+    C['sockets'][sname] = dict(pos=r4(pos), kind='camera', parent=root, dir=r4(d), monitor=mon, fov=55.0,
+                               pos_game=to_game(pos, root),
+                               note=f'{cam}\'s view: Unity puts the camera for {mon} here (render texture into its '
+                                    f'Kit_Monitor_Screen, material M_Kit_Screen_On) while the booth has power')
+
+# overhead wires (v2.1: kit models, instances Wire_Drop_* / Wire_Line_* placed by kpp_kit.wire_span): their ends and spans
+wires = []
+for name, item, (ia, sa), (ib, sb) in KK.WIRE_SPANS:
+    a, b = ksock_world(ia, sa), ksock_world(ib, sb)
+    span = (b - a).length
+    hspan = (Vector((b.x, b.y)) - Vector((a.x, a.y))).length
+    rule_sag = max(SKS.WIRE['sag_min'], SKS.WIRE['sag_k'] * hspan * hspan)
+    wires.append(dict(instance=name, item=item, group='drop' if item == 'Kit_Wire_Drop' else 'line',
+                      a=dict(instance=ia, socket=sa, pos=r4(a), pos_game=to_game(a, 'Checkpoint')),
+                      b=dict(instance=ib, socket=sb, pos=r4(b), pos_game=to_game(b, 'Checkpoint')),
+                      span=round(span, 3), scale_x=round(span / KC['parts'][item]['span'], 4),
+                      sag_model=KC['parts'][item]['sag'], sag_rule=round(rule_sag, 3)))
+onward = []
+for ia, socks in (('Pole_2', ['Wire_1', 'Wire_2', 'Wire_3']), ('Pole_Gate', ['Wire_1', 'Wire_2', 'Wire_3'])):
+    for sname in socks:
+        p_ = ksock_world(ia, sname)
+        onward.append(dict(instance=ia, socket=sname, pos=r4(p_), pos_game=to_game(p_, root_part(ia)),
+                           toward='the base' if ia == 'Pole_2' else 'the KPP'))
+C['wires'] = dict(rule=SKS.WIRE, spans=wires, onward=onward,
+                  note='v2.1: the wires are kit models - the drop Wire_Drop_1..4 (Kit_Wire_Drop, black service cable) and the '
+                       'line Wire_Line_1..3 (Kit_Wire_Bare) - instances in kit_instances, each turned from its socket a to b '
+                       'and scaled in x (scale_x); the line goes on from Pole_2 toward the base and ends at Pole_Gate: Unity '
+                       'places Kit_Pole about every 40 m along the road and a Kit_Wire_Bare between each pair of Wire_1..3 '
+                       '(onward: the ends here), or builds the spans by the rule')
+# trees off the new poles and the line (game frame; the vegetation bake keeps these clear like u7.keepClear)
+kc = []
+pg = {n: to_game(inst[n].matrix_world.translation, root_part(n)) for n in ('Pole_1', 'Pole_2', 'Pole_Gate', 'CamPole_Barrier',
+                                                                           'CamPole_Gate')}
+for n, r in (('Pole_1', 1.5), ('Pole_2', 2.0), ('Pole_Gate', 1.5), ('CamPole_Barrier', 1.0), ('CamPole_Gate', 1.0)):
+    kc.append(dict(kind='circle', c=[pg[n][0], pg[n][2]], r=r, why=n))
+kc.append(dict(kind='strip', a=[pg['Pole_1'][0], pg['Pole_1'][2]], b=[pg['Pole_2'][0], pg['Pole_2'][2]], r=2.5,
+               why='under the line Pole_1 - Pole_2'))
+C['keep_clear'] = kc
+INFO['wires'] = len(wires)
 
 # ------------------------------------------------------------------ 5. lamps: LIGHT_ empties + lights json
 LMETA = GL.meta()
@@ -305,16 +432,18 @@ for name, pos, d, typ, up in K.LAMPS:
               unityLight=T['unity'], position=r4(pos), forward=r4(d), up=r4(up), positionUnity=to_unity(pos),
               forwardUnity=to_unity(d), upUnity=to_unity(up), intensityURP=T['I'], peakCandela=T['cd'], kelvin=T['cct'],
               filterLinear=list(T['filt']), colorLinear=r4(GL.colour(typ)), range=T['rng'], group=T['group'],
-              shadows=bool(T['shadows']), ies='IES/%s.ies' % typ, desc=T['desc'], startsOn=(name == 'Fluor'))
+              shadows=bool(T['shadows']), ies='IES/%s.ies' % typ, desc=T['desc'], startsOn=False)
     if typ in FLICKER:
         it['flicker'] = FLICKER[typ]
     items.append(it)
-json.dump(dict(note='checkpoint lamps. position / forward / up: booth frame (Checkpoint prefab: x toward the road, y toward the back, '
-                    'z up, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. group booth = the fluorescent batten '
-                    '(flickers from the start without power: flicker min / max / speed as Update 3\'s Light_booth; lens '
-                    'M_Kpp_Lamp_Fluor, glow Glow_Fluor flicker with it); group power = the bulkhead over the door (off until the '
-                    'station power: light, Glow_Bulk_Door shown, Lens_Bulk_Door -> M_Kpp_Lamp_Bulk; the CCTV screen '
-                    'Screen_CCTV -> M_Kpp_Lamp_Crt). Point lights: the IES files describe the shape.',
+json.dump(dict(note='checkpoint lamps (v2). position / forward / up: booth frame (Checkpoint prefab: x toward the road, y toward the '
+                    'back, z up, m); *Unity: (-x, z, -y) in the prefab. intensityURP at 100 %. group power = only with the booth\'s '
+                    'power (the battery in the cabinet, both clamps on, the switch at BATTERIE): the fluorescent batten (flickers '
+                    'a few seconds as it strikes; lens M_Kpp_Lamp_Fluor, glow Glow_Fluor with it) and the bulkhead over the door '
+                    '(Glow_Bulk_Door shown, Lens_Bulk_Door -> M_Kpp_Lamp_Bulk). With the power the kit instances light too: the '
+                    'monitors\' screens (M_Kit_Screen_On), the lamps (M_Kit_Lamp_*), the door lock\'s lamp, the cabinet\'s lamp; '
+                    'the barrier\'s beacon (Kit_Beacon: its own light, snow_kit_lights.json) turns while the boom moves. Point '
+                    'lights: the IES files describe the shape.',
                lights=items), open(os.path.join(OUT, 'kpp_lights.json'), 'w'), indent=1)
 INFO['lamps'] = len(items)
 
@@ -358,7 +487,7 @@ for name, par, (x0, x1, y0, y1, z0, z1), rot, local in KK.static_boxes():
 log('colliders', len(C['colliders']))
 
 # ------------------------------------------------------------------ 7. knock points (rays onto the shell)
-hide_for_rays = [o for o in bpy.data.objects if o.name.startswith(('COL_', 'Glow_'))]
+hide_for_rays = [o for o in bpy.data.objects if o.name.startswith(('COL_', 'Glow_')) and o.library is None]
 for o in hide_for_rays:
     o.hide_viewport = True
 bpy.context.view_layer.update()
@@ -409,33 +538,52 @@ placement = {'Checkpoint': dict(p=list(KPP_U['p']), q=list(KPP_U['q']), yawUnity
 for root in ('Barrier', 'Gate'):
     placement[root] = unity_world(C['parts'][root]['pivot'], 0.0)
 INFO['placement'] = placement
-C['meta'] = dict(units='metres, degrees',
+
+
+def yq(yaw):
+    h = math.radians(yaw) / 2
+    return [0.0, round(math.sin(h), 6), 0.0, round(math.cos(h), 6)]
+
+
+game = {'Checkpoint': dict(p=to_game((0, 0, 0), 'Checkpoint'), q=yq(KF.BOOTH_YAW_GAME), yawUnity=round(KF.BOOTH_YAW_GAME, 4)),
+        'Barrier': dict(p=to_game(KK.BARRIER_PLACE[0], 'Barrier'), q=yq(KF.BOOTH_YAW_GAME), yawUnity=round(KF.BOOTH_YAW_GAME, 4)),
+        'Gate': dict(p=list(KF.GATE_GAME['p']), q=yq(KF.GATE_GAME['yaw']), yawUnity=KF.GATE_GAME['yaw'])}
+C['meta'] = dict(version='2.0', units='metres, degrees',
                  frame='booth frame (the Checkpoint prefab\'s): x toward the road, y toward the back (the door, the station side), z '
                        'up; origin = the middle of the pad on the ground; floor z = 0.15; the road at the barrier and the gate is '
                        '0.38 lower',
                  unity='position (x, y, z) -> Unity (-x, z, -y) in the Checkpoint prefab; axis likewise; angle -> -angle (Unity is '
-                       'left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy)',
-                 roots='three roots, each its own prefab at its Update 3 place, with the booth\'s axes (yaw 0 between them): '
-                       'Checkpoint (the booth), Barrier (7 m out on the road), Gate (beside the booth on the fence line). Barrier '
-                       'and Gate parts and sockets are given in the booth frame; map_placement: Forest (Unity world) p / q of each '
-                       'root',
-                 map_placement=placement,
+                       'left-handed); box centre likewise, box size (sx, sy, sz) -> (sx, sz, sy); a rotation R -> A R A^T, '
+                       'A = the axis map (rotUnity_xyzw); a scale (sx, sy, sz) -> (sx, sz, sy)',
+                 roots='three roots on the map, each its own prefab, with the booth\'s axes in this file (yaw 0 between them): '
+                       'Checkpoint (the booth), Barrier (7 m out on the road), Gate (beside the booth here); and Barrier_Manual '
+                       '(the v1 hand barrier, a prefab not on the map, 7 m further out here). Barrier and Gate parts and sockets '
+                       'are given in the booth frame; map_placement: the Update 3 places (Forest_Layout.json); game_placement: '
+                       'where they stand in the game now (ForestRelocation moves the booth and the barrier together, '
+                       'ForestYardPlan leaves the gate at the yard, ~300 m away)',
+                 map_placement=placement, game_placement=game,
+                 kit='snow_kit instances (kit_instances): an empty per instance with the kit item\'s collection linked from '
+                     '../snow_kit/snow_kit.blend; props kit_item, ix_ids (the IX_ parts of that instance get these numbers: '
+                     'IX_ConsoleButton -> IX_ConsoleButton_312 ...); Unity: the builder puts the item\'s prefab (Assets/Kit/) on '
+                     'the empty with its transform (the conduits are scaled in x); pos / rot / scale are in the parent\'s frame, '
+                     'pos_kpp in this file\'s world, pos_game in the game',
                  colliders='colliders: BoxCollider per entry on its parent: center / size in the parent\'s own frame (Blender), '
                            'centerUnity / sizeUnity the same in Unity axes; rotation = Blender XYZ euler of the box (the roof sheet), '
                            'rotationUnity = Unity euler; center_kpp: the box centre in the booth frame. part.box: the grab / hit box '
-                           'of a moving part in its own frame',
-                 lamps='kpp_lights.json', model='kpp.blend', textures='tex',
+                           'of a moving part in its own frame. The kit instances bring their own colliders (SNOW_KIT_CONTRACT.md)',
+                 lamps='kpp_lights.json (+ the beacon in snow_kit_lights.json)', model='kpp.blend', textures='tex',
                  materials='M_Kpp_Kpp (the booth) / M_Kpp_KppYard (the barrier, the gate) / M_Kpp_KppProps: baked PSX atlases (point '
-                           'filter); M_Kpp_Panel: signs, '
-                           'papers, labels, the clock, the radio, the dial; M_Kpp_Lamp_Fluor / _Off, M_Kpp_Lamp_Bulk / _Off, '
-                           'M_Kpp_Lamp_Crt / _Off: lit / off (base + emission textures, night_emit = emission strength); M_Kpp_Glow: '
-                           'additive halo (emission texture only); M_Kpp_Glass; M_Kpp_ChainLink, M_Kpp_Barbed: alpha cut-out 0.5, tiled 0.5 m',
-                 prologue='S6 / X05 (FOREST_OPENING.md): the keys hang on the Key_Hook_ sockets in the key cabinet '
-                          '(IX_KeyBoxDoor_303), Note_KPPLog lies on Spot_KPPLog, Padlock_Barrier on Spot_Padlock locks the boom '
-                          '(IX_BarrierArm_82) until Key_Schranke opens it; IX_Gate_81 slides 6.6 m. X05: the phone (Phone, '
-                          'Phone_Receiver, zone Phone_KPP) and Phone_Bell ring; the batten flickers from the start')
+                           'filter); M_Kpp_Panel: signs, papers, labels, the clock, the radio; M_Kpp_Lamp_Fluor / _Off, '
+                           'M_Kpp_Lamp_Bulk / _Off: lit / off; M_Kpp_Glow: additive halo; M_Kpp_Glass; M_Kpp_Barbed: alpha cut-out '
+                           '0.5, tiled 0.5 m (Update 7\'s texture, one-sided). The kit instances use the kit\'s M_Kit_* materials',
+                 prologue='S6 / X05 v2 (QUESTIONS_KPP.md «Решено»): no power at first; the players bring the van\'s Battery to '
+                          'PowerCabinet (Slot_Battery), put both clamps on, turn IX_CabinetSwitch to BATTERIE: the door lock '
+                          'releases IX_BoothDoor_74, the lamps light, the monitors show CAM_Barrier and CAM_Gate; Btn_Schranke '
+                          'raises / lowers IX_BarrierArm_82, Btn_Tor sends IX_Gate_81 along (one press, it runs to the end). The '
+                          'keys hang on the Key_Hook_ sockets (no Schranke), Note_KPPLog on Spot_KPPLog. X05: Phone / '
+                          'Phone_Receiver (zone Phone_KPP) and Phone_Bell ring')
 for o in bpy.data.objects:
-    if o.name.startswith('COL_'):
+    if o.name.startswith('COL_') and o.library is None:
         o.hide_set(True)
 sfx = '_draft' if DRAFT else ''
 json.dump(_nz(C), open(os.path.join(OUT, f'kpp_contract{sfx}.json'), 'w'), indent=1, ensure_ascii=False)
@@ -444,26 +592,29 @@ for p in C['parts'].values():
     kinds[p['kind']] = kinds.get(p['kind'], 0) + 1
 INFO['contract'] = dict(parts=len(C['parts']), sockets=len(C['sockets']), colliders=len(C['colliders']), kinds=kinds)
 log('contract', INFO['contract'])
-for o in [o for o in bpy.data.objects if o.type == 'MESH']:
+for o in [o for o in bpy.data.objects if o.type == 'MESH' and o.library is None]:
     uvs = o.data.uv_layers
     if 'PSX' in uvs:
         for u in [u for u in uvs if u.name != 'PSX']:
             uvs.remove(u)
         uvs['PSX'].active = True
         uvs['PSX'].active_render = True
-meshes = [o for o in bpy.data.objects if o.type == 'MESH' and not o.name.startswith('COL_')]
+meshes = [o for o in bpy.data.objects if o.type == 'MESH' and not o.name.startswith(('COL_', 'Preview_')) and o.library is None]
 INFO['tris'] = sum(P.tri_count(o) for o in meshes)
 INFO['tris_by_atlas'] = {}
 for o in meshes:
     a = K.ATLAS.get(o.name, '?')
     INFO['tris_by_atlas'][a] = INFO['tris_by_atlas'].get(a, 0) + P.tri_count(o)
 INFO['objects'] = sorted(o.name for o in meshes)
-INFO['empties'] = sorted(o.name for o in bpy.data.objects if o.type == 'EMPTY')
-booth = [o for o in meshes if not (o.name in ('Barrier', 'Gate') or (o.parent and o.parent.name in ('Barrier', 'Gate')) or
-                                   (o.parent and o.parent.parent and o.parent.parent.name in ('Barrier', 'Gate')))]
+INFO['empties'] = sorted(o.name for o in bpy.data.objects if o.type == 'EMPTY' and o.library is None)
+RTS = ('Barrier', 'Gate', 'Barrier_Manual')
+booth = [o for o in meshes if not (o.name.startswith('Preview_') or o.name in RTS or (o.parent and o.parent.name in RTS) or
+                                   (o.parent and o.parent.parent and o.parent.parent.name in RTS))]
 lo_, hi_ = P.world_bbox(booth)
 INFO['bbox_booth'] = [lo_.round(3).tolist(), hi_.round(3).tolist()]
 log('tris', INFO['tris'], INFO['tris_by_atlas'], 'bbox (the booth)', INFO['bbox_booth'])
-bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT, f'kpp{sfx}.blend'))
+for lib in bpy.data.libraries:                       # the kit is linked as ../snow_kit/snow_kit.blend (the package layout)
+    lib.filepath = '//../snow_kit/snow_kit.blend'
+bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT, f'kpp{sfx}.blend'), relative_remap=False)
 json.dump(INFO, open(os.path.join(OUT, f'kpp{sfx}.json'), 'w'), indent=1)
 log('saved kpp' + sfx)

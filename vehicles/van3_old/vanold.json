@@ -1,0 +1,21 @@
+{
+ "removed": [
+  "Winch_Drum",
+  "Winch_Clutch",
+  "Winch_Hook"
+ ],
+ "body_objects": [
+  "doorL",
+  "doorP",
+  "doorSalon",
+  "doorZL",
+  "dooZP",
+  "FuelFlap_L",
+  "FuelFlap_R",
+  "Kuzov",
+  "RoofHatch"
+ ],
+ "texture": "tex/T_VanOld_Body_BaseColor.png",
+ "replaces": "tex/T_Van_Body_BaseColor.png (van3)",
+ "material": "M_VanOld_Body (instead of M_Van_Body)"
+}

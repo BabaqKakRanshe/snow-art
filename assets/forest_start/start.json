@@ -1,0 +1,94 @@
+{
+ "atlases": {
+  "Start": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 131.09,
+   "uv_fill": 0.329,
+   "colours": 64
+  },
+  "StartProps": {
+   "size": 256,
+   "ppm": 51.9,
+   "area_m2": 9.9,
+   "uv_fill": 0.407,
+   "colours": 64
+  }
+ },
+ "lamps": 2,
+ "tris": 7369,
+ "tris_by_root": {
+  "StartBooth": 1202,
+  "StartCar": 3740,
+  "StartLamp": 852,
+  "StartTrash": 679,
+  "StartTyres": 896
+ },
+ "objects": {
+  "StartBooth": [
+   "Booth_Glass",
+   "Booth_Sign",
+   "Glow_Booth",
+   "IX_Door",
+   "LIGHT_Booth",
+   "Lamp_Booth",
+   "Lens_Booth",
+   "StartBooth"
+  ],
+  "StartCar": [
+   "Car_Glass",
+   "IX_CarDoor",
+   "IX_CarDoor_Glass",
+   "StartCar"
+  ],
+  "StartLamp": [
+   "Glow_Flood",
+   "LIGHT_Flood",
+   "Lamp_Flood",
+   "Lens_Flood",
+   "StartLamp"
+  ],
+  "StartTyres": [
+   "StartTyres"
+  ],
+  "StartTrash": [
+   "StartTrash"
+  ]
+ },
+ "display_offset": {
+  "StartBooth": [
+   -7.0,
+   0.0,
+   0.0
+  ],
+  "StartCar": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "StartLamp": [
+   5.5,
+   -2.0,
+   0.0
+  ],
+  "StartTyres": [
+   5.5,
+   2.0,
+   0.0
+  ],
+  "StartTrash": [
+   9.0,
+   0.0,
+   0.0
+  ]
+ },
+ "contract": {
+  "parts": 17,
+  "sockets": 11,
+  "colliders": 19,
+  "kinds": {
+   "static": 15,
+   "hinge": 2
+  }
+ }
+}

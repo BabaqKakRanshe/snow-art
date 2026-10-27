@@ -1,7 +1,7 @@
 """Sheets for the far points: A the dishes; B the radome and the relay mast; C the weather station and the fire lookout;
 D the pump house and the chapel; E the cabin and the campsite; F Update 3 and now (Update 3's models from the same
 cameras, its previews Dish1 and Chapel and the same viewpoints now); G the atlases and the sign panel.
-python3 make_sheets_far.py [out_dir]"""
+python3 make_sheets_far.py [out_dir] [--only A,C,G] (1.1: only the sheets named)"""
 import os, sys, json
 import numpy as np
 from PIL import Image, ImageDraw
@@ -10,7 +10,9 @@ import make_sheets_main as MSM
 import make_sheets_road as MSR
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'sheets')
+ARGS = [a for a in sys.argv[1:] if not a.startswith('--') and (sys.argv.index(a) == 0 or sys.argv[sys.argv.index(a) - 1] != '--only')]
+ONLY = set(sys.argv[sys.argv.index('--only') + 1].split(',')) if '--only' in sys.argv else None
+OUT = ARGS[0] if ARGS else os.path.join(HERE, 'sheets')
 os.makedirs(OUT, exist_ok=True)
 R = os.path.join(HERE, 'rend', 'far')
 SCR = '/tmp/claude-0/-home-claude/51fa62a7-1078-590a-959e-7ab38193aafa/scratchpad/'
@@ -53,7 +55,9 @@ def tris(*names):
 if __name__ == '__main__':
     at = INFO['atlases']
     u3t = INFO['u3_tris']
-    sheet('Дальние точки — антенны',
+    want = lambda letter: ONLY is None or letter in ONLY
+    if want('A'):
+      sheet('Дальние точки — антенны',
           'Пять антенн на местах обновления 3: цоколь, опора со стремянкой, поворотная голова, вилка и вал угла места '
           'за отражателем, отражатель на ребристом каркасе, облучатель с красным огнём; шкаф оборудования с дверцей, '
           'табличка, фонарь двора; день и ночь',
@@ -62,7 +66,7 @@ if __name__ == '__main__':
            (img('dish1_feed'), 'облучатель на четырёх растяжках, огонь — место обновления 3'),
            (img('dish1_yoke'), 'вилка, подшипники, вал угла места, приводы'),
            (img('dish1_base'), 'цоколь, шкаф, табличка ANTENNENANLAGE, фонарь'),
-           (img('dish1_cab'), 'шкаф открыт: модули, светодиоды (M_LEDOff), дверца — наружу на 100°'),
+           (img('dish1_cab'), 'шкаф открыт: модули, магнитофон TapeDeck (forest_devices), светодиоды, дверца — на 100°'),
            (img('dish2'), 'Dish_2: та же сетка, 42°'), (img('dish5'), 'Dish_5: 36°'),
            (img('dish3'), 'Dish_3: 12 м, 45°'), (img('dish4'), 'Dish_4: 12 м, 40°'),
            (img('map_dish1'), 'Dish_1 на рельефе обновления 3'),
@@ -72,7 +76,8 @@ if __name__ == '__main__':
            ('Треугольников', f'Dish_1 {tris("Dish_1", "IX_CabinetDoor_2")} (обновление 3 — {thou(u3t["Dish_1"])}), '
                              f'Dish_3 {tris("Dish_3", "IX_CabinetDoor_4")} ({thou(u3t["Dish_3"])})')],
           'far_A_dishes.jpg')
-    sheet('Дальние точки — радом и ретранслятор',
+    if want('B'):
+      sheet('Дальние точки — радом и ретранслятор',
           'Радом на 16-метровой башне: стремянка в ограждении, площадка, купол из панелей, огонь на вершине, укрытие с '
           'кондиционером. Ретранслятор: мачта 42 м, огни на 21 и 42 м, антенна-барабан, панельные антенны, укрытие, '
           'двор за рабицей с воротами',
@@ -88,11 +93,12 @@ if __name__ == '__main__':
                              f'{tris("RelayMast")} ({thou(u3t["RelayMast"])})')],
           'far_B_radome_relay.jpg')
     lk = CHK['lookout']
-    sheet('Дальние точки — метеостанция и пожарная вышка',
+    if want('C'):
+      sheet('Дальние точки — метеостанция и пожарная вышка',
           'Метеостанция за белым штакетником; вышка 22 м: лестница обновления 3 (те же ступени и площадки), косоуры и '
           'перила, лестничный проём в полу кабины, трап, ограждение, кабина с окнами, пеленгатор',
           [(img('meteo'), 'метеостанция: ограда, будка, мачта, осадкомер, регистратор'),
-           (img('meteo_screen'), 'психрометрическая будка с жалюзи'), (img('meteo_mast'), 'анемометр и флюгер'),
+           (img('meteo_screen'), 'будка — MeteoScreen из forest_devices: дверца на север'), (img('meteo_mast'), 'анемометр и флюгер'),
            (img('meteo_gate'), 'калитка и табличка WETTERSTATION'), (img('map_meteo'), 'на рельефе обновления 3'),
            (img('lookout'), 'вышка: ноги, связи, лестница, кабина'), (img('lookout_stairs'), 'марши обновления 3, косоуры, перила'),
            (img('lookout_cab'), 'кабина: обшивка, окна, шатровая крыша, громоотвод'),
@@ -100,13 +106,15 @@ if __name__ == '__main__':
            (img('lookout_in'), 'в кабине: проём с ограждением, пеленгатор, табурет'),
            (img('lookout_landing'), 'проём сверху: трап, верхняя площадка'), (img('map_lookout'), 'на рельефе обновления 3')],
           [('Атлас', f'Meteo {at["Meteo"]["size"]}, Lookout {at["Lookout"]["size"]}'),
-           ('Треугольников', f'метеостанция {tris("MeteoStation")} (обновление 3 — {thou(u3t["MeteoStation"])}), вышка '
+           ('Треугольников', f'метеостанция {tris("MeteoStation")} без будки (будка — 1 328, forest_devices; обновление 3 — '
+                             f'{thou(u3t["MeteoStation"])}), вышка '
                              f'{tris("LookoutTower")} ({thou(u3t["LookoutTower"])})'),
            ('Подъём', f'голова игрока на верхней площадке, трапе и в кабине — зазор не меньше '
                       f'{ru(lk["top"]["min_clearance_m"] * 100, 0)} см; лестница обновления 3 — декоративная '
                       f'({ru(min(lk["u3_stairs"]["angle_deg"]), 0)}–{ru(max(lk["u3_stairs"]["angle_deg"]), 0)}°, марши друг над другом)')],
           'far_C_meteo_lookout.jpg')
-    sheet('Дальние точки — насосная и часовня',
+    if want('D'):
+      sheet('Дальние точки — насосная и часовня',
           'Кирпичная насосная у реки со стальной дверью; часовня на каменном цоколе: колокольня, дверь на кованых '
           'полосах, скамьи, алтарь и свечи, погост',
           [(img('pump'), 'насосная: кирпич, плоская крыша, дверь, табличка PUMPSTATION'),
@@ -120,7 +128,8 @@ if __name__ == '__main__':
            ('Треугольников', f'насосная {tris("PumpHouse", "IX_PumpDoor_7")} (обновление 3 — {thou(u3t["PumpHouse"])}), '
                              f'часовня {tris("Chapel", "IX_ChapelDoor_8")} ({thou(u3t["Chapel"])})')],
           'far_D_pump_chapel.jpg')
-    sheet('Дальние точки — избушка и стоянка',
+    if want('E'):
+      sheet('Дальние точки — избушка и стоянка',
           'Сруб с конопаткой в пазах, крыльцо, печь, нары; брошенная стоянка: обрушенная палатка, кострище, вещи, фонарик',
           [(img('cabin'), 'избушка: сруб, крыльцо, окно, поленница'), (img('cabin_back'), 'сзади: фронтон, труба'),
            (img('cabin_in'), 'внутри: печь, стол, нары, окно'), (img('map_cabin'), 'на рельефе обновления 3'),
@@ -140,7 +149,8 @@ if __name__ == '__main__':
     for vp, vn in (('Forest_Dish1.jpg', 'map_vp_dish1_night'), ('Forest_Chapel.jpg', 'map_vp_chapel_night')):
         tiles.append((u3(os.path.join(U3P, vp)), f'обновление 3, превью {vp[7:-4]} (ночь, с деревьями)'))
         tiles.append((img(vn), 'теперь, та же камера (ночь): только рельеф и модели пакета'))
-    sheet('Дальние точки — обновление 3 и теперь',
+    if want('F'):
+      sheet('Дальние точки — обновление 3 и теперь',
           'Слева — модели обновления 3 (FBX в цветах материалов) и его превью карты, справа — перестроенные с тех же '
           'камер; места, размеры, пивоты дверей и огни — те же',
           tiles, [], 'far_F_u3_vs_now.jpg')
@@ -157,5 +167,6 @@ if __name__ == '__main__':
                                   F(16), 190)):
         d.text((404, 40 + j * 22), line, fill=DIM, font=F(16))
     tiles.append((pt, None))
-    sheet('Дальние точки — атласы', 'По 64 цвета, AO в цвете, дизеринг 4×4, фильтр «точка»; до 51,3 px/м (генераторная)',
+    if want('G'):
+      sheet('Дальние точки — атласы', 'По 64 цвета, AO в цвете, дизеринг 4×4, фильтр «точка»; до 51,3 px/м (генераторная)',
           tiles, [], 'far_G_atlases.jpg', cols=2, W=600, H=420)

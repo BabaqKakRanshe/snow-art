@@ -8,8 +8,9 @@
                 the equipment shelter with its door and air conditioner, the cable bridge;
   RelayMast   - the 42 m lattice mast (Update 3's taper), beacons at 21 / 42 m, the microwave drum, three panel antennas, the
                 feeder ladder, the shelter, the fenced compound with its gate and sign;
-  MeteoStation - the weather station: the white picket enclosure with its gate, the louvred screen, the wind mast with
-                the anemometer and the vane (guyed), the rain gauge, the logger with its solar panel, the snow stake;
+  MeteoStation - the weather station: the white picket enclosure with its gate, the wind mast with the anemometer and the
+                vane (guyed), the rain gauge, the logger with its solar panel, the snow stake; its Stevenson screen is
+                forest_devices' MeteoScreen (1.1: Mount_MeteoScreen, an instance in far.blend);
   LookoutTower - the 22 m fire lookout: four legs, X-bracing, Update 3's stairs (the same treads and landings; decorative,
                 as in Update 3: steep flights stacked one over another), stringers and handrails, a stairwell in the cab floor over the last flight, a ship ladder up to the floor, the cab (boarded
                 walls, windows: M_GlassDirty, pyramid roof, the fire finder), the lightning rod;
@@ -786,42 +787,8 @@ def meteostation():
     # the sign on the gate (faces -y)
     kf = kb('MeteoStation_Sign', 'panel')
     sign_plate(k, kf, (0.0, -F_ - 0.03, 0.55), 0.72, 0.26, uv('meteo'), zone=Z_MSBACK)
-    # the screen: four legs braced, the louvred box, the double roof, the door to the north, a step
-    sc_ = mt['screen']
-    lx, ly = sc_['legs']
-    for xs in (-1, 1):
-        for ys in (-1, 1):
-            k.box(xs * lx - 0.03, xs * lx + 0.03, ys * ly - 0.03, ys * ly + 0.03, -0.3, sc_['leg_top'], Z_MLEG)
-        k.box(xs * lx - 0.02, xs * lx + 0.02, -ly, ly, 0.45, 0.50, Z_MLEG)
-    bw, bd, bz0, bz1 = sc_['box']
-    box6(k, (-bw / 2 + 0.03, -bd / 2 + 0.03, bz0), (bw / 2 - 0.03, bd / 2 - 0.03, bz1), Z_MSCREEN)
-    for xs in (-1, 1):                                                   # the corner posts
-        for ys in (-1, 1):
-            xa, xb = (bw / 2 - 0.03, bw / 2) if xs > 0 else (-bw / 2, -bw / 2 + 0.03)
-            ya, yb = (bd / 2 - 0.03, bd / 2) if ys > 0 else (-bd / 2, -bd / 2 + 0.03)
-            k.box(xa, xb, ya, yb, bz0, bz1, Z_MSCREEN)
-    for side, (n_, t_, L_) in enumerate((((0, -1, 0), (1, 0, 0), bw), ((0, 1, 0), (1, 0, 0), bw), ((1, 0, 0), (0, 1, 0), bd),
-                                         ((-1, 0, 0), (0, 1, 0), bd))):
-        n_, t_ = V(n_), V(t_)
-        base = n_ * ((bd if abs(n_.y) > 0 else bw) / 2 - 0.035)
-        for zz in np.arange(bz0 + 0.06, bz1 - 0.04, 0.075):              # the louvres: slats at 45 deg
-            c = base + V(0, 0, zz)
-            Rl = Matrix((t_, n_, V(0, 0, 1))).transposed() @ Matrix.Rotation(math.radians(45), 3, 'X')
-            obox(k, c, (L_ - 0.07, 0.06, 0.008), Z_MLOUVRE, Rl)
-    rw, rd, rz0, rz1 = sc_['roof']
-    box6(k, (-rw / 2, -rd / 2, rz0), (rw / 2, rd / 2, rz1), Z_MSCREEN)
-    for xs in (-1, 1):
-        for ys in (-1, 1):
-            k.box(xs * 0.30 - 0.015, xs * 0.30 + 0.015, ys * 0.24 - 0.015, ys * 0.24 + 0.015, bz1, rz0, Z_MSCREEN)
-    rz2 = rz1 + 0.05
-    box6(k, (-rw / 2 - 0.03, -rd / 2 - 0.03, rz2), (rw / 2 + 0.03, rd / 2 + 0.03, rz2 + 0.03), Z_MSCREEN)
-    for xs in (-1, 1):
-        for ys in (-1, 1):
-            k.box(xs * 0.36 - 0.015, xs * 0.36 + 0.015, ys * 0.28 - 0.015, ys * 0.28 + 0.015, rz1, rz2, Z_MSCREEN)
-    for zz in (bz0 + 0.12, bz1 - 0.12):                                  # the door's hinges and the turn button (+y)
-        k.box(-bw / 2 + 0.06, -bw / 2 + 0.14, bd / 2 - 0.035, bd / 2 - 0.02, zz - 0.02, zz + 0.02, Z_MINSTR)
-    k.box(bw / 2 - 0.10, bw / 2 - 0.06, bd / 2 - 0.035, bd / 2 - 0.015, (bz0 + bz1) / 2 - 0.02, (bz0 + bz1) / 2 + 0.02, Z_MINSTR)
-    box6(k, (-0.25, bd / 2 + 0.25, 0.0), (0.25, bd / 2 + 0.55, 0.30), Z_MLEG)                     # the step (+y side)
+    # the Stevenson screen (1.1): forest_devices' MeteoScreen on Mount_MeteoScreen (its door to the north) - the station keeps
+    # only the logger's cable to the screen's leg
     # the wind mast (guyed), the cross arm, the cup anemometer, the vane
     mx, my, mh = mt['mast']
     chamfer_box(k, (mx - 0.25, my - 0.25, -0.5), (mx + 0.25, my + 0.25, 0.08), 0.02, Z_MCONC)
@@ -875,8 +842,9 @@ def meteostation():
            caps=False)
     sx_, sy_ = 2.6, -2.8
     k.box(sx_ - 0.025, sx_ + 0.025, sy_ - 0.025, sy_ + 0.025, -0.3, 2.0, Z_MSTAKE)
-    part('MeteoStation', 'static', (0, 0, 0), note='weather station: picket enclosure and gate, screen, wind mast, rain '
-                                                   'gauge, logger and solar panel, snow stake')
+    part('MeteoStation', 'static', (0, 0, 0), note='weather station: picket enclosure and gate, wind mast, rain gauge, '
+                                                   'logger and solar panel, snow stake; the Stevenson screen is forest_devices\' '
+                                                   'MeteoScreen on Mount_MeteoScreen (1.1)')
     part('MeteoStation_Sign', 'static', (0.0, -F_ - 0.03, 0.55), parent='MeteoStation', note='the gate\'s sign (panel)')
 
 

@@ -1,23 +1,29 @@
-"""Checkpoint (KPP) at the station gate, Forest map prologue (Forest_Opening.json S6, X05): the Update 3 guard booth, barrier
-and sliding gate rebuilt in the generator shed's construction and finishes, the booth in grey-green paint (the station colour).
-  booth (root Checkpoint): concrete pad with yellow-black bollards; board-and-batten walls with white trims and corner boards;
-  a mono-pitch corrugated roof falling to the back on open spruce rafters, white fascia and barge boards, the KONTROLLPUNKT /
-  CHECKPOINT board on the front fascia; a ribbon window of three lights in the front, the road-side window with the pass sash
-  (IX_BoothWindow_302) between two fixed panes and a counter board outside, one window on the left (it watches the walkway
-  past the booth); the door in the back (IX_BoothDoor_74) hung outside on strap hinges like the shed's, boarded, a white Z
-  frame, glazed above; the phone bell, the CCTV camera and the caged bulkhead outside; inside the shed's birch-ply lining,
-  open rafters, a concrete floor; the L desk (front and road side) with the drawer unit (IX_Drawer_75..77), the grey filing
-  cabinet (IX_Drawer_78..80), the key cabinet (IX_KeyBoxDoor_303) with five labelled hooks (the game's four keys hang there,
-  the Stationsleiter hook is empty), the corkboard, the radio, the CCTV monitor, the rotary phone, the swivel chair, hi-vis
-  vests, the extinguisher, a convector heater, the wall clock (stopped at 2:40), the flickering fluorescent batten;
-  barrier (root Barrier, 7 m out on the road): concrete foot, a post beside the boom, the striped boom with its counterweight
-  (IX_BarrierArm_82, lifts 0..80), the rest post with the fork and the two eyes the game's padlock locks together;
-  gate (root Gate, beside the booth): a ground-rail sliding leaf (IX_Gate_81, 6.6 m) running 0.22 m inside the fence line on
-  two V wheels, guided at the top by two roller posts, chain-link infill (tiled alpha material), barbed wire, the SPERRGEBIET
-  sign; the receiving post with its catch, the end stop, a fixed fence panel that closes the line to the map's fence.
+"""Checkpoint (KPP) v2 at the station road, Forest map prologue (Forest_Opening.json S6, X05; QUESTIONS_KPP.md «Решено»):
+the v1 booth, barrier and gate (the Update 3 places, the generator shed's construction and finishes, the station's grey-green)
+made electric, with the small things as snow_kit instances (snowkit_spec / SNOW_KIT_CONTRACT.md) instead of KPP meshes.
+  booth (root Checkpoint): as v1 - pad, bollards, board-and-batten walls, the mono-pitch roof, the KONTROLLPUNKT /
+  CHECKPOINT board, the ribbon window, the road-side pass window (IX_BoothWindow_302), the left window, the back door
+  (IX_BoothDoor_74) now held by the electric lock (Kit_DoorLock on the leaf, Kit_DoorLock_Strike on the trim), the desks,
+  drawers (IX_Drawer_75..80), the key cabinet (IX_KeyBoxDoor_303; the Schranke hook is gone), corkboard, heater, clock,
+  first aid, vests, extinguisher, radio; on the desk by the pass window two CRT monitors (Kit_Monitor_CRT) and the console
+  (Kit_Console_2 with two Kit_Console_Button: SCHRANKE / BARRIER, TOR / GATE); the phone is Kit_Phone (same place, the
+  names Phone / Phone_Receiver / Phone_Dial kept); outside: the distribution cabinet Kit_Cabinet_Power on the back wall
+  (the van's battery, two clamps, NETZ / BATTERIE), the conduit up to the roof stand Kit_RoofStand through the back eave,
+  the service drop from the transformer pole (Kit_Pole_Trafo) behind the booth, the line pole Kit_Pole up the road; the
+  barrier's cable in conduit (Kit_Conduit_*) on the ground to the junction box (Kit_JunctionBox) on the road-side wall;
+  the barrier camera (Kit_Camera_BracketWall + Kit_Camera_Head) under the front eave.
+  barrier (root Barrier, 7 m out on the road): electric - the motor cabinet with the beacon (Kit_Beacon), the white-red boom
+  (IX_BarrierArm_82: same pivot, axis and 0..80 as v1), the rest post with its fork; the v1 hand barrier stays as its own
+  root Barrier_Manual (its parts renamed _Manual), off the map in this file.
+  gate (root Gate, beside the booth here, at the yard in the game): a solid painted sliding leaf (IX_Gate_81: same origin,
+  axis and 0..6.6 m as v1) on a ground rail 0.50 m inside the wall line, the SPERRGEBIET / VIDEOÜBERWACHT plate, concrete
+  end posts in the wall line (the Update 7 PO-2 runs end at them), the receiving post, the guide posts, the drive cabinet
+  with its pinion on the leaf's rack, its cable in conduit up the line pole (Kit_Pole) with a junction box, the gate camera
+  (Kit_Camera_BracketPole + Kit_Camera_Head) on that pole.
 Frame (the Update 3 Checkpoint prefab's): x toward the road, y toward the back (the door, the station side), z up, metres;
-origin = the middle of the pad on the ground; floor z = 0.15.  Unity: (x, y, z) -> (-x, z, -y), angle -> -angle."""
-import math
+origin = the middle of the pad on the ground; floor z = 0.15.  Unity: (x, y, z) -> (-x, z, -y), angle -> -angle.
+Kit instances: KIT_INST (name -> item, parent, 4x4 in this file's world, IX ids); kpp_build places them as KIT_ empties."""
+import math, os, json
 from math import ceil as math_ceil
 from mathutils import Vector, Matrix
 import van3_mech as VM
@@ -34,7 +40,8 @@ TAU = 2 * math.pi
 # ---------------------------------------------------------------- dimensions (booth frame)
 FLOOR = 0.15
 PAD = (-3.05, 3.05, -2.55, 2.55)                       # concrete pad, top = floor
-PAD_Z0 = -0.25                                         # its sides go a little into the ground (the ground is ~-0.15 round it)
+PAD_Z0 = -0.45                                         # its sides go into the ground (v2: deeper - in the game the ground
+                                                       # is 0.39 down at the front, 0.02 at the back)
 X0, X1, Y0, Y1 = -2.10, 2.10, -1.60, 1.60              # booth outer faces
 T = 0.12
 IX0, IX1, IY0, IY1 = X0 + T, X1 - T, Y0 + T, Y1 - T    # room 3.96 x 2.96
@@ -61,7 +68,7 @@ DESK_R = (1.38, IX1, IY0, 0.96)
 DRAW = dict(x0=1.40, x1=IX1, y0=0.53, y1=0.96)         # drawer unit under the road desk (fronts face -x)
 CAB = dict(x0=IX0, x1=-1.38, y0=0.97, y1=1.44, z1=1.20)   # filing cabinet in the back-left corner (fronts face +x)
 KEYBOX = dict(x0=-0.77, x1=-0.25, y0=1.43, y1=IY1, z0=1.53, z1=2.07)   # Update 3's place; door hinge at x0
-HOOKS = [('Schranke', -0.70), ('Hauptgebaeude', -0.60), ('Garage', -0.50), ('Generator', -0.40), ('Stationsleiter', -0.30)]
+HOOKS = [('Hauptgebaeude', -0.60), ('Garage', -0.50), ('Generator', -0.40), ('Stationsleiter', -0.30)]   # v2: no Schranke
 HOOK_Y, HOOK_Z = 1.473, 1.95                           # the keys' hanging points (Forest_Opening.json)
 HEATER = dict(y0=-0.80, y1=-0.10, z0=0.26, z1=0.68)
 PHONE = Vector((1.67, -0.55, DESK_TOP))                # zone Phone_KPP (Update 3)
@@ -91,12 +98,172 @@ FENCE_X = (0.20, 2.40)                                 # gate frame: the fixed p
 # shed's, then the KPP's own; KppProps atlas: the small things
 (Z_BOLLARD, Z_DESK, Z_CABGREY, Z_KEYBOX, Z_CORK, Z_BOOM, Z_BARPOST, Z_HEATER, Z_RUBBER_K, Z_GATEROLL, Z_CONC,
  Z_BARBED) = range(140, 152)                           # Kpp (the booth) and KppYard (the barrier and the gate) share them
+Z_BARCAB, Z_GATEP = 152, 153                         # v2: the motor cabinets (light grey), the gate leaf (station green)
 KPP_ZONES = [Z_SLAB, Z_FLOOR, Z_CLAD, Z_TRIMW, Z_LINING, Z_TIMBER, Z_ROOF, Z_ROOFUNDER, Z_DOOR, Z_DOORIN, Z_STEELBLK, Z_GALV,
-             Z_ENAMEL_IN] + list(range(140, 152))
+             Z_ENAMEL_IN] + list(range(140, 154))
 (Z_PHONE, Z_VEST, Z_EXTP, Z_CRT, Z_CHAIR, Z_BLACKP, Z_BELLP, Z_PAPERP, Z_MUGP, Z_FLASK, Z_BINDER, Z_RADIO, Z_CAMP,
  Z_CHROMEP, Z_FAID) = range(170, 185)
 PROP_ZONES = list(range(170, 185))
 FAID = dict(x0=-0.05, x1=0.25, y0=IY1 - 0.10, z0=1.38, z1=1.62)     # first-aid box under the clock
+
+# ---------------------------------------------------------------- v2: the barrier, the gate, the hand barrier, the kit
+BARRIER_MANUAL_PLACE = (Vector((3.10, -14.00, -0.3867)), 0.0)   # the v1 hand barrier: its own root, off the map, 7 m further out
+WALLBOX = Vector((-1.55, -0.095, 0.95))                # barrier frame: Kit_JunctionBox on the wall's end panel (street face)
+BAR2 = dict(pad=(-0.40, 0.40, -0.40, 0.50), cab=(-0.18, 0.18, 0.06, 0.38, 0.15, 1.32), rest_pad=(5.40, 5.75, -0.20, 0.20))
+GATE2 = dict(ly=0.50, z=(0.12, 2.40), post_e=(-7.45, -7.15), post_w=(0.15, 0.45), post_h=2.70, rail=(-7.10, 6.80),
+             drive=(-0.32, -0.02, 0.64, 0.90, 0.03, 0.42), guide_x=0.04, guide_x_out=-0.10, pole=(1.60, 2.20),
+             campole=(0.95, 1.45), camcond_y=0.80)
+# campole: the gate camera's own mast (Kit_Mast) inside the wall, west of the opening, clear of the parked leaf, the drive
+# and the line pole; its cable along the ground at y camcond_y into the drive's base (v2.1)
+# guide_x_out: the street-side guide stand sits 0.14 m further into the opening than the yard-side one, so that it clears
+# the west run's start socket (U7 5649: x -0.025..0.925, y up to 0.375); the yard-side one stays clear of the drive
+CAB_POS = Vector((-1.20, Y1, 0.85))                     # Kit_Cabinet_Power on the back wall outside (its origin: back middle)
+RS_POS = Vector((-1.20, Y1, 1.55))                      # Kit_RoofStand on the back wall (its origin: the pipe's bottom end)
+JB_POS = Vector((X1, -1.30, 0.55))                      # Kit_JunctionBox on the road-side wall (the barrier's cable)
+CAMPOLE_B = Vector((1.50, -5.50, -0.386))               # v2.1: the barrier camera's own mast (Kit_Mast) between the booth
+                                                        # and the barrier (ground from the game terrain: kpp2_ground.py)
+CAMB_T = Vector((6.00, -9.50, 0.30))                    # it looks over the boom at the road outside, where cars stop
+FLOODB_T = Vector((5.00, -8.00, 0.0))                   # the floodlight under it lights the boom and the road in front of it
+POLE1 = Vector((-1.50, 9.00, -0.107))                   # Kit_Pole_Trafo behind the booth (ground from the game terrain)
+POLE2 = Vector((-0.50, 45.00, -2.035))                  # Kit_Pole up the road (the line goes on toward the base)
+MON_A = (Vector((1.19, -1.245, DESK_TOP)), 192.0)       # Kit_Monitor_CRT: the barrier camera
+MON_B = (Vector((1.62, -1.245, DESK_TOP)), 200.0)       # the gate camera
+CONSOLE = (Vector((1.66, -0.825, DESK_TOP)), -90.0)      # Kit_Console_2 on the road-side desk under the pass window
+IX_IDS = {'Btn_Schranke': {'IX_ConsoleButton': 312}, 'Btn_Tor': {'IX_ConsoleButton': 313},
+          'PowerCabinet': {'IX_CabinetDoor': 314, 'IX_CabinetSwitch': 315, 'IX_CabinetClamp_Pos': 316, 'IX_CabinetClamp_Neg': 317}}
+
+# ---------------------------------------------------------------- kit instances
+KIT_CONTRACT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out', 'snow_kit_contract.json')))
+KIT_INST = {}                     # name -> dict(item, parent, M (4x4 in this file's world), ids, note)
+
+
+def R_yaw_tilt(yaw=0.0, tilt=0.0):
+    """the item's front (-y) turned to (sin yaw, -cos yaw) in the plan, then tipped down by tilt (deg)"""
+    return Matrix.Rotation(math.radians(yaw), 3, 'Z') @ Matrix.Rotation(math.radians(tilt), 3, 'X')
+
+
+def M_of(pos, yaw=0.0, tilt=0.0, R=None, sx=1.0):
+    R = R if R is not None else R_yaw_tilt(yaw, tilt)
+    return Matrix.Translation(Vector(pos)) @ R.to_4x4() @ Matrix.Diagonal((sx, 1.0, 1.0, 1.0))
+
+
+def kit(name, item, parent, M, note='', ids=None):
+    assert item in KIT_CONTRACT['items'], item
+    assert name not in KIT_INST and name not in CONTRACT['parts'], name
+    KIT_INST[name] = dict(item=item, parent=parent, M=M, ids=ids if ids is not None else IX_IDS.get(name, {}), note=note)
+    return M
+
+
+def ksock(item, sock):
+    s = KIT_CONTRACT['sockets'][sock]
+    assert s['item'] == item, (item, sock)
+    return s
+
+
+def at_sock(name, sock):
+    """world point of a kit socket of instance `name`"""
+    return KIT_INST[name]['M'] @ Vector(ksock(KIT_INST[name]['item'], sock)['pos'])
+
+
+def dir_sock(name, sock, key='dir'):
+    return (KIT_INST[name]['M'].to_3x3() @ Vector(ksock(KIT_INST[name]['item'], sock)[key])).normalized()
+
+
+def M_slot(parent_name, sock):
+    """frame on a kit slot socket (pos, dir -> +z, up -> +y) of instance parent_name, in this file's world"""
+    s = ksock(KIT_INST[parent_name]['item'], sock)
+    z, y = Vector(s['dir']).normalized(), Vector(s['up']).normalized()
+    x = y.cross(z).normalized()
+    return KIT_INST[parent_name]['M'] @ Matrix.Translation(Vector(s['pos'])) @ Matrix((x, y, z)).transposed().to_4x4()
+
+
+def aim(src, dst):
+    """yaw, tilt that point an item's front (-y) from src to dst"""
+    d = Vector(dst) - Vector(src)
+    yaw = math.degrees(math.atan2(d.x, -d.y))
+    tilt = math.degrees(math.atan2(-d.z, math.hypot(d.x, d.y)))
+    return yaw, tilt
+
+
+CR = 0.016                                              # conduit radius (Kit_Conduit_*)
+
+
+def camera_on_pole(tag, pole, target):
+    """Kit_Camera_BracketPole on the mast's upper side mount (on its axis), turned about it toward target; Kit_Camera_Head on
+    the bracket aimed at target (pan and tilt are the head's); names CamBracket_<tag>, Cam_<tag>"""
+    mb = at_sock(pole, 'Mount_Side_1')
+    kit('CamBracket_' + tag, 'Kit_Camera_BracketPole', pole, M_of(mb, yaw=aim(mb, target)[0]),
+        note='camera bracket on the pole: turned about the pole\'s axis toward where the camera looks')
+    mh = at_sock('CamBracket_' + tag, 'Mount_Head_Pole')
+    yaw, tilt = aim(mh + Vector((0, 0, 0.08)), target)
+    mon = 'Monitor_' + tag
+    kit('Cam_' + tag, 'Kit_Camera_Head', 'CamBracket_' + tag, M_of(mh, yaw=yaw, tilt=tilt),
+        note=f'the {tag.lower()} camera: {mon} shows it (CAM_{tag})')
+
+
+def flood_on_pole(name, pole, target, note):
+    """Kit_Mast_Flood on the mast's lower side mount, turned about its axis toward target (its head is tipped 30 down)"""
+    mb = at_sock(pole, 'Mount_Side_2')
+    kit(name, 'Kit_Mast_Flood', pole, M_of(mb, yaw=aim(mb, target)[0]), note=note)
+
+
+WIRE_SPANS = []                   # (instance, item, (instance a, socket a), (instance b, socket b))
+
+
+def wire_span(name, item, ea, eb, parent='Checkpoint'):
+    """an overhead wire as a kit model (Kit_Wire_Bare / Kit_Wire_Drop): from socket ea to socket eb, turned (yaw, pitch) and
+    scaled in x by span / the model's reference span"""
+    A, B = at_sock(*ea), at_sock(*eb)
+    L = KIT_CONTRACT['parts'][item]['span']
+    d = B - A
+    R = Matrix.Rotation(math.atan2(d.y, d.x), 3, 'Z') @ Matrix.Rotation(-math.atan2(d.z, math.hypot(d.x, d.y)), 3, 'Y')
+    kit(name, item, parent, M_of(A, R=R, sx=d.length / L), note=f'overhead wire {ea[0]} {ea[1]} -> {eb[0]} {eb[1]}: '
+                                                                  f'{d.length:.2f} m (x scale {d.length / L:.3f})')
+    WIRE_SPANS.append((name, item, ea, eb))
+
+
+def conduit_run(prefix, parent, pts, normals, entry0=None, entry1=None, clamp_every=1.0, note=''):
+    """a conduit of Kit_Conduit_* along the polyline pts (90-degree corners: elbows; straight pieces scaled in x);
+    normals[i]: the surface the i-th segment is fixed to lies along -normals[i] (clamps' feet there; None: no clamps);
+    entry0 / entry1: put a Kit_Conduit_Entry at the first / last point (the box face), pointing along the run"""
+    P = [Vector(p) for p in pts]
+    n = len(P) - 1
+    D = [(P[i + 1] - P[i]).normalized() for i in range(n)]
+    seg = []
+    for i in range(n):
+        a = P[i] + (D[i] * 0.10 if i > 0 else Vector((0, 0, 0)))
+        b = P[i + 1] - (D[i] * 0.10 if i < n - 1 else Vector((0, 0, 0)))
+        if i == 0 and entry0:
+            a = a + D[i] * 0.04
+        if i == n - 1 and entry1:
+            b = b - D[i] * 0.04
+        seg.append((a, b))
+    k = 0
+    for i, (a, b) in enumerate(seg):
+        L = (b - a).length
+        d = D[i]
+        up = normals[i] if normals[i] is not None else (Vector((0, 0, 1)) if abs(d.z) < 0.9 else Vector((1, 0, 0)))
+        up = Vector(up)
+        y_ = up.cross(d).normalized()
+        z_ = d.cross(y_).normalized()
+        Rs = Matrix((d, y_, z_)).transposed()
+        kit(f'{prefix}_S{i + 1}', 'Kit_Conduit_Straight', parent, M_of(a, R=Rs, sx=L), note=note or f'conduit {L:.2f} m')
+        if normals[i] is not None:
+            m = max(1, int(L / clamp_every))
+            for j in range(m):
+                t = (j + 0.5) / m
+                k += 1
+                kit(f'{prefix}_C{k}', 'Kit_Conduit_Clamp', parent, M_of(a.lerp(b, t), R=Rs), note='clamp')
+        if i < n - 1:
+            d2 = D[i + 1]
+            Re = Matrix((d, d2.cross(d).normalized(), d2)).transposed()
+            kit(f'{prefix}_E{i + 1}', 'Kit_Conduit_Elbow', parent, M_of(P[i + 1] - d * 0.10, R=Re), note='elbow')
+    for flag, p, d, tag in ((entry0, P[0], D[0], 'In'), (entry1, P[-1], -D[-1], 'Out')):
+        if flag:
+            z_ = Vector((0, 0, 1)) if abs(d.z) < 0.9 else Vector((1, 0, 0))
+            y_ = z_.cross(d).normalized()
+            Rg = Matrix((d, y_, d.cross(y_).normalized())).transposed()
+            kit(f'{prefix}_{tag}', 'Kit_Conduit_Entry', parent, M_of(p, R=Rg), note='gland into the box')
 
 
 def z_rb(y):
@@ -271,6 +438,11 @@ def shell():
     for zh in (0.30, 2.10):
         k.box(1.39, 1.43, Y1 + 0.025, Y1 + 0.058, zh - 0.03, zh + 0.03, Z_STEELBLK)
     roof(k)
+    # v2: the rubber flashing where the roof stand's pipe goes through the back eave (the pipe 0.12 m off the wall)
+    pc = Vector((RS_POS.x, Y1 + 0.12, 0.0))
+    k.lathe(Vector((pc.x, pc.y, z_st(pc.y) - 0.004)), (0, 0, 1), [(0.0, 0.085), (0.012, 0.085), (0.075, 0.036), (0.09, 0.034)],
+            Z_STEELBLK, 12, cap0=False, cap1=False)
+    k.lathe(Vector((pc.x, pc.y, z_sb(pc.y) - 0.025)), (0, 0, 1), [(0.0, 0.034), (0.025, 0.05)], Z_STEELBLK, 12, cap0=False, cap1=False)
     return k
 
 
@@ -402,7 +574,13 @@ def door():
     quad(Sg, (0.79, yb + 0.0025, 1.285), (0, 1, 0), 0.30, 0.10, uv('sign_staff'))
     part('IX_BoothDoor_74', 'hinge', DOOR_PIV, (0, 0, -1), (0, 100), parent='Checkpoint', states=['shut', 'open'],
          note='booth door in the back wall, hung outside on strap hinges at its +x edge; opens outward (+) to 100; lever handles both '
-              'sides; not locked (Update 3: same name, hinge side and travel)')
+              'sides; v2: held shut by the electric lock (DoorLock on the leaf, DoorLockStrike on the trim) until the booth has '
+              'power, then it clicks open (Update 3: same name, hinge side and travel)')
+    zl = 1.22
+    kit('DoorLock', 'Kit_DoorLock', 'IX_BoothDoor_74', M_of((x0 + 0.065, yb, zl), yaw=180.0),
+        note='electric rim lock on the leaf\'s outer face by the latch edge (moves with the door)')
+    kit('DoorLockStrike', 'Kit_DoorLock_Strike', 'Checkpoint', M_of((0.36, Y1 + 0.025, zl), yaw=180.0),
+        note='its strike on the white door trim; the lamp shows the power (green: released)')
     part('IX_BoothDoor_74_Glass', 'static', (xm, ym, zm), parent='IX_BoothDoor_74', note='the door pane (glass material)')
     part('IX_BoothDoor_74_Sign', 'static', (0.79, yb, 1.285), parent='IX_BoothDoor_74',
          note='NUR FÜR PERSONAL / STAFF ONLY plate on the door (panel atlas)')
@@ -488,8 +666,9 @@ def furniture():
     quad(Kl, ((b['x0'] + b['x1']) / 2, dy0 - 0.0025, b['z1'] - 0.09), (0, -1, 0), 0.30, 0.08, uv('sign_keys'))
     piv = Vector((b['x0'], 1.429, 1.80))
     part('IX_KeyBoxDoor_303', 'hinge', piv, (0, 0, -1), (0, 120), parent='Checkpoint', states=['shut', 'open'],
-         note='key cabinet door: hinged at its left edge, opens into the room (+) to 120; inside the hooks Schranke, Hauptgebäude, '
-              'Garage, Generator with their keys and the empty Stationsleiter hook (Update 3: same name, pivot and travel)')
+         note='key cabinet door: hinged at its left edge, opens into the room (+) to 120; inside the hooks Hauptgebäude, Garage, '
+              'Generator with their keys and the empty Stationsleiter hook; v2: no Schranke hook (the barrier has no padlock) '
+              '(Update 3: same name, pivot and travel)')
     part('IX_KeyBoxDoor_303_Label', 'static', ((b['x0'] + b['x1']) / 2, dy0, b['z1'] - 0.09), parent='IX_KeyBoxDoor_303',
          note='SCHLÜSSEL / KEYS label on the cabinet door (panel atlas)')
     socket('Hand_KeyBoxDoor', (b['x1'] - 0.045, dy0 - 0.035, (b['z0'] + b['z1']) / 2), 'hand', parent='IX_KeyBoxDoor_303')
@@ -523,11 +702,6 @@ def props():
     P.box(ec.x - 0.07, ec.x + 0.015, ec.y - 0.012, ec.y + 0.012, ec.z + 0.54, ec.z + 0.56, Z_BLACKP)
     P.tube([ec + Vector((0.02, 0, 0.53)), ec + Vector((0.09, 0, 0.50)), ec + Vector((0.10, 0, 0.30)), ec + Vector((0.08, 0, 0.20))],
            0.009, Z_BLACKP, 6)
-    # CCTV monitor (beige CRT) on the front desk, its screen faces the room
-    mc = MONITOR
-    VM.rbox(P, mc + Vector((0, 0.03, 0.165)), (0.36, 0.24, 0.33), Z_CRT, r=0.02, ch=0.012, axis='y')
-    VM.rbox(P, mc + Vector((0, -0.12, 0.15)), (0.26, 0.10, 0.24), Z_CRT, r=0.03, ch=0.01, axis='y')
-    P.tube([mc + Vector((0.10, -0.16, 0.05)), mc + Vector((0.12, -0.21, 0.02)), mc + Vector((0.20, -0.20, 0.004))], 0.005, Z_BLACKP, 5)
     # binders standing against the left wall at the end of the front desk
     for yb_ in (-1.37, -1.30, -1.23):
         P.box(IX0 + 0.01, IX0 + 0.29, yb_ - 0.03, yb_ + 0.03, DESK_TOP, DESK_TOP + 0.31, Z_BINDER)
@@ -555,19 +729,9 @@ def props():
             Z_FAID, r=0.012, ch=0.006, axis='y')
     # wall clock over the gap between the key cabinet and the door
     P.lathe(CLOCK, (0, -1, 0), [(0.0, 0.15), (0.035, 0.15), (0.04, 0.135)], Z_BLACKP, 18, cap0=False, cap1=False)
-    # the CCTV camera on its bracket under the front eave at the road corner, looking at the barrier
-    cw = Vector((X1 - 0.20, Y0, 2.70))
-    P.box(cw.x - 0.04, cw.x + 0.04, Y0 - 0.010, Y0, cw.z - 0.06, cw.z + 0.06, Z_BLACKP)
-    cam = cw + Vector((0.10, -0.30, -0.06))
-    P.strip([cw + Vector((0, -0.010, 0)), cw + Vector((0.04, -0.20, -0.02)), cam + Vector((0, 0.03, 0.06))], Vector((0, 0, 1)),
-            0.025, 0.025, Z_BLACKP)
-    d_cam = (Vector((BARRIER_PLACE[0].x + 3.0, BARRIER_PLACE[0].y, 1.0)) - cam).normalized()
-    R = VM.frame_R(d_cam, Vector((0, 0, 1)))
-    P.box_m(cam, (0.30, 0.10, 0.10), Z_CAMP, R)
-    P.box_m(cam + d_cam * 0.03 + R @ Vector((0, 0.065, 0)), (0.36, 0.012, 0.14), Z_CAMP, R)
     part('Kpp_Props', 'static', (0, 0, 0), parent='Checkpoint',
-         note='small things: vests, extinguisher, CCTV monitor, binders, thermos, mug, papers, the radio and its mic, the wall '
-              'clock, the first-aid box, the CCTV camera under the front eave')
+         note='small things not in the kit yet: vests, extinguisher, binders, thermos, mug, papers, the radio and its mic, the wall '
+              'clock, the first-aid box (v1 had the CCTV monitor and camera here: now Kit_Monitor_CRT / Kit_Camera_* instances)')
     # the swivel chair (the guard faces the road desk: +x); clear of the pulled drawers
     C = kb('Kpp_Chair', 'KppProps')
     cc = CHAIR
@@ -583,32 +747,20 @@ def props():
     socket('Seat_Chair', cc + Vector((0, 0, 0.48)), 'seat', parent='Kpp_Chair', note='sit at the desk: the pass window and the phone in '
                                                                                      'reach', eye=K.r4(cc + Vector((0.02, 0, 1.20))),
            facing=[1.0, 0.0, 0.0])
-    # the rotary phone (70s): a sloped body, the dial (panel), the receiver on the cradle (its own object), the cord
-    Ph = kb('Phone', 'KppProps')
-    p = PHONE
-    poly = [(p.x - 0.10, p.z), (p.x + 0.10, p.z), (p.x + 0.10, p.z + 0.095), (p.x - 0.10, p.z + 0.055)]
-    prism_y(Ph, poly, p.y - 0.115, p.y + 0.115, Z_PHONE, Z_PHONE)
-    for yy in (-0.05, 0.05):
-        Ph.box(p.x + 0.035, p.x + 0.065, p.y + yy - 0.012, p.y + yy + 0.012, p.z + 0.082, p.z + 0.118, Z_PHONE)
-    sl = Vector((-0.04, 0.0, 0.20)).normalized()                     # the slope's normal: up and toward the guard (-x)
-    s0 = Vector((p.x - 0.045, p.y, p.z + 0.066))
-    Ph.lathe(s0, sl, [(0.0, 0.046), (0.006, 0.046)], Z_BLACKP, 14, cap0=False, cap1=False)
-    Dl = kb('Phone_Dial', 'panel')
-    Dl.disc_uv(s0 + sl * 0.003, sl, 0.045, uv('phone_dial'), 16)
-    Ph.tube([p + Vector((0.10, 0.06, 0.02)), p + Vector((0.16, 0.10, 0.004)), p + Vector((0.12, 0.17, 0.004)),
-             p + Vector((0.05, 0.16, 0.004)), p + Vector((0.05, 0.13, 0.11))], 0.004, Z_BLACKP, 5)
-    Pr = kb('Phone_Receiver', 'KppProps')
-    rc_ = p + Vector((0.05, 0.0, 0.125))
-    Pr.strip([rc_ + Vector((0, -0.10, 0)), rc_ + Vector((0, 0.10, 0))], Vector((0, 0, 1)), 0.042, 0.024, Z_PHONE)
-    for yy in (-0.10, 0.10):
-        Pr.lathe(rc_ + Vector((0, yy, -0.012)), (0, 0, -1), [(0.0, 0.0), (0.0, 0.026), (0.02, 0.032), (0.03, 0.030), (0.03, 0.0)],
-                 Z_PHONE, 10)
-    part('Phone', 'static', p, parent='Checkpoint',
-         note='rotary desk phone (70s, orange) by the pass window: X05 rings it twice; zone Phone_KPP (Update 3) is round the receiver')
-    part('Phone_Receiver', 'static', rc_, parent='Phone', note='the receiver on its cradle: hide / animate it while it is picked up '
-                                                               '(X05: silence, then breathing)')
-    part('Phone_Dial', 'static', s0, parent='Phone', note='dial face (panel atlas)')
-    socket('Hand_Phone_Receiver', rc_ + Vector((0, 0, 0.03)), 'hand', parent='Phone_Receiver')
+    # v2: the phone, the monitors and the console are kit instances (snow_kit)
+    kit('Phone', 'Kit_Phone', 'Checkpoint', M_of(PHONE, yaw=-90.0),
+        note='rotary phone (Kit_Phone) by the pass window, the dial toward the guard: X05 rings it twice; zone Phone_KPP (Update 3) '
+             'is round its Phone_Receiver (the names Phone / Phone_Receiver / Phone_Dial are v1\'s)')
+    kit('Monitor_Barrier', 'Kit_Monitor_CRT', 'Checkpoint', M_of(MON_A[0], yaw=MON_A[1]),
+        note='CRT monitor: the barrier camera (Cam_Barrier) with the power')
+    kit('Monitor_Gate', 'Kit_Monitor_CRT', 'Checkpoint', M_of(MON_B[0], yaw=MON_B[1]),
+        note='CRT monitor: the gate camera (Cam_Gate) with the power')
+    kit('Console', 'Kit_Console_2', 'Checkpoint', M_of(CONSOLE[0], yaw=CONSOLE[1]),
+        note='the console under the pass window: SCHRANKE / BARRIER (left), TOR / GATE (right)')
+    for i, (key, lab) in enumerate((('Schranke', 'Kit_Console_Label_Schranke'), ('Tor', 'Kit_Console_Label_Tor'))):
+        kit('Btn_' + key, 'Kit_Console_Button', 'Console', M_slot('Console', f'Slot_Button_{i + 1}'),
+            note=('raises / lowers the barrier (needs the power)' if key == 'Schranke' else 'opens / closes the base gate (needs the power)'))
+        kit('Lbl_' + key, lab, 'Console', M_slot('Console', f'Slot_Label_{i + 1}'), note='its label')
     # the bell outside on the road-side wall under the eave (rings with the phone)
     Bl = kb('Phone_Bell', 'KppProps')
     Bl.box(X1, X1 + 0.012, BELL.y - 0.07, BELL.y + 0.07, BELL.z - 0.09, BELL.z + 0.09, Z_BLACKP)
@@ -631,14 +783,14 @@ def lamps():
     for sx in (-1, 1):
         L.box(c.x + sx * 0.60 - 0.015, c.x + sx * 0.60 + 0.015, c.y - 0.03, c.y + 0.03, c.z - 0.045, c.z - 0.02, Z_ENAMEL_IN)
     part('Lamp_Fluor', 'static', c, parent='Checkpoint',
-         note='fluorescent batten under the rafters: flickers from the start although there is no power (Update 3: Light_booth, '
-              'M_Lamp_FluorFlicker)')
+         note='fluorescent batten under the rafters: v2 - dark without power, lights with the booth\'s power (flickers a few '
+              'seconds as it strikes); v1 / Update 3 flickered from the start (Light_booth, M_Lamp_FluorFlicker)')
     tc = c + Vector((-0.58, 0, -0.038))
     G = kb('Lens_Fluor', 'lens:fluor')
     G.lathe(tc, (1, 0, 0), [(0.0, 0.0135), (1.16, 0.0135)], ZERO, 8, cap0=True, cap1=True)
     uv_cyl(G, tc, 0.0, 1.16, uv('l_fluor'), axis=(1, 0, 0))
     part('Lens_Fluor', 'static', c + Vector((0, 0, -0.038)), parent='Lamp_Fluor',
-         note='the tube: M_Kpp_Lamp_Fluor (lit, flickering) / M_Kpp_Lamp_Fluor_Off')
+         note='the tube: M_Kpp_Lamp_Fluor (lit) / M_Kpp_Lamp_Fluor_Off')
     Gw = kb('Glow_Fluor', 'glow')
     gc = c + Vector((0, 0, -0.04))
     quad(Gw, gc, (0, 0, -1), 1.56, 0.42, uv('glow_cold'), up=(0, 1, 0))
@@ -659,19 +811,13 @@ def lamps():
         k.tube([dc + d * 0.078 * math.cos(math.radians(t)) + Vector((0, 0.052 * math.sin(math.radians(t)), 0)) for t in range(0, 181, 30)],
                0.003, Z_STEELBLK, 4, caps=False)
     part('Lens_Bulk_Door', 'static', dc + Vector((0, 0.02, 0)), parent='Checkpoint',
-         note='frosted dome of the bulkhead over the door: lit with the station power (M_Kpp_Lamp_Bulk / _Off)')
+         note='frosted dome of the bulkhead over the door: lit with the booth\'s power (M_Kpp_Lamp_Bulk / _Off)')
     Gb = kb('Glow_Bulk_Door', 'glow')
     quad(Gb, dc + Vector((0, 0.045, 0)), (0, 1, 0), 0.50, 0.50, uv('glow_warm'))
     u0, v0, u1, v1 = uv('glow_warm')
     quad(Gb, Vector((dc.x, Y1 + 0.17, dc.z - 0.002)), (0, 0, -1), 0.50, 0.32, (u0, v0, u1, (v0 + v1) / 2), up=(0, -1, 0))
     part('Glow_Bulk_Door', 'static', dc, parent='Checkpoint', note='halo cards of the bulkhead: shown with the power')
     LAMPS.append(('Bulk_Door', dc + Vector((0, 0.06, -0.02)), (0, 0.6, -0.8), 'bulkhead_kpp', (0, 0, 1)))
-    # the CCTV monitor's screen (lit with the power)
-    Sc = kb('Screen_CCTV', 'lens:crt')
-    sp = MONITOR + Vector((0, 0.153, 0.175))
-    quad(Sc, sp, (0, 1, 0), 0.25, 0.19, uv('crt'))
-    part('Screen_CCTV', 'static', sp, parent='Checkpoint',
-         note='the CCTV monitor\'s screen: the gate camera with the power (M_Kpp_Lamp_Crt), dark glass without (_Off)')
 
 
 # ================================================================ outside: bollards; signs and the panel things
@@ -705,9 +851,125 @@ def outside():
               'front, the clock face (stopped at 2:40), ERSTE HILFE / FIRST AID (panel atlas)')
 
 
-# ================================================================ the barrier (own root, 7 m out on the road)
+# ================================================================ v2: the power outside (kit instances)
+def outside_kit():
+    """the distribution cabinet, its conduit up to the roof stand, the barrier's cable to the junction box, the barrier
+    camera, the line poles; all instances of snow_kit"""
+    kit('PowerCabinet', 'Kit_Cabinet_Power', 'Checkpoint', M_of(CAB_POS, yaw=180.0),
+        note='the distribution cabinet on the back wall: the van\'s battery on its shelf, both clamps on and the switch at '
+             'BATTERIE give the booth power (the line from the base is dead)')
+    kit('RoofStand', 'Kit_RoofStand', 'Checkpoint', M_of(RS_POS, yaw=180.0),
+        note='the roof stand through the back eave: the service drop from the transformer pole ends on its spools')
+    a = at_sock('PowerCabinet', 'Conduit_Top')
+    b = at_sock('RoofStand', 'Conduit_Bottom_R')
+    conduit_run('Cond_Cab', 'Checkpoint', [a, b], [None], entry0=True, note='conduit from the cabinet up to the roof stand')
+    # the barrier's cable: from its pad along the ground, into the booth pad's road side; up from the pad into the box
+    kit('JunctionBox', 'Kit_JunctionBox', 'Checkpoint', M_of(JB_POS, yaw=90.0), note='the barrier\'s cable comes in here')
+    zg = BARRIER_PLACE[0].z + CR                             # the conduit lies on the ground (the barrier's level)
+    p0 = Vector((BARRIER_PLACE[0].x - 0.20, BARRIER_PLACE[0].y + BAR2['pad'][3], zg))     # off the road (its edge ~2.7)
+    c1 = Vector((p0.x, p0.y + 0.60, zg))
+    c2 = Vector((2.00, c1.y, zg))
+    p3 = Vector((2.00, PAD[2], zg))
+    up = Vector((0, 0, 1))
+    conduit_run('Cond_Bar', 'Checkpoint', [p0, c1, c2, p3], [up, up, up], entry0=True,
+                note='the barrier\'s cable on the ground, into the booth pad\'s front')
+    jb = at_sock('JunctionBox', 'Conduit_Bottom_JB')
+    conduit_run('Cond_JB', 'Checkpoint', [Vector((jb.x, jb.y, FLOOR)), jb], [None], entry1=True,
+                note='up from the pad into the junction box')
+    # v2.1: the barrier camera on its own pole between the booth and the barrier (the eave bracket is gone); its cable out of
+    # the footing in conduit along the ground into the booth pad's front, beside the barrier's
+    kit('CamPole_Barrier', 'Kit_Mast', 'Checkpoint', M_of(CAMPOLE_B),
+        note='the barrier camera\'s mast (4.2 m, concrete footing) between the booth and the barrier')
+    camera_on_pole('Barrier', 'CamPole_Barrier', CAMB_T)
+    flood_on_pole('Flood_Barrier', 'CamPole_Barrier', FLOODB_T, 'floodlight under the camera: lights the boom and the road in '
+                                                               'front of it while the booth has power')
+    cb = at_sock('CamPole_Barrier', 'Conduit_Base')
+    conduit_run('Cond_CamBar', 'Checkpoint', [cb, Vector((cb.x, PAD[2], cb.z))], [Vector((0, 0, 1))], entry0=True,
+                note='the barrier camera\'s cable out of its pole\'s footing along the ground into the booth pad\'s front')
+    # the line: the transformer pole behind the booth (the drop to the roof stand), the next pole up the road
+    kit('Pole_1', 'Kit_Pole_Trafo', 'Checkpoint', M_of(POLE1), note='transformer pole: the 20 kV line from the base ends here; '
+                                                                    'its 0.4 kV drop goes to the roof stand')
+    kit('Pole_2', 'Kit_Pole', 'Checkpoint', M_of(POLE2), note='line pole up the road; the line goes on toward the base (Unity '
+                                                              'places the rest of the poles)')
+    # v2.1: the overhead wires as kit models: the drop (Kit_Wire_Drop x4, Pole_1's spools -> the roof stand, paired in x) and
+    # the line (Kit_Wire_Bare x3, Pole_1 -> Pole_2)
+    p1 = sorted(['Wire_4_T', 'Wire_5_T', 'Wire_6_T', 'Wire_7_T'], key=lambda w: at_sock('Pole_1', w).x)
+    rs = sorted(['Wire_1_R', 'Wire_2_R', 'Wire_3_R', 'Wire_4_R'], key=lambda w: at_sock('RoofStand', w).x)
+    for i, (a, b) in enumerate(zip(p1, rs)):
+        wire_span(f'Wire_Drop_{i + 1}', 'Kit_Wire_Drop', ('Pole_1', a), ('RoofStand', b))
+    for i in (1, 2, 3):
+        wire_span(f'Wire_Line_{i}', 'Kit_Wire_Bare', ('Pole_1', f'Wire_{i}_T'), ('Pole_2', f'Wire_{i}'))
+
+
+# ================================================================ the barrier (own root, 7 m out on the road): v2 electric
 def barrier():
     B = kb('Barrier', 'KppYard')
+    x0, x1, y0, y1 = BAR2['pad']
+    box6(B, (x0, y0, -0.15), (x1, y1, 0.15), Z_CONC, skip=('-z',))
+    # the motor cabinet (light grey, the black cover), its service door on the inside (+y), vents, the shaft's flange
+    cx0, cx1, cy0, cy1, cz0, cz1 = BAR2['cab']
+    VM.rbox(B, ((cx0 + cx1) / 2, (cy0 + cy1) / 2, (cz0 + cz1) / 2), (cx1 - cx0, cy1 - cy0, cz1 - cz0), Z_BARCAB, r=0.02, ch=0.008)
+    B.box(cx0 - 0.012, cx1 + 0.012, cy0 - 0.012, cy1 + 0.012, cz1, cz1 + 0.035, Z_RUBBER_K)
+    B.box(cx0 + 0.035, cx1 - 0.035, cy1, cy1 + 0.004, cz0 + 0.12, cz1 - 0.12, Z_BARCAB)
+    B.box(cx1 - 0.065, cx1 - 0.05, cy1 + 0.004, cy1 + 0.016, 0.70, 0.78, Z_STEELBLK)
+    for zh in (cz0 + 0.20, cz1 - 0.20):
+        B.cyl(Vector((cx0 + 0.03, cy1 + 0.006, zh - 0.03)), Vector((cx0 + 0.03, cy1 + 0.006, zh + 0.03)), 0.006, Z_STEELBLK, 6)
+    for zv in (0.98, 1.02, 1.06):
+        B.box(cx0 - 0.003, cx0, cy0 + 0.07, cy1 - 0.07, zv, zv + 0.012, Z_STEELBLK)
+    B.lathe(Vector((0, cy0, BOOM_PIV.z)), (0, -1, 0), [(0.0, 0.075), (0.015, 0.075), (0.015, 0.045), (0.045, 0.035), (0.045, 0.0)],
+            Z_STEELBLK, 12)
+    Sv = kb('Barrier_Sticker', 'panel')
+    quad(Sv, (0.0, cy0 - 0.0015, 0.72), (0, -1, 0), 0.10, 0.0875, uv('sign_volt'))
+    part('Barrier_Sticker', 'static', (0.0, cy0, 0.72), parent='Barrier', note='lightning sticker on the motor cabinet (panel atlas)')
+    kit('Beacon_Barrier', 'Kit_Beacon', 'Barrier', M_of((0.0, (cy0 + cy1) / 2, cz1 + 0.035)),
+        note='the beacon on the cabinet: turns while the boom moves (with the power)')
+    # the barrier's box on the wall (the concept): on the street face of the wall's end panel (Update 7 5852: x -3.39..-0.91,
+    # its relief face at y -0.093), past its socket (x -1.375..-0.425, y +-0.375, 8 cm high); its conduit out of the pad's
+    # street edge along the ground and up the panel. (The cable to the booth: Cond_Bar, from the pad's inner edge.)
+    kit('JunctionBox_Wall', 'Kit_JunctionBox', 'Barrier', M_of(WALLBOX), note='the barrier\'s box on the wall\'s end panel '
+                                                                              '(street side), as in the concept')
+    jw = at_sock('JunctionBox_Wall', 'Conduit_Bottom_JB')
+    up = Vector((0, 0, 1))
+    conduit_run('Cond_BarWall', 'Barrier', [Vector((-0.30, BAR2['pad'][2], CR)), Vector((-0.30, -0.62, CR)),
+                                            Vector((jw.x, -0.62, CR)), Vector((jw.x, jw.y, CR)), jw],
+                [up, up, up, None], entry0=True, entry1=True,              # up the panel: no clamps (the box's knock-out stands 4 cm off it)
+                note='from the cabinet along the ground and up the wall panel into its box')
+    # the rest post with its fork and a rubber pad the boom lies on
+    qx = REST_X
+    rx0, rx1, ry0, ry1 = BAR2['rest_pad']
+    box6(B, (rx0, ry0, -0.15), (rx1, ry1, 0.12), Z_CONC, skip=('-z',))
+    B.cyl(Vector((qx, 0, 0.12)), Vector((qx, 0, 0.96)), 0.04, Z_BARPOST, 8)
+    B.box(qx - 0.12, qx + 0.12, -0.075, 0.075, 0.96, 0.98, Z_STEELBLK)
+    for sy in (-1, 1):
+        B.box(qx - 0.10, qx + 0.10, sy * 0.065 - 0.008, sy * 0.065 + 0.008, 0.98, 1.21, Z_STEELBLK)
+    B.box(qx - 0.08, qx + 0.08, -0.057, 0.057, 1.075, 1.095, Z_RUBBER_K)
+    # the boom (IX_BarrierArm_82): white with red bands (the painter), the hub clamp on the motor's shaft, the end caps, the
+    # rubber strip under it; no counterweight (springs in the cabinet)
+    A = kb('IX_BarrierArm_82', 'KppYard')
+    pz = BOOM_PIV.z
+    xm_ = (0.12 + BOOM_LEN - 0.06) / 2
+    for xa_, xb_ in ((0.12, xm_), (xm_, BOOM_LEN - 0.06)):
+        VM.rbox(A, ((xa_ + xb_) / 2, 0, pz), (xb_ - xa_, 0.09, 0.11), Z_BOOM, r=0.015, ch=0.008, axis='x')
+    VM.rbox(A, (xm_, 0, pz), (0.14, 0.104, 0.124), Z_STEELBLK, r=0.018, ch=0.008, axis='x')
+    VM.rbox(A, (-0.04, 0, pz), (0.32, 0.12, 0.16), Z_BARCAB, r=0.02, ch=0.01, axis='x')
+    A.box(-0.24, -0.20, -0.045, 0.045, pz - 0.055, pz + 0.055, Z_RUBBER_K)
+    A.box(BOOM_LEN - 0.06, BOOM_LEN, -0.05, 0.05, pz - 0.06, pz + 0.06, Z_RUBBER_K)
+    A.box(0.25, BOOM_LEN - 0.06, -0.03, 0.03, pz - 0.075, pz - 0.055, Z_RUBBER_K)
+    part('IX_BarrierArm_82', 'hinge', BOOM_PIV, (0, -1, 0), (0, 80), parent='Barrier', states=['down', 'up'],
+         note='barrier boom, v2 electric: the motor lifts it (+, to 80) in about 4 s when the console\'s SCHRANKE button is '
+              'pressed with the booth powered, and lowers it the same way; no padlock, not by hand (same name, pivot, axis and '
+              'travel as v1 / Update 3)')
+    socket('Audio_Barrier', BOOM_PIV, 'audio', parent='Barrier', note='boom: the springs creak, it thuds on the rest\'s rubber')
+    socket('Audio_BarrierMotor', ((cx0 + cx1) / 2, (cy0 + cy1) / 2, 0.85), 'audio', parent='Barrier',
+           note='the motor whirs while the boom moves, a clunk at each end')
+    part('Barrier', 'static', (0, 0, 0), parent=None, yaw=BARRIER_PLACE[1],
+         note='electric barrier 7 m out on the road in front of the booth (separate root: the map\'s Barrier prefab, same place); '
+              'the motor cabinet with the beacon, the boom, the rest post; its cable in conduit to the booth')
+
+
+# ================================================================ the v1 hand barrier: its own root Barrier_Manual (off the map)
+def barrier_manual():
+    B = kb('Barrier_Manual', 'KppYard')
     # concrete foot; the post beside the boom (+y) carrying the pivot shaft and its flange
     box6(B, (-0.375, -0.375, -0.15), (0.375, 0.375, 0.15), Z_CONC, skip=('-z',))
     box6(B, (-0.10, 0.10, 0.15), (0.10, 0.30, 1.30), Z_BARPOST, skip=('-z', '+z'))
@@ -726,11 +988,11 @@ def barrier():
     B.box(qx + 0.10, qx + 0.116, 0.003, 0.011, 0.98, EYE.z + 0.014, Z_STEELBLK)
     B.box(qx + 0.116, rx - 0.0165, 0.003, 0.011, EYE.z - 0.014, EYE.z + 0.014, Z_STEELBLK)
     ring(B, EYE + Vector((0, 0.007, 0)), (0, 1, 0), 0.016, 0.004, Z_STEELBLK)
-    socket('Spot_Padlock', PADLOCK, 'item_slot', parent='Barrier',
+    socket('Spot_Padlock_Manual', PADLOCK, 'item_slot', parent='Barrier_Manual',
            note='Padlock_Barrier hangs here through the post eye and the boom eye (its origin is the hanging point; '
                 'Forest_Opening.json, same place as Update 3)')
     # the boom (IX_BarrierArm_82): striped box tube, the counterweight on the short side, the hub, the boom eye, the tip
-    A = kb('IX_BarrierArm_82', 'KppYard')
+    A = kb('IX_BarrierArm_Manual_318', 'KppYard')
     pz = BOOM_PIV.z
     xm_ = (0.02 + BOOM_LEN - 0.06) / 2                          # two tube sections joined by a sleeve (packs into the atlas)
     for xa_, xb_ in ((0.02, xm_), (xm_, BOOM_LEN - 0.06)):
@@ -741,13 +1003,14 @@ def barrier():
     A.box(rx - 0.008, rx + 0.008, -0.011, -0.003, EYE.z + 0.017, pz - 0.055, Z_STEELBLK)
     ring(A, EYE + Vector((0, -0.007, 0)), (0, 1, 0), 0.016, 0.004, Z_STEELBLK)
     A.box(BOOM_LEN - 0.06, BOOM_LEN, -0.05, 0.05, pz - 0.06, pz + 0.06, Z_RUBBER_K)
-    part('IX_BarrierArm_82', 'hinge', BOOM_PIV, (0, -1, 0), (0, 80), parent='Barrier', states=['down', 'up'],
+    part('IX_BarrierArm_Manual_318', 'hinge', BOOM_PIV, (0, -1, 0), (0, 80), parent='Barrier_Manual', states=['down', 'up'],
          note='barrier boom: lift by hand (+, up to 80) once Padlock_Barrier is off; the counterweight swings down beside the post '
               '(Update 3: same name, pivot and travel)')
-    socket('Hand_BarrierArm', (BOOM_LEN - 0.6, 0, pz + 0.07), 'hand', parent='IX_BarrierArm_82', note='lift it here')
-    socket('Audio_Barrier', BOOM_PIV, 'audio', parent='Barrier', note='boom: the bearing creaks, the counterweight thuds at the top')
-    part('Barrier', 'static', (0, 0, 0), parent=None, yaw=BARRIER_PLACE[1],
-         note='barrier 7 m out on the road in front of the booth (separate root: the map\'s Barrier prefab, same place)')
+    socket('Hand_BarrierArm_Manual', (BOOM_LEN - 0.6, 0, pz + 0.07), 'hand', parent='IX_BarrierArm_Manual_318', note='lift it here')
+    socket('Audio_Barrier_Manual', BOOM_PIV, 'audio', parent='Barrier_Manual', note='boom: the bearing creaks, the counterweight thuds at the top')
+    part('Barrier_Manual', 'static', (0, 0, 0), parent=None, yaw=BARRIER_MANUAL_PLACE[1],
+         note='the v1 hand barrier (padlock, counterweight), kept as its own prefab Barrier_Manual: not on the map; here 7 m '
+              'further out than the electric one so they do not overlap')
 
 
 # ================================================================ the sliding gate (own root, beside the booth)
@@ -784,94 +1047,140 @@ def chain_quad(k, axis, a, u0, u1, z0, z1, tile=0.5):
 
 
 def gate():
+    """v2: a solid painted leaf on the ground rail 0.50 m inside the wall line, concrete end posts in the line, the receiving
+    post, two guide posts with top rollers, the drive cabinet (pinion on the leaf's rack), its cable up the line pole"""
     Gt = kb('Gate', 'KppYard')
-    ly = LEAF_Y
-    # the receiving post with its catch; the rail in its concrete strip; two guide posts with top rollers; the end stop
+    ly = GATE2['ly']
+    zb, zt = GATE2['z']
+    lx0, lx1 = GATE_LEAF
+    # end posts in the wall line (the Update 7 PO-2 runs end at them): concrete, a footing, a chamfered cap
+    for (xa, xb) in (GATE2['post_e'], GATE2['post_w']):
+        box6(Gt, (xa - 0.05, -0.20, -0.30), (xb + 0.05, 0.20, 0.02), Z_CONC, skip=('-z',))
+        box6(Gt, (xa, -0.15, 0.02), (xb, 0.15, GATE2['post_h']), Z_CONC, skip=('-z', '+z'))
+        prism_x(Gt, [(-0.17, GATE2['post_h']), (0.17, GATE2['post_h']), (0.17, GATE2['post_h'] + 0.03), (0.0, GATE2['post_h'] + 0.09),
+                     (-0.17, GATE2['post_h'] + 0.03)], xa - 0.02, xb + 0.02, Z_CONC, Z_CONC)
+    # the receiving post at the leaf's line, its catch and rubber; the rail in its concrete strip; the end stop
     box6(Gt, (-7.40, ly - 0.23, -0.15), (-6.95, ly + 0.23, 0.03), Z_CONC, skip=('-z',))
-    box6(Gt, (-7.16, ly - 0.04, 0.03), (-7.08, ly + 0.04, 2.30), Z_GALV, skip=('-z',))
-    for zc in (0.20, 1.97):
-        for s in (-1, 1):
-            Gt.box(-7.08, -6.90, ly + s * 0.040 - 0.005, ly + s * 0.040 + 0.005, zc - 0.05, zc + 0.05, Z_STEELBLK)
-        Gt.box(-7.08, -7.02, ly - 0.035, ly + 0.035, zc - 0.04, zc + 0.04, Z_RUBBER_K)
-    box6_x(Gt, (-6.95, ly - 0.15, -0.05), (6.66, ly + 0.15, 0.010), Z_CONC, skip=('-z', '-x', '+x', '-y', '+y'))
-    box6_x(Gt, (-6.95, ly - 0.02, 0.010), (6.68, ly + 0.02, 0.045), Z_STEELBLK, skip=('-z',))
-    for yp in (ly - 0.13, ly + 0.13):
-        box6(Gt, (-0.36, yp - 0.12, -0.15), (0.04, yp + 0.12, 0.03), Z_CONC, skip=('-z',))
-        box6(Gt, (-0.20, yp - 0.04, 0.03), (-0.12, yp + 0.04, 2.15), Z_GALV, skip=('-z',))
-        s = 1 if yp > ly else -1
-        rl = ly + s * 0.058                                # the roller beside the top rail
-        Gt.box(-0.18, -0.14, *sorted((yp - s * 0.04, rl)), 2.06, 2.09, Z_GALV)
-        Gt.cyl(Vector((-0.16, rl, 2.06)), Vector((-0.16, rl, 2.04)), 0.006, Z_STEELBLK, 6)
-        Gt.lathe(Vector((-0.16, rl, 1.92)), (0, 0, 1), [(0.0, 0.0), (0.0, 0.026), (0.12, 0.026), (0.12, 0.0)], Z_GATEROLL, 10)
+    box6(Gt, (-7.16, ly - 0.04, 0.03), (-7.08, ly + 0.04, zt + 0.05), Z_GALV, skip=('-z',))
+    for zc in (0.25, zt - 0.20):
+        for sgn in (-1, 1):
+            Gt.box(-7.08, -6.90, ly + sgn * 0.050 - 0.005, ly + sgn * 0.050 + 0.005, zc - 0.05, zc + 0.05, Z_STEELBLK)
+        Gt.box(-7.08, -7.02, ly - 0.045, ly + 0.045, zc - 0.04, zc + 0.04, Z_RUBBER_K)
+    ra, rb = GATE2['rail']
+    box6_x(Gt, (ra, ly - 0.10, -0.05), (rb, ly + 0.10, 0.010), Z_CONC, skip=('-z', '-x', '+x', '-y', '+y'))
+    box6_x(Gt, (ra + 0.05, ly - 0.02, 0.010), (rb - 0.05, ly + 0.02, 0.045), Z_STEELBLK, skip=('-z',))
     box6(Gt, (6.66, ly - 0.15, -0.15), (7.00, ly + 0.15, 0.010), Z_CONC, skip=('-z', '-x'))
     box6(Gt, (6.68, ly - 0.04, 0.010), (6.76, ly + 0.04, 0.60), Z_GALV, skip=('-z',))
     Gt.box(6.62, 6.68, ly - 0.03, ly + 0.03, 0.165, 0.225, Z_RUBBER_K)
-    # fixed fence panel on the fence line (y 0) from the guide posts to the map's fence
-    fa, fb = FENCE_X
-    for xp in (fa, fb):
-        box6(Gt, (xp - 0.15, -0.15, -0.15), (xp + 0.15, 0.15, 0.03), Z_CONC, skip=('-z',))
-        Gt.cyl(Vector((xp, 0, 0.03)), Vector((xp, 0, 2.38)), 0.03, Z_GALV, 8)
-    Gt.cyl(Vector((fa + 0.03, 0, 1.95)), Vector((fb - 0.03, 0, 1.95)), 0.02, Z_GALV, 6)
-    Gt.cyl(Vector((fa + 0.03, 0, 0.08)), Vector((fb - 0.03, 0, 0.08)), 0.004, Z_GALV, 4)
-    for xp in (fa, fb):
-        Gt.box(xp - 0.01, xp + 0.01, -0.01, 0.01, 2.38, 2.42, Z_GALV)
-    Fb = kb('Gate_Fence_Barbed', 'barbed')
-    barbed_band(Fb, 0.0, fa, fb, 2.04)
-    part('Gate_Fence_Barbed', 'static', ((fa + fb) / 2, 0, 2.22), parent='Gate',
-         note='barbed wire over the fixed panel: alpha band M_Kpp_Barbed (three strands)')
-    Fm = kb('Gate_Fence_Mesh', 'chainlink')
-    chain_quad(Fm, 'y', 0.0, fa + 0.03, fb - 0.03, 0.06, 1.93)
-    part('Gate_Fence_Mesh', 'static', ((fa + fb) / 2, 0, 1.0), parent='Gate', note='chain-link of the fixed panel (M_Kpp_ChainLink)')
-    # the leaf (IX_Gate_81): frame, verticals, braces, chain-link, barbed wire on upright arms, the V wheels, the sign
+    # two guide posts beside the leaf's free end (past the opening), rollers at the top on both faces
+    for yp, gx in ((ly - 0.13, GATE2['guide_x_out']), (ly + 0.13, GATE2['guide_x'])):
+        box6(Gt, (gx - 0.16, yp - 0.12, -0.15), (gx + 0.20, yp + 0.12, 0.03), Z_CONC, skip=('-z',))
+        box6(Gt, (gx - 0.04, yp - 0.04, 0.03), (gx + 0.04, yp + 0.04, zt + 0.15), Z_GALV, skip=('-z',))
+        sgn = 1 if yp > ly else -1
+        rl = ly + sgn * 0.068
+        Gt.box(gx - 0.02, gx + 0.02, *sorted((yp - sgn * 0.04, rl)), zt + 0.06, zt + 0.09, Z_GALV)
+        Gt.lathe(Vector((gx, rl, zt - 0.08)), (0, 0, 1), [(0.0, 0.0), (0.0, 0.026), (0.13, 0.026), (0.13, 0.0)], Z_GATEROLL, 10)
+    # the drive: a light grey cabinet on a concrete base inside, the pinion shaft to the leaf's rack, the release lock
+    dx0, dx1, dy0, dy1, dz0, dz1 = GATE2['drive']
+    box6(Gt, (dx0 - 0.04, dy0 - 0.04, -0.10), (dx1 + 0.04, dy1 + 0.04, dz0), Z_CONC, skip=('-z',))
+    VM.rbox(Gt, ((dx0 + dx1) / 2, (dy0 + dy1) / 2, (dz0 + dz1) / 2), (dx1 - dx0, dy1 - dy0, dz1 - dz0), Z_BARCAB, r=0.015, ch=0.006)
+    Gt.box(dx0 - 0.01, dx1 + 0.01, dy0 - 0.01, dy1 + 0.01, dz1, dz1 + 0.03, Z_RUBBER_K)
+    xp = (dx0 + dx1) / 2
+    Gt.cyl(Vector((xp, dy0, 0.175)), Vector((xp, ly + 0.065, 0.175)), 0.012, Z_STEELBLK, 8)
+    Gt.lathe(Vector((xp, ly + 0.10, 0.175)), (0, -1, 0), [(0.0, 0.0), (0.0, 0.035), (0.03, 0.035), (0.03, 0.0)], Z_STEELBLK, 12)
+    Gt.box(dx1 - 0.06, dx1 - 0.03, dy1, dy1 + 0.012, dz1 - 0.12, dz1 - 0.08, Z_STEELBLK)
+    Sv = kb('Gate_Sticker', 'panel')
+    quad(Sv, (xp, dy1 + 0.0015, 0.26), (0, 1, 0), 0.10, 0.0875, uv('sign_volt'))
+    part('Gate_Sticker', 'static', (xp, dy1, 0.26), parent='Gate', note='lightning sticker on the drive (panel atlas)')
+    # the leaf (IX_Gate_81): frame, the sheet on the outer face, inner rails and braces, the rack, wheels, barbed arms, the plate
     L = kb('IX_Gate_81', 'KppYard')
-    lx0, lx1 = GATE_LEAF
-    z0, z1 = GATE_Z
-    box6_x(L, (lx0, ly - 0.03, z0), (lx1, ly + 0.03, z0 + 0.07), Z_GALV)
-    box6_x(L, (lx0 + 0.06, ly - 0.03, z1 - 0.06), (lx1 - 0.06, ly + 0.03, z1), Z_GALV, skip=('-x', '+x'))
-    verts = [lx0 + 0.03 + i * (lx1 - lx0 - 0.06) / 7 for i in range(8)]
-    for i, xv in enumerate(verts):
-        w = 0.03 if i in (0, 7) else 0.022
-        box6(L, (xv - w, ly - 0.025, z0 + 0.07), (xv + w, ly + 0.025, z1 + (0.0 if i in (0, 7) else -0.06)), Z_GALV,
-             skip=('-z', '+z') if i not in (0, 7) else ('-z',))
-        box6(L, (xv - 0.012, ly - 0.012, z1), (xv + 0.012, ly + 0.012, z1 + 0.42), Z_GALV, skip=('-z',))
-    for i in range(7):
-        xa, xb = verts[i] + 0.03, verts[i + 1] - 0.03
-        a_, b_ = (Vector((xa, ly, z0 + 0.08)), Vector((xb, ly, z1 - 0.07))) if i % 2 == 0 else \
-            (Vector((xa, ly, z1 - 0.07)), Vector((xb, ly, z0 + 0.08)))
-        L.strip([a_, b_], Vector((0, 1, 0)), 0.035, 0.03, Z_GALV)
-    Lb = kb('IX_Gate_81_Barbed', 'barbed')
-    barbed_band(Lb, ly, lx0, lx1, z1 + 0.06)
+    yo, yi = ly - 0.04, ly + 0.04
+    box6_x(L, (lx0, yo + 0.005, zb), (lx1, yi, zb + 0.08), Z_GATEP)
+    box6_x(L, (lx0, yo + 0.005, zt - 0.08), (lx1, yi, zt), Z_GATEP)
+    for xa_, xb_ in ((lx0, lx0 + 0.06), (lx1 - 0.06, lx1)):
+        box6(L, (xa_, yo + 0.005, zb + 0.08), (xb_, yi, zt - 0.08), Z_GATEP, skip=('-z', '+z'))
+    box6_x(L, (lx0 + 0.06, yo, zb + 0.08), (lx1 - 0.06, yo + 0.005, zt - 0.08), {'-y': Z_GATEP, '*': Z_GATEP}, skip=('+y',))
+    box6_x(L, (lx0 + 0.06, yo + 0.005, 1.22), (lx1 - 0.06, yi, 1.30), Z_GATEP, skip=('-y',))
+    nv = 7
+    for i in range(1, nv):
+        xv = lx0 + i * (lx1 - lx0) / nv
+        box6(L, (xv - 0.025, yo + 0.005, zb + 0.08), (xv + 0.025, yi - 0.01, zt - 0.08), Z_GATEP, skip=('-y', '-z', '+z'))
+    for i in range(nv):
+        xa_, xb_ = lx0 + i * (lx1 - lx0) / nv + 0.03, lx0 + (i + 1) * (lx1 - lx0) / nv - 0.03
+        a_, b_ = (Vector((xa_, ly + 0.012, zb + 0.10)), Vector((xb_, ly + 0.012, 1.20))) if i % 2 == 0 else \
+            (Vector((xa_, ly + 0.012, 1.20)), Vector((xb_, ly + 0.012, zb + 0.10)))
+        L.strip([a_, b_], Vector((0, 1, 0)), 0.04, 0.024, Z_GATEP)
+    box6_x(L, (lx0 + 0.10, yi, zb + 0.02), (lx1 - 0.10, yi + 0.025, zb + 0.07), Z_STEELBLK, skip=('-y',))    # the rack
     for xw in (lx0 + 0.33, lx1 - 0.40):
-        for s in (-1, 1):
-            L.box(xw - 0.05, xw + 0.05, ly + s * 0.03 - 0.004, ly + s * 0.03 + 0.004, 0.08, z0 + 0.01, Z_STEELBLK)
+        for sgn in (-1, 1):
+            L.box(xw - 0.05, xw + 0.05, ly + sgn * 0.03 - 0.004, ly + sgn * 0.03 + 0.004, 0.08, zb + 0.01, Z_STEELBLK)
         L.lathe(Vector((xw, ly - 0.022, 0.10)), (0, 1, 0), [(0.0, 0.03), (0.008, 0.055), (0.022, 0.045), (0.036, 0.055),
                                                             (0.044, 0.03)], Z_GATEROLL, 10)
-    Lm = kb('IX_Gate_81_Mesh', 'chainlink')
-    chain_quad(Lm, 'y', ly, lx0 + 0.06, lx1 - 0.06, z0 + 0.07, z1 - 0.06)
-    sx0, sx1 = -3.95, -3.05
-    L.box(sx0, sx1, ly - 0.042, ly - 0.032, 1.00, 1.60, Z_GALV)
+    for i in range(8):
+        xv = lx0 + 0.03 + i * (lx1 - lx0 - 0.06) / 7
+        box6(L, (xv - 0.012, ly - 0.012, zt), (xv + 0.012, ly + 0.012, zt + 0.42), Z_GATEP, skip=('-z',))
+    Lb = kb('IX_Gate_81_Barbed', 'barbed')
+    barbed_band(Lb, ly, lx0, lx1, zt + 0.04)
     Sg = kb('IX_Gate_81_Sign', 'panel')
-    quad(Sg, ((sx0 + sx1) / 2, ly - 0.0445, 1.30), (0, -1, 0), 0.88, 0.58, uv('sign_sperr'))
+    quad(Sg, (-3.50, yo - 0.0015, 1.45), (0, -1, 0), 0.90, 0.70, uv('sign_sperr2'))
     part('IX_Gate_81', 'slide', (lx0, 0.0, 0.0), (1, 0, 0), (0, GATE_TRAVEL), unit='m', parent='Gate', states=['shut', 'open'],
-         note='sliding gate leaf on a ground rail, 0.22 m inside the fence line: slides behind the fixed panel (+x), 6.6 m; heavy: '
-              'two players push faster (Update 3: same name, origin, axis and travel)')
-    part('IX_Gate_81_Barbed', 'static', ((lx0 + lx1) / 2, ly, z1 + 0.24), parent='IX_Gate_81',
+         note='sliding gate leaf, v2: solid painted sheet on a frame, on the ground rail 0.50 m inside the wall line; the drive '
+              'moves it 6.6 m (+x, behind the wall) in about 12 s by one press of TOR on the KPP console (same name, origin, '
+              'axis and travel as v1 / Update 3)')
+    part('IX_Gate_81_Barbed', 'static', ((lx0 + lx1) / 2, ly, zt + 0.22), parent='IX_Gate_81',
          note='barbed wire on the leaf\'s upright arms: alpha band M_Kpp_Barbed (three strands)')
-    part('IX_Gate_81_Mesh', 'static', ((lx0 + lx1) / 2, ly, (z0 + z1) / 2), parent='IX_Gate_81',
-         note='chain-link infill: tiled alpha-cutout material M_Kpp_ChainLink (0.5 m per tile)')
-    part('IX_Gate_81_Sign', 'static', ((sx0 + sx1) / 2, ly - 0.04, 1.30), parent='IX_Gate_81',
-         note='SPERRGEBIET / RESTRICTED AREA, ZUTRITT VERBOTEN / NO ENTRY on the outer face (panel atlas)')
-    socket('Hand_Gate', (lx0 + 0.25, ly - 0.10, 1.10), 'hand', parent='IX_Gate_81', note='push / pull here (the free end), outside')
-    socket('Hand_Gate_2', (lx0 + 0.25, ly + 0.10, 1.10), 'hand', parent='IX_Gate_81', note='the second player, inside')
-    socket('Audio_Gate', (-3.5, ly, 0.10), 'audio', parent='IX_Gate_81', note='wheels grinding on the rail, the chain-link rattles')
+    part('IX_Gate_81_Sign', 'static', (-3.50, yo, 1.45), parent='IX_Gate_81',
+         note='SPERRGEBIET / RESTRICTED AREA, ZUTRITT VERBOTEN / NO ENTRY, VIDEOÜBERWACHT / CCTV on the outer face (panel atlas)')
+    socket('Audio_Gate', (-3.5, ly, 0.10), 'audio', parent='IX_Gate_81', note='wheels rumble on the rail, the sheet booms')
     socket('Audio_GateCatch', (-7.10, ly, 1.0), 'audio', parent='Gate', note='the catch clanks when the leaf closes')
+    socket('Audio_GateMotor', (xp, (dy0 + dy1) / 2, 0.25), 'audio', parent='Gate', note='the drive hums, the pinion rattles on the '
+                                                                                        'rack, a clunk at each end')
+    # the line pole inside the wall with the drive's cable up it (a junction box at 3 m)
+    px, py = GATE2['pole']
+    kit('Pole_Gate', 'Kit_Pole', 'Gate', M_of((px, py, 0.0)), note='line pole inside the wall: the drive\'s cable goes up it to '
+                                                                 'the line; Unity continues the line from here to the KPP')
+    jb = Vector((px - 0.13, py, 3.0))
+    kit('JunctionBox_Gate', 'Kit_JunctionBox', 'Gate', M_of(jb, yaw=-90.0), note='junction box on the pole')
+    jb_bot = at_sock('JunctionBox_Gate', 'Conduit_Bottom_JB')
+    jb_top = at_sock('JunctionBox_Gate', 'Conduit_Top_JB')
+    xr = jb_bot.x
+    gs = Vector((xp, dy1 + 0.04, CR))
+    conduit_run('Cond_Gate', 'Gate', [gs, Vector((xp, py, CR)), Vector((xr, py, CR)), jb_bot],
+                [Vector((0, 0, 1)), Vector((0, 0, 1)), Vector((-1, 0, 0))], entry0=True, entry1=True,
+                note='the drive\'s cable along the ground and up the pole')
+    conduit_run('Cond_GateUp', 'Gate', [jb_top, Vector((xr, py, 7.45)), Vector((xr - 0.25, py, 7.45))],
+                [Vector((-1, 0, 0)), None], entry0=True, note='up the pole to the line')
+    # v2.1: the gate camera on its own pole west of the opening (it was on the line pole); the footing's cable outlet faces
+    # the gate (-y): along the ground to y camcond_y, then into the drive's base on its +x face
+    CAMG_T = Vector((-4.5, -2.5, 0.0))         # the camera looks over the leaf at the opening and the road outside
+    cpx, cpy = GATE2['campole']
+    kit('CamPole_Gate', 'Kit_Mast', 'Gate', M_of((cpx, cpy, 0.0), yaw=180.0),
+        note='the gate camera\'s mast (4.2 m, concrete footing) inside the wall, west of the opening')
+    camera_on_pole('Gate', 'CamPole_Gate', CAMG_T)
+    flood_on_pole('Flood_Gate', 'CamPole_Gate', Vector((-3.5, -1.0, 0.0)), 'floodlight under the camera: lights the opening and '
+                                                                          'the road outside while there is power')
+    cg = at_sock('CamPole_Gate', 'Conduit_Base')
+    yc = GATE2['camcond_y']
+    conduit_run('Cond_CamGate', 'Gate', [cg, Vector((cg.x, yc, cg.z)), Vector((dx1 + 0.04, yc, cg.z))],
+                [Vector((0, 0, 1)), Vector((0, 0, 1))], entry0=True, entry1=True,
+                note='the gate camera\'s cable out of its pole\'s footing along the ground into the drive\'s base')
     part('Gate', 'static', (0, 0, 0), parent=None, yaw=GATE_PLACE[1],
-         note='sliding gate beside the booth (separate root: the map\'s Gate prefab, same place)')
+         note='sliding gate (separate root: the map\'s Gate prefab; beside the booth in this file, at the yard in the game, where '
+              'the Update 7 walls run to its end posts)')
 
 
 # ================================================================ the barrier and the gate move to their places
+def inst_root(name):
+    """the top part an instance hangs under (through parents that are instances or parts)"""
+    while name in KIT_INST:
+        name = KIT_INST[name]['parent']
+    while CONTRACT['parts'][name].get('parent'):
+        name = CONTRACT['parts'][name]['parent']
+    return name
+
+
 def place_roots():
-    for root, (pos, yaw) in (('Barrier', BARRIER_PLACE), ('Gate', GATE_PLACE)):
+    for root, (pos, yaw) in (('Barrier', BARRIER_PLACE), ('Gate', GATE_PLACE), ('Barrier_Manual', BARRIER_MANUAL_PLACE)):
         M = Matrix.Translation(pos) @ Matrix.Rotation(math.radians(yaw), 4, 'Z')
         R3 = M.to_3x3()
         tree, grown = {root}, True
@@ -887,14 +1196,17 @@ def place_roots():
             p['pivot'] = K.r4(M @ Vector(p['pivot']))
             if p.get('axis') is not None:
                 p['axis'] = K.r4(R3 @ Vector(p['axis']))
-        for s in CONTRACT['sockets'].values():
-            if s.get('parent') in tree:
-                s['pos'] = K.r4(M @ Vector(s['pos']))
+        for s_ in CONTRACT['sockets'].values():
+            if s_.get('parent') in tree:
+                s_['pos'] = K.r4(M @ Vector(s_['pos']))
                 for key in ('dir', 'facing'):
-                    if s.get(key) is not None:
-                        s[key] = K.r4(R3 @ Vector(s[key]))
-                if s.get('eye') is not None:
-                    s['eye'] = K.r4(M @ Vector(s['eye']))
+                    if s_.get(key) is not None:
+                        s_[key] = K.r4(R3 @ Vector(s_[key]))
+                if s_.get('eye') is not None:
+                    s_['eye'] = K.r4(M @ Vector(s_['eye']))
+        for n, ki in KIT_INST.items():
+            if inst_root(n) == root:
+                ki['M'] = M @ ki['M']
 
 
 # ================================================================ points, colliders, knock rays
@@ -962,20 +1274,33 @@ def static_boxes():
             x, y = sx * (PAD[1] - 0.15), sy * (PAD[3] - 0.15)
             B.append((f'Bollard_{"R" if sx > 0 else "L"}{"B" if sy > 0 else "F"}', R,
                       (x - 0.065, x + 0.065, y - 0.065, y + 0.065, FLOOR, FLOOR + 0.845), None))
-    # barrier and gate: given in their own frames, moved to their places here (yaw 0)
+    # barrier, gate, the hand barrier: given in their own frames, moved to their places here (yaw 0)
     qx = REST_X
-    bar = [('Barrier_Foot', 'Barrier', (-0.375, 0.375, -0.375, 0.375, -0.41, 0.15)),
-           ('Barrier_Post', 'Barrier', (-0.12, 0.12, 0.08, 0.32, 0.15, 1.33)),
+    cx0, cx1, cy0, cy1, cz0, cz1 = BAR2['cab']
+    px0, px1, py0, py1 = BAR2['pad']
+    rx0, rx1, ry0, ry1 = BAR2['rest_pad']
+    bar = [('Barrier_Pad', 'Barrier', (px0, px1, py0, py1, -0.41, 0.15)),
+           ('Barrier_Cabinet', 'Barrier', (cx0, cx1, cy0, cy1, cz0, cz1 + 0.035)),
+           ('Barrier_RestFoot', 'Barrier', (rx0, rx1, ry0, ry1, -0.41, 0.12)),
            ('Barrier_Rest', 'Barrier', (qx - 0.12, qx + 0.12, -0.075, 0.075, 0.12, 0.98)),
-           ('Boom', 'IX_BarrierArm_82', (-0.57, BOOM_LEN, -0.07, 0.07, BOOM_PIV.z - 0.095, BOOM_PIV.z + 0.095))]
-    ly = LEAF_Y
-    gat = [('Gate_Receiver', 'Gate', (-7.40, -6.95, ly - 0.23, ly + 0.23, -0.60, 2.30)),
-           ('Gate_Guide_Out', 'Gate', (-0.24, -0.08, ly - 0.21, ly - 0.05, 0.0, 2.15)),
-           ('Gate_Guide_In', 'Gate', (-0.24, -0.08, ly + 0.05, ly + 0.21, 0.0, 2.15)),
+           ('Boom', 'IX_BarrierArm_82', (-0.24, BOOM_LEN, -0.06, 0.06, BOOM_PIV.z - 0.08, BOOM_PIV.z + 0.08))]
+    man = [('Manual_Foot', 'Barrier_Manual', (-0.375, 0.375, -0.375, 0.375, -0.41, 0.15)),
+           ('Manual_Post', 'Barrier_Manual', (-0.12, 0.12, 0.08, 0.32, 0.15, 1.33)),
+           ('Manual_Rest', 'Barrier_Manual', (qx - 0.12, qx + 0.12, -0.075, 0.075, 0.12, 0.98)),
+           ('Manual_Boom', 'IX_BarrierArm_Manual_318', (-0.57, BOOM_LEN, -0.07, 0.07, BOOM_PIV.z - 0.095, BOOM_PIV.z + 0.095))]
+    ly = GATE2['ly']
+    zt = GATE2['z'][1]
+    dx0, dx1, dy0, dy1, dz0, dz1 = GATE2['drive']
+    gx, gxo = GATE2['guide_x'], GATE2['guide_x_out']
+    gat = [('Gate_PostE', 'Gate', (GATE2['post_e'][0], GATE2['post_e'][1], -0.15, 0.15, -0.30, GATE2['post_h'] + 0.09)),
+           ('Gate_PostW', 'Gate', (GATE2['post_w'][0], GATE2['post_w'][1], -0.15, 0.15, -0.30, GATE2['post_h'] + 0.09)),
+           ('Gate_Receiver', 'Gate', (-7.40, -6.95, ly - 0.23, ly + 0.23, -0.60, zt + 0.05)),
+           ('Gate_Guide_Out', 'Gate', (gxo - 0.04, gxo + 0.04, ly - 0.17, ly - 0.09, 0.0, zt + 0.15)),
+           ('Gate_Guide_In', 'Gate', (gx - 0.04, gx + 0.04, ly + 0.09, ly + 0.17, 0.0, zt + 0.15)),
            ('Gate_Stop', 'Gate', (6.62, 6.76, ly - 0.04, ly + 0.04, 0.0, 0.60)),
-           ('Gate_Fence', 'Gate', (FENCE_X[0] - 0.03, FENCE_X[1] + 0.03, -0.03, 0.03, 0.0, 2.38)),
-           ('Gate_Leaf', 'IX_Gate_81', (GATE_LEAF[0], GATE_LEAF[1], ly - 0.035, ly + 0.035, 0.05, GATE_Z[1] + 0.40))]
-    for lst, (pos, yaw) in ((bar, BARRIER_PLACE), (gat, GATE_PLACE)):
+           ('Gate_Drive', 'Gate', (dx0, dx1, dy0, dy1, -0.10, dz1 + 0.03)),
+           ('Gate_Leaf', 'IX_Gate_81', (GATE_LEAF[0], GATE_LEAF[1], ly - 0.045, ly + 0.07, 0.05, zt + 0.42))]
+    for lst, (pos, yaw) in ((bar, BARRIER_PLACE), (gat, GATE_PLACE), (man, BARRIER_MANUAL_PLACE)):
         assert yaw == 0.0
         for name, par, (a0, a1, b0, b1, c0, c1) in lst:
             B.append((name, par, (a0 + pos.x, a1 + pos.x, b0 + pos.y, b1 + pos.y, c0 + pos.z, c1 + pos.z), None))
@@ -986,9 +1311,9 @@ def knock_rays():
     R = []
     for i, x in enumerate((-1.97, 1.97)):
         R.append((f'Knock_Front_{i + 1}', (x, -3.0, 0.70), (0, 1, 0)))
-    for i, x in enumerate((-1.2, -0.3, 1.8)):
+    for i, x in enumerate((-1.75, -0.3, 1.8)):                   # v2: -1.2 -> -1.75 (the cabinet and its conduit are at -1.2)
         R.append((f'Knock_Back_{i + 1}', (x, 3.0, 1.40 if x < 0 else 1.0), (0, -1, 0)))
-    for i, y in enumerate((-1.3, 0.0, 1.0)):
+    for i, y in enumerate((-0.75, 0.0, 1.0)):                    # v2: -1.3 -> -0.75 (the junction box is at -1.3)
         R.append((f'Knock_Road_{i + 1}', (3.4, y, 1.0 if y > -0.5 else 0.55), (-1, 0, 0)))
     for i, y in enumerate((-1.0, 1.0)):
         R.append((f'Knock_Left_{i + 1}', (-3.4, y, 1.6), (1, 0, 0)))
@@ -1010,6 +1335,8 @@ def build_kpp():
          note='the booth: pad, bollards, walls, windows, roof, desk, cabinet carcasses, the key cabinet, corkboard, heater, '
               'bulkhead; prefab root (the map\'s Checkpoint prefab, same place)')
     part('Window_Glass', 'static', (0, 0, 1.8), parent='Checkpoint', note='the fixed panes (glass material)')
+    outside_kit()
     barrier()
+    barrier_manual()
     gate()
     place_roots()

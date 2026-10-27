@@ -883,7 +883,7 @@
   },
   "MeteoStation": {
    "groups": 1,
-   "islands": 471,
+   "islands": 418,
    "floating": []
   },
   "LookoutTower": {
@@ -2783,7 +2783,7 @@
   "IX_ChapelDoor_8": 416,
   "IX_PumpDoor_7": 200,
   "LookoutTower": 6474,
-  "MeteoStation": 5618,
+  "MeteoStation": 4934,
   "PumpHouse": 1350,
   "Radome": 5480,
   "RelayMast": 11620

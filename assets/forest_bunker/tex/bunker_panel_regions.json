@@ -1,0 +1,51 @@
+{
+ "size": 256,
+ "regions": {
+  "console": [
+   0,
+   0,
+   128,
+   92
+  ],
+  "rauchen": [
+   130,
+   0,
+   194,
+   88
+  ],
+  "zutritt": [
+   0,
+   94,
+   96,
+   158
+  ],
+  "genehm": [
+   98,
+   94,
+   194,
+   158
+  ],
+  "notaus": [
+   0,
+   160,
+   112,
+   208
+  ],
+  "drucktuer": [
+   0,
+   210,
+   192,
+   254
+  ]
+ },
+ "prints": {
+  "px": 64,
+  "metres": 0.9,
+  "source": "T_BVDecal_Cut_px (X11 prints cell)",
+  "layout": "one stride (left and right sole) per quad, toes to +v"
+ },
+ "ice": {
+  "tile_px": 64,
+  "px_per_m": 64
+ }
+}

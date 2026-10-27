@@ -3,6 +3,7 @@ base_paint.py                            Painters for the Forest base prefabs' a
 base_spec.py                             The Forest base's remaining prefabs (the shaft hatch, the helipad, the radio mast, the crates, the log pile, the yard
 base_tex.py                              Panel atlas of the base prefabs (256 x 256, pixel art, point-filtered, 160 px/m on the faces as the road's signs), in
 bld_common.py                            Shared build steps for the station's buildings (lifted from main_build.py so the garage and the next locations use the
+compose_far11.py                         forest_far 1.1 from 1.0 without re-baking what did not change: far 1.0 (out/far_v10.blend, its far.json and contract) +
 far_build.py                             Far points build (far_kit + far_paint): the five dishes, the radome, the relay mast, the weather station, the lookout
 far_kit.py                               The Forest map's far points in the generator shed's style (Update 3's names, pivots, sizes, places, lights):
 far_paint.py                             Painters for the far points' atlases (psxbake): painter(Pp, Nn, Z, ao, aa) -> (rgb_linear[n, 3], groove[n]).
@@ -23,7 +24,8 @@ make_sheets_far.py                       Sheets for the far points: A the dishes
 make_sheets_main.py                      Sheets for the main building: A outside by day, B the ground floor, C the upper floor and the stair, D the basement and
 make_sheets_road.py                      Sheets for the road prefabs: A the signs and the gate, B the bridge and the overlook, C the windfall and the road on
 noise.py                                 vectorised noise and shaping helpers (from the Utility Plane livery)
-pack_far.py                              Package the far prefabs: the .blend with relative texture paths, the textures, the contract (JSON + Russian reference),
+pack_far.py                              Package the far prefabs: the .blend with relative texture paths (1.1: the forest_devices instances linked from
+patch_sheet_f11.py                       far 1.1: sheet F (Update 3 vs now) needs Update 3's renders and previews, which live outside the package - so 1.1 swaps
 post_bloom.py                            EXR (linear) -> PNG with the same post as the URP previews (URP-like bloom threshold 1, knee 0.5, intensity 0.25,
 psxbake.py                               Shared PSX atlas bake (the van v3 recipe, made reusable for new assets):
 psxlib.py                                PSX pipeline for a ready-made vehicle model (UAZ-452 from Sketchfab): import any format, report, normalise,

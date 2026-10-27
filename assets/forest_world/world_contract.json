@@ -1,0 +1,2637 @@
+{
+ "parts": {
+  "FireBarrel": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the fire barrel (root): a 200 l drum, the lid cut out, air holes round the foot; origin under its middle; a warm island: R1 (creatures keep off warm yellow light) and no wind-chill within warm_radius (meta)",
+   "object": "FireBarrel",
+   "root": "FireBarrel",
+   "mass_kg": 25.0,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "FireBarrel_Fuel": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FireBarrel",
+   "states": [
+    "empty",
+    "full"
+   ],
+   "note": "the split logs in it (hide when burnt out); Slot_Fuel takes wood and the paper / wood rubbish of forest_trash",
+   "object": "FireBarrel_Fuel",
+   "root": "FireBarrel",
+   "pivotUnity": [
+    0.0,
+    0.42,
+    0.0
+   ]
+  },
+  "FireBarrel_Glow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.42
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FireBarrel",
+   "states": [
+    "cold",
+    "embers",
+    "burning"
+   ],
+   "note": "the embers on the ash and the 18 air holes: M_World_Embers_Off (cold: dark holes) / M_World_Embers (lit)",
+   "object": "FireBarrel_Glow",
+   "root": "FireBarrel",
+   "pivotUnity": [
+    0.0,
+    0.42,
+    0.0
+   ]
+  },
+  "FireBarrel_Flames": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.47
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "FireBarrel",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "three crossed flame cards, M_World_Fire: the 8 frames side by side - step u by 1/8 at ~10 fps (or play them in random order); hidden when off; ~0.86 m of flame over the ash, the lower third inside the drum",
+   "object": "FireBarrel_Flames",
+   "root": "FireBarrel",
+   "pivotUnity": [
+    0.0,
+    0.47,
+    0.0
+   ]
+  },
+  "ShiftCar_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.71,
+    1.46
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [],
+   "note": "the fixed windows (dirty glass, M_World_Glass)",
+   "object": "ShiftCar_Glass",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    1.46,
+    -0.71
+   ]
+  },
+  "IX_ShiftCarDoor_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.85,
+    -0.315,
+    1.41
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ShiftCarDoor",
+   "states": [],
+   "note": "the door's window (glass material)",
+   "object": "IX_ShiftCarDoor_Glass",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    -0.85,
+    1.41,
+    0.315
+   ]
+  },
+  "IX_ShiftCarDoor": {
+   "kind": "hinge",
+   "pivot": [
+    0.89,
+    -0.72,
+    0.8283
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0,
+    72
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "the driver's door (front left, +x): hinge at its front edge, opens outward (+) to 72 deg; the window and the mirror move with it",
+   "object": "IX_ShiftCarDoor",
+   "root": "ShiftCar",
+   "box": {
+    "center": [
+     0.045,
+     0.3888,
+     0.375
+    ],
+    "size": [
+     0.27,
+     0.8675,
+     1.3346
+    ]
+   },
+   "pivotUnity": [
+    -0.89,
+    0.8283,
+    0.72
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "IX_ShiftCarRearDoor": {
+   "kind": "hinge",
+   "pivot": [
+    -0.815,
+    2.134,
+    1.2375
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    100
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "the rear door, side-hinged on the right (-x), opens outward (+) to 100 deg; the spare wheel rides on it",
+   "object": "IX_ShiftCarRearDoor",
+   "root": "ShiftCar",
+   "box": {
+    "center": [
+     0.797,
+     0.0935,
+     0.0
+    ],
+    "size": [
+     1.626,
+     0.305,
+     1.205
+    ]
+   },
+   "pivotUnity": [
+    0.815,
+    1.2375,
+    -2.134
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "IX_ShiftCarRearDoor_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    2.1,
+    1.495
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_ShiftCarRearDoor",
+   "states": [],
+   "note": "the rear door's window",
+   "object": "IX_ShiftCarRearDoor_Glass",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    1.495,
+    -2.1
+   ]
+  },
+  "ShiftCar_Snow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    1.9
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [
+    "none",
+    "snowed"
+   ],
+   "note": "the snow on the car (roof, hood, decks): a separate part - show it after a snowfall, the paint under it is clean",
+   "object": "ShiftCar_Snow",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    1.9,
+    0.0
+   ]
+  },
+  "ShiftCar": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the previous shift's car (root): an 80s off-roader without make or badges in the station's grey-green, RADIOOBSERVATORIUM HOHENMOOS on both front doors (panel decals); origin = the middle of its footprint on the ground; stands at forest_main's anchors/Car_Parked",
+   "object": "ShiftCar",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "WreckCar_Windscreen": {
+   "kind": "static",
+   "pivot": [
+    -0.0527,
+    -0.3557,
+    1.0172
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WreckCar",
+   "states": [],
+   "note": "the cracked windscreen: M_World_GlassCracked (UV 0..1, the impact low on the passenger side)",
+   "object": "WreckCar_Windscreen",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0527,
+    1.0172,
+    0.3557
+   ]
+  },
+  "WreckCar_Glass": {
+   "kind": "static",
+   "pivot": [
+    -0.057,
+    0.4916,
+    1.1113
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WreckCar",
+   "states": [],
+   "note": "the fixed windows (dirty glass, M_World_Glass)",
+   "object": "WreckCar_Glass",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.057,
+    1.1113,
+    -0.4916
+   ]
+  },
+  "IX_WreckCarDoor": {
+   "kind": "hinge",
+   "pivot": [
+    0.85,
+    -0.6094,
+    0.54
+   ],
+   "axis": [
+    0.0658,
+    0.0343,
+    -0.9972
+   ],
+   "range": [
+    0,
+    72
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WreckCar",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "the driver's door (front left, +x): hinge at its front edge, opens outward (+) to 72 deg; the window and the mirror move with it - its window is broken (no glass)",
+   "object": "IX_WreckCarDoor",
+   "root": "WreckCar",
+   "box": {
+    "center": [
+     -0.0402,
+     0.5311,
+     0.2719
+    ],
+    "size": [
+     0.3944,
+     1.1421,
+     1.056
+    ]
+   },
+   "pivotUnity": [
+    -0.85,
+    0.54,
+    0.6094
+   ],
+   "axisUnity": [
+    -0.0658,
+    -0.9972,
+    -0.0343
+   ]
+  },
+  "IX_WreckCarBoot": {
+   "kind": "hinge",
+   "pivot": [
+    -0.0396,
+    1.65,
+    0.8866
+   ],
+   "axis": [
+    0.9978,
+    -0.0023,
+    0.0658
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 12.0,
+   "parent": "WreckCar",
+   "states": [
+    "shut",
+    "ajar",
+    "open"
+   ],
+   "note": "the boot lid: hinged at its front edge (axis +x), opens up (+) to 75 deg; it stands ajar (12 deg) - the lock is broken; QUESTIONS_HUT_2: something may lie in the boot (Slot_WreckCar_Boot)",
+   "object": "IX_WreckCarBoot",
+   "root": "WreckCar",
+   "box": {
+    "center": [
+     0.0035,
+     0.3455,
+     -0.0398
+    ],
+    "size": [
+     1.6827,
+     0.6945,
+     0.1863
+    ]
+   },
+   "pivotUnity": [
+    0.0396,
+    0.8866,
+    -1.65
+   ],
+   "axisUnity": [
+    -0.9978,
+    0.0658,
+    0.0023
+   ]
+  },
+  "WreckCar_Snow": {
+   "kind": "static",
+   "pivot": [
+    -0.0702,
+    -0.035,
+    1.2928
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WreckCar",
+   "states": [
+    "none",
+    "snowed"
+   ],
+   "note": "the snow on the car (roof, hood, decks): a separate part - show it after a snowfall, the paint under it is clean",
+   "object": "WreckCar_Snow",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0702,
+    1.2928,
+    0.035
+   ]
+  },
+  "WreckCar_BootSnow": {
+   "kind": "static",
+   "pivot": [
+    -0.0393,
+    1.6402,
+    0.8812
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_WreckCarBoot",
+   "states": [
+    "none",
+    "snowed"
+   ],
+   "note": "the snow on the boot lid: moves with it; show / hide with WreckCar_Snow",
+   "object": "WreckCar_BootSnow",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0393,
+    0.8812,
+    -1.6402
+   ]
+  },
+  "WreckCar": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the second abandoned car (root): an 80s saloon without make or badges, faded blue, rusted; the front right wheel gone - it rests on the brake disc and leans (-3.8 deg roll, 2.0 deg pitch); the windscreen cracked (WreckCar_Windscreen), the driver's and the rear right windows broken; origin = the middle of its footprint on the ground; no anchor on the map yet",
+   "object": "WreckCar",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ForesterCave_Props": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    3.6,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ForesterCave",
+   "states": [],
+   "note": "the dressing: boughs, blankets, candles on their stone, the nail, the bow saw and the sawdust, the boots, the junk heap, the 1991 newspaper (panel)",
+   "object": "ForesterCave_Props",
+   "root": "ForesterCave",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    -3.6
+   ]
+  },
+  "ForesterCave": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the Forester's cave (root): a granite outcrop ~12 x 10 m, 5 m high; the passage (1.7 m wide, 1.9 m high) from the front (-y) into a chamber 5 x 4 m, 2.3 m high; origin = the floor in the mouth (z = 0 is the cave floor and the ground in front of it); the rock goes 0.6 m into the ground: set it into a slope, the mouth free",
+   "object": "ForesterCave",
+   "root": "ForesterCave",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "COLM_Cave": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ForesterCave",
+   "states": [],
+   "note": "the collision shell: a simplified copy of the rock (~900 tris) for a MeshCollider; not rendered",
+   "object": "COLM_Cave",
+   "root": "ForesterCave",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_RelayMast": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "glaze on the legs and braces of the 42 m relay mast, icicles under the horizontals (scenery: goes when the weather turns; host forest_far RelayMast, at its origin)",
+   "object": "Ice_RelayMast",
+   "root": "Ice_RelayMast",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_RelayMast_Panel_1": {
+   "kind": "static",
+   "pivot": [
+    1.1891,
+    0.001,
+    39.9034
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_RelayMast",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on panel aerial 1 (39-41 m): coverage drops while any panel is iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_RelayMast_Panel_1",
+   "root": "Ice_RelayMast",
+   "pivotUnity": [
+    -1.1891,
+    39.9034,
+    -0.001
+   ]
+  },
+  "Ice_RelayMast_Panel_2": {
+   "kind": "static",
+   "pivot": [
+    -0.585,
+    1.0132,
+    39.9184
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_RelayMast",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on panel aerial 2 (39-41 m): coverage drops while any panel is iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_RelayMast_Panel_2",
+   "root": "Ice_RelayMast",
+   "pivotUnity": [
+    0.585,
+    39.9184,
+    -1.0132
+   ]
+  },
+  "Ice_RelayMast_Panel_3": {
+   "kind": "static",
+   "pivot": [
+    -0.585,
+    -1.0132,
+    39.9568
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_RelayMast",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on panel aerial 3 (39-41 m): coverage drops while any panel is iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_RelayMast_Panel_3",
+   "root": "Ice_RelayMast",
+   "pivotUnity": [
+    0.585,
+    39.9568,
+    1.0132
+   ]
+  },
+  "Ice_RelayMast_Drum": {
+   "kind": "static",
+   "pivot": [
+    1.6326,
+    0.0,
+    31.3602
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_RelayMast",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "the crust on the microwave drum (31.5 m): the link to the base drops - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_RelayMast_Drum",
+   "root": "Ice_RelayMast",
+   "pivotUnity": [
+    -1.6326,
+    31.3602,
+    0.0
+   ]
+  },
+  "Ice_Dish_1": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "icicles on the reflector's rim and glaze on the feed struts of Dish_1 (scenery; host forest_far Dish_1, at its origin, built for its own elevation)",
+   "object": "Ice_Dish_1",
+   "root": "Ice_Dish_1",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_Dish_1_Feed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    4.9443,
+    11.8568
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_1",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on Dish_1's feed and horn (at the focus): the dish is deaf while iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_1_Feed",
+   "root": "Ice_Dish_1",
+   "pivotUnity": [
+    0.0,
+    11.8568,
+    -4.9443
+   ]
+  },
+  "Ice_Dish_1_Bowl": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    4.1432,
+    4.9288
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_1",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "snow and ice in the bottom of Dish_1's reflector: weak signal while it lies there (shovel / knock out) - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_1_Bowl",
+   "root": "Ice_Dish_1",
+   "pivotUnity": [
+    0.0,
+    4.9288,
+    -4.1432
+   ]
+  },
+  "Ice_Dish_2": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "icicles on the reflector's rim and glaze on the feed struts of Dish_2 (scenery; host forest_far Dish_2, at its origin, built for its own elevation)",
+   "object": "Ice_Dish_2",
+   "root": "Ice_Dish_2",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_Dish_2_Feed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    4.661,
+    12.194
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_2",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on Dish_2's feed and horn (at the focus): the dish is deaf while iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_2_Feed",
+   "root": "Ice_Dish_2",
+   "pivotUnity": [
+    0.0,
+    12.194,
+    -4.661
+   ]
+  },
+  "Ice_Dish_2_Bowl": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    4.3475,
+    5.2253
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_2",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "snow and ice in the bottom of Dish_2's reflector: weak signal while it lies there (shovel / knock out) - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_2_Bowl",
+   "root": "Ice_Dish_2",
+   "pivotUnity": [
+    0.0,
+    5.2253,
+    -4.3475
+   ]
+  },
+  "Ice_Dish_3": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "icicles on the reflector's rim and glaze on the feed struts of Dish_3 (scenery; host forest_far Dish_3, at its origin, built for its own elevation)",
+   "object": "Ice_Dish_3",
+   "root": "Ice_Dish_3",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_Dish_3_Feed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    3.3022,
+    9.8022
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_3",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on Dish_3's feed and horn (at the focus): the dish is deaf while iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_3_Feed",
+   "root": "Ice_Dish_3",
+   "pivotUnity": [
+    0.0,
+    9.8022,
+    -3.3022
+   ]
+  },
+  "Ice_Dish_3_Bowl": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    3.3316,
+    4.5595
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_3",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "snow and ice in the bottom of Dish_3's reflector: weak signal while it lies there (shovel / knock out) - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_3_Bowl",
+   "root": "Ice_Dish_3",
+   "pivotUnity": [
+    0.0,
+    4.5595,
+    -3.3316
+   ]
+  },
+  "Ice_Dish_4": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "icicles on the reflector's rim and glaze on the feed struts of Dish_4 (scenery; host forest_far Dish_4, at its origin, built for its own elevation)",
+   "object": "Ice_Dish_4",
+   "root": "Ice_Dish_4",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_Dish_4_Feed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    3.5799,
+    9.4994
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_4",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on Dish_4's feed and horn (at the focus): the dish is deaf while iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_4_Feed",
+   "root": "Ice_Dish_4",
+   "pivotUnity": [
+    0.0,
+    9.4994,
+    -3.5799
+   ]
+  },
+  "Ice_Dish_4_Bowl": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    3.1496,
+    4.2765
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_4",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "snow and ice in the bottom of Dish_4's reflector: weak signal while it lies there (shovel / knock out) - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_4_Bowl",
+   "root": "Ice_Dish_4",
+   "pivotUnity": [
+    0.0,
+    4.2765,
+    -3.1496
+   ]
+  },
+  "Ice_Dish_5": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "icicles on the reflector's rim and glaze on the feed struts of Dish_5 (scenery; host forest_far Dish_5, at its origin, built for its own elevation)",
+   "object": "Ice_Dish_5",
+   "root": "Ice_Dish_5",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_Dish_5_Feed": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    5.077,
+    11.681
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_5",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on Dish_5's feed and horn (at the focus): the dish is deaf while iced - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_5_Feed",
+   "root": "Ice_Dish_5",
+   "pivotUnity": [
+    0.0,
+    11.681,
+    -5.077
+   ]
+  },
+  "Ice_Dish_5_Bowl": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    4.0334,
+    4.786
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_Dish_5",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "snow and ice in the bottom of Dish_5's reflector: weak signal while it lies there (shovel / knock out) - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_Dish_5_Bowl",
+   "root": "Ice_Dish_5",
+   "pivotUnity": [
+    0.0,
+    4.786,
+    -4.0334
+   ]
+  },
+  "Ice_RoofMast": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [
+    "none",
+    "iced"
+   ],
+   "note": "glaze and icicles on the BaseMain roof mast below its top and on the platform's rail (scenery; host forest_main BaseMain, at its origin)",
+   "object": "Ice_RoofMast",
+   "root": "Ice_RoofMast",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Ice_RoofMast_Top": {
+   "kind": "static",
+   "pivot": [
+    5.4517,
+    2.8608,
+    17.82
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_RoofMast",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime on the top 1.6 m of the roof mast - the aerial and the obstruction light: the base radio is poor while it is iced (B04); from the platform - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_RoofMast_Top",
+   "root": "Ice_RoofMast",
+   "pivotUnity": [
+    -5.4517,
+    17.82,
+    -2.8608
+   ]
+  },
+  "Ice_RoofDish": {
+   "kind": "static",
+   "pivot": [
+    2.9688,
+    -4.2387,
+    7.8351
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Ice_RoofMast",
+   "states": [
+    "iced",
+    "clear"
+   ],
+   "note": "rime and snow on the roof's satellite dish - knocked off (forest_gear Item_IceAxe, a pole, a thrown snowball does nothing): hide it, drop a few chunks; the hit box is in the contract",
+   "object": "Ice_RoofDish",
+   "root": "Ice_RoofMast",
+   "pivotUnity": [
+    -2.9688,
+    7.8351,
+    4.2387
+   ]
+  }
+ },
+ "sockets": {
+  "Slot_Fuel": {
+   "pos": [
+    0.0,
+    0.0,
+    0.88
+   ],
+   "kind": "slot",
+   "parent": "FireBarrel",
+   "note": "drop wood / paper / wood rubbish in from above",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "FireBarrel",
+   "posUnity": [
+    0.0,
+    0.88,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Light_Fire": {
+   "pos": [
+    0.0,
+    0.0,
+    1.05
+   ],
+   "kind": "light",
+   "parent": "FireBarrel",
+   "note": "point light, warm (1.0, 0.55, 0.22) linear, range 9 m, flicker 0.75-1.0 at 6-10 Hz; off when cold, weak and steady with embers",
+   "root": "FireBarrel",
+   "posUnity": [
+    0.0,
+    1.05,
+    0.0
+   ]
+  },
+  "Hand_ShiftCarDoor_Out": {
+   "pos": [
+    0.93,
+    -0.016,
+    1.055
+   ],
+   "kind": "hand",
+   "parent": "IX_ShiftCarDoor",
+   "note": "the outside handle",
+   "root": "ShiftCar",
+   "posUnity": [
+    -0.93,
+    1.055,
+    0.016
+   ]
+  },
+  "Hand_ShiftCarDoor_In": {
+   "pos": [
+    0.77,
+    -0.156,
+    1.0
+   ],
+   "kind": "hand",
+   "parent": "IX_ShiftCarDoor",
+   "note": "the inside lever",
+   "root": "ShiftCar",
+   "posUnity": [
+    -0.77,
+    1.0,
+    0.156
+   ]
+  },
+  "Hand_ShiftCarRearDoor": {
+   "pos": [
+    0.62,
+    2.164,
+    0.915
+   ],
+   "kind": "hand",
+   "parent": "IX_ShiftCarRearDoor",
+   "note": "the handle",
+   "root": "ShiftCar",
+   "posUnity": [
+    -0.62,
+    0.915,
+    -2.164
+   ]
+  },
+  "Seat_ShiftCar_Driver": {
+   "pos": [
+    0.38,
+    0.1,
+    0.86
+   ],
+   "kind": "seat",
+   "parent": "ShiftCar",
+   "note": "the driver's seat",
+   "root": "ShiftCar",
+   "posUnity": [
+    -0.38,
+    0.86,
+    -0.1
+   ]
+  },
+  "Slot_ShiftCar_Load_1": {
+   "pos": [
+    0.3,
+    1.72,
+    0.68
+   ],
+   "kind": "slot",
+   "parent": "ShiftCar",
+   "note": "the load floor, left",
+   "root": "ShiftCar",
+   "posUnity": [
+    -0.3,
+    0.68,
+    -1.72
+   ]
+  },
+  "Slot_ShiftCar_Load_2": {
+   "pos": [
+    -0.3,
+    1.72,
+    0.68
+   ],
+   "kind": "slot",
+   "parent": "ShiftCar",
+   "note": "the load floor, right",
+   "root": "ShiftCar",
+   "posUnity": [
+    0.3,
+    0.68,
+    -1.72
+   ]
+  },
+  "Slot_ShiftCar_Seat": {
+   "pos": [
+    -0.38,
+    0.1,
+    0.86
+   ],
+   "kind": "slot",
+   "parent": "ShiftCar",
+   "note": "the passenger seat",
+   "root": "ShiftCar",
+   "posUnity": [
+    0.38,
+    0.86,
+    -0.1
+   ]
+  },
+  "Hand_WreckCarDoor_Out": {
+   "pos": [
+    0.8777,
+    0.3675,
+    0.7626
+   ],
+   "kind": "hand",
+   "parent": "IX_WreckCarDoor",
+   "note": "the outside handle",
+   "root": "WreckCar",
+   "posUnity": [
+    -0.8777,
+    0.7626,
+    -0.3675
+   ]
+  },
+  "Hand_WreckCarDoor_In": {
+   "pos": [
+    0.7216,
+    0.2298,
+    0.6924
+   ],
+   "kind": "hand",
+   "parent": "IX_WreckCarDoor",
+   "note": "the inside lever",
+   "root": "WreckCar",
+   "posUnity": [
+    -0.7216,
+    0.6924,
+    -0.2298
+   ]
+  },
+  "Hand_WreckCarBoot": {
+   "pos": [
+    -0.035,
+    2.352,
+    0.8408
+   ],
+   "kind": "hand",
+   "parent": "IX_WreckCarBoot",
+   "note": "lift the lid",
+   "root": "WreckCar",
+   "posUnity": [
+    0.035,
+    0.8408,
+    -2.352
+   ]
+  },
+  "Slot_WreckCar_Boot": {
+   "pos": [
+    0.1427,
+    1.9964,
+    0.4142
+   ],
+   "kind": "slot",
+   "parent": "WreckCar",
+   "note": "the boot floor",
+   "root": "WreckCar",
+   "posUnity": [
+    -0.1427,
+    0.4142,
+    -1.9964
+   ]
+  },
+  "Slot_WreckCar_Seat": {
+   "pos": [
+    -0.3934,
+    0.075,
+    0.4229
+   ],
+   "kind": "slot",
+   "parent": "WreckCar",
+   "note": "the passenger seat",
+   "root": "WreckCar",
+   "posUnity": [
+    0.3934,
+    0.4229,
+    -0.075
+   ]
+  },
+  "Sleep_Forester": {
+   "pos": [
+    -1.7,
+    4.25,
+    0.223
+   ],
+   "kind": "pose",
+   "parent": "ForesterCave",
+   "note": "where the Forester lies by day (head at -x, on the rolled blanket), curled under the blankets",
+   "dir": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "root": "ForesterCave",
+   "posUnity": [
+    1.7,
+    0.223,
+    -4.25
+   ],
+   "dirUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Light_Candle_1": {
+   "pos": [
+    -0.86,
+    5.04,
+    0.4905
+   ],
+   "kind": "light",
+   "parent": "ForesterCave",
+   "note": "a candle flame: point light (1.0, 0.62, 0.30), range 3 m, flicker; unlit by day",
+   "root": "ForesterCave",
+   "posUnity": [
+    0.86,
+    0.4905,
+    -5.04
+   ]
+  },
+  "Light_Candle_2": {
+   "pos": [
+    -0.73,
+    5.18,
+    0.4505
+   ],
+   "kind": "light",
+   "parent": "ForesterCave",
+   "note": "a candle flame: point light (1.0, 0.62, 0.30), range 3 m, flicker; unlit by day",
+   "root": "ForesterCave",
+   "posUnity": [
+    0.73,
+    0.4505,
+    -5.18
+   ]
+  },
+  "Light_Candle_3": {
+   "pos": [
+    -0.6,
+    5.06,
+    0.5205
+   ],
+   "kind": "light",
+   "parent": "ForesterCave",
+   "note": "a candle flame: point light (1.0, 0.62, 0.30), range 3 m, flicker; unlit by day",
+   "root": "ForesterCave",
+   "posUnity": [
+    0.6,
+    0.5205,
+    -5.06
+   ]
+  },
+  "Light_Candle_4": {
+   "pos": [
+    -0.52,
+    5.19,
+    0.4405
+   ],
+   "kind": "light",
+   "parent": "ForesterCave",
+   "note": "a candle flame: point light (1.0, 0.62, 0.30), range 3 m, flicker; unlit by day",
+   "root": "ForesterCave",
+   "posUnity": [
+    0.52,
+    0.4405,
+    -5.19
+   ]
+  },
+  "Slot_Key": {
+   "pos": [
+    1.9441,
+    2.2342,
+    1.2782
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "forest_gear's Item_Key_Stationsleiter hangs here on the nail by its ring (TASKS I1)",
+   "dir": [
+    -0.4832,
+    0.8483,
+    -0.2168
+   ],
+   "root": "ForesterCave",
+   "posUnity": [
+    -1.9441,
+    1.2782,
+    -2.2342
+   ],
+   "dirUnity": [
+    0.4832,
+    -0.2168,
+    -0.8483
+   ]
+  },
+  "Slot_Stash_1": {
+   "pos": [
+    1.25,
+    4.35,
+    0.0067
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    -1.25,
+    0.0067,
+    -4.35
+   ]
+  },
+  "Slot_Stash_2": {
+   "pos": [
+    1.85,
+    4.3,
+    0.0071
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    -1.85,
+    0.0071,
+    -4.3
+   ]
+  },
+  "Slot_Stash_3": {
+   "pos": [
+    1.95,
+    5.15,
+    0.0094
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    -1.95,
+    0.0094,
+    -5.15
+   ]
+  },
+  "Slot_Stash_4": {
+   "pos": [
+    1.1,
+    5.25,
+    0.0094
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    -1.1,
+    0.0094,
+    -5.25
+   ]
+  },
+  "Slot_Stash_5": {
+   "pos": [
+    0.45,
+    5.2,
+    0.1099
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    -0.45,
+    0.1099,
+    -5.2
+   ]
+  },
+  "Slot_Stash_6": {
+   "pos": [
+    -0.15,
+    5.35,
+    0.2649
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    0.15,
+    0.2649,
+    -5.35
+   ]
+  },
+  "Slot_Stash_7": {
+   "pos": [
+    1.35,
+    3.4,
+    0.0051
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    -1.35,
+    0.0051,
+    -3.4
+   ]
+  },
+  "Slot_Stash_8": {
+   "pos": [
+    -0.95,
+    4.85,
+    0.0163
+   ],
+   "kind": "slot",
+   "parent": "ForesterCave",
+   "note": "a stolen thing lies here (canister, battery, cassettes, torch, radio, a can of food ... - MONSTERS)",
+   "root": "ForesterCave",
+   "posUnity": [
+    0.95,
+    0.0163,
+    -4.85
+   ]
+  },
+  "Zone_CaveInside": {
+   "pos": [
+    0.3,
+    3.4,
+    1.1
+   ],
+   "kind": "volume",
+   "parent": "ForesterCave",
+   "note": "a box 5.6 x 5.4 x 2.4 m round the chamber and the inner passage: inside the cave (ambience, no wind)",
+   "size": [
+    5.6,
+    5.4,
+    2.4
+   ],
+   "root": "ForesterCave",
+   "posUnity": [
+    -0.3,
+    1.1,
+    -3.4
+   ],
+   "sizeUnity": [
+    5.6,
+    2.4,
+    5.4
+   ]
+  },
+  "View_CaveMouth": {
+   "pos": [
+    0.0,
+    -2.5,
+    1.6
+   ],
+   "kind": "view",
+   "parent": "ForesterCave",
+   "note": "the first look into the mouth",
+   "dir": [
+    0.0,
+    1.0,
+    -0.1
+   ],
+   "root": "ForesterCave",
+   "posUnity": [
+    0.0,
+    1.6,
+    2.5
+   ],
+   "dirUnity": [
+    0.0,
+    -0.1,
+    -1.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_FireBarrel",
+   "parent": "FireBarrel",
+   "root": "FireBarrel",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.435
+   ],
+   "size": [
+    0.592,
+    0.592,
+    0.87
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.435
+   ],
+   "centerUnity": [
+    0.0,
+    0.435,
+    0.0
+   ],
+   "sizeUnity": [
+    0.592,
+    0.87,
+    0.592
+   ]
+  },
+  {
+   "name": "COL_ShiftCarDoor",
+   "parent": "IX_ShiftCarDoor",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    -0.035,
+    0.4,
+    0.3667
+   ],
+   "size": [
+    0.05,
+    0.84,
+    1.33
+   ],
+   "center_root": [
+    0.855,
+    -0.32,
+    1.195
+   ],
+   "centerUnity": [
+    0.035,
+    0.3667,
+    -0.4
+   ],
+   "sizeUnity": [
+    0.05,
+    1.33,
+    0.84
+   ]
+  },
+  {
+   "name": "COL_ShiftCarRearDoor",
+   "parent": "IX_ShiftCarRearDoor",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    0.815,
+    0.111,
+    0.0
+   ],
+   "size": [
+    1.59,
+    0.35,
+    1.205
+   ],
+   "center_root": [
+    0.0,
+    2.245,
+    1.2375
+   ],
+   "centerUnity": [
+    -0.815,
+    0.0,
+    -0.111
+   ],
+   "sizeUnity": [
+    1.59,
+    1.205,
+    0.35
+   ]
+  },
+  {
+   "name": "COL_ShiftCar",
+   "parent": "ShiftCar",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.005,
+    1.11
+   ],
+   "size": [
+    1.78,
+    4.39,
+    1.82
+   ],
+   "center_root": [
+    0.0,
+    -0.005,
+    1.11
+   ],
+   "centerUnity": [
+    0.0,
+    1.11,
+    0.005
+   ],
+   "sizeUnity": [
+    1.78,
+    1.82,
+    4.39
+   ]
+  },
+  {
+   "name": "COL_WreckCarDoor",
+   "parent": "IX_WreckCarDoor",
+   "root": "WreckCar",
+   "type": "box",
+   "center": [
+    -0.0515,
+    0.5311,
+    0.2672
+   ],
+   "size": [
+    0.05,
+    1.12,
+    1.02
+   ],
+   "center_root": [
+    0.7985,
+    -0.0783,
+    0.8072
+   ],
+   "centerUnity": [
+    0.0515,
+    0.2672,
+    -0.5311
+   ],
+   "sizeUnity": [
+    0.05,
+    1.02,
+    1.12
+   ]
+  },
+  {
+   "name": "COL_WreckCarBoot",
+   "parent": "IX_WreckCarBoot",
+   "root": "WreckCar",
+   "type": "box",
+   "center": [
+    0.0033,
+    0.3315,
+    -0.0385
+   ],
+   "size": [
+    1.68,
+    0.68,
+    0.11
+   ],
+   "center_root": [
+    -0.0363,
+    1.9815,
+    0.8481
+   ],
+   "centerUnity": [
+    -0.0033,
+    -0.0385,
+    -0.3315
+   ],
+   "sizeUnity": [
+    1.68,
+    0.11,
+    0.68
+   ]
+  },
+  {
+   "name": "COL_WreckCar",
+   "parent": "WreckCar",
+   "root": "WreckCar",
+   "type": "box",
+   "center": [
+    0.0,
+    0.015,
+    0.77
+   ],
+   "size": [
+    1.74,
+    4.79,
+    1.24
+   ],
+   "center_root": [
+    0.0,
+    0.015,
+    0.77
+   ],
+   "centerUnity": [
+    0.0,
+    0.77,
+    -0.015
+   ],
+   "sizeUnity": [
+    1.74,
+    1.24,
+    4.79
+   ]
+  },
+  {
+   "name": "HIT_Ice_RelayMast_Panel_1",
+   "parent": "Ice_RelayMast_Panel_1",
+   "root": "Ice_RelayMast",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.3583,
+    0.5081,
+    2.2809
+   ],
+   "center_root": [
+    1.1891,
+    0.001,
+    39.9034
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.3583,
+    2.2809,
+    0.5081
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_RelayMast_Panel_2",
+   "parent": "Ice_RelayMast_Panel_2",
+   "root": "Ice_RelayMast",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.5391,
+    0.4805,
+    2.2546
+   ],
+   "center_root": [
+    -0.585,
+    1.0132,
+    39.9184
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.5391,
+    2.2546,
+    0.4805
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_RelayMast_Panel_3",
+   "parent": "Ice_RelayMast_Panel_3",
+   "root": "Ice_RelayMast",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.5391,
+    0.4805,
+    2.1763
+   ],
+   "center_root": [
+    -0.585,
+    -1.0132,
+    39.9568
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.5391,
+    2.1763,
+    0.4805
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_RelayMast_Drum",
+   "parent": "Ice_RelayMast_Drum",
+   "root": "Ice_RelayMast",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.2348,
+    1.5039,
+    1.8196
+   ],
+   "center_root": [
+    1.6326,
+    0.0,
+    31.3602
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.2348,
+    1.8196,
+    1.5039
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_1_Feed",
+   "parent": "Ice_Dish_1_Feed",
+   "root": "Ice_Dish_1",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.86,
+    1.4258,
+    1.3569
+   ],
+   "center_root": [
+    0.0,
+    4.9443,
+    11.8568
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.86,
+    1.3569,
+    1.4258
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_1_Bowl",
+   "parent": "Ice_Dish_1_Bowl",
+   "root": "Ice_Dish_1",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    13.9564,
+    5.2382,
+    3.6361
+   ],
+   "center_root": [
+    0.0,
+    4.1432,
+    4.9288
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    13.9564,
+    3.6361,
+    5.2382
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_2_Feed",
+   "parent": "Ice_Dish_2_Feed",
+   "root": "Ice_Dish_2",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.86,
+    1.4141,
+    1.3845
+   ],
+   "center_root": [
+    0.0,
+    4.661,
+    12.194
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.86,
+    1.3845,
+    1.4141
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_2_Bowl",
+   "parent": "Ice_Dish_2_Bowl",
+   "root": "Ice_Dish_2",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    13.9564,
+    5.472,
+    3.2691
+   ],
+   "center_root": [
+    0.0,
+    4.3475,
+    5.2253
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    13.9564,
+    3.2691,
+    5.472
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_3_Feed",
+   "parent": "Ice_Dish_3_Feed",
+   "root": "Ice_Dish_3",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.86,
+    1.4011,
+    1.4011
+   ],
+   "center_root": [
+    0.0,
+    3.3022,
+    9.8022
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.86,
+    1.4011,
+    1.4011
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_3_Bowl",
+   "parent": "Ice_Dish_3_Bowl",
+   "root": "Ice_Dish_3",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    10.4923,
+    4.2477,
+    2.2639
+   ],
+   "center_root": [
+    0.0,
+    3.3316,
+    4.5595
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    10.4923,
+    2.2639,
+    4.2477
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_4_Feed",
+   "parent": "Ice_Dish_4_Feed",
+   "root": "Ice_Dish_4",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.86,
+    1.4208,
+    1.3715
+   ],
+   "center_root": [
+    0.0,
+    3.5799,
+    9.4994
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.86,
+    1.3715,
+    1.4208
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_4_Bowl",
+   "parent": "Ice_Dish_4_Bowl",
+   "root": "Ice_Dish_4",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    10.4923,
+    4.0437,
+    2.6172
+   ],
+   "center_root": [
+    0.0,
+    3.1496,
+    4.2765
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    10.4923,
+    2.6172,
+    4.0437
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_5_Feed",
+   "parent": "Ice_Dish_5_Feed",
+   "root": "Ice_Dish_5",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.86,
+    1.4293,
+    1.3408
+   ],
+   "center_root": [
+    0.0,
+    5.077,
+    11.681
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.86,
+    1.3408,
+    1.4293
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_Dish_5_Bowl",
+   "parent": "Ice_Dish_5_Bowl",
+   "root": "Ice_Dish_5",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    13.9564,
+    5.1118,
+    3.8132
+   ],
+   "center_root": [
+    0.0,
+    4.0334,
+    4.786
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    13.9564,
+    3.8132,
+    5.1118
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_RoofMast_Top",
+   "parent": "Ice_RoofMast_Top",
+   "root": "Ice_RoofMast",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.4994,
+    0.5827,
+    1.94
+   ],
+   "center_root": [
+    5.4517,
+    2.8608,
+    17.82
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.4994,
+    1.94,
+    0.5827
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "HIT_Ice_RoofDish",
+   "parent": "Ice_RoofDish",
+   "root": "Ice_RoofMast",
+   "type": "hit",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.9684,
+    1.0488,
+    0.9666
+   ],
+   "center_root": [
+    2.9688,
+    -4.2387,
+    7.8351
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.9684,
+    0.9666,
+    1.0488
+   ],
+   "note": "trigger / hit box of a removable ice part (not a solid collider)"
+  },
+  {
+   "name": "COLM_Cave",
+   "parent": "ForesterCave",
+   "root": "ForesterCave",
+   "type": "mesh",
+   "tris": 900,
+   "note": "MeshCollider (not convex) from the object COLM_Cave: the rock shell simplified; the dressing gets no collider"
+  }
+ ],
+ "ice": {
+  "Ice_RelayMast": {
+   "host": "RelayMast",
+   "package": "forest_far",
+   "parts": [
+    "Ice_RelayMast",
+    "Ice_RelayMast_Drum",
+    "Ice_RelayMast_Panel_1",
+    "Ice_RelayMast_Panel_2",
+    "Ice_RelayMast_Panel_3"
+   ],
+   "removable": [
+    "Ice_RelayMast_Panel_1",
+    "Ice_RelayMast_Panel_2",
+    "Ice_RelayMast_Panel_3",
+    "Ice_RelayMast_Drum"
+   ],
+   "note": "parent Ice_RelayMast to RelayMast at its origin, no rotation (the ice is in RelayMast's own frame)"
+  },
+  "Ice_Dish_1": {
+   "host": "Dish_1",
+   "package": "forest_far",
+   "parts": [
+    "Ice_Dish_1",
+    "Ice_Dish_1_Bowl",
+    "Ice_Dish_1_Feed"
+   ],
+   "removable": [
+    "Ice_Dish_1_Feed",
+    "Ice_Dish_1_Bowl"
+   ],
+   "note": "parent Ice_Dish_1 to Dish_1 at its origin, no rotation (the ice is in Dish_1's own frame)"
+  },
+  "Ice_Dish_2": {
+   "host": "Dish_2",
+   "package": "forest_far",
+   "parts": [
+    "Ice_Dish_2",
+    "Ice_Dish_2_Bowl",
+    "Ice_Dish_2_Feed"
+   ],
+   "removable": [
+    "Ice_Dish_2_Feed",
+    "Ice_Dish_2_Bowl"
+   ],
+   "note": "parent Ice_Dish_2 to Dish_2 at its origin, no rotation (the ice is in Dish_2's own frame)"
+  },
+  "Ice_Dish_3": {
+   "host": "Dish_3",
+   "package": "forest_far",
+   "parts": [
+    "Ice_Dish_3",
+    "Ice_Dish_3_Bowl",
+    "Ice_Dish_3_Feed"
+   ],
+   "removable": [
+    "Ice_Dish_3_Feed",
+    "Ice_Dish_3_Bowl"
+   ],
+   "note": "parent Ice_Dish_3 to Dish_3 at its origin, no rotation (the ice is in Dish_3's own frame)"
+  },
+  "Ice_Dish_4": {
+   "host": "Dish_4",
+   "package": "forest_far",
+   "parts": [
+    "Ice_Dish_4",
+    "Ice_Dish_4_Bowl",
+    "Ice_Dish_4_Feed"
+   ],
+   "removable": [
+    "Ice_Dish_4_Feed",
+    "Ice_Dish_4_Bowl"
+   ],
+   "note": "parent Ice_Dish_4 to Dish_4 at its origin, no rotation (the ice is in Dish_4's own frame)"
+  },
+  "Ice_Dish_5": {
+   "host": "Dish_5",
+   "package": "forest_far",
+   "parts": [
+    "Ice_Dish_5",
+    "Ice_Dish_5_Bowl",
+    "Ice_Dish_5_Feed"
+   ],
+   "removable": [
+    "Ice_Dish_5_Feed",
+    "Ice_Dish_5_Bowl"
+   ],
+   "note": "parent Ice_Dish_5 to Dish_5 at its origin, no rotation (the ice is in Dish_5's own frame)"
+  },
+  "Ice_RoofMast": {
+   "host": "BaseMain",
+   "package": "forest_main",
+   "parts": [
+    "Ice_RoofDish",
+    "Ice_RoofMast",
+    "Ice_RoofMast_Top"
+   ],
+   "removable": [
+    "Ice_RoofMast_Top",
+    "Ice_RoofDish"
+   ],
+   "note": "parent Ice_RoofMast to BaseMain at its origin, no rotation (the ice is in BaseMain's own frame)"
+  }
+ },
+ "anchors": {
+  "ShiftCar": {
+   "anchor": "anchors/Car_Parked",
+   "layout": "Forest_Layout.json",
+   "p": [
+    323.2564,
+    16.3794,
+    -335.4306
+   ],
+   "q": [
+    0.0,
+    -0.688355,
+    0.0,
+    0.725374
+   ],
+   "note": "the previous shift's car: put ShiftCar on this anchor (Unity world, as the layout gives it)"
+  }
+ },
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees, kg",
+  "frame": "each root in its own frame: z up, the front -y, origin on the ground under its middle (the cave: the floor in its mouth); the ice roots in their host prefab's frame. Every pivot / pos here is in its root's frame. In world.blend the roots stand apart (display_offset); their FBX is exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "FireBarrel": [
+    -3.2,
+    -6.5,
+    0.0
+   ],
+   "ShiftCar": [
+    -3.0,
+    0.0,
+    0.0
+   ],
+   "WreckCar": [
+    3.0,
+    0.0,
+    0.0
+   ],
+   "ForesterCave": [
+    0.0,
+    9.0,
+    0.0
+   ],
+   "Ice_RelayMast": [
+    24.0,
+    6.0,
+    0.0
+   ],
+   "Ice_Dish_1": [
+    36.0,
+    6.0,
+    0.0
+   ],
+   "Ice_Dish_2": [
+    54.0,
+    6.0,
+    0.0
+   ],
+   "Ice_Dish_3": [
+    72.0,
+    6.0,
+    0.0
+   ],
+   "Ice_Dish_4": [
+    36.0,
+    26.0,
+    0.0
+   ],
+   "Ice_Dish_5": [
+    54.0,
+    26.0,
+    0.0
+   ],
+   "Ice_RoofMast": [
+    -20.0,
+    0.0,
+    -6.6
+   ]
+  },
+  "colliders": "BoxCollider per type box entry on its parent (center / size in the parent's own frame); type hit: a trigger box of a removable ice part; type mesh: the cave's MeshCollider (object COLM_Cave). The COL_ / HIT_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "warm_radius": {
+   "FireBarrel": 3.5,
+   "note": "burning: no wind-chill and R1 (creatures keep off) within 3.5 m; embers: 1.5 m"
+  },
+  "lights": "world_lights.json: the barrel's fire and the four candles in the cave (all off in the file)",
+  "ice": "each ice root goes under its host (forest_far RelayMast / Dish_n, forest_main BaseMain) at the origin; the root is scenery (show after a blizzard, hide when it thaws); the removable parts are what the players knock off to get the aerial working again (QUESTIONS_HORROR 41, BASE_THREATS B04); M_World_Ice is box-mapped (UV 1 = 1 m, the texture repeats)",
+  "model": "world.blend",
+  "textures": "tex",
+  "materials": "M_World_World / M_World_Cave: baked PSX atlases (point filter); M_World_Panel: the station marking on the shift car's doors and the 1991 newspaper; M_World_Glass: the cars' windows; M_World_GlassCracked: the wreck's windscreen (alpha); M_World_Fire: the flames, 8-frame flipbook, alpha cut-out, emissive; M_World_Embers_Off / M_World_Embers: the barrel's ember bed and air holes cold / glowing (off in the file); M_World_Ice: the ice overlays",
+  "names": "FireBarrel, ShiftCar, WreckCar and ForesterCave are fixtures (not carried); the doors IX_* without numbers - Unity numbers them when it places them"
+ }
+}

@@ -17,7 +17,7 @@ for f in glob.glob(os.path.join(src_tex, '*.json')):
 bpy.ops.wm.open_mainfile(filepath=os.path.join(HERE, 'out', 'main.blend'))
 missing = []
 for im in bpy.data.images:                                # only the textures the model uses (no leftovers of old builds)
-    if im.source != 'FILE' or not im.filepath:
+    if im.source != 'FILE' or not im.filepath or im.library is not None:     # (the kit's own come with the kit)
         continue
     name = os.path.basename(bpy.path.abspath(im.filepath))
     if os.path.exists(os.path.join(src_tex, name)):
@@ -25,6 +25,8 @@ for im in bpy.data.images:                                # only the textures th
         im.filepath = '//tex/' + name
     else:
         missing.append(im.filepath)
+libs = sorted(l.filepath for l in bpy.data.libraries)        # 1.2: the kit is linked as ../snow_kit/snow_kit.blend
+assert libs == ['//../snow_kit/snow_kit.blend'], libs
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(PK, 'main.blend'), relative_remap=False)
 for f in ('main_contract.json', 'main.json'):
     shutil.copy2(os.path.join(HERE, 'out', f), PK)
@@ -35,7 +37,8 @@ SRC = ['main_spec.py', 'main_shell.py', 'main_open.py', 'main_furn.py', 'main_ro
        'main_fx_u3.py', 'main_ix_u3.py', 'main_signs.py', 'main_tex.py', 'main_paint.py', 'main_build.py', 'main_render.py',
        'main_draft.py', 'make_main_doc.py', 'make_sheets_main.py', 'pack_main.py', 'main_u3_data.json',
        'main_u3_materials.json', 'uvpack.py', 'gen_kit.py', 'gen_tex.py', 'psxbake.py', 'psxlib.py', 'noise.py', 'pxfont.py',
-       'van2_kit.py', 'van2_tex.py', 'van3_mech.py', 'cont_kit.py', 'cont_tex.py', 'kpp_tex.py', 'post_bloom.py']
+       'van2_kit.py', 'van2_tex.py', 'van3_mech.py', 'cont_kit.py', 'cont_tex.py', 'kpp_tex.py', 'post_bloom.py',
+       'main_leit_check.py', 'fix_glass_dupes.py', 'kit_preview.py']
 os.makedirs(os.path.join(PK, 'src'))
 for f in SRC:
     os.makedirs(os.path.dirname(os.path.join(PK, 'src', f)), exist_ok=True)
@@ -62,7 +65,13 @@ open(os.path.join(PK, 'src', 'README_SRC.txt'), 'w', encoding='utf-8').write(
     '- Данные обновления 3, с которых снята планировка: main_spec.py (размеры, комнаты, двери, окна), main_ix_u3.py\n'
     '  (139 деталей: точки, оси, ходы), main_fx_u3.py (64 светильника и их свет), main_u3_data.json (из Forest_Layout.json:\n'
     '  маски света, источники, ореолы, детали), main_u3_materials.json (материалы, которые игра знает по имени).\n'
-    '- Порядок: main_build.py → out/main.blend, main.json, main_contract.json, tex/main\n'
+    '- 1.2: main.blend берёт модели набора snow_kit по ссылке ../snow_kit/snow_kit.blend (пункт управления КПП в пультовой:\n'
+    '  экземпляры — KIT_INST в main_rooms.py, раздел 1b в main_build.py; пакет набора — source/assets/snow_kit).\n'
+    '- kit_preview.py — только для превью: монитор камеры ворот показывает свою заглушку (CAM 2, T_Kit_Screen_On_Gate набора);\n'
+    '  в Unity на экранах — картинки камер КПП.\n'
+    '- Порядок: main_build.py → out/main.blend, main.json, main_contract.json, tex/main; затем fix_glass_dupes.py out/main.blend\n'
+    '  (стекло — по одной грани на сторону); main_leit_check.py → out/main_leit_check.json (зазоры пункта управления до\n'
+    '  предметов Forest_Dressing и настольной лампы на том же столе)\n'
     '  (main_build.py --only Rm_Windfang,MainParts — запечь только эти атласы, остальное — плоские цвета → main_test.blend);\n'
     '  main_draft.py — черновик геометрии с цветами зон; main_render.py <виды через запятую | all> [spp] → rend/main;\n'
     '  make_main_doc.py → docs/MAIN_CONTRACT.md; make_sheets_main.py → sheets/main_A…F.jpg; pack_main.py → out/forest_main_package.zip.\n'

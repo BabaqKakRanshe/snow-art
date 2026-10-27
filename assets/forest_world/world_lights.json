@@ -1,0 +1,124 @@
+{
+ "lights": [
+  {
+   "name": "Light_Fire",
+   "parent": "FireBarrel",
+   "root": "FireBarrel",
+   "type": "point",
+   "pos": [
+    0.0,
+    0.0,
+    1.05
+   ],
+   "posUnity": [
+    0.0,
+    1.05,
+    0.0
+   ],
+   "color_linear": [
+    1.0,
+    0.55,
+    0.22
+   ],
+   "range": 9.0,
+   "behaviour": "flicker",
+   "default": "off"
+  },
+  {
+   "name": "Light_Candle_1",
+   "parent": "ForesterCave",
+   "root": "ForesterCave",
+   "type": "point",
+   "pos": [
+    -0.86,
+    5.04,
+    0.4905
+   ],
+   "posUnity": [
+    0.86,
+    0.4905,
+    -5.04
+   ],
+   "color_linear": [
+    1.0,
+    0.62,
+    0.3
+   ],
+   "range": 3.0,
+   "behaviour": "flicker",
+   "default": "off"
+  },
+  {
+   "name": "Light_Candle_2",
+   "parent": "ForesterCave",
+   "root": "ForesterCave",
+   "type": "point",
+   "pos": [
+    -0.73,
+    5.18,
+    0.4505
+   ],
+   "posUnity": [
+    0.73,
+    0.4505,
+    -5.18
+   ],
+   "color_linear": [
+    1.0,
+    0.62,
+    0.3
+   ],
+   "range": 3.0,
+   "behaviour": "flicker",
+   "default": "off"
+  },
+  {
+   "name": "Light_Candle_3",
+   "parent": "ForesterCave",
+   "root": "ForesterCave",
+   "type": "point",
+   "pos": [
+    -0.6,
+    5.06,
+    0.5205
+   ],
+   "posUnity": [
+    0.6,
+    0.5205,
+    -5.06
+   ],
+   "color_linear": [
+    1.0,
+    0.62,
+    0.3
+   ],
+   "range": 3.0,
+   "behaviour": "flicker",
+   "default": "off"
+  },
+  {
+   "name": "Light_Candle_4",
+   "parent": "ForesterCave",
+   "root": "ForesterCave",
+   "type": "point",
+   "pos": [
+    -0.52,
+    5.19,
+    0.4405
+   ],
+   "posUnity": [
+    0.52,
+    0.4405,
+    -5.19
+   ],
+   "color_linear": [
+    1.0,
+    0.62,
+    0.3
+   ],
+   "range": 3.0,
+   "behaviour": "flicker",
+   "default": "off"
+  }
+ ]
+}

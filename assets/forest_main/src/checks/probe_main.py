@@ -12,6 +12,8 @@ SFX = '_test' if '--test' in sys.argv else ''
 C = json.load(open(f'/home/claude/uaz/out/main_contract{SFX}.json'))
 U3 = json.load(open('/home/claude/uaz/main_u3_data.json'))
 bpy.ops.wm.open_mainfile(filepath=f'/home/claude/uaz/out/main{SFX}.blend')
+for _lib in list(bpy.data.libraries):                 # 1.2: the snow_kit instances (linked) are not the building's
+    bpy.data.libraries.remove(_lib)                  # geometry: checked as in 1.1, the station has main_leit_check.py
 P = C['parts']
 bad = []
 for i in U3['interactables']:

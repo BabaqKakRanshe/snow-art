@@ -1,0 +1,453 @@
+{
+ "kinds": {
+  "Paper": {
+   "pile": {
+    "model": "TrashPile_Paper",
+    "tris": 692,
+    "sizeUnity": [
+     1.253,
+     0.252,
+     0.971
+    ],
+    "origin": "на земле, посередине кучи",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0794,
+      0.126,
+      0.0369
+     ],
+     "size": [
+      1.2531,
+      0.252,
+      0.9712
+     ]
+    },
+    "display_offset": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "clump": {
+    "model": "TrashClump_Paper",
+    "tris": 198,
+    "sizeUnity": [
+     0.485,
+     0.374,
+     0.435
+    ],
+    "baleUnity": [
+     0.44,
+     0.34,
+     0.36
+    ],
+    "origin": "середина кома (точка хвата)",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "size": [
+      0.4048,
+      0.3128,
+      0.3312
+     ]
+    },
+    "sockets": {
+     "Hand_Grip": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "lowestPointUnity": -0.1701,
+    "display_offset": [
+     0.0,
+     -2.0,
+     0.17
+    ]
+   },
+   "massKg": 3.0,
+   "note": "газеты, картон, стаканчики, скомканная бумага"
+  },
+  "Plastic": {
+   "pile": {
+    "model": "TrashPile_Plastic",
+    "tris": 988,
+    "sizeUnity": [
+     1.183,
+     0.333,
+     0.969
+    ],
+    "origin": "на земле, посередине кучи",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0206,
+      0.1667,
+      -0.0074
+     ],
+     "size": [
+      1.1834,
+      0.3334,
+      0.9692
+     ]
+    },
+    "display_offset": [
+     1.7,
+     0.0,
+     0.0
+    ]
+   },
+   "clump": {
+    "model": "TrashClump_Plastic",
+    "tris": 480,
+    "sizeUnity": [
+     0.446,
+     0.447,
+     0.405
+    ],
+    "baleUnity": [
+     0.42,
+     0.36,
+     0.38
+    ],
+    "origin": "середина кома (точка хвата)",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "size": [
+      0.3864,
+      0.3312,
+      0.3496
+     ]
+    },
+    "sockets": {
+     "Hand_Grip": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "lowestPointUnity": -0.1791,
+    "display_offset": [
+     1.7,
+     -2.0,
+     0.179
+    ]
+   },
+   "massKg": 2.5,
+   "note": "ПЭТ-бутылки, пакеты, лоток, стаканчик, канистра"
+  },
+  "Metal": {
+   "pile": {
+    "model": "TrashPile_Metal",
+    "tris": 828,
+    "sizeUnity": [
+     1.155,
+     0.146,
+     0.922
+    ],
+    "origin": "на земле, посередине кучи",
+    "collider": {
+     "type": "Box",
+     "center": [
+      -0.0171,
+      0.0731,
+      0.0127
+     ],
+     "size": [
+      1.1553,
+      0.1461,
+      0.9223
+     ]
+    },
+    "display_offset": [
+     3.4,
+     0.0,
+     0.0
+    ]
+   },
+   "clump": {
+    "model": "TrashClump_Metal",
+    "tris": 404,
+    "sizeUnity": [
+     0.415,
+     0.374,
+     0.353
+    ],
+    "baleUnity": [
+     0.36,
+     0.3,
+     0.32
+    ],
+    "origin": "середина кома (точка хвата)",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "size": [
+      0.3312,
+      0.276,
+      0.2944
+     ]
+    },
+    "sockets": {
+     "Hand_Grip": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "lowestPointUnity": -0.1507,
+    "display_offset": [
+     3.4,
+     -2.0,
+     0.151
+    ]
+   },
+   "massKg": 9.0,
+   "note": "банки целые и смятые, гнутый лист, обрезок трубы, проволока"
+  },
+  "Wood": {
+   "pile": {
+    "model": "TrashPile_Wood",
+    "tris": 438,
+    "sizeUnity": [
+     1.215,
+     0.127,
+     0.965
+    ],
+    "origin": "на земле, посередине кучи",
+    "collider": {
+     "type": "Box",
+     "center": [
+      -0.0497,
+      0.0634,
+      0.0032
+     ],
+     "size": [
+      1.2147,
+      0.1268,
+      0.9648
+     ]
+    },
+    "display_offset": [
+     5.1,
+     0.0,
+     0.0
+    ]
+   },
+   "clump": {
+    "model": "TrashClump_Wood",
+    "tris": 206,
+    "sizeUnity": [
+     0.493,
+     0.316,
+     0.471
+    ],
+    "baleUnity": [
+     0.48,
+     0.3,
+     0.3
+    ],
+    "origin": "середина кома (точка хвата)",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "size": [
+      0.4416,
+      0.276,
+      0.276
+     ]
+    },
+    "sockets": {
+     "Hand_Grip": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "lowestPointUnity": -0.1497,
+    "display_offset": [
+     5.1,
+     -2.0,
+     0.15
+    ]
+   },
+   "massKg": 6.0,
+   "note": "доски с гвоздями, планки, ветки, обрубок"
+  },
+  "Glass": {
+   "pile": {
+    "model": "TrashPile_Glass",
+    "tris": 772,
+    "sizeUnity": [
+     1.077,
+     0.139,
+     0.908
+    ],
+    "origin": "на земле, посередине кучи",
+    "collider": {
+     "type": "Box",
+     "center": [
+      -0.0146,
+      0.0697,
+      -0.001
+     ],
+     "size": [
+      1.077,
+      0.1394,
+      0.9083
+     ]
+    },
+    "display_offset": [
+     6.8,
+     0.0,
+     0.0
+    ]
+   },
+   "clump": {
+    "model": "TrashClump_Glass",
+    "tris": 506,
+    "sizeUnity": [
+     0.43,
+     0.337,
+     0.357
+    ],
+    "baleUnity": [
+     0.36,
+     0.32,
+     0.34
+    ],
+    "origin": "середина кома (точка хвата)",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "size": [
+      0.3312,
+      0.2944,
+      0.3128
+     ]
+    },
+    "sockets": {
+     "Hand_Grip": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "lowestPointUnity": -0.1546,
+    "display_offset": [
+     6.8,
+     -2.0,
+     0.155
+    ]
+   },
+   "massKg": 7.0,
+   "note": "бутылки зелёные, коричневые, прозрачные, банка, осколки"
+  },
+  "Mixed": {
+   "pile": {
+    "model": "TrashPile_Mixed",
+    "tris": 752,
+    "sizeUnity": [
+     1.337,
+     0.352,
+     1.004
+    ],
+    "origin": "на земле, посередине кучи",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0565,
+      0.176,
+      0.014
+     ],
+     "size": [
+      1.3367,
+      0.352,
+      1.0044
+     ]
+    },
+    "display_offset": [
+     8.5,
+     0.0,
+     0.0
+    ]
+   },
+   "clump": {
+    "model": "TrashClump_Mixed",
+    "tris": 406,
+    "sizeUnity": [
+     0.553,
+     0.382,
+     0.391
+    ],
+    "baleUnity": [
+     0.42,
+     0.36,
+     0.38
+    ],
+    "origin": "середина кома (точка хвата)",
+    "collider": {
+     "type": "Box",
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "size": [
+      0.3864,
+      0.3312,
+      0.3496
+     ]
+    },
+    "sockets": {
+     "Hand_Grip": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "lowestPointUnity": -0.1822,
+    "display_offset": [
+     8.5,
+     -2.0,
+     0.182
+    ]
+   },
+   "massKg": 5.0,
+   "note": "бытовой: мешок, банка, бутылка, коробка, бумага"
+  }
+ },
+ "meta": {
+  "version": "1.0",
+  "units": "metres",
+  "frame": "each model in its own frame: z up, front -y. The pile: origin on the ground at its middle; the clump: origin at the middle of the bale (the grip). In trash.blend the piles stand in a row and each clump 2 m in front of its pile, on the ground (display_offset)",
+  "unity": "(x, y, z) -> Unity (-x, z, -y); the front (-y) is the prefab's +Z",
+  "states": "ground: TrashPile_<Kind> lies on the ground; picked up -> the pile is hidden / removed and TrashClump_<Kind> is in the hands (Hand_Grip at the hand); put down / dropped -> the clump goes and the pile is placed where it lands (origin on the ground, any yaw)",
+  "colliders": "BoxCollider per model: the pile - its bounds (low box over the heap), the clump - the bale",
+  "materials": "M_Trash_Trash: one baked PSX atlas, point filter (the piles ~64 px/m, the clumps in the hands twice that)",
+  "textures": "tex",
+  "model": "trash.blend"
+ }
+}

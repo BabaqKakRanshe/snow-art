@@ -1,0 +1,2788 @@
+{
+ "parts": {
+  "Item_Battery": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a D cell (MONO 1,5 V, LR20): standing, origin under its middle, + up; the wrapper printed twice round (reads from the front and the back)",
+   "object": "Item_Battery",
+   "root": "Item_Battery",
+   "mass_kg": 0.14,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0308
+    ],
+    "size": [
+     0.0342,
+     0.0342,
+     0.0615
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BatteryPack": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "four D cells in a printed sleeve (4 x MONO 1,5 V): the order from the PC; standing, origin under its middle",
+   "object": "Item_BatteryPack",
+   "root": "Item_BatteryPack",
+   "mass_kg": 0.58,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0308
+    ],
+    "size": [
+     0.07,
+     0.07,
+     0.0615
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Battery6V": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 4R25 lantern battery (6 V block, zinc-carbon): two spring terminals on top, + on the left (-x); takes the hand lamp (Slot_Battery) and the lake sensor; standing, origin under its middle",
+   "object": "Item_Battery6V",
+   "root": "Item_Battery6V",
+   "mass_kg": 0.55,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0586
+    ],
+    "size": [
+     0.0667,
+     0.0667,
+     0.1171
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Walkie_Knob_Channel": {
+   "kind": "twist",
+   "pivot": [
+    0.016,
+    0.0,
+    0.128
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0.0,
+    337.5
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Walkie",
+   "states": [],
+   "note": "the channel knob: 16 clicks of 22.5 deg (0 = channel 1); turns clockwise seen from above (+angle about -z)",
+   "removable": false,
+   "object": "Walkie_Knob_Channel",
+   "root": "Item_Walkie",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0074
+    ],
+    "size": [
+     0.0144,
+     0.0144,
+     0.0148
+    ]
+   },
+   "pivotUnity": [
+    -0.016,
+    0.128,
+    0.0
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Walkie_Knob_Volume": {
+   "kind": "twist",
+   "pivot": [
+    -0.002,
+    0.0,
+    0.128
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "range": [
+    0.0,
+    270.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Walkie",
+   "states": [],
+   "note": "on / off and volume: the first 30 deg click it on, then louder to 270; clockwise seen from above",
+   "removable": false,
+   "object": "Walkie_Knob_Volume",
+   "root": "Item_Walkie",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0064
+    ],
+    "size": [
+     0.0116,
+     0.0116,
+     0.0128
+    ]
+   },
+   "pivotUnity": [
+    0.002,
+    0.128,
+    0.0
+   ],
+   "axisUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Walkie_LED": {
+   "kind": "static",
+   "pivot": [
+    0.007,
+    -0.012,
+    0.1283
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Walkie",
+   "states": [],
+   "note": "TX / RX LED: M_Gear_LEDR while sending, M_Gear_LEDG while receiving, M_Gear_LED_Off (in the file)",
+   "object": "Walkie_LED",
+   "root": "Item_Walkie",
+   "pivotUnity": [
+    -0.007,
+    0.1283,
+    0.012
+   ]
+  },
+  "Walkie_LCD": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.0174,
+    0.0685
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Walkie",
+   "states": [],
+   "note": "the LCD: M_Gear_WalkieLCD (lit: CH 01, backlight) / M_Gear_WalkieLCD_Off; its own texture, UV 0..1 (u right, v up) - the game may draw its own channel",
+   "object": "Walkie_LCD",
+   "root": "Item_Walkie",
+   "pivotUnity": [
+    0.0,
+    0.0685,
+    0.0174
+   ]
+  },
+  "Walkie_PTT": {
+   "kind": "slide",
+   "pivot": [
+    -0.0308,
+    0.0,
+    0.083
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.0015
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_Walkie",
+   "states": [],
+   "note": "PTT (push to talk), the long key on the left side: pushes in 1.5 mm while held",
+   "object": "Walkie_PTT",
+   "root": "Item_Walkie",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.002,
+     0.016,
+     0.034
+    ]
+   },
+   "pivotUnity": [
+    0.0308,
+    0.083,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Walkie": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a handheld UHF radio (root): standing, origin under its middle; the front (speaker, LCD) to -y; the antenna on the top left",
+   "object": "Item_Walkie",
+   "root": "Item_Walkie",
+   "mass_kg": 0.38,
+   "box": {
+    "center": [
+     0.0,
+     0.0035,
+     0.1223
+    ],
+    "size": [
+     0.06,
+     0.0409,
+     0.2445
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Lantern_Lens": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.0772,
+    0.09
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Lantern",
+   "states": [],
+   "note": "the amber lens: M_Gear_LensAmber (lit, glows by day too) / M_Gear_LensAmber_Off (in the file)",
+   "object": "Lantern_Lens",
+   "root": "Item_Lantern",
+   "pivotUnity": [
+    0.0,
+    0.09,
+    0.0772
+   ]
+  },
+  "Lantern_Switch": {
+   "kind": "slide",
+   "pivot": [
+    -0.028,
+    -0.019,
+    0.1395
+   ],
+   "axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    0.009
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "Item_Lantern",
+   "states": [],
+   "note": "the red slide switch on the top: forward (to the lens) 9 mm = on",
+   "object": "Lantern_Switch",
+   "root": "Item_Lantern",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.007,
+     0.007,
+     0.005
+    ]
+   },
+   "pivotUnity": [
+    0.028,
+    0.1395,
+    0.019
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Lantern_Door": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0455,
+    0.0074
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Lantern",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the battery door at the back: hinge along its bottom edge, opens out up to 90 deg; behind it the 4R25 (Slot_Battery)",
+   "object": "Lantern_Door",
+   "root": "Item_Lantern",
+   "box": {
+    "center": [
+     0.0,
+     -0.0005,
+     0.0601
+    ],
+    "size": [
+     0.0712,
+     0.005,
+     0.1202
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0074,
+    -0.0455
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Lantern": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a 6 V hand lamp with an amber lens (root): the yellow light (R1); standing, origin under its middle, the lens to -y",
+   "object": "Item_Lantern",
+   "root": "Item_Lantern",
+   "mass_kg": 0.45,
+   "box": {
+    "center": [
+     0.0,
+     -0.0175,
+     0.0899
+    ],
+    "size": [
+     0.0916,
+     0.125,
+     0.1798
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Headlamp_Lamp": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.108,
+    0.025
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    45
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Headlamp",
+   "states": [],
+   "note": "the lamp tilts down on its brackets, 0..45 deg",
+   "object": "Headlamp_Lamp",
+   "root": "Item_Headlamp",
+   "box": {
+    "center": [
+     0.0,
+     -0.013,
+     0.0
+    ],
+    "size": [
+     0.041,
+     0.026,
+     0.041
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.025,
+    0.108
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Headlamp_Bezel": {
+   "kind": "twist",
+   "pivot": [
+    0.0,
+    -0.108,
+    0.025
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "range": [
+    0.0,
+    90.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Headlamp_Lamp",
+   "states": [],
+   "note": "the ribbed bezel: a quarter turn clockwise (seen from the front) switches the lamp on",
+   "removable": false,
+   "object": "Headlamp_Bezel",
+   "root": "Item_Headlamp",
+   "box": {
+    "center": [
+     0.0,
+     -0.0297,
+     0.0
+    ],
+    "size": [
+     0.0424,
+     0.0075,
+     0.0424
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.025,
+    0.108
+   ],
+   "axisUnity": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "Headlamp_Lens": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.1398,
+    0.025
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Headlamp_Lamp",
+   "states": [],
+   "note": "the clear lens: M_Gear_LensClear (lit) / M_Gear_LensClear_Off (in the file)",
+   "object": "Headlamp_Lens",
+   "root": "Item_Headlamp",
+   "pivotUnity": [
+    0.0,
+    0.025,
+    0.1398
+   ]
+  },
+  "Item_Headlamp": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a headlamp (root): the band as worn (a loop for a head 0.156 x 0.196 m), the lamp at the front (-y), the battery box at the back; on a table it rests on the lamp and the box",
+   "object": "Item_Headlamp",
+   "root": "Item_Headlamp",
+   "mass_kg": 0.22,
+   "box": {
+    "center": [
+     0.0023,
+     0.0042,
+     0.023
+    ],
+    "size": [
+     0.1626,
+     0.2384,
+     0.046
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Cart_Wheel_FL": {
+   "kind": "spin",
+   "pivot": [
+    -0.2175,
+    -0.32,
+    0.13
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Cart",
+   "states": [],
+   "note": "front left wheel (fixed): spins about its axle (x); rolling forward (to -y) turns it the positive way about +x",
+   "object": "Cart_Wheel_FL",
+   "root": "Item_Cart",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.097,
+     0.2535,
+     0.26
+    ]
+   },
+   "pivotUnity": [
+    0.2175,
+    0.13,
+    0.32
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Cart_Wheel_FR": {
+   "kind": "spin",
+   "pivot": [
+    0.2175,
+    -0.32,
+    0.13
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Cart",
+   "states": [],
+   "note": "front right wheel (fixed): spins about its axle (x); rolling forward (to -y) turns it the positive way about +x",
+   "object": "Cart_Wheel_FR",
+   "root": "Item_Cart",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.097,
+     0.2535,
+     0.26
+    ]
+   },
+   "pivotUnity": [
+    -0.2175,
+    0.13,
+    0.32
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Cart_Caster_BL": {
+   "kind": "spin",
+   "pivot": [
+    -0.2175,
+    0.29,
+    0.268
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Cart",
+   "states": [],
+   "note": "back left swivel caster: turns freely about z (the wheel trails 0.04 m behind its pivot)",
+   "object": "Cart_Caster_BL",
+   "root": "Item_Cart",
+   "box": {
+    "center": [
+     0.0,
+     0.0158,
+     -0.0727
+    ],
+    "size": [
+     0.112,
+     0.0925,
+     0.1614
+    ]
+   },
+   "pivotUnity": [
+    0.2175,
+    0.268,
+    -0.29
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Cart_Wheel_BL": {
+   "kind": "spin",
+   "pivot": [
+    -0.2175,
+    0.33,
+    0.13
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Cart_Caster_BL",
+   "states": [],
+   "note": "the caster's wheel: spins about its axle",
+   "object": "Cart_Wheel_BL",
+   "root": "Item_Cart",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.097,
+     0.2535,
+     0.26
+    ]
+   },
+   "pivotUnity": [
+    0.2175,
+    0.13,
+    -0.33
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Cart_Caster_BR": {
+   "kind": "spin",
+   "pivot": [
+    0.2175,
+    0.29,
+    0.268
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Cart",
+   "states": [],
+   "note": "back right swivel caster: turns freely about z (the wheel trails 0.04 m behind its pivot)",
+   "object": "Cart_Caster_BR",
+   "root": "Item_Cart",
+   "box": {
+    "center": [
+     0.0,
+     0.0158,
+     -0.0727
+    ],
+    "size": [
+     0.112,
+     0.0925,
+     0.1614
+    ]
+   },
+   "pivotUnity": [
+    -0.2175,
+    0.268,
+    -0.29
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Cart_Wheel_BR": {
+   "kind": "spin",
+   "pivot": [
+    0.2175,
+    0.33,
+    0.13
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Cart_Caster_BR",
+   "states": [],
+   "note": "the caster's wheel: spins about its axle",
+   "object": "Cart_Wheel_BR",
+   "root": "Item_Cart",
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.097,
+     0.2535,
+     0.26
+    ]
+   },
+   "pivotUnity": [
+    -0.2175,
+    0.13,
+    -0.33
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Cart": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a platform cart (root): origin on the ground under the deck's middle; the push handle at the back (+y), so it rolls to -y; deck 0.55 x 0.90 m at 0.34 m",
+   "object": "Item_Cart",
+   "root": "Item_Cart",
+   "mass_kg": 22.0,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Sled_Tow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -1.655,
+    0.016
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Sled",
+   "states": [],
+   "note": "the tow rope and its T-handle lying out in front: hide it while pulling and draw a rope from Tow_Anchor to the hand (Hand_Sled is where the handle lies)",
+   "object": "Sled_Tow",
+   "root": "Item_Sled",
+   "pivotUnity": [
+    0.0,
+    0.016,
+    1.655
+   ]
+  },
+  "Item_Sled": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a plastic pulk (root): origin on the ground under its middle; the bow (eye, tow rope) to -y; inside 0.53 x 1.2 m, walls 0.2 m",
+   "object": "Item_Sled",
+   "root": "Item_Sled",
+   "mass_kg": 5.5,
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Doll_Head": {
+   "kind": "twist",
+   "pivot": [
+    0.0,
+    0.0,
+    0.212
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -170.0,
+    170.0
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Doll",
+   "states": [],
+   "note": "the head turns about the neck (z): +angle to her left (counter-clockwise seen from above); the demo's end - after the postcard's menu closes, turn it towards the camera",
+   "removable": false,
+   "object": "Doll_Head",
+   "root": "Item_Doll",
+   "box": {
+    "center": [
+     0.0,
+     -0.0004,
+     0.0274
+    ],
+    "size": [
+     0.142,
+     0.1071,
+     0.1695
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.212,
+    0.0
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Item_Doll": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the day-3 doll (root): sitting with her legs out to the front (-y), origin on the surface under her middle; it moves only when nobody looks (the game places it)",
+   "object": "Item_Doll",
+   "root": "Item_Doll",
+   "mass_kg": 0.45,
+   "box": {
+    "center": [
+     0.0,
+     -0.0455,
+     0.109
+    ],
+    "size": [
+     0.186,
+     0.261,
+     0.218
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Postcard": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the card with the doll (root): lying picture up, origin under its middle; the picture M_Gear_PostcardFront (UV 0..1: u right, v to the top edge +y), the back M_Gear_PostcardBack (UV 0..1 as read turned over left to right: u to -x, v to +y) - the message, signed \"— K\" without the dot; the demo's final menu",
+   "object": "Item_Postcard",
+   "root": "Item_Postcard",
+   "mass_kg": 0.005,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0016
+    ],
+    "size": [
+     0.148,
+     0.105,
+     0.0031
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Bulb": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a frosted E27 bulb, 60 W (root): standing on its cap, origin under the contact; the glass: M_Gear_Bulb (new) - M_Gear_BulbBurnt for a dead one (the same UVs)",
+   "object": "Item_Bulb",
+   "root": "Item_Bulb",
+   "mass_kg": 0.03,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.053
+    ],
+    "size": [
+     0.06,
+     0.0585,
+     0.106
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BulbBox": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the bulb's carton (root): GLÜHLAMPE 60 W E27 230 V; standing, origin under its middle; it does not open (the game hands out Item_Bulb)",
+   "object": "Item_BulbBox",
+   "root": "Item_BulbBox",
+   "mass_kg": 0.06,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.056
+    ],
+    "size": [
+     0.064,
+     0.064,
+     0.112
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_WorkerTag": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a round brass tag (32 mm) with the stamped personnel number 3817 (SNOW, NR.) on a split ring; the back PROJEKT SNOW HOHENMOOS; origin = the hanging point (the top of the ring), the number to -y",
+   "object": "Item_WorkerTag",
+   "root": "Item_WorkerTag",
+   "mass_kg": 0.012,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     -0.0235
+    ],
+    "size": [
+     0.032,
+     0.02,
+     0.047
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Key_Stationsleiter": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the station chief's key (root): forest_items' key - the same ring, brass key and tag (fits the hooks of the KPP key cabinet), a black tag ST.-LEITER; origin = the hanging point (the top of the ring); opens the cabinet in the chief's office (I5), lies in the Forester's cave (I1)",
+   "object": "Item_Key_Stationsleiter",
+   "root": "Item_Key_Stationsleiter",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0001,
+     -0.0417
+    ],
+    "size": [
+     0.029,
+     0.0067,
+     0.0835
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_IceAxe": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "an ice axe (root): upright, origin = the spike's tip; the pick to +x, the adze to -x; for chipping ice off the antennas (P1) - hit with the pick",
+   "object": "Item_IceAxe",
+   "root": "Item_IceAxe",
+   "mass_kg": 0.75,
+   "box": {
+    "center": [
+     0.044,
+     0.0158,
+     0.333
+    ],
+    "size": [
+     0.284,
+     0.0816,
+     0.666
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Term_Plus": {
+   "pos": [
+    -0.0164,
+    0.0,
+    0.1165
+   ],
+   "kind": "contact",
+   "parent": "Item_Battery6V",
+   "note": "the + spring",
+   "root": "Item_Battery6V",
+   "posUnity": [
+    0.0164,
+    0.1165,
+    0.0
+   ]
+  },
+  "Term_Minus": {
+   "pos": [
+    0.0164,
+    0.0,
+    0.1165
+   ],
+   "kind": "contact",
+   "parent": "Item_Battery6V",
+   "note": "the - spring",
+   "root": "Item_Battery6V",
+   "posUnity": [
+    -0.0164,
+    0.1165,
+    0.0
+   ]
+  },
+  "Hand_Walkie": {
+   "pos": [
+    0.0,
+    0.0,
+    0.06
+   ],
+   "kind": "hand",
+   "parent": "Item_Walkie",
+   "note": "grip (the body, the PTT under the thumb of the right hand... the left side)",
+   "root": "Item_Walkie",
+   "posUnity": [
+    0.0,
+    0.06,
+    0.0
+   ]
+  },
+  "Speaker": {
+   "pos": [
+    0.0,
+    -0.018,
+    0.099
+   ],
+   "kind": "audio",
+   "parent": "Item_Walkie",
+   "note": "the speaker grille",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_Walkie",
+   "posUnity": [
+    0.0,
+    0.099,
+    0.018
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Mic": {
+   "pos": [
+    0.0,
+    -0.018,
+    0.0141
+   ],
+   "kind": "audio",
+   "parent": "Item_Walkie",
+   "note": "the microphone holes",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_Walkie",
+   "posUnity": [
+    0.0,
+    0.0141,
+    0.018
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Antenna_Tip": {
+   "pos": [
+    -0.019,
+    0.0,
+    0.2445
+   ],
+   "kind": "point",
+   "parent": "Item_Walkie",
+   "note": "the antenna tip (static on the radio, effects)",
+   "root": "Item_Walkie",
+   "posUnity": [
+    0.019,
+    0.2445,
+    0.0
+   ]
+  },
+  "Light_Lantern": {
+   "pos": [
+    0.0,
+    -0.0802,
+    0.09
+   ],
+   "kind": "light",
+   "parent": "Item_Lantern",
+   "note": "a spot light (suggested colour linear RGB, angle, range): on while the lamp is on and has a charged battery",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "color": [
+    1.0,
+    0.62,
+    0.2
+   ],
+   "spot_angle": 60.0,
+   "range": 14.0,
+   "root": "Item_Lantern",
+   "posUnity": [
+    0.0,
+    0.09,
+    0.0802
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Hand_Lantern": {
+   "pos": [
+    0.0,
+    0.0,
+    0.175
+   ],
+   "kind": "hand",
+   "parent": "Item_Lantern",
+   "note": "carried by the handle",
+   "root": "Item_Lantern",
+   "posUnity": [
+    0.0,
+    0.175,
+    0.0
+   ]
+  },
+  "Slot_Battery": {
+   "pos": [
+    0.0,
+    0.0025,
+    0.008
+   ],
+   "kind": "slot",
+   "parent": "Item_Lantern",
+   "note": "Item_Battery6V's origin here, upright, its + spring to the left (-x); the door open",
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "forward": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_Lantern",
+   "posUnity": [
+    0.0,
+    0.008,
+    -0.0025
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "forwardUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Light_Headlamp": {
+   "pos": [
+    0.0,
+    -0.1418,
+    0.025
+   ],
+   "kind": "light",
+   "parent": "Headlamp_Lamp",
+   "note": "a spot light (suggested): on while switched on (the bezel) with charge left",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "color": [
+    1.0,
+    0.96,
+    0.9
+   ],
+   "spot_angle": 40.0,
+   "range": 18.0,
+   "root": "Item_Headlamp",
+   "posUnity": [
+    0.0,
+    0.025,
+    0.1418
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Wear_Head": {
+   "pos": [
+    0.0,
+    0.0,
+    0.025
+   ],
+   "kind": "wear",
+   "parent": "Item_Headlamp",
+   "note": "worn: this point on the head's centre at the brow line, -y to the front (the band then sits round the head)",
+   "forward": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_Headlamp",
+   "posUnity": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "forwardUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Cargo_Cart": {
+   "pos": [
+    0.0,
+    0.0,
+    0.34
+   ],
+   "kind": "cargo",
+   "parent": "Item_Cart",
+   "note": "the deck: loads stand on it (top at z = 0.34); the game parents them to the cart while it moves",
+   "size": [
+    0.53,
+    0.88
+   ],
+   "root": "Item_Cart",
+   "posUnity": [
+    0.0,
+    0.34,
+    0.0
+   ]
+  },
+  "Hand_Cart_L": {
+   "pos": [
+    -0.135,
+    0.5,
+    0.955
+   ],
+   "kind": "hand",
+   "parent": "Item_Cart",
+   "note": "the grip on the bar",
+   "root": "Item_Cart",
+   "posUnity": [
+    0.135,
+    0.955,
+    -0.5
+   ]
+  },
+  "Hand_Cart_R": {
+   "pos": [
+    0.135,
+    0.5,
+    0.955
+   ],
+   "kind": "hand",
+   "parent": "Item_Cart",
+   "note": "the grip on the bar",
+   "root": "Item_Cart",
+   "posUnity": [
+    -0.135,
+    0.955,
+    -0.5
+   ]
+  },
+  "Tow_Anchor": {
+   "pos": [
+    0.0,
+    -0.664,
+    0.194
+   ],
+   "kind": "rope",
+   "parent": "Item_Sled",
+   "note": "the bow eye: the tow rope's end",
+   "root": "Item_Sled",
+   "posUnity": [
+    0.0,
+    0.194,
+    0.664
+   ]
+  },
+  "Hand_Sled": {
+   "pos": [
+    0.0,
+    -1.655,
+    0.016
+   ],
+   "kind": "hand",
+   "parent": "Sled_Tow",
+   "note": "the T-handle (where it lies)",
+   "root": "Item_Sled",
+   "posUnity": [
+    0.0,
+    0.016,
+    1.655
+   ]
+  },
+  "Cargo_Sled": {
+   "pos": [
+    0.0,
+    0.05,
+    0.012
+   ],
+   "kind": "cargo",
+   "parent": "Item_Sled",
+   "note": "the floor inside: loads lie on it (z = 0.012); the game parents them while it is pulled",
+   "size": [
+    0.5,
+    1.05
+   ],
+   "root": "Item_Sled",
+   "posUnity": [
+    0.0,
+    0.012,
+    -0.05
+   ]
+  },
+  "Doll_Eyes": {
+   "pos": [
+    0.0,
+    -0.056,
+    0.264
+   ],
+   "kind": "look",
+   "parent": "Doll_Head",
+   "note": "between the painted eyes: for \"is anyone looking at her\" and her gaze",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "root": "Item_Doll",
+   "posUnity": [
+    0.0,
+    0.264,
+    0.056
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "Hand_Doll": {
+   "pos": [
+    0.0,
+    0.004,
+    0.15
+   ],
+   "kind": "hand",
+   "parent": "Item_Doll",
+   "note": "picked up round the waist",
+   "root": "Item_Doll",
+   "posUnity": [
+    0.0,
+    0.15,
+    -0.004
+   ]
+  },
+  "Screw_E27": {
+   "pos": [
+    0.0,
+    0.0,
+    0.016
+   ],
+   "kind": "screw",
+   "parent": "Item_Bulb",
+   "note": "screws into a lamp holder cap first (-z): two turns clockwise seen from the glass",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "Item_Bulb",
+   "posUnity": [
+    0.0,
+    0.016,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "Hand_IceAxe": {
+   "pos": [
+    0.0,
+    0.0,
+    0.17
+   ],
+   "kind": "hand",
+   "parent": "Item_IceAxe",
+   "note": "swinging grip, low on the shaft",
+   "root": "Item_IceAxe",
+   "posUnity": [
+    0.0,
+    0.17,
+    0.0
+   ]
+  },
+  "Hand_IceAxe_Head": {
+   "pos": [
+    0.0,
+    0.0,
+    0.672
+   ],
+   "kind": "hand",
+   "parent": "Item_IceAxe",
+   "note": "walking grip on the head",
+   "root": "Item_IceAxe",
+   "posUnity": [
+    0.0,
+    0.672,
+    0.0
+   ]
+  },
+  "Tip_Pick": {
+   "pos": [
+    0.186,
+    0.0,
+    0.606
+   ],
+   "kind": "point",
+   "parent": "Item_IceAxe",
+   "note": "the pick's point: the hit point for chipping ice",
+   "dir": [
+    0.2496,
+    0.0,
+    -0.9684
+   ],
+   "root": "Item_IceAxe",
+   "posUnity": [
+    -0.186,
+    0.606,
+    0.0
+   ],
+   "dirUnity": [
+    -0.2496,
+    -0.9684,
+    0.0
+   ]
+  },
+  "Tip_Adze": {
+   "pos": [
+    -0.098,
+    0.0,
+    0.636
+   ],
+   "kind": "point",
+   "parent": "Item_IceAxe",
+   "note": "the adze's edge",
+   "root": "Item_IceAxe",
+   "posUnity": [
+    0.098,
+    0.636,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Battery",
+   "parent": "Item_Battery",
+   "root": "Item_Battery",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0308
+   ],
+   "size": [
+    0.0342,
+    0.0342,
+    0.0615
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0308
+   ],
+   "centerUnity": [
+    0.0,
+    0.0308,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0342,
+    0.0615,
+    0.0342
+   ]
+  },
+  {
+   "name": "COL_BatteryPack",
+   "parent": "Item_BatteryPack",
+   "root": "Item_BatteryPack",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0308
+   ],
+   "size": [
+    0.07,
+    0.07,
+    0.0615
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0308
+   ],
+   "centerUnity": [
+    0.0,
+    0.0308,
+    0.0
+   ],
+   "sizeUnity": [
+    0.07,
+    0.0615,
+    0.07
+   ]
+  },
+  {
+   "name": "COL_Battery6V",
+   "parent": "Item_Battery6V",
+   "root": "Item_Battery6V",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0582
+   ],
+   "size": [
+    0.0667,
+    0.0667,
+    0.1165
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0582
+   ],
+   "centerUnity": [
+    0.0,
+    0.0582,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0667,
+    0.1165,
+    0.0667
+   ]
+  },
+  {
+   "name": "COL_Walkie",
+   "parent": "Item_Walkie",
+   "root": "Item_Walkie",
+   "type": "box",
+   "center": [
+    -0.001,
+    0.0035,
+    0.064
+   ],
+   "size": [
+    0.062,
+    0.041,
+    0.128
+   ],
+   "center_root": [
+    -0.001,
+    0.0035,
+    0.064
+   ],
+   "centerUnity": [
+    0.001,
+    0.064,
+    -0.0035
+   ],
+   "sizeUnity": [
+    0.062,
+    0.128,
+    0.041
+   ]
+  },
+  {
+   "name": "COL_Walkie_Antenna",
+   "parent": "Item_Walkie",
+   "root": "Item_Walkie",
+   "type": "box",
+   "center": [
+    -0.019,
+    0.0,
+    0.1863
+   ],
+   "size": [
+    0.0132,
+    0.0132,
+    0.1165
+   ],
+   "center_root": [
+    -0.019,
+    0.0,
+    0.1863
+   ],
+   "centerUnity": [
+    0.019,
+    0.1863,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0132,
+    0.1165,
+    0.0132
+   ]
+  },
+  {
+   "name": "COL_Lantern_Body",
+   "parent": "Item_Lantern",
+   "root": "Item_Lantern",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0675
+   ],
+   "size": [
+    0.09,
+    0.09,
+    0.135
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0675
+   ],
+   "centerUnity": [
+    0.0,
+    0.0675,
+    0.0
+   ],
+   "sizeUnity": [
+    0.09,
+    0.135,
+    0.09
+   ]
+  },
+  {
+   "name": "COL_Lantern_Head",
+   "parent": "Item_Lantern",
+   "root": "Item_Lantern",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.063,
+    0.09
+   ],
+   "size": [
+    0.093,
+    0.036,
+    0.093
+   ],
+   "center_root": [
+    0.0,
+    -0.063,
+    0.09
+   ],
+   "centerUnity": [
+    0.0,
+    0.09,
+    0.063
+   ],
+   "sizeUnity": [
+    0.093,
+    0.093,
+    0.036
+   ]
+  },
+  {
+   "name": "COL_Lantern_Handle",
+   "parent": "Item_Lantern",
+   "root": "Item_Lantern",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.1575
+   ],
+   "size": [
+    0.02,
+    0.068,
+    0.045
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.1575
+   ],
+   "centerUnity": [
+    0.0,
+    0.1575,
+    0.0
+   ],
+   "sizeUnity": [
+    0.02,
+    0.045,
+    0.068
+   ]
+  },
+  {
+   "name": "COL_Lantern_Door",
+   "parent": "Lantern_Door",
+   "root": "Item_Lantern",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.0005,
+    0.0601
+   ],
+   "size": [
+    0.07,
+    0.005,
+    0.119
+   ],
+   "center_root": [
+    0.0,
+    0.045,
+    0.0675
+   ],
+   "centerUnity": [
+    0.0,
+    0.0601,
+    0.0005
+   ],
+   "sizeUnity": [
+    0.07,
+    0.119,
+    0.005
+   ]
+  },
+  {
+   "name": "COL_Headlamp",
+   "parent": "Item_Headlamp",
+   "root": "Item_Headlamp",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.01,
+    0.023
+   ],
+   "size": [
+    0.16,
+    0.266,
+    0.046
+   ],
+   "center_root": [
+    0.0,
+    -0.01,
+    0.023
+   ],
+   "centerUnity": [
+    0.0,
+    0.023,
+    0.01
+   ],
+   "sizeUnity": [
+    0.16,
+    0.046,
+    0.266
+   ]
+  },
+  {
+   "name": "COL_Cart_Deck",
+   "parent": "Item_Cart",
+   "root": "Item_Cart",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.311
+   ],
+   "size": [
+    0.55,
+    0.9,
+    0.058
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.311
+   ],
+   "centerUnity": [
+    0.0,
+    0.311,
+    0.0
+   ],
+   "sizeUnity": [
+    0.55,
+    0.058,
+    0.9
+   ]
+  },
+  {
+   "name": "COL_Cart_Handle",
+   "parent": "Item_Cart",
+   "root": "Item_Cart",
+   "type": "box",
+   "center": [
+    0.0,
+    0.467,
+    0.654
+   ],
+   "size": [
+    0.516,
+    0.094,
+    0.628
+   ],
+   "center_root": [
+    0.0,
+    0.467,
+    0.654
+   ],
+   "centerUnity": [
+    0.0,
+    0.654,
+    -0.467
+   ],
+   "sizeUnity": [
+    0.516,
+    0.628,
+    0.094
+   ]
+  },
+  {
+   "name": "COL_Cart_Wheel_FL",
+   "parent": "Cart_Wheel_FL",
+   "root": "Item_Cart",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.085,
+    0.26,
+    0.26
+   ],
+   "center_root": [
+    -0.2175,
+    -0.32,
+    0.13
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.085,
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "name": "COL_Cart_Wheel_FR",
+   "parent": "Cart_Wheel_FR",
+   "root": "Item_Cart",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.085,
+    0.26,
+    0.26
+   ],
+   "center_root": [
+    0.2175,
+    -0.32,
+    0.13
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.085,
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "name": "COL_Cart_Wheel_BL",
+   "parent": "Cart_Wheel_BL",
+   "root": "Item_Cart",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.085,
+    0.26,
+    0.26
+   ],
+   "center_root": [
+    -0.2175,
+    0.33,
+    0.13
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.085,
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "name": "COL_Cart_Wheel_BR",
+   "parent": "Cart_Wheel_BR",
+   "root": "Item_Cart",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "size": [
+    0.085,
+    0.26,
+    0.26
+   ],
+   "center_root": [
+    0.2175,
+    0.33,
+    0.13
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.085,
+    0.26,
+    0.26
+   ]
+  },
+  {
+   "name": "COL_Sled_Floor",
+   "parent": "Item_Sled",
+   "root": "Item_Sled",
+   "type": "box",
+   "center": [
+    0.0,
+    0.095,
+    0.006
+   ],
+   "size": [
+    0.54,
+    1.09,
+    0.012
+   ],
+   "center_root": [
+    0.0,
+    0.095,
+    0.006
+   ],
+   "centerUnity": [
+    0.0,
+    0.006,
+    -0.095
+   ],
+   "sizeUnity": [
+    0.54,
+    0.012,
+    1.09
+   ]
+  },
+  {
+   "name": "COL_Sled_Left",
+   "parent": "Item_Sled",
+   "root": "Item_Sled",
+   "type": "box",
+   "center": [
+    -0.278,
+    0.05,
+    0.104
+   ],
+   "size": [
+    0.02,
+    1.2,
+    0.208
+   ],
+   "center_root": [
+    -0.278,
+    0.05,
+    0.104
+   ],
+   "centerUnity": [
+    0.278,
+    0.104,
+    -0.05
+   ],
+   "sizeUnity": [
+    0.02,
+    0.208,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Sled_Right",
+   "parent": "Item_Sled",
+   "root": "Item_Sled",
+   "type": "box",
+   "center": [
+    0.278,
+    0.05,
+    0.104
+   ],
+   "size": [
+    0.02,
+    1.2,
+    0.208
+   ],
+   "center_root": [
+    0.278,
+    0.05,
+    0.104
+   ],
+   "centerUnity": [
+    -0.278,
+    0.104,
+    -0.05
+   ],
+   "sizeUnity": [
+    0.02,
+    0.208,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_Sled_Bow",
+   "parent": "Item_Sled",
+   "root": "Item_Sled",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.561,
+    0.121
+   ],
+   "size": [
+    0.52,
+    0.222,
+    0.23
+   ],
+   "center_root": [
+    0.0,
+    -0.561,
+    0.121
+   ],
+   "centerUnity": [
+    0.0,
+    0.121,
+    0.561
+   ],
+   "sizeUnity": [
+    0.52,
+    0.23,
+    0.222
+   ],
+   "rotation": [
+    -20.0,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    -20.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_Sled_Stern",
+   "parent": "Item_Sled",
+   "root": "Item_Sled",
+   "type": "box",
+   "center": [
+    0.0,
+    0.646,
+    0.106
+   ],
+   "size": [
+    0.54,
+    0.016,
+    0.212
+   ],
+   "center_root": [
+    0.0,
+    0.646,
+    0.106
+   ],
+   "centerUnity": [
+    0.0,
+    0.106,
+    -0.646
+   ],
+   "sizeUnity": [
+    0.54,
+    0.212,
+    0.016
+   ]
+  },
+  {
+   "name": "COL_Doll_Body",
+   "parent": "Item_Doll",
+   "root": "Item_Doll",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.045,
+    0.106
+   ],
+   "size": [
+    0.19,
+    0.27,
+    0.212
+   ],
+   "center_root": [
+    0.0,
+    -0.045,
+    0.106
+   ],
+   "centerUnity": [
+    0.0,
+    0.106,
+    0.045
+   ],
+   "sizeUnity": [
+    0.19,
+    0.212,
+    0.27
+   ]
+  },
+  {
+   "name": "COL_Doll_Head",
+   "parent": "Doll_Head",
+   "root": "Item_Doll",
+   "type": "box",
+   "center": [
+    0.0,
+    0.001,
+    0.0581
+   ],
+   "size": [
+    0.128,
+    0.118,
+    0.1162
+   ],
+   "center_root": [
+    0.0,
+    0.001,
+    0.2701
+   ],
+   "centerUnity": [
+    0.0,
+    0.0581,
+    -0.001
+   ],
+   "sizeUnity": [
+    0.128,
+    0.1162,
+    0.118
+   ]
+  },
+  {
+   "name": "COL_Postcard",
+   "parent": "Item_Postcard",
+   "root": "Item_Postcard",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0018
+   ],
+   "size": [
+    0.148,
+    0.105,
+    0.0035
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.0018
+   ],
+   "centerUnity": [
+    0.0,
+    0.0018,
+    0.0
+   ],
+   "sizeUnity": [
+    0.148,
+    0.0035,
+    0.105
+   ]
+  },
+  {
+   "name": "COL_Bulb",
+   "parent": "Item_Bulb",
+   "root": "Item_Bulb",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.053
+   ],
+   "size": [
+    0.06,
+    0.06,
+    0.106
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.053
+   ],
+   "centerUnity": [
+    0.0,
+    0.053,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    0.106,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_BulbBox",
+   "parent": "Item_BulbBox",
+   "root": "Item_BulbBox",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.056
+   ],
+   "size": [
+    0.064,
+    0.064,
+    0.112
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.056
+   ],
+   "centerUnity": [
+    0.0,
+    0.056,
+    0.0
+   ],
+   "sizeUnity": [
+    0.064,
+    0.112,
+    0.064
+   ]
+  },
+  {
+   "name": "COL_WorkerTag",
+   "parent": "Item_WorkerTag",
+   "root": "Item_WorkerTag",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.0235
+   ],
+   "size": [
+    0.032,
+    0.005,
+    0.047
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.0235
+   ],
+   "centerUnity": [
+    0.0,
+    -0.0235,
+    0.0
+   ],
+   "sizeUnity": [
+    0.032,
+    0.047,
+    0.005
+   ]
+  },
+  {
+   "name": "COL_Key",
+   "parent": "Item_Key_Stationsleiter",
+   "root": "Item_Key_Stationsleiter",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    -0.0417
+   ],
+   "size": [
+    0.029,
+    0.007,
+    0.0835
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    -0.0417
+   ],
+   "centerUnity": [
+    0.0,
+    -0.0417,
+    0.0
+   ],
+   "sizeUnity": [
+    0.029,
+    0.0835,
+    0.007
+   ]
+  },
+  {
+   "name": "COL_IceAxe_Shaft",
+   "parent": "Item_IceAxe",
+   "root": "Item_IceAxe",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.309
+   ],
+   "size": [
+    0.033,
+    0.025,
+    0.618
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.309
+   ],
+   "centerUnity": [
+    0.0,
+    0.309,
+    0.0
+   ],
+   "sizeUnity": [
+    0.033,
+    0.618,
+    0.025
+   ]
+  },
+  {
+   "name": "COL_IceAxe_Head",
+   "parent": "Item_IceAxe",
+   "root": "Item_IceAxe",
+   "type": "box",
+   "center": [
+    0.044,
+    0.0,
+    0.633
+   ],
+   "size": [
+    0.288,
+    0.052,
+    0.066
+   ],
+   "center_root": [
+    0.044,
+    0.0,
+    0.633
+   ],
+   "centerUnity": [
+    -0.044,
+    0.633,
+    0.0
+   ],
+   "sizeUnity": [
+    0.288,
+    0.066,
+    0.052
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees, kg",
+  "frame": "each root in its own frame: z up, the front -y; origin on the surface it stands on (z = 0) under its middle - the key and the brass tag: the hanging point (the top of the ring), the ice axe: the spike's tip. Every pivot / pos here is in its root's frame. In gear.blend the roots stand apart (display_offset); their FBX is exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "Item_Battery": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Item_BatteryPack": [
+    0.1,
+    0.0,
+    0.0
+   ],
+   "Item_Battery6V": [
+    0.22,
+    0.0,
+    0.0
+   ],
+   "Item_Walkie": [
+    0.38,
+    0.0,
+    0.0
+   ],
+   "Item_Lantern": [
+    0.56,
+    0.0,
+    0.0
+   ],
+   "Item_Headlamp": [
+    0.82,
+    0.0,
+    0.0
+   ],
+   "Item_Cart": [
+    -0.75,
+    0.25,
+    0.0
+   ],
+   "Item_Sled": [
+    -1.75,
+    0.6,
+    0.0
+   ],
+   "Item_Doll": [
+    1.75,
+    0.0,
+    0.0
+   ],
+   "Item_Postcard": [
+    1.48,
+    0.0,
+    0.0
+   ],
+   "Item_Bulb": [
+    1.03,
+    0.0,
+    0.0
+   ],
+   "Item_BulbBox": [
+    1.13,
+    0.0,
+    0.0
+   ],
+   "Item_WorkerTag": [
+    1.24,
+    0.0,
+    0.12
+   ],
+   "Item_Key_Stationsleiter": [
+    1.31,
+    0.0,
+    0.12
+   ],
+   "Item_IceAxe": [
+    2.05,
+    0.0,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent's own frame (its pivot, no rotation unless given), centerUnity / sizeUnity the same in Unity axes; center_root: in the root's frame. The COL_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "mass": "mass_kg on each root: a suggestion for the rigidbody",
+  "lights": "sockets of kind light: a spot light at pos along dir; color (linear RGB), spot_angle (deg) and range (m) are suggestions - the lamp lens materials switch with it",
+  "model": "gear.blend",
+  "textures": "tex",
+  "materials": "M_Gear_Small (the hand things) / M_Gear_Haul (the cart, the pulk): baked PSX atlases (point filter); M_Gear_Panel: the printed faces (cells, sleeve, radio front and top, lamp plates, the doll's face, the carton, the brass tag's faces, the key's tag) - another material on those bodies; M_Gear_LensAmber / _Off, M_Gear_LensClear / _Off: the lamps lit / off (off in the file); M_Gear_LEDR / M_Gear_LEDG / M_Gear_LED_Off: the radio's TX / RX LED (off in the file); M_Gear_WalkieLCD / _Off: the radio's display lit / off (lit in the file); M_Gear_PostcardFront / M_Gear_PostcardBack: the card's two faces (own textures, UV 0..1); M_Gear_Bulb / M_Gear_BulbBurnt: the bulb's glass new / burnt out (new in the file)",
+  "names": "the roots are Item_* as forest_items' items (catalogue keys); parts and sockets start with the item's name without Item_"
+ }
+}

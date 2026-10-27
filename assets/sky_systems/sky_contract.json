@@ -1,0 +1,3046 @@
+{
+ "parts": {
+  "SkyChiller_Belt": {
+   "kind": "static",
+   "pivot": [
+    -0.55,
+    -0.62,
+    0.77
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "fitted",
+    "torn",
+    "missing"
+   ],
+   "note": "the three V-belts motor -> compressor: the usual fault (RESEARCH_HORROR 4.2 \"replace the belt\"); fitted = shown; torn / missing = hidden (a spare belt is fitted through the open guard)",
+   "object": "SkyChiller_Belt",
+   "root": "SkyChiller",
+   "pivotUnity": [
+    0.55,
+    0.77,
+    0.62
+   ]
+  },
+  "IX_SkyChillerGuard": {
+   "kind": "hinge",
+   "pivot": [
+    -0.415,
+    -0.78,
+    1.3
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the belt guard's front plate: hinged along its top edge, swings up and out (-y)",
+   "object": "IX_SkyChillerGuard",
+   "root": "SkyChiller",
+   "box": {
+    "center": [
+     0.0,
+     -0.01,
+     -0.46
+    ],
+    "size": [
+     2.07,
+     0.08,
+     0.92
+    ]
+   },
+   "pivotUnity": [
+    0.415,
+    1.3,
+    0.78
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyChiller_Fan": {
+   "kind": "spin",
+   "pivot": [
+    2.0,
+    0.0,
+    2.13
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "stopped",
+    "running"
+   ],
+   "note": "the condenser fan: turns while the unit runs (~6 rev/s)",
+   "object": "SkyChiller_Fan",
+   "root": "SkyChiller",
+   "box": {
+    "center": [
+     0.0143,
+     0.0,
+     0.1075
+    ],
+    "size": [
+     1.0714,
+     1.1265,
+     0.105
+    ]
+   },
+   "pivotUnity": [
+    -2.0,
+    2.13,
+    0.0
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "IX_SkyChillerValve": {
+   "kind": "twist",
+   "pivot": [
+    0.25,
+    1.12,
+    1.16
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    1080
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "shut",
+    "open"
+   ],
+   "note": "the suction valve on the cold loop (handwheel, three turns): open it to pump the refrigerant round",
+   "object": "IX_SkyChillerValve",
+   "root": "SkyChiller",
+   "box": {
+    "center": [
+     -0.0002,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.3474,
+     0.339,
+     0.04
+    ]
+   },
+   "pivotUnity": [
+    -0.25,
+    1.16,
+    -1.12
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "IX_SkyChillerStart": {
+   "kind": "hinge",
+   "pivot": [
+    -2.12,
+    -1.65,
+    1.2
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "off",
+    "start"
+   ],
+   "note": "the START lever on the cabinet's side: pull it down to start the compressor (with the belts fitted and the valve open the RUN lamp lights; otherwise FAULT)",
+   "object": "IX_SkyChillerStart",
+   "root": "SkyChiller",
+   "box": {
+    "center": [
+     0.0425,
+     0.0,
+     0.225
+    ],
+    "size": [
+     0.085,
+     0.1,
+     0.55
+    ]
+   },
+   "pivotUnity": [
+    2.12,
+    1.2,
+    1.65
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyChiller_LampRun": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "green RUN lamp on the cabinet: M_Sky_Green_Off / M_Sky_Green",
+   "object": "SkyChiller_LampRun",
+   "root": "SkyChiller",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyChiller_LampFault": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "red FAULT lamp: M_Sky_Red_Off / M_Sky_Red (blinks while the unit is down)",
+   "object": "SkyChiller_LampFault",
+   "root": "SkyChiller",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyChiller_Beacon": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyChiller",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "amber beacon on the cabinet: turns and glows while the unit is down (M_Sky_Amber)",
+   "object": "SkyChiller_Beacon",
+   "root": "SkyChiller",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyChiller": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the refrigeration unit (Kältemaschine) on its 6.4 x 3.8 m pad (root): origin on the ground under the pad's middle; the cabinet and the belt guard at the front (-y)",
+   "object": "SkyChiller",
+   "root": "SkyChiller",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_SkySprayerFeed": {
+   "kind": "twist",
+   "pivot": [
+    -0.31,
+    0.0,
+    1.62
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    3600
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkySprayer",
+   "states": [
+    "jammed",
+    "free"
+   ],
+   "note": "the rotary feeder's hand crank: turn it to free the jammed feeder (dust caked in the cold), then the motor takes over",
+   "object": "IX_SkySprayerFeed",
+   "root": "SkySprayer",
+   "box": {
+    "center": [
+     -0.09,
+     0.0,
+     0.11
+    ],
+    "size": [
+     0.18,
+     0.1,
+     0.32
+    ]
+   },
+   "pivotUnity": [
+    0.31,
+    1.62,
+    0.0
+   ],
+   "axisUnity": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkySprayer_Nozzle": {
+   "kind": "spin",
+   "pivot": [
+    0.55,
+    -1.15,
+    6.4
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkySprayer",
+   "states": [
+    "stopped",
+    "spraying"
+   ],
+   "note": "the swivel nozzle on the mast (6.4 m): sweeps round while it sprays (a slow 360 deg, ~20 s); the dust plume is an effect (Fx_DustPlume from its mouth along -y local)",
+   "object": "SkySprayer_Nozzle",
+   "root": "SkySprayer",
+   "box": {
+    "center": [
+     0.0,
+     -0.2834,
+     0.39
+    ],
+    "size": [
+     0.3804,
+     0.8331,
+     0.78
+    ]
+   },
+   "pivotUnity": [
+    -0.55,
+    6.4,
+    1.15
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "IX_SkySprayerLid": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.99,
+    3.26
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    110
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkySprayer",
+   "states": [
+    "closed",
+    "open"
+   ],
+   "note": "the hopper's grid lid, hinged at the back: open it to empty dust sacks in",
+   "object": "IX_SkySprayerLid",
+   "root": "SkySprayer",
+   "box": {
+    "center": [
+     0.0,
+     -1.02,
+     0.02
+    ],
+    "size": [
+     1.98,
+     2.04,
+     0.08
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    3.26,
+    -0.99
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkySprayer_Grating": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkySprayer",
+   "states": [],
+   "note": "the platform's grating (M_Sky_Grating)",
+   "object": "SkySprayer_Grating",
+   "root": "SkySprayer",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkySprayer": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the bone-dust sprayer (root): origin on the ground under its plinth's middle; the mast and blower at the front (-y), the platform and ladder at +x",
+   "object": "SkySprayer",
+   "root": "SkySprayer",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "IX_SkyBallastDeck": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.22,
+    0.12
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    38
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyBallast",
+   "states": [
+    "level",
+    "tipped"
+   ],
+   "note": "the tilting deck over the edge: the rams lift its back, it tips forward (-y) about the hinge line at the edge and the ballast slides off into the fog; only while IX_SkyBallastLever is held (falls back slowly when let go)",
+   "object": "IX_SkyBallastDeck",
+   "root": "SkyBallast",
+   "mass_kg": 6000.0,
+   "box": {
+    "center": [
+     0.0,
+     2.0472,
+     0.205
+    ],
+    "size": [
+     5.0,
+     4.2656,
+     0.85
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.12,
+    -0.22
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyBallast_Ram_L": {
+   "kind": "aim",
+   "pivot": [
+    -1.2,
+    3.5,
+    -0.82
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyBallast",
+   "states": [],
+   "note": "hydraulic ram: pivots at its base in the pit and points at its lug under the deck (target_pos, in the deck's rest pose); stretch its rod to the distance",
+   "target": "IX_SkyBallastDeck",
+   "target_pos": [
+    -1.2000000476837158,
+    3.5,
+    -0.14000000059604645
+   ],
+   "object": "SkyBallast_Ram_L",
+   "root": "SkyBallast",
+   "target_posUnity": [
+    1.2,
+    -0.14,
+    -3.5
+   ],
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.34
+    ],
+    "size": [
+     0.22,
+     0.2092,
+     0.68
+    ]
+   },
+   "pivotUnity": [
+    1.2,
+    -0.82,
+    -3.5
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyBallast_Ram_R": {
+   "kind": "aim",
+   "pivot": [
+    1.2,
+    3.5,
+    -0.82
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyBallast",
+   "states": [],
+   "note": "hydraulic ram: pivots at its base in the pit and points at its lug under the deck (target_pos, in the deck's rest pose); stretch its rod to the distance",
+   "target": "IX_SkyBallastDeck",
+   "target_pos": [
+    1.2000000476837158,
+    3.5,
+    -0.14000000059604645
+   ],
+   "object": "SkyBallast_Ram_R",
+   "root": "SkyBallast",
+   "target_posUnity": [
+    -1.2,
+    -0.14,
+    -3.5
+   ],
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.34
+    ],
+    "size": [
+     0.22,
+     0.2092,
+     0.68
+    ]
+   },
+   "pivotUnity": [
+    -1.2,
+    -0.82,
+    -3.5
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyBallast_Block_1": {
+   "kind": "item",
+   "pivot": [
+    -1.6,
+    2.2,
+    0.3
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_SkyBallastDeck",
+   "states": [
+    "on_deck",
+    "dropped"
+   ],
+   "note": "ballast block 1 (1.2 x 1.2 x 1.0 m concrete, 3.5 t): a rigid body resting on the deck; when it leaves over the edge - despawn after the fall (it drops through the fog)",
+   "mass_hint": 3500,
+   "object": "SkyBallast_Block_1",
+   "root": "SkyBallast",
+   "box": {
+    "center": [
+     0.0,
+     0.0495,
+     0.625
+    ],
+    "size": [
+     1.2,
+     1.2,
+     1.25
+    ]
+   },
+   "pivotUnity": [
+    1.6,
+    0.3,
+    -2.2
+   ]
+  },
+  "SkyBallast_Block_2": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    2.2,
+    0.3
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_SkyBallastDeck",
+   "states": [
+    "on_deck",
+    "dropped"
+   ],
+   "note": "ballast block 2 (1.2 x 1.2 x 1.0 m concrete, 3.5 t): a rigid body resting on the deck; when it leaves over the edge - despawn after the fall (it drops through the fog)",
+   "mass_hint": 3500,
+   "object": "SkyBallast_Block_2",
+   "root": "SkyBallast",
+   "box": {
+    "center": [
+     0.0,
+     0.0583,
+     0.625
+    ],
+    "size": [
+     1.2,
+     1.2,
+     1.25
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.3,
+    -2.2
+   ]
+  },
+  "SkyBallast_Block_3": {
+   "kind": "item",
+   "pivot": [
+    1.6,
+    2.2,
+    0.3
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_SkyBallastDeck",
+   "states": [
+    "on_deck",
+    "dropped"
+   ],
+   "note": "ballast block 3 (1.2 x 1.2 x 1.0 m concrete, 3.5 t): a rigid body resting on the deck; when it leaves over the edge - despawn after the fall (it drops through the fog)",
+   "mass_hint": 3500,
+   "object": "SkyBallast_Block_3",
+   "root": "SkyBallast",
+   "box": {
+    "center": [
+     0.0,
+     0.0881,
+     0.625
+    ],
+    "size": [
+     1.2,
+     1.2,
+     1.25
+    ]
+   },
+   "pivotUnity": [
+    -1.6,
+    0.3,
+    -2.2
+   ]
+  },
+  "IX_SkyBallastLever": {
+   "kind": "hinge",
+   "pivot": [
+    3.9,
+    6.67,
+    0.95
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    40
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyBallast",
+   "states": [
+    "rest",
+    "held"
+   ],
+   "note": "the release lever: pull and HOLD (springs back when let go) - the deck tips while it is held (RESEARCH_HORROR 4.2: \"drop the ballast off the edge, holding the lever\")",
+   "object": "IX_SkyBallastLever",
+   "root": "SkyBallast",
+   "box": {
+    "center": [
+     0.0,
+     -0.0945,
+     0.4487
+    ],
+    "size": [
+     0.12,
+     0.2491,
+     1.0175
+    ]
+   },
+   "pivotUnity": [
+    -3.9,
+    0.95,
+    -6.67
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyBallast_Beacon": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyBallast",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "amber beacon by the lever: turns while the deck moves (M_Sky_Amber_Off / M_Sky_Amber)",
+   "object": "SkyBallast_Beacon",
+   "root": "SkyBallast",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyBallast": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "ballast release at the island's edge (root): origin on the ground in the middle of the edge line - the drop is at -y (Unity +Z), the foundation's face goes 2.6 m down the cliff; the lever station 4 m to the side, behind",
+   "object": "SkyBallast",
+   "root": "SkyBallast",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyAltimeter_Marker": {
+   "kind": "slide",
+   "pivot": [
+    -0.3499,
+    -0.3,
+    4.9937
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    4.2177
+   ],
+   "unit": "m",
+   "rest": 0.0,
+   "parent": "SkyAltimeter",
+   "states": [
+    "0 m",
+    "2000 m"
+   ],
+   "note": "the lit pointer on the scale: z offset = altitude / 2000 m x 4.218 m (0 m at rest); it is the chapter's timer - the island sinks, the pointer creeps down",
+   "object": "SkyAltimeter_Marker",
+   "root": "SkyAltimeter",
+   "box": {
+    "center": [
+     -0.21,
+     0.005,
+     0.0
+    ],
+    "size": [
+     0.42,
+     0.01,
+     0.28
+    ]
+   },
+   "pivotUnity": [
+    0.3499,
+    4.9937,
+    0.3
+   ],
+   "axisUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyAltimeter_Lamps": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyAltimeter",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "20 amber lamps beside the scale (one per 100 m band): lit up to the current altitude at night; one object, M_Sky_Amber_Off / M_Sky_Amber (per-lamp lighting needs a split - the lamp k is at 50 + 100 k m)",
+   "object": "SkyAltimeter_Lamps",
+   "root": "SkyAltimeter",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyAltimeter_Glow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyAltimeter",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "the two floodlights' lenses (M_Sky_Lamp_Off / M_Sky_Lamp)",
+   "object": "SkyAltimeter_Glow",
+   "root": "SkyAltimeter",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyAltimeter_Obstruction": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyAltimeter",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "red obstruction light on top (M_Sky_Red): blinks like the island's other beacons (SkyIslandBeacons)",
+   "object": "SkyAltimeter_Obstruction",
+   "root": "SkyAltimeter",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyAltimeter": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the altitude board (root): origin on the ground between its two footings; the face (3.4 x 5.6 m, 4.4 .. 10 m up) looks along -y (Unity +Z): set it by the tower facing the field, so the players outside and the one at the tower's console see it",
+   "object": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "walkway 4 m (root): origin on the deck at its start, middle; runs along +y (Unity -Z); grating deck, C-channel stringers, railings 1.1 m with toe boards, two hanger beams with turnbuckles",
+   "object": "SkyWalk_Straight",
+   "root": "SkyWalk_Straight",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Stair": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "stair flight (root): from the deck at its top (origin, middle) 14 grating treads down 3 m over 4.2 m along +y",
+   "object": "SkyWalk_Stair",
+   "root": "SkyWalk_Stair",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Landing": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "landing 2.4 x 2.4 m (root): origin on the deck in the middle of its -y edge; openings 1.2 m in the middle of -y and +y, railings elsewhere, four hangers",
+   "object": "SkyWalk_Landing",
+   "root": "SkyWalk_Landing",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Turn": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "corner (root): origin on the deck at its -y edge, middle; enter from -y, leave to +x",
+   "object": "SkyWalk_Turn",
+   "root": "SkyWalk_Turn",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Ladder": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "cage ladder 4 m (root): origin at the top in the rungs' plane; goes down 4 m, the cage on -y, the climber faces +y; the stiles reach 1.1 m over the top as grab rails",
+   "object": "SkyWalk_Ladder",
+   "root": "SkyWalk_Ladder",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Cable": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "hanger cable (root): 1 m along +z from its origin - scale z to the length (Hang_* socket up to SkyWalk_Anchor)",
+   "object": "SkyWalk_Cable",
+   "root": "SkyWalk_Cable",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Anchor": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "rock anchor (root): the plate's back on the rock underside at its origin (normal -z); the eye 0.12 m below",
+   "object": "SkyWalk_Anchor",
+   "root": "SkyWalk_Anchor",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Lamp_Glow": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyWalk_Lamp",
+   "states": [
+    "off",
+    "on"
+   ],
+   "note": "its glass: M_Sky_Lamp_Off / M_Sky_Lamp",
+   "object": "SkyWalk_Lamp_Glow",
+   "root": "SkyWalk_Lamp",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Lamp": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "walkway lamp (root): clamps to a railing post at its origin (the post's top, 1.1 m up), the caged lamp over the deck on +y; sodium-warm, sparse (one per ~12 m)",
+   "object": "SkyWalk_Lamp",
+   "root": "SkyWalk_Lamp",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight_Grating": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyWalk_Straight",
+   "states": [],
+   "note": "the grating deck (M_Sky_Grating, cut-out, box-mapped 0.5 m)",
+   "object": "SkyWalk_Straight_Grating",
+   "root": "SkyWalk_Straight",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Stair_Grating": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyWalk_Stair",
+   "states": [],
+   "note": "the grating deck (M_Sky_Grating, cut-out, box-mapped 0.5 m)",
+   "object": "SkyWalk_Stair_Grating",
+   "root": "SkyWalk_Stair",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Landing_Grating": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyWalk_Landing",
+   "states": [],
+   "note": "the grating deck (M_Sky_Grating, cut-out, box-mapped 0.5 m)",
+   "object": "SkyWalk_Landing_Grating",
+   "root": "SkyWalk_Landing",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Turn_Grating": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "SkyWalk_Turn",
+   "states": [],
+   "note": "the grating deck (M_Sky_Grating, cut-out, box-mapped 0.5 m)",
+   "object": "SkyWalk_Turn_Grating",
+   "root": "SkyWalk_Turn",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Slot_Refrigerant": {
+   "pos": [
+    1.45,
+    1.25,
+    1.06
+   ],
+   "kind": "connect",
+   "parent": "SkyChiller",
+   "note": "the receiver's fill port: a refrigerant cylinder is connected here (RESEARCH_HORROR 4.2 \"pump refrigerant\")",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyChiller",
+   "posUnity": [
+    -1.45,
+    1.06,
+    -1.25
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Fx_DustPlume": {
+   "pos": [
+    0.55,
+    -1.85,
+    6.98
+   ],
+   "kind": "effect",
+   "parent": "SkySprayer_Nozzle",
+   "note": "the plume's origin and direction (child of the nozzle)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.15
+   ],
+   "root": "SkySprayer",
+   "posUnity": [
+    -0.55,
+    6.98,
+    1.85
+   ],
+   "dirUnity": [
+    0.0,
+    0.15,
+    1.0
+   ]
+  },
+  "Slot_DustPour": {
+   "pos": [
+    0.0,
+    0.0,
+    3.35
+   ],
+   "kind": "pour",
+   "parent": "SkySprayer",
+   "note": "where a dust sack is emptied (the hopper takes 12 sacks; the heap SkySprayer's inside rises with the level)",
+   "dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "root": "SkySprayer",
+   "posUnity": [
+    0.0,
+    3.35,
+    0.0
+   ],
+   "dirUnity": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight_Hang_AL": {
+   "pos": [
+    -0.67,
+    0.4,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Straight",
+   "note": "a cable (SkyWalk_Cable) goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Straight",
+   "posUnity": [
+    0.67,
+    0.1,
+    -0.4
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight_Hang_AR": {
+   "pos": [
+    0.67,
+    0.4,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Straight",
+   "note": "a cable (SkyWalk_Cable) goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Straight",
+   "posUnity": [
+    -0.67,
+    0.1,
+    -0.4
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight_Hang_BL": {
+   "pos": [
+    -0.67,
+    3.6,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Straight",
+   "note": "a cable (SkyWalk_Cable) goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Straight",
+   "posUnity": [
+    0.67,
+    0.1,
+    -3.6
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight_Hang_BR": {
+   "pos": [
+    0.67,
+    3.6,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Straight",
+   "note": "a cable (SkyWalk_Cable) goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Straight",
+   "posUnity": [
+    -0.67,
+    0.1,
+    -3.6
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Straight_End": {
+   "pos": [
+    0.0,
+    4.0,
+    0.0
+   ],
+   "kind": "link",
+   "parent": "SkyWalk_Straight",
+   "note": "the next module's origin goes here",
+   "root": "SkyWalk_Straight",
+   "posUnity": [
+    0.0,
+    0.0,
+    -4.0
+   ]
+  },
+  "SkyWalk_Stair_Hang_AL": {
+   "pos": [
+    -0.67,
+    0.4,
+    -0.05
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Stair",
+   "note": "a cable goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Stair",
+   "posUnity": [
+    0.67,
+    -0.05,
+    -0.4
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Stair_Hang_AR": {
+   "pos": [
+    0.67,
+    0.4,
+    -0.05
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Stair",
+   "note": "a cable goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Stair",
+   "posUnity": [
+    -0.67,
+    -0.05,
+    -0.4
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Stair_Hang_BL": {
+   "pos": [
+    -0.67,
+    3.8,
+    -3.0
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Stair",
+   "note": "a cable goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Stair",
+   "posUnity": [
+    0.67,
+    -3.0,
+    -3.8
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Stair_Hang_BR": {
+   "pos": [
+    0.67,
+    3.8,
+    -3.0
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Stair",
+   "note": "a cable goes up from here to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Stair",
+   "posUnity": [
+    -0.67,
+    -3.0,
+    -3.8
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Stair_End": {
+   "pos": [
+    0.0,
+    4.2,
+    -3.0
+   ],
+   "kind": "link",
+   "parent": "SkyWalk_Stair",
+   "note": "the next module's origin (3 m lower)",
+   "root": "SkyWalk_Stair",
+   "posUnity": [
+    0.0,
+    -3.0,
+    -4.2
+   ]
+  },
+  "SkyWalk_Landing_Hang_1": {
+   "pos": [
+    -1.27,
+    0.1,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Landing",
+   "note": "a cable up to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Landing",
+   "posUnity": [
+    1.27,
+    0.1,
+    -0.1
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Landing_Hang_2": {
+   "pos": [
+    1.27,
+    0.1,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Landing",
+   "note": "a cable up to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Landing",
+   "posUnity": [
+    -1.27,
+    0.1,
+    -0.1
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Landing_Hang_3": {
+   "pos": [
+    -1.27,
+    2.3,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Landing",
+   "note": "a cable up to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Landing",
+   "posUnity": [
+    1.27,
+    0.1,
+    -2.3
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Landing_Hang_4": {
+   "pos": [
+    1.27,
+    2.3,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Landing",
+   "note": "a cable up to a rock anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Landing",
+   "posUnity": [
+    -1.27,
+    0.1,
+    -2.3
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Landing_End": {
+   "pos": [
+    0.0,
+    2.4,
+    0.0
+   ],
+   "kind": "link",
+   "parent": "SkyWalk_Landing",
+   "note": "the straight-through exit (+y)",
+   "root": "SkyWalk_Landing",
+   "posUnity": [
+    0.0,
+    0.0,
+    -2.4
+   ]
+  },
+  "SkyWalk_Turn_Hang_1": {
+   "pos": [
+    -0.67,
+    1.1,
+    0.1
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Turn",
+   "note": "a cable up to an anchor",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "SkyWalk_Turn",
+   "posUnity": [
+    0.67,
+    0.1,
+    -1.1
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "SkyWalk_Turn_End": {
+   "pos": [
+    0.6,
+    0.6,
+    0.0
+   ],
+   "kind": "link",
+   "parent": "SkyWalk_Turn",
+   "note": "the next module's origin, turned -90 deg about z (Unity: +90 about Y) - a right turn; walked the other way it is a left turn",
+   "rot_deg": -90,
+   "root": "SkyWalk_Turn",
+   "posUnity": [
+    -0.6,
+    0.0,
+    -0.6
+   ],
+   "yawUnity": 90.0
+  },
+  "SkyWalk_Ladder_Top": {
+   "pos": [
+    0.0,
+    0.4,
+    0.0
+   ],
+   "kind": "link",
+   "parent": "SkyWalk_Ladder",
+   "note": "where it meets the upper deck (its edge at y 0..0.1)",
+   "root": "SkyWalk_Ladder",
+   "posUnity": [
+    0.0,
+    0.0,
+    -0.4
+   ]
+  },
+  "SkyWalk_Ladder_Bottom": {
+   "pos": [
+    0.0,
+    0.4,
+    -4.0
+   ],
+   "kind": "link",
+   "parent": "SkyWalk_Ladder",
+   "note": "the lower deck",
+   "root": "SkyWalk_Ladder",
+   "posUnity": [
+    0.0,
+    -4.0,
+    -0.4
+   ]
+  },
+  "SkyWalk_Anchor_Eye": {
+   "pos": [
+    0.0,
+    0.0,
+    -0.12
+   ],
+   "kind": "hang",
+   "parent": "SkyWalk_Anchor",
+   "note": "the cable's top goes here",
+   "root": "SkyWalk_Anchor",
+   "posUnity": [
+    0.0,
+    -0.12,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_SkyChiller_Pad",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.09
+   ],
+   "size": [
+    6.4,
+    3.8,
+    0.18
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.09
+   ],
+   "centerUnity": [
+    0.0,
+    0.09,
+    0.0
+   ],
+   "sizeUnity": [
+    6.4,
+    0.18,
+    3.8
+   ]
+  },
+  {
+   "name": "COL_SkyChiller_Machine",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "box",
+   "center": [
+    -0.43,
+    -0.04,
+    0.815
+   ],
+   "size": [
+    2.26,
+    1.48,
+    1.27
+   ],
+   "center_root": [
+    -0.43,
+    -0.04,
+    0.815
+   ],
+   "centerUnity": [
+    0.43,
+    0.815,
+    0.04
+   ],
+   "sizeUnity": [
+    2.26,
+    1.27,
+    1.48
+   ]
+  },
+  {
+   "name": "COL_SkyChiller_Condenser",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "box",
+   "center": [
+    2.0,
+    0.0,
+    1.255
+   ],
+   "size": [
+    1.7,
+    1.4,
+    2.15
+   ],
+   "center_root": [
+    2.0,
+    0.0,
+    1.255
+   ],
+   "centerUnity": [
+    -2.0,
+    1.255,
+    0.0
+   ],
+   "sizeUnity": [
+    1.7,
+    2.15,
+    1.4
+   ]
+  },
+  {
+   "name": "COL_SkyChiller_Cabinet",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "box",
+   "center": [
+    -2.6,
+    -1.65,
+    1.12
+   ],
+   "size": [
+    0.9,
+    0.4,
+    1.88
+   ],
+   "center_root": [
+    -2.6,
+    -1.65,
+    1.12
+   ],
+   "centerUnity": [
+    2.6,
+    1.12,
+    1.65
+   ],
+   "sizeUnity": [
+    0.9,
+    1.88,
+    0.4
+   ]
+  },
+  {
+   "name": "COL_SkyChiller_Receiver",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "box",
+   "center": [
+    2.0,
+    1.25,
+    0.57
+   ],
+   "size": [
+    1.4,
+    0.52,
+    0.78
+   ],
+   "center_root": [
+    2.0,
+    1.25,
+    0.57
+   ],
+   "centerUnity": [
+    -2.0,
+    0.57,
+    -1.25
+   ],
+   "sizeUnity": [
+    1.4,
+    0.78,
+    0.52
+   ]
+  },
+  {
+   "name": "COL_SkyChiller_Pipes",
+   "parent": "SkyChiller",
+   "root": "SkyChiller",
+   "type": "box",
+   "center": [
+    0.1,
+    1.07,
+    0.54
+   ],
+   "size": [
+    0.84,
+    1.34,
+    0.72
+   ],
+   "center_root": [
+    0.1,
+    1.07,
+    0.54
+   ],
+   "centerUnity": [
+    -0.1,
+    0.54,
+    -1.07
+   ],
+   "sizeUnity": [
+    0.84,
+    0.72,
+    1.34
+   ]
+  },
+  {
+   "name": "COL_SkySprayer_Plinth",
+   "parent": "SkySprayer",
+   "root": "SkySprayer",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.1
+   ],
+   "size": [
+    3.2,
+    3.2,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.1
+   ],
+   "centerUnity": [
+    0.0,
+    0.1,
+    0.0
+   ],
+   "sizeUnity": [
+    3.2,
+    0.2,
+    3.2
+   ]
+  },
+  {
+   "name": "COL_SkySprayer_Hopper",
+   "parent": "SkySprayer",
+   "root": "SkySprayer",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.76
+   ],
+   "size": [
+    2.1,
+    2.1,
+    3.12
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.76
+   ],
+   "centerUnity": [
+    0.0,
+    1.76,
+    0.0
+   ],
+   "sizeUnity": [
+    2.1,
+    3.12,
+    2.1
+   ]
+  },
+  {
+   "name": "COL_SkySprayer_Blower",
+   "parent": "SkySprayer",
+   "root": "SkySprayer",
+   "type": "box",
+   "center": [
+    0.125,
+    -1.15,
+    0.8
+   ],
+   "size": [
+    1.35,
+    0.6,
+    1.2
+   ],
+   "center_root": [
+    0.125,
+    -1.15,
+    0.8
+   ],
+   "centerUnity": [
+    -0.125,
+    0.8,
+    1.15
+   ],
+   "sizeUnity": [
+    1.35,
+    1.2,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_SkySprayer_Mast",
+   "parent": "SkySprayer",
+   "root": "SkySprayer",
+   "type": "box",
+   "center": [
+    0.55,
+    -1.15,
+    3.85
+   ],
+   "size": [
+    0.24,
+    0.24,
+    5.3
+   ],
+   "center_root": [
+    0.55,
+    -1.15,
+    3.85
+   ],
+   "centerUnity": [
+    -0.55,
+    3.85,
+    1.15
+   ],
+   "sizeUnity": [
+    0.24,
+    5.3,
+    0.24
+   ]
+  },
+  {
+   "name": "COL_SkySprayer_Platform",
+   "parent": "SkySprayer",
+   "root": "SkySprayer",
+   "type": "box",
+   "center": [
+    1.45,
+    0.0,
+    3.14
+   ],
+   "size": [
+    0.8,
+    2.0,
+    0.12
+   ],
+   "center_root": [
+    1.45,
+    0.0,
+    3.14
+   ],
+   "centerUnity": [
+    -1.45,
+    3.14,
+    0.0
+   ],
+   "sizeUnity": [
+    0.8,
+    0.12,
+    2.0
+   ]
+  },
+  {
+   "name": "COL_SkySprayer_PlatRail",
+   "parent": "SkySprayer",
+   "root": "SkySprayer",
+   "type": "box",
+   "center": [
+    1.83,
+    0.0,
+    3.7
+   ],
+   "size": [
+    0.06,
+    2.0,
+    1.0
+   ],
+   "center_root": [
+    1.83,
+    0.0,
+    3.7
+   ],
+   "centerUnity": [
+    -1.83,
+    3.7,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.0,
+    2.0
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_SlabFront",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    0.3,
+    -0.3
+   ],
+   "size": [
+    6.8,
+    0.6,
+    0.6
+   ],
+   "center_root": [
+    0.0,
+    0.3,
+    -0.3
+   ],
+   "centerUnity": [
+    0.0,
+    -0.3,
+    -0.3
+   ],
+   "sizeUnity": [
+    6.8,
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_SlabBack",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    5.15,
+    -0.3
+   ],
+   "size": [
+    6.8,
+    1.7,
+    0.6
+   ],
+   "center_root": [
+    0.0,
+    5.15,
+    -0.3
+   ],
+   "centerUnity": [
+    0.0,
+    -0.3,
+    -5.15
+   ],
+   "sizeUnity": [
+    6.8,
+    0.6,
+    1.7
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_SlabL",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    -2.95,
+    2.45,
+    -0.3
+   ],
+   "size": [
+    0.9,
+    3.7,
+    0.6
+   ],
+   "center_root": [
+    -2.95,
+    2.45,
+    -0.3
+   ],
+   "centerUnity": [
+    2.95,
+    -0.3,
+    -2.45
+   ],
+   "sizeUnity": [
+    0.9,
+    0.6,
+    3.7
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_SlabR",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    2.95,
+    2.45,
+    -0.3
+   ],
+   "size": [
+    0.9,
+    3.7,
+    0.6
+   ],
+   "center_root": [
+    2.95,
+    2.45,
+    -0.3
+   ],
+   "centerUnity": [
+    -2.95,
+    -0.3,
+    -2.45
+   ],
+   "sizeUnity": [
+    0.9,
+    0.6,
+    3.7
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_PitFloor",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    2.45,
+    -1.1
+   ],
+   "size": [
+    5.0,
+    3.7,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    2.45,
+    -1.1
+   ],
+   "centerUnity": [
+    0.0,
+    -1.1,
+    -2.45
+   ],
+   "sizeUnity": [
+    5.0,
+    0.2,
+    3.7
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_EdgeL",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    -3.01,
+    3.0,
+    0.55
+   ],
+   "size": [
+    0.78,
+    6.0,
+    1.1
+   ],
+   "center_root": [
+    -3.01,
+    3.0,
+    0.55
+   ],
+   "centerUnity": [
+    3.01,
+    0.55,
+    -3.0
+   ],
+   "sizeUnity": [
+    0.78,
+    1.1,
+    6.0
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_EdgeR",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    3.01,
+    3.0,
+    0.55
+   ],
+   "size": [
+    0.78,
+    6.0,
+    1.1
+   ],
+   "center_root": [
+    3.01,
+    3.0,
+    0.55
+   ],
+   "centerUnity": [
+    -3.01,
+    0.55,
+    -3.0
+   ],
+   "sizeUnity": [
+    0.78,
+    1.1,
+    6.0
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_Deck",
+   "parent": "IX_SkyBallastDeck",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    2.105,
+    0.03
+   ],
+   "size": [
+    5.0,
+    4.15,
+    0.3
+   ],
+   "center_root": [
+    0.0,
+    2.325,
+    0.15
+   ],
+   "centerUnity": [
+    0.0,
+    0.03,
+    -2.105
+   ],
+   "sizeUnity": [
+    5.0,
+    0.3,
+    4.15
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_LeverPost",
+   "parent": "SkyBallast",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    3.9,
+    6.975,
+    0.525
+   ],
+   "size": [
+    1.2,
+    1.55,
+    1.05
+   ],
+   "center_root": [
+    3.9,
+    6.975,
+    0.525
+   ],
+   "centerUnity": [
+    -3.9,
+    0.525,
+    -6.975
+   ],
+   "sizeUnity": [
+    1.2,
+    1.05,
+    1.55
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_Block_1",
+   "parent": "SkyBallast_Block_1",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "size": [
+    1.2,
+    1.2,
+    1.0
+   ],
+   "center_root": [
+    -1.6,
+    2.2,
+    0.8
+   ],
+   "centerUnity": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "sizeUnity": [
+    1.2,
+    1.0,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_Block_2",
+   "parent": "SkyBallast_Block_2",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "size": [
+    1.2,
+    1.2,
+    1.0
+   ],
+   "center_root": [
+    0.0,
+    2.2,
+    0.8
+   ],
+   "centerUnity": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "sizeUnity": [
+    1.2,
+    1.0,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_SkyBallast_Block_3",
+   "parent": "SkyBallast_Block_3",
+   "root": "SkyBallast",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "size": [
+    1.2,
+    1.2,
+    1.0
+   ],
+   "center_root": [
+    1.6,
+    2.2,
+    0.8
+   ],
+   "centerUnity": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "sizeUnity": [
+    1.2,
+    1.0,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_SkyAltimeter_LegL",
+   "parent": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "type": "box",
+   "center": [
+    -1.25,
+    0.0,
+    5.15
+   ],
+   "size": [
+    0.64,
+    0.44,
+    10.3
+   ],
+   "center_root": [
+    -1.25,
+    0.0,
+    5.15
+   ],
+   "centerUnity": [
+    1.25,
+    5.15,
+    0.0
+   ],
+   "sizeUnity": [
+    0.64,
+    10.3,
+    0.44
+   ]
+  },
+  {
+   "name": "COL_SkyAltimeter_LegR",
+   "parent": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "type": "box",
+   "center": [
+    1.25,
+    0.0,
+    5.15
+   ],
+   "size": [
+    0.64,
+    0.44,
+    10.3
+   ],
+   "center_root": [
+    1.25,
+    0.0,
+    5.15
+   ],
+   "centerUnity": [
+    -1.25,
+    5.15,
+    0.0
+   ],
+   "sizeUnity": [
+    0.64,
+    10.3,
+    0.44
+   ]
+  },
+  {
+   "name": "COL_SkyAltimeter_Board",
+   "parent": "SkyAltimeter",
+   "root": "SkyAltimeter",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.24,
+    7.2
+   ],
+   "size": [
+    3.62,
+    0.12,
+    5.72
+   ],
+   "center_root": [
+    0.0,
+    -0.24,
+    7.2
+   ],
+   "centerUnity": [
+    0.0,
+    7.2,
+    0.24
+   ],
+   "sizeUnity": [
+    3.62,
+    5.72,
+    0.12
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Straight_Deck",
+   "parent": "SkyWalk_Straight",
+   "root": "SkyWalk_Straight",
+   "type": "box",
+   "center": [
+    0.0,
+    2.0,
+    -0.1
+   ],
+   "size": [
+    1.2,
+    4.0,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    2.0,
+    -0.1
+   ],
+   "centerUnity": [
+    0.0,
+    -0.1,
+    -2.0
+   ],
+   "sizeUnity": [
+    1.2,
+    0.2,
+    4.0
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Straight_RailL",
+   "parent": "SkyWalk_Straight",
+   "root": "SkyWalk_Straight",
+   "type": "box",
+   "center": [
+    -0.6,
+    2.0,
+    0.55
+   ],
+   "size": [
+    0.06,
+    4.0,
+    1.1
+   ],
+   "center_root": [
+    -0.6,
+    2.0,
+    0.55
+   ],
+   "centerUnity": [
+    0.6,
+    0.55,
+    -2.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.1,
+    4.0
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Straight_RailR",
+   "parent": "SkyWalk_Straight",
+   "root": "SkyWalk_Straight",
+   "type": "box",
+   "center": [
+    0.6,
+    2.0,
+    0.55
+   ],
+   "size": [
+    0.06,
+    4.0,
+    1.1
+   ],
+   "center_root": [
+    0.6,
+    2.0,
+    0.55
+   ],
+   "centerUnity": [
+    -0.6,
+    0.55,
+    -2.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.1,
+    4.0
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Stair_Ramp",
+   "parent": "SkyWalk_Stair",
+   "root": "SkyWalk_Stair",
+   "type": "box",
+   "center": [
+    0.0,
+    2.1,
+    -1.575
+   ],
+   "size": [
+    1.2,
+    5.1614,
+    0.15
+   ],
+   "center_root": [
+    0.0,
+    2.1,
+    -1.575
+   ],
+   "centerUnity": [
+    0.0,
+    -1.575,
+    -2.1
+   ],
+   "sizeUnity": [
+    1.2,
+    0.15,
+    5.1614
+   ],
+   "rotation": [
+    -35.53767779197438,
+    0.0,
+    0.0
+   ],
+   "rotationUnity": [
+    -35.53767779197438,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Stair_RailL",
+   "parent": "SkyWalk_Stair",
+   "root": "SkyWalk_Stair",
+   "type": "box",
+   "center": [
+    -0.6,
+    2.1,
+    -0.95
+   ],
+   "size": [
+    0.06,
+    4.2,
+    4.1
+   ],
+   "center_root": [
+    -0.6,
+    2.1,
+    -0.95
+   ],
+   "centerUnity": [
+    0.6,
+    -0.95,
+    -2.1
+   ],
+   "sizeUnity": [
+    0.06,
+    4.1,
+    4.2
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Stair_RailR",
+   "parent": "SkyWalk_Stair",
+   "root": "SkyWalk_Stair",
+   "type": "box",
+   "center": [
+    0.6,
+    2.1,
+    -0.95
+   ],
+   "size": [
+    0.06,
+    4.2,
+    4.1
+   ],
+   "center_root": [
+    0.6,
+    2.1,
+    -0.95
+   ],
+   "centerUnity": [
+    -0.6,
+    -0.95,
+    -2.1
+   ],
+   "sizeUnity": [
+    0.06,
+    4.1,
+    4.2
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Landing_Deck",
+   "parent": "SkyWalk_Landing",
+   "root": "SkyWalk_Landing",
+   "type": "box",
+   "center": [
+    0.0,
+    1.2,
+    -0.1
+   ],
+   "size": [
+    2.4,
+    2.4,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    1.2,
+    -0.1
+   ],
+   "centerUnity": [
+    0.0,
+    -0.1,
+    -1.2
+   ],
+   "sizeUnity": [
+    2.4,
+    0.2,
+    2.4
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Turn_Deck",
+   "parent": "SkyWalk_Turn",
+   "root": "SkyWalk_Turn",
+   "type": "box",
+   "center": [
+    0.0,
+    0.6,
+    -0.1
+   ],
+   "size": [
+    1.2,
+    1.2,
+    0.2
+   ],
+   "center_root": [
+    0.0,
+    0.6,
+    -0.1
+   ],
+   "centerUnity": [
+    0.0,
+    -0.1,
+    -0.6
+   ],
+   "sizeUnity": [
+    1.2,
+    0.2,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_SkyWalk_Ladder_Cage",
+   "parent": "SkyWalk_Ladder",
+   "root": "SkyWalk_Ladder",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.175,
+    -0.35
+   ],
+   "size": [
+    0.72,
+    0.45,
+    2.9
+   ],
+   "center_root": [
+    0.0,
+    -0.175,
+    -0.35
+   ],
+   "centerUnity": [
+    0.0,
+    -0.35,
+    0.175
+   ],
+   "sizeUnity": [
+    0.72,
+    2.9,
+    0.45
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees, kg",
+  "frame": "each root in its own frame: z up, the front -y; the machines: origin on the ground under the pad's middle (SkyBallast: in the middle of the edge line, the drop at -y); the walkway modules: origin on the deck at the module's start (SkyWalk_Ladder: at its top, SkyWalk_Cable: its lower end, SkyWalk_Anchor: the plate's back). Every pivot / pos here is in its root's frame. In sky.blend the roots stand apart (display_offset); their FBX is exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); Euler XYZ (x, y, z) -> Unity (x, -z, y); a socket's rot_deg about z -> yawUnity about Y; the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "SkyChiller": [
+    -13.0,
+    0.0,
+    0.0
+   ],
+   "SkySprayer": [
+    -4.0,
+    0.0,
+    0.0
+   ],
+   "SkyBallast": [
+    6.0,
+    -2.0,
+    0.0
+   ],
+   "SkyAltimeter": [
+    17.0,
+    0.0,
+    0.0
+   ],
+   "SkyWalk_Straight": [
+    -13.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Stair": [
+    -8.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Landing": [
+    -2.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Turn": [
+    3.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Ladder": [
+    7.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Cable": [
+    10.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Anchor": [
+    12.0,
+    16.0,
+    0.0
+   ],
+   "SkyWalk_Lamp": [
+    14.0,
+    16.0,
+    0.0
+   ]
+  },
+  "assembly": "the walkway: each module's origin on the previous one's *_End (SkyWalk_Turn: turned by its yawUnity); SkyWalk_Cable from every Hang_* socket up to a SkyWalk_Anchor on the rock (scale its z to the length); SkyWalk_Lamp on a railing post every ~12 m",
+  "colliders": "BoxCollider per entry on its parent (center / size in the parent's own frame, optional rotation). The COL_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "lights": "sky_lights.json: the chiller's and the ballast's amber beacons, the board's two floodlights and its red obstruction light, the walkway lamp (all off in the file)",
+  "model": "sky.blend",
+  "textures": "tex",
+  "materials": "M_Sky_SkyMachines / M_Sky_SkyStructures / M_Sky_SkyWalk: baked PSX atlases (point filter); M_Sky_Panel: the control panels, signs and the altitude board's face; M_Sky_Grating: the walkways' and the sprayer platform's grating, alpha cut-out, Render Face Both, box-mapped (UV 1 = 0.5 m, the 64 px tile repeats); M_Sky_Lamp / _Amber / _Red / _Green with their _Off: the glasses lit / off (lit kept by a fake user; the file has all off)",
+  "names": "the interactive parts IX_*; Unity numbers the copies when it places them"
+ }
+}

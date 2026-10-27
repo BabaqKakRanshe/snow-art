@@ -69,6 +69,17 @@ if m:
         f'на поверхностях и со свободным местом: {m.group(1)}; вплотную к мебели или стене: {m.group(2)} — стоят так же, '
         f'как в обновлении 3 (сверено с его моделью); надписей на полу не на месте: {m2.group(1) if m2 else "?"}; '
         f'зоны сна {", ".join(z[0] for z in zs)} лежат на матрасах (низ зоны на 5 мм ниже верха матраса)')
+lp = '/home/claude/uaz/out/main_leit_check.json'                  # 1.2: the KPP gate station (main_leit_check.py)
+if os.path.exists(lp):
+    LC = json.load(open(lp))
+    RU = {'Leit_Console': 'пульт', 'Leit_Monitor_Barrier': 'нижний монитор', 'стойка мониторов': 'стойка мониторов'}
+    nr = min(LC['rows'], key=lambda r: r['gap'])
+    props = ', '.join(o for o in LC['others'] if not o.startswith('FX_'))
+    S['Пункт управления КПП в пультовой (1.2)'] = (
+        f"стойка мониторов, нижний монитор и пульт — {'на правом столе' if LC['on_desk'] else 'НЕ на столе'}; до предметов "
+        f"на том же столе ({props}) и настольной лампы FX_DeskLamp_7 — не меньше {nr['gap'] * 100:.1f} см (ближе всего "
+        f"{RU.get(nr['station'], nr['station'])} и {nr['other']}), {'пересечений нет' if LC['min_gap'] > 0 else 'ЕСТЬ ПЕРЕСЕЧЕНИЯ'}; "
+        f"остальные проверки — на модели корпуса без экземпляров набора, как в прежней версии")
 S = {k: re.sub(r'(?<=\d)\.(?=\d)', ',', v) for k, v in S.items()}       # decimal commas
 json.dump(S, open(os.path.join(D, 'checks_summary.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 for k, v in S.items():

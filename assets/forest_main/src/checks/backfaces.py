@@ -10,6 +10,8 @@ import main_spec as S
 
 SFX = '_test' if '--test' in sys.argv else ''
 bpy.ops.wm.open_mainfile(filepath=f'/home/claude/uaz/out/main{SFX}.blend')
+for _lib in list(bpy.data.libraries):                 # 1.2: the snow_kit instances (linked) are not the building's
+    bpy.data.libraries.remove(_lib)                  # geometry: checked as in 1.1, the station has main_leit_check.py
 C = json.load(open(f'/home/claude/uaz/out/main_contract{SFX}.json'))
 for n, p in C['parts'].items():
     o = bpy.data.objects.get(n)
