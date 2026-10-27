@@ -1,0 +1,58 @@
+TowerHut v1.1 (хижина лесника) — пакет готов, 26.10.2026.
+Дверь IX_HutDoor_1: проём 1,00 × 1,915 м, петли слева, ход 0…105° наружу — над крыльцом forest_hut_yard ничего не задевает.
+Справочник — HUT_V11_CONTRACT.md, контракт — hut_contract.json. Архив пакета — ..\forest_hut_v11_package.zip.
+
+Файлы (53):
+HUT_V11_CONTRACT.md                  21 865 байт
+hut.blend                           312 401 байт
+hut.json                              1 759 байт
+hut_A.jpg                           768 536 байт
+hut_E.jpg                           711 746 байт
+hut_contract.json                    36 599 байт
+hut_lights.json                       2 354 байт
+renders\colliders_plan.png          677 345 байт
+renders\ext_back.png                622 581 байт
+renders\ext_day.png                 627 713 байт
+renders\ext_night.png               202 490 байт
+renders\int_back.png                804 541 байт
+renders\points_plan.png             671 243 байт
+renders\porch_day.png               631 775 байт
+renders\sign.png                    648 242 байт
+src\README_SRC.txt                    1 788 байт
+src\SCRIPTS_INDEX.txt                 4 212 байт
+src\checks\coplanar.py                3 361 байт
+src\checks\inverted.py                1 562 байт
+src\checks\porch_fit.py               7 518 байт
+src\checks\probe_hut.py               3 892 байт
+src\checks\sweep.py                   4 560 байт
+src\checks\verify_hut_pkg.py          3 397 байт
+src\checks\walk.py                    3 620 байт
+src\gen_kit.py                       48 188 байт
+src\gen_lights.py                     5 864 байт
+src\gen_paint.py                     21 143 байт
+src\gen_tex.py                       17 282 байт
+src\hut_build.py                     23 325 байт
+src\hut_kit.py                       61 664 байт
+src\hut_paint.py                     26 945 байт
+src\hut_render.py                    20 281 байт
+src\hut_tex.py                       19 552 байт
+src\ies_lm63.py                       1 366 байт
+src\make_hut_doc.py                  24 299 байт
+src\make_sheets_hut.py               19 348 байт
+src\noise.py                          3 390 байт
+src\pack_hut.py                       6 013 байт
+src\post_bloom.py                     1 492 байт
+src\psxbake.py                       10 812 байт
+src\psxlib.py                        30 707 байт
+src\pxfont.py                        11 498 байт
+src\van2_kit.py                      48 001 байт
+src\van2_tex.py                      17 491 байт
+src\van3_mech.py                     54 768 байт
+src\van_lights.py                    17 718 байт
+tex\IES\oillamp.ies                 144 832 байт
+tex\IES\stormlantern.ies            131 827 байт
+tex\T_Hut_HutProps_BaseColor.png     26 659 байт
+tex\T_Hut_Hut_BaseColor.png         672 578 байт
+tex\T_Hut_Panel_BaseColor.png        31 725 байт
+tex\T_Hut_Panel_Emission.png          2 334 байт
+tex\hut_panel_regions.json              317 байт

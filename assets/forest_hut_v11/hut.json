@@ -1,0 +1,132 @@
+{
+ "ies": [
+  "stormlantern",
+  "oillamp"
+ ],
+ "atlases": {
+  "Hut": {
+   "size": 1024,
+   "ppm": 46.5,
+   "area_m2": 233.36,
+   "uv_fill": 0.482,
+   "colours": 64,
+   "ppm_parts": {
+    "walls outside": 52.0,
+    "inside (ply, floor, timber, roof underside)": 50.8,
+    "roof on top": 33.0,
+    "stand": 38.2
+   }
+  },
+  "HutProps": {
+   "size": 256,
+   "ppm": 64.0,
+   "area_m2": 2.97,
+   "uv_fill": 0.186,
+   "colours": 64
+  }
+ },
+ "lamps": 2,
+ "knock_points": 14,
+ "part_boxes": 7,
+ "placement": {
+  "TowerHut": {
+   "p": [
+    -474.0,
+    28.3963,
+    404.0
+   ],
+   "q": [
+    0.0,
+    0.481952,
+    0.0,
+    0.876197
+   ],
+   "yawUnity": 57.626
+  },
+  "Hochsitz": {
+   "p": [
+    -482.0,
+    28.9016,
+    412.0
+   ],
+   "q": [
+    0.0,
+    0.984808,
+    0.0,
+    0.173648
+   ],
+   "yawUnity": 160.0
+  },
+  "Sign_Forsthuette": {
+   "p": [
+    -472.1541,
+    28.4632,
+    407.0647
+   ],
+   "q": [
+    0.0,
+    0.481952,
+    0.0,
+    0.876197
+   ],
+   "yawUnity": 57.626
+  }
+ },
+ "contract": {
+  "parts": 19,
+  "sockets": 43,
+  "colliders": 46,
+  "kinds": {
+   "hinge": 5,
+   "static": 12,
+   "item": 2
+  }
+ },
+ "tris": 8746,
+ "tris_by_atlas": {
+  "HutProps": 2850,
+  "glow": 12,
+  "Hut": 5718,
+  "panel": 6,
+  "lens:lantern": 96,
+  "lens:oillamp": 60,
+  "glass": 4
+ },
+ "objects": [
+  "Axe",
+  "Glow_Lantern",
+  "Hochsitz",
+  "Hut_Panel",
+  "Hut_Props",
+  "IX_HutDoor_1",
+  "Kettle",
+  "Lamp_Oil",
+  "Lantern",
+  "Lens_Lantern",
+  "Lens_OilLamp",
+  "Sign_Forsthuette",
+  "Sign_Forsthuette_Text",
+  "Stove_Damper",
+  "Stove_Door",
+  "TowerHut",
+  "Window_Glass",
+  "Window_Latch",
+  "Window_Shutter"
+ ],
+ "empties": [
+  "LIGHT_Lantern",
+  "LIGHT_OilLamp"
+ ],
+ "bbox_hut": [
+  [
+   -2.619,
+   -2.498,
+   -0.217
+  ],
+  [
+   2.314,
+   1.683,
+   3.84
+  ]
+ ]
+}
