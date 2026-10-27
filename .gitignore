@@ -16,3 +16,6 @@ __pycache__/
 *.log
 Thumbs.db
 Desktop.ini
+
+# --- World sync working copies (whole-map .blend per edit, 80-270 MB each) ---
+/world_sync/forest/edits/
