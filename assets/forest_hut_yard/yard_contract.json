@@ -225,6 +225,50 @@
     0.0
    ]
   },
+  "Route_Board": {
+   "kind": "static",
+   "pivot": [
+    0.38,
+    -0.085,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "RouteSign",
+   "states": [],
+   "note": "OBSERVATORIUM / OBSERVATORY on the arrow board (panel atlas; German first, English under it)",
+   "object": "Route_Board",
+   "root": "RouteSign",
+   "pivotUnity": [
+    -0.38,
+    1.71,
+    0.085
+   ]
+  },
+  "RouteSign": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the station pointer at a fork (root): origin = the foot of the post on the ground (sunk 0.30); the arrow points +x (along the road to the station), the text faces -y (the road)",
+   "object": "RouteSign",
+   "root": "RouteSign",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
   "HutPorch": {
    "kind": "static",
    "pivot": [
@@ -871,6 +915,68 @@
    ]
   },
   {
+   "name": "COL_Route_Post",
+   "parent": "RouteSign",
+   "root": "RouteSign",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.28
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "centerUnity": [
+    0.0,
+    1.14,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.28,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Route_BoardBox",
+   "parent": "RouteSign",
+   "root": "RouteSign",
+   "type": "box",
+   "center": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "size": [
+    1.08,
+    0.03,
+    0.22
+   ],
+   "center_root": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "centerUnity": [
+    -0.44,
+    1.71,
+    0.07
+   ],
+   "sizeUnity": [
+    1.08,
+    0.22,
+    0.03
+   ]
+  },
+  {
    "name": "COL_Porch_Deck",
    "parent": "HutPorch",
    "root": "HutPorch",
@@ -1122,6 +1228,11 @@
    ],
    "HutMap": [
     10.0,
+    0.0,
+    0.0
+   ],
+   "RouteSign": [
+    -11.0,
     0.0,
     0.0
    ]

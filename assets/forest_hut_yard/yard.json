@@ -10,20 +10,21 @@
   "YardProps": {
    "size": 256,
    "ppm": 64.0,
-   "area_m2": 1.61,
-   "uv_fill": 0.101,
-   "colours": 64
+   "area_m2": 3.11,
+   "uv_fill": 0.194,
+   "colours": 61
   }
  },
  "lamps": 1,
- "tris": 2210,
+ "tris": 2292,
  "tris_by_root": {
   "HutSign": 354,
   "HutFeeder": 432,
   "HutMap": 6,
   "HutOuthouse": 456,
   "HutPolter": 620,
-  "HutPorch": 342
+  "HutPorch": 342,
+  "RouteSign": 82
  },
  "objects": {
   "HutOuthouse": [
@@ -49,6 +50,10 @@
   ],
   "HutMap": [
    "HutMap"
+  ],
+  "RouteSign": [
+   "RouteSign",
+   "Route_Board"
   ]
  },
  "display_offset": {
@@ -81,14 +86,19 @@
    10.0,
    0.0,
    0.0
+  ],
+  "RouteSign": [
+   -11.0,
+   0.0,
+   0.0
   ]
  },
  "contract": {
-  "parts": 11,
+  "parts": 13,
   "sockets": 7,
-  "colliders": 22,
+  "colliders": 24,
   "kinds": {
-   "static": 10,
+   "static": 12,
    "hinge": 1
   }
  }

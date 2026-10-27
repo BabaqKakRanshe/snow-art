@@ -24,9 +24,10 @@ import yard_tex as YT
 
 uv = YT.uv
 TAU = 2 * math.pi
-ROOTS = ['HutOuthouse', 'HutFeeder', 'HutPolter', 'HutSign', 'HutPorch', 'HutMap']
+ROOTS = ['HutOuthouse', 'HutFeeder', 'HutPolter', 'HutSign', 'HutPorch', 'HutMap', 'RouteSign']
 DISPLAY = {'HutSign': Vector((-8.0, 0.0, 0.0)), 'HutOuthouse': Vector((-5.5, 0.0, 0.0)), 'HutFeeder': Vector((-2.6, 0.0, 0.0)),
-           'HutPorch': Vector((1.0, 0.8, 0.0)), 'HutPolter': Vector((6.6, 0.0, 0.0)), 'HutMap': Vector((10.0, 0.0, 0.0))}
+           'HutPorch': Vector((1.0, 0.8, 0.0)), 'HutPolter': Vector((6.6, 0.0, 0.0)), 'HutMap': Vector((10.0, 0.0, 0.0)),
+           'RouteSign': Vector((-11.0, 0.0, 0.0))}
 ROOT_OF = {}
 BOXES = []                       # colliders: (name, parent, (x0, x1, y0, y1, z0, z1), rot_xyz_deg or None) in the root frame
 
@@ -319,6 +320,30 @@ def build_sign():
                   ('Sign_Board', 'HutSign', (b['x0'], tip, b['y0'], b['y1'], b['z0'], b['z1']), None)])
 
 
+def build_route_sign():
+    """the station pointer at the road's forks (user 27.10, QUESTIONS_6 §7a 7): the trail-head pointer's post and arrow board
+    without the lantern, OBSERVATORIUM over OBSERVATORY (German first); the arrow points +x along the road to the station"""
+    k = reg('RouteSign', 'YardProps', 'RouteSign')
+    k.box(-0.045, 0.045, -0.045, 0.045, -0.30, S_POST_TOP, Z_SPOST)
+    k.box(-0.06, 0.06, -0.06, 0.06, S_POST_TOP, S_POST_TOP + 0.025, Z_SPOST)
+    b = S_BOARD
+    tip = b['x1'] + 0.12
+    poly = [(b['x0'], b['z0']), (b['x1'], b['z0']), (tip, (b['z0'] + b['z1']) / 2), (b['x1'], b['z1']), (b['x0'], b['z1'])]
+    prism_y(k, poly, b['y0'], b['y1'], Z_SBOARD, Z_SBOARD, [Z_SBOARD] * len(poly))
+    for zz in (b['z0'] + 0.05, b['z1'] - 0.05):
+        k.cyl(Vector((0.0, b['y0'] - 0.004, zz)), Vector((0.0, b['y0'], zz)), 0.010, Z_STEELBLK, 6)
+    Sg = reg('Route_Board', 'panel', 'RouteSign')
+    w = b['x1'] - b['x0'] - 0.04
+    quad(Sg, Vector(((b['x0'] + b['x1']) / 2 + 0.01, b['y0'] - 0.0008, (b['z0'] + b['z1']) / 2)), (0, -1, 0), w, b['z1'] - b['z0'] - 0.03,
+         uv('route'))
+    part('Route_Board', 'static', ((b['x0'] + b['x1']) / 2, b['y0'], (b['z0'] + b['z1']) / 2), parent='RouteSign',
+         note='OBSERVATORIUM / OBSERVATORY on the arrow board (panel atlas; German first, English under it)')
+    part('RouteSign', 'static', (0, 0, 0), note='the station pointer at a fork (root): origin = the foot of the post on the ground (sunk '
+                                                 '0.30); the arrow points +x (along the road to the station), the text faces -y (the road)')
+    BOXES.extend([('Route_Post', 'RouteSign', (-0.05, 0.05, -0.05, 0.05, 0.0, S_POST_TOP + 0.03), None),
+                  ('Route_BoardBox', 'RouteSign', (b['x0'], tip, b['y0'], b['y1'], b['z0'], b['z1']), None)])
+
+
 def lathe_uv(k, c, h0, h1, rect, axis):
     """cylindrical UVs on every face of k (lens lathes)"""
     c, ax = Vector(c), Vector(axis).normalized()
@@ -415,5 +440,6 @@ def build_yard():
     build_feeder()
     build_polter()
     build_sign()
+    build_route_sign()
     build_porch()
     build_map()

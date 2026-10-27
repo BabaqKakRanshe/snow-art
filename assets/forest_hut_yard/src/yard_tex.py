@@ -23,7 +23,8 @@ for _f, _src in ((F.F35, {'Ä': '#.#|.#.|#.#|###|#.#', 'Ö': '#.#|...|###|#.#|##
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 N = 256
-REG = {'sign': (0, 0, 192, 40), 'l_lant': (192, 0, 224, 32), 'glow_warm': (192, 64, 256, 128), 'map': (0, 64, 128, 156)}
+REG = {'sign': (0, 0, 192, 40), 'l_lant': (192, 0, 224, 32), 'glow_warm': (192, 64, 256, 128), 'map': (0, 64, 128, 156),
+       'route': (0, 160, 192, 200)}
 BOARD, BOARD_D, CREAM = (70, 48, 30), (46, 32, 22), (226, 210, 160)
 PAPER, PAPER_D, INK, RED, BLUE, GREEN = (214, 204, 172), (176, 164, 132), (52, 46, 40), (184, 36, 28), (70, 96, 140), (120, 140, 96)
 
@@ -44,6 +45,21 @@ def draw_sign(img):
     F.text(img, x0 + 70, y0 + 31, "FORESTER'S HUT", F.F35, (190, 176, 132))
     rng = np.random.default_rng(31)
     for _ in range(140):                                         # weathering: letters worn, the board's grey bloom
+        xx_, yy_ = rng.integers(x0 + 1, x1 - 1), rng.integers(y0 + 1, y1 - 1)
+        img[yy_, xx_] = (img[yy_, xx_] * 0.65 + np.array((120, 116, 104)) * 0.35).astype(np.uint8)
+
+
+def draw_route(img):
+    """the station pointer: OBSERVATORIUM (cream, routed) over OBSERVATORY, same board and weathering as the hut's"""
+    x0, y0, x1, y1 = REG['route']
+    yy, xx = np.mgrid[y0:y1, x0:x1]
+    grain = 0.88 + 0.12 * np.sin(yy * 1.7 + np.sin(xx * 0.09) * 2.0) + 0.05 * ((xx * 7 + yy * 13) % 5 == 0)
+    img[y0:y1, x0:x1] = np.clip(np.array(BOARD)[None, None] * grain[..., None], 0, 255).astype(np.uint8)
+    F.frame(img, x0, y0, x1 - 1, y1 - 1, BOARD_D, 2)
+    F.text(img, x0 + 92, y0 + 13, 'OBSERVATORIUM', F.F57, CREAM, scale=2)
+    F.text(img, x0 + 92, y0 + 31, 'OBSERVATORY', F.F35, (190, 176, 132))
+    rng = np.random.default_rng(37)
+    for _ in range(140):
         xx_, yy_ = rng.integers(x0 + 1, x1 - 1), rng.integers(y0 + 1, y1 - 1)
         img[yy_, xx_] = (img[yy_, xx_] * 0.65 + np.array((120, 116, 104)) * 0.35).astype(np.uint8)
 
@@ -112,6 +128,7 @@ def build(out):
     img[:] = (16, 16, 16)
     emi = np.zeros_like(img)
     draw_sign(img)
+    draw_route(img)
     draw_lens(img, emi)
     draw_map(img)
     pb, pe = os.path.join(out, 'T_Yard_Panel_BaseColor.png'), os.path.join(out, 'T_Yard_Panel_Emission.png')
