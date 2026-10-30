@@ -1,0 +1,327 @@
+{
+ "backfaces": {
+  "Station_MonitorRack_3x3": {
+   "rays_hit": 8507,
+   "backface_hits": 0,
+   "examples": []
+  },
+  "Station_SideTable": {
+   "rays_hit": 7141,
+   "backface_hits": 0,
+   "examples": []
+  }
+ },
+ "zfight": {
+  "Station_MonitorRack_3x3": {
+   "faces": 168,
+   "overlaps": 0,
+   "examples": []
+  },
+  "Station_SideTable": {
+   "faces": 98,
+   "overlaps": 0,
+   "examples": []
+  }
+ },
+ "monitor_slots": [
+  {
+   "slot": "Slot_1",
+   "pos_root": [
+    -0.4,
+    -0.283,
+    1.34
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.098,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_2",
+   "pos_root": [
+    0.0,
+    -0.283,
+    1.34
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.098,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_3",
+   "pos_root": [
+    0.4,
+    -0.283,
+    1.34
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.098,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_4",
+   "pos_root": [
+    -0.4,
+    -0.283,
+    0.98
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.049,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_5",
+   "pos_root": [
+    0.0,
+    -0.283,
+    0.98
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.049,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_6",
+   "pos_root": [
+    0.4,
+    -0.283,
+    0.98
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.049,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_7",
+   "pos_root": [
+    -0.4,
+    -0.283,
+    0.62
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.049,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_8",
+   "pos_root": [
+    0.0,
+    -0.283,
+    0.62
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.049,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  },
+  {
+   "slot": "Slot_9",
+   "pos_root": [
+    0.4,
+    -0.283,
+    0.62
+   ],
+   "intersecting_samples": 0,
+   "gap_above_m": 0.049,
+   "back_gap_m": 0.035,
+   "front_inside_m": 0.035
+  }
+ ],
+ "pc_slot": {
+  "slot_root": [
+   0.0,
+   0.1,
+   0.72
+  ],
+  "table_top_z": 0.72,
+  "case_inside_top": true,
+  "case_back_to_edge_m": 0.01,
+  "stock_keyboard_front_overhang_m": 0.085,
+  "stock_mouse_overhang_m": {
+   "front": 0.046,
+   "right": 0.011
+  }
+ },
+ "sizes": {
+  "Station_MonitorRack_3x3": {
+   "x": [
+    -0.625,
+    0.625
+   ],
+   "y": [
+    -0.52,
+    0.0
+   ],
+   "z": [
+    0.0,
+    1.75
+   ],
+   "size_wdh": [
+    1.25,
+    0.52,
+    1.75
+   ],
+   "brief": {
+    "w_max": 1.25,
+    "h": 1.75,
+    "d": 0.52
+   }
+  },
+  "Station_SideTable": {
+   "x": [
+    -0.35,
+    0.35
+   ],
+   "y": [
+    -0.31,
+    0.31
+   ],
+   "z": [
+    0.0,
+    0.72
+   ],
+   "size_wdh": [
+    0.7,
+    0.62,
+    0.72
+   ],
+   "brief": {
+    "w": 0.7,
+    "d": 0.62,
+    "h": 0.72
+   }
+  }
+ },
+ "images": [
+  {
+   "name": "T_Station_Props_BaseColor.png",
+   "path": "F:\\ClaudeGames\\snow\\tools\\snow_style\\work\\forest_station\\tex\\station\\T_Station_Props_BaseColor.png",
+   "exists": true
+  }
+ ],
+ "libraries": [],
+ "meshes": {
+  "Station_MonitorRack_3x3": {
+   "uv": [
+    "PSX"
+   ],
+   "materials": [
+    "M_Station_Props"
+   ],
+   "tris": 336
+  },
+  "Station_SideTable": {
+   "uv": [
+    "PSX"
+   ],
+   "materials": [
+    "M_Station_Props"
+   ],
+   "tris": 220
+  }
+ },
+ "empties": {
+  "Slot_1": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    -0.4,
+    -0.283,
+    1.34
+   ]
+  },
+  "Slot_2": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    0.0,
+    -0.283,
+    1.34
+   ]
+  },
+  "Slot_3": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    0.4,
+    -0.283,
+    1.34
+   ]
+  },
+  "Slot_4": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    -0.4,
+    -0.283,
+    0.98
+   ]
+  },
+  "Slot_5": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    0.0,
+    -0.283,
+    0.98
+   ]
+  },
+  "Slot_6": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    0.4,
+    -0.283,
+    0.98
+   ]
+  },
+  "Slot_7": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    -0.4,
+    -0.283,
+    0.62
+   ]
+  },
+  "Slot_8": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    0.0,
+    -0.283,
+    0.62
+   ]
+  },
+  "Slot_9": {
+   "parent": "Station_MonitorRack_3x3",
+   "local": [
+    0.4,
+    -0.283,
+    0.62
+   ]
+  },
+  "Slot_Keyboard": {
+   "parent": "Station_SideTable",
+   "local": [
+    0.0,
+    -0.2,
+    0.72
+   ]
+  },
+  "Slot_Mouse": {
+   "parent": "Station_SideTable",
+   "local": [
+    0.29,
+    -0.2,
+    0.72
+   ]
+  },
+  "Slot_PC": {
+   "parent": "Station_SideTable",
+   "local": [
+    0.0,
+    0.1,
+    0.72
+   ]
+  }
+ }
+}

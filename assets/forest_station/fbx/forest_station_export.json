@@ -1,0 +1,204 @@
+{
+ "Station_MonitorRack_3x3": {
+  "file": "Station_MonitorRack_3x3.fbx",
+  "objects": [
+   "Station_MonitorRack_3x3",
+   "Slot_1",
+   "Slot_2",
+   "Slot_3",
+   "Slot_4",
+   "Slot_5",
+   "Slot_6",
+   "Slot_7",
+   "Slot_8",
+   "Slot_9"
+  ],
+  "materials": [
+   "M_Station_Props"
+  ],
+  "textures": [
+   "T_Station_Props_BaseColor.png"
+  ],
+  "tris": 336,
+  "bytes": 33676,
+  "reimport": {
+   "roots": [
+    [
+     "Station_MonitorRack_3x3",
+     [
+      0.0,
+      0.0,
+      0.0
+     ]
+    ]
+   ],
+   "bounds": [
+    [
+     -0.625,
+     -0.52,
+     0.0
+    ],
+    [
+     0.625,
+     0.0,
+     1.75
+    ]
+   ],
+   "bounds_err_m": 0.0,
+   "empties": {
+    "Slot_1": [
+     -0.4,
+     -0.283,
+     1.34
+    ],
+    "Slot_2": [
+     0.0,
+     -0.283,
+     1.34
+    ],
+    "Slot_3": [
+     0.4,
+     -0.283,
+     1.34
+    ],
+    "Slot_4": [
+     -0.4,
+     -0.283,
+     0.98
+    ],
+    "Slot_5": [
+     0.0,
+     -0.283,
+     0.98
+    ],
+    "Slot_6": [
+     0.4,
+     -0.283,
+     0.98
+    ],
+    "Slot_7": [
+     -0.4,
+     -0.283,
+     0.62
+    ],
+    "Slot_8": [
+     0.0,
+     -0.283,
+     0.62
+    ],
+    "Slot_9": [
+     0.4,
+     -0.283,
+     0.62
+    ]
+   },
+   "empties_err_m": 0.0,
+   "missing_empties": [],
+   "mesh_world_scale": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ],
+   "ok": true
+  }
+ },
+ "Station_SideTable": {
+  "file": "Station_SideTable.fbx",
+  "objects": [
+   "Station_SideTable",
+   "Slot_Keyboard",
+   "Slot_Mouse",
+   "Slot_PC"
+  ],
+  "materials": [
+   "M_Station_Props"
+  ],
+  "textures": [
+   "T_Station_Props_BaseColor.png"
+  ],
+  "tris": 220,
+  "bytes": 25724,
+  "reimport": {
+   "roots": [
+    [
+     "Station_SideTable",
+     [
+      0.0,
+      0.0,
+      0.0
+     ]
+    ]
+   ],
+   "bounds": [
+    [
+     -0.35,
+     -0.31,
+     0.0
+    ],
+    [
+     0.35,
+     0.31,
+     0.72
+    ]
+   ],
+   "bounds_err_m": 0.0,
+   "empties": {
+    "Slot_Keyboard": [
+     0.0,
+     -0.2,
+     0.72
+    ],
+    "Slot_Mouse": [
+     0.29,
+     -0.2,
+     0.72
+    ],
+    "Slot_PC": [
+     0.0,
+     0.1,
+     0.72
+    ]
+   },
+   "empties_err_m": 0.0,
+   "missing_empties": [],
+   "mesh_world_scale": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ],
+   "ok": true
+  }
+ },
+ "_settings": {
+  "use_selection": true,
+  "use_visible": false,
+  "object_types": [
+   "EMPTY",
+   "MESH"
+  ],
+  "global_scale": 1.0,
+  "apply_unit_scale": true,
+  "apply_scale_options": "FBX_SCALE_ALL",
+  "axis_forward": "-Z",
+  "axis_up": "Y",
+  "bake_space_transform": true,
+  "use_mesh_modifiers": true,
+  "mesh_smooth_type": "FACE",
+  "use_subsurf": false,
+  "use_mesh_edges": false,
+  "use_tspace": false,
+  "use_triangles": false,
+  "use_custom_props": false,
+  "colors_type": "NONE",
+  "add_leaf_bones": false,
+  "bake_anim": false,
+  "path_mode": "STRIP",
+  "embed_textures": false,
+  "batch_mode": "OFF"
+ },
+ "_source": "forest_station.blend"
+}

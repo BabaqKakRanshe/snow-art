@@ -1,0 +1,108 @@
+{
+ "atlases": {
+  "Props": {
+   "size": 512,
+   "ppm": 74.9,
+   "area_m2": 9.05,
+   "uv_fill": 0.194,
+   "colours": 58,
+   "ppm_base": 64.0,
+   "ppm_posts": 128.0
+  }
+ },
+ "density_plan": {
+  "area_m2": 9.054,
+  "post_area_m2": 1.114,
+  "base_ppm": 64.0,
+  "post_ppm": 128.0,
+  "cap_used": 74.89
+ },
+ "tris": 556,
+ "tris_by_root": {
+  "Station_MonitorRack_3x3": 336,
+  "Station_SideTable": 220
+ },
+ "bounds": {
+  "Station_MonitorRack_3x3": {
+   "lo": [
+    -0.625,
+    -0.52,
+    0.0
+   ],
+   "hi": [
+    0.625,
+    0.0,
+    1.75
+   ],
+   "size": [
+    1.25,
+    0.52,
+    1.75
+   ],
+   "sizeUnity": [
+    1.25,
+    1.75,
+    0.52
+   ]
+  },
+  "Station_SideTable": {
+   "lo": [
+    -0.35,
+    -0.31,
+    0.0
+   ],
+   "hi": [
+    0.35,
+    0.31,
+    0.72
+   ],
+   "size": [
+    0.7,
+    0.62,
+    0.72
+   ],
+   "sizeUnity": [
+    0.7,
+    0.72,
+    0.62
+   ]
+  }
+ },
+ "objects": {
+  "Station_MonitorRack_3x3": [
+   "Slot_1",
+   "Slot_2",
+   "Slot_3",
+   "Slot_4",
+   "Slot_5",
+   "Slot_6",
+   "Slot_7",
+   "Slot_8",
+   "Slot_9",
+   "Station_MonitorRack_3x3"
+  ],
+  "Station_SideTable": [
+   "Slot_Keyboard",
+   "Slot_Mouse",
+   "Slot_PC",
+   "Station_SideTable"
+  ]
+ },
+ "display_offset": {
+  "Station_MonitorRack_3x3": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "Station_SideTable": [
+   1.45,
+   -0.26,
+   0.0
+  ]
+ },
+ "contract": {
+  "parts": 2,
+  "sockets": 12,
+  "colliders": 13
+ }
+}

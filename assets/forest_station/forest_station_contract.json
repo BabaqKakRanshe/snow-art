@@ -1,0 +1,935 @@
+{
+ "parts": {
+  "Station_MonitorRack_3x3": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the monitor rack (root): origin on the floor under the middle of its BACK face (stands against a wall), the front -y (Unity +Z); slotted-angle steel, three shelves and a cap; the nine monitors are snow_kit Kit_Monitor_CRT instances on Slot_1..Slot_9 (the game puts them there, with their paper labels)",
+   "object": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Station_SideTable": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the side table (root): origin on the floor under its middle, the front -y (Unity +Z); square steel tube legs, apron frame, beige laminate top with a dark edge band",
+   "object": "Station_SideTable",
+   "root": "Station_SideTable",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Slot_1": {
+   "pos": [
+    -0.4,
+    -0.283,
+    1.34
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 1 (row 1, column 1 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_1",
+   "posUnity": [
+    0.4,
+    1.34,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_2": {
+   "pos": [
+    0.0,
+    -0.283,
+    1.34
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 2 (row 1, column 2 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_2",
+   "posUnity": [
+    0.0,
+    1.34,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_3": {
+   "pos": [
+    0.4,
+    -0.283,
+    1.34
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 3 (row 1, column 3 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_3",
+   "posUnity": [
+    -0.4,
+    1.34,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_4": {
+   "pos": [
+    -0.4,
+    -0.283,
+    0.98
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 4 (row 2, column 1 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_4",
+   "posUnity": [
+    0.4,
+    0.98,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_5": {
+   "pos": [
+    0.0,
+    -0.283,
+    0.98
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 5 (row 2, column 2 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_5",
+   "posUnity": [
+    0.0,
+    0.98,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_6": {
+   "pos": [
+    0.4,
+    -0.283,
+    0.98
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 6 (row 2, column 3 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_6",
+   "posUnity": [
+    -0.4,
+    0.98,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_7": {
+   "pos": [
+    -0.4,
+    -0.283,
+    0.62
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 7 (row 3, column 1 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_7",
+   "posUnity": [
+    0.4,
+    0.62,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_8": {
+   "pos": [
+    0.0,
+    -0.283,
+    0.62
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 8 (row 3, column 2 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_8",
+   "posUnity": [
+    0.0,
+    0.62,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_9": {
+   "pos": [
+    0.4,
+    -0.283,
+    0.62
+   ],
+   "kind": "kit",
+   "parent": "Station_MonitorRack_3x3",
+   "note": "monitor 9 (row 3, column 3 seen from the front): a Kit_Monitor_CRT's pivot (the middle of its underside) here, facing the front; its depth centre 0.26 m in front of the back",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "Kit_Monitor_CRT",
+   "root": "Station_MonitorRack_3x3",
+   "object": "Slot_9",
+   "posUnity": [
+    -0.4,
+    0.62,
+    0.283
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_PC": {
+   "pos": [
+    0.0,
+    0.1,
+    0.72
+   ],
+   "kind": "slot",
+   "parent": "Station_SideTable",
+   "note": "forest_devices ObjectPC root (the middle of the case's underside) here, facing the front: the case 0.10 m behind the table centre, its back 1 cm inside the back edge; the stock keyboard / mouse of ObjectPC then stand 8.5 / 4.6 cm over the front edge - move them to Slot_Keyboard / Slot_Mouse",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "ObjectPC",
+   "root": "Station_SideTable",
+   "object": "Slot_PC",
+   "posUnity": [
+    0.0,
+    0.72,
+    -0.1
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_Keyboard": {
+   "pos": [
+    0.0,
+    -0.2,
+    0.72
+   ],
+   "kind": "slot",
+   "parent": "Station_SideTable",
+   "note": "optional: where ObjectPC's PC_Keyboard pivot fits on this table (0.10 m back from its stock place, 5 mm in front of the case)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "PC_Keyboard",
+   "root": "Station_SideTable",
+   "object": "Slot_Keyboard",
+   "posUnity": [
+    0.0,
+    0.72,
+    0.2
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Slot_Mouse": {
+   "pos": [
+    0.29,
+    -0.2,
+    0.72
+   ],
+   "kind": "slot",
+   "parent": "Station_SideTable",
+   "note": "optional: where ObjectPC's PC_Mouse pivot fits on this table (right of the keyboard)",
+   "dir": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "item": "PC_Mouse",
+   "root": "Station_SideTable",
+   "object": "Slot_Mouse",
+   "posUnity": [
+    -0.29,
+    0.72,
+    0.2
+   ],
+   "dirUnity": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Post_LF",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    -0.605,
+    -0.5,
+    0.875
+   ],
+   "size": [
+    0.04,
+    0.04,
+    1.75
+   ],
+   "center_root": [
+    -0.605,
+    -0.5,
+    0.875
+   ],
+   "centerUnity": [
+    0.605,
+    0.875,
+    0.5
+   ],
+   "sizeUnity": [
+    0.04,
+    1.75,
+    0.04
+   ]
+  },
+  {
+   "name": "COL_Post_LB",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    -0.605,
+    -0.02,
+    0.875
+   ],
+   "size": [
+    0.04,
+    0.04,
+    1.75
+   ],
+   "center_root": [
+    -0.605,
+    -0.02,
+    0.875
+   ],
+   "centerUnity": [
+    0.605,
+    0.875,
+    0.02
+   ],
+   "sizeUnity": [
+    0.04,
+    1.75,
+    0.04
+   ]
+  },
+  {
+   "name": "COL_Post_RF",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    0.605,
+    -0.5,
+    0.875
+   ],
+   "size": [
+    0.04,
+    0.04,
+    1.75
+   ],
+   "center_root": [
+    0.605,
+    -0.5,
+    0.875
+   ],
+   "centerUnity": [
+    -0.605,
+    0.875,
+    0.5
+   ],
+   "sizeUnity": [
+    0.04,
+    1.75,
+    0.04
+   ]
+  },
+  {
+   "name": "COL_Post_RB",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    0.605,
+    -0.02,
+    0.875
+   ],
+   "size": [
+    0.04,
+    0.04,
+    1.75
+   ],
+   "center_root": [
+    0.605,
+    -0.02,
+    0.875
+   ],
+   "centerUnity": [
+    -0.605,
+    0.875,
+    0.02
+   ],
+   "sizeUnity": [
+    0.04,
+    1.75,
+    0.04
+   ]
+  },
+  {
+   "name": "COL_Shelf_62",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.26,
+    0.605
+   ],
+   "size": [
+    1.25,
+    0.52,
+    0.03
+   ],
+   "center_root": [
+    0.0,
+    -0.26,
+    0.605
+   ],
+   "centerUnity": [
+    0.0,
+    0.605,
+    0.26
+   ],
+   "sizeUnity": [
+    1.25,
+    0.03,
+    0.52
+   ]
+  },
+  {
+   "name": "COL_Shelf_98",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.26,
+    0.965
+   ],
+   "size": [
+    1.25,
+    0.52,
+    0.03
+   ],
+   "center_root": [
+    0.0,
+    -0.26,
+    0.965
+   ],
+   "centerUnity": [
+    0.0,
+    0.965,
+    0.26
+   ],
+   "sizeUnity": [
+    1.25,
+    0.03,
+    0.52
+   ]
+  },
+  {
+   "name": "COL_Shelf_134",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.26,
+    1.325
+   ],
+   "size": [
+    1.25,
+    0.52,
+    0.03
+   ],
+   "center_root": [
+    0.0,
+    -0.26,
+    1.325
+   ],
+   "centerUnity": [
+    0.0,
+    1.325,
+    0.26
+   ],
+   "sizeUnity": [
+    1.25,
+    0.03,
+    0.52
+   ]
+  },
+  {
+   "name": "COL_Shelf_175",
+   "parent": "Station_MonitorRack_3x3",
+   "root": "Station_MonitorRack_3x3",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.26,
+    1.735
+   ],
+   "size": [
+    1.25,
+    0.52,
+    0.03
+   ],
+   "center_root": [
+    0.0,
+    -0.26,
+    1.735
+   ],
+   "centerUnity": [
+    0.0,
+    1.735,
+    0.26
+   ],
+   "sizeUnity": [
+    1.25,
+    0.03,
+    0.52
+   ]
+  },
+  {
+   "name": "COL_Leg_LF",
+   "parent": "Station_SideTable",
+   "root": "Station_SideTable",
+   "type": "box",
+   "center": [
+    -0.3075,
+    -0.2675,
+    0.3475
+   ],
+   "size": [
+    0.025,
+    0.025,
+    0.695
+   ],
+   "center_root": [
+    -0.3075,
+    -0.2675,
+    0.3475
+   ],
+   "centerUnity": [
+    0.3075,
+    0.3475,
+    0.2675
+   ],
+   "sizeUnity": [
+    0.025,
+    0.695,
+    0.025
+   ]
+  },
+  {
+   "name": "COL_Leg_LB",
+   "parent": "Station_SideTable",
+   "root": "Station_SideTable",
+   "type": "box",
+   "center": [
+    -0.3075,
+    0.2675,
+    0.3475
+   ],
+   "size": [
+    0.025,
+    0.025,
+    0.695
+   ],
+   "center_root": [
+    -0.3075,
+    0.2675,
+    0.3475
+   ],
+   "centerUnity": [
+    0.3075,
+    0.3475,
+    -0.2675
+   ],
+   "sizeUnity": [
+    0.025,
+    0.695,
+    0.025
+   ]
+  },
+  {
+   "name": "COL_Leg_RF",
+   "parent": "Station_SideTable",
+   "root": "Station_SideTable",
+   "type": "box",
+   "center": [
+    0.3075,
+    -0.2675,
+    0.3475
+   ],
+   "size": [
+    0.025,
+    0.025,
+    0.695
+   ],
+   "center_root": [
+    0.3075,
+    -0.2675,
+    0.3475
+   ],
+   "centerUnity": [
+    -0.3075,
+    0.3475,
+    0.2675
+   ],
+   "sizeUnity": [
+    0.025,
+    0.695,
+    0.025
+   ]
+  },
+  {
+   "name": "COL_Leg_RB",
+   "parent": "Station_SideTable",
+   "root": "Station_SideTable",
+   "type": "box",
+   "center": [
+    0.3075,
+    0.2675,
+    0.3475
+   ],
+   "size": [
+    0.025,
+    0.025,
+    0.695
+   ],
+   "center_root": [
+    0.3075,
+    0.2675,
+    0.3475
+   ],
+   "centerUnity": [
+    -0.3075,
+    0.3475,
+    -0.2675
+   ],
+   "sizeUnity": [
+    0.025,
+    0.695,
+    0.025
+   ]
+  },
+  {
+   "name": "COL_Top",
+   "parent": "Station_SideTable",
+   "root": "Station_SideTable",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.7075
+   ],
+   "size": [
+    0.7,
+    0.62,
+    0.025
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.7075
+   ],
+   "centerUnity": [
+    0.0,
+    0.7075,
+    0.0
+   ],
+   "sizeUnity": [
+    0.7,
+    0.025,
+    0.62
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees",
+  "frame": "each root in its own frame: z up, the front -y; Station_MonitorRack_3x3: origin on the floor under the middle of its BACK face (it stands against a wall); Station_SideTable: origin on the floor under its middle. Every pivot / pos here is in its root's frame. In station.blend the roots stand apart (display_offset); the FBX are exported with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root's front (-y) is the prefab's +Z",
+  "display_offset": {
+   "Station_MonitorRack_3x3": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "Station_SideTable": [
+    1.45,
+    -0.26,
+    0.0
+   ]
+  },
+  "sockets": "Slot_* are empties under their root in station.blend and in the FBX (child transforms, no rotation); posUnity = the same in the prefab",
+  "colliders": "BoxCollider per entry on its root: center / size in the root's frame, centerUnity / sizeUnity the same in Unity axes. The COL_ objects are in the .blend for reference (collection Colliders), not in the FBX",
+  "kit_monitor": "Kit_Monitor_CRT as built (snow_kit 1.1): 0.34 wide, 0.31 tall, 0.45 deep (y -0.202 front .. +0.248 back about its pivot); the slots centre that depth 0.26 m in front of the rack's back",
+  "model": "forest_station.blend",
+  "textures": "tex",
+  "materials": "M_Station_Props: the baked PSX atlas T_Station_Props_BaseColor.png (point filter, BaseColor only, no emission) on both models"
+ }
+}
