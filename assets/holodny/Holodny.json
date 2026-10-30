@@ -1,0 +1,384 @@
+{
+ "verts": {
+  "imported": 20122,
+  "welded": 15263
+ },
+ "tris": 30526,
+ "scale_from_glb": 2.3165,
+ "textures": [
+  "T_Holodny_A",
+  "T_Holodny_MR",
+  "T_Holodny_N"
+ ],
+ "joints_L": {
+  "clav": [
+   0.03,
+   0.045,
+   1.76
+  ],
+  "shoulder": [
+   0.175,
+   0.035,
+   1.75
+  ],
+  "elbow": [
+   0.278,
+   0.029,
+   1.375
+  ],
+  "wrist": [
+   0.398,
+   -0.035,
+   0.824
+  ],
+  "hip": [
+   0.09,
+   0.06,
+   1.14
+  ],
+  "knee": [
+   0.14,
+   0.037,
+   0.75
+  ],
+  "ankle": [
+   0.183,
+   0.092,
+   0.101
+  ],
+  "toe": [
+   0.187,
+   -0.151,
+   0.019
+  ],
+  "ball": [
+   0.162,
+   -0.066,
+   0.03
+  ],
+  "knuck": [
+   0.433,
+   -0.045,
+   0.655
+  ]
+ },
+ "fingers_L": {
+  "Index": [
+   [
+    0.399,
+    -0.083,
+    0.655
+   ],
+   [
+    0.401,
+    -0.069,
+    0.569
+   ],
+   [
+    0.402,
+    -0.055,
+    0.483
+   ]
+  ],
+  "Middle": [
+   [
+    0.417,
+    -0.044,
+    0.655
+   ],
+   [
+    0.423,
+    -0.04,
+    0.563
+   ],
+   [
+    0.429,
+    -0.037,
+    0.472
+   ]
+  ],
+  "Ring": [
+   [
+    0.456,
+    -0.043,
+    0.655
+   ],
+   [
+    0.451,
+    -0.028,
+    0.568
+   ],
+   [
+    0.446,
+    -0.013,
+    0.481
+   ]
+  ],
+  "Pinky": [
+   [
+    0.459,
+    -0.008,
+    0.655
+   ],
+   [
+    0.466,
+    0.001,
+    0.581
+   ],
+   [
+    0.472,
+    0.01,
+    0.508
+   ]
+  ],
+  "Thumb": [
+   [
+    0.37,
+    -0.06,
+    0.75
+   ],
+   [
+    0.358,
+    -0.068,
+    0.672
+   ],
+   [
+    0.347,
+    -0.076,
+    0.595
+   ]
+  ]
+ },
+ "eye_socket_L": [
+  0.0385,
+  -0.0876,
+  2.0745
+ ],
+ "eye_socket_across": 0.032,
+ "bones": [
+  "Root",
+  "Hips",
+  "Spine",
+  "Spine2",
+  "Chest",
+  "Neck1",
+  "Neck2",
+  "Head",
+  "Jaw",
+  "Shoulder.L",
+  "UpperArm.L",
+  "ForeArm.L",
+  "Hand.L",
+  "Index1.L",
+  "Index2.L",
+  "Middle1.L",
+  "Middle2.L",
+  "Ring1.L",
+  "Ring2.L",
+  "Pinky1.L",
+  "Pinky2.L",
+  "Thumb1.L",
+  "Thumb2.L",
+  "Thigh.L",
+  "Shin.L",
+  "Foot.L",
+  "Toe.L",
+  "Shoulder.R",
+  "UpperArm.R",
+  "ForeArm.R",
+  "Hand.R",
+  "Index1.R",
+  "Index2.R",
+  "Middle1.R",
+  "Middle2.R",
+  "Ring1.R",
+  "Ring2.R",
+  "Pinky1.R",
+  "Pinky2.R",
+  "Thumb1.R",
+  "Thumb2.R",
+  "Thigh.R",
+  "Shin.R",
+  "Foot.R",
+  "Toe.R"
+ ],
+ "weights": {
+  "heat_empty_to_nearest": 0,
+  "rule_fixed": 3487
+ },
+ "limbs_m": {
+  "arm.L": [
+   0.389,
+   0.568
+  ],
+  "leg.L": [
+   0.394,
+   0.653
+  ],
+  "arm.R": [
+   0.389,
+   0.568
+  ],
+  "leg.R": [
+   0.394,
+   0.653
+  ]
+ },
+ "ground_calibration": {
+  "hand": 0.0697,
+  "foot": 0.034
+ },
+ "stance": {
+  "lowest_z": 0.004,
+  "top_z": 1.008,
+  "y": [
+   -0.655,
+   0.694
+  ]
+ },
+ "gaits": {
+  "Sneak": {
+   "cycle_m": 1.1,
+   "speed_mps": 0.943
+  },
+  "Run": {
+   "cycle_m": 1.6,
+   "speed_mps": 3.84
+  },
+  "Drag": {
+   "cycle_m": 0.8,
+   "speed_mps": 0.8,
+   "backwards": true
+  },
+  "DragFast": {
+   "cycle_m": 1.3,
+   "speed_mps": 1.95
+  }
+ },
+ "slip_m_per_frame": {
+  "Sneak": 0.0,
+  "Run": 0.0,
+  "DragFast": 0.0
+ },
+ "clips": {
+  "Stand4": {
+   "frames_blender": [
+    1,
+    2
+   ],
+   "seconds": 0.042,
+   "loop": true,
+   "overreach_m": 0.0
+  },
+  "Idle4": {
+   "frames_blender": [
+    1,
+    97
+   ],
+   "seconds": 4.0,
+   "loop": true,
+   "overreach_m": 0.0
+  },
+  "Sneak": {
+   "frames_blender": [
+    1,
+    29
+   ],
+   "seconds": 1.167,
+   "loop": true,
+   "overreach_m": 0.0
+  },
+  "Run": {
+   "frames_blender": [
+    1,
+    11
+   ],
+   "seconds": 0.417,
+   "loop": true,
+   "overreach_m": 0.0
+  },
+  "Listen": {
+   "frames_blender": [
+    1,
+    73
+   ],
+   "seconds": 3.0,
+   "loop": false,
+   "overreach_m": 0.0
+  },
+  "Stand": {
+   "frames_blender": [
+    1,
+    97
+   ],
+   "seconds": 4.0,
+   "loop": true,
+   "overreach_m": 0.011
+  },
+  "StandUp": {
+   "frames_blender": [
+    1,
+    37
+   ],
+   "seconds": 1.5,
+   "loop": false,
+   "overreach_m": 0.011
+  },
+  "DropDown": {
+   "frames_blender": [
+    1,
+    29
+   ],
+   "seconds": 1.167,
+   "loop": false,
+   "overreach_m": 0.011
+  },
+  "Flinch": {
+   "frames_blender": [
+    1,
+    31
+   ],
+   "seconds": 1.25,
+   "loop": false,
+   "overreach_m": 0.0
+  },
+  "Grab": {
+   "frames_blender": [
+    1,
+    13
+   ],
+   "seconds": 0.5,
+   "loop": false,
+   "overreach_m": 0.0
+  },
+  "Drag": {
+   "frames_blender": [
+    1,
+    25
+   ],
+   "seconds": 1.0,
+   "loop": true,
+   "overreach_m": 0.0
+  },
+  "DragFast": {
+   "frames_blender": [
+    1,
+    17
+   ],
+   "seconds": 0.667,
+   "loop": true,
+   "overreach_m": 0.0
+  },
+  "Throw": {
+   "frames_blender": [
+    1,
+    21
+   ],
+   "seconds": 0.833,
+   "loop": false,
+   "overreach_m": 0.045,
+   "release_s": 0.458
+  }
+ },
+ "fps": 24
+}
