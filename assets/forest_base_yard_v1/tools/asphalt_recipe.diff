@@ -1,0 +1,22 @@
+329,337c329,339
+<     # asphalt: grey with a film of snow and frost in the cracks
+<     a = Layer('Asphalt', [(44, 44, 46), (58, 58, 60), (74, 75, 78), (110, 113, 118), (160, 165, 172), (196, 201, 209)], 28)
+<     v = noise(a.rng, 3, 20)
+<     a.base(0.05 + v * 0.7, 4)
+<     a.cracks(6, (16, 34), 3, depth=0.1)
+<     film = noise(a.rng, 3, 10) > 0.62
+<     a.idx[film & (a.rng.random((N, N)) < 0.6)] = 4
+<     a.h = 0.4 + v * 0.2
+<     a.smooth[:] = 0.2
+---
+>     # asphalt (user 28.10: the film of snow read as camouflage, a new asphalt asked for): ploughed and salted, a dark cold
+>     # grey with a fine grain, light stones of the aggregate, rare dark specks, one short crack; no snow film
+>     a = Layer('Asphalt', [(56, 58, 62), (66, 68, 72), (76, 78, 82), (88, 90, 94), (108, 110, 114), (130, 132, 134)], 28)
+>     v = noise(a.rng, 8, 32) * 0.7 + noise(a.rng, 2, 6) * 0.3
+>     a.base(0.15 + v * 0.55, 4)
+>     a.spots(40, (0.4, 0.6), 4, prob=1.0)                       # light stones, one texel
+>     a.spots(8, (0.4, 0.6), 5, prob=1.0)                        # the brightest
+>     a.spots(40, (0.4, 0.6), 0, prob=1.0)                       # dark specks
+>     a.cracks(1, (9, 14), 0, depth=0.15)
+>     a.h = 0.42 + v * 0.12
+>     a.smooth[:] = 0.22
