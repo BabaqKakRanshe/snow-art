@@ -1,0 +1,283 @@
+{
+ "verts": {
+  "imported": 13541,
+  "welded": 7863
+ },
+ "tris": 14958,
+ "scale_from_glb": 3.5532,
+ "textures": [
+  "T_Lesnik_A",
+  "T_Lesnik_MR",
+  "T_Lesnik_N"
+ ],
+ "bones": [
+  "Root",
+  "Hips",
+  "Spine",
+  "Chest",
+  "Neck1",
+  "Neck2",
+  "Neck3",
+  "Neck4",
+  "Neck5",
+  "Neck6",
+  "Neck7",
+  "Neck8",
+  "Neck9",
+  "Neck10",
+  "Neck11",
+  "Neck12",
+  "Head",
+  "Shoulder.L",
+  "UpperArm.L",
+  "ForeArm.L",
+  "Hand.L",
+  "Finger1.L",
+  "Finger2.L",
+  "Finger3.L",
+  "Finger4.L",
+  "Thigh.L",
+  "Shin.L",
+  "Foot.L",
+  "Shoulder.R",
+  "UpperArm.R",
+  "ForeArm.R",
+  "Hand.R",
+  "Finger1.R",
+  "Finger2.R",
+  "Finger3.R",
+  "Finger4.R",
+  "Thigh.R",
+  "Shin.R",
+  "Foot.R"
+ ],
+ "neck_rings": {
+  "edges_cut": 142,
+  "verts": 8155,
+  "tris": 15542
+ },
+ "weights": {
+  "heat_empty_to_nearest": 0,
+  "rule_fixed": 506
+ },
+ "root_drop": -0.0293,
+ "stand_top": 2.607,
+ "stand_extents": [
+  [
+   -0.363,
+   -1.021,
+   -0.0
+  ],
+  [
+   0.385,
+   0.186,
+   2.607
+  ]
+ ],
+ "idle": {
+  "frames_blender": [
+   1,
+   241
+  ],
+  "frames_unity": [
+   0,
+   240
+  ],
+  "seconds": 10.0,
+  "loop": true,
+  "toe_drift_m": {
+   "L": 0.0,
+   "R": 0.0
+  },
+  "lowest_z": [
+   -0.0,
+   0.0
+  ],
+  "loop_close_m": 0.0
+ },
+ "shuffle_ik_miss_m": {
+  "L": 0.0166,
+  "R": 0.0001
+ },
+ "flee": {
+  "speed_mps": 6.0,
+  "cycle_m": 4.5,
+  "frames": 18,
+  "stance": 0.22,
+  "ik_miss_on_ground_m": {
+   "L": 0.0,
+   "R": 0.0001
+  }
+ },
+ "sleep_mocap": {
+  "scale": 1.554,
+  "lifted_m_max": 0.612
+ },
+ "clips": {
+  "Stand": [
+   1,
+   2
+  ],
+  "NeckReach": [
+   1,
+   25
+  ],
+  "NeckReachUp": [
+   1,
+   25
+  ],
+  "Shuffle": [
+   1,
+   33
+  ],
+  "Grab": [
+   1,
+   25
+  ],
+  "Carry": [
+   1,
+   2
+  ],
+  "Cower": [
+   1,
+   49
+  ],
+  "Flee": [
+   1,
+   19
+  ],
+  "Sleep": [
+   1,
+   171
+  ],
+  "Idle": [
+   1,
+   241
+  ]
+ },
+ "neck_stretch": {
+  "Stand": 1.9,
+  "NeckReach_end": 9.265
+ },
+ "neck_length_m": {
+  "Stand": 0.722,
+  "NeckReach_end": 3.522
+ },
+ "extents": {
+  "Stand": [
+   [
+    -0.363,
+    -1.021,
+    -0.0
+   ],
+   [
+    0.385,
+    0.186,
+    2.607
+   ]
+  ],
+  "NeckReach_end": [
+   [
+    -0.363,
+    -4.035,
+    -0.0
+   ],
+   [
+    0.385,
+    0.186,
+    2.607
+   ]
+  ],
+  "Grab_reach": [
+   [
+    -0.36,
+    -1.553,
+    -0.0
+   ],
+   [
+    0.385,
+    0.201,
+    2.394
+   ]
+  ],
+  "Cower_hold": [
+   [
+    -0.762,
+    -0.847,
+    -0.036
+   ],
+   [
+    1.279,
+    0.176,
+    2.624
+   ]
+  ],
+  "Flee_up": [
+   [
+    -0.593,
+    -1.052,
+    0.221
+   ],
+   [
+    0.503,
+    0.493,
+    2.493
+   ]
+  ],
+  "Flee_down": [
+   [
+    -0.492,
+    -1.042,
+    0.016
+   ],
+   [
+    0.62,
+    0.7,
+    2.193
+   ]
+  ],
+  "Sleep_end": [
+   [
+    -2.156,
+    -1.142,
+    0.01
+   ],
+   [
+    0.099,
+    0.269,
+    0.892
+   ]
+  ]
+ },
+ "head": {
+  "Stand": [
+   0.023,
+   -0.95,
+   2.016
+  ],
+  "NeckReach_end": [
+   0.077,
+   -3.878,
+   1.26
+  ],
+  "NeckReachUp_end": [
+   0.142,
+   -3.269,
+   4.51
+  ]
+ },
+ "shuffle": {
+  "speed_mps": 0.9,
+  "cycle_m": 1.2,
+  "frames": 32,
+  "pause_phases": [
+   0.04,
+   0.55
+  ],
+  "stance": {
+   "L": 0.62,
+   "R": 0.58
+  }
+ },
+ "fps": 24
+}
