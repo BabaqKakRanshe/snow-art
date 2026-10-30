@@ -1,0 +1,280 @@
+{
+ "parts": {
+  "SC_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.6,
+    1.3
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [],
+   "note": "all windows (dark dirty glass, a black shell behind, no interior)",
+   "object": "SC_Glass",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    1.3,
+    -0.6
+   ]
+  },
+  "SC_Letters": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.32,
+    0.82
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [],
+   "note": "RADIOOBSERVATORIUM / HOHENMOOS on both front doors",
+   "object": "SC_Letters",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    0.82,
+    0.32
+   ]
+  },
+  "SC_Hood": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.77,
+    1.0786
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "ShiftCar",
+   "states": [],
+   "note": "the hood, open 55 deg (the car broke down; static)",
+   "object": "SC_Hood",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    1.0786,
+    0.77
+   ]
+  },
+  "ShiftCar": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the previous shift's car (root): origin = the ground between the axles; the front -y",
+   "object": "ShiftCar",
+   "root": "ShiftCar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Slot_ShiftCar_Battery": {
+   "pos": [
+    0.62,
+    -1.89,
+    0.64
+   ],
+   "kind": "stow",
+   "parent": "ShiftCar",
+   "note": "the battery's place on its tray in the engine bay (the item's origin, upright, its front -y): the battery the players carry to the checkpoint's power cabinet (QUESTIONS_7 §4 13)",
+   "posUnity": [
+    -0.62,
+    0.64,
+    1.89
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Car_Cabin",
+   "parent": "ShiftCar",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    0.0,
+    0.775,
+    1.01
+   ],
+   "size": [
+    1.92,
+    3.09,
+    1.42
+   ],
+   "center_root": [
+    0.0,
+    0.775,
+    1.01
+   ],
+   "centerUnity": [
+    0.0,
+    1.01,
+    -0.775
+   ],
+   "sizeUnity": [
+    1.92,
+    1.42,
+    3.09
+   ]
+  },
+  {
+   "name": "COL_Car_Nose",
+   "parent": "ShiftCar",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    0.0,
+    -1.575,
+    0.425
+   ],
+   "size": [
+    1.92,
+    1.61,
+    0.25
+   ],
+   "center_root": [
+    0.0,
+    -1.575,
+    0.425
+   ],
+   "centerUnity": [
+    0.0,
+    0.425,
+    1.575
+   ],
+   "sizeUnity": [
+    1.92,
+    0.25,
+    1.61
+   ]
+  },
+  {
+   "name": "COL_Car_FenderL",
+   "parent": "ShiftCar",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    0.86,
+    -1.525,
+    0.7786
+   ],
+   "size": [
+    0.12,
+    1.51,
+    0.4573
+   ],
+   "center_root": [
+    0.86,
+    -1.525,
+    0.7786
+   ],
+   "centerUnity": [
+    -0.86,
+    0.7786,
+    1.525
+   ],
+   "sizeUnity": [
+    0.12,
+    0.4573,
+    1.51
+   ]
+  },
+  {
+   "name": "COL_Car_FenderR",
+   "parent": "ShiftCar",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    -0.86,
+    -1.525,
+    0.7786
+   ],
+   "size": [
+    0.12,
+    1.51,
+    0.4573
+   ],
+   "center_root": [
+    -0.86,
+    -1.525,
+    0.7786
+   ],
+   "centerUnity": [
+    0.86,
+    0.7786,
+    1.525
+   ],
+   "sizeUnity": [
+    0.12,
+    0.4573,
+    1.51
+   ]
+  },
+  {
+   "name": "COL_Car_Front",
+   "parent": "ShiftCar",
+   "root": "ShiftCar",
+   "type": "box",
+   "center": [
+    0.0,
+    -2.25,
+    0.7786
+   ],
+   "size": [
+    1.6,
+    0.26,
+    0.4573
+   ],
+   "center_root": [
+    0.0,
+    -2.25,
+    0.7786
+   ],
+   "centerUnity": [
+    0.0,
+    0.7786,
+    2.25
+   ],
+   "sizeUnity": [
+    1.6,
+    0.4573,
+    0.26
+   ]
+  }
+ ],
+ "meta": {
+  "version": "2.3",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 28.10.2026",
+  "frame": "z up, the front -y; origin on the ground between the axles. FBX with the root at the origin",
+  "placement": "on the forest road before the checkpoint (ForestWorld.json, the old ShiftCar entry), broken down, the hood up",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame. COL_ objects are reference only, not in the FBX",
+  "sockets": "Slot_ShiftCar_Battery: the battery (VanItem_Battery_Net) stands on its tray in the engine bay, stowed; the players take it to the checkpoint booth's power cabinet",
+  "model": "sc.blend",
+  "textures": "tex",
+  "materials": "M_SC_ShiftCar: baked PSX atlas (point filter); M_SC_Panel: the door lettering (256 x 64 RGBA, alpha cut-out); M_SC_GlassDirty: all windows (dark; a black shell behind, no interior)",
+  "ix": "none: doors and the hood are static"
+ }
+}
