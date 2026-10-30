@@ -1,0 +1,404 @@
+{
+ "parts": {
+  "PL_Notstrom_Face": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.004,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "PL_Notstrom",
+   "states": [],
+   "note": "NOTSTROM / 12V EMERGENCY tag on the checkpoint's power cabinet (panel atlas)",
+   "object": "PL_Notstrom_Face",
+   "root": "PL_Notstrom",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.004
+   ]
+  },
+  "PL_Notstrom": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "NOTSTROM / 12V EMERGENCY tag on the checkpoint's power cabinet (root): origin = the middle of the plate's back, the face looks -y",
+   "object": "PL_Notstrom",
+   "root": "PL_Notstrom",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "PL_GenStart_Face": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.006,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "PL_GenStart",
+   "states": [],
+   "note": "STARTVORGANG start form on the generator container's wall (panel atlas)",
+   "object": "PL_GenStart_Face",
+   "root": "PL_GenStart",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.006
+   ]
+  },
+  "PL_GenStart": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "STARTVORGANG start form on the generator container's wall (root): origin = the middle of the plate's back, the face looks -y",
+   "object": "PL_GenStart",
+   "root": "PL_GenStart",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "PL_HangarKey_Face": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.006,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "PL_HangarKey",
+   "states": [],
+   "note": "GESPERRT / SCHLÜSSEL: STATIONSLEITER plate on the lake hangar's gate (panel atlas)",
+   "object": "PL_HangarKey_Face",
+   "root": "PL_HangarKey",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.006
+   ]
+  },
+  "PL_HangarKey": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "GESPERRT / SCHLÜSSEL: STATIONSLEITER plate on the lake hangar's gate (root): origin = the middle of the plate's back, the face looks -y",
+   "object": "PL_HangarKey",
+   "root": "PL_HangarKey",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "PL_MapBoard_Face": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.085,
+    1.35
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "PL_MapBoard",
+   "states": [],
+   "note": "SIE SIND HIER / YOU ARE HERE and the map of the area (panel atlas)",
+   "object": "PL_MapBoard_Face",
+   "root": "PL_MapBoard",
+   "pivotUnity": [
+    0.0,
+    1.35,
+    0.085
+   ]
+  },
+  "PL_MapBoard": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "the overlook's map board (root): origin = the ground between the posts (sunk 0.40); the map faces -y (the reader)",
+   "object": "PL_MapBoard",
+   "root": "PL_MapBoard",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {},
+ "colliders": [
+  {
+   "name": "COL_PL_Notstrom_Plate",
+   "parent": "PL_Notstrom",
+   "root": "PL_Notstrom",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.002,
+    0.0
+   ],
+   "size": [
+    0.412,
+    0.004,
+    0.1433
+   ],
+   "center_root": [
+    0.0,
+    -0.002,
+    0.0
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.002
+   ],
+   "sizeUnity": [
+    0.412,
+    0.1433,
+    0.004
+   ]
+  },
+  {
+   "name": "COL_PL_GenStart_Plate",
+   "parent": "PL_GenStart",
+   "root": "PL_GenStart",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.003,
+    0.0
+   ],
+   "size": [
+    0.7115,
+    0.006,
+    0.599
+   ],
+   "center_root": [
+    0.0,
+    -0.003,
+    0.0
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.003
+   ],
+   "sizeUnity": [
+    0.7115,
+    0.599,
+    0.006
+   ]
+  },
+  {
+   "name": "COL_PL_HangarKey_Plate",
+   "parent": "PL_HangarKey",
+   "root": "PL_HangarKey",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.003,
+    0.0
+   ],
+   "size": [
+    0.724,
+    0.006,
+    0.3365
+   ],
+   "center_root": [
+    0.0,
+    -0.003,
+    0.0
+   ],
+   "centerUnity": [
+    0.0,
+    0.0,
+    0.003
+   ],
+   "sizeUnity": [
+    0.724,
+    0.3365,
+    0.006
+   ]
+  },
+  {
+   "name": "COL_Board_PostL",
+   "parent": "PL_MapBoard",
+   "root": "PL_MapBoard",
+   "type": "box",
+   "center": [
+    -0.6,
+    0.0,
+    1.05
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.1
+   ],
+   "center_root": [
+    -0.6,
+    0.0,
+    1.05
+   ],
+   "centerUnity": [
+    0.6,
+    1.05,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.1,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Board_PostR",
+   "parent": "PL_MapBoard",
+   "root": "PL_MapBoard",
+   "type": "box",
+   "center": [
+    0.6,
+    0.0,
+    1.05
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.1
+   ],
+   "center_root": [
+    0.6,
+    0.0,
+    1.05
+   ],
+   "centerUnity": [
+    -0.6,
+    1.05,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.1,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_Board_Board",
+   "parent": "PL_MapBoard",
+   "root": "PL_MapBoard",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.065,
+    1.35
+   ],
+   "size": [
+    1.1,
+    0.05,
+    1.2
+   ],
+   "center_root": [
+    0.0,
+    -0.065,
+    1.35
+   ],
+   "centerUnity": [
+    0.0,
+    1.35,
+    0.065
+   ],
+   "sizeUnity": [
+    1.1,
+    1.2,
+    0.05
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 27.10.2026",
+  "frame": "each root in its own frame: z up, the front -y; the plates: the middle of the back; the map board: the ground between the posts. In pl.blend the roots stand apart (display_offset); FBX with the root at the origin",
+  "placement": "PL_Notstrom on the checkpoint power cabinet (KPP v2 PowerCabinet, the booth's back wall); PL_GenStart on the generator container's outer wall beside the door; PL_HangarKey on the lake hangar's gate; PL_MapBoard at the overlook (OverlookDeck), its face to the reader looking at the lake",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "display_offset": {
+   "PL_Notstrom": [
+    -1.6,
+    0.0,
+    1.2
+   ],
+   "PL_GenStart": [
+    -0.9,
+    0.0,
+    1.2
+   ],
+   "PL_HangarKey": [
+    0.1,
+    0.0,
+    1.2
+   ],
+   "PL_MapBoard": [
+    1.6,
+    0.0,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame. COL_ objects are reference only, not in the FBX",
+  "model": "pl.blend",
+  "textures": "tex",
+  "materials": "M_PL_PLProps: baked PSX atlas (point filter); M_PL_Panel: every face with letters (512 x 256 panel)",
+  "ix": "none: nothing opens"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "atlases": {
+  "PLProps": {
+   "size": 256,
+   "ppm": 64.0,
+   "area_m2": 6.63,
+   "uv_fill": 0.414,
+   "colours": 64
+  }
+ },
+ "tris": 126,
+ "tris_by_root": {
+  "PL_GenStart": 12,
+  "PL_HangarKey": 12,
+  "PL_MapBoard": 90,
+  "PL_Notstrom": 12
+ },
+ "objects": {
+  "PL_Notstrom": [
+   "PL_Notstrom",
+   "PL_Notstrom_Face"
+  ],
+  "PL_GenStart": [
+   "PL_GenStart",
+   "PL_GenStart_Face"
+  ],
+  "PL_HangarKey": [
+   "PL_HangarKey",
+   "PL_HangarKey_Face"
+  ],
+  "PL_MapBoard": [
+   "PL_MapBoard",
+   "PL_MapBoard_Face"
+  ]
+ },
+ "display_offset": {
+  "PL_Notstrom": [
+   -1.6,
+   0.0,
+   1.2
+  ],
+  "PL_GenStart": [
+   -0.9,
+   0.0,
+   1.2
+  ],
+  "PL_HangarKey": [
+   0.1,
+   0.0,
+   1.2
+  ],
+  "PL_MapBoard": [
+   1.6,
+   0.0,
+   0.0
+  ]
+ },
+ "panel_metres": {
+  "map": [
+   1.0,
+   1.1
+  ],
+  "genstart": [
+   0.6875,
+   0.575
+  ],
+  "hangar": [
+   0.7,
+   0.3125
+  ],
+  "notstrom": [
+   0.4,
+   0.13125
+  ]
+ },
+ "contract": {
+  "parts": 8,
+  "colliders": 6
+ }
+}
