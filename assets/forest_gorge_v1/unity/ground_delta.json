@@ -1,0 +1,21 @@
+{
+ "nx": 3073,
+ "nz": 3073,
+ "x0": -600.0,
+ "z0": -1200.0,
+ "step": 0.5859375,
+ "file": "ground_delta.f32",
+ "blend": "forest_gorge_v1 src/full_params.py (map export 2026-10-28 20:03 minus the 28.10 Bridge30 gorge delta = the old ground, new gorge on it)",
+ "changed": 97231,
+ "base": "F:/ClaudeGames/snow/source/assets/forest_gorge_v1/unity/base_ground.r16",
+ "hmin": -58.71427536010742,
+ "hmax": 50.406150817871094,
+ "raised_max": 12.44043254852295,
+ "lowered_max": 13.665963172912598,
+ "box": [
+  -564.2578125,
+  130.6640625,
+  -146.484375,
+  600.0
+ ]
+}

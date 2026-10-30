@@ -1,0 +1,387 @@
+{
+ "note": "NW river gorge (source/assets/forest_gorge_v1, 28.10.2026): rock model, gorge mask (1 walls and ledges, 3 floor, 2 rim band), spruces on the wide ledges; Unity x, z. Read by Snow.EditorTools.ForestGorgeStep.",
+ "model": "Assets/Snow/Levels/Forest/Gorge/Forest_Gorge.fbx",
+ "mask": {
+  "file": "gorge_mask.bytes",
+  "i0": 0,
+  "j0": 2183,
+  "nx": 841,
+  "nz": 890,
+  "x0": -600.0,
+  "z0": -1200.0,
+  "step": 0.5859375
+ },
+ "materials": [
+  {
+   "key": "RockA",
+   "name": "M_GorgeRock_A",
+   "texture": "T_GorgeRock_A_px.png",
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "key": "RockB",
+   "name": "M_GorgeRock_B",
+   "texture": "T_GorgeRock_A_px.png",
+   "color": [
+    0.87,
+    0.88,
+    0.9
+   ]
+  },
+  {
+   "key": "RockC",
+   "name": "M_GorgeRock_C",
+   "texture": "T_GorgeRock_A_px.png",
+   "color": [
+    0.74,
+    0.75,
+    0.78
+   ]
+  },
+  {
+   "key": "Snow",
+   "name": "M_GorgeSnow",
+   "texture": "T_GorgeSnow_A_px.png",
+   "color": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "ledgeTrees": [
+  {
+   "prefab": "Spruce_13",
+   "x": -401.8,
+   "z": 259.54,
+   "scale": 0.371,
+   "yaw": 4.746
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -393.51,
+   "z": 288.1,
+   "scale": 0.626,
+   "yaw": 0.717
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -268.26,
+   "z": 420.24,
+   "scale": 0.366,
+   "yaw": 0.542
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -210.38,
+   "z": 512.93,
+   "scale": 0.324,
+   "yaw": 5.191
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -209.22,
+   "z": 469.96,
+   "scale": 0.393,
+   "yaw": 5.966
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -303.97,
+   "z": 347.91,
+   "scale": 0.679,
+   "yaw": 0.363
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -333.22,
+   "z": 316.61,
+   "scale": 0.545,
+   "yaw": 1.241
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -351.26,
+   "z": 322.18,
+   "scale": 0.326,
+   "yaw": 1.32
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -287.55,
+   "z": 400.26,
+   "scale": 0.386,
+   "yaw": 2.633
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -320.09,
+   "z": 360.26,
+   "scale": 0.7,
+   "yaw": 2.529
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -361.77,
+   "z": 313.88,
+   "scale": 0.797,
+   "yaw": 5.012
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -425.08,
+   "z": 265.78,
+   "scale": 0.731,
+   "yaw": 4.136
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -215.63,
+   "z": 502.69,
+   "scale": 0.283,
+   "yaw": 0.7
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -182.64,
+   "z": 590.79,
+   "scale": 0.755,
+   "yaw": 4.323
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -369.9,
+   "z": 286.42,
+   "scale": 0.296,
+   "yaw": 1.578
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -231.0,
+   "z": 474.18,
+   "scale": 0.7,
+   "yaw": 4.165
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -241.58,
+   "z": 459.38,
+   "scale": 0.685,
+   "yaw": 3.18
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -466.43,
+   "z": 221.97,
+   "scale": 0.362,
+   "yaw": 4.894
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -187.18,
+   "z": 521.6,
+   "scale": 0.819,
+   "yaw": 4.169
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -204.66,
+   "z": 489.74,
+   "scale": 0.926,
+   "yaw": 3.36
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -427.63,
+   "z": 235.13,
+   "scale": 0.922,
+   "yaw": 3.006
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -188.77,
+   "z": 510.41,
+   "scale": 0.648,
+   "yaw": 3.754
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -471.68,
+   "z": 194.15,
+   "scale": 0.621,
+   "yaw": 3.898
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -236.61,
+   "z": 436.91,
+   "scale": 0.901,
+   "yaw": 3.006
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -412.97,
+   "z": 275.04,
+   "scale": 0.884,
+   "yaw": 2.731
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -177.52,
+   "z": 543.36,
+   "scale": 0.714,
+   "yaw": 4.752
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -170.78,
+   "z": 561.33,
+   "scale": 0.765,
+   "yaw": 2.71
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -251.02,
+   "z": 442.78,
+   "scale": 0.877,
+   "yaw": 1.297
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -437.73,
+   "z": 221.49,
+   "scale": 0.593,
+   "yaw": 2.992
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -219.78,
+   "z": 492.96,
+   "scale": 0.702,
+   "yaw": 0.237
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -301.4,
+   "z": 374.43,
+   "scale": 0.848,
+   "yaw": 3.266
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -240.9,
+   "z": 429.37,
+   "scale": 1.075,
+   "yaw": 1.03
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -321.82,
+   "z": 349.94,
+   "scale": 0.627,
+   "yaw": 3.565
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -201.02,
+   "z": 531.14,
+   "scale": 0.533,
+   "yaw": 2.868
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -209.82,
+   "z": 479.94,
+   "scale": 0.284,
+   "yaw": 5.849
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -258.64,
+   "z": 399.11,
+   "scale": 0.586,
+   "yaw": 6.136
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -266.62,
+   "z": 397.15,
+   "scale": 0.548,
+   "yaw": 0.586
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -228.12,
+   "z": 451.22,
+   "scale": 1.007,
+   "yaw": 5.121
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -294.44,
+   "z": 351.04,
+   "scale": 1.003,
+   "yaw": 2.055
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -162.8,
+   "z": 594.52,
+   "scale": 0.405,
+   "yaw": 0.979
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -458.11,
+   "z": 229.69,
+   "scale": 0.938,
+   "yaw": 5.638
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -391.02,
+   "z": 296.45,
+   "scale": 0.616,
+   "yaw": 4.889
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -538.46,
+   "z": 166.21,
+   "scale": 1.09,
+   "yaw": 4.591
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -494.15,
+   "z": 203.77,
+   "scale": 0.593,
+   "yaw": 2.154
+  },
+  {
+   "prefab": "Fir_4",
+   "x": -236.67,
+   "z": 466.02,
+   "scale": 1.063,
+   "yaw": 5.286
+  },
+  {
+   "prefab": "Spruce_13",
+   "x": -498.53,
+   "z": 195.51,
+   "scale": 0.299,
+   "yaw": 5.73
+  },
+  {
+   "prefab": "Fir_7",
+   "x": -427.63,
+   "z": 256.52,
+   "scale": 0.567,
+   "yaw": 6.045
+  }
+ ]
+}
