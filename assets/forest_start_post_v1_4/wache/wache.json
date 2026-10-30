@@ -1,0 +1,22 @@
+{
+ "atlases": {
+  "Wache": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 202.73,
+   "uv_fill": 0.509,
+   "colours": 64
+  }
+ },
+ "tris": {
+  "StartWache": 5189,
+  "Booth_Glass": 44,
+  "Glow_Stove": 2,
+  "Wache_Map": 2,
+  "Lens_Wache": 84,
+  "IX_Door": 450,
+  "Wache_Snow": 3568,
+  "Wache_Ice": 240
+ },
+ "tris_total": 9579
+}
