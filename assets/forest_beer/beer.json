@@ -1,0 +1,173 @@
+{
+ "atlases": {
+  "Small": {
+   "size": 512,
+   "ppm": 512.0,
+   "area_m2": 0.16,
+   "uv_fill": 0.158,
+   "colours": 61
+  }
+ },
+ "open_keys": {
+  "fps": 24,
+  "frames": [
+   1,
+   5,
+   10,
+   16
+  ],
+  "tab_deg": [
+   0.0,
+   22.0,
+   70.0,
+   12.0
+  ],
+  "flap_deg": [
+   0.0,
+   0.0,
+   82.0,
+   82.0
+  ]
+ },
+ "tris": 9456,
+ "tris_by_root": {
+  "Item_Beer_Bock": 708,
+  "Item_Beer_Export": 708,
+  "Item_Beer_Kalo": 708,
+  "Item_Beer_Leicht": 708,
+  "Item_Beer_Pils": 708,
+  "Item_Beer_Schwarz": 708,
+  "Item_BeerCrushed_Bock": 868,
+  "Item_BeerCrushed_Export": 868,
+  "Item_BeerCrushed_Kalo": 868,
+  "Item_BeerCrushed_Leicht": 868,
+  "Item_BeerCrushed_Pils": 868,
+  "Item_BeerCrushed_Schwarz": 868
+ },
+ "objects": {
+  "Item_Beer_Pils": [
+   "Can_Flap_Pils",
+   "Can_Tab_Pils",
+   "Item_Beer_Pils"
+  ],
+  "Item_Beer_Export": [
+   "Can_Flap_Export",
+   "Can_Tab_Export",
+   "Item_Beer_Export"
+  ],
+  "Item_Beer_Schwarz": [
+   "Can_Flap_Schwarz",
+   "Can_Tab_Schwarz",
+   "Item_Beer_Schwarz"
+  ],
+  "Item_Beer_Bock": [
+   "Can_Flap_Bock",
+   "Can_Tab_Bock",
+   "Item_Beer_Bock"
+  ],
+  "Item_Beer_Leicht": [
+   "Can_Flap_Leicht",
+   "Can_Tab_Leicht",
+   "Item_Beer_Leicht"
+  ],
+  "Item_Beer_Kalo": [
+   "Can_Flap_Kalo",
+   "Can_Tab_Kalo",
+   "Item_Beer_Kalo"
+  ],
+  "Item_BeerCrushed_Pils": [
+   "Item_BeerCrushed_Pils"
+  ],
+  "Item_BeerCrushed_Export": [
+   "Item_BeerCrushed_Export"
+  ],
+  "Item_BeerCrushed_Schwarz": [
+   "Item_BeerCrushed_Schwarz"
+  ],
+  "Item_BeerCrushed_Bock": [
+   "Item_BeerCrushed_Bock"
+  ],
+  "Item_BeerCrushed_Leicht": [
+   "Item_BeerCrushed_Leicht"
+  ],
+  "Item_BeerCrushed_Kalo": [
+   "Item_BeerCrushed_Kalo"
+  ]
+ },
+ "display_offset": {
+  "Item_Beer_Pils": [
+   -0.225,
+   0.0,
+   0.0
+  ],
+  "Item_Beer_Export": [
+   -0.135,
+   0.0,
+   0.0
+  ],
+  "Item_Beer_Schwarz": [
+   -0.045,
+   0.0,
+   0.0
+  ],
+  "Item_Beer_Bock": [
+   0.045,
+   0.0,
+   0.0
+  ],
+  "Item_Beer_Leicht": [
+   0.135,
+   0.0,
+   0.0
+  ],
+  "Item_Beer_Kalo": [
+   0.225,
+   0.0,
+   0.0
+  ],
+  "Item_BeerCrushed_Pils": [
+   -0.225,
+   0.13,
+   0.0
+  ],
+  "Item_BeerCrushed_Export": [
+   -0.135,
+   0.13,
+   0.0
+  ],
+  "Item_BeerCrushed_Schwarz": [
+   -0.045,
+   0.13,
+   0.0
+  ],
+  "Item_BeerCrushed_Bock": [
+   0.045,
+   0.13,
+   0.0
+  ],
+  "Item_BeerCrushed_Leicht": [
+   0.135,
+   0.13,
+   0.0
+  ],
+  "Item_BeerCrushed_Kalo": [
+   0.225,
+   0.13,
+   0.0
+  ]
+ },
+ "mass_kg": {
+  "Item_Beer_Pils": 0.545,
+  "Item_Beer_Export": 0.37,
+  "Item_Beer_Schwarz": 0.545,
+  "Item_Beer_Bock": 0.545,
+  "Item_Beer_Leicht": 0.37,
+  "Item_Beer_Kalo": 0.545,
+  "Item_BeerCrushed_Pils": 0.02,
+  "Item_BeerCrushed_Export": 0.02,
+  "Item_BeerCrushed_Schwarz": 0.02,
+  "Item_BeerCrushed_Bock": 0.02,
+  "Item_BeerCrushed_Leicht": 0.02,
+  "Item_BeerCrushed_Kalo": 0.02
+ }
+}

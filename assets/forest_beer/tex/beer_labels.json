@@ -1,0 +1,106 @@
+{
+ "brands": [
+  "Pils",
+  "Export",
+  "Schwarz",
+  "Bock",
+  "Leicht",
+  "Kalo"
+ ],
+ "names": {
+  "Pils": "Harzer Pils",
+  "Export": "Ilsetaler Export",
+  "Schwarz": "Hexenbräu Schwarzbier",
+  "Bock": "Bergmann Bock",
+  "Leicht": "Schneekönig Leicht",
+  "Kalo": "Kaloschnizzer Starkbier"
+ },
+ "litres": {
+  "Pils": 0.5,
+  "Export": 0.33,
+  "Schwarz": 0.5,
+  "Bock": 0.5,
+  "Leicht": 0.33,
+  "Kalo": 0.5
+ },
+ "abv": {
+  "Pils": 4.9,
+  "Export": 5.2,
+  "Schwarz": 4.9,
+  "Bock": 7.2,
+  "Leicht": 2.8,
+  "Kalo": 7.2
+ },
+ "size": {
+  "Pils": [
+   512,
+   384
+  ],
+  "Export": [
+   512,
+   256
+  ],
+  "Schwarz": [
+   512,
+   384
+  ],
+  "Bock": [
+   512,
+   384
+  ],
+  "Leicht": [
+   512,
+   256
+  ],
+  "Kalo": [
+   512,
+   384
+  ]
+ },
+ "concept": {
+  "Pils": "docs/gdd/items/beer/concept_v1/cans_1.png",
+  "Export": "docs/gdd/items/beer/concept_v1/cans_1.png",
+  "Schwarz": "docs/gdd/items/beer/concept_v1/cans_1.png",
+  "Bock": "docs/gdd/items/beer/concept_v1/cans_1.png",
+  "Leicht": "docs/gdd/items/beer/concept_v1/cans_1.png",
+  "Kalo": "docs/gdd/items/beer/concept_v2/kalo_front_1.png"
+ },
+ "src": {
+  "Pils": [
+   168,
+   366,
+   60,
+   468
+  ],
+  "Export": [
+   421,
+   614,
+   200,
+   470
+  ],
+  "Schwarz": [
+   669,
+   873,
+   58,
+   470
+  ],
+  "Bock": [
+   934,
+   1120,
+   58,
+   470
+  ],
+  "Leicht": [
+   1205,
+   1406,
+   210,
+   470
+  ],
+  "Kalo": [
+   287,
+   645,
+   120,
+   922
+  ]
+ }
+}

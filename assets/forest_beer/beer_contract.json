@@ -1,0 +1,1622 @@
+{
+ "parts": {
+  "Item_Beer_Pils": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Harzer Pils, 0.5 l, 4.9 % (root): a steel can standing on its foot, the label's front to -y",
+   "object": "Item_Beer_Pils",
+   "root": "Item_Beer_Pils",
+   "mass_kg": 0.545,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.084
+    ],
+    "size": [
+     0.066,
+     0.066,
+     0.168
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Tab_Pils": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0,
+    0.1654
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Pils",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 12.0
+    },
+    {
+     "name": "lever",
+     "value": 70.0
+    }
+   ],
+   "note": "the stay-on tab on the rivet: + lifts the ring end (+y), the nose dips onto the flap; open = 0 -> 70 -> 12",
+   "object": "Can_Tab_Pils",
+   "root": "Item_Beer_Pils",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     -0.0001
+    ],
+    "size": [
+     0.0124,
+     0.021,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1654,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Flap_Pils": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.0069,
+    0.1645
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Pils",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 82.0
+    }
+   ],
+   "note": "the scored flap: hinged at its edge nearest the rivet, + swings its front down into the can (follows the tab's nose)",
+   "object": "Can_Flap_Pils",
+   "root": "Item_Beer_Pils",
+   "box": {
+    "center": [
+     0.0,
+     -0.0066,
+     -0.0001
+    ],
+    "size": [
+     0.0165,
+     0.0132,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1645,
+    0.0069
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Beer_Export": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Ilsetaler Export, 0.33 l, 5.2 % (root): a steel can standing on its foot, the label's front to -y",
+   "object": "Item_Beer_Export",
+   "root": "Item_Beer_Export",
+   "mass_kg": 0.37,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0575
+    ],
+    "size": [
+     0.066,
+     0.066,
+     0.115
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Tab_Export": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0,
+    0.1124
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Export",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 12.0
+    },
+    {
+     "name": "lever",
+     "value": 70.0
+    }
+   ],
+   "note": "the stay-on tab on the rivet: + lifts the ring end (+y), the nose dips onto the flap; open = 0 -> 70 -> 12",
+   "object": "Can_Tab_Export",
+   "root": "Item_Beer_Export",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     -0.0001
+    ],
+    "size": [
+     0.0124,
+     0.021,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1124,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Flap_Export": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.0069,
+    0.1115
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Export",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 82.0
+    }
+   ],
+   "note": "the scored flap: hinged at its edge nearest the rivet, + swings its front down into the can (follows the tab's nose)",
+   "object": "Can_Flap_Export",
+   "root": "Item_Beer_Export",
+   "box": {
+    "center": [
+     0.0,
+     -0.0066,
+     -0.0001
+    ],
+    "size": [
+     0.0165,
+     0.0132,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1115,
+    0.0069
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Beer_Schwarz": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Hexenbräu Schwarzbier, 0.5 l, 4.9 % (root): a steel can standing on its foot, the label's front to -y",
+   "object": "Item_Beer_Schwarz",
+   "root": "Item_Beer_Schwarz",
+   "mass_kg": 0.545,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.084
+    ],
+    "size": [
+     0.066,
+     0.066,
+     0.168
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Tab_Schwarz": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0,
+    0.1654
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Schwarz",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 12.0
+    },
+    {
+     "name": "lever",
+     "value": 70.0
+    }
+   ],
+   "note": "the stay-on tab on the rivet: + lifts the ring end (+y), the nose dips onto the flap; open = 0 -> 70 -> 12",
+   "object": "Can_Tab_Schwarz",
+   "root": "Item_Beer_Schwarz",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     -0.0001
+    ],
+    "size": [
+     0.0124,
+     0.021,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1654,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Flap_Schwarz": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.0069,
+    0.1645
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Schwarz",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 82.0
+    }
+   ],
+   "note": "the scored flap: hinged at its edge nearest the rivet, + swings its front down into the can (follows the tab's nose)",
+   "object": "Can_Flap_Schwarz",
+   "root": "Item_Beer_Schwarz",
+   "box": {
+    "center": [
+     0.0,
+     -0.0066,
+     -0.0001
+    ],
+    "size": [
+     0.0165,
+     0.0132,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1645,
+    0.0069
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Beer_Bock": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Bergmann Bock, 0.5 l, 7.2 % (root): a steel can standing on its foot, the label's front to -y",
+   "object": "Item_Beer_Bock",
+   "root": "Item_Beer_Bock",
+   "mass_kg": 0.545,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.084
+    ],
+    "size": [
+     0.066,
+     0.066,
+     0.168
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Tab_Bock": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0,
+    0.1654
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Bock",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 12.0
+    },
+    {
+     "name": "lever",
+     "value": 70.0
+    }
+   ],
+   "note": "the stay-on tab on the rivet: + lifts the ring end (+y), the nose dips onto the flap; open = 0 -> 70 -> 12",
+   "object": "Can_Tab_Bock",
+   "root": "Item_Beer_Bock",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     -0.0001
+    ],
+    "size": [
+     0.0124,
+     0.021,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1654,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Flap_Bock": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.0069,
+    0.1645
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Bock",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 82.0
+    }
+   ],
+   "note": "the scored flap: hinged at its edge nearest the rivet, + swings its front down into the can (follows the tab's nose)",
+   "object": "Can_Flap_Bock",
+   "root": "Item_Beer_Bock",
+   "box": {
+    "center": [
+     0.0,
+     -0.0066,
+     -0.0001
+    ],
+    "size": [
+     0.0165,
+     0.0132,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1645,
+    0.0069
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Beer_Leicht": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Schneekönig Leicht, 0.33 l, 2.8 % (root): a steel can standing on its foot, the label's front to -y",
+   "object": "Item_Beer_Leicht",
+   "root": "Item_Beer_Leicht",
+   "mass_kg": 0.37,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0575
+    ],
+    "size": [
+     0.066,
+     0.066,
+     0.115
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Tab_Leicht": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0,
+    0.1124
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Leicht",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 12.0
+    },
+    {
+     "name": "lever",
+     "value": 70.0
+    }
+   ],
+   "note": "the stay-on tab on the rivet: + lifts the ring end (+y), the nose dips onto the flap; open = 0 -> 70 -> 12",
+   "object": "Can_Tab_Leicht",
+   "root": "Item_Beer_Leicht",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     -0.0001
+    ],
+    "size": [
+     0.0124,
+     0.021,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1124,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Flap_Leicht": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.0069,
+    0.1115
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Leicht",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 82.0
+    }
+   ],
+   "note": "the scored flap: hinged at its edge nearest the rivet, + swings its front down into the can (follows the tab's nose)",
+   "object": "Can_Flap_Leicht",
+   "root": "Item_Beer_Leicht",
+   "box": {
+    "center": [
+     0.0,
+     -0.0066,
+     -0.0001
+    ],
+    "size": [
+     0.0165,
+     0.0132,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1115,
+    0.0069
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_Beer_Kalo": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "Kaloschnizzer Starkbier, 0.5 l, 7.2 % (root): a steel can standing on its foot, the label's front to -y",
+   "object": "Item_Beer_Kalo",
+   "root": "Item_Beer_Kalo",
+   "mass_kg": 0.545,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.084
+    ],
+    "size": [
+     0.066,
+     0.066,
+     0.168
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Tab_Kalo": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    0.0,
+    0.1654
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    85
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Kalo",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 12.0
+    },
+    {
+     "name": "lever",
+     "value": 70.0
+    }
+   ],
+   "note": "the stay-on tab on the rivet: + lifts the ring end (+y), the nose dips onto the flap; open = 0 -> 70 -> 12",
+   "object": "Can_Tab_Kalo",
+   "root": "Item_Beer_Kalo",
+   "box": {
+    "center": [
+     0.0,
+     0.002,
+     -0.0001
+    ],
+    "size": [
+     0.0124,
+     0.021,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1654,
+    0.0
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Can_Flap_Kalo": {
+   "kind": "hinge",
+   "pivot": [
+    0.0,
+    -0.0069,
+    0.1645
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    90
+   ],
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "Item_Beer_Kalo",
+   "states": [
+    {
+     "name": "closed",
+     "value": 0
+    },
+    {
+     "name": "open",
+     "value": 82.0
+    }
+   ],
+   "note": "the scored flap: hinged at its edge nearest the rivet, + swings its front down into the can (follows the tab's nose)",
+   "object": "Can_Flap_Kalo",
+   "root": "Item_Beer_Kalo",
+   "box": {
+    "center": [
+     0.0,
+     -0.0066,
+     -0.0001
+    ],
+    "size": [
+     0.0165,
+     0.0132,
+     0.004
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.1645,
+    0.0069
+   ],
+   "axisUnity": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BeerCrushed_Pils": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a crushed empty Harzer Pils can (root): stamped down to 36 %, folded, tab up, flap in; lies in the world for ever (QUESTIONS.md 6)",
+   "object": "Item_BeerCrushed_Pils",
+   "root": "Item_BeerCrushed_Pils",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0325
+    ],
+    "size": [
+     0.0994,
+     0.0646,
+     0.0649
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BeerCrushed_Export": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a crushed empty Ilsetaler Export can (root): stamped down to 36 %, folded, tab up, flap in; lies in the world for ever (QUESTIONS.md 6)",
+   "object": "Item_BeerCrushed_Export",
+   "root": "Item_BeerCrushed_Export",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0233
+    ],
+    "size": [
+     0.0938,
+     0.069,
+     0.0465
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BeerCrushed_Schwarz": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a crushed empty Hexenbräu Schwarzbier can (root): stamped down to 36 %, folded, tab up, flap in; lies in the world for ever (QUESTIONS.md 6)",
+   "object": "Item_BeerCrushed_Schwarz",
+   "root": "Item_BeerCrushed_Schwarz",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0306
+    ],
+    "size": [
+     0.0922,
+     0.0654,
+     0.0612
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BeerCrushed_Bock": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a crushed empty Bergmann Bock can (root): stamped down to 36 %, folded, tab up, flap in; lies in the world for ever (QUESTIONS.md 6)",
+   "object": "Item_BeerCrushed_Bock",
+   "root": "Item_BeerCrushed_Bock",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0308
+    ],
+    "size": [
+     0.0919,
+     0.0682,
+     0.0616
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BeerCrushed_Leicht": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a crushed empty Schneekönig Leicht can (root): stamped down to 36 %, folded, tab up, flap in; lies in the world for ever (QUESTIONS.md 6)",
+   "object": "Item_BeerCrushed_Leicht",
+   "root": "Item_BeerCrushed_Leicht",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0241
+    ],
+    "size": [
+     0.09,
+     0.0692,
+     0.0482
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "Item_BeerCrushed_Kalo": {
+   "kind": "item",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "a crushed empty Kaloschnizzer Starkbier can (root): stamped down to 36 %, folded, tab up, flap in; lies in the world for ever (QUESTIONS.md 6)",
+   "object": "Item_BeerCrushed_Kalo",
+   "root": "Item_BeerCrushed_Kalo",
+   "mass_kg": 0.02,
+   "box": {
+    "center": [
+     0.0,
+     0.0,
+     0.0323
+    ],
+    "size": [
+     0.0999,
+     0.0613,
+     0.0647
+    ]
+   },
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Mouth_Pils": {
+   "pos": [
+    0.0,
+    -0.0135,
+    0.168
+   ],
+   "kind": "point",
+   "parent": "Item_Beer_Pils",
+   "note": "the opening: where the lips go, where the foam and the hiss come out",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Beer_Pils",
+   "posUnity": [
+    0.0,
+    0.168,
+    0.0135
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mouth_Export": {
+   "pos": [
+    0.0,
+    -0.0135,
+    0.115
+   ],
+   "kind": "point",
+   "parent": "Item_Beer_Export",
+   "note": "the opening: where the lips go, where the foam and the hiss come out",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Beer_Export",
+   "posUnity": [
+    0.0,
+    0.115,
+    0.0135
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mouth_Schwarz": {
+   "pos": [
+    0.0,
+    -0.0135,
+    0.168
+   ],
+   "kind": "point",
+   "parent": "Item_Beer_Schwarz",
+   "note": "the opening: where the lips go, where the foam and the hiss come out",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Beer_Schwarz",
+   "posUnity": [
+    0.0,
+    0.168,
+    0.0135
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mouth_Bock": {
+   "pos": [
+    0.0,
+    -0.0135,
+    0.168
+   ],
+   "kind": "point",
+   "parent": "Item_Beer_Bock",
+   "note": "the opening: where the lips go, where the foam and the hiss come out",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Beer_Bock",
+   "posUnity": [
+    0.0,
+    0.168,
+    0.0135
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mouth_Leicht": {
+   "pos": [
+    0.0,
+    -0.0135,
+    0.115
+   ],
+   "kind": "point",
+   "parent": "Item_Beer_Leicht",
+   "note": "the opening: where the lips go, where the foam and the hiss come out",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Beer_Leicht",
+   "posUnity": [
+    0.0,
+    0.115,
+    0.0135
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  "Mouth_Kalo": {
+   "pos": [
+    0.0,
+    -0.0135,
+    0.168
+   ],
+   "kind": "point",
+   "parent": "Item_Beer_Kalo",
+   "note": "the opening: where the lips go, where the foam and the hiss come out",
+   "dir": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "root": "Item_Beer_Kalo",
+   "posUnity": [
+    0.0,
+    0.168,
+    0.0135
+   ],
+   "dirUnity": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Pils",
+   "parent": "Item_Beer_Pils",
+   "root": "Item_Beer_Pils",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.084
+   ],
+   "size": [
+    0.066,
+    0.066,
+    0.168
+   ],
+   "centerUnity": [
+    0.0,
+    0.084,
+    0.0
+   ],
+   "sizeUnity": [
+    0.066,
+    0.168,
+    0.066
+   ]
+  },
+  {
+   "name": "COL_Export",
+   "parent": "Item_Beer_Export",
+   "root": "Item_Beer_Export",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0575
+   ],
+   "size": [
+    0.066,
+    0.066,
+    0.115
+   ],
+   "centerUnity": [
+    0.0,
+    0.0575,
+    0.0
+   ],
+   "sizeUnity": [
+    0.066,
+    0.115,
+    0.066
+   ]
+  },
+  {
+   "name": "COL_Schwarz",
+   "parent": "Item_Beer_Schwarz",
+   "root": "Item_Beer_Schwarz",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.084
+   ],
+   "size": [
+    0.066,
+    0.066,
+    0.168
+   ],
+   "centerUnity": [
+    0.0,
+    0.084,
+    0.0
+   ],
+   "sizeUnity": [
+    0.066,
+    0.168,
+    0.066
+   ]
+  },
+  {
+   "name": "COL_Bock",
+   "parent": "Item_Beer_Bock",
+   "root": "Item_Beer_Bock",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.084
+   ],
+   "size": [
+    0.066,
+    0.066,
+    0.168
+   ],
+   "centerUnity": [
+    0.0,
+    0.084,
+    0.0
+   ],
+   "sizeUnity": [
+    0.066,
+    0.168,
+    0.066
+   ]
+  },
+  {
+   "name": "COL_Leicht",
+   "parent": "Item_Beer_Leicht",
+   "root": "Item_Beer_Leicht",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0575
+   ],
+   "size": [
+    0.066,
+    0.066,
+    0.115
+   ],
+   "centerUnity": [
+    0.0,
+    0.0575,
+    0.0
+   ],
+   "sizeUnity": [
+    0.066,
+    0.115,
+    0.066
+   ]
+  },
+  {
+   "name": "COL_Kalo",
+   "parent": "Item_Beer_Kalo",
+   "root": "Item_Beer_Kalo",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.084
+   ],
+   "size": [
+    0.066,
+    0.066,
+    0.168
+   ],
+   "centerUnity": [
+    0.0,
+    0.084,
+    0.0
+   ],
+   "sizeUnity": [
+    0.066,
+    0.168,
+    0.066
+   ]
+  },
+  {
+   "name": "COL_Crushed_Pils",
+   "parent": "Item_BeerCrushed_Pils",
+   "root": "Item_BeerCrushed_Pils",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0352
+   ],
+   "size": [
+    0.0924,
+    0.0832,
+    0.0705
+   ],
+   "centerUnity": [
+    0.0,
+    0.0352,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0924,
+    0.0705,
+    0.0832
+   ]
+  },
+  {
+   "name": "COL_Crushed_Export",
+   "parent": "Item_BeerCrushed_Export",
+   "root": "Item_BeerCrushed_Export",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0257
+   ],
+   "size": [
+    0.0924,
+    0.0832,
+    0.0514
+   ],
+   "centerUnity": [
+    0.0,
+    0.0257,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0924,
+    0.0514,
+    0.0832
+   ]
+  },
+  {
+   "name": "COL_Crushed_Schwarz",
+   "parent": "Item_BeerCrushed_Schwarz",
+   "root": "Item_BeerCrushed_Schwarz",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0352
+   ],
+   "size": [
+    0.0924,
+    0.0832,
+    0.0705
+   ],
+   "centerUnity": [
+    0.0,
+    0.0352,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0924,
+    0.0705,
+    0.0832
+   ]
+  },
+  {
+   "name": "COL_Crushed_Bock",
+   "parent": "Item_BeerCrushed_Bock",
+   "root": "Item_BeerCrushed_Bock",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0352
+   ],
+   "size": [
+    0.0924,
+    0.0832,
+    0.0705
+   ],
+   "centerUnity": [
+    0.0,
+    0.0352,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0924,
+    0.0705,
+    0.0832
+   ]
+  },
+  {
+   "name": "COL_Crushed_Leicht",
+   "parent": "Item_BeerCrushed_Leicht",
+   "root": "Item_BeerCrushed_Leicht",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0257
+   ],
+   "size": [
+    0.0924,
+    0.0832,
+    0.0514
+   ],
+   "centerUnity": [
+    0.0,
+    0.0257,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0924,
+    0.0514,
+    0.0832
+   ]
+  },
+  {
+   "name": "COL_Crushed_Kalo",
+   "parent": "Item_BeerCrushed_Kalo",
+   "root": "Item_BeerCrushed_Kalo",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.0352
+   ],
+   "size": [
+    0.0924,
+    0.0832,
+    0.0705
+   ],
+   "centerUnity": [
+    0.0,
+    0.0352,
+    0.0
+   ],
+   "sizeUnity": [
+    0.0924,
+    0.0705,
+    0.0832
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.1",
+  "units": "metres, degrees, kg",
+  "frame": "each root in its own frame: z up, the label front -y; origin on the bottom under the middle; FBX per root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y); axis likewise; angle -> -angle; box size (sx, sy, sz) -> (sx, sz, sy)",
+  "materials": "M_Beer_Small: the baked PSX atlas (point filter) of the steel, rims, lids, tabs, the inside; M_Beer_<Brand>: the printed label (512 wide once round, unwrapped from concept_v1/cans_1.png, Kalo from concept_v2/kalo_front_1.png)",
+  "opening": "tab 0 -> 70 deg while the flap goes 0 -> 82 (frames 1-10 at 24 fps), the tab back to 12 (frame 16); the action Open_<part> in the file is for the views, the game drives the hinges itself",
+  "brands": {
+   "Pils": {
+    "name": "Harzer Pils",
+    "litres": 0.5,
+    "abv": 4.9
+   },
+   "Export": {
+    "name": "Ilsetaler Export",
+    "litres": 0.33,
+    "abv": 5.2
+   },
+   "Schwarz": {
+    "name": "Hexenbräu Schwarzbier",
+    "litres": 0.5,
+    "abv": 4.9
+   },
+   "Bock": {
+    "name": "Bergmann Bock",
+    "litres": 0.5,
+    "abv": 7.2
+   },
+   "Leicht": {
+    "name": "Schneekönig Leicht",
+    "litres": 0.33,
+    "abv": 2.8
+   },
+   "Kalo": {
+    "name": "Kaloschnizzer Starkbier",
+    "litres": 0.5,
+    "abv": 7.2
+   }
+  },
+  "model": "beer.blend",
+  "textures": "tex"
+ }
+}
