@@ -1,0 +1,1878 @@
+{
+ "parts": {
+  "NET_SnowPole": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "snow pole (root): origin = the pole's axis at the ground, 0.35 m of it in the ground; orange, black top 0.25 m and black rings at 1.05 and 1.35 m; the reflector faces -y (the road)",
+   "object": "NET_SnowPole",
+   "root": "NET_SnowPole",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_CulvertHead": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "one end of the culvert (root): origin = the invert (the floor of the pipe, 1.0 m inside) at the face of the headwall; the pipe runs +y into the fill, the creek leaves along -y over the apron. Set it 0.3 m into the bed (a third of the pipe in the bed: forest culverts); the second end is the same prefab turned 180 deg",
+   "object": "NET_CulvertHead",
+   "root": "NET_CulvertHead",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone05_Number": {
+   "kind": "static",
+   "pivot": [
+    0.0028,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone05",
+   "states": [],
+   "note": "the -y face with the number 5 cut in (panel atlas)",
+   "object": "NET_Stone05_Number",
+   "root": "NET_Stone05",
+   "pivotUnity": [
+    -0.0028,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone05": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 5 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone05",
+   "root": "NET_Stone05",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone06_Number": {
+   "kind": "static",
+   "pivot": [
+    0.0023,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone06",
+   "states": [],
+   "note": "the -y face with the number 6 cut in (panel atlas)",
+   "object": "NET_Stone06_Number",
+   "root": "NET_Stone06",
+   "pivotUnity": [
+    -0.0023,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone06": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 6 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone06",
+   "root": "NET_Stone06",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone07_Number": {
+   "kind": "static",
+   "pivot": [
+    0.0004,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone07",
+   "states": [],
+   "note": "the -y face with the number 7 cut in (panel atlas)",
+   "object": "NET_Stone07_Number",
+   "root": "NET_Stone07",
+   "pivotUnity": [
+    -0.0004,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone07": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 7 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone07",
+   "root": "NET_Stone07",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone08_Number": {
+   "kind": "static",
+   "pivot": [
+    0.0045,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone08",
+   "states": [],
+   "note": "the -y face with the number 8 cut in (panel atlas)",
+   "object": "NET_Stone08_Number",
+   "root": "NET_Stone08",
+   "pivotUnity": [
+    -0.0045,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone08": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 8 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone08",
+   "root": "NET_Stone08",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone09_Number": {
+   "kind": "static",
+   "pivot": [
+    -0.0001,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone09",
+   "states": [],
+   "note": "the -y face with the number 9 cut in (panel atlas)",
+   "object": "NET_Stone09_Number",
+   "root": "NET_Stone09",
+   "pivotUnity": [
+    0.0001,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone09": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 9 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone09",
+   "root": "NET_Stone09",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone10_Number": {
+   "kind": "static",
+   "pivot": [
+    -0.0015,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone10",
+   "states": [],
+   "note": "the -y face with the number 10 cut in (panel atlas)",
+   "object": "NET_Stone10_Number",
+   "root": "NET_Stone10",
+   "pivotUnity": [
+    0.0015,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone10": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 10 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone10",
+   "root": "NET_Stone10",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone11_Number": {
+   "kind": "static",
+   "pivot": [
+    -0.0009,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone11",
+   "states": [],
+   "note": "the -y face with the number 11 cut in (panel atlas)",
+   "object": "NET_Stone11_Number",
+   "root": "NET_Stone11",
+   "pivotUnity": [
+    0.0009,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone11": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 11 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone11",
+   "root": "NET_Stone11",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stone12_Number": {
+   "kind": "static",
+   "pivot": [
+    -0.0008,
+    -0.09,
+    0.225
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Stone12",
+   "states": [],
+   "note": "the -y face with the number 12 cut in (panel atlas)",
+   "object": "NET_Stone12_Number",
+   "root": "NET_Stone12",
+   "pivotUnity": [
+    0.0008,
+    0.225,
+    0.09
+   ]
+  },
+  "NET_Stone12": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "compartment stone of fork 12 (root): origin = the stone's middle at the ground (0.30 m in the ground), the number faces -y (the road); granite, the top painted white so it is found in the snow",
+   "object": "NET_Stone12",
+   "root": "NET_Stone12",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Sign_Lager_Board": {
+   "kind": "static",
+   "pivot": [
+    0.38,
+    -0.085,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Sign_Lager",
+   "states": [],
+   "note": "LAGER / CAMP on the arrow board (panel atlas; German first, English under it)",
+   "object": "NET_Sign_Lager_Board",
+   "root": "NET_Sign_Lager",
+   "pivotUnity": [
+    -0.38,
+    1.71,
+    0.085
+   ]
+  },
+  "NET_Sign_Lager": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "pointer LAGER / CAMP (root): origin = the foot of the post on the ground (sunk 0.30); the arrow points +x, the text faces -y (the road)",
+   "object": "NET_Sign_Lager",
+   "root": "NET_Sign_Lager",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Sign_Kapelle_Board": {
+   "kind": "static",
+   "pivot": [
+    0.38,
+    -0.085,
+    1.71
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Sign_Kapelle",
+   "states": [],
+   "note": "KAPELLE / CHAPEL on the arrow board (panel atlas; German first, English under it)",
+   "object": "NET_Sign_Kapelle_Board",
+   "root": "NET_Sign_Kapelle",
+   "pivotUnity": [
+    -0.38,
+    1.71,
+    0.085
+   ]
+  },
+  "NET_Sign_Kapelle": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "pointer KAPELLE / CHAPEL (root): origin = the foot of the post on the ground (sunk 0.30); the arrow points +x, the text faces -y (the road)",
+   "object": "NET_Sign_Kapelle",
+   "root": "NET_Sign_Kapelle",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Schranke_Board": {
+   "kind": "static",
+   "pivot": [
+    -0.9,
+    -0.19,
+    0.7
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_Schranke",
+   "states": [],
+   "note": "WALDWEG on the board (panel atlas)",
+   "object": "NET_Schranke_Board",
+   "root": "NET_Schranke",
+   "pivotUnity": [
+    0.9,
+    0.7,
+    0.19
+   ]
+  },
+  "NET_Schranke": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "forest track barrier (root): origin = between the posts on the ground (posts sunk 0.45 m); the pole along x at 0.95 m, the board faces -y (the road side)",
+   "object": "NET_Schranke",
+   "root": "NET_Schranke",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Stake": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "marker stake (root): origin = its foot on the ground (0.35 m in); red-white barrier tape at 1.1 m, the loose end along +x",
+   "object": "NET_Stake",
+   "root": "NET_Stake",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_CrossWood": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "wooden grave cross (root): origin = its foot on the ground (0.35 m in)",
+   "object": "NET_CrossWood",
+   "root": "NET_CrossWood",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_CrossIron": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "iron grave cross (root): origin = its foot on the ground (0.3 m in)",
+   "object": "NET_CrossIron",
+   "root": "NET_CrossIron",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_GraveWall": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "dry-stone wall, 2 m along x (root): origin = the middle of its foot; segments join end to end",
+   "object": "NET_GraveWall",
+   "root": "NET_GraveWall",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Tent": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "canvas A-frame tent (root): origin = the middle of its floor; the ridge along y, the door at -y",
+   "object": "NET_Tent",
+   "root": "NET_Tent",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_FirePit": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "fire pit (root): origin = the middle of the ash on the ground",
+   "object": "NET_FirePit",
+   "root": "NET_FirePit",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_RopeLadder": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "rope ladder (root): origin = its top; it hangs 6 m down -z",
+   "object": "NET_RopeLadder",
+   "root": "NET_RopeLadder",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Cloth": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "canvas thrown over a beam (root): origin = on the beam; the halves hang along -y and +y",
+   "object": "NET_Cloth",
+   "root": "NET_Cloth",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_MeteoHut": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "weather hut (root): origin = the middle of its floor; the lit window faces -y, the door +x",
+   "object": "NET_MeteoHut",
+   "root": "NET_MeteoHut",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_Abatis": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "log barricade (root): origin = its middle on the ground; the log along x",
+   "object": "NET_Abatis",
+   "root": "NET_Abatis",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_LogSteps": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "log steps (root): origin = the first step's front on the ground; they climb along +y",
+   "object": "NET_LogSteps",
+   "root": "NET_LogSteps",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "NET_BunkerPortal_Sign": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    -0.045,
+    1.55
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "NET_BunkerPortal",
+   "states": [],
+   "note": "DRUCKTUER on the door (panel atlas)",
+   "object": "NET_BunkerPortal_Sign",
+   "root": "NET_BunkerPortal",
+   "pivotUnity": [
+    0.0,
+    1.55,
+    0.045
+   ]
+  },
+  "NET_BunkerPortal": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "bunker portal (root): origin = the door threshold; the face looks -y",
+   "object": "NET_BunkerPortal",
+   "root": "NET_BunkerPortal",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {
+  "Snap_Pipe_End": {
+   "pos": [
+    0.0,
+    2.2,
+    0.5
+   ],
+   "kind": "snap",
+   "parent": "NET_CulvertHead",
+   "note": "where the pipe goes on unseen (into the fill)",
+   "root": "NET_CulvertHead",
+   "posUnity": [
+    0.0,
+    0.5,
+    -2.2
+   ]
+  }
+ },
+ "colliders": [
+  {
+   "name": "COL_Pole",
+   "parent": "NET_SnowPole",
+   "root": "NET_SnowPole",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "size": [
+    0.06,
+    0.06,
+    2.0
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "centerUnity": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    2.0,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_Culvert_WallL",
+   "parent": "NET_CulvertHead",
+   "root": "NET_CulvertHead",
+   "type": "box",
+   "center": [
+    -0.95,
+    0.125,
+    0.75
+   ],
+   "size": [
+    0.7,
+    0.25,
+    1.8
+   ],
+   "center_root": [
+    -0.95,
+    0.125,
+    0.75
+   ],
+   "centerUnity": [
+    0.95,
+    0.75,
+    -0.125
+   ],
+   "sizeUnity": [
+    0.7,
+    1.8,
+    0.25
+   ]
+  },
+  {
+   "name": "COL_Culvert_WallR",
+   "parent": "NET_CulvertHead",
+   "root": "NET_CulvertHead",
+   "type": "box",
+   "center": [
+    0.95,
+    0.125,
+    0.75
+   ],
+   "size": [
+    0.7,
+    0.25,
+    1.8
+   ],
+   "center_root": [
+    0.95,
+    0.125,
+    0.75
+   ],
+   "centerUnity": [
+    -0.95,
+    0.75,
+    -0.125
+   ],
+   "sizeUnity": [
+    0.7,
+    1.8,
+    0.25
+   ]
+  },
+  {
+   "name": "COL_Culvert_WallTop",
+   "parent": "NET_CulvertHead",
+   "root": "NET_CulvertHead",
+   "type": "box",
+   "center": [
+    0.0,
+    0.125,
+    1.375
+   ],
+   "size": [
+    1.2,
+    0.25,
+    0.55
+   ],
+   "center_root": [
+    0.0,
+    0.125,
+    1.375
+   ],
+   "centerUnity": [
+    0.0,
+    1.375,
+    -0.125
+   ],
+   "sizeUnity": [
+    1.2,
+    0.55,
+    0.25
+   ]
+  },
+  {
+   "name": "COL_Culvert_Apron",
+   "parent": "NET_CulvertHead",
+   "root": "NET_CulvertHead",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.55,
+    -0.06
+   ],
+   "size": [
+    2.6,
+    1.1,
+    0.12
+   ],
+   "center_root": [
+    0.0,
+    -0.55,
+    -0.06
+   ],
+   "centerUnity": [
+    0.0,
+    -0.06,
+    0.55
+   ],
+   "sizeUnity": [
+    2.6,
+    0.12,
+    1.1
+   ]
+  },
+  {
+   "name": "COL_NET_Stone05_Body",
+   "parent": "NET_Stone05",
+   "root": "NET_Stone05",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone06_Body",
+   "parent": "NET_Stone06",
+   "root": "NET_Stone06",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone07_Body",
+   "parent": "NET_Stone07",
+   "root": "NET_Stone07",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone08_Body",
+   "parent": "NET_Stone08",
+   "root": "NET_Stone08",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone09_Body",
+   "parent": "NET_Stone09",
+   "root": "NET_Stone09",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone10_Body",
+   "parent": "NET_Stone10",
+   "root": "NET_Stone10",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone11_Body",
+   "parent": "NET_Stone11",
+   "root": "NET_Stone11",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Stone12_Body",
+   "parent": "NET_Stone12",
+   "root": "NET_Stone12",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "size": [
+    0.22,
+    0.18,
+    0.81
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.405
+   ],
+   "centerUnity": [
+    0.0,
+    0.405,
+    0.0
+   ],
+   "sizeUnity": [
+    0.22,
+    0.81,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_NET_Sign_Lager_Post",
+   "parent": "NET_Sign_Lager",
+   "root": "NET_Sign_Lager",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.28
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "centerUnity": [
+    0.0,
+    1.14,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.28,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_NET_Sign_Lager_BoardBox",
+   "parent": "NET_Sign_Lager",
+   "root": "NET_Sign_Lager",
+   "type": "box",
+   "center": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "size": [
+    1.08,
+    0.03,
+    0.22
+   ],
+   "center_root": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "centerUnity": [
+    -0.44,
+    1.71,
+    0.07
+   ],
+   "sizeUnity": [
+    1.08,
+    0.22,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_NET_Sign_Kapelle_Post",
+   "parent": "NET_Sign_Kapelle",
+   "root": "NET_Sign_Kapelle",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "size": [
+    0.1,
+    0.1,
+    2.28
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.14
+   ],
+   "centerUnity": [
+    0.0,
+    1.14,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    2.28,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_NET_Sign_Kapelle_BoardBox",
+   "parent": "NET_Sign_Kapelle",
+   "root": "NET_Sign_Kapelle",
+   "type": "box",
+   "center": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "size": [
+    1.08,
+    0.03,
+    0.22
+   ],
+   "center_root": [
+    0.44,
+    -0.07,
+    1.71
+   ],
+   "centerUnity": [
+    -0.44,
+    1.71,
+    0.07
+   ],
+   "sizeUnity": [
+    1.08,
+    0.22,
+    0.03
+   ]
+  },
+  {
+   "name": "COL_Schranke_PostL",
+   "parent": "NET_Schranke",
+   "root": "NET_Schranke",
+   "type": "box",
+   "center": [
+    -2.3,
+    0.0,
+    0.575
+   ],
+   "size": [
+    0.18,
+    0.18,
+    1.15
+   ],
+   "center_root": [
+    -2.3,
+    0.0,
+    0.575
+   ],
+   "centerUnity": [
+    2.3,
+    0.575,
+    0.0
+   ],
+   "sizeUnity": [
+    0.18,
+    1.15,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_Schranke_PostR",
+   "parent": "NET_Schranke",
+   "root": "NET_Schranke",
+   "type": "box",
+   "center": [
+    2.3,
+    0.0,
+    0.575
+   ],
+   "size": [
+    0.18,
+    0.18,
+    1.15
+   ],
+   "center_root": [
+    2.3,
+    0.0,
+    0.575
+   ],
+   "centerUnity": [
+    -2.3,
+    0.575,
+    0.0
+   ],
+   "sizeUnity": [
+    0.18,
+    1.15,
+    0.18
+   ]
+  },
+  {
+   "name": "COL_Schranke_Pole",
+   "parent": "NET_Schranke",
+   "root": "NET_Schranke",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.1,
+    0.95
+   ],
+   "size": [
+    4.9,
+    0.14,
+    0.14
+   ],
+   "center_root": [
+    0.0,
+    -0.1,
+    0.95
+   ],
+   "centerUnity": [
+    0.0,
+    0.95,
+    0.1
+   ],
+   "sizeUnity": [
+    4.9,
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "name": "COL_Stake",
+   "parent": "NET_Stake",
+   "root": "NET_Stake",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.665
+   ],
+   "size": [
+    0.06,
+    0.06,
+    1.33
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.665
+   ],
+   "centerUnity": [
+    0.0,
+    0.665,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.33,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_CrossWood",
+   "parent": "NET_CrossWood",
+   "root": "NET_CrossWood",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.585
+   ],
+   "size": [
+    0.1,
+    0.1,
+    1.17
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.585
+   ],
+   "centerUnity": [
+    0.0,
+    0.585,
+    0.0
+   ],
+   "sizeUnity": [
+    0.1,
+    1.17,
+    0.1
+   ]
+  },
+  {
+   "name": "COL_CrossIron",
+   "parent": "NET_CrossIron",
+   "root": "NET_CrossIron",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "size": [
+    0.06,
+    0.06,
+    1.0
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "centerUnity": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "sizeUnity": [
+    0.06,
+    1.0,
+    0.06
+   ]
+  },
+  {
+   "name": "COL_GraveWall",
+   "parent": "NET_GraveWall",
+   "root": "NET_GraveWall",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.28
+   ],
+   "size": [
+    2.0,
+    0.5,
+    0.56
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.28
+   ],
+   "centerUnity": [
+    0.0,
+    0.28,
+    0.0
+   ],
+   "sizeUnity": [
+    2.0,
+    0.56,
+    0.5
+   ]
+  },
+  {
+   "name": "COL_Tent",
+   "parent": "NET_Tent",
+   "root": "NET_Tent",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.4025
+   ],
+   "size": [
+    1.7,
+    2.2,
+    0.805
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.4025
+   ],
+   "centerUnity": [
+    0.0,
+    0.4025,
+    0.0
+   ],
+   "sizeUnity": [
+    1.7,
+    0.805,
+    2.2
+   ]
+  },
+  {
+   "name": "COL_MeteoHut",
+   "parent": "NET_MeteoHut",
+   "root": "NET_MeteoHut",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    1.05
+   ],
+   "size": [
+    3.0,
+    2.4,
+    2.1
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    1.05
+   ],
+   "centerUnity": [
+    0.0,
+    1.05,
+    0.0
+   ],
+   "sizeUnity": [
+    3.0,
+    2.1,
+    2.4
+   ]
+  },
+  {
+   "name": "COL_Abatis",
+   "parent": "NET_Abatis",
+   "root": "NET_Abatis",
+   "type": "box",
+   "center": [
+    0.0,
+    0.0,
+    0.575
+   ],
+   "size": [
+    3.7,
+    1.2,
+    1.15
+   ],
+   "center_root": [
+    0.0,
+    0.0,
+    0.575
+   ],
+   "centerUnity": [
+    0.0,
+    0.575,
+    0.0
+   ],
+   "sizeUnity": [
+    3.7,
+    1.15,
+    1.2
+   ]
+  },
+  {
+   "name": "COL_LogSteps",
+   "parent": "NET_LogSteps",
+   "root": "NET_LogSteps",
+   "type": "box",
+   "center": [
+    0.0,
+    1.0,
+    0.45
+   ],
+   "size": [
+    1.4,
+    2.0,
+    0.9
+   ],
+   "center_root": [
+    0.0,
+    1.0,
+    0.45
+   ],
+   "centerUnity": [
+    0.0,
+    0.45,
+    -1.0
+   ],
+   "sizeUnity": [
+    1.4,
+    0.9,
+    2.0
+   ]
+  },
+  {
+   "name": "COL_BunkerPortal",
+   "parent": "NET_BunkerPortal",
+   "root": "NET_BunkerPortal",
+   "type": "box",
+   "center": [
+    0.0,
+    0.2,
+    1.5
+   ],
+   "size": [
+    3.4,
+    0.4,
+    3.0
+   ],
+   "center_root": [
+    0.0,
+    0.2,
+    1.5
+   ],
+   "centerUnity": [
+    0.0,
+    1.5,
+    -0.2
+   ],
+   "sizeUnity": [
+    3.4,
+    3.0,
+    0.4
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.0",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 27.10.2026",
+  "frame": "each root in its own frame: z up, the front -y; the pole and the stones: their middle at the ground (sunk 0.35 / 0.30 m); the culvert end: the invert at the face of the headwall, the pipe +y. In net.blend the roots stand apart (display_offset); FBX with the root at the origin",
+  "assembly": "NET_SnowPole every 30 m along both runway edges (3 m off the paving) and every ~50 m along the forest roads, alternating sides, reflector to the road; NET_CulvertHead at both ends of the culvert under D1 (ForestNetwork.json culverts: x, z, invert, yaw, length), each facing away from the road, 0.3 m into the bed; NET_Stone<NN> at fork NN (5-12) by the road edge, the number to the road",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; axis likewise; angle -> -angle (Unity is left-handed); box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "display_offset": {
+   "NET_SnowPole": [
+    -3.0,
+    0.0,
+    0.0
+   ],
+   "NET_CulvertHead": [
+    2.0,
+    0.0,
+    0.0
+   ],
+   "NET_Stone05": [
+    -2.0,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone06": [
+    -1.4,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone07": [
+    -0.8,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone08": [
+    -0.2,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone09": [
+    0.4,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone10": [
+    1.0,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone11": [
+    1.6,
+    -3.0,
+    0.0
+   ],
+   "NET_Stone12": [
+    2.2,
+    -3.0,
+    0.0
+   ],
+   "NET_Sign_Lager": [
+    -4.0,
+    3.0,
+    0.0
+   ],
+   "NET_Sign_Kapelle": [
+    -2.4,
+    3.0,
+    0.0
+   ],
+   "NET_Schranke": [
+    3.0,
+    8.0,
+    0.0
+   ],
+   "NET_Stake": [
+    6.5,
+    6.0,
+    0.0
+   ],
+   "NET_CrossWood": [
+    8.0,
+    6.0,
+    0.0
+   ],
+   "NET_CrossIron": [
+    9.0,
+    6.0,
+    0.0
+   ],
+   "NET_GraveWall": [
+    11.0,
+    6.0,
+    0.0
+   ],
+   "NET_Tent": [
+    14.0,
+    6.0,
+    0.0
+   ],
+   "NET_FirePit": [
+    17.0,
+    6.0,
+    0.0
+   ],
+   "NET_RopeLadder": [
+    20.0,
+    6.0,
+    6.2
+   ],
+   "NET_Cloth": [
+    23.0,
+    6.0,
+    2.5
+   ],
+   "NET_MeteoHut": [
+    27.0,
+    6.0,
+    0.0
+   ],
+   "NET_Abatis": [
+    31.0,
+    6.0,
+    0.0
+   ],
+   "NET_LogSteps": [
+    35.0,
+    6.0,
+    0.0
+   ],
+   "NET_BunkerPortal": [
+    40.0,
+    6.0,
+    0.0
+   ]
+  },
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame. COL_ objects are reference only, not in the FBX",
+  "lamps": "net_lights.json (none)",
+  "model": "net.blend",
+  "textures": "tex",
+  "materials": "M_NET_NetProps: the baked PSX atlas (point filter); M_NET_Panel: the numbers of the stones",
+  "ix": "none"
+ }
+}

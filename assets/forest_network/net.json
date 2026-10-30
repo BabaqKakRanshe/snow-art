@@ -1,0 +1,264 @@
+{
+ "atlases": {
+  "NetProps": {
+   "size": 1024,
+   "ppm": 44.4,
+   "area_m2": 240.43,
+   "uv_fill": 0.452,
+   "colours": 64
+  }
+ },
+ "lamps": 0,
+ "tris": 2372,
+ "tris_by_root": {
+  "NET_Abatis": 120,
+  "NET_BunkerPortal": 94,
+  "NET_Cloth": 220,
+  "NET_CrossIron": 144,
+  "NET_CrossWood": 36,
+  "NET_CulvertHead": 224,
+  "NET_FirePit": 180,
+  "NET_GraveWall": 72,
+  "NET_LogSteps": 280,
+  "NET_MeteoHut": 70,
+  "NET_RopeLadder": 228,
+  "NET_Schranke": 198,
+  "NET_Sign_Kapelle": 82,
+  "NET_Sign_Lager": 82,
+  "NET_SnowPole": 68,
+  "NET_Stake": 72,
+  "NET_Stone05": 14,
+  "NET_Stone06": 14,
+  "NET_Stone07": 14,
+  "NET_Stone08": 14,
+  "NET_Stone09": 14,
+  "NET_Stone10": 14,
+  "NET_Stone11": 14,
+  "NET_Stone12": 14,
+  "NET_Tent": 90
+ },
+ "objects": {
+  "NET_SnowPole": [
+   "NET_SnowPole"
+  ],
+  "NET_CulvertHead": [
+   "NET_CulvertHead"
+  ],
+  "NET_Stone05": [
+   "NET_Stone05",
+   "NET_Stone05_Number"
+  ],
+  "NET_Stone06": [
+   "NET_Stone06",
+   "NET_Stone06_Number"
+  ],
+  "NET_Stone07": [
+   "NET_Stone07",
+   "NET_Stone07_Number"
+  ],
+  "NET_Stone08": [
+   "NET_Stone08",
+   "NET_Stone08_Number"
+  ],
+  "NET_Stone09": [
+   "NET_Stone09",
+   "NET_Stone09_Number"
+  ],
+  "NET_Stone10": [
+   "NET_Stone10",
+   "NET_Stone10_Number"
+  ],
+  "NET_Stone11": [
+   "NET_Stone11",
+   "NET_Stone11_Number"
+  ],
+  "NET_Stone12": [
+   "NET_Stone12",
+   "NET_Stone12_Number"
+  ],
+  "NET_Sign_Lager": [
+   "NET_Sign_Lager",
+   "NET_Sign_Lager_Board"
+  ],
+  "NET_Sign_Kapelle": [
+   "NET_Sign_Kapelle",
+   "NET_Sign_Kapelle_Board"
+  ],
+  "NET_Schranke": [
+   "NET_Schranke",
+   "NET_Schranke_Board"
+  ],
+  "NET_Stake": [
+   "NET_Stake"
+  ],
+  "NET_CrossWood": [
+   "NET_CrossWood"
+  ],
+  "NET_CrossIron": [
+   "NET_CrossIron"
+  ],
+  "NET_GraveWall": [
+   "NET_GraveWall"
+  ],
+  "NET_Tent": [
+   "NET_Tent"
+  ],
+  "NET_FirePit": [
+   "NET_FirePit"
+  ],
+  "NET_RopeLadder": [
+   "NET_RopeLadder"
+  ],
+  "NET_Cloth": [
+   "NET_Cloth"
+  ],
+  "NET_MeteoHut": [
+   "NET_MeteoHut"
+  ],
+  "NET_Abatis": [
+   "NET_Abatis"
+  ],
+  "NET_LogSteps": [
+   "NET_LogSteps"
+  ],
+  "NET_BunkerPortal": [
+   "NET_BunkerPortal",
+   "NET_BunkerPortal_Sign"
+  ]
+ },
+ "display_offset": {
+  "NET_SnowPole": [
+   -3.0,
+   0.0,
+   0.0
+  ],
+  "NET_CulvertHead": [
+   2.0,
+   0.0,
+   0.0
+  ],
+  "NET_Stone05": [
+   -2.0,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone06": [
+   -1.4,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone07": [
+   -0.8,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone08": [
+   -0.2,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone09": [
+   0.4,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone10": [
+   1.0,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone11": [
+   1.6,
+   -3.0,
+   0.0
+  ],
+  "NET_Stone12": [
+   2.2,
+   -3.0,
+   0.0
+  ],
+  "NET_Sign_Lager": [
+   -4.0,
+   3.0,
+   0.0
+  ],
+  "NET_Sign_Kapelle": [
+   -2.4,
+   3.0,
+   0.0
+  ],
+  "NET_Schranke": [
+   3.0,
+   8.0,
+   0.0
+  ],
+  "NET_Stake": [
+   6.5,
+   6.0,
+   0.0
+  ],
+  "NET_CrossWood": [
+   8.0,
+   6.0,
+   0.0
+  ],
+  "NET_CrossIron": [
+   9.0,
+   6.0,
+   0.0
+  ],
+  "NET_GraveWall": [
+   11.0,
+   6.0,
+   0.0
+  ],
+  "NET_Tent": [
+   14.0,
+   6.0,
+   0.0
+  ],
+  "NET_FirePit": [
+   17.0,
+   6.0,
+   0.0
+  ],
+  "NET_RopeLadder": [
+   20.0,
+   6.0,
+   6.2
+  ],
+  "NET_Cloth": [
+   23.0,
+   6.0,
+   2.5
+  ],
+  "NET_MeteoHut": [
+   27.0,
+   6.0,
+   0.0
+  ],
+  "NET_Abatis": [
+   31.0,
+   6.0,
+   0.0
+  ],
+  "NET_LogSteps": [
+   35.0,
+   6.0,
+   0.0
+  ],
+  "NET_BunkerPortal": [
+   40.0,
+   6.0,
+   0.0
+  ]
+ },
+ "contract": {
+  "parts": 37,
+  "sockets": 1,
+  "colliders": 29,
+  "kinds": {
+   "static": 37
+  }
+ }
+}
