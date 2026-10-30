@@ -1,0 +1,310 @@
+{
+ "objects": [
+  {
+   "name": "SM_HumanSkeleton_01",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 354,
+   "verts": 181,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_02",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 374,
+   "verts": 191,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_03",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 1654,
+   "verts": 879,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_04",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 754,
+   "verts": 381,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_05",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 768,
+   "verts": 388,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_06",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 650,
+   "verts": 329,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_07",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 666,
+   "verts": 337,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_08",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 3912,
+   "verts": 1986,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_09",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 1666,
+   "verts": 885,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_10",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 304,
+   "verts": 154,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_11",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 1,
+   "verts": 3,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_12",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 304,
+   "verts": 154,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_13",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 492,
+   "verts": 250,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_14",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 2054,
+   "verts": 1081,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_15",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 484,
+   "verts": 246,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_16",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 1705,
+   "verts": 855,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_17",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 2616,
+   "verts": 1342,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_18",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 1068,
+   "verts": 568,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_19",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 2046,
+   "verts": 1077,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton_20",
+   "type": "MESH",
+   "parent": "SM_HumanSkeleton",
+   "tris": 3952,
+   "verts": 1928,
+   "mats": [
+    "Humam_Skeleton_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  },
+  {
+   "name": "SM_HumanSkeleton",
+   "type": "EMPTY",
+   "parent": null
+  },
+  {
+   "name": "OutLine",
+   "type": "MESH",
+   "parent": null,
+   "tris": 25824,
+   "verts": 13215,
+   "mats": [
+    "OutLine_M"
+   ],
+   "uv": 1,
+   "groups": 0,
+   "mods": []
+  }
+ ],
+ "armatures": [],
+ "materials": [
+  {
+   "name": "Humam_Skeleton_M",
+   "textures": []
+  },
+  {
+   "name": "OutLine_M",
+   "textures": []
+  }
+ ],
+ "images": [],
+ "tris": 51648,
+ "bounds_min": [
+  -0.3381199240684509,
+  -0.134515643119812,
+  -0.0032283621840178967
+ ],
+ "bounds_max": [
+  0.3381199240684509,
+  0.1346030831336975,
+  1.8282508850097656
+ ],
+ "size": [
+  0.6762398481369019,
+  0.2691187262535095,
+  1.8314791917800903
+ ]
+}
