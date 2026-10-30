@@ -1,0 +1,146 @@
+{
+ "parts": {
+  "WreckCar_Crack": {
+   "kind": "static",
+   "pivot": [
+    -0.27412915229797363,
+    -0.20108383893966675,
+    0.9975828528404236
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WreckCar",
+   "states": [],
+   "note": "the cracks on the windscreen (cut-out decal, panel atlas)",
+   "object": "WreckCar_Crack",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.2741,
+    0.9976,
+    0.2011
+   ]
+  },
+  "WreckCar_Glass": {
+   "kind": "static",
+   "pivot": [
+    -0.08013736456632614,
+    0.38138413429260254,
+    1.0516941547393799
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "WreckCar",
+   "states": [],
+   "note": "all fixed windows (dirty glass)",
+   "object": "WreckCar_Glass",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0801,
+    1.0517,
+    -0.3814
+   ]
+  },
+  "IX_WreckCarBoot": {
+   "kind": "hinge",
+   "pivot": [
+    -0.06884527951478958,
+    1.513837456703186,
+    0.9162436723709106
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "range": [
+    0,
+    75
+   ],
+   "unit": "deg",
+   "rest": 12.0,
+   "parent": "WreckCar",
+   "states": [],
+   "note": "the boot lid: hinged at its front edge, stands ajar 12 deg (static)",
+   "object": "IX_WreckCarBoot",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0688,
+    0.9162,
+    -1.5138
+   ]
+  },
+  "WreckCar": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "WreckCar (root): origin = the ground between the axles; the front -y; the driver's side +x",
+   "object": "WreckCar",
+   "root": "WreckCar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {},
+ "colliders": [
+  {
+   "name": "COL_Car_Body",
+   "parent": "WreckCar",
+   "root": "WreckCar",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.01,
+    0.79
+   ],
+   "size": [
+    1.84,
+    4.82,
+    1.14
+   ],
+   "center_root": [
+    0.0,
+    -0.01,
+    0.79
+   ],
+   "centerUnity": [
+    0.0,
+    0.79,
+    0.01
+   ],
+   "sizeUnity": [
+    1.84,
+    1.14,
+    4.82
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.2",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 28.10.2026",
+  "car": "WreckCar",
+  "frame": "z up, the front -y; origin on the ground between the axles; the driver's side +x. FBX with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame. COL_ objects are reference only, not in the FBX",
+  "model": "WreckCar.blend",
+  "textures": "tex",
+  "materials": "M_CAR_WreckCar: baked PSX atlas (point filter); M_CAR_Panel: decals (alpha cut-out); M_CAR_Glass: windows",
+  "ix": "none: doors and lids stand in their poses (static)"
+ }
+}

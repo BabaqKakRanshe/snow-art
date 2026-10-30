@@ -1,0 +1,28 @@
+{
+ "atlases": {
+  "StartCar": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 57.45,
+   "uv_fill": 0.144,
+   "colours": 64
+  }
+ },
+ "tris": 5606,
+ "tris_by_root": {
+  "StartCar": 5606
+ },
+ "objects": {
+  "StartCar": [
+   "IX_CarDoor",
+   "IX_CarDoor_Glass",
+   "StartCar",
+   "StartCar_Glass"
+  ]
+ },
+ "contract": {
+  "parts": 4,
+  "sockets": 0,
+  "colliders": 1
+ }
+}

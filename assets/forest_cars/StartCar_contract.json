@@ -1,0 +1,146 @@
+{
+ "parts": {
+  "StartCar_Glass": {
+   "kind": "static",
+   "pivot": [
+    -0.03055150993168354,
+    0.4167401194572449,
+    1.0728830099105835
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "StartCar",
+   "states": [],
+   "note": "all fixed windows (dirty glass)",
+   "object": "StartCar_Glass",
+   "root": "StartCar",
+   "pivotUnity": [
+    0.0306,
+    1.0729,
+    -0.4167
+   ]
+  },
+  "IX_CarDoor": {
+   "kind": "hinge",
+   "pivot": [
+    0.8596682548522949,
+    -0.4195863902568817,
+    0.009836874902248383
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    0,
+    72
+   ],
+   "unit": "deg",
+   "rest": 70.0,
+   "parent": "StartCar",
+   "states": [],
+   "note": "the driver's door (front left, +x): hinge at its front edge, stands open 70 deg (static)",
+   "object": "IX_CarDoor",
+   "root": "StartCar",
+   "pivotUnity": [
+    -0.8597,
+    0.0098,
+    0.4196
+   ]
+  },
+  "IX_CarDoor_Glass": {
+   "kind": "static",
+   "pivot": [
+    0.8596682548522949,
+    -0.4195863902568817,
+    0.009836874902248383
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": "IX_CarDoor",
+   "states": [],
+   "note": "the door's window",
+   "object": "IX_CarDoor_Glass",
+   "root": "StartCar",
+   "pivotUnity": [
+    -0.8597,
+    0.0098,
+    0.4196
+   ]
+  },
+  "StartCar": {
+   "kind": "static",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis": null,
+   "range": null,
+   "unit": "deg",
+   "rest": 0.0,
+   "parent": null,
+   "states": [],
+   "note": "StartCar (root): origin = the ground between the axles; the front -y; the driver's side +x",
+   "object": "StartCar",
+   "root": "StartCar",
+   "pivotUnity": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "sockets": {},
+ "colliders": [
+  {
+   "name": "COL_Car_Body",
+   "parent": "StartCar",
+   "root": "StartCar",
+   "type": "box",
+   "center": [
+    0.0,
+    -0.03,
+    0.84
+   ],
+   "size": [
+    1.84,
+    4.74,
+    1.24
+   ],
+   "center_root": [
+    0.0,
+    -0.03,
+    0.84
+   ],
+   "centerUnity": [
+    0.0,
+    0.84,
+    0.03
+   ],
+   "sizeUnity": [
+    1.84,
+    1.24,
+    4.74
+   ]
+  }
+ ],
+ "meta": {
+  "version": "1.2",
+  "units": "metres, degrees",
+  "built": "locally with tools/snow_style (Blender 5.2.3), 28.10.2026",
+  "car": "StartCar",
+  "frame": "z up, the front -y; origin on the ground between the axles; the driver's side +x. FBX with the root at the origin",
+  "unity": "position (x, y, z) -> Unity (-x, z, -y) in the prefab; box centre likewise, size (sx, sy, sz) -> (sx, sz, sy); the root front (-y) is the prefab +Z",
+  "colliders": "BoxCollider per entry on its parent: center / size in the parent own frame. COL_ objects are reference only, not in the FBX",
+  "model": "StartCar.blend",
+  "textures": "tex",
+  "materials": "M_CAR_StartCar: baked PSX atlas (point filter); M_CAR_Panel: decals (alpha cut-out); M_CAR_Glass: windows",
+  "ix": "none: doors and lids stand in their poses (static)"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "atlases": {
+  "WreckCar": {
+   "size": 1024,
+   "ppm": 51.3,
+   "area_m2": 57.64,
+   "uv_fill": 0.145,
+   "colours": 64
+  }
+ },
+ "tris": 5048,
+ "tris_by_root": {
+  "WreckCar": 5048
+ },
+ "objects": {
+  "WreckCar": [
+   "IX_WreckCarBoot",
+   "WreckCar",
+   "WreckCar_Crack",
+   "WreckCar_Glass"
+  ]
+ },
+ "contract": {
+  "parts": 4,
+  "sockets": 0,
+  "colliders": 1
+ }
+}
