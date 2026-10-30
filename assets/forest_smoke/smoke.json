@@ -1,0 +1,77 @@
+{
+ "atlases": {
+  "Small": {
+   "size": 256,
+   "ppm": 512.0,
+   "area_m2": 0.02,
+   "uv_fill": 0.092,
+   "colours": 59
+  }
+ },
+ "tris": 594,
+ "tris_by_root": {
+  "Cigarette": 76,
+  "Item_CigPack_Brocken": 196,
+  "Item_CigPack_Harzgold": 80,
+  "Item_CigPack_Nordlicht": 80,
+  "Item_Lighter": 162
+ },
+ "objects": {
+  "Item_CigPack_Harzgold": [
+   "Item_CigPack_Harzgold",
+   "Pack_Lid_Harzgold"
+  ],
+  "Item_CigPack_Brocken": [
+   "Item_CigPack_Brocken"
+  ],
+  "Item_CigPack_Nordlicht": [
+   "Item_CigPack_Nordlicht",
+   "Pack_Lid_Nordlicht"
+  ],
+  "Item_Lighter": [
+   "Item_Lighter",
+   "Lighter_Button",
+   "Lighter_Flame",
+   "Lighter_Wheel"
+  ],
+  "Cigarette": [
+   "Cig_Paper",
+   "Cig_Tip",
+   "Cigarette"
+  ]
+ },
+ "display_offset": {
+  "Item_CigPack_Harzgold": [
+   -0.09,
+   0.0,
+   0.0
+  ],
+  "Item_CigPack_Brocken": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "Item_CigPack_Nordlicht": [
+   0.09,
+   0.0,
+   0.0
+  ],
+  "Item_Lighter": [
+   0.17,
+   0.0,
+   0.0
+  ],
+  "Cigarette": [
+   0.24,
+   0.04,
+   0.004
+  ]
+ },
+ "mass_kg": {
+  "Item_CigPack_Harzgold": 0.025,
+  "Item_CigPack_Brocken": 0.024,
+  "Item_CigPack_Nordlicht": 0.025,
+  "Item_Lighter": 0.02,
+  "Cigarette": 0.001
+ }
+}
